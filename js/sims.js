@@ -55,4 +55,5 @@ function simPlayers({ n }) {
   init(); draw();
   return simPanel(L2('Vyskúšaj si to', 'Try it yourself'), h('div', null, h('p', { class: 'muted' }, L2('Každý zápas = jeden hráč vypadne. Ťukni na hráča, ktorý prehral.', 'Each match = one player drops out. Tap the player who lost.')), row, info, h('div', { class: 'simctl' }, h('button', { type: 'button', class: 'btn ghost small', onclick: () => { init(); draw(); } }, '↺ ' + L2('Znova', 'Again')))));
 }
-function simMount(sim) { return sim.kind === 'sticks' ? simSticks(sim) : sim.kind === 'choc' ? simChoc(sim) : sim.kind === 'players' ? simPlayers(sim) : null; }
+const SIM_KINDS = { sticks: simSticks, choc: simChoc, players: simPlayers };
+function simMount(sim) { const f = SIM_KINDS[sim.kind]; return f ? f(sim) : null; }

@@ -24,27 +24,27 @@ reg('oddone', 'logic', 2, c => {
 reg('compare', 'data', 2, c => {
   const { r, D, k } = c, e1 = pick(KEMO, r), e2 = pick(KEMO.filter(x => x !== e1), r), mx = lerp(5, 12, D); let a = ri(r, 1, mx), b = ri(r, 1, mx); if (k % 4 === 3) b = a;
   const vis = () => `<div class="cmp"><div>${e1.repeat(a)}</div><div>${e2.repeat(b)}</div></div>`;
-  if (k % 3 === 2 && a !== b) { const big = Math.abs(a - b); return { title: S('O koľko viac?', 'How many more?'), type: 'number', visual: vis, prompt: S(`O koľko je ${a > b ? e1 : e2} viac?`, `How many more ${a > b ? e1 : e2} are there?`), data: { answer: big },
+  if (k % 3 === 2 && a !== b) { const big = Math.abs(a - b); return { title: S('O koľko viac?', 'How many more?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e1), Array(b).fill(e2)] }, type: 'number', visual: vis, prompt: S(`O koľko je ${a > b ? e1 : e2} viac?`, `How many more ${a > b ? e1 : e2} are there?`), data: { answer: big },
     hints: [S('Spáruj obrázky z oboch riadkov.', 'Pair up the pictures from both rows.'), S('Spočítaj, čo ostalo bez páru.', 'Count what has no partner.')], explain: [S('Každému z menšieho riadku priraď jeden z väčšieho.', 'Match each in the shorter row with one in the longer.'), S(`Bez páru ostáva ${big}.`, `${big} are left without a partner.`)] }; }
   const opts = [e1, e2, S('Rovnako', 'Same')];
-  return { title: S('Čoho je viac?', 'Which has more?'), type: 'choice', visual: vis, prompt: S('Čoho je viac?', 'Which has more?'), data: { options: opts, correct: a > b ? 0 : a < b ? 1 : 2, cols: 3 },
+  return { title: S('Čoho je viac?', 'Which has more?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e1), Array(b).fill(e2)] }, type: 'choice', visual: vis, prompt: S('Čoho je viac?', 'Which has more?'), data: { options: opts, correct: a > b ? 0 : a < b ? 1 : 2, cols: 3 },
     hints: [S('Spočítaj každý riadok.', 'Count each row.'), S('Porovnaj dve čísla.', 'Compare the two numbers.')], explain: [S(`${e1}: ${a}, ${e2}: ${b}.`, `${e1}: ${a}, ${e2}: ${b}.`), a === b ? S('Je ich rovnako.', 'They are the same.') : S(`Viac je ${a > b ? e1 : e2}.`, `There are more ${a > b ? e1 : e2}.`)] };
 });
 
 reg('picmath', 'word', 2, c => {
   const { r, D, g, k } = c, e = pick(KEMO, r), mx = lerp(6, g <= 2 ? 15 : 25, D), v = k % 3;
-  if (v === 0) { const a = ri(r, 1, mx - 2), b = ri(r, 1, mx - a); return { title: S('Koľko spolu?', 'How many in all?'), type: 'number', visual: () => kpm([kspan(e, a), kop('+'), kspan(e, b), kop('='), kop('?')]), prompt: S('Koľko je spolu?', 'How many altogether?'), data: { answer: a + b },
+  if (v === 0) { const a = ri(r, 1, mx - 2), b = ri(r, 1, mx - a); return { title: S('Koľko spolu?', 'How many in all?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e), Array(b).fill(e)] }, type: 'number', visual: () => kpm([kspan(e, a), kop('+'), kspan(e, b), kop('='), kop('?')]), prompt: S('Koľko je spolu?', 'How many altogether?'), data: { answer: a + b },
     hints: [S('Spočítaj všetky obrázky.', 'Count all the pictures.'), S('Najprv prvú skupinku, potom pridaj druhú.', 'Count the first group, then add the second.')], explain: [S(`${a} + ${b} = ${a + b}`, `${a} + ${b} = ${a + b}`)] }; }
-  if (v === 1) { const a = ri(r, 3, mx), b = ri(r, 1, a - 1); return { title: S('Koľko ostane?', 'How many are left?'), type: 'number', visual: () => kpm([kspan(e, a), kop('−'), kspan('❌', b), kop('='), kop('?')]), prompt: S('Koľko ostane?', 'How many are left?'), data: { answer: a - b },
+  if (v === 1) { const a = ri(r, 3, mx), b = ri(r, 1, a - 1); return { title: S('Koľko ostane?', 'How many are left?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e)] }, type: 'number', visual: () => kpm([kspan(e, a), kop('−'), kspan('❌', b), kop('='), kop('?')]), prompt: S('Koľko ostane?', 'How many are left?'), data: { answer: a - b },
     hints: [S('❌ znamená, že sa odoberie.', '❌ means they are taken away.'), S('Spočítaj tie, ktoré ostali.', 'Count the ones that stay.')], explain: [S(`${a} − ${b} = ${a - b}`, `${a} − ${b} = ${a - b}`)] }; }
   const gp = ri(r, 2, Math.min(5, 2 + Math.floor(D * 4))), per = ri(r, 2, Math.min(6, 2 + Math.floor(D * 5)));
-  return { title: S('Skupinky', 'Groups'), type: 'number', visual: () => kpm([...range(gp).map(() => kspan(e, per)), kop('='), kop('?')]), prompt: S('Koľko je spolu?', 'How many altogether?'), data: { answer: gp * per },
+  return { title: S('Skupinky', 'Groups'), sim: { kind: 'tapcount', rows: [Array(gp * per).fill(e)] }, type: 'number', visual: () => kpm([...range(gp).map(() => kspan(e, per)), kop('='), kop('?')]), prompt: S('Koľko je spolu?', 'How many altogether?'), data: { answer: gp * per },
     hints: [S('Spočítaj jednu skupinku.', 'Count one group.'), S('Teraz pripočítaj ďalšie skupinky.', 'Now add the other groups.')], explain: [S(`${range(gp).map(() => per).join(' + ')} = ${gp * per}`, `${range(gp).map(() => per).join(' + ')} = ${gp * per}`)] };
 });
 
 reg('sharing', 'word', 2, c => {
   const { r, D } = c, kids = ri(r, 2, Math.min(5, 2 + Math.floor(D * 4))), per = ri(r, 2, Math.min(7, 3 + Math.floor(D * 5))), e = pick(['🍪', '🍎', '🍬', '🍓', '⭐', '🎈'], r), who = shuffle(['👧', '👦', '🧒', '👶', '🧑'], r).slice(0, kids);
-  return { title: S('Rozdeľ rovnako', 'Share equally'), type: 'number', visual: () => `<div class="cmp"><div>${e.repeat(kids * per)}</div><div>${who.join(' ')}</div></div>`, prompt: S('Rozdeľ rovnako. Koľko dostane každé dieťa?', 'Share equally. How many does each child get?'), data: { answer: per },
+  return { title: S('Rozdeľ rovnako', 'Share equally'), sim: { kind: 'share', kids, total: kids * per, e, who }, type: 'number', visual: () => `<div class="cmp"><div>${e.repeat(kids * per)}</div><div>${who.join(' ')}</div></div>`, prompt: S('Rozdeľ rovnako. Koľko dostane každé dieťa?', 'Share equally. How many does each child get?'), data: { answer: per },
     hints: [S('Dávaj každému po jednom, kým sa nerozdá všetko.', 'Give each child one at a time until all are given out.'), S('Spočítaj, koľko má jedno dieťa.', 'Count how many one child has.')], explain: [S(`${kids * per} : ${kids} = ${per}`, `${kids * per} : ${kids} = ${per}`)] };
 });
 
@@ -57,14 +57,14 @@ reg('numline', 'seq', 2, c => {
 reg('shapecount', 'geom', 2, c => {
   const { r, D } = c, pool = shuffle(['🔺', '🟦', '🔵', '⭐', '🟨', '🟢'], r).slice(0, ri(r, 3, 4)), total = lerp(8, 18, D), items = range(total).map(() => pick(pool, r)), target = pick(pool, r); if (!items.includes(target)) items[0] = target;
   const cntT = items.filter(x => x === target).length;
-  return { title: S('Spočítaj tvary', 'Count the shapes'), type: 'number', visual: () => vEmo(items), prompt: S(`Koľko ${target} vidíš?`, `How many ${target} do you see?`), data: { answer: cntT },
+  return { title: S('Spočítaj tvary', 'Count the shapes'), sim: { kind: 'tapcount', rows: [items] }, type: 'number', visual: () => vEmo(items), prompt: S(`Koľko ${target} vidíš?`, `How many ${target} do you see?`), data: { answer: cntT },
     hints: [S('Každý tvar označ prstom.', 'Touch each shape with your finger.'), S('Počítaj len tie, ktoré hľadáš.', 'Count only the ones you look for.')], explain: [S(`Je ich ${cntT}.`, `There are ${cntT}.`)] };
 });
 
 reg('maketen', 'algebra', 2, c => {
   const { r, D } = c, T = D < .35 ? 10 : D < .65 ? pick([10, 20], r) : pick([20, 50, 100], r), a = T <= 20 ? ri(r, 1, T - 1) : ri(r, 1, T / 10 - 1) * 10 + (T === 100 ? 0 : ri(r, 0, 4) * 2);
   if (a <= 0 || a >= T) return null;
-  return { title: S('Doplň do ' + T, 'Make ' + T), type: 'number', visual: () => `<div class="eqbig">${a} + ? = ${T}</div>`, prompt: S('Doplň číslo.', 'Fill in the number.'), data: { answer: T - a },
+  return { title: S('Doplň do ' + T, 'Make ' + T), sim: T <= 20 ? { kind: 'tenframe', T, a } : null, type: 'number', visual: () => `<div class="eqbig">${a} + ? = ${T}</div>`, prompt: S('Doplň číslo.', 'Fill in the number.'), data: { answer: T - a },
     hints: [S(`Počítaj od ${a} až po ${T}.`, `Count up from ${a} to ${T}.`), S('Koľko krokov si urobil?', 'How many steps did you take?')], explain: [S(`${a} + ${T - a} = ${T}`, `${a} + ${T - a} = ${T}`)] };
 });
 

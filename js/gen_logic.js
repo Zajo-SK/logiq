@@ -214,7 +214,7 @@ reg('numberclue', 'truth', 2, c => {
   for (const cl of shuffle(clues, r)) { const nx = cand.filter(cl.f); if (nx.length < cand.length) { used.push({ cl, before: cand.length, after: nx.length }); cand = nx; } if (cand.length === 1) break; }
   if (cand.length !== 1 || used.length < 2 || used.length > 6) return null;
   return {
-    title: S('Hádaj moje číslo', 'Guess my number'), type: 'number',
+    title: S('Hádaj moje číslo', 'Guess my number'), sim: hi <= 120 ? { kind: 'chart', hi } : null, type: 'number',
     visual: () => vList(used.map(u => esc(tx(u.cl.t)))),
     prompt: S(`Myslím si číslo od 1 do ${hi}. Platí o ňom všetko zo zoznamu. Aké je to číslo?`, `I am thinking of a number from 1 to ${hi}. Everything on the list is true. Which number is it?`),
     data: { answer: N },
@@ -261,7 +261,7 @@ reg('assign', 'logic', 2, c => {
   for (let i = clues.length - 1; i >= 0; i--) { const rest = clues.filter((_, j) => j !== i); if (all.filter(p => rest.every(cl => cl.f(p))).length === 1) clues = rest; }
   const who = ri(r, 0, n - 1);
   return {
-    title: S('Kto má ktoré zviera?', 'Who owns which pet?'), type: 'choice',
+    title: S('Kto má ktoré zviera?', 'Who owns which pet?'), sim: { kind: 'logicgrid', rows: P, cols: items.map(i => i.e) }, type: 'choice',
     visual: () => vList(clues.map(cl => esc(tx(cl.t)))),
     prompt: S(`${J(P, 'sk')} majú každý jedno zviera: ${items.map(i => i.e).join(' ')}. Čo má ${P[who]}?`, `${J(P, 'en')} each have one pet: ${items.map(i => i.e).join(' ')}. What does ${P[who]} have?`),
     data: { options: items.map(i => S(i.e + ' ' + i.n.sk, i.e + ' ' + i.n.en)), correct: hidden[who], cols: n > 3 ? 2 : 3 },
