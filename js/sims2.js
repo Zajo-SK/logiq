@@ -141,12 +141,15 @@ SIM_KINDS.tapcount = ({ rows }) => {
   return simWrap(L2('Ťukaj na obrázky a počítaj. Číslo sa zväčší s každým ťuknutím.', 'Tap the pictures to count. The number grows with every tap.'), wrap, h('div', { class: 'simctl' }, simBtn('↺', () => { marked.forEach(s => s.clear()); draw(); })));
 };
 
-/* ---- ten frame ---- */
+/* ---- ten frame: more free cells than needed, count to exactly T ---- */
 SIM_KINDS.tenframe = ({ T, a }) => {
-  const add = new Set(), grid = h('div', { class: 'tenf' }), info = h('p', { class: 'siminfo', role: 'status' });
-  function draw() { grid.replaceChildren(...range(T).map(i => i < a ? h('span', { class: 'tcell full' }, '🟡') : h('button', { type: 'button', class: 'tcell' + (add.has(i) ? ' add' : ''), 'aria-pressed': add.has(i), onclick: () => { add.has(i) ? add.delete(i) : add.add(i); simTap(); draw(); } }, add.has(i) ? '🔴' : ''))); info.textContent = a + add.size >= T ? `🎉 ${a} + ${add.size} = ${a + add.size}` : `${a} + ${add.size} = ${a + add.size}`; }
+  const total = Math.ceil((T + 10) / 5) * 5, add = new Set(), grid = h('div', { class: 'tenf' }), info = h('p', { class: 'siminfo', role: 'status' });
+  function draw() {
+    grid.replaceChildren(...range(total).map(i => i < a ? h('span', { class: 'tcell full' }, '🟡') : h('button', { type: 'button', class: 'tcell' + (add.has(i) ? ' add' : ''), 'aria-pressed': add.has(i), onclick: () => { add.has(i) ? add.delete(i) : add.add(i); simTap(); draw(); } }, add.has(i) ? '🔴' : '')));
+    const sum = a + add.size; info.textContent = `${a} + ${add.size} = ${sum}` + (sum === T ? ` 🎉 ${L2('Presne ' + T + '!', 'Exactly ' + T + '!')}` : sum > T ? ' · ' + L2('To je viac než ' + T + '.', 'That is more than ' + T + '.') : ' · ' + L2('Cieľ: ' + T, 'Goal: ' + T));
+  }
   draw();
-  return simWrap(L2('Žlté sú už dané. Ťukaním pridaj červené, kým nie je rámček plný.', 'Yellow ones are given. Tap to add red ones until the frame is full.'), grid, info, h('div', { class: 'simctl' }, simBtn('↺', () => { add.clear(); draw(); })));
+  return simWrap(L2(`Žlté sú dané. Pridaj červené tak, aby ich bolo spolu presne ${T}. Voľných políčok je viac!`, `Yellow ones are given. Add red ones so there are exactly ${T} in all. There are more free cells than you need!`), grid, info, h('div', { class: 'simctl' }, simBtn('↺', () => { add.clear(); draw(); })));
 };
 
 /* ---- place dominoes ---- */

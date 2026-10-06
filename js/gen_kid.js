@@ -1,12 +1,14 @@
 'use strict';
 /* LogiQ – picture-based tasks with minimal text for the youngest students (grades 2–3/4), plus age gating of abstract families. */
 const KEMO = ['🍎', '🍌', '🍇', '🍓', '🐶', '🐱', '🐸', '🐥', '⭐', '🔵', '🔺', '🟩', '🚗', '🎈', '🌸', '⚽'];
+/* difficulty inside the kid range (grades 2–3): grade 2 spans 0–.55, grade 3 spans .45–1 */
+const kd = c => c.g <= 2 ? clamp((c.D - .03) / .11 * .55, 0, .6) : c.g === 3 ? clamp(.45 + (c.D - .14) / .12 * .55, .4, 1) : 1;
 const kpm = (parts) => `<div class="pm">${parts.join('')}</div>`;
 const kspan = (e, n) => `<span class="pmg">${e.repeat(n)}</span>`;
 const kop = x => `<b class="pmop">${x}</b>`;
 
 reg('emopattern', 'seq', 2, c => {
-  const { r, D } = c, pats = D < .3 ? ['AB', 'AAB', 'ABB'] : D < .6 ? ['AAB', 'ABC', 'ABB', 'AABB'] : ['ABC', 'AABB', 'ABAC', 'AABC'];
+  const { r } = c, D = kd(c), pats = D < .3 ? ['AB', 'AAB', 'ABB'] : D < .6 ? ['AAB', 'ABC', 'ABB', 'AABB'] : ['ABC', 'AABB', 'ABAC', 'AABC'];
   const p = pick(pats, r), letters = [...new Set(p)], em = shuffle(KEMO, r).slice(0, letters.length + 2), map = {}; letters.forEach((l, i) => map[l] = em[i]);
   const L = p.length * 2 + ri(r, 0, p.length - 1), items = range(L).map(i => map[p[i % p.length]]), next = map[p[L % p.length]];
   const opts = shuffle([next, ...shuffle(em.filter(x => x !== next), r).slice(0, 2)], r), unit = p.split('').map(l => map[l]).join(' ');
@@ -22,7 +24,7 @@ reg('oddone', 'logic', 2, c => {
 });
 
 reg('compare', 'data', 2, c => {
-  const { r, D, k } = c, e1 = pick(KEMO, r), e2 = pick(KEMO.filter(x => x !== e1), r), mx = lerp(5, 12, D); let a = ri(r, 1, mx), b = ri(r, 1, mx); if (k % 4 === 3) b = a;
+  const { r, k } = c, D = kd(c), e1 = pick(KEMO, r), e2 = pick(KEMO.filter(x => x !== e1), r), mx = lerp(5, 12, D); let a = ri(r, 1, mx), b = ri(r, 1, mx); if (k % 4 === 3) b = a;
   const vis = () => `<div class="cmp"><div>${e1.repeat(a)}</div><div>${e2.repeat(b)}</div></div>`;
   if (k % 3 === 2 && a !== b) { const big = Math.abs(a - b); return { title: S('O koľko viac?', 'How many more?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e1), Array(b).fill(e2)] }, type: 'number', visual: vis, prompt: S(`O koľko je ${a > b ? e1 : e2} viac?`, `How many more ${a > b ? e1 : e2} are there?`), data: { answer: big },
     hints: [S('Spáruj obrázky z oboch riadkov.', 'Pair up the pictures from both rows.'), S('Spočítaj, čo ostalo bez páru.', 'Count what has no partner.')], explain: [S('Každému z menšieho riadku priraď jeden z väčšieho.', 'Match each in the shorter row with one in the longer.'), S(`Bez páru ostáva ${big}.`, `${big} are left without a partner.`)] }; }
@@ -32,7 +34,7 @@ reg('compare', 'data', 2, c => {
 });
 
 reg('picmath', 'word', 2, c => {
-  const { r, D, g, k } = c, e = pick(KEMO, r), mx = lerp(6, g <= 2 ? 15 : 25, D), v = k % 3;
+  const { r, g, k } = c, D = kd(c), e = pick(KEMO, r), mx = lerp(8, 30, D), v = k % 3;
   if (v === 0) { const a = ri(r, 1, mx - 2), b = ri(r, 1, mx - a); return { title: S('Koľko spolu?', 'How many in all?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e), Array(b).fill(e)] }, type: 'number', visual: () => kpm([kspan(e, a), kop('+'), kspan(e, b), kop('='), kop('?')]), prompt: S('Koľko je spolu?', 'How many altogether?'), data: { answer: a + b },
     hints: [S('Spočítaj všetky obrázky.', 'Count all the pictures.'), S('Najprv prvú skupinku, potom pridaj druhú.', 'Count the first group, then add the second.')], explain: [S(`${a} + ${b} = ${a + b}`, `${a} + ${b} = ${a + b}`)] }; }
   if (v === 1) { const a = ri(r, 3, mx), b = ri(r, 1, a - 1); return { title: S('Koľko ostane?', 'How many are left?'), sim: { kind: 'tapcount', rows: [Array(a).fill(e)] }, type: 'number', visual: () => kpm([kspan(e, a), kop('−'), kspan('❌', b), kop('='), kop('?')]), prompt: S('Koľko ostane?', 'How many are left?'), data: { answer: a - b },
@@ -43,33 +45,34 @@ reg('picmath', 'word', 2, c => {
 });
 
 reg('sharing', 'word', 2, c => {
-  const { r, D } = c, kids = ri(r, 2, Math.min(5, 2 + Math.floor(D * 4))), per = ri(r, 2, Math.min(7, 3 + Math.floor(D * 5))), e = pick(['🍪', '🍎', '🍬', '🍓', '⭐', '🎈'], r), who = shuffle(['👧', '👦', '🧒', '👶', '🧑'], r).slice(0, kids);
+  const { r } = c, D = kd(c), kids = ri(r, 2, Math.min(5, 2 + Math.floor(D * 4))), per = ri(r, 2, Math.min(7, 3 + Math.floor(D * 5))), e = pick(['🍪', '🍎', '🍬', '🍓', '⭐', '🎈'], r), who = shuffle(['👧', '👦', '🧒', '👶', '🧑'], r).slice(0, kids);
   return { title: S('Rozdeľ rovnako', 'Share equally'), sim: { kind: 'share', kids, total: kids * per, e, who }, type: 'number', visual: () => `<div class="cmp"><div>${e.repeat(kids * per)}</div><div>${who.join(' ')}</div></div>`, prompt: S('Rozdeľ rovnako. Koľko dostane každé dieťa?', 'Share equally. How many does each child get?'), data: { answer: per },
     hints: [S('Dávaj každému po jednom, kým sa nerozdá všetko.', 'Give each child one at a time until all are given out.'), S('Spočítaj, koľko má jedno dieťa.', 'Count how many one child has.')], explain: [S(`${kids * per} : ${kids} = ${per}`, `${kids * per} : ${kids} = ${per}`)] };
 });
 
 reg('numline', 'seq', 2, c => {
-  const { r, D } = c, step = pick(D < .3 ? [1, 1, 2] : D < .65 ? [1, 2, 5, 10] : [2, 5, 10, 3, 4], r), start = ri(r, 0, Math.max(3, lerp(8, 60, D))) * (step > 1 && r() < .5 ? 1 : 1), len = 5, hole = ri(r, 1, len - 1), terms = range(len).map(i => start + i * step), ans = terms[hole];
+  const { r } = c, D = kd(c), step = pick(D < .3 ? [1, 1, 2] : D < .65 ? [1, 2, 5, 10] : [2, 5, 10, 3, 4], r), start = ri(r, 0, Math.max(3, lerp(8, 60, D))) * (step > 1 && r() < .5 ? 1 : 1), len = 5, hole = ri(r, 1, len - 1), terms = range(len).map(i => start + i * step), ans = terms[hole];
   return { title: S('Aké číslo chýba?', 'Which number is missing?'), type: 'number', visual: () => `<div class="seqrow">${terms.map((x, i) => `<span class="${i === hole ? 'q' : ''}">${i === hole ? '?' : x}</span>`).join('<i>,</i>')}</div>`, prompt: S('Aké číslo chýba?', 'Which number is missing?'), data: { answer: ans },
     hints: [S('O koľko sa čísla menia?', 'By how much do the numbers change?'), S('Pridaj to isté číslo.', 'Add the same number.')], explain: [S(`Pridávame ${step}. Chýba ${ans}.`, `We add ${step}. The missing number is ${ans}.`)] };
 });
 
 reg('shapecount', 'geom', 2, c => {
-  const { r, D } = c, pool = shuffle(['🔺', '🟦', '🔵', '⭐', '🟨', '🟢'], r).slice(0, ri(r, 3, 4)), total = lerp(8, 18, D), items = range(total).map(() => pick(pool, r)), target = pick(pool, r); if (!items.includes(target)) items[0] = target;
+  const { r } = c, D = kd(c), pool = shuffle(['🔺', '🟦', '🔵', '⭐', '🟨', '🟢'], r).slice(0, ri(r, 3, 4)), total = lerp(8, 18, D), items = range(total).map(() => pick(pool, r)), target = pick(pool, r); if (!items.includes(target)) items[0] = target;
   const cntT = items.filter(x => x === target).length;
   return { title: S('Spočítaj tvary', 'Count the shapes'), sim: { kind: 'tapcount', rows: [items] }, type: 'number', visual: () => vEmo(items), prompt: S(`Koľko ${target} vidíš?`, `How many ${target} do you see?`), data: { answer: cntT },
     hints: [S('Každý tvar označ prstom.', 'Touch each shape with your finger.'), S('Počítaj len tie, ktoré hľadáš.', 'Count only the ones you look for.')], explain: [S(`Je ich ${cntT}.`, `There are ${cntT}.`)] };
 });
 
 reg('maketen', 'algebra', 2, c => {
-  const { r, D } = c, T = D < .35 ? 10 : D < .65 ? pick([10, 20], r) : pick([20, 50, 100], r), a = T <= 20 ? ri(r, 1, T - 1) : ri(r, 1, T / 10 - 1) * 10 + (T === 100 ? 0 : ri(r, 0, 4) * 2);
+  const { r } = c, D = kd(c), T = D < .1 ? 10 : D < .3 ? pick([10, 20], r) : D < .55 ? pick([20, 50], r) : D < .8 ? pick([50, 100], r) : pick([100, 200], r);
+  const a = T <= 20 ? ri(r, 1, T - 1) : T === 50 ? ri(r, 3, 47) : T === 100 ? ri(r, 5, 95) : ri(r, 10, 190);
   if (a <= 0 || a >= T) return null;
-  return { title: S('Doplň do ' + T, 'Make ' + T), sim: T <= 20 ? { kind: 'tenframe', T, a } : null, type: 'number', visual: () => `<div class="eqbig">${a} + ? = ${T}</div>`, prompt: S('Doplň číslo.', 'Fill in the number.'), data: { answer: T - a },
+  return { title: S('Doplň do ' + T, 'Make ' + T), sim: T <= 50 ? { kind: 'tenframe', T, a } : null, type: 'number', visual: () => `<div class="eqbig">${a} + ? = ${T}</div>`, prompt: S('Doplň číslo.', 'Fill in the number.'), data: { answer: T - a },
     hints: [S(`Počítaj od ${a} až po ${T}.`, `Count up from ${a} to ${T}.`), S('Koľko krokov si urobil?', 'How many steps did you take?')], explain: [S(`${a} + ${T - a} = ${T}`, `${a} + ${T - a} = ${T}`)] };
 });
 
 reg('missing', 'algebra', 2, c => {
-  const { r, D } = c, mx = lerp(10, 40, D), forms = D < .3 ? [0, 1] : D < .65 ? [0, 1, 2, 3] : [0, 1, 2, 3, 4], f = pick(forms, r);
+  const { r } = c, D = kd(c), mx = lerp(12, 80, D), forms = D < .1 ? [0, 1] : D < .25 ? [0, 1, 2] : D < .5 ? [0, 1, 2, 3] : [0, 1, 2, 3, 4], f = pick(forms, r);
   let a, b, cc, txt, ans;
   if (f === 0) { b = ri(r, 1, mx); ans = ri(r, 1, mx); cc = ans + b; txt = `? + ${b} = ${cc}`; }
   else if (f === 1) { a = ri(r, 1, mx); ans = ri(r, 1, mx); cc = a + ans; txt = `${a} + ? = ${cc}`; }
