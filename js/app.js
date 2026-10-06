@@ -134,7 +134,7 @@ function renderHeader(r) {
 const NAV = [['home', 'home'], ['map', 'map'], ['daily', 'daily'], ['collection', 'collection'], ['badges', 'badges'], ['profile', 'profile']];
 function renderNav(r) {
   const nav = $('#nav'); nav.replaceChildren();
-  const active = { level: 'map', done: 'map', play: 'map', practice: 'collection', train: 'collection', hanoi: 'collection', sudoku: 'collection', dplay: 'daily' }[r.name] || r.name;
+  const active = { level: 'map', done: 'map', play: 'map', practice: 'collection', train: 'collection', hanoi: 'collection', sudoku: 'collection', frogs: 'collection', dplay: 'daily' }[r.name] || r.name;
   NAV.forEach(([route, icon]) => nav.append(h('a', { href: '#/' + route, class: active === route ? 'on' : '', 'aria-current': active === route ? 'page' : null, html: ic(icon) + `<span>${esc(t('nav_' + route))}</span>` })));
 }
 function route() { const p = location.hash.replace(/^#\/?/, '').split('/'); return { name: p[0] || 'home', args: p.slice(1) }; }
@@ -217,7 +217,7 @@ VIEWS.home = (v) => {
         h('div', null, h('h2', null, t('yourProgress')), h('p', null, t('levelsDone', { a: doneLv, b: seq.length })), btn(t('openMap'), 'ghost small', () => go('#/map')))),
       card('daily-card', h('div', { class: 'dc-ico', 'aria-hidden': 'true' }, dDone ? '✅' : '📅'),
         h('div', null, h('h2', null, t('nav_daily')), h('p', null, dDone ? t('dailyDone') : `${CATS[dt.cat].icon} ${tx(CATS[dt.cat].n)}`), btn(dDone ? t('seeDaily') : t('playDaily'), dDone ? 'ghost small' : 'primary small', () => go('#/daily'))))),
-    card('', h('h2', null, '🎮 ' + t('gamesTitle')), h('div', { class: 'recs' }, h('p', { class: 'muted' }, t('hanoiLead')), h('div', { class: 'btnrow left' }, btn('🗼 ' + t('hanoiGame') + ' ▸', 'ghost', () => go('#/hanoi')), btn('🧩 Sudoku ▸', 'ghost', () => go('#/sudoku'))))),
+    card('', h('h2', null, '🎮 ' + t('gamesTitle')), h('div', { class: 'recs' }, h('p', { class: 'muted' }, t('hanoiLead')), h('div', { class: 'btnrow left' }, btn('🗼 ' + t('hanoiGame') + ' ▸', 'ghost', () => go('#/hanoi')), btn('🧩 Sudoku ▸', 'ghost', () => go('#/sudoku')), btn('🐸 ' + L2('Žabky', 'Frogs') + ' ▸', 'ghost', () => go('#/frogs'))))),
     card('recs', h('h2', null, t('recommended')),
       h('ul', { class: 'reclist' }, recs.length ? recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), rc.go ? h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸') : null)) : h('li', null, t('recNone')))),
     sg.length ? card('', h('h2', null, t('strongAreas')), h('div', { class: 'bars2' }, sg.map(s => h('div', { class: 'bar2' }, h('span', null, CATS[s.cat].icon + ' ' + tx(CATS[s.cat].n)), h('div', { class: 'track', role: 'img', 'aria-label': s.avg.toFixed(1) + '/3' }, h('div', { style: `width:${s.avg / 3 * 100}%` })), h('b', null, s.avg.toFixed(1) + '★'))))) : null));
@@ -337,6 +337,7 @@ VIEWS.collection = (v) => {
     h('div', { class: 'btnrow left' }, btn('🎲 ' + t('randomTask'), 'ghost', () => { const p = list.length ? list : Object.values(TASKS); go('#/practice/' + p[Math.floor(Math.random() * p.length)].id); })),
     h('h2', { class: 'section-h' }, '🎮 ' + t('gamesTitle')),
     h('div', { class: 'tgrid' }, h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/hanoi') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🗼'), h('span', { class: 'tc-new' }, '★')), h('b', null, t('hanoiGame')), h('small', null, t('hanoiLead'))),
+      h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/frogs') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🐸'), h('span', { class: 'tc-new' }, '★')), h('b', null, L2('Skákajúce žabky', 'Leaping frogs')), h('small', null, L2('Vymeň zelené a hnedé žabky', 'Swap the green and brown frogs'))),
       h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/sudoku') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🧩'), h('span', { class: 'tc-new' }, '★')), h('b', null, 'Sudoku'), h('small', null, L2('3×3, 4×4, 6×6 a 9×9 · 3 obtiažnosti · poznámky a nápovedy', '3×3, 4×4, 6×6 and 9×9 · 3 levels · notes and hints')))),
     h('h2', { class: 'section-h' }, '♾️ ' + t('trainSets')), h('p', { class: 'muted' }, t('trainLead')),
     h('div', { class: 'tgrid' }, Object.values(GF).filter(f => f.min <= g && (colFilter.cat === 'all' || f.cat === colFilter.cat)).map(f => {
