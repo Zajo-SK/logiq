@@ -1,14 +1,14 @@
 'use strict';
 /* LogiQ – leaping frogs: n frogs → on the left, n frogs ← on the right, one empty lily pad. A frog steps to the free pad ahead or jumps over ONE frog of the other kind.
-   Fewest moves = n² + 2n. Used as: interactive task, "how many moves" task with a try-it panel, and a stand-alone game. */
+   Fewest moves = n² + 2n (the jump rule: over any ONE frog if the pad behind it is free). Used as: interactive task, "how many moves" task with a try-it panel, and a stand-alone game. */
 const Frogs = {
   start: n => '>'.repeat(n) + '_' + '<'.repeat(n),
   goal: n => '<'.repeat(n) + '_' + '>'.repeat(n),
   moves(s) {
     const out = [];
     for (let i = 0; i < s.length; i++) {
-      if (s[i] === '>') { if (s[i + 1] === '_') out.push([i, i + 1]); else if (s[i + 1] === '<' && s[i + 2] === '_') out.push([i, i + 2]); }
-      else if (s[i] === '<') { if (s[i - 1] === '_') out.push([i, i - 1]); else if (s[i - 1] === '>' && s[i - 2] === '_') out.push([i, i - 2]); }
+      if (s[i] === '>') { if (s[i + 1] === '_') out.push([i, i + 1]); else if (s[i + 1] !== '_' && s[i + 2] === '_') out.push([i, i + 2]); }
+      else if (s[i] === '<') { if (s[i - 1] === '_') out.push([i, i - 1]); else if (s[i - 1] !== '_' && s[i - 2] === '_') out.push([i, i - 2]); }
     }
     return out;
   },
@@ -24,7 +24,7 @@ const Frogs = {
   }
 };
 const FROG_THEMES = [{ a: '🐸', b: '🐸', brown: true }, { a: '🐰', b: '🐻' }, { a: '🐭', b: '🐱' }, { a: '🦆', b: '🐔' }];
-const FROG_RULES = S('Zelené 🐸 skáču len doprava →, hnedé len doľava ←. Krok na voľný lístok alebo skok cez jednu žabku inej farby. Späť sa nedá. Vymeň ich miesta!', 'Green 🐸 only hop right →, brown ones only left ←. Step to the free pad or jump over one frog of the other kind. No going back. Swap their places!');
+const FROG_RULES = S('Zelené 🐸 skáču len doprava →, hnedé len doľava ←. Krok na voľný lístok alebo skok cez jednu žabku (akúkoľvek), ak je za ňou voľné miesto. Späť sa nedá. Vymeň ich miesta!', 'Green 🐸 only hop right →, brown ones only left ←. Step to the free pad, or jump over ONE frog (any colour) if the pad behind it is free. No going back. Swap their places!');
 const frogsIntro = () => `<div class="intro-in"><p>${esc(tx(FROG_RULES))}</p><div class="frogs demo" style="--n:5">${['>', '>', '_', '<', '<'].map((c, i) => `<span class="pad">${c === '_' ? '' : `<span class="frog ${c === '>' ? 'g' : 'b'}">🐸<i>${c === '>' ? '→' : '←'}</i></span>`}</span>`).join('')}</div></div>`;
 
 /* shared widget: returns {el, dynHint, reset} */
@@ -62,7 +62,7 @@ TaskTypes.frogs = {
   explainSteps(task) {
     const n = task.data.n, p = Frogs.solve(Frogs.start(n), n), th = FROG_THEMES[task.data.theme || 0];
     const draw = s => h('div', { class: 'frogs demo', style: `--n:${s.length}` }, [...s].map(c => h('span', { class: 'pad' }, c === '_' ? null : h('span', { class: 'frog ' + (c === '>' ? 'g' : 'b') + (c === '<' && th.brown ? ' brown' : '') }, c === '>' ? th.a : th.b, h('i', null, c === '>' ? '→' : '←')))));
-    return [{ text: S(`Trik: skáč tak, aby sa žabky vždy striedali – posuň, preskoč, preskoč, posuň… Najmenší počet ťahov je ${n}² + 2·${n} = ${p.length}.`, `Trick: keep the frogs alternating – step, jump, jump, step… The fewest moves is ${n}² + 2·${n} = ${p.length}.`) },
+    return [{ text: S(`Trik: skáč tak, aby sa žabky striedali – posuň, preskoč, preskoč, posuň… (Skok cez žabku rovnakej farby nepomáha.) Najmenší počet ťahov je ${n}² + 2·${n} = ${p.length}.`, `Trick: keep the frogs alternating – step, jump, jump, step… (Jumping a same-colour frog does not help.) The fewest moves is ${n}² + 2·${n} = ${p.length}.`) },
       { text: S('Takto vyzerá celé riešenie:', 'Here is the whole solution:'), render: b => { b.append(draw(Frogs.start(n))); p.forEach(x => b.append(draw(x.to))); } }];
   }
 };
