@@ -137,7 +137,7 @@ TaskTypes.sort = {
 };
 
 /* ---------------- sudoku (4×4, 6×6, 9×9) ---------------- */
-function sudokuDims(n) { return n === 4 ? [2, 2] : n === 6 ? [2, 3] : [3, 3]; }
+function sudokuDims(n) { return n === 3 ? [1, 3] : n === 4 ? [2, 2] : n === 6 ? [2, 3] : [3, 3]; }
 function sudokuCands(g, n, br, bc, r, c) {
   const used = new Set();
   for (let i = 0; i < n; i++) { used.add(g[r][i]); used.add(g[i][c]); }
@@ -177,7 +177,7 @@ function miniSudoku(P, grid, hl) {
   const g = h('div', { class: 'minisud', style: `--n:${P.n}` });
   for (let r = 0; r < P.n; r++) for (let c = 0; c < P.n; c++) {
     const cl = ['mc'];
-    if (c % P.bc === P.bc - 1 && c < P.n - 1) cl.push('br'); if (r % P.br === P.br - 1 && r < P.n - 1) cl.push('bb');
+    if (c % P.bc === P.bc - 1 && c < P.n - 1) cl.push('br'); if (P.br > 1 && r % P.br === P.br - 1 && r < P.n - 1) cl.push('bb');
     if (hl && hl.r === r && hl.c === c) cl.push('hl');
     if (P.given[r][c]) cl.push('gv');
     g.append(h('span', { class: cl.join(' ') }, grid[r][c] || ''));
@@ -195,7 +195,7 @@ TaskTypes.sudoku = {
     const cells = [];
     for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) {
       const cl = ['sc'];
-      if (c % bc === bc - 1 && c < n - 1) cl.push('br'); if (r % br === br - 1 && r < n - 1) cl.push('bb');
+      if (c % bc === bc - 1 && c < n - 1) cl.push('br'); if (br > 1 && r % br === br - 1 && r < n - 1) cl.push('bb');
       const b = h('button', { type: 'button', class: cl.join(' '), role: 'gridcell', 'aria-label': `${t('row')} ${r + 1}, ${t('col')} ${c + 1}`, onclick: () => { if (!P.given[r][c]) { sel = [r, c]; draw(); } } });
       cells.push(b); grid.append(b);
     }
@@ -565,6 +565,7 @@ TaskTypes.nim = {
     function cpu() {
       const g = D.g; if (g.turn !== 'cpu' || g.over) return;
       const best = Nim.best(g.piles, d.moves, d.misere, memo), all = Nim.moves(g.piles, d.moves);
+      if (!all.length) return;
       const m = (best.length ? best : all)[Math.floor(Math.random() * (best.length || all.length))];
       g.piles[m.i] -= m.t; g.log.push({ who: 'cpu', t: m.t, i: m.i });
       if (!Nim.moves(g.piles, d.moves).length) return finish('cpu');
