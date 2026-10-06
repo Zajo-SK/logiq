@@ -3,24 +3,25 @@
    Each grade has 8 worlds × 7 levels × 10 tasks = 560 tasks, all deterministic from (grade, world, slot). */
 const WORLD_DEFS = [
   { key: 'strat', icon: '🎮', color: '#6a4cf0', name: S('Hry a stratégia', 'Games & strategy'), desc: S('Nájdi víťaznú stratégiu a poraz počítač.', 'Find the winning strategy and beat the computer.'), fams: ['subgame', 'nimplay', 'pilesgame', 'chocolate', 'knockout'] },
-  { key: 'truth', icon: '🕵️', color: '#0a8f9a', name: S('Pravda, lož a dedukcia', 'Truth, lies & deduction'), desc: S('Rytieri, luhári, podozriví a tajné čísla.', 'Knights, liars, suspects and secret numbers.'), fams: ['knights', 'culprit', 'numberclue'] },
-  { key: 'logic', icon: '🧠', color: '#b3417a', name: S('Logické uvažovanie', 'Logical reasoning'), desc: S('Poradia, priradenia a správne závery.', 'Orderings, matchings and valid conclusions.'), fams: ['ordering', 'assign', 'syllogism'] },
-  { key: 'combi', icon: '🎲', color: '#c46b00', name: S('Kombinatorika', 'Combinatorics'), desc: S('Koľkými spôsobmi sa to dá? Počítaj múdro.', 'In how many ways? Count cleverly.'), fams: ['perm', 'choose', 'product', 'pathgrid', 'pigeon', 'multiset'] },
-  { key: 'num', icon: '🔢', color: '#2f6fd1', name: S('Čísla a vzory', 'Numbers & patterns'), desc: S('Rady, magické štvorce, kryptogramy.', 'Sequences, magic squares, cryptarithms.'), fams: ['seq', 'magic', 'symbols', 'cryptarithm'] },
-  { key: 'space', icon: '🧊', color: '#0f8a5f', name: S('Priestor a tvary', 'Space & shapes'), desc: S('Kocky, mriežky, obsahy a stavby.', 'Cubes, grids, areas and buildings.'), fams: ['paintedcube', 'squares', 'towers', 'areas'] },
+  { key: 'truth', icon: '🕵️', color: '#0a8f9a', name: S('Pravda, lož a dedukcia', 'Truth, lies & deduction'), desc: S('Rytieri, luhári, podozriví a tajné čísla.', 'Knights, liars, suspects and secret numbers.'), fams: ['knights', 'culprit', 'numberclue', 'oddone', 'compare'] },
+  { key: 'logic', icon: '🧠', color: '#b3417a', name: S('Logické uvažovanie', 'Logical reasoning'), desc: S('Poradia, priradenia a správne závery.', 'Orderings, matchings and valid conclusions.'), fams: ['ordering', 'assign', 'syllogism', 'emopattern'] },
+  { key: 'combi', icon: '🎲', color: '#c46b00', name: S('Kombinatorika', 'Combinatorics'), desc: S('Koľkými spôsobmi sa to dá? Počítaj múdro.', 'In how many ways? Count cleverly.'), fams: ['perm', 'choose', 'product', 'pathgrid', 'pigeon', 'multiset', 'picmath', 'sharing'] },
+  { key: 'num', icon: '🔢', color: '#2f6fd1', name: S('Čísla a vzory', 'Numbers & patterns'), desc: S('Rady, magické štvorce, kryptogramy.', 'Sequences, magic squares, cryptarithms.'), fams: ['seq', 'magic', 'symbols', 'cryptarithm', 'numline'] },
+  { key: 'space', icon: '🧊', color: '#0f8a5f', name: S('Priestor a tvary', 'Space & shapes'), desc: S('Kocky, mriežky, obsahy a stavby.', 'Cubes, grids, areas and buildings.'), fams: ['paintedcube', 'squares', 'towers', 'areas', 'shapecount'] },
   { key: 'puzzle', icon: '🧩', color: '#7a4cc4', name: S('Hlavolamy', 'Brain-teasers'), desc: S('Sudoku, svetlá, bludiská, mosty a džbány.', 'Sudoku, lights, mazes, bridges and jugs.'), fams: ['sudoku', 'lights', 'maze', 'bridge', 'jugs', 'weighing'] },
   { key: 'chess', icon: '♟️', color: '#1d6f6f', name: S('Šach a Hanoj', 'Chess & Hanoi'), desc: S('Ako sa hýbu figúrky, domino a Hanojské veže.', 'How the pieces move, dominoes and the Tower of Hanoi.'), fams: ['chessmoves', 'chessreach', 'chessnon', 'chessplay', 'domino', 'rice', 'hanoi'] },
-  { key: 'olymp', icon: '🏆', color: '#a8341f', name: S('Matematická olympiáda', 'Maths olympiad'), desc: S('Algebra, deliteľnosť, pravdepodobnosť a čas.', 'Algebra, divisibility, probability and time.'), fams: ['algebra', 'numtheory', 'prob', 'percent', 'clock'] }
+  { key: 'olymp', icon: '🏆', color: '#a8341f', name: S('Matematická olympiáda', 'Maths olympiad'), desc: S('Algebra, deliteľnosť, pravdepodobnosť a čas.', 'Algebra, divisibility, probability and time.'), fams: ['algebra', 'numtheory', 'prob', 'percent', 'clock', 'maketen', 'missing'] }
 ];
 const LEVEL_NAMES = [S('Rozcvička', 'Warm-up'), S('Prvé kroky', 'First steps'), S('Naberáme tempo', 'Picking up speed'), S('Výzva', 'Challenge'), S('Hlbšie myslenie', 'Deeper thinking'), S('Majster', 'Master'), S('Šampión', 'Champion')];
 const LEVELS_PER_WORLD = 7, TASKS_PER_LEVEL = 10;
 const FERRY_BY_GRADE = { 2: 'ferry_classic', 3: 'ferry_classic', 4: 'ferry_fox', 5: 'ferry_fox', 6: 'ferry_mc22', 7: 'ferry_mc22', 8: 'ferry_mc33', 9: 'ferry_mc33' };
 
+const famOk = (f, g) => GF[f].min <= g && (GF[f].max == null || g <= GF[f].max);
 const _worldCache = {};
 function worldsFor(g) {
   if (_worldCache[g]) return _worldCache[g];
   return _worldCache[g] = WORLD_DEFS.map(def => {
-    const fams = def.fams.filter(f => GF[f].min <= g), F = fams.length;
+    const fams = def.fams.filter(f => famOk(f, g)), F = fams.length;
     const w = { id: `w${g}-${def.key}`, key: def.key, grade: g, band: bandOf(g), icon: def.icon, color: def.color, name: def.name, desc: def.desc, levels: [] };
     for (let l = 0; l < LEVELS_PER_WORLD; l++) w.levels.push({
       id: `L${g}-${def.key}-${l + 1}`, grade: g, worldKey: def.key, name: LEVEL_NAMES[l],
@@ -61,7 +62,7 @@ function famTask(fam, grade, wkey, nF, idx, k) {
 }
 function levelTasks(level) {
   if (levelCache.has(level.id)) return levelCache.get(level.id);
-  const g = level.grade, nF = WORLD_DEFS.find(d => d.key === level.worldKey).fams.filter(f => GF[f].min <= g).length;
+  const g = level.grade, nF = WORLD_DEFS.find(d => d.key === level.worldKey).fams.filter(f => famOk(f, g)).length;
   const out = level.tasks.map(sp => sp.static ? TASKS[sp.static] : Object.assign({}, famTask(sp.fam, g, level.worldKey, nF, sp.u % nF, sp.k), { id: `g:${g}:${level.worldKey}:${sp.u}` }));
   levelCache.set(level.id, out); return out;
 }

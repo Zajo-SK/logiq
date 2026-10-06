@@ -158,33 +158,35 @@ const page = (v, title, sub, ...kids) => { v.append(h('div', { class: 'page' }, 
 const card = (cls, ...kids) => h('section', { class: 'card ' + cls }, kids);
 const btn = (label, cls, fn, extra) => h('button', Object.assign({ type: 'button', class: 'btn ' + cls, onclick: fn }, extra || {}), label);
 
+function classPicker(init, onChange) {
+  let g = init.g || null, l = init.l == null ? null : init.l; const wrap = h('div', { class: 'cpick' });
+  const draw = () => wrap.replaceChildren(
+    h('p', { class: 'flabel' }, L2('Ročník', 'Grade')),
+    h('div', { class: 'cp-row', role: 'radiogroup', 'aria-label': L2('Ročník', 'Grade') }, range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', 'aria-checked': g === n, class: 'cp-btn' + (g === n ? ' on' : ''), onclick: () => { g = n; onChange({ g, l }); draw(); } }, n + '.'); })),
+    h('p', { class: 'flabel' }, L2('Trieda', 'Class')),
+    h('div', { class: 'cp-row cp-letters', role: 'radiogroup', 'aria-label': L2('Trieda', 'Class') }, ['A', 'B', 'C', ''].map(x => h('button', { type: 'button', role: 'radio', 'aria-checked': l === x, class: 'cp-btn' + (l === x ? ' on' : ''), onclick: () => { l = x; onChange({ g, l }); draw(); } }, x || L2('Bez triedy', 'No class')))),
+    ...(g && l !== null ? [h('p', { class: 'cp-sel' }, '🏫 ' + (l ? `${g}.${l}` : L2(`${g}. ročník`, `Grade ${g}`)))] : []));
+  draw(); return wrap;
+}
 VIEWS.welcome = (v) => {
-  const p = st().profile; let cls = p.cls || (grade() ? 'home' : ''), g = grade() || null;
-  const grid = h('div', { class: 'gradegrid', role: 'radiogroup', 'aria-label': t('pickGrade') });
+  const p = st().profile; let sel = { g: grade() || null, l: grade() ? ((p.cls || '').split('.')[1] || '') : null };
   const nameIn = h('input', { class: 'textin', type: 'text', maxlength: 24, placeholder: t('namePh'), value: p.name, 'aria-label': t('yourName'), autocomplete: 'off' });
   const codeIn = API.on() ? h('input', { class: 'textin', type: 'text', maxlength: 10, placeholder: L2('Kód od učiteľa (nepovinné)', 'Code from teacher (optional)'), 'aria-label': L2('Kód triedy', 'Class code'), autocapitalize: 'characters' }) : null;
-  const sel = h('select', { class: 'textin', 'aria-label': L2('Trieda', 'Class'), onchange: e => { cls = e.target.value; if (cls && cls !== 'home') g = parseInt(cls); draw(); } },
-    h('option', { value: '' }, L2('— vyber triedu —', '— choose your class —')), CLASS_LABELS.map(c => h('option', { value: c, selected: c === cls }, c)), h('option', { value: 'home', selected: cls === 'home' }, L2('Bez triedy (doma)', 'No class (at home)')));
   const start = btn(t('letsGo') + ' ▸', 'primary big', async () => {
-    if (!g) return; p.grade = g; p.cls = cls && cls !== 'home' ? cls : ''; p.name = nameIn.value.trim().slice(0, 24); Store.save();
+    if (!sel.g) return; const first = !p.grade; p.grade = sel.g; p.cls = sel.l ? `${sel.g}.${sel.l}` : ''; p.name = nameIn.value.trim().slice(0, 24); if (first && sel.g <= 3) st().settings.autoRead = true; Store.save();
     if (codeIn && codeIn.value.trim()) { try { await Sync.join(codeIn.value.trim().toUpperCase()); } catch (e) { toast(fmtErr(e)); } }
     go('#/home');
   });
-  const draw = () => {
-    grid.hidden = cls !== 'home'; if (cls !== 'home') grid.replaceChildren();
-    else grid.replaceChildren(...range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', class: 'gbtn' + (g === n ? ' on' : ''), 'aria-checked': g === n, onclick: () => { g = n; draw(); } }, h('b', null, n + '.'), h('small', null, LANG === 'sk' ? 'ročník' : 'grade'), g === n ? h('span', { class: 'gk', 'aria-hidden': 'true' }, '✓') : null); }));
-    start.disabled = !g;
-  };
+  start.disabled = !sel.g;
   v.append(h('div', { class: 'welcome' },
     h('div', { class: 'wl-hero', html: heroArt }),
     h('div', { class: 'wl-body' },
       h('h1', { class: 'wl-title' }, 'Logi', h('i', null, 'Q')), h('p', { class: 'wl-sub' }, t('subtitle')), h('p', { class: 'wl-lead' }, t('welcomeLead')),
       h('label', { class: 'flabel' }, L2('Tvoje meno alebo prezývka', 'Your name or nickname')), nameIn,
-      h('label', { class: 'flabel' }, L2('Tvoja trieda', 'Your class')), sel, grid, h('p', { class: 'fine' }, t('gradeChangeLater')),
+      classPicker(sel, x => { sel = x; start.disabled = !sel.g; }), h('p', { class: 'fine' }, t('gradeChangeLater')),
       codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.'))] : null,
       start, h('p', { class: 'fine' }, '🔒 ' + t('noAccount')),
       h('p', { class: 'fine' }, h('a', { href: '#/teacher' }, L2('Som učiteľ', 'I am a teacher')), ' · ', h('a', { href: '#/parent' }, L2('Som rodič', 'I am a parent'))))));
-  draw();
 };
 
 VIEWS.home = (v) => {
@@ -370,12 +372,11 @@ VIEWS.profile = (v) => {
   v.append(h('div', { class: 'page profile' }, h('div', { class: 'pagehead' }, h('h1', null, t('nav_profile')), h('p', null, `${p.name || t('anon')} · ${gradeLabel(g)}`)),
     h('div', { class: 'grid2' },
       card('', h('h2', null, t('yourProfile')), h('label', { class: 'flabel' }, t('yourName')), nameIn,
-        h('label', { class: 'flabel' }, L2('Trieda', 'Class')), h('select', { class: 'textin', 'aria-label': L2('Trieda', 'Class'), onchange: e => { const c = e.target.value; p.cls = c; if (c) p.grade = parseInt(c); Store.save(); Sync.schedule(); render(); } }, h('option', { value: '' }, L2('— bez triedy —', '— no class —')), CLASS_LABELS.map(c => h('option', { value: c, selected: c === p.cls }, c))),
-        h('label', { class: 'flabel' }, t('pickGrade')), h('div', { class: 'chiprow', role: 'radiogroup' }, range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', 'aria-checked': g === n, class: 'fchip' + (g === n ? ' on' : ''), onclick: () => { p.grade = n; Store.save(); render(); } }, n + '.'); })),
+        classPicker({ g, l: (p.cls || '').split('.')[1] || '' }, x => { if (!x.g) return; p.grade = x.g; p.cls = x.l ? `${x.g}.${x.l}` : ''; Store.save(); Sync.schedule(); }),
         h('p', { class: 'fine' }, t('gradeChangeNote'))),
       card('', h('h2', null, t('settings')),
         h('div', { class: 'setrow' }, h('span', null, t('language')), h('div', { class: 'seg' }, ['sk', 'en'].map(l => h('button', { type: 'button', 'aria-pressed': LANG === l, class: LANG === l ? 'on' : '', onclick: () => LANG !== l && setLang(l) }, l === 'sk' ? 'Slovenčina' : 'English')))),
-        toggle('sound', t('sounds'), () => tone(SND.tap)), toggle('anim', t('animations')), toggle('bigtext', t('bigText')))),
+        toggle('sound', t('sounds'), () => tone(SND.tap)), toggle('anim', t('animations')), toggle('bigtext', t('bigText')), toggle('autoRead', L2('Čítať zadania nahlas automaticky', 'Read tasks aloud automatically')))),
     card('', h('h2', null, t('strongAreas')), sg.length ? h('div', { class: 'bars2' }, sg.map(x => h('div', { class: 'bar2' }, h('span', null, CATS[x.cat].icon + ' ' + tx(CATS[x.cat].n)), h('div', { class: 'track', role: 'img', 'aria-label': x.avg.toFixed(1) + '/3' }, h('div', { style: `width:${x.avg / 3 * 100}%` })), h('b', null, x.avg.toFixed(1) + '★ · ' + x.n)))) : h('p', { class: 'muted' }, t('noHistory')),
       h('h2', { class: 'mt' }, t('recommended')), h('ul', { class: 'reclist' }, recs.length ? recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), rc.go ? h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸') : null)) : h('li', null, t('recNone')))),
     card('', h('h2', null, t('history')), hist.length ? h('ul', { class: 'histlist' }, hist.map(x => h('li', null, h('span', { 'aria-hidden': 'true' }, CATS[x.cat] ? CATS[x.cat].icon : '•'), h('span', { class: 'ht' }, tx(x.title), h('small', null, new Date(x.ts).toLocaleDateString(LANG === 'sk' ? 'sk-SK' : 'en-GB'))), starsHtml(x.stars), h('b', null, '+' + x.points)))) : h('p', { class: 'muted' }, t('noHistory'))),
@@ -418,13 +419,14 @@ function openTask(task, o) {
     bNext.replaceChildren(h('span', null, t(o.practice || o.daily ? 'done' : 'next')), h('span', { html: ic('next') })); bNext.hidden = !ss.finished;
   }
   function drawHints() {
-    hintsBox.replaceChildren(...ss.hints.map((x, i) => h('div', { class: 'hintbubble' }, h('span', { class: 'hn' }, '💡 ' + (i + 1)), h('p', null, tx(x)))));
+    hintsBox.replaceChildren(...ss.hints.map((x, i) => h('div', { class: 'hintbubble' }, h('span', { class: 'hn' }, '💡 ' + (i + 1), ' ', h('button', { type: 'button', class: 'linkbtn', 'aria-label': L2('Prečítať nahlas', 'Read aloud'), onclick: () => speak(tx(x)) }, '🔊')), h('p', null, tx(x)))));
   }
   function useHint() {
     if (ss.finished || ss.hints.length >= task.hints.length) return;
     const i = ss.hints.length; let spec = task.hints[i], hl = null;
     if (spec === 'dyn') { const d = inst && inst.dynHint && inst.dynHint(i); if (d) { spec = d.text; hl = d.hl; } else spec = S('Pozri sa na úlohu ešte raz a skús iný uhol pohľadu.', 'Look at the task once more and try another angle.'); }
     ss.hints.push(spec); if (hl) hl(); tone(SND.tap); drawHints(); refresh();
+    if (st().settings.autoRead) speak(tx(spec));
   }
   function lock() { playBox.classList.add('locked'); playBox.setAttribute('inert', ''); }
   function secs() { return Math.round((Date.now() - ss.t0) / 1000); }
@@ -479,13 +481,15 @@ function openTask(task, o) {
       dots || h('span'), h('span', { class: 'tb-r' }, o.daily ? '📅 ' + t('nav_daily') : o.challenge ? '⚡ ' + t('challenge') : '')),
     h('article', { class: 'taskcard' },
       h('div', { class: 'tc-meta' }, h('span', { class: 'catchip' }, cat.icon + ' ' + tx(cat.n)), h('span', { class: 'diff', title: t('difficulty') }, diffDots(task.diff))),
-      h('h1', null, tx(task.title)),
+      h('div', { class: 'titlerow' }, h('h1', null, tx(task.title)), h('button', { type: 'button', class: 'speakbtn', 'aria-label': L2('Prečítať nahlas', 'Read aloud'), onclick: () => speak(tx(task.prompt)) }, '🔊')),
       task.intro ? h('details', { class: 'intro', open: true }, h('summary', null, '📘 ' + tx(task.introTitle)), h('div', { html: task.intro() })) : null,
-      h('p', { class: 'prompt' }, tx(task.prompt)),
+      h('div', { class: 'prompt' + (grade() && grade() <= 4 ? ' kid' : '') }, (tx(task.prompt).match(/[^.!?]+[.!?]+|\S[^.!?]*$/g) || [tx(task.prompt)]).map(x => h('span', { class: 'sent' }, x.trim()))),
       task.visual ? h('div', { class: 'visual', html: typeof task.visual === 'function' ? task.visual() : task.visual }) : null,
-      playBox, hintsBox),
+      task.sim ? simMount(task.sim) : null, playBox, hintsBox),
     h('div', { class: 'actionbar' }, bHint, bExp, h('span', { class: 'grow' }), bCheck, bNext)));
   inst = type.mount(playBox, task, ctx) || null;
+  if (st().settings.autoRead && !ss.finished && !ss.autoSpoken) { ss.autoSpoken = true; setTimeout(() => speak(tx(task.prompt)), 450); }
+  cleanups.push(stopSpeaking);
   if (ss.finished) lock();
   drawHints(); refresh();
 }
@@ -503,7 +507,7 @@ function openExplain(task, { onClose } = {}) {
     if (shown >= steps.length) { nextB.hidden = true; allB.hidden = true; }
   }
   const sh = openSheet(h('div', { class: 'sheetin explainer' }, h('h2', null, '📖 ' + t('explain')), h('p', { class: 'muted' }, t('explainIntro')), list,
-    h('div', { class: 'btnrow' }, allB, nextB, btn(t('close'), 'ghost', () => sh.close()))), { cls: 'tall' });
+    h('div', { class: 'btnrow' }, btn('🔊', 'ghost', () => speak(steps.slice(0, Math.max(1, shown)).map(x => typeof x.text === 'function' ? x.text() : tx(x.text)).join('. '))), allB, nextB, btn(t('close'), 'ghost', () => sh.close()))), { cls: 'tall' });
   sh.onClose = onClose; addStep();
 }
 
