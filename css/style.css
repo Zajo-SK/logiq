@@ -267,3 +267,10 @@ details.intro{background:#eef7f8;border:2px solid #b7e5ec;border-radius:16px;pad
 [data-theme=sunset]{--navy:#4a1d3f;--navy2:#a63d52;--violet:#e0662d;--violet-d:#b8400c}
 [data-theme=galaxy]{--navy:#1a1040;--navy2:#3b2a8f;--violet:#8b5cf6;--violet-d:#6d28d9}
 [data-theme=gold]{--navy:#3a2b05;--navy2:#8a5d00;--violet:#d89b00;--violet-d:#8a5d00}
+
+/* teacher area */
+.code{font-family:ui-monospace,Menlo,monospace;font-size:1.3rem;letter-spacing:.12em;background:#f1edff;color:var(--violet-d);padding:.1rem .6rem;border-radius:10px}
+.tbar{display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap;margin-bottom:.4rem}.tbar h2{margin:0}
+.errmsg{color:var(--bad);font-weight:600;min-height:1.2rem}.okmsg{color:var(--ok);font-weight:700;min-height:1.2rem;word-break:break-all}
+.admintab.st td,.admintab.st th{font-size:.9rem;padding:.6rem .7rem}.admintab tr.clickable{cursor:pointer}.admintab tr.clickable:hover,.admintab tr.clickable:focus-visible{background:#f1edff}
+select.textin{appearance:auto}.sdetail h2 small{font-size:.8rem;font-weight:600}

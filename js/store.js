@@ -14,10 +14,10 @@ const Store = (() => {
   const fresh = () => ({
     v: 1,
     userId: 'u-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36),
-    profile: { name: '', grade: null, lang: nav.startsWith('en') ? 'en' : 'sk', created: Date.now() },
+    profile: { name: '', grade: null, cls: '', lang: nav.startsWith('en') ? 'en' : 'sk', created: Date.now() },
     settings: { sound: true, anim: true, bigtext: false, avatar: '🦊', theme: 'base' }, rewards: {}, bonus: 0, levelBonus: {}, maxStreak: 0,
     tasks: {}, badges: {}, daily: {}, streak: { count: 0, last: null }, history: [],
-    sync: { adapter: 'local', lastSynced: null }
+    sync: { adapter: 'local', lastSynced: null, studentId: null, secret: null, classCode: null, classLabel: null, parentCode: null, dirty: false }
   });
   const adapters = {
     local: {
@@ -57,7 +57,7 @@ const Store = (() => {
         state.streak.count = state.streak.last === dayKey(y) ? state.streak.count + 1 : 1;
         state.streak.last = today;
       }
-      api.save();
+      api.save(); if (typeof Sync !== 'undefined') Sync.schedule();
     },
     totals() {
       let stars = 0, points = state.bonus || 0, done = 0;

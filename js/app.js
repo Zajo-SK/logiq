@@ -143,9 +143,9 @@ function render() {
   document.querySelectorAll('.overlay').forEach(o => o.remove());
   runCleanups();
   const r = route();
-  if (!grade()) r.name = 'welcome';
+  if (!grade() && !['teacher', 'parent'].includes(r.name)) r.name = 'welcome';
   if (!VIEWS[r.name]) r.name = 'home';
-  $('#app').classList.toggle('focus', r.name === 'welcome' || PLAY_ROUTES.includes(r.name));
+  $('#app').classList.toggle('focus', r.name === 'welcome' || r.name === 'teacher' || r.name === 'parent' || PLAY_ROUTES.includes(r.name));
   if (!PLAY_ROUTES.includes(r.name)) curSession = null;
   renderHeader(r); renderNav(r);
   const v = $('#view'); v.replaceChildren(); window.scrollTo(0, 0);
@@ -159,18 +159,31 @@ const card = (cls, ...kids) => h('section', { class: 'card ' + cls }, kids);
 const btn = (label, cls, fn, extra) => h('button', Object.assign({ type: 'button', class: 'btn ' + cls, onclick: fn }, extra || {}), label);
 
 VIEWS.welcome = (v) => {
-  let g = grade(), name = st().profile.name;
+  const p = st().profile; let cls = p.cls || (grade() ? 'home' : ''), g = grade() || null;
   const grid = h('div', { class: 'gradegrid', role: 'radiogroup', 'aria-label': t('pickGrade') });
-  const start = btn(t('letsGo') + ' ▸', 'primary big', () => { if (!g) return; st().profile.grade = g; st().profile.name = nameIn.value.trim().slice(0, 24); Store.save(); go('#/home'); });
-  const draw = () => { grid.replaceChildren(...range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', class: 'gbtn' + (g === n ? ' on' : ''), 'aria-checked': g === n, onclick: () => { g = n; draw(); } }, h('b', null, n + '.'), h('small', null, LANG === 'sk' ? 'ročník' : 'grade'), g === n ? h('span', { class: 'gk', 'aria-hidden': 'true' }, '✓') : null); })); start.disabled = !g; };
-  const nameIn = h('input', { class: 'textin', type: 'text', maxlength: 24, placeholder: t('namePh'), value: name, 'aria-label': t('yourName'), autocomplete: 'off' });
+  const nameIn = h('input', { class: 'textin', type: 'text', maxlength: 24, placeholder: t('namePh'), value: p.name, 'aria-label': t('yourName'), autocomplete: 'off' });
+  const codeIn = API.on() ? h('input', { class: 'textin', type: 'text', maxlength: 10, placeholder: L2('Kód od učiteľa (nepovinné)', 'Code from teacher (optional)'), 'aria-label': L2('Kód triedy', 'Class code'), autocapitalize: 'characters' }) : null;
+  const sel = h('select', { class: 'textin', 'aria-label': L2('Trieda', 'Class'), onchange: e => { cls = e.target.value; if (cls && cls !== 'home') g = parseInt(cls); draw(); } },
+    h('option', { value: '' }, L2('— vyber triedu —', '— choose your class —')), CLASS_LABELS.map(c => h('option', { value: c, selected: c === cls }, c)), h('option', { value: 'home', selected: cls === 'home' }, L2('Bez triedy (doma)', 'No class (at home)')));
+  const start = btn(t('letsGo') + ' ▸', 'primary big', async () => {
+    if (!g) return; p.grade = g; p.cls = cls && cls !== 'home' ? cls : ''; p.name = nameIn.value.trim().slice(0, 24); Store.save();
+    if (codeIn && codeIn.value.trim()) { try { await Sync.join(codeIn.value.trim().toUpperCase()); } catch (e) { toast(fmtErr(e)); } }
+    go('#/home');
+  });
+  const draw = () => {
+    grid.hidden = cls !== 'home'; if (cls !== 'home') grid.replaceChildren();
+    else grid.replaceChildren(...range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', class: 'gbtn' + (g === n ? ' on' : ''), 'aria-checked': g === n, onclick: () => { g = n; draw(); } }, h('b', null, n + '.'), h('small', null, LANG === 'sk' ? 'ročník' : 'grade'), g === n ? h('span', { class: 'gk', 'aria-hidden': 'true' }, '✓') : null); }));
+    start.disabled = !g;
+  };
   v.append(h('div', { class: 'welcome' },
     h('div', { class: 'wl-hero', html: heroArt }),
     h('div', { class: 'wl-body' },
       h('h1', { class: 'wl-title' }, 'Logi', h('i', null, 'Q')), h('p', { class: 'wl-sub' }, t('subtitle')), h('p', { class: 'wl-lead' }, t('welcomeLead')),
-      h('label', { class: 'flabel' }, t('yourName')), nameIn,
-      h('label', { class: 'flabel' }, t('pickGrade')), grid, h('p', { class: 'fine' }, t('gradeChangeLater')), start,
-      h('p', { class: 'fine' }, '🔒 ' + t('noAccount')))));
+      h('label', { class: 'flabel' }, L2('Tvoje meno alebo prezývka', 'Your name or nickname')), nameIn,
+      h('label', { class: 'flabel' }, L2('Tvoja trieda', 'Your class')), sel, grid, h('p', { class: 'fine' }, t('gradeChangeLater')),
+      codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.'))] : null,
+      start, h('p', { class: 'fine' }, '🔒 ' + t('noAccount')),
+      h('p', { class: 'fine' }, h('a', { href: '#/teacher' }, L2('Som učiteľ', 'I am a teacher')), ' · ', h('a', { href: '#/parent' }, L2('Som rodič', 'I am a parent'))))));
   draw();
 };
 
@@ -356,6 +369,7 @@ VIEWS.profile = (v) => {
   v.append(h('div', { class: 'page profile' }, h('div', { class: 'pagehead' }, h('h1', null, t('nav_profile')), h('p', null, `${p.name || t('anon')} · ${gradeLabel(g)}`)),
     h('div', { class: 'grid2' },
       card('', h('h2', null, t('yourProfile')), h('label', { class: 'flabel' }, t('yourName')), nameIn,
+        h('label', { class: 'flabel' }, L2('Trieda', 'Class')), h('select', { class: 'textin', 'aria-label': L2('Trieda', 'Class'), onchange: e => { const c = e.target.value; p.cls = c; if (c) p.grade = parseInt(c); Store.save(); Sync.schedule(); render(); } }, h('option', { value: '' }, L2('— bez triedy —', '— no class —')), CLASS_LABELS.map(c => h('option', { value: c, selected: c === p.cls }, c))),
         h('label', { class: 'flabel' }, t('pickGrade')), h('div', { class: 'chiprow', role: 'radiogroup' }, range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', 'aria-checked': g === n, class: 'fchip' + (g === n ? ' on' : ''), onclick: () => { p.grade = n; Store.save(); render(); } }, n + '.'); })),
         h('p', { class: 'fine' }, t('gradeChangeNote'))),
       card('', h('h2', null, t('settings')),
@@ -364,6 +378,7 @@ VIEWS.profile = (v) => {
     card('', h('h2', null, t('strongAreas')), sg.length ? h('div', { class: 'bars2' }, sg.map(x => h('div', { class: 'bar2' }, h('span', null, CATS[x.cat].icon + ' ' + tx(CATS[x.cat].n)), h('div', { class: 'track', role: 'img', 'aria-label': x.avg.toFixed(1) + '/3' }, h('div', { style: `width:${x.avg / 3 * 100}%` })), h('b', null, x.avg.toFixed(1) + '★ · ' + x.n)))) : h('p', { class: 'muted' }, t('noHistory')),
       h('h2', { class: 'mt' }, t('recommended')), h('ul', { class: 'reclist' }, recs.length ? recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), rc.go ? h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸') : null)) : h('li', null, t('recNone')))),
     card('', h('h2', null, t('history')), hist.length ? h('ul', { class: 'histlist' }, hist.map(x => h('li', null, h('span', { 'aria-hidden': 'true' }, CATS[x.cat] ? CATS[x.cat].icon : '•'), h('span', { class: 'ht' }, tx(x.title), h('small', null, new Date(x.ts).toLocaleDateString(LANG === 'sk' ? 'sk-SK' : 'en-GB'))), starsHtml(x.stars), h('b', null, '+' + x.points)))) : h('p', { class: 'muted' }, t('noHistory'))),
+    connectCard(), teacherEntry(),
     card('', h('details', { class: 'admin' }, h('summary', null, '🛠️ ' + t('adminTitle')),
       h('p', { class: 'muted' }, t('adminLead')), h('div', { class: 'btnrow left' }, btn('⬇ ' + t('exportDb'), 'ghost small', exportJson)),
       h('div', { class: 'tablewrap' }, h('table', { class: 'admintab' }, h('thead', null, h('tr', null, ['ID', t('category'), t('gradeBand'), t('taskType'), t('source'), t('license')].map(x => h('th', null, x)))),
@@ -492,10 +507,11 @@ function openExplain(task, { onClose } = {}) {
 }
 
 /* ---------- boot ---------- */
-(function boot() {
+function boot() {
   LANG = st().profile.lang || 'sk'; document.documentElement.lang = LANG; document.title = 'LogiQ – ' + t('subtitle');
   applySettings();
   window.addEventListener('hashchange', render);
   render();
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => { });
-})();
+  Sync.schedule();
+}
