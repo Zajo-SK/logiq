@@ -184,9 +184,13 @@ function miniSudoku(P, grid, hl) {
   }
   return g;
 }
+function taskPuzzle(task) {
+  if (!task.puzzle) { const d = task.data; task.puzzle = (d.level != null && typeof sdkPuzzle === 'function') ? sdkPuzzle(d.n, d.level, d.seed) : genSudoku(d.n, d.holes, d.seed); }
+  return task.puzzle;
+}
 TaskTypes.sudoku = {
   mount(box, task, ctx) {
-    const P = task.puzzle || (task.puzzle = genSudoku(task.data.n, task.data.holes, task.data.seed));
+    const P = taskPuzzle(task);
     const { n, br, bc } = P, D = ctx.session.data;
     const cur = D.grid || (D.grid = P.given.map(r => r.slice()));
     let sel = null, hlCell = null;
@@ -243,7 +247,7 @@ TaskTypes.sudoku = {
     };
   },
   explainSteps(task) {
-    const P = task.puzzle || (task.puzzle = genSudoku(task.data.n, task.data.holes, task.data.seed));
+    const P = taskPuzzle(task);
     const { n, br, bc } = P; let best = null;
     for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (!P.given[r][c]) { const cs = sudokuCands(P.given, n, br, bc, r, c); if (!best || cs.length < best.cs.length) best = { r, c, cs }; }
     const steps = [];

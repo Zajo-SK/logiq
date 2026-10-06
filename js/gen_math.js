@@ -331,7 +331,7 @@ reg('clock', 'algebra', 2, c => {
 const sudokuPrompt = n => S(`Doplň mriežku ${n}×${n} tak, aby sa v každom riadku, stĺpci a ${n === 4 ? 'štvorčeku 2×2' : n === 6 ? 'obdĺžniku 2×3' : 'štvorčeku 3×3'} každé číslo od 1 do ${n} vyskytlo práve raz.`, `Fill the ${n}×${n} grid so every row, column and ${n === 4 ? '2×2 box' : n === 6 ? '2×3 box' : '3×3 box'} contains each number from 1 to ${n} exactly once.`);
 reg('sudoku', 'sudoku', 2, c => {
   const { r, D, g } = c, n = g <= 2 ? 4 : g <= 4 ? (D < .3 ? 4 : 6) : g <= 6 ? 6 : 9, ds = n === 4 ? [6, 10] : n === 6 ? [14, 24] : [34, 50];
-  return { title: S(`Sudoku ${n}×${n}`, `Sudoku ${n}×${n}`), type: 'sudoku', pts: 15, prompt: sudokuPrompt(n), data: { n, holes: lerp(ds[0], ds[1], clamp((D - (g <= 2 ? 0 : .1)) * 1.3, 0, 1)), seed: Math.floor(r() * 1e9) },
+  return { title: S(`Sudoku ${n}×${n}`, `Sudoku ${n}×${n}`), type: 'sudoku', pts: 15, prompt: sudokuPrompt(n), data: { n, holes: lerp(ds[0], ds[1], clamp((D - (g <= 2 ? 0 : .1)) * 1.3, 0, 1)), level: clamp(Math.floor(n === 9 ? (D - .6) / .4 * 6 : n === 6 ? (D - .3) / .3 * 6 : D / .35 * 6), 0, 5), seed: Math.floor(r() * 1e9) },
     hints: [S('Začni tam, kde v riadku, stĺpci alebo štvorčeku chýba najmenej čísel.', 'Start where a row, column or box is missing the fewest numbers.'), 'dyn', 'dyn'], explain: [S('V každom riadku, stĺpci a štvorčeku sa číslo opakovať nesmie.', 'No number may repeat in any row, column or box.')] };
 });
 reg('lights', 'toggle', 2, c => {
