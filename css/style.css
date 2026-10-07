@@ -369,3 +369,7 @@ details.sim{background:#fff8e6;border:2px solid #f3d27a;border-radius:16px;paddi
 .quests{display:grid;gap:.6rem;margin:.6rem 0}.quest{display:grid;grid-template-columns:auto 1fr auto;gap:.7rem;align-items:center;background:#f6f8fd;border-radius:16px;padding:.6rem .8rem}.quest.ok{background:#eafaf2}.quest .qi{font-size:1.6rem}.quest b{display:block}.quest .track{height:9px;margin-top:.3rem}.quest .qg{font-weight:900;color:var(--violet-d);white-space:nowrap}
 .chest{display:flex;gap:.8rem;align-items:center;padding:.7rem 1rem;border-radius:18px;background:linear-gradient(135deg,#fff3c4,#ffd86b);color:#5a3b00;font-weight:800;margin:.5rem 0}.chest .ci{font-size:2.4rem;animation:bob 1.4s ease-in-out infinite}
 .stkrow{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:center}.stkrow .stk{width:56px;height:56px;font-size:2rem;animation:pop .5s}
+/* version badge */
+.verbadge{position:fixed;right:8px;bottom:calc(76px + var(--safe-b));z-index:25;font-size:.68rem;font-weight:700;color:var(--muted);background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:99px;padding:.2rem .6rem;cursor:pointer;min-height:28px}
+@media(min-width:900px){.verbadge{bottom:8px}}
+.verlog{max-height:80vh;overflow:auto;text-align:left}.verlist section{margin:.7rem 0}.verlist h3{margin:0 0 .2rem;font-size:1rem}.verlist small{color:var(--muted);font-weight:600}.verlist ul{margin:.2rem 0 0;padding-left:1.2rem;display:grid;gap:.2rem}
