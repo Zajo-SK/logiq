@@ -284,14 +284,14 @@ ferryTask('ferry_fox', 'fox', 'B', 2, {
 });
 ferryTask('ferry_mc22', 'mc22', 'C', 3, {
   title: S('Astronauti a roboty', 'Astronauts and robots'),
-  prompt: S('Dvaja astronauti a dvaja roboti musia raketovým člnom prejsť na druhý breh. Čln uvezie najviac dvoch a niekto ním musí plávať. Ak by na brehu bolo viac robotov ako astronautov, astronauti by boli v nebezpečenstve. Nájdi bezpečný plán!', '2 astronauts and 2 robots must cross a river in a small rocket-boat. It carries at most two and someone must row. If robots outnumber astronauts on a bank (while astronauts are there), the astronauts are in danger. Find a safe plan!'),
+  prompt: S('Dvaja astronauti a dva roboty musia raketovým člnom prejsť na druhý breh. Čln uvezie najviac dvoch a niekto ním musí plávať. Ak by na brehu bolo viac robotov ako astronautov, astronauti by boli v nebezpečenstve. Nájdi bezpečný plán!', '2 astronauts and 2 robots must cross a river in a small rocket-boat. It carries at most two and someone must row. If robots outnumber astronauts on a bank (while astronauts are there), the astronauts are in danger. Find a safe plan!'),
   h1: S('Na oboch brehoch sleduj počty: astronauti ≥ roboty, ak tam nejaký astronaut je.', 'Watch the counts on both banks: astronauts ≥ robots whenever any astronaut is present.'),
   h2: S('Neboj sa vrátiť niekoho späť. Niekedy je to jediná cesta.', 'Do not be afraid to bring someone back – sometimes it is the only way.'),
   explain: [S('Na oboch brehoch (a v čase plavby) udržiavame pravidlo: ak je tam astronaut, nie je tam viac robotov ako astronautov.', 'On both banks we keep the rule: if an astronaut is there, robots never outnumber astronauts.')]
 });
 ferryTask('ferry_mc33', 'mc33', 'D', 3, {
-  title: S('Traja astronauti, traja roboti', 'Three astronauts, three robots'),
-  prompt: S('Traja astronauti a traja roboti prechádzajú cez rieku člnom pre dvoch. Pravidlo: na brehu, kde je aspoň jeden astronaut, nesmie byť viac robotov ako astronautov. Aký je najmenší počet plavieb?', '3 astronauts and 3 robots cross a river in a boat for two. Rule: on a bank with at least one astronaut, robots may not outnumber astronauts. What is the smallest number of crossings?'),
+  title: S('Traja astronauti, tri roboty', 'Three astronauts, three robots'),
+  prompt: S('Traja astronauti a tri roboty prechádzajú cez rieku člnom pre dvoch. Pravidlo: na brehu, kde je aspoň jeden astronaut, nesmie byť viac robotov ako astronautov. Aký je najmenší počet plavieb?', '3 astronauts and 3 robots cross a river in a boat for two. Rule: on a bank with at least one astronaut, robots may not outnumber astronauts. What is the smallest number of crossings?'),
   h1: S('Zapisuj si, kto je na ktorom brehu. Čo sa stane, ak ako prvých pošleš dvoch robotov?', 'Imagine all possible states – how often could you start by sending “2 robots”?'),
   h2: S('Pozor na to, kto ostane na brehu, z ktorého odplávaš. Niekedy je dobré vrátiť jedného robota alebo astronauta.', 'Mind who is left on the bank you leave. Sometimes returning one robot or astronaut is best.'),
   explain: [S('Toto je slávna úloha o misionároch a kanibaloch v kozmickej verzii. Pomôže, keď si systematicky zapisuješ, kto je na ktorom brehu.', 'This is the famous missionaries-and-cannibals puzzle in a space version. Systematically writing down the bank states helps.')]
