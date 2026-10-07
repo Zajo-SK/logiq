@@ -186,7 +186,8 @@ VIEWS.welcome = (v) => {
       classPicker(sel, x => { sel = x; start.disabled = !sel.g; }), h('p', { class: 'fine' }, t('gradeChangeLater')),
       codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.'))] : null,
       start,
-      h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))))));
+      h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))),
+      h('p', { class: 'fine' }, h('a', { href: '#/privacy' }, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), ' · ', h('a', { href: '#/rules' }, '📜 ' + L2('Pravidlá používania', 'Rules of use'))))));
 };
 
 VIEWS.home = (v) => {
@@ -409,7 +410,7 @@ VIEWS.profile = (v) => {
     card('', h('h2', null, t('strongAreas')), sg.length ? h('div', { class: 'bars2' }, sg.map(x => h('div', { class: 'bar2' }, h('span', null, CATS[x.cat].icon + ' ' + tx(CATS[x.cat].n)), h('div', { class: 'track', role: 'img', 'aria-label': x.avg.toFixed(1) + '/3' }, h('div', { style: `width:${x.avg / 3 * 100}%` })), h('b', null, x.avg.toFixed(1) + '★ · ' + x.n)))) : h('p', { class: 'muted' }, t('noHistory')),
       h('h2', { class: 'mt' }, t('recommended')), h('ul', { class: 'reclist' }, recs.length ? recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), rc.go ? h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸') : null)) : h('li', null, t('recNone')))),
     card('', h('h2', null, t('history')), hist.length ? h('ul', { class: 'histlist' }, hist.map(x => h('li', null, h('span', { 'aria-hidden': 'true' }, CATS[x.cat] ? CATS[x.cat].icon : '•'), h('span', { class: 'ht' }, tx(x.title), h('small', null, new Date(x.ts).toLocaleDateString(LANG === 'sk' ? 'sk-SK' : 'en-GB'))), starsHtml(x.stars), h('b', null, '+' + x.points)))) : h('p', { class: 'muted' }, t('noHistory'))),
-    connectCard(), teacherEntry(),
+    connectCard(), teacherEntry(), privacyCard(),
     card('', h('details', { class: 'admin' }, h('summary', null, '🛠️ ' + t('adminTitle')),
       h('p', { class: 'muted' }, t('adminLead')), h('div', { class: 'btnrow left' }, btn('⬇ ' + t('exportDb'), 'ghost small', exportJson)),
       h('div', { class: 'tablewrap' }, h('table', { class: 'admintab' }, h('thead', null, h('tr', null, ['ID', t('category'), t('gradeBand'), t('taskType'), t('source'), t('license')].map(x => h('th', null, x)))),
