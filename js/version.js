@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.18', at: '2026-10-07 13:00', items: [S('Úvodná obrazovka: odstránený pruh „Bez registrácie, bez reklám“, väčšie tlačidlá Som učiteľ / Som rodič.', 'Welcome screen: removed the “no sign-up, no ads” line, bigger I am a teacher / parent buttons.')] },
   { v: '1.17', at: '2026-10-07 11:30', items: [S('Učiteľ môže zadávať úlohy celým triedam aj konkrétnym žiakom (z levelov aj zo zbierky), s termínom a prehľadom plnenia.', 'Teachers can assign tasks to whole classes or individual pupils (from levels or the collection), with due dates and progress overview.'), S('Žiak vidí zadané úlohy na Domovskej stránke a v zozname Zadané úlohy.', 'Pupils see assigned tasks on Home and in the Assigned tasks list.'), S('Kód triedy sa dá zobraziť na celú obrazovku (na projektor).', 'The class code can be shown full screen (for a projector).'), S('Opravené vytváranie tried (nová databáza), väčšie ovládacie prvky.', 'Fixed class creation (new database), bigger controls.')] },
   { v: '1.16', at: '2026-10-07 10:00', items: [S('Aplikácia je napojená na server (učiteľské a rodičovské prostredie, synchronizácia žiakov).', 'App connected to the server (teacher and parent area, pupil sync).')] },
   { v: '1.15', at: '2026-10-07 09:30', items: [S('Zobrazenie verzie aplikácie a zoznam zmien (toto okno).', 'App version badge and changelog (this window).')] },

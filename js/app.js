@@ -185,8 +185,8 @@ VIEWS.welcome = (v) => {
       h('label', { class: 'flabel' }, L2('Tvoje meno alebo prezývka', 'Your name or nickname')), nameIn,
       classPicker(sel, x => { sel = x; start.disabled = !sel.g; }), h('p', { class: 'fine' }, t('gradeChangeLater')),
       codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.'))] : null,
-      start, h('p', { class: 'fine' }, '🔒 ' + t('noAccount')),
-      h('p', { class: 'fine' }, h('a', { href: '#/teacher' }, L2('Som učiteľ', 'I am a teacher')), ' · ', h('a', { href: '#/parent' }, L2('Som rodič', 'I am a parent'))))));
+      start,
+      h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))))));
 };
 
 VIEWS.home = (v) => {
