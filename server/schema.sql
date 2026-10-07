@@ -7,3 +7,5 @@ CREATE TABLE IF NOT EXISTS assignments (id TEXT PRIMARY KEY, owner TEXT, title T
 CREATE TABLE IF NOT EXISTS targets (aid TEXT, code TEXT, student TEXT);
 CREATE INDEX IF NOT EXISTS tg_aid ON targets(aid);
 CREATE INDEX IF NOT EXISTS tg_code ON targets(code);
+CREATE TABLE IF NOT EXISTS tickets (id TEXT PRIMARY KEY, created INTEGER, updated INTEGER, name TEXT, kind TEXT, message TEXT, page TEXT, task TEXT, version TEXT, ua TEXT, grade INTEGER, cls TEXT, contact TEXT, status TEXT DEFAULT 'new', note TEXT DEFAULT '');
+CREATE INDEX IF NOT EXISTS tk_status ON tickets(status, created);

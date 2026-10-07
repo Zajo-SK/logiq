@@ -388,3 +388,9 @@ details.sim{background:#fff8e6;border:2px solid #f3d27a;border-radius:16px;paddi
 .teacher .admintab{font-size:1.05rem}.teacher .admintab td,.teacher .admintab th{padding:.7rem .6rem}
 .wl-roles{margin-top:1rem;display:flex;gap:.7rem;flex-wrap:wrap}.wl-roles .btn{flex:1 1 200px;min-height:60px;font-size:1.15rem}
 .privlist{margin:.3rem 0 .6rem;padding-left:1.3rem;display:grid;gap:.3rem}.privacy .card p{margin:.4rem 0}
+/* support button + admin inbox */
+.supbadge{position:fixed;right:64px;bottom:calc(76px + var(--safe-b));z-index:25;width:34px;height:28px;font-size:.95rem;line-height:1;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:99px;cursor:pointer;display:grid;place-items:center;padding:0}
+@media(min-width:900px){.supbadge{bottom:8px}}
+.supform textarea{width:100%}
+.tkt{border-left:6px solid #c2c9de}.tkt.new{border-left-color:#e0662d}.tkt.progress{border-left-color:#f6b81d}.tkt.done{border-left-color:var(--ok)}
+.tkt .msg{white-space:pre-wrap;background:#f6f8fd;border-radius:12px;padding:.7rem .9rem;margin:.5rem 0}.tkt .meta{font-size:.82rem;color:var(--muted);display:grid;gap:.1rem}.tkt textarea{width:100%}

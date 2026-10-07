@@ -98,9 +98,9 @@ VIEWS.teacher = (v) => {
   const isAdmin = sess.role === 'admin', body = h('div');
   const chip = (k, label) => h('button', { type: 'button', class: 'fchip' + (tTab === k ? ' on' : ''), 'aria-pressed': tTab === k, onclick: () => { tTab = k; tOpen = null; render(); } }, label);
   root.append(card('', h('div', { class: 'tbar' }, h('span', null, `${sess.email} · ${isAdmin ? L2('správca', 'admin') : L2('učiteľ', 'teacher')}`), btn(L2('Odhlásiť', 'Sign out'), 'ghost small', () => { TS.set(null); render(); })),
-    h('div', { class: 'frow' }, chip('classes', L2('Triedy', 'Classes')), chip('assign', '📌 ' + L2('Zadania', 'Assignments')), isAdmin ? chip('teachers', L2('Učitelia', 'Teachers')) : null)), body);
+    h('div', { class: 'frow' }, chip('classes', L2('Triedy', 'Classes')), chip('assign', '📌 ' + L2('Zadania', 'Assignments')), isAdmin ? chip('support', '📨 ' + L2('Podpora', 'Support') + (tSupNew ? ` (${tSupNew})` : '')) : null, isAdmin ? chip('teachers', L2('Učitelia', 'Teachers')) : null)), body);
   const fail = e => { if (e.status === 401) { TS.set(null); render(); } else body.append(h('p', { class: 'errmsg' }, fmtErr(e))); };
-  if (tTab === 'teachers' && isAdmin) teachersPane(body, sess, fail); else if (tTab === 'assignNew') asgNewPane(body, sess, fail); else if (tTab === 'assign') asgListPane(body, sess, fail); else if (tOpen) classPane(body, sess, fail); else classesPane(body, sess, isAdmin, fail);
+  if (tTab === 'support' && isAdmin) supportPane(body, sess, fail); else if (tTab === 'teachers' && isAdmin) teachersPane(body, sess, fail); else if (tTab === 'assignNew') asgNewPane(body, sess, fail); else if (tTab === 'assign') asgListPane(body, sess, fail); else if (tOpen) classPane(body, sess, fail); else classesPane(body, sess, isAdmin, fail);
 };
 
 function showCodeFull(code, label) {
@@ -293,6 +293,7 @@ VIEWS.privacy = (v) => {
     sec('🏫 ' + L2('2. Ak sa pripojíš k učiteľovi kódom triedy', '2. If you connect to a teacher with a class code'),
       h('p', null, L2('Na server (Cloudflare, databáza v Európe) sa odosiela:', 'The following is sent to the server (Cloudflare, database in Europe):')),
       ul(li(L2('prezývka alebo krstné meno a ročník', 'nickname or first name and grade')), li(L2('trieda, ku ktorej si pripojený/á (podľa kódu)', 'the class you joined (by code)')), li(L2('súhrn výsledkov: hviezdy, body, počet úloh, séria, hodnosť, silné a slabé oblasti, posledných 15 úloh', 'a summary of results: stars, points, number of tasks, streak, rank, strong and weak topics, the last 15 tasks')), li(L2('postup v úlohách zadaných učiteľom', 'progress on tasks assigned by the teacher')), li(L2('čas poslednej aktivity', 'time of last activity'))),
+      h('p', null, L2('Ak cez tlačidlo 💬 pošleš hlásenie podpore, odošle sa meno (ak ho zadáš), text správy a technické údaje: stránka, názov úlohy, ročník, trieda, verzia aplikácie a typ zariadenia.', 'If you send a report with the 💬 button, the name (if you enter one), the message text and technical details are sent: page, task title, grade, class, app version and device type.')),
       h('p', null, L2('Neodosielame priezvisko, adresu, e-mail, telefón, polohu ani fotografie. Prosíme, nepíš do prezývky priezvisko.', 'We do not send surname, address, e-mail, phone, location or photos. Please do not put a surname in the nickname.')),
       h('p', null, L2('Údaje vidí učiteľ tvojej triedy, správca aplikácie a rodič, ktorý má tvoj rodičovský kód (len čítanie). Nie sú verejné.', 'The data is visible to your class teacher, the app administrator and a parent who has your parent code (read-only). It is not public.'))),
     sec('👩‍🏫 ' + L2('3. Učitelia', '3. Teachers'), ul(li(L2('e-mail učiteľa a heslo (uložené len ako zašifrovaný otisk)', 'teacher e-mail and password (stored only as a salted hash)')), li(L2('vytvorené triedy a zadania', 'classes and assignments created')))),
@@ -311,3 +312,26 @@ VIEWS.rules = (v) => {
     sec('ℹ️ ' + L2('Všeobecne', 'In general'), ul(li(L2('Aplikácia slúži na výučbu a zábavu. Úlohy majú vzdelávací charakter.', 'The app is for learning and fun. Tasks are for educational purposes.')), li(L2('Prevádzkovateľ (škola) môže zablokovať alebo zmazať účet pri zneužití.', 'The operator (the school) may block or delete an account in case of misuse.')), li(L2('Aplikáciu poskytujeme tak, ako je, bez záruky bezchybnosti. Odpovede v úlohách sú starostlivo overené, no ak nájdeš chybu, daj vedieť.', 'The app is provided as is, without a guarantee of being error-free. Answers are carefully checked, but if you find a mistake, let us know.')), li(L2('Údaje spracúvame podľa stránky „Aké údaje spracúvame“.', 'Data is processed as described on the “What data we process” page.'))),
       btn('🔒 ' + L2('Aké údaje spracúvame', 'What data we process'), 'ghost', () => go('#/privacy')), h('p', { class: 'muted' }, contact ? L2('Kontakt: ', 'Contact: ') + contact : L2('Kontakt na prevádzkovateľa (školu) doplní škola.', 'The contact of the operator (the school) is added by the school.')))));
 };
+
+/* ---------- admin: support inbox ---------- */
+let tSupNew = 0, tSupFilter = 'new';
+async function supportPane(body, sess, fail) {
+  const KIND = { bug: '🐞 ' + L2('Chyba', 'Bug'), idea: '💡 ' + L2('Návrh', 'Idea'), question: '❓ ' + L2('Otázka', 'Question') }, ST = { new: '🔴 ' + L2('Nové', 'New'), progress: '🟡 ' + L2('Rieši sa', 'In progress'), done: '🟢 ' + L2('Vyriešené', 'Done') };
+  const list = h('div'), bar = h('div', { class: 'frow' });
+  body.append(card('bigcard', h('div', { class: 'tbar' }, h('h2', null, '📨 ' + L2('Podpora – nahlásené problémy', 'Support – reported problems')), btn(L2('Obnoviť', 'Refresh'), 'ghost small', () => render())), bar), list);
+  try {
+    const r = await API.call('/api/tickets?status=' + tSupFilter, 'GET', null, sess.token), sum = r.summary || {}; tSupNew = sum.new || 0;
+    const chip = (k, label) => h('button', { type: 'button', class: 'fchip' + (tSupFilter === k ? ' on' : ''), 'aria-pressed': tSupFilter === k, onclick: () => { tSupFilter = k; render(); } }, label);
+    bar.append(chip('new', `${ST.new} (${sum.new || 0})`), chip('progress', `${ST.progress} (${sum.progress || 0})`), chip('done', `${ST.done} (${sum.done || 0})`), chip('all', L2('Všetko', 'All')));
+    if (!r.tickets.length) list.append(h('p', { class: 'muted' }, L2('Žiadne hlásenia v tejto skupine.', 'No tickets in this group.')));
+    r.tickets.forEach(t => {
+      const note = h('textarea', { class: 'textin', rows: 2, maxlength: 1000, placeholder: L2('Poznámka k riešeniu (vidíš len ty)', 'Internal note (only you see it)'), 'aria-label': L2('Poznámka', 'Note') }, t.note || '');
+      const set = async (status) => { try { await API.call('/api/tickets/' + t.id, 'POST', { status, note: note.value }, sess.token); toast(L2('Uložené', 'Saved')); render(); } catch (e) { fail(e); } };
+      list.append(card('bigcard tkt ' + t.status, h('div', { class: 'tbar' }, h('h2', null, `${KIND[t.kind] || t.kind} · ${t.name}`), h('span', { class: 'muted' }, ST[t.status] || t.status)),
+        h('div', { class: 'msg' }, t.message),
+        h('div', { class: 'meta' }, h('span', null, '🕒 ' + new Date(t.created).toLocaleString(LANG === 'sk' ? 'sk-SK' : 'en-GB') + ' (' + ago(t.created) + ')'), t.page ? h('span', null, '📍 ' + t.page) : null, t.task ? h('span', null, '🧩 ' + t.task) : null, h('span', null, `👤 ${t.cls ? t.cls + ' · ' : ''}${t.grade ? L2('ročník ', 'grade ') + t.grade + ' · ' : ''}v${t.version || '?'} · ${t.ua || ''}`)),
+        note, h('div', { class: 'btnrow left' }, t.status !== 'progress' ? btn('🟡 ' + L2('Riešim', 'In progress'), 'ghost small', () => set('progress')) : null, t.status !== 'done' ? btn('🟢 ' + L2('Vyriešené', 'Mark done'), 'primary small', () => set('done')) : btn('🔴 ' + L2('Znova otvoriť', 'Reopen'), 'ghost small', () => set('new')), btn('💾 ' + L2('Uložiť poznámku', 'Save note'), 'ghost small', () => set(null)),
+          btn(L2('Zmazať', 'Delete'), 'ghost small danger', () => { if (confirm(L2('Zmazať toto hlásenie?', 'Delete this ticket?'))) API.call('/api/tickets/' + t.id, 'DELETE', null, sess.token).then(() => render()).catch(fail); }))));
+    });
+  } catch (e) { fail(e); }
+}

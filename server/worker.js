@@ -84,10 +84,36 @@ export default {
         return J({ student: pub(r), classLabel: r.label }, 200, cors);
       }
 
+      /* ---- support tickets: anyone can submit ---- */
+      if (p === '/api/tickets' && m === 'POST') {
+        if (!await rateLimit(env, 'ticket:' + ip, 6, 3600)) return J({ error: 'Príliš veľa správ, skús neskôr' }, 429, cors);
+        if (body.website) return J({ ok: true }, 200, cors);
+        const message = clean(body.message, 1500); if (message.length < 5) return J({ error: 'Opíš problém aspoň niekoľkými slovami' }, 400, cors);
+        const kind = ['bug', 'idea', 'question'].includes(body.kind) ? body.kind : 'bug', id = id8(), now = Date.now();
+        await run('INSERT INTO tickets (id, created, updated, name, kind, message, page, task, version, ua, grade, cls, contact, status, note) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', id, now, now, clean(body.name, 40) || 'Anonym', kind, message, clean(body.page, 120), clean(body.task, 160), clean(body.version, 12), clean(body.ua, 160), +body.grade || 0, clean(body.cls, 6), clean(body.contact, 80), 'new', '');
+        return J({ ok: true, id }, 200, cors);
+      }
+
       /* ---- teacher / admin ---- */
       const s = await session(req, env); if (!s) return J({ error: 'Nie si prihlásený' }, 401, cors);
       const isAdmin = s.role === 'admin';
       const ownClass = async code => { const c = await first('SELECT * FROM classes WHERE code=?', code); return c && (isAdmin || c.owner === s.email) ? c : null; };
+
+      /* ---- support inbox (admin only) ---- */
+      if (p.startsWith('/api/tickets')) {
+        if (!isAdmin) return J({ error: 'Len správca' }, 403, cors);
+        if (p === '/api/tickets' && m === 'GET') {
+          const st = url.searchParams.get('status'), rows = await all('SELECT * FROM tickets' + (st && st !== 'all' ? ' WHERE status = ?' : '') + ' ORDER BY created DESC LIMIT 300', ...(st && st !== 'all' ? [st] : []));
+          const sum = await all('SELECT status, COUNT(*) n FROM tickets GROUP BY status');
+          return J({ tickets: rows, summary: Object.fromEntries(sum.map(x => [x.status, x.n])) }, 200, cors);
+        }
+        const tk = p.match(/^\/api\/tickets\/([A-Z0-9]+)$/i);
+        if (tk && m === 'POST') {
+          const st = ['new', 'progress', 'done'].includes(body.status) ? body.status : null, note = body.note != null ? clean(body.note, 1000) : null;
+          await run('UPDATE tickets SET status = COALESCE(?, status), note = COALESCE(?, note), updated = ? WHERE id = ?', st, note, Date.now(), tk[1].toUpperCase()); return J({ ok: true }, 200, cors);
+        }
+        if (tk && m === 'DELETE') { await run('DELETE FROM tickets WHERE id = ?', tk[1].toUpperCase()); return J({ ok: true }, 200, cors); }
+      }
 
       if (p === '/api/teachers') {
         if (!isAdmin) return J({ error: 'Len správca' }, 403, cors);
