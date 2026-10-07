@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.16', at: '2026-10-07 10:00', items: [S('Aplikácia je napojená na server (učiteľské a rodičovské prostredie, synchronizácia žiakov).', 'App connected to the server (teacher and parent area, pupil sync).')] },
   { v: '1.15', at: '2026-10-07 09:30', items: [S('Zobrazenie verzie aplikácie a zoznam zmien (toto okno).', 'App version badge and changelog (this window).')] },
   { v: '1.14', at: '2026-10-07 09:05', items: [
     S('Nová mapa: kľukatá cesta levelov ako v Candy Crush, s hviezdičkami, avatarom a skokmi medzi svetmi.', 'New map: a winding level path like Candy Crush, with stars, your avatar and jumps between worlds.'),

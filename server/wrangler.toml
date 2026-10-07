@@ -8,4 +8,4 @@ ALLOWED_ORIGINS = "https://zajo-sk.github.io,logiq://app"
 # Po `wrangler kv namespace create LOGIQ_DB` doplň vygenerované id:
 [[kv_namespaces]]
 binding = "DB"
-id = "DOPLN_ID_Z_PRIKAZU"
+id = "6f61d62041884a2287a76db49c781cfe"
