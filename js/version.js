@@ -27,6 +27,6 @@ const APP_VERSION = CHANGELOG[0].v;
     const sh = openSheet(h('div', { class: 'sheetin verlog' }, h('h2', null, 'LogiQ ' + APP_VERSION), h('p', { class: 'muted' }, L2('Posledná zmena: ', 'Last change: ') + fmt(CHANGELOG[0].at)),
       h('div', { class: 'verlist' }, CHANGELOG.map(e => h('section', null, h('h3', null, h('b', null, 'v' + e.v), h('small', null, ' · ' + fmt(e.at))), h('ul', null, e.items.map(i => h('li', null, tx(i))))))),
       h('div', { class: 'btnrow' }, btn(t('close'), 'primary', () => sh.close()))), { dismiss: true });
-  } }, 'v' + APP_VERSION + ' · ' + fmt(CHANGELOG[0].at));
+  } }, 'v' + APP_VERSION);
   document.body.append(b);
 })();
