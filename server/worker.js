@@ -32,6 +32,7 @@ async function session(req, env) {
 }
 const clean = (s, n) => String(s ?? '').replace(/[<>]/g, '').trim().slice(0, n);
 const validLabel = s => /^[2-9]\.[A-Z]$/.test(s);
+const id8 = () => rnd(10, CODE_ALPHA);
 
 export default {
   async fetch(req, env) {
@@ -39,92 +40,133 @@ export default {
     if (m === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     const ip = req.headers.get('CF-Connecting-IP') || 'x';
     let body = {}; if (m === 'POST') { try { body = await req.json(); } catch (e) { return J({ error: 'Neplatné dáta' }, 400, cors); } }
+    const q = (sql, ...a) => env.SQL.prepare(sql).bind(...a);
+    const first = (sql, ...a) => q(sql, ...a).first(), all = async (sql, ...a) => (await q(sql, ...a).all()).results, run = (sql, ...a) => q(sql, ...a).run();
     try {
-      if (p === '/api/health') return J({ ok: true }, 200, cors);
+      if (p === '/api/health') return J({ ok: true, db: 'd1' }, 200, cors);
 
       /* ---- login ---- */
       if (p === '/api/login' && m === 'POST') {
         if (!await rateLimit(env, 'login:' + ip, 20, 600)) return J({ error: 'Príliš veľa pokusov, skús neskôr' }, 429, cors);
         const email = clean(body.email, 80).toLowerCase(), pw = String(body.password || ''); let role = null;
         if (email === 'admin') { if (env.ADMIN_PASSWORD && safeEq(pw, env.ADMIN_PASSWORD)) role = 'admin'; }
-        else { const t = await env.DB.get('teacher:' + email, 'json'); if (t && safeEq(await pbkdf2(pw, t.salt), t.hash)) role = 'teacher'; }
+        else { const t = await first('SELECT salt, hash FROM teachers WHERE email=?', email); if (t && safeEq(await pbkdf2(pw, t.salt), t.hash)) role = 'teacher'; }
         if (!role) return J({ error: 'Nesprávne meno alebo heslo' }, 401, cors);
         const token = rnd(40, TOKEN_ALPHA); await env.DB.put('session:' + token, JSON.stringify({ email, role }), { expirationTtl: 43200 });
         return J({ token, role, email }, 200, cors);
       }
 
       /* ---- student device ---- */
+      const myAssignments = async (code, id) => (await all('SELECT a.id, a.title, a.note, a.due, a.created, a.items FROM assignments a WHERE EXISTS (SELECT 1 FROM targets t WHERE t.aid = a.id AND t.code = ? AND (t.student = \'\' OR t.student = ?)) ORDER BY a.created DESC LIMIT 60', code, id))
+        .map(a => ({ id: a.id, title: a.title, note: a.note, due: a.due, created: a.created, items: JSON.parse(a.items || '[]') }));
       if (p === '/api/join' && m === 'POST') {
         if (!await rateLimit(env, 'join:' + ip, 40, 3600)) return J({ error: 'Príliš veľa pokusov' }, 429, cors);
-        const code = clean(body.code, 10).toUpperCase(), cls = await env.DB.get('class:' + code, 'json');
+        const code = clean(body.code, 10).toUpperCase(), cls = await first('SELECT label FROM classes WHERE code=?', code);
         if (!cls) return J({ error: 'Kód triedy neexistuje' }, 404, cors);
-        const id = rnd(8, CODE_ALPHA), secret = rnd(28, TOKEN_ALPHA), parentCode = rnd(8, CODE_ALPHA);
-        const rec = { id, code, nick: clean(body.nick, 30) || 'Žiak', grade: +body.grade || 0, secretHash: await sha256(secret), parentCode, created: Date.now(), updated: Date.now(), data: null };
-        await env.DB.put(`student:${code}:${id}`, JSON.stringify(rec)); await env.DB.put('parent:' + parentCode, `${code}:${id}`);
-        return J({ studentId: id, secret, parentCode, classLabel: cls.label, classCode: code }, 200, cors);
+        const id = rnd(8, CODE_ALPHA), secret = rnd(28, TOKEN_ALPHA), parentCode = rnd(8, CODE_ALPHA), now = Date.now();
+        await run('INSERT INTO students (id, code, nick, grade, secret_hash, parent_code, created, updated, data) VALUES (?,?,?,?,?,?,?,?,NULL)', id, code, clean(body.nick, 30) || 'Žiak', +body.grade || 0, await sha256(secret), parentCode, now, now);
+        return J({ studentId: id, secret, parentCode, classLabel: cls.label, classCode: code, assignments: await myAssignments(code, id) }, 200, cors);
       }
       if (p === '/api/sync' && m === 'POST') {
-        const code = clean(body.classCode, 10).toUpperCase(), id = clean(body.studentId, 12), key = `student:${code}:${id}`, rec = await env.DB.get(key, 'json');
-        if (!rec || !safeEq(await sha256(String(body.secret || '')), rec.secretHash)) return J({ error: 'Neplatný prístup' }, 403, cors);
+        const code = clean(body.classCode, 10).toUpperCase(), id = clean(body.studentId, 12), rec = await first('SELECT secret_hash, nick, grade FROM students WHERE id=? AND code=?', id, code);
+        if (!rec || !safeEq(await sha256(String(body.secret || '')), rec.secret_hash)) return J({ error: 'Neplatný prístup' }, 403, cors);
         const raw = JSON.stringify(body.data || {}); if (raw.length > 30000) return J({ error: 'Príliš veľké dáta' }, 413, cors);
-        rec.data = body.data; rec.nick = clean(body.data?.nick, 30) || rec.nick; rec.grade = +body.data?.grade || rec.grade; rec.updated = Date.now();
-        await env.DB.put(key, JSON.stringify(rec)); return J({ ok: true }, 200, cors);
+        await run('UPDATE students SET data=?, nick=?, grade=?, updated=? WHERE id=?', raw, clean(body.data?.nick, 30) || rec.nick, +body.data?.grade || rec.grade, Date.now(), id);
+        return J({ ok: true, assignments: await myAssignments(code, id) }, 200, cors);
       }
 
       /* ---- parent (read only) ---- */
       const pm = p.match(/^\/api\/parent\/([A-Za-z0-9]+)$/);
       if (pm && m === 'GET') {
         if (!await rateLimit(env, 'parent:' + ip, 60, 600)) return J({ error: 'Príliš veľa pokusov' }, 429, cors);
-        const ref = await env.DB.get('parent:' + pm[1].toUpperCase()); if (!ref) return J({ error: 'Kód neexistuje' }, 404, cors);
-        const rec = await env.DB.get('student:' + ref, 'json'); if (!rec) return J({ error: 'Kód neexistuje' }, 404, cors);
-        const cls = await env.DB.get('class:' + rec.code, 'json');
-        return J({ student: pub(rec), classLabel: cls?.label }, 200, cors);
+        const r = await first('SELECT s.*, c.label FROM students s JOIN classes c ON c.code = s.code WHERE s.parent_code = ?', pm[1].toUpperCase());
+        if (!r) return J({ error: 'Kód neexistuje' }, 404, cors);
+        return J({ student: pub(r), classLabel: r.label }, 200, cors);
       }
 
       /* ---- teacher / admin ---- */
       const s = await session(req, env); if (!s) return J({ error: 'Nie si prihlásený' }, 401, cors);
       const isAdmin = s.role === 'admin';
+      const ownClass = async code => { const c = await first('SELECT * FROM classes WHERE code=?', code); return c && (isAdmin || c.owner === s.email) ? c : null; };
 
       if (p === '/api/teachers') {
         if (!isAdmin) return J({ error: 'Len správca' }, 403, cors);
-        if (m === 'GET') { const l = await env.DB.list({ prefix: 'teacher:' }); const out = []; for (const k of l.keys) { const t = await env.DB.get(k.name, 'json'); out.push({ email: k.name.slice(8), created: t.created }); } return J({ teachers: out }, 200, cors); }
+        if (m === 'GET') return J({ teachers: await all('SELECT email, created FROM teachers ORDER BY email') }, 200, cors);
         if (m === 'POST') {
           const email = clean(body.email, 80).toLowerCase(), pw = String(body.password || '');
           if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || pw.length < 8) return J({ error: 'Zadaj platný e-mail a heslo (min. 8 znakov)' }, 400, cors);
-          if (await env.DB.get('teacher:' + email)) return J({ error: 'Účet už existuje' }, 409, cors);
-          const salt = rnd(16, TOKEN_ALPHA); await env.DB.put('teacher:' + email, JSON.stringify({ salt, hash: await pbkdf2(pw, salt), created: Date.now() }));
+          if (await first('SELECT 1 x FROM teachers WHERE email=?', email)) return J({ error: 'Účet už existuje' }, 409, cors);
+          const salt = rnd(16, TOKEN_ALPHA); await run('INSERT INTO teachers (email, salt, hash, created) VALUES (?,?,?,?)', email, salt, await pbkdf2(pw, salt), Date.now());
           return J({ ok: true }, 200, cors);
         }
       }
       const tm = p.match(/^\/api\/teachers\/(.+)$/);
-      if (tm && m === 'DELETE') { if (!isAdmin) return J({ error: 'Len správca' }, 403, cors); await env.DB.delete('teacher:' + decodeURIComponent(tm[1]).toLowerCase()); return J({ ok: true }, 200, cors); }
+      if (tm && m === 'DELETE') { if (!isAdmin) return J({ error: 'Len správca' }, 403, cors); await run('DELETE FROM teachers WHERE email=?', decodeURIComponent(tm[1]).toLowerCase()); return J({ ok: true }, 200, cors); }
 
       if (p === '/api/classes') {
         if (m === 'GET') {
-          const l = await env.DB.list({ prefix: 'class:' }); const out = [];
-          for (const k of l.keys) { const c = await env.DB.get(k.name, 'json'); if (!isAdmin && c.owner !== s.email) continue; const st = await env.DB.list({ prefix: `student:${k.name.slice(6)}:` }); out.push({ code: k.name.slice(6), label: c.label, owner: c.owner, count: st.keys.length, created: c.created }); }
-          return J({ classes: out.sort((a, b) => a.label.localeCompare(b.label)) }, 200, cors);
+          const rows = await all('SELECT c.code, c.label, c.owner, c.created, (SELECT COUNT(*) FROM students x WHERE x.code = c.code) AS count FROM classes c' + (isAdmin ? '' : ' WHERE c.owner = ?') + ' ORDER BY c.label', ...(isAdmin ? [] : [s.email]));
+          return J({ classes: rows }, 200, cors);
         }
         if (m === 'POST') {
           const label = clean(body.label, 4).toUpperCase(); if (!validLabel(label)) return J({ error: 'Neplatná trieda' }, 400, cors);
-          const code = rnd(6, CODE_ALPHA); await env.DB.put('class:' + code, JSON.stringify({ label, owner: s.email, created: Date.now() }));
+          if (await first('SELECT 1 x FROM classes WHERE owner=? AND label=?', s.email, label)) return J({ error: `Triedu ${label} už máš vytvorenú` }, 409, cors);
+          const code = rnd(6, CODE_ALPHA); await run('INSERT INTO classes (code, label, owner, created) VALUES (?,?,?,?)', code, label, s.email, Date.now());
           return J({ code, label }, 200, cors);
         }
       }
       const cm = p.match(/^\/api\/classes\/([A-Z0-9]+)(\/students)?$/i);
       if (cm) {
-        const code = cm[1].toUpperCase(), c = await env.DB.get('class:' + code, 'json');
-        if (!c || (!isAdmin && c.owner !== s.email)) return J({ error: 'Trieda nenájdená' }, 404, cors);
-        if (cm[2] && m === 'GET') { const l = await env.DB.list({ prefix: `student:${code}:` }); const out = []; for (const k of l.keys) out.push(pub(await env.DB.get(k.name, 'json'))); return J({ label: c.label, students: out }, 200, cors); }
-        if (!cm[2] && m === 'DELETE') { const l = await env.DB.list({ prefix: `student:${code}:` }); for (const k of l.keys) { const r = await env.DB.get(k.name, 'json'); await env.DB.delete('parent:' + r.parentCode); await env.DB.delete(k.name); } await env.DB.delete('class:' + code); return J({ ok: true }, 200, cors); }
+        const code = cm[1].toUpperCase(), c = await ownClass(code); if (!c) return J({ error: 'Trieda nenájdená' }, 404, cors);
+        if (cm[2] && m === 'GET') return J({ label: c.label, students: (await all('SELECT * FROM students WHERE code=?', code)).map(pub) }, 200, cors);
+        if (!cm[2] && m === 'DELETE') { await run('DELETE FROM students WHERE code=?', code); await run('DELETE FROM targets WHERE code=?', code); await run('DELETE FROM classes WHERE code=?', code); return J({ ok: true }, 200, cors); }
       }
       const sm = p.match(/^\/api\/students\/([A-Z0-9]+)\/([A-Z0-9]+)$/i);
-      if (sm && m === 'DELETE') {
-        const code = sm[1].toUpperCase(), c = await env.DB.get('class:' + code, 'json'); if (!c || (!isAdmin && c.owner !== s.email)) return J({ error: 'Nenájdené' }, 404, cors);
-        const k = `student:${code}:${sm[2].toUpperCase()}`, r = await env.DB.get(k, 'json'); if (r) { await env.DB.delete('parent:' + r.parentCode); await env.DB.delete(k); } return J({ ok: true }, 200, cors);
+      if (sm && m === 'DELETE') { const code = sm[1].toUpperCase(); if (!await ownClass(code)) return J({ error: 'Nenájdené' }, 404, cors); await run('DELETE FROM students WHERE id=? AND code=?', sm[2].toUpperCase(), code); await run('DELETE FROM targets WHERE student=?', sm[2].toUpperCase()); return J({ ok: true }, 200, cors); }
+
+      /* ---- assignments ---- */
+      const targetsOf = async aid => {
+        const t = await all('SELECT code, student FROM targets WHERE aid=?', aid), out = [];
+        for (const x of t) {
+          if (x.student) { const r = await first('SELECT s.*, c.label FROM students s JOIN classes c ON c.code = s.code WHERE s.id=?', x.student); if (r) out.push(r); }
+          else for (const r of await all('SELECT s.*, c.label FROM students s JOIN classes c ON c.code = s.code WHERE s.code=?', x.code)) out.push(r);
+        }
+        const seen = new Set(); return out.filter(r => !seen.has(r.id) && seen.add(r.id));
+      };
+      const progress = (r, aid) => { try { return (JSON.parse(r.data || '{}').asg || {})[aid] || null; } catch (e) { return null; } };
+      if (p === '/api/assignments') {
+        if (m === 'GET') {
+          const rows = await all('SELECT * FROM assignments' + (isAdmin ? '' : ' WHERE owner = ?') + ' ORDER BY created DESC LIMIT 100', ...(isAdmin ? [] : [s.email])), out = [];
+          for (const a of rows) {
+            const items = JSON.parse(a.items || '[]'), st = await targetsOf(a.id), tg = await all('SELECT t.code, t.student, c.label FROM targets t LEFT JOIN classes c ON c.code = t.code WHERE t.aid = ?', a.id);
+            const done = st.filter(r => (progress(r, a.id) || {}).d >= items.length).length;
+            out.push({ id: a.id, title: a.title, note: a.note, due: a.due, created: a.created, owner: a.owner, nItems: items.length, nStudents: st.length, nDone: done, targets: tg.map(x => x.student ? { student: true } : { label: x.label }) });
+          }
+          return J({ assignments: out }, 200, cors);
+        }
+        if (m === 'POST') {
+          const title = clean(body.title, 80), note = clean(body.note, 400), due = +body.due || null, items = Array.isArray(body.items) ? body.items.slice(0, 80) : [];
+          if (!title) return J({ error: 'Zadaj názov zadania' }, 400, cors);
+          const okItems = items.filter(i => i && ((typeof i.st === 'string' && /^[\w-]{1,40}$/.test(i.st)) || (typeof i.lv === 'string' && /^L[2-9]-[a-z]{2,8}-[1-7]$/.test(i.lv) && Number.isInteger(i.i) && i.i >= 0 && i.i < 10))).map(i => i.st ? { st: i.st } : { lv: i.lv, i: i.i });
+          if (!okItems.length) return J({ error: 'Vyber aspoň jednu úlohu' }, 400, cors);
+          const classes = [...new Set((body.classes || []).map(c => clean(c, 10).toUpperCase()))], studs = Array.isArray(body.students) ? body.students.slice(0, 500) : [], tg = [];
+          for (const code of classes) { if (!await ownClass(code)) return J({ error: 'Neplatná trieda' }, 400, cors); tg.push([code, '']); }
+          for (const x of studs) { const code = clean(x && x.code, 10).toUpperCase(), id = clean(x && x.id, 12).toUpperCase(); if (!await ownClass(code) || !await first('SELECT 1 x FROM students WHERE id=? AND code=?', id, code)) return J({ error: 'Neplatný žiak' }, 400, cors); if (!classes.includes(code)) tg.push([code, id]); }
+          if (!tg.length) return J({ error: 'Vyber triedu alebo žiakov' }, 400, cors);
+          const id = id8(); await run('INSERT INTO assignments (id, owner, title, note, due, created, items) VALUES (?,?,?,?,?,?,?)', id, s.email, title, note, due, Date.now(), JSON.stringify(okItems));
+          for (const [code, st] of tg) await run('INSERT INTO targets (aid, code, student) VALUES (?,?,?)', id, code, st);
+          return J({ id }, 200, cors);
+        }
+      }
+      const am = p.match(/^\/api\/assignments\/([A-Z0-9]+)$/i);
+      if (am) {
+        const a = await first('SELECT * FROM assignments WHERE id=?', am[1].toUpperCase());
+        if (!a || (!isAdmin && a.owner !== s.email)) return J({ error: 'Zadanie nenájdené' }, 404, cors);
+        if (m === 'DELETE') { await run('DELETE FROM targets WHERE aid=?', a.id); await run('DELETE FROM assignments WHERE id=?', a.id); return J({ ok: true }, 200, cors); }
+        if (m === 'GET') { const items = JSON.parse(a.items || '[]'), st = await targetsOf(a.id); return J({ assignment: { id: a.id, title: a.title, note: a.note, due: a.due, created: a.created, items }, rows: st.map(r => ({ id: r.id, nick: r.nick, label: r.label, updated: r.updated, p: progress(r, a.id) })) }, 200, cors); }
       }
       return J({ error: 'Nenájdené' }, 404, cors);
     } catch (e) { return J({ error: 'Chyba servera' }, 500, cors); }
   }
 };
-const pub = r => ({ id: r.id, classCode: r.code, nick: r.nick, grade: r.grade, parentCode: r.parentCode, created: r.created, updated: r.updated, data: r.data });
+const pub = r => ({ id: r.id, classCode: r.code, nick: r.nick, grade: r.grade, parentCode: r.parent_code, created: r.created, updated: r.updated, data: r.data ? JSON.parse(r.data) : null });

@@ -212,6 +212,7 @@ VIEWS.home = (v) => {
       h('div', { class: 'stat' }, h('b', null, '💎 ' + tot.points), h('span', null, t('points'))),
       h('div', { class: 'stat' }, h('b', null, '🔥 ' + st().streak.count), h('span', null, t('streakDays'))),
       h('div', { class: 'stat' }, h('b', null, '🏅 ' + Object.keys(st().badges).length), h('span', null, t('nav_badges')))),
+    typeof assignCard === 'function' ? assignCard() : null,
     questsCard(),
     h('div', { class: 'grid2' },
       card('progress', h('div', { class: 'ring', html: `<svg viewBox="0 0 80 80" role="img" aria-label="${Math.round(pct * 100)}%"><circle cx="40" cy="40" r="34" fill="none" stroke="#e3e8f5" stroke-width="9"/><circle cx="40" cy="40" r="34" fill="none" stroke="url(#lg)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${C * pct} ${C}" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle" font-size="18" font-weight="800" fill="#0f1f4b">${Math.round(pct * 100)}%</text></svg>` }),

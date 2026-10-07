@@ -20,3 +20,8 @@ Kód je na GitHube, **dáta žiakov nie** (GitHub nevie bezpečne prijímať zá
 - Používaj iba **meno/prezývku** žiaka, nie priezvisko. Rodičom oznám, aké údaje sa ukladajú (prezývka, trieda, postup) a že ich vie učiteľ vymazať.
 - Zmazanie žiaka alebo celej triedy je v učiteľskom prostredí. Heslá sú uložené len ako PBKDF2 hash.
 - Pred ostrým nasadením to konzultuj s poverencom pre ochranu osobných údajov školy (GDPR).
+
+## Databáza (D1)
+Triedy, žiaci, učitelia a zadania sú v databáze Cloudflare D1 (`logiq`), schéma je v `schema.sql`:
+`npx wrangler d1 create logiq` → id vlož do `wrangler.toml` → `npx wrangler d1 execute logiq --remote --file=schema.sql` → `npx wrangler deploy`.
+KV sa používa už len na prihlasovacie relácie a limit pokusov.

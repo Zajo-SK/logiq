@@ -1,5 +1,5 @@
 /* LogiQ service worker – offline app shell (network-first for HTML, cache-first for assets) */
-const CACHE = 'logiq-v24';
+const CACHE = 'logiq-v25';
 const SHELL = ['./', 'index.html', 'css/style.css', 'js/util.js', 'js/i18n.js', 'js/store.js', 'js/tasktypes.js', 'js/content.js', 'js/gen_logic.js', 'js/gen_math.js', 'js/gen_chess.js', 'js/gen_kid.js', 'js/worlds.js', 'js/rewards.js', 'js/sims.js', 'js/sims2.js', 'js/frogs.js', 'js/config.js', 'js/app.js', 'js/version.js', 'js/teacher.js', 'js/sudokuengine.js', 'js/sudokubank.js', 'js/sudokugame.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-180.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });

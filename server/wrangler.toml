@@ -9,3 +9,9 @@ ALLOWED_ORIGINS = "https://zajo-sk.github.io,logiq://app"
 [[kv_namespaces]]
 binding = "DB"
 id = "6f61d62041884a2287a76db49c781cfe"
+
+# Silne konzistentná databáza (učitelia, triedy, žiaci, zadania). Schéma: schema.sql
+[[d1_databases]]
+binding = "SQL"
+database_name = "logiq"
+database_id = "b96c1008-7b6b-41e0-960e-38f8e15ad85e"
