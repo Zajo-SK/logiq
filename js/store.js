@@ -15,7 +15,7 @@ const Store = (() => {
     v: 1,
     userId: 'u-' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36),
     profile: { name: '', grade: null, cls: '', lang: nav.startsWith('en') ? 'en' : 'sk', created: Date.now() },
-    settings: { sound: true, anim: true, bigtext: false, autoRead: false, avatar: '🦊', theme: 'base' }, rewards: {}, bonus: 0, levelBonus: {}, maxStreak: 0,
+    settings: { sound: true, anim: true, bigtext: false, autoRead: false, avatar: '🦊', theme: 'base' }, rewards: {}, bonus: 0, levelBonus: {}, maxStreak: 0, stickers: {}, medals: {}, quests: {}, mile: {},
     tasks: {}, badges: {}, daily: {}, streak: { count: 0, last: null }, history: [],
     sync: { adapter: 'local', lastSynced: null, studentId: null, secret: null, classCode: null, classLabel: null, parentCode: null, dirty: false }
   });

@@ -212,6 +212,7 @@ VIEWS.home = (v) => {
       h('div', { class: 'stat' }, h('b', null, '💎 ' + tot.points), h('span', null, t('points'))),
       h('div', { class: 'stat' }, h('b', null, '🔥 ' + st().streak.count), h('span', null, t('streakDays'))),
       h('div', { class: 'stat' }, h('b', null, '🏅 ' + Object.keys(st().badges).length), h('span', null, t('nav_badges')))),
+    questsCard(),
     h('div', { class: 'grid2' },
       card('progress', h('div', { class: 'ring', html: `<svg viewBox="0 0 80 80" role="img" aria-label="${Math.round(pct * 100)}%"><circle cx="40" cy="40" r="34" fill="none" stroke="#e3e8f5" stroke-width="9"/><circle cx="40" cy="40" r="34" fill="none" stroke="url(#lg)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${C * pct} ${C}" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle" font-size="18" font-weight="800" fill="#0f1f4b">${Math.round(pct * 100)}%</text></svg>` }),
         h('div', null, h('h2', null, t('yourProgress')), h('p', null, t('levelsDone', { a: doneLv, b: seq.length })), btn(t('openMap'), 'ghost small', () => go('#/map')))),
@@ -225,23 +226,47 @@ VIEWS.home = (v) => {
 
 const trainTitles = new Map();
 let chGrade = 0;
+let mapKeep = false;
+const mapStars = (li) => { const n = li.complete ? Math.max(1, Math.round(li.stars / li.maxStars * 3)) : 0; return h('span', { class: 'mstars', 'aria-label': n + '/3' }, [0, 1, 2].map(i => h('i', { class: i < n ? 'on' : '' }, '★'))); };
 VIEWS.map = (v) => {
-  const g = grade(), seq = gradeSequence(g), chOpts = [g + 1, g + 2].filter(x => x <= 9);
+  const g = grade(), seq = gradeSequence(g), chOpts = [g + 1, g + 2].filter(x => x <= 9), nt = nextTarget(g), curId = nt ? nt.entry.level.id : null;
   if (!chOpts.includes(chGrade)) chGrade = chOpts[0] || 0;
+  evalCollection(); const owned = st().stickers || {}, medals = st().medals || {};
+  const STEP = 116, TOP = 62, xOf = i => 50 + 29 * Math.sin(i * 1.15 + .4);
   const worldBlock = (w, challenge) => {
-    const gs = challenge ? gradeSequence(w.grade) : seq, entries = gs.filter(e => e.world.key === w.key), infos = entries.map(e => levelInfo(e, g)), wd = infos.filter(x => x.complete).length;
-    return h('section', { class: 'world' + (challenge ? ' challenge' : ''), style: `--wc:${w.color}` },
-      h('header', { class: 'world-h' }, h('span', { class: 'w-ico', 'aria-hidden': 'true' }, w.icon), h('div', null, h('h2', null, tx(w.name), challenge ? h('span', { class: 'tag' }, '⚡ ' + gradeLabel(w.grade)) : null), h('p', null, tx(w.desc))), h('span', { class: 'w-prog' }, `${wd}/${entries.length}`)),
-      h('div', { class: 'path' }, entries.map((e, i) => {
-        const li = infos[i], open = challenge || e.idx === 0 || infos[i - 1].complete, state = li.complete ? 'done' : open ? 'open' : 'locked';
-        return h('button', { type: 'button', class: `node ${state}`, 'aria-disabled': !open, onclick: () => open ? go('#/level/' + e.level.id) : toast(t('finishPrev')) },
-          h('span', { class: 'n-badge' }, state === 'locked' ? h('span', { html: ic('lock') }) : state === 'done' ? '✓' : (i + 1)),
-          h('span', { class: 'n-body' }, h('b', null, tx(e.level.name)), h('small', null, state === 'locked' ? t('locked') : `${li.done}/${li.total} · ${li.stars}★`)));
-      })));
+    const gs = challenge ? gradeSequence(w.grade) : seq, entries = gs.filter(e => e.world.key === w.key), infos = entries.map(e => levelInfo(e, g)), wd = infos.filter(x => x.complete).length, N = entries.length;
+    const H = TOP + (N - 1) * STEP + 96, pts = entries.map((e, i) => [xOf(i), TOP + i * STEP]);
+    const firstOpen = infos.findIndex(x => !x.complete), stk = STICKERS[w.key] || [];
+    const seg = (i) => { const [x0, y0] = pts[i], [x1, y1] = pts[i + 1], m = (y1 - y0) / 2; return `M${x0.toFixed(2)} ${y0} C${x0.toFixed(2)} ${y0 + m} ${x1.toFixed(2)} ${y1 - m} ${x1.toFixed(2)} ${y1}`; };
+    const medal = medals[w.grade + '|' + w.key];
+    const svg = h('div', { class: 'mroad', html: `<svg viewBox="0 0 100 ${H}" preserveAspectRatio="none" aria-hidden="true">${pts.slice(0, -1).map((_, i) => `<path d="${seg(i)}" class="rb"/>`).join('')}${pts.slice(0, -1).map((_, i) => infos[i].complete ? `<path d="${seg(i)}" class="rd"/>` : '').join('')}</svg>` });
+    const nodes = entries.map((e, i) => {
+      const li = infos[i], open = challenge || e.idx === 0 || infos[i - 1].complete, state = li.complete ? 'done' : open ? 'open' : 'locked', boss = i === N - 1, here = !challenge && e.level.id === curId;
+      return h('button', { type: 'button', class: `mnode ${state}${boss ? ' boss' : ''}${here ? ' cur' : ''}${!li.complete && open && i === firstOpen ? ' next' : ''}`, style: `left:${pts[i][0]}%;top:${pts[i][1]}px`, 'aria-disabled': !open, 'aria-label': `${tx(e.level.name)} ${li.done}/${li.total}`,
+        onclick: () => open ? go('#/level/' + e.level.id) : toast(t('finishPrev')) },
+        here ? h('span', { class: 'you', 'aria-hidden': 'true' }, st().settings.avatar) : null,
+        h('span', { class: 'mdisc' }, state === 'locked' ? h('span', { html: ic('lock') }) : state === 'done' ? (boss ? '🏆' : '✓') : (boss ? '🏆' : (i + 1))),
+        state === 'locked' ? null : mapStars(li),
+        h('span', { class: 'mlab' }, tx(e.level.name), state === 'open' && li.done ? h('small', null, `${li.done}/${li.total}`) : null));
+    });
+    const decor = entries.map((e, i) => { const sk = stk[e.idx] || w.icon, got = !!owned[w.key + '|' + e.idx]; return h('span', { class: 'mdecor' + (got ? ' got' : ''), style: `top:${pts[i][1] + 34}px;${pts[i][0] < 50 ? 'right:6%' : 'left:6%'}`, 'aria-hidden': 'true' }, sk); });
+    return h('section', { class: 'wsec' + (challenge ? ' challenge' : ''), id: 'w-' + w.id, style: `--wc:${w.color}` },
+      h('header', { class: 'wbanner' }, h('span', { class: 'w-ico', 'aria-hidden': 'true' }, w.icon),
+        h('div', null, h('h2', null, tx(w.name), challenge ? h('span', { class: 'tag' }, '⚡ ' + gradeLabel(w.grade)) : null), h('p', null, tx(w.desc))),
+        h('span', { class: 'w-prog' }, medal ? '🥇' : '', ` ${wd}/${N}`)),
+      h('div', { class: 'wmap', style: `height:${H}px` }, svg, decor, nodes));
   };
   const chip = (label, on, fn) => h('button', { type: 'button', class: 'fchip' + (on ? ' on' : ''), 'aria-pressed': on, onclick: fn }, label);
-  const ch = chOpts.length ? [h('h2', { class: 'section-h' }, '⚡ ' + t('challengeWorlds')), h('p', { class: 'muted' }, t('challengeLead')), h('div', { class: 'frow' }, chOpts.map(x => chip(gradeLabel(x), chGrade === x, () => { chGrade = x; render(); }))), ...worldsFor(chGrade).map(w => worldBlock(w, true))] : [];
-  page(v, t('nav_map'), `${gradeLabel(g)} · ${t('mapLead')}`, h('div', { class: 'worlds' }, worldsFor(g).map(w => worldBlock(w, false))), ch);
+  const ch = chOpts.length ? [h('h2', { class: 'section-h' }, '⚡ ' + t('challengeWorlds')), h('p', { class: 'muted' }, t('challengeLead')), h('div', { class: 'frow' }, chOpts.map(x => chip(gradeLabel(x), chGrade === x, () => { chGrade = x; mapKeep = true; render(); }))), ...worldsFor(chGrade).map(w => worldBlock(w, true))] : [];
+  const ws = worldsFor(g), stN = Object.keys(owned).length, mdN = Object.keys(medals).length, totalLv = seq.length, doneLv = seq.filter(e => levelInfo(e, g).complete).length;
+  const jump = h('nav', { class: 'wjump', 'aria-label': t('nav_map') }, ws.map(w => { const es = seq.filter(e => e.world.key === w.key), d = es.filter(e => levelInfo(e, g).complete).length;
+    return h('button', { type: 'button', class: 'wj' + (d === es.length ? ' full' : ''), style: `--wc:${w.color}`, 'aria-label': tx(w.name), onclick: () => { const el = document.getElementById('w-' + w.id); el && el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }, h('span', null, w.icon), h('small', null, `${d}/${es.length}`)); }));
+  const hero = h('section', { class: 'maphero' }, h('div', { class: 'mh-main' }, h('p', { class: 'eyebrow' }, gradeLabel(g)), h('h2', null, nt ? nt.entry.world.icon + ' ' + tx(nt.entry.world.name) : '🎉'),
+      h('p', null, nt ? tx(nt.entry.level.name) : t('heroAllDone')), nt ? btn(t('continue') + ' ▸', 'gold', () => go(`#/play/${nt.entry.level.id}/${nt.idx}`)) : null),
+    h('div', { class: 'mh-stats' }, h('div', null, h('b', null, `${doneLv}/${totalLv}`), h('span', null, L2('levely', 'levels'))), h('div', null, h('b', null, `🎴 ${stN}/${Object.keys(STICKERS).length * 7}`), h('span', null, L2('nálepky', 'stickers'))), h('div', null, h('b', null, '🥇 ' + mdN), h('span', null, L2('medaily', 'medals')))));
+  page(v, t('nav_map'), `${gradeLabel(g)} · ${t('mapLead')}`, hero, jump, h('div', { class: 'worlds' }, ws.map(w => worldBlock(w, false))), ch);
+  if (!mapKeep) setTimeout(() => { const el = v.querySelector('.mnode.cur'); if (el) el.scrollIntoView({ block: 'center' }); }, 80);
+  mapKeep = false;
 };
 
 VIEWS.level = (v, [lid]) => {
@@ -289,9 +314,9 @@ VIEWS.dplay = () => openTask(dailyTask(grade()), { backHash: '#/daily', daily: t
 VIEWS.done = (v, [lid]) => {
   const entry = allLevels().find(x => x.level.id === lid); if (!entry) return go('#/map');
   const g = grade(), li = levelInfo(entry, g); if (!li.complete) return go('#/level/' + lid);
-  const rankBefore = rankOf(Store.totals().points).i, lvBonus = !st().levelBonus[lid] ? 50 : 0; if (lvBonus) { st().levelBonus[lid] = true; Store.addBonus(lvBonus); }
-  const rw = evalRewards(), ra = rankOf(Store.totals().points), xtra = { bonus: lvBonus, bonusLabel: 'levelBonus', rewards: rw, rankUp: ra.i > rankBefore ? ra.r : null };
-  const earned = evalBadges({ levelDone: true }), seq = gradeSequence(g), si = seq.findIndex(e => e.level === entry.level);
+  const rankBefore = rankOf(Store.totals().points).i, lvBonus = !st().levelBonus[lid] ? 30 + Math.round(li.stars / li.maxStars * 60) : 0; if (lvBonus) { st().levelBonus[lid] = true; Store.addBonus(lvBonus); }
+  const col = evalCollection(), ms = evalMilestones(), rw = evalRewards(), ra = rankOf(Store.totals().points), xtra = { bonus: lvBonus, bonusLabel: 'levelBonus', rewards: rw, rankUp: ra.i > rankBefore ? ra.r : null, stickers: col.stickers, medals: col.medals, mile: ms };
+  const earned = evalBadges({ levelDone: true, perfect: li.stars === li.maxStars }), seq = gradeSequence(g), si = seq.findIndex(e => e.level === entry.level);
   const nxt = (si >= 0 && seq[si + 1] && seq[si + 1].world === entry.world) ? seq[si + 1] : seq.find((e, ix) => !levelInfo(e, g).complete && isUnlocked(seq, ix, g)) || null;
   renderHeader(route());
   tone(SND.ok); setTimeout(() => confetti(), 150); if (earned.length) setTimeout(() => tone(SND.badge, .11), 700);
@@ -303,7 +328,8 @@ VIEWS.done = (v, [lid]) => {
     h('div', { class: 'burst', 'aria-hidden': 'true' }, '🏆'), h('h1', null, t('levelDoneTitle')), h('p', { class: 'lead' }, tx(entry.level.name)),
     h('div', { class: 'bigstars' }, starsHtml(Math.round(li.stars / li.maxStars * 3) || 1)),
     h('div', { class: 'statrow tight' }, h('div', { class: 'stat' }, h('b', null, `★ ${li.stars}/${li.maxStars}`), h('span', null, t('stars'))), h('div', { class: 'stat' }, h('b', null, '💎 ' + li.tasks.reduce((a, x) => a + ((Store.info(x.id) || {}).points || 0), 0)), h('span', null, t('points')))),
-    extraEls(xtra),
+    lvBonus ? h('div', { class: 'chest' }, h('span', { class: 'ci', 'aria-hidden': 'true' }, '🎁'), h('span', null, L2('Truhlica za level: ', 'Level chest: ') + '+' + lvBonus + ' 💎 ' + L2('(viac hviezd = väčšia truhlica)', '(more stars = bigger chest)'))) : null,
+    extraEls(Object.assign({}, xtra, { bonus: 0 })),
     earned.length ? h('div', { class: 'newbadges' }, h('h2', null, t('newBadges')), h('div', { class: 'badgerow' }, earned.map(b => h('div', { class: 'badge got pop' }, h('span', { class: 'bi' }, b.icon), h('b', null, tx(b.n)))))) : null,
     h('p', { class: 'motiv' }, t('motivation')),
     h('h2', null, t('whatNext')), h('ul', { class: 'reclist' }, recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸')))),
@@ -319,6 +345,7 @@ VIEWS.daily = (v) => {
       h('div', null, h('p', { class: 'eyebrow' }, t('todayChallenge')), h('h2', null, `${CATS[dt.cat].icon} ${tx(CATS[dt.cat].n)}`), h('p', null, done ? t('dailyDoneLong') : t('dailyLead')),
         done ? h('div', null, starsHtml(rec.stars || 1), ' ', h('span', { class: 'muted' }, t('comeBack'))) : null,
         btn(done ? t('replay') : t('playDaily') + ' ▸', done ? 'ghost' : 'primary big', () => go('#/dplay')))),
+    questsCard(),
     card('', h('h2', null, `🔥 ${t('streak')}: ${st().streak.count} ${t('streakDays')}`),
       h('div', { class: 'week' }, days.map(d => { const k = dayKey(d), ok = (st().daily[k] || {}).done; return h('div', { class: 'day' + (ok ? ' ok' : '') + (k === key ? ' today' : '') }, h('small', null, d.toLocaleDateString(LANG === 'sk' ? 'sk-SK' : 'en-GB', { weekday: 'short' })), h('b', { 'aria-label': ok ? t('done') : t('notYet') }, ok ? '✓' : '·')); })),
       h('p', { class: 'muted' }, t('streakLead')))));
@@ -355,7 +382,7 @@ VIEWS.collection = (v) => {
 VIEWS.badges = (v) => {
   const tot = Store.totals(), got = st().badges;
   evalRewards();
-  page(v, t('nav_badges'), t('badgesLead', { a: Object.keys(got).length, b: BADGES.length }), rankCard(), rewardsGrid(), h('h2', { class: 'section-h' }, '🏅 ' + t('badgesTitle')),
+  page(v, t('nav_badges'), t('badgesLead', { a: Object.keys(got).length, b: BADGES.length }), rankCard(), questsCard(), albumCard(), rewardsGrid(), h('h2', { class: 'section-h' }, '🏅 ' + t('badgesTitle')),
     h('div', { class: 'statrow' }, h('div', { class: 'stat' }, h('b', null, '★ ' + tot.stars), h('span', null, t('stars'))), h('div', { class: 'stat' }, h('b', null, '💎 ' + tot.points), h('span', null, t('points'))), h('div', { class: 'stat' }, h('b', null, '✅ ' + tot.done), h('span', null, t('tasksSolved'))), h('div', { class: 'stat' }, h('b', null, '🔥 ' + st().streak.count), h('span', null, t('streakDays')))),
     h('div', { class: 'badgegrid' }, BADGES.map(b => { const on = !!got[b.id]; return h('div', { class: 'badge' + (on ? ' got' : '') }, h('span', { class: 'bi' }, on ? b.icon : '🔒'), h('b', null, tx(b.n)), h('small', null, tx(b.d)), h('span', { class: 'bstate' }, on ? '✓ ' + t('earned') : t('locked'))); })));
 };
@@ -440,7 +467,7 @@ function openTask(task, o) {
     const li = o.tasks ? o.tasks.every(x => Store.isDone(x.id)) : false;
     const earned = o.train ? [] : evalBadges({ task, ss, daily: !!o.daily, challenge: !!o.challenge && !o.daily, levelDone: false });
     const extra = { bonus: 0, rewards: [], rankUp: null };
-    if (!o.train) { if (firstToday) { extra.bonus = 10 + Math.min(40, Math.max(0, st().streak.count - 1) * 5); Store.addBonus(extra.bonus); } extra.rewards = evalRewards(); const ra = rankOf(Store.totals().points); if (ra.i > rankBefore) extra.rankUp = ra.r; }
+    if (!o.train) { if (firstToday) { extra.bonus = 10 + Math.min(40, Math.max(0, st().streak.count - 1) * 5); Store.addBonus(extra.bonus); } const qe = evalQuests(); extra.quests = qe.quests; extra.questsAll = qe.all; extra.mile = evalMilestones(); extra.rewards = evalRewards(); const ra = rankOf(Store.totals().points); if (ra.i > rankBefore) extra.rankUp = ra.r; }
     renderHeader(route()); refresh(); showResult(stars, pts, earned, li, extra);
   }
   function showResult(stars, pts, earned, lvlDone, extra = {}) {

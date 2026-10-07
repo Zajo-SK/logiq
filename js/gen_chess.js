@@ -96,9 +96,10 @@ reg('chessplay', 'chess', 2, c => {
 });
 
 reg('domino', 'chess', 2, c => {
-  const { r, D, k } = c, v = k % 3, a = 2 * ri(r, 2, clamp(lerp(2, 4, D), 2, 4)), b = 2 * ri(r, 2, clamp(lerp(2, 4, D) + 1, 2, 5));
+  const { r, D, k } = c, v = k % 3, a0 = 2 * ri(r, 2, clamp(lerp(2, 4, D), 2, 4)), b0 = 2 * ri(r, 2, clamp(lerp(2, 4, D) + 1, 2, 5));
   if (v === 0) { const x = ri(r, 3, lerp(7, 15, D)), y = ri(r, 3, lerp(7, 15, D)); return { title: S('Domino na doske', 'Dominoes on a board'), sim: x <= 8 && y <= 8 ? { kind: 'dominoes', a: x, b: y, removed: [] } : null, type: 'number', prompt: S(`🁢 Doska ${x}×${y}. Koľko domín 1×2 sa najviac zmestí?`, `🁢 A ${x}×${y} board. How many 1×2 dominoes fit at most?`), data: { answer: Math.floor(x * y / 2) },
     hints: [S('Každé domino zaberie 2 políčka.', 'Each domino covers 2 squares.'), S('Koľko políčok má doska? Čo ak je ich nepárny počet?', 'How many squares does the board have? What if the number is odd?')], explain: [S(`Doska má ${x} · ${y} = ${x * y} políčok.`, `The board has ${x} · ${y} = ${x * y} squares.`), S(`Domino zaberá 2 políčka, preto ${x * y} : 2 = ${Math.floor(x * y / 2)}${(x * y) % 2 ? ' (jedno políčko ostane voľné)' : ''}.`, `A domino covers 2 squares, so ${x * y} : 2 = ${Math.floor(x * y / 2)}${(x * y) % 2 ? ' (one square stays free)' : ''}.`)] }; }
+  let a = a0, b = b0; if (v === 2) { a = ri(r, 3, 9); b = ri(r, 3, 9); if (a * b % 2) b += 1; if (b > 10) b = 4; }
   const same = v === 1, cells = []; let rem;
   if (same) rem = [[0, 0], [a - 1, b - 1]]; else { const p = [ri(r, 0, a - 1), ri(r, 0, b - 1)]; let q; do q = [ri(r, 0, a - 1), ri(r, 0, b - 1)]; while ((p[0] + p[1]) % 2 === (q[0] + q[1]) % 2); rem = [p, q]; }
   const ok = (rem[0][0] + rem[0][1]) % 2 !== (rem[1][0] + rem[1][1]) % 2, remSet = new Set(rem.map(([x, y]) => x * b + y));

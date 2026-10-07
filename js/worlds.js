@@ -51,11 +51,23 @@ function sigOf(t) {
 }
 /* Deterministic de-duplication: the k-th task of a family in a world is derived from the history of tasks 0..k-1,
    so a task id always yields the same task whatever order levels are opened in, and no two tasks of a grade are identical. */
+/* "Looks the same" signature: prompt without square coordinates + the answer, so e.g. the same piece with the same answer
+   on another square counts as a repeat. Used to prefer a genuinely different task when the exact signature is new. */
+function fuzzyOf(t) {
+  const keep = LANG; LANG = 'sk';
+  try { const d = t.data || {}; return JSON.stringify([tx(t.prompt).replace(/\b[a-h][1-8]\b/g, ''), d.answer, d.correct, d.piece, d.mode, d.N, d.n]); } finally { LANG = keep; }
+}
 function famTask(fam, grade, wkey, nF, idx, k) {
-  const key = `${grade}:${wkey}:${fam}`; let hs = famHist.get(key); if (!hs) famHist.set(key, hs = { list: [], sigs: new Set() });
+  const key = `${grade}:${wkey}:${fam}`; let hs = famHist.get(key); if (!hs) famHist.set(key, hs = { list: [], sigs: new Set(), fz: new Set() });
   while (hs.list.length <= k) {
-    const kk = hs.list.length, u = kk * nF + idx, D = gradeD(grade, u); let t = null;
-    for (let a = 0; a < 40; a++) { const cand = makeOnce(fam, grade, D, kk, `${key}:${kk}:${a}`), sg = sigOf(cand); t = cand; if (!hs.sigs.has(sg)) { hs.sigs.add(sg); break; } }
+    const kk = hs.list.length, u = kk * nF + idx, D = gradeD(grade, u); let t = null, fallback = null;
+    let ok = false;
+    for (let a = 0; a < 60 && !ok; a++) {
+      const cand = makeOnce(fam, grade, D, kk, `${key}:${kk}:${a}`), sg = sigOf(cand), fz = fuzzyOf(cand); t = cand;
+      if (hs.sigs.has(sg)) continue;
+      if (!hs.fz.has(fz)) { hs.sigs.add(sg); hs.fz.add(fz); ok = true; } else if (!fallback) fallback = { cand, sg };
+    }
+    if (!ok && fallback) { t = fallback.cand; hs.sigs.add(fallback.sg); }
     const rd = relDiff(u); t = Object.assign({}, t, { diff: rd, pts: t.basePts * rd }); hs.list.push(t);
   }
   return hs.list[k];
