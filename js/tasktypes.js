@@ -433,8 +433,9 @@ const Ferry = {
         if (!combo.length) return lang === 'sk' ? `${f} sa preplaví ${dir} sám.` : `${f} rows ${dir} alone.`;
         return lang === 'sk' ? `${f} prevezie: ${names} ${dir}.` : `${f} takes ${names} ${dir}.`;
       }
-      const em = combo.map(i => cfg.cast[i].e).join(' ');
-      return lang === 'sk' ? `${em} plávajú ${dir}.` : `${em} sail ${dir}.`;
+      const em = combo.map(i => cfg.cast[i].e + ' ' + L(cfg.cast[i].n, lang)).join(' + ');
+      const many = combo.length > 1;
+      return lang === 'sk' ? `${em} ${many ? 'plávajú' : 'pláva'} ${dir}.` : `${em} ${many ? 'sail' : 'sails'} ${dir}.`;
     });
   },
   scene(cfg, st, o = {}) {

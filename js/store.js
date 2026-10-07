@@ -31,6 +31,7 @@ const Store = (() => {
   let state = Object.assign(base, saved);
   state.profile = Object.assign(fresh().profile, saved.profile);
   state.settings = Object.assign(fresh().settings, saved.settings);
+  if (!state.settings.autoReadOff) { state.settings.autoRead = false; state.settings.autoReadOff = true; } // read-aloud is opt-in only
 
   const api = {
     get state() { return state; },

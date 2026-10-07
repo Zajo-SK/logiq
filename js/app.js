@@ -173,7 +173,7 @@ VIEWS.welcome = (v) => {
   const nameIn = h('input', { class: 'textin', type: 'text', maxlength: 24, placeholder: t('namePh'), value: p.name, 'aria-label': t('yourName'), autocomplete: 'off' });
   const codeIn = API.on() ? h('input', { class: 'textin', type: 'text', maxlength: 10, placeholder: L2('Kód od učiteľa (nepovinné)', 'Code from teacher (optional)'), 'aria-label': L2('Kód triedy', 'Class code'), autocapitalize: 'characters' }) : null;
   const start = btn(t('letsGo') + ' ▸', 'primary big', async () => {
-    if (!sel.g) return; const first = !p.grade; p.grade = sel.g; p.cls = sel.l ? `${sel.g}.${sel.l}` : ''; p.name = nameIn.value.trim().slice(0, 24); if (first && sel.g <= 3) st().settings.autoRead = true; Store.save();
+    if (!sel.g) return; const first = !p.grade; p.grade = sel.g; p.cls = sel.l ? `${sel.g}.${sel.l}` : ''; p.name = nameIn.value.trim().slice(0, 24); Store.save();
     if (codeIn && codeIn.value.trim()) { try { await Sync.join(codeIn.value.trim().toUpperCase()); } catch (e) { toast(fmtErr(e)); } }
     go('#/home');
   });
