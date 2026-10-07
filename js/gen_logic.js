@@ -49,7 +49,7 @@ reg('subgame', 'strategy', 2, c => {
   const rule = both(l => l === 'sk'
     ? `🪵 Je tu ${N} paličiek. Hráči sa striedajú a berú ${mkMoves(moves, 'sk')}. ${misere ? 'Kto vezme poslednú, PREHRÁVA.' : 'Kto vezme poslednú, vyhráva.'}`
     : `🪵 There are ${N} sticks. Players take turns taking ${mkMoves(moves, 'en')}. ${misere ? 'Whoever takes the last one LOSES.' : 'Whoever takes the last one wins.'}`);
-  const q = first ? S('Začínaš ty. Koľko vezmeš ako prvý, aby si vyhral?', 'You start. How many do you take first to win?') : S('Kto vyhrá, ak hrajú správne?', 'Who wins if both play well?');
+  const q = first ? S('Začínaš ty. Koľko vezmeš ako prvý, aby si vyhral?', 'You start. How many do you take first to win?') : S('Začína 🐻. Obaja hrajú najlepšie, ako vedia – nikto sa nepomýli. Kto vyhrá?', '🐻 starts. Both play as well as they can – nobody makes a mistake. Who wins?');
   return {
     title: S('Paličky', 'Sticks'), prompt: both(l => rule[l] + ' ' + q[l]), type: first ? 'number' : 'choice', sim: N <= 60 ? { kind: 'sticks', N, moves, misere } : null,
     data: first ? { answer: wm[0] } : { options: [S('Začínajúci hráč', 'The first player'), S('Druhý hráč', 'The second player')], correct: win[N] ? 0 : 1, cols: 2 },
