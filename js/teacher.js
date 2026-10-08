@@ -98,9 +98,9 @@ VIEWS.teacher = (v) => {
   const isAdmin = sess.role === 'admin', body = h('div');
   const chip = (k, label) => h('button', { type: 'button', class: 'fchip' + (tTab === k ? ' on' : ''), 'aria-pressed': tTab === k, onclick: () => { tTab = k; tOpen = null; render(); } }, label);
   root.append(card('', h('div', { class: 'tbar' }, h('span', null, `${sess.email} · ${isAdmin ? L2('správca', 'admin') : L2('učiteľ', 'teacher')}`), btn(L2('Odhlásiť', 'Sign out'), 'ghost small', () => { TS.set(null); render(); })),
-    h('div', { class: 'frow' }, chip('classes', L2('Triedy', 'Classes')), chip('assign', '📌 ' + L2('Zadania', 'Assignments')), isAdmin ? chip('support', '📨 ' + L2('Podpora', 'Support') + (tSupNew ? ` (${tSupNew})` : '')) : null, isAdmin ? chip('teachers', L2('Učitelia', 'Teachers')) : null)), body);
+    h('div', { class: 'frow' }, chip('classes', L2('Triedy', 'Classes')), chip('assign', '📌 ' + L2('Zadania', 'Assignments')), isAdmin ? chip('taskdb', '🛠️ ' + L2('Databáza úloh', 'Task database')) : null, isAdmin ? chip('support', '📨 ' + L2('Podpora', 'Support') + (tSupNew ? ` (${tSupNew})` : '')) : null, isAdmin ? chip('teachers', L2('Učitelia', 'Teachers')) : null)), body);
   const fail = e => { if (e.status === 401) { TS.set(null); render(); } else body.append(h('p', { class: 'errmsg' }, fmtErr(e))); };
-  if (tTab === 'support' && isAdmin) supportPane(body, sess, fail); else if (tTab === 'teachers' && isAdmin) teachersPane(body, sess, fail); else if (tTab === 'assignNew') asgNewPane(body, sess, fail); else if (tTab === 'assign') asgListPane(body, sess, fail); else if (tOpen) classPane(body, sess, fail); else classesPane(body, sess, isAdmin, fail);
+  if (tTab === 'taskdb' && isAdmin) body.append(taskDbCard()); else if (tTab === 'support' && isAdmin) supportPane(body, sess, fail); else if (tTab === 'teachers' && isAdmin) teachersPane(body, sess, fail); else if (tTab === 'assignNew') asgNewPane(body, sess, fail); else if (tTab === 'assign') asgListPane(body, sess, fail); else if (tOpen) classPane(body, sess, fail); else classesPane(body, sess, isAdmin, fail);
 };
 
 function showCodeFull(code, label) {

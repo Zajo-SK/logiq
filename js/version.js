@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.22', at: '2026-10-08 09:00', items: [S('Databáza úloh je presunutá z Profilu žiaka do admin panela (záložka Databáza úloh).', 'The task database moved from the pupil Profile to the admin panel (Task database tab).')] },
   { v: '1.21', at: '2026-10-07 16:00', items: [S('Tlačidlo 💬 „Kontaktovať podporu / nahlásiť chybu“ na každej obrazovke a formulár na hlásenie.', 'A 💬 “Contact support / report a problem” button on every screen with a report form.'), S('Správca má záložku Podpora na evidenciu a riešenie hlásení.', 'The administrator has a Support tab to track and resolve reports.')] },
   { v: '1.20', at: '2026-10-07 14:30', items: [S('Nové stránky „Aké údaje spracúvame“ a „Pravidlá používania“ (Profil a úvodná obrazovka).', 'New “What data we process” and “Rules of use” pages (Profile and welcome screen).')] },
   { v: '1.19', at: '2026-10-07 13:30', items: [S('Úlohy s paličkami: zrozumiteľné zadanie – kto začína a že obaja hrajú bez chyby.', 'Stick games: clearer wording – who starts and that both play without mistakes.')] },

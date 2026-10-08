@@ -389,16 +389,26 @@ VIEWS.badges = (v) => {
     h('div', { class: 'badgegrid' }, BADGES.map(b => { const on = !!got[b.id]; return h('div', { class: 'badge' + (on ? ' got' : '') }, h('span', { class: 'bi' }, on ? b.icon : '🔒'), h('b', null, tx(b.n)), h('small', null, tx(b.d)), h('span', { class: 'bstate' }, on ? '✓ ' + t('earned') : t('locked'))); })));
 };
 
-VIEWS.profile = (v) => {
-  const p = st().profile, s = st().settings, g = p.grade, sg = strengths(), recs = recommendations();
-  const nameIn = h('input', { class: 'textin', type: 'text', maxlength: 24, value: p.name, placeholder: t('namePh'), 'aria-label': t('yourName'), onchange: e => { p.name = e.target.value.trim().slice(0, 24); Store.save(); toast(t('saved')); } });
-  const toggle = (key, label, fn) => h('div', { class: 'setrow' }, h('span', null, label), h('button', { type: 'button', role: 'switch', class: 'switch' + (s[key] ? ' on' : ''), 'aria-checked': !!s[key], 'aria-label': label, onclick: e => { s[key] = !s[key]; Store.save(); e.currentTarget.classList.toggle('on', s[key]); e.currentTarget.setAttribute('aria-checked', s[key]); applySettings(); fn && fn(); } }, h('i')));
-  const hist = st().history.slice(0, 12);
+
+/* task database overview (admin tab only) */
+function taskDbCard() {
   const exportJson = () => {
     const tasks = Object.values(TASKS).map(x => { const c = Object.assign({}, x); delete c.puzzle; if (typeof c.visual === 'function') c.visual = '[dynamic]'; return c; });
     const blob = new Blob([JSON.stringify({ exported: new Date().toISOString(), tasks }, null, 2)], { type: 'application/json' });
     const a = h('a', { href: URL.createObjectURL(blob), download: 'logiq-task-database.json' }); document.body.append(a); a.click(); a.remove();
   };
+  return card('', h('details', { class: 'admin' }, h('summary', null, '🛠️ ' + t('adminTitle')),
+      h('p', { class: 'muted' }, t('adminLead')), h('div', { class: 'btnrow left' }, btn('⬇ ' + t('exportDb'), 'ghost small', exportJson)),
+      h('div', { class: 'tablewrap' }, h('table', { class: 'admintab' }, h('thead', null, h('tr', null, ['ID', t('category'), t('gradeBand'), t('taskType'), t('source'), t('license')].map(x => h('th', null, x)))),
+        h('tbody', null, Object.values(TASKS).map(x => h('tr', null, h('td', null, x.id), h('td', null, tx(CATS[x.cat].n)), h('td', null, BANDS[x.band].label), h('td', null, x.type), h('td', null, tx(x.src.note)), h('td', null, x.src.license))))))),
+      h('p', { class: 'fine' }, t('syncNote') + ' ' + `(userId: ${st().userId})`));
+}
+
+VIEWS.profile = (v) => {
+  const p = st().profile, s = st().settings, g = p.grade, sg = strengths(), recs = recommendations();
+  const nameIn = h('input', { class: 'textin', type: 'text', maxlength: 24, value: p.name, placeholder: t('namePh'), 'aria-label': t('yourName'), onchange: e => { p.name = e.target.value.trim().slice(0, 24); Store.save(); toast(t('saved')); } });
+  const toggle = (key, label, fn) => h('div', { class: 'setrow' }, h('span', null, label), h('button', { type: 'button', role: 'switch', class: 'switch' + (s[key] ? ' on' : ''), 'aria-checked': !!s[key], 'aria-label': label, onclick: e => { s[key] = !s[key]; Store.save(); e.currentTarget.classList.toggle('on', s[key]); e.currentTarget.setAttribute('aria-checked', s[key]); applySettings(); fn && fn(); } }, h('i')));
+  const hist = st().history.slice(0, 12);
   v.append(h('div', { class: 'page profile' }, h('div', { class: 'pagehead' }, h('h1', null, t('nav_profile')), h('p', null, `${p.name || t('anon')} · ${gradeLabel(g)}`)),
     h('div', { class: 'grid2' },
       card('', h('h2', null, t('yourProfile')), h('label', { class: 'flabel' }, t('yourName')), nameIn,
@@ -411,11 +421,6 @@ VIEWS.profile = (v) => {
       h('h2', { class: 'mt' }, t('recommended')), h('ul', { class: 'reclist' }, recs.length ? recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), rc.go ? h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸') : null)) : h('li', null, t('recNone')))),
     card('', h('h2', null, t('history')), hist.length ? h('ul', { class: 'histlist' }, hist.map(x => h('li', null, h('span', { 'aria-hidden': 'true' }, CATS[x.cat] ? CATS[x.cat].icon : '•'), h('span', { class: 'ht' }, tx(x.title), h('small', null, new Date(x.ts).toLocaleDateString(LANG === 'sk' ? 'sk-SK' : 'en-GB'))), starsHtml(x.stars), h('b', null, '+' + x.points)))) : h('p', { class: 'muted' }, t('noHistory'))),
     connectCard(), teacherEntry(), privacyCard(),
-    card('', h('details', { class: 'admin' }, h('summary', null, '🛠️ ' + t('adminTitle')),
-      h('p', { class: 'muted' }, t('adminLead')), h('div', { class: 'btnrow left' }, btn('⬇ ' + t('exportDb'), 'ghost small', exportJson)),
-      h('div', { class: 'tablewrap' }, h('table', { class: 'admintab' }, h('thead', null, h('tr', null, ['ID', t('category'), t('gradeBand'), t('taskType'), t('source'), t('license')].map(x => h('th', null, x)))),
-        h('tbody', null, Object.values(TASKS).map(x => h('tr', null, h('td', null, x.id), h('td', null, tx(CATS[x.cat].n)), h('td', null, BANDS[x.band].label), h('td', null, x.type), h('td', null, tx(x.src.note)), h('td', null, x.src.license))))))),
-      h('p', { class: 'fine' }, t('syncNote') + ' ' + `(userId: ${st().userId})`)),
     card('danger', h('h2', null, t('dataTitle')), h('p', { class: 'muted' }, t('dataLead')), btn(t('resetProgress'), 'ghost small danger', () => {
       const sh = openSheet(h('div', { class: 'sheetin' }, h('h2', null, t('resetProgress') + '?'), h('p', null, t('resetConfirm')), h('div', { class: 'btnrow' }, btn(t('cancel'), 'ghost', () => sh.close()), btn(t('yesReset'), 'primary danger', () => { Store.reset(); sh.close(); toast(t('resetDone')); render(); }))));
     }))));
