@@ -389,7 +389,7 @@ details.sim{background:#fff8e6;border:2px solid #f3d27a;border-radius:16px;paddi
 .wl-roles{margin-top:1rem;display:flex;gap:.7rem;flex-wrap:wrap}.wl-roles .btn{flex:1 1 200px;min-height:60px;font-size:1.15rem}
 .privlist{margin:.3rem 0 .6rem;padding-left:1.3rem;display:grid;gap:.3rem}.privacy .card p{margin:.4rem 0}
 /* support button + admin inbox */
-.supbadge{position:fixed;left:10px;right:auto;bottom:calc(84px + var(--safe-b));z-index:25;width:64px;height:56px;font-size:1.9rem;line-height:1;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:99px;cursor:pointer;display:grid;place-items:center;padding:0}
+.supbadge{position:fixed;left:10px;right:auto;bottom:calc(84px + var(--safe-b));z-index:45;width:64px;height:56px;font-size:1.9rem;line-height:1;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:99px;cursor:pointer;display:grid;place-items:center;padding:0}
 @media(min-width:900px){.supbadge{bottom:12px;left:12px}}
 .supform textarea{width:100%}
 .tkt{border-left:6px solid #c2c9de}.tkt.new{border-left-color:#e0662d}.tkt.progress{border-left-color:#f6b81d}.tkt.done{border-left-color:var(--ok)}

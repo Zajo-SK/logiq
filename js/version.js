@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.24', at: '2026-10-08 11:00', items: [S('Opravené: tlačidlo podpory 💬 bolo na počítači a tablete schované pod ľavým menu.', 'Fixed: the support button 💬 was hidden under the left menu on desktop and tablet.')] },
   { v: '1.23', at: '2026-10-08 10:00', items: [S('Aplikácia si sama skontroluje novú verziu pri návrate do popredia a obnoví sa.', 'The app checks for a new version when it returns to the foreground and refreshes itself.')] },
   { v: '1.22', at: '2026-10-08 09:00', items: [S('Databáza úloh je presunutá z Profilu žiaka do admin panela (záložka Databáza úloh).', 'The task database moved from the pupil Profile to the admin panel (Task database tab).')] },
   { v: '1.21', at: '2026-10-07 16:00', items: [S('Tlačidlo 💬 „Kontaktovať podporu / nahlásiť chybu“ na každej obrazovke a formulár na hlásenie.', 'A 💬 “Contact support / report a problem” button on every screen with a report form.'), S('Správca má záložku Podpora na evidenciu a riešenie hlásení.', 'The administrator has a Support tab to track and resolve reports.')] },
