@@ -571,7 +571,7 @@ TaskTypes.nim = {
       const g = D.g; if (g.turn !== 'cpu' || g.over) return;
       const best = Nim.best(g.piles, d.moves, d.misere, memo), all = Nim.moves(g.piles, d.moves);
       if (!all.length) return;
-      const m = (best.length ? best : all)[Math.floor(Math.random() * (best.length || all.length))];
+      const pool = best.length && Math.random() < (d.skill == null ? 1 : d.skill) ? best : all, m = pool[Math.floor(Math.random() * pool.length)];
       g.piles[m.i] -= m.t; g.log.push({ who: 'cpu', t: m.t, i: m.i });
       if (!Nim.moves(g.piles, d.moves).length) return finish('cpu');
       g.turn = 'you'; draw();
