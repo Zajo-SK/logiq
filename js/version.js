@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.23', at: '2026-10-08 10:00', items: [S('Aplikácia si sama skontroluje novú verziu pri návrate do popredia a obnoví sa.', 'The app checks for a new version when it returns to the foreground and refreshes itself.')] },
   { v: '1.22', at: '2026-10-08 09:00', items: [S('Databáza úloh je presunutá z Profilu žiaka do admin panela (záložka Databáza úloh).', 'The task database moved from the pupil Profile to the admin panel (Task database tab).')] },
   { v: '1.21', at: '2026-10-07 16:00', items: [S('Tlačidlo 💬 „Kontaktovať podporu / nahlásiť chybu“ na každej obrazovke a formulár na hlásenie.', 'A 💬 “Contact support / report a problem” button on every screen with a report form.'), S('Správca má záložku Podpora na evidenciu a riešenie hlásení.', 'The administrator has a Support tab to track and resolve reports.')] },
   { v: '1.20', at: '2026-10-07 14:30', items: [S('Nové stránky „Aké údaje spracúvame“ a „Pravidlá používania“ (Profil a úvodná obrazovka).', 'New “What data we process” and “Rules of use” pages (Profile and welcome screen).')] },
@@ -36,4 +37,22 @@ const APP_VERSION = CHANGELOG[0].v;
       h('div', { class: 'btnrow' }, btn(t('close'), 'primary', () => sh.close()))), { dismiss: true });
   } }, 'v' + APP_VERSION);
   document.body.append(b);
+})();
+
+/* Auto-update: when the app comes back to the foreground, check whether a newer version is published (installed web clips can stay alive for days). */
+(function () {
+  let last = 0;
+  const calm = ['home', 'map', 'welcome', 'profile', 'badges', 'assigned', 'level', 'daily', 'collection', 'privacy', 'rules'];
+  async function check() {
+    if (Date.now() - last < 120000) return; last = Date.now();
+    try {
+      const txt = await (await fetch('js/version.js?c=' + Date.now(), { cache: 'no-store' })).text(), m = /CHANGELOG = \[\s*\{ v: '([\d.]+)'/.exec(txt);
+      if (!m || m[1] === APP_VERSION) return;
+      if (calm.includes(route().name)) { try { const regs = await navigator.serviceWorker.getRegistrations(); await Promise.all(regs.map(r => r.update())); } catch (e) { /* ignore */ } location.reload(); return; }
+      if (document.querySelector('.updbar')) return;
+      document.body.append(h('div', { class: 'updbar', role: 'status' }, h('span', null, L2('Je dostupná nová verzia ' + m[1] + '.', 'A new version ' + m[1] + ' is available.')), h('button', { type: 'button', class: 'btn primary small', onclick: () => location.reload() }, L2('Obnoviť', 'Update'))));
+    } catch (e) { /* offline */ }
+  }
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') check(); });
+  setTimeout(check, 4000);
 })();
