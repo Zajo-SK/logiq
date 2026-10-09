@@ -185,10 +185,21 @@ VIEWS.welcome = (v) => {
       h('label', { class: 'flabel' }, L2('Tvoje meno alebo prezývka', 'Your name or nickname')), nameIn,
       classPicker(sel, x => { sel = x; start.disabled = !sel.g; }), h('p', { class: 'fine' }, t('gradeChangeLater')),
       codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.'))] : null,
+      devNotice(true),
       start,
       h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))),
       h('p', { class: 'fine' }, h('a', { href: '#/privacy' }, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), ' · ', h('a', { href: '#/rules' }, '📜 ' + L2('Pravidlá používania', 'Rules of use'))))));
 };
+
+/* "still in development" notice (home: dismissible for 7 days; welcome: always shown) */
+function devNotice(always) {
+  const KEY = 'logiq.devnotice';
+  try { const t0 = +localStorage.getItem(KEY) || 0; if (!always && Date.now() - t0 < 7 * 864e5) return null; } catch (e) { /* ignore */ }
+  const box = h('div', { class: 'devnote', role: 'note' }, h('span', { class: 'dn-i', 'aria-hidden': 'true' }, '🚧'),
+    h('p', null, h('b', null, L2('Aplikácia je ešte vo vývoji.', 'The app is still in development.')), ' ', L2('Môžu sa v nej objaviť chyby. Ak na nejakú narazíš, napíš nám cez ikonku 💬 vľavo dole.', 'Bugs may appear. If you run into one, tell us with the 💬 icon at the bottom left.')),
+    always ? null : h('button', { type: 'button', class: 'dn-x', 'aria-label': L2('Skryť', 'Hide'), onclick: () => { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) { /* ignore */ } box.remove(); } }, '×'));
+  return box;
+}
 
 VIEWS.home = (v) => {
   const g = grade(), seq = gradeSequence(g), tot = Store.totals(), nt = nextTarget(g), name = st().profile.name;
@@ -200,6 +211,7 @@ VIEWS.home = (v) => {
     : btn(t('browseCollection'), 'gold big', () => go('#/collection'));
   const sg = strengths().slice(0, 3);
   v.append(h('div', { class: 'page home' },
+    devNotice(),
     h('section', { class: 'hero' },
       h('div', { class: 'hero-text' },
         h('p', { class: 'eyebrow' }, gradeLabel(g)),

@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.26', at: '2026-10-09 09:00', items: [S('Upozornenie, že aplikácia je vo vývoji a ako nahlásiť chybu (úvodná obrazovka a Domov).', 'Notice that the app is still in development and how to report a bug (welcome screen and Home).')] },
   { v: '1.25', at: '2026-10-08 12:30', items: [S('Nová samostatná hra „Paličky – tréning“: 36 levelov proti počítaču s rastúcou náročnosťou (počítač hrá čoraz lepšie, nové pravidlá, hra naopak, viac kôp).', 'New stand-alone game “Sticks – training”: 36 levels against the computer with rising difficulty (a stronger computer, new rules, reversed game, several piles).')] },
   { v: '1.24', at: '2026-10-08 11:00', items: [S('Opravené: tlačidlo podpory 💬 bolo na počítači a tablete schované pod ľavým menu.', 'Fixed: the support button 💬 was hidden under the left menu on desktop and tablet.')] },
   { v: '1.23', at: '2026-10-08 10:00', items: [S('Aplikácia si sama skontroluje novú verziu pri návrate do popredia a obnoví sa.', 'The app checks for a new version when it returns to the foreground and refreshes itself.')] },
