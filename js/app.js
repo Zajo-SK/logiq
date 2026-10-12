@@ -188,7 +188,7 @@ VIEWS.welcome = (v) => {
       devNotice(true),
       start,
       h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))),
-      h('p', { class: 'fine' }, h('a', { href: '#/privacy' }, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), ' · ', h('a', { href: '#/rules' }, '📜 ' + L2('Pravidlá používania', 'Rules of use'))))));
+      h('p', { class: 'fine' }, h('a', { href: '#/privacy' }, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), ' · ', h('a', { href: '#/rules' }, '📜 ' + L2('Pravidlá používania', 'Rules of use')), ' · ', h('a', { href: 'info/index.html' }, 'ℹ️ ' + L2('O aplikácii', 'About the app'))))));
 };
 
 /* "still in development" notice (home: dismissible for 7 days; welcome: always shown) */
