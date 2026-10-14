@@ -41,7 +41,7 @@ def card(icon, title, text):
     return '<article class="card"><div class="ci" aria-hidden="true">%s</div><h3>%s</h3><p>%s</p></article>' % (icon, title, text)
 
 # ---------------- index ----------------
-worlds = [('🎮', 'Hry a stratégia', 'víťazné stratégie, hry proti počítaču'), ('🕵️', 'Pravda, lož a dedukcia', 'rytieri, luhári, tajné čísla'), ('🧠', 'Logické uvažovanie', 'poradia, priradenia, závery'), ('🎲', 'Kombinatorika', 'koľkými spôsobmi sa to dá'), ('🔢', 'Čísla a vzory', 'rady, magické štvorce, kryptogramy'), ('🧊', 'Priestor a tvary', 'kocky, mriežky, obsahy'), ('🧩', 'Hlavolamy', 'sudoku, svetlá, bludiská, žabky'), ('♟️', 'Šach a Hanoj', 'ťahy figúrok, domino, Hanojské veže'), ('🏆', 'Matematická olympiáda', 'algebra, deliteľnosť, pravdepodobnosť')]
+worlds = [('🎮', 'Hry a stratégia', 'víťazné stratégie, hry proti počítaču'), ('🕵️', 'Pravda, lož a dedukcia', 'rytieri, luhári, tajné čísla'), ('🧠', 'Logické uvažovanie', 'poradia, priradenia, závery'), ('🎲', 'Kombinatorika', 'koľkými spôsobmi sa to dá'), ('🔢', 'Čísla a vzory', 'rady, magické štvorce, kryptogramy, pavučiny'), ('🧊', 'Priestor a tvary', 'kocky, mriežky, obsahy'), ('🧩', 'Hlavolamy', 'sudoku, bludiská, žabky, výstavisko'), ('♟️', 'Šach a Hanoj', 'ťahy figúrok, domino, Hanojské veže'), ('🏆', 'Matematická olympiáda', 'algebra, deliteľnosť, pravdepodobnosť')]
 body = '''
 <section class="wrap sec"><h2 class="sh">Pre koho je LogiQ</h2><div class="grid3">%s%s%s</div></section>
 <section class="band"><div class="wrap sec"><h2 class="sh">Čo v aplikácii nájdete</h2><p class="center muted">9 svetov × 7 levelov × 10 úloh pre každý ročník. Viac ako 500 jedinečných úloh na ročník, ktoré postupne naberajú na náročnosti od 2. po 9. ročník.</p><div class="grid3 worlds">%s</div></div></section>
@@ -153,6 +153,7 @@ faq = [
     ('Je LogiQ určená len pre nadaných žiakov?', 'Nie. Je primárne vytvorená na rozvoj myslenia žiakov so všeobecným intelektovým nadaním, no hodí sa pre každého, kto chce rozvíjať matematické a logické myslenie.'),
     ('Nahrádza aplikácia diagnostiku nadania?', 'Nie. Nadanie diagnostikuje centrum poradenstva a prevencie. LogiQ je pomôcka na rozvoj myslenia.'),
     ('Úlohy sú z oficiálnych súťaží?', 'Nie. Úlohy sú generované a vlastné; klasické hádanky sú voľne spracované vo vlastnom znení. Pripravujú na typy myslenia v súťažiach, ale nekopírujú ich.'),
+    ('Sú tam prostredia Hejného metódy?', 'Áno, v aplikácii sú prostredia inšpirované Hejného metódou: <b>Pavučiny</b> (čísla a farebné šípky) a <b>Výstavisko</b> (prechod miestnosťami s dverami). Úlohy sú vlastné, generované aplikáciou; s tvorcami metódy (H-mat) nie sme spojení.'),
     ('Kde nahlásim chybu alebo nápad?', 'V aplikácii cez ikonku 💬 vľavo dole. Stačí napísať, čo sa stalo.'),
     ('Aplikácia je stále vo vývoji?', 'Áno. Môžu sa v nej objaviť chyby; opravujeme ich priebežne. Ak na nejakú narazíte, dajte nám vedieť.')]
 body = '''

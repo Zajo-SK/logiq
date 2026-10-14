@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.28', at: '2026-10-14 12:00', items: [S('Nové prostredia inšpirované Hejného metódou: Pavučiny (čísla a farebné šípky) a Výstavisko (prechod miestnosťami s dverami). Sú v svetoch „Čísla a vzory“ a „Hlavolamy“ aj v tréningu.', 'New environments inspired by Hejný’s method: Webs (numbers and coloured arrows) and Exhibition (walking through rooms with doors). They are in the “Numbers & patterns” and “Brain-teasers” worlds and in training.')] },
   { v: '1.27', at: '2026-10-12 12:00', items: [S('Sprievodné webové stránky (o aplikácii, pre nadaných žiakov, súlad so ŠVP, pre učiteľov, pre rodičov, otázky) a odkaz „O aplikácii“.', 'Companion website (about, for gifted pupils, curriculum alignment, for teachers, for parents, FAQ) and an “About the app” link.')] },
   { v: '1.26', at: '2026-10-09 09:00', items: [S('Upozornenie, že aplikácia je vo vývoji a ako nahlásiť chybu (úvodná obrazovka a Domov).', 'Notice that the app is still in development and how to report a bug (welcome screen and Home).')] },
   { v: '1.25', at: '2026-10-08 12:30', items: [S('Nová samostatná hra „Paličky – tréning“: 36 levelov proti počítaču s rastúcou náročnosťou (počítač hrá čoraz lepšie, nové pravidlá, hra naopak, viac kôp).', 'New stand-alone game “Sticks – training”: 36 levels against the computer with rising difficulty (a stronger computer, new rules, reversed game, several piles).')] },
