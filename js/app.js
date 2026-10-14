@@ -368,7 +368,7 @@ VIEWS.daily = (v) => {
 VIEWS.collection = (v) => {
   const g = grade(), gb = BAND_ORDER.indexOf(bandOf(g));
   const list = Object.values(TASKS).filter(x => (colFilter.cat === 'all' || x.cat === colFilter.cat) && (colFilter.band === 'all' || x.band === colFilter.band));
-  const cats = Object.keys(CATS).filter(c => Object.values(TASKS).some(x => x.cat === c));
+  const cats = Object.keys(CATS).filter(c => Object.values(TASKS).some(x => x.cat === c) || c === 'webs' || c === 'expo');
   const chip = (label, on, fn) => h('button', { type: 'button', class: 'fchip' + (on ? ' on' : ''), 'aria-pressed': on, onclick: fn }, label);
   const rer = () => { v.replaceChildren(); VIEWS.collection(v); };
   v.append(h('div', { class: 'page' },
@@ -379,10 +379,12 @@ VIEWS.collection = (v) => {
     h('h2', { class: 'section-h' }, '🎮 ' + t('gamesTitle')),
     h('div', { class: 'tgrid' }, h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/hanoi') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🗼'), h('span', { class: 'tc-new' }, '★')), h('b', null, t('hanoiGame')), h('small', null, t('hanoiLead'))),
       h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/frogs') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🐸'), h('span', { class: 'tc-new' }, '★')), h('b', null, L2('Skákajúce žabky', 'Leaping frogs')), h('small', null, L2('Vymeň zelené a hnedé žabky', 'Swap the green and brown frogs'))),
-      h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/sudoku') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🧩'), h('span', { class: 'tc-new' }, '★')), h('b', null, 'Sudoku'), h('small', null, L2('3×3, 4×4, 6×6 a 9×9 · 3 obtiažnosti · poznámky a nápovedy', '3×3, 4×4, 6×6 and 9×9 · 3 levels · notes and hints')))),
+      h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/sudoku') }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🧩'), h('span', { class: 'tc-new' }, '★')), h('b', null, 'Sudoku'), h('small', null, L2('3×3, 4×4, 6×6 a 9×9 · 3 obtiažnosti · poznámky a nápovedy', '3×3, 4×4, 6×6 and 9×9 · 3 levels · notes and hints'))),
+      h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/train/webs/' + Math.floor(Math.random() * 1e6)) }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🕸️'), h('span', { class: 'tc-new' }, '∞')), h('b', null, L2('Pavučiny', 'Webs')), h('small', null, L2('Čísla a farebné šípky · inšpirované Hejného metódou', 'Numbers and coloured arrows · inspired by Hejný’s method'))),
+      h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/train/expo/' + Math.floor(Math.random() * 1e6)) }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, '🎪'), h('span', { class: 'tc-new' }, '∞')), h('b', null, L2('Výstavisko', 'Exhibition')), h('small', null, L2('Prejdi miestnosťami cez dvere · inšpirované Hejného metódou', 'Walk through the rooms and doors · inspired by Hejný’s method')))),
     h('h2', { class: 'section-h' }, '♾️ ' + t('trainSets')), h('p', { class: 'muted' }, t('trainLead')),
-    h('div', { class: 'tgrid' }, Object.values(GF).filter(f => f.min <= g && (colFilter.cat === 'all' || f.cat === colFilter.cat)).map(f => {
-      if (!trainTitles.has(f.key + g)) trainTitles.set(f.key + g, trainTask(f.key, g, 1).title);
+    h('div', { class: 'tgrid' }, Object.values(GF).filter(f => f.min <= g && f.key !== 'webs' && f.key !== 'expo' && (colFilter.cat === 'all' || f.cat === colFilter.cat)).map(f => {
+      if (!trainTitles.has(f.key + g)) trainTitles.set(f.key + g, f.key === 'webs' || f.key === 'expo' ? CATS[f.cat].n : trainTask(f.key, g, 1).title);
       return h('button', { type: 'button', class: 'tcard train', onclick: () => go('#/train/' + f.key + '/' + Math.floor(Math.random() * 1e6)) }, h('div', { class: 'tc-top' }, h('span', { class: 'tc-ico', 'aria-hidden': 'true' }, CATS[f.cat].icon), h('span', { class: 'tc-new' }, '∞')), h('b', null, tx(trainTitles.get(f.key + g))), h('small', null, tx(CATS[f.cat].n)));
     })),
     h('h2', { class: 'section-h' }, '⭐ ' + t('handmade')),
