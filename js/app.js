@@ -71,7 +71,9 @@ function levelInfo(entry, g) {
   return { ids, done, total: ids.length, complete: done === ids.length, stars: ids.reduce((a, id) => a + Store.stars(id), 0), maxStars: ids.length * 3,
     get tasks() { return levelTasks(lv); }, get pts() { return levelTasks(lv).reduce((a, x) => a + x.pts * 3, 0); } };
 }
-function isUnlocked(seq, i, g) { return seq[i].idx === 0 || levelInfo(seq[i - 1], g).complete; }
+/* signed in as admin (Teacher area): every level is open for browsing */
+const adminPreview = () => typeof TS !== 'undefined' && !!(TS.get() && TS.get().role === 'admin');
+function isUnlocked(seq, i, g) { return adminPreview() || seq[i].idx === 0 || levelInfo(seq[i - 1], g).complete; }
 function nextTarget(g) {
   const seq = gradeSequence(g);
   for (let i = 0; i < seq.length; i++) {
@@ -243,7 +245,7 @@ let chGrade = 0;
 let mapKeep = false;
 const mapStars = (li) => { const n = li.complete ? Math.max(1, Math.round(li.stars / li.maxStars * 3)) : 0; return h('span', { class: 'mstars', 'aria-label': n + '/3' }, [0, 1, 2].map(i => h('i', { class: i < n ? 'on' : '' }, '★'))); };
 VIEWS.map = (v) => {
-  const g = grade(), seq = gradeSequence(g), chOpts = [g + 1, g + 2].filter(x => x <= 9), nt = nextTarget(g), curId = nt ? nt.entry.level.id : null;
+  const g = grade(), seq = gradeSequence(g), chOpts = adminPreview() ? range(8).map(i => i + 2).filter(x => x !== g) : [g + 1, g + 2].filter(x => x <= 9), nt = nextTarget(g), curId = nt ? nt.entry.level.id : null;
   if (!chOpts.includes(chGrade)) chGrade = chOpts[0] || 0;
   evalCollection(); const owned = st().stickers || {}, medals = st().medals || {};
   const STEP = 116, TOP = 62, xOf = i => 50 + 29 * Math.sin(i * 1.15 + .4);
@@ -255,7 +257,7 @@ VIEWS.map = (v) => {
     const medal = medals[w.grade + '|' + w.key];
     const svg = h('div', { class: 'mroad', html: `<svg viewBox="0 0 100 ${H}" preserveAspectRatio="none" aria-hidden="true">${pts.slice(0, -1).map((_, i) => `<path d="${seg(i)}" class="rb"/>`).join('')}${pts.slice(0, -1).map((_, i) => infos[i].complete ? `<path d="${seg(i)}" class="rd"/>` : '').join('')}</svg>` });
     const nodes = entries.map((e, i) => {
-      const li = infos[i], open = challenge || e.idx === 0 || infos[i - 1].complete, state = li.complete ? 'done' : open ? 'open' : 'locked', boss = i === N - 1, here = !challenge && e.level.id === curId;
+      const li = infos[i], open = challenge || adminPreview() || e.idx === 0 || infos[i - 1].complete, state = li.complete ? 'done' : open ? 'open' : 'locked', boss = i === N - 1, here = !challenge && e.level.id === curId;
       return h('button', { type: 'button', class: `mnode ${state}${boss ? ' boss' : ''}${here ? ' cur' : ''}${!li.complete && open && i === firstOpen ? ' next' : ''}`, style: `left:${pts[i][0]}%;top:${pts[i][1]}px`, 'aria-disabled': !open, 'aria-label': `${tx(e.level.name)} ${li.done}/${li.total}`,
         onclick: () => open ? go('#/level/' + e.level.id) : toast(t('finishPrev')) },
         here ? h('span', { class: 'you', 'aria-hidden': 'true' }, st().settings.avatar) : null,
@@ -278,7 +280,7 @@ VIEWS.map = (v) => {
   const hero = h('section', { class: 'maphero' }, h('div', { class: 'mh-main' }, h('p', { class: 'eyebrow' }, gradeLabel(g)), h('h2', null, nt ? nt.entry.world.icon + ' ' + tx(nt.entry.world.name) : '🎉'),
       h('p', null, nt ? tx(nt.entry.level.name) : t('heroAllDone')), nt ? btn(t('continue') + ' ▸', 'gold', () => go(`#/play/${nt.entry.level.id}/${nt.idx}`)) : null),
     h('div', { class: 'mh-stats' }, h('div', null, h('b', null, `${doneLv}/${totalLv}`), h('span', null, L2('levely', 'levels'))), h('div', null, h('b', null, `🎴 ${stN}/${Object.keys(STICKERS).length * 7}`), h('span', null, L2('nálepky', 'stickers'))), h('div', null, h('b', null, '🥇 ' + mdN), h('span', null, L2('medaily', 'medals')))));
-  page(v, t('nav_map'), `${gradeLabel(g)} · ${t('mapLead')}`, hero, jump, h('div', { class: 'worlds' }, ws.map(w => worldBlock(w, false))), ch);
+  page(v, t('nav_map'), `${gradeLabel(g)} · ${t('mapLead')}`, adminPreview() ? h('div', { class: 'devnote' }, h('span', { class: 'dn-i', 'aria-hidden': 'true' }, '👑'), h('p', null, h('b', null, L2('Režim správcu:', 'Admin mode:')), ' ', L2('všetky levely sú odomknuté na prezeranie, ostatné ročníky nájdeš nižšie vo „Výzvach“. Ako hotové sú označené len tie, ktoré si naozaj vyriešil.', 'all levels are unlocked for browsing, every grade is listed under “Challenges” below. Only levels you really solved are marked as done.'))) : null, hero, jump, h('div', { class: 'worlds' }, ws.map(w => worldBlock(w, false))), ch);
   if (!mapKeep) setTimeout(() => { const el = v.querySelector('.mnode.cur'); if (el) el.scrollIntoView({ block: 'center' }); }, 80);
   mapKeep = false;
 };

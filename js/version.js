@@ -1,6 +1,7 @@
 'use strict';
 /* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.30', at: '2026-10-14 15:00', items: [S('Správca (po prihlásení do Učiteľského prostredia) má odomknuté všetky levely na prezeranie, aj v hre Paličky.', 'The administrator (signed in to the Teacher area) has every level unlocked for browsing, also in the Sticks game.')] },
   { v: '1.29', at: '2026-10-14 14:00', items: [S('Pavučiny a Výstavisko sú aj v Zbierke (v časti Hry a ako filter kategórií).', 'Webs and Exhibition are also in the Collection (in Games and as a category filter).')] },
   { v: '1.28', at: '2026-10-14 12:00', items: [S('Nové prostredia inšpirované Hejného metódou: Pavučiny (čísla a farebné šípky) a Výstavisko (prechod miestnosťami s dverami). Sú v svetoch „Čísla a vzory“ a „Hlavolamy“ aj v tréningu.', 'New environments inspired by Hejný’s method: Webs (numbers and coloured arrows) and Exhibition (walking through rooms with doors). They are in the “Numbers & patterns” and “Brain-teasers” worlds and in training.')] },
   { v: '1.27', at: '2026-10-12 12:00', items: [S('Sprievodné webové stránky (o aplikácii, pre nadaných žiakov, súlad so ŠVP, pre učiteľov, pre rodičov, otázky) a odkaz „O aplikácii“.', 'Companion website (about, for gifted pupils, curriculum alignment, for teachers, for parents, FAQ) and an “About the app” link.')] },

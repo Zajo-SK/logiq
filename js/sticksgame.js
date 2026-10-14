@@ -44,10 +44,10 @@ VIEWS.sticks = (v, [arg]) => {
         h('div', { class: 'track', role: 'img', 'aria-label': Math.round(doneN / STICK_LEVELS * 100) + '%' }, h('div', { style: `width:${doneN / STICK_LEVELS * 100}%` })),
         h('div', { class: 'btnrow left' }, btn((doneN ? L2('Pokračovať', 'Continue') : L2('Začať', 'Start')) + ' – ' + L2('level ', 'level ') + cur + ' ▸', 'gold big', () => go('#/sticks/' + cur)))),
       STICK_STAGES.map((s, si) => { const from = si ? STICK_STAGES[si - 1].to + 1 : 1; return card('', h('h2', null, `${s.icon} ${tx(s.name)} `, h('small', { class: 'muted' }, `${from}–${s.to}`)),
-        h('div', { class: 'frow bigchips' }, range(s.to - from + 1).map(i => { const n = from + i, open = n <= G.level, ok = G.done[n]; return h('button', { type: 'button', class: 'fchip' + (ok ? ' on' : ''), disabled: !open, 'aria-label': `${L2('Level', 'Level')} ${n}`, onclick: () => go('#/sticks/' + n) }, ok ? '✓ ' + n : open ? n : '🔒'); }))); }));
+        h('div', { class: 'frow bigchips' }, range(s.to - from + 1).map(i => { const n = from + i, open = n <= G.level || adminPreview(), ok = G.done[n]; return h('button', { type: 'button', class: 'fchip' + (ok ? ' on' : ''), disabled: !open, 'aria-label': `${L2('Level', 'Level')} ${n}`, onclick: () => go('#/sticks/' + n) }, ok ? '✓ ' + n : open ? n : '🔒'); }))); }));
     return;
   }
-  if (lvl > G.level || lvl < 1 || lvl > STICK_LEVELS) return go('#/sticks');
+  if ((lvl > G.level && !adminPreview()) || lvl < 1 || lvl > STICK_LEVELS) return go('#/sticks');
   const d = stickLevel(lvl), task = { id: 'sticks-' + lvl, title: S('Paličky', 'Sticks'), type: 'nim', data: d, prompt: stickRules(d) }, sess = { data: {}, hints: [], fast: false, attempts: 0 }, box = h('div', { class: 'playbox' }), hintBox = h('p', { class: 'muted', role: 'status' });
   let inst = null, hintN = 0, losses = 0;
   const ctx = { task, session: sess, setCheck() { }, nudge: toast, wrong(m) { losses++; toast(tx(m)); }, cleanup(fn) { cleanups.push(fn); },
