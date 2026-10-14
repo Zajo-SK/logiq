@@ -1,0 +1,200 @@
+1	Klasse
+2	Klasse
+3	Keine Klasse
+4	Code vom Lehrer (optional)
+5	Klassencode
+6	Dein Name oder Spitzname
+7	Tritt deiner Lehrkraft bei
+8	Wenn du einen Code eingibst, sieht deine Lehrkraft deinen Namen und deinen Fortschritt.
+9	Ich bin Lehrer
+10	Ich bin Elternteil
+11	Welche Daten wir verarbeiten
+12	Nutzungsregeln
+13	Über die App
+14	Die App befindet sich noch in der Entwicklung.
+15	Es können Fehler auftreten. Wenn dir einer begegnet, sag uns Bescheid mit dem 💬-Symbol unten links.
+16	Ausblenden
+17	Frösche
+18	Stäbchen
+19	Level
+20	Sticker
+21	Medaillen
+22	Admin-Modus:
+23	Alle Level sind zum Durchstöbern freigeschaltet, jede Klasse steht unten unter „Herausforderungen“. Nur wirklich gelöste Level sind als erledigt markiert.
+24	Türme von Hanoi
+25	Levelschatz:
+26	(mehr Sterne = größere Truhe)
+27	Springende Frösche
+28	Tausche die grünen und braunen Frösche
+29	3×3, 4×4, 6×6 und 9×9 · 3 Level · Notizen und Hinweise
+30	Netze
+31	Zahlen und farbige Pfeile · inspiriert von Hejnýs Methode
+32	Ausstellung
+33	Geh durch die Räume und Türen · inspiriert von Hejnýs Methode
+34	Aufgaben automatisch vorlesen
+35	Ausgezeichnet!
+36	Tolle Arbeit!
+37	Richtig!
+38	Bravo, clever gedacht!
+39	Fast geschafft!
+40	Schau dir die Aufgabe noch einmal an – vielleicht ist dir ein Detail entgangen.
+41	Interessanter Versuch!
+42	Auch falsche Versuche zeigen uns, was funktioniert und was nicht. Probiere es aus einem anderen Blickwinkel.
+43	Noch nicht, aber du bist auf dem richtigen Weg.
+44	Rätsel sind zum Ausprobieren da. Was würdest du ändern? Nimm gern einen Tipp.
+45	Vorlesen
+46	Schau dir die Aufgabe noch einmal an und probiere einen anderen Blickwinkel.
+47	Logik & Schlussfolgern
+48	Textaufgaben
+49	Kombinatorik & Strategie
+50	Räumliches Denken
+51	Geometrierätsel
+52	Zahlenmuster
+53	Sudoku
+54	Logikgitter
+55	Labyrinthe & Routen
+56	Flussüberquerungen
+57	Waagen & Münzen
+58	Wahrheit & Lügen
+59	Chiffren & Kryptogramme
+60	Diagramme & Daten
+61	Olympiade-Aufgaben
+62	Schalterrätsel
+63	Wahrscheinlichkeit
+64	Algebra-Rätsel
+65	Strategie & Spiele
+66	Schach & Figuren
+67	Originalaufgabe, extra für diese App geschrieben.
+68	Frei umformuliertes klassisches Rätsel (gemeinfrei / Volksgut), eigene Formulierung.
+69	Inspiriert von einem Typ von Wettbewerbsaufgaben; eigene Zahlen und Formulierung.
+70	Programmgeneriert nach einem Muster (Seed), keine Inhalte Dritter.
+71	Bauer
+72	Wolf
+73	Ziege
+74	Kohl
+75	Ohne den Bauern würde der Wolf die Ziege fressen! Versuchen wir es anders.
+76	Ohne den Bauern würde die Ziege den Kohl fressen! Versuchen wir es anders.
+77	Ruderer
+78	Fuchs
+79	Henne
+80	Korn
+81	Ohne den Ruderer würde der Fuchs die Henne fressen! Versuchen wir es anders.
+82	Ohne den Ruderer würde die Henne das Korn picken! Versuchen wir es anders.
+83	Astronaut
+84	Roboter
+85	Es wären mehr Roboter als Astronauten an einem Ufer – nicht sicher!
+86	Farbmuster
+87	Welche Farbe soll der nächste Kreis haben?
+88	Achte darauf, wie sich die Farben wiederholen. Welche zwei wechseln sich ab?
+89	Das Paar Rot–Blau wiederholt sich. Der letzte war rot.
+90	Schau dir das Muster an: 🔴 🔵 🔴 🔵 🔴 – die Farben wechseln sich ab.
+91	Auf jedes Rot folgte ein Blau, also ist der nächste Kreis blau.
+92	Socken im Dunkeln
+93	In einer Schublade liegen 4 rote und 4 blaue Socken. Es ist dunkel, du kannst die Farben nicht sehen. Wie viele Socken musst du mindestens herausziehen, um sicher zwei gleichfarbige zu haben?
+94	Probiere den schlimmsten Fall: Was, wenn du jedes Mal Pech hast?
+95	Zwei Socken können verschiedene Farben haben. Was passiert mit der dritten?
+96	Stell dir Pech vor: Die erste Socke ist rot und die zweite blau.
+97	Die dritte Socke ist rot oder blau – und sie passt immer zu einer der ersten beiden.
+98	Also reichen 3 Socken. Mathematiker nennen das Schubfachprinzip.
+99	Eisschlange
+100	Adam steht in einer Schlange vor dem Eisstand. Vor ihm sind 5 Kinder und hinter ihm 4. Wie viele Kinder sind in der Schlange?
+101	Kinder
+102	Zählst du Adam auch mit?
+103	Addiere die vor Adam, Adam selbst und die hinter ihm.
+104	Vor Adam stehen 5 Kinder.
+105	Dann kommt Adam selbst – 1 Kind.
+106	Und 4 hinter ihm. Insgesamt 5 + 1 + 4 = 10.
+107	Würfelbauwerk
+108	Du schaust von oben auf ein Bauwerk aus Würfeln. Jede Zahl zeigt, wie viele Würfel in diesem Turm gestapelt sind. Wie viele Würfel sind es insgesamt?
+109	Würfel
+110	Jede Zahl ist ein Turm. Was musst du mit den Türmen machen?
+111	Addiere alle vier Zahlen.
+112	Jede Zahl sagt, aus wie vielen Würfeln der Turm besteht.
+113	Insgesamt: 2 + 1 + 1 + 3 = 7 Würfel.
+114	Geheime Murmelzahl
+115	Janko hat mehr als 3 und weniger als 6 Murmeln. Seine Murmelzahl ist gerade. Wie viele Murmeln hat er?
+116	Welche Zahlen sind größer als 3 und kleiner als 6?
+117	Es bleiben 4 und 5. Welche davon ist gerade?
+118	Zahlen, die größer als 3 und kleiner als 6 sind, sind 4 und 5.
+119	Nur 4 ist gerade (ohne Rest durch zwei teilbar).
+120	Wer ist am kleinsten?
+121	Ema ist größer als Dana. Dana ist größer als Filip. Wer ist am kleinsten?
+122	Ema
+123	Dana
+124	Filip
+125	Versuche, sie vom Größten an aufzureihen.
+126	Ema ist die Erste. Wer kommt als Nächstes, wenn Dana größer ist als Filip?
+127	Ema > Dana, also steht Ema vor Dana.
+128	Dana > Filip, also steht Dana vor Filip.
+129	Reihenfolge: Ema, Dana, Filip. Am kleinsten ist Filip.
+130	Outfit für einen Ausflug
+131	Ich habe 3 T-Shirts und 2 Hosen. Wie viele verschiedene Outfits kann ich zusammenstellen (ein T-Shirt und eine Hose)?
+132	Wähle ein T-Shirt. Mit wie vielen Hosen kannst du es tragen?
+133	Das gilt für jedes der 3 T-Shirts.
+134	Das erste T-Shirt passt zu 2 Hosen – 2 Möglichkeiten.
+135	Dasselbe gilt für das zweite und dritte T-Shirt.
+136	Insgesamt 2 + 2 + 2 = 6, das ist 3 × 2 = 6.
+137	Ecken von Figuren
+138	Wie viele Ecken hat 1 Quadrat zusammen mit 2 Dreiecken insgesamt?
+139	Wie viele Ecken hat ein Quadrat und wie viele ein Dreieck?
+140	Ein Quadrat hat 4, jedes Dreieck 3. Und nun?
+141	Ein Quadrat hat 4 Ecken.
+142	Jedes Dreieck hat 3 Ecken, zwei haben 6.
+143	Zusammen 4 + 6 = 10 Ecken.
+144	Wachsende Folge
+145	Setze die nächste Zahl ein: 2, 6, 18, 54, ?
+146	Schau dir das Verhältnis an: Wie oft größer ist 6 als 2?
+147	Probiere auch 18 : 6. Was fällt dir auf?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3 – wir multiplizieren immer mit drei.
+149	Die nächste Zahl ist 54 · 3 = 162.
+150	Brüche der Größe nach
+151	Sortiere die Karten von der kleinsten zur größten Zahl. Ziehe sie oder benutze die Pfeile.
+152	vom kleinsten zum größten
+153	Welcher Bruch ist kleiner als ein Halb?
+154	Stell dir eine Pizza vor: Wie viele Viertel sind auf jeder Karte?
+155	Schreibe alles in Vierteln: 1/4, 2/4, 3/4, 4/4.
+156	Je mehr Viertel, desto größer die Zahl.
+157	Gelesene Bücher
+158	Das Diagramm zeigt, wie viele Bücher die Klasse jeden Tag gelesen hat. Wie viele Bücher haben sie von Montag bis Donnerstag insgesamt gelesen?
+159	Mo
+160	Di
+161	Mi
+162	Do
+163	Bücher
+164	Lies die Zahl über jedem Balken ab.
+165	Welche Zahl hast du für Donnerstag abgelesen?
+166	Aus den Balken lesen wir: 4, 7, 5 und 9.
+167	Insgesamt 4 + 7 + 5 + 9 = 25.
+168	Drei Freunde in einer Reihe
+169	Ema, Tom und Lea wollen sich für ein Foto aufstellen. In wie vielen verschiedenen Reihenfolgen können sie stehen?
+170	Wer kann zuerst stehen? Wie viele Möglichkeiten gibt es?
+171	Wenn der Erste ausgewählt ist, wie viele Möglichkeiten bleiben für den zweiten Platz?
+172	Jedes der 3 Kinder kann Erstes sein.
+173	Für den zweiten Platz bleiben nur 2, und das letzte Kind nimmt den dritten (1).
+174	Insgesamt 3 · 2 · 1 = 6 Möglichkeiten.
+175	Obstwaage
+176	Auf einer Balkenwaage: 1 Apfel hält 2 Pflaumen die Waage und 1 Pflaume hält 3 Erdbeeren die Waage. Wie viele Erdbeeren halten 1 Apfel die Waage?
+177	Erdbeeren
+178	Ersetze zuerst den Apfel durch Pflaumen.
+179	Ersetze nun jede Pflaume durch Erdbeeren.
+180	1 Apfel = 2 Pflaumen.
+181	1 Pflaume = 3 Erdbeeren, also 2 Pflaumen = 2 · 3 = 6 Erdbeeren.
+182	Die falsche Münze
+183	Unter 9 Münzen ist eine falsch – sie ist leichter. Du hast eine Balkenwaage ohne Gewichte. Wie viele Wägungen reichen aus, um die falsche sicher zu finden?
+184	Was, wenn du die Münzen in Dreiergruppen teilst und zwei Gruppen vergleichst?
+185	Nach der ersten Wägung weißt du, in welcher Dreiergruppe die falsche liegt. Wie findest du sie unter drei Münzen?
+186	Teile die Münzen in 3 Gruppen und wiege zwei Gruppen. Die leichtere Seite – oder das Gleichgewicht – verrät dir, in welcher Gruppe die falsche ist.
+187	Wiege zwei Münzen aus dieser Gruppe: Die leichtere ist falsch, und wenn sie sich die Waage halten, ist es die dritte.
+188	Zwei Wägungen insgesamt reichen aus.
+189	Wer sagt die Wahrheit?
+190	Matt sagt: „Heute ist Dienstag.“ Zoe sagt: „Matt lügt.“ Wir wissen, dass Zoe die Wahrheit sagt. Ist heute Dienstag?
+191	Ja
+192	Nein
+193	Lässt sich nicht sagen
+194	Wenn Zoe die Wahrheit sagt, was folgt dann für Matt?
+195	Matt lügt. Was bedeutet das für seinen Satz?
+196	Zoe sagt die Wahrheit, also stimmt „Matt lügt“.
+197	Da Matt lügt, ist sein Satz „Heute ist Dienstag“ nicht wahr.
+198	Also ist heute nicht Dienstag.
+199	Haustiere
+200	Anna, Boris und Cyril besitzen einen Hund, eine Katze und einen Hamster (jeder eins). Anna hat weder Hund noch Katze. Boris hat keinen Hund. Was hat Cyril?

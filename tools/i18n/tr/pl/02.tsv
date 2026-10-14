@@ -1,0 +1,200 @@
+1	Imię
+2	Pies
+3	Kot
+4	Chomik
+5	Zacznij od tego, o kim wiesz najwięcej: co musi mieć Anna?
+6	Skoro Anna ma chomika, co może mieć Bartek?
+7	Anna nie ma ani psa, ani kota, więc ma chomika.
+8	Bartek nie ma psa, a chomik jest zajęty, więc ma kota.
+9	Cyrylowi zostaje pies.
+10	Tajne sumy
+11	Trzy tajne liczby A, B, C spełniają: A + B = 10, B + C = 12, A + C = 8. Ile wynosi A?
+12	A gdybyś dodał(a) wszystkie trzy równania do siebie?
+13	Suma to 2 · (A + B + C) = 30. Ile wynosi A + B + C i co od tego odejmiesz?
+14	Dodaj trzy równania: 2 · (A + B + C) = 10 + 12 + 8 = 30, więc A + B + C = 15.
+15	Ponieważ B + C = 12, mamy A = 15 − 12 = 3.
+16	Książka na wakacje
+17	Jana przeczytała 3/8 książki, a potem jeszcze 2/8. Zostało jej do przeczytania 15 stron. Ile stron ma cała książka?
+18	stron
+19	Ile ósmych części książki przeczytała w sumie?
+20	Jeśli przeczytane jest 5/8, ile ósmych zostało? A ile stron to jedna ósma?
+21	Przeczytane: 3/8 + 2/8 = 5/8 książki.
+22	Zostało 3/8, czyli 15 stron, więc 1/8 to 5 stron.
+23	Cała książka ma 8 · 5 = 40 stron.
+24	Liczby trzycyfrowe
+25	Z cyfr 1, 2, 3, 4 układasz liczby trzycyfrowe bez powtarzania cyfr. Ile jest takich liczb?
+26	Ile cyfr może stać na miejscu setek?
+27	Gdy użyjesz jednej cyfry, ile zostaje na miejsce dziesiątek, a potem jedności?
+28	Na miejsce setek są 4 możliwości.
+29	Na dziesiątki zostają 3 cyfry, a na jedności 2.
+30	W sumie 4 · 3 · 2 = 24 liczby.
+31	Gra w zapałki
+32	Na stosie leży 15 zapałek. Gracze na zmianę zabierają 1, 2 lub 3. Wygrywa ten, kto zabierze ostatnią. Ty zaczynasz. Ile powinieneś(-naś) zabrać na początku, żeby na pewno wygrać, jeśli potem będziesz grać najlepiej, jak umiesz?
+33	Myśl od końca: przy ilu zapałkach pozostałych na stosie przegrywa gracz, który ma ruch?
+34	Gdy zostają 4 zapałki, gracz wykonujący ruch przegrywa. Jakie wielokrotności liczby 4 chcesz zostawić przeciwnikowi?
+35	Jeśli zostają 4 zapałki i jest twój ruch, przegrywasz: zabierasz 1–3, a przeciwnik zabiera resztę.
+36	Zawsze chcesz więc zostawić przeciwnikowi 12, 8, 4 zapałki – wielokrotności czwórki.
+37	Z 15 zabierz 3 i zostaw 12. Potem zawsze dopełniaj jego ruch do 4.
+38	Kwadratowy ogród
+39	Kwadratowy ogród ma obwód 36 m. Jakie jest jego pole?
+40	Jak długi jest jeden bok kwadratu?
+41	Bok ma 36 : 4 = 9 m. Jak obliczyć pole kwadratu?
+42	Kwadrat ma 4 równe boki: 36 : 4 = 9 m.
+43	Pole = bok · bok = 9 · 9 = 81 m².
+44	Prostokąt z obwodu
+45	Prostokąt ma obwód 30 cm, a jeden bok ma 9 cm. Jakie jest jego pole?
+46	Obwód to 2 · (a + b). Ile wynosi a + b?
+47	a + b = 15, a jeden bok ma 9. Ile ma drugi?
+48	Połowa obwodu: 30 : 2 = 15 = a + b.
+49	Drugi bok ma 15 − 9 = 6 cm.
+50	Pole = 9 · 6 = 54 cm².
+51	Pomalowana kostka
+52	Duża kostka 3×3×3 składa się z 27 małych kostek i jest pomalowana z zewnątrz. Rozbieramy ją na części. Ile małych kostek ma dokładnie 3 pomalowane ściany?
+53	Które małe kostki znajdują się w narożnikach dużej kostki?
+54	Ile wierzchołków ma sześcian?
+55	Tylko kostki narożne mają trzy pomalowane ściany – spotykają się tam trzy ściany dużej kostki.
+56	Sześcian ma 8 wierzchołków, więc takich kostek jest 8.
+57	Sztuczka Gaussa
+58	Bez kalkulatora: 1 + 2 + 3 + … + 20.
+59	Spróbuj połączyć pierwszą liczbę z ostatnią: 1 + 20.
+60	Następna para to 2 + 19. Ile jest takich par?
+61	1 + 20 = 21, 2 + 19 = 21, 3 + 18 = 21 … każda para daje 21.
+62	Jest 20 liczb, więc 10 par.
+63	Suma wynosi 10 · 21 = 210.
+64	Zera na końcu
+65	Iloma zerami kończy się 20! = 1 · 2 · 3 · … · 20?
+66	Zero na końcu powstaje z pary czynników 2 i 5. Który z nich występuje rzadziej w iloczynie?
+67	Policz, ile razy czynnik 5 pojawia się wśród liczb od 1 do 20.
+68	Każde zero na końcu to jeden czynnik 10 = 2 · 5. Dwójek w 20! jest znacznie więcej, więc o wszystkim decydują piątki.
+69	Piątki: 5, 10, 15, 20 – każda daje jedną piątkę (25 dałoby dwie, ale nie występuje w iloczynie).
+70	Zatem są 4 zera.
+71	Dwie kostki
+72	Rzucamy dwiema uczciwymi kostkami. Jakie jest prawdopodobieństwo, że suma wyniesie 7?
+73	Ile jest możliwych wyników rzutu dwiema kostkami?
+74	Wypisz pary o sumie 7: (1,6), (2,5) … Ile ich jest?
+75	Wyników jest 6 · 6 = 36.
+76	Sumę 7 dają (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) – sześć par.
+77	Prawdopodobieństwo wynosi 6/36 = 1/6.
+78	Trzy po kolei
+79	Suma trzech kolejnych liczb całkowitych wynosi 105. Która jest największa z nich?
+80	Oznacz środkową liczbę przez n. Jak zapiszesz jej sąsiadów?
+81	n − 1, n, n + 1 – ile wynosi ich suma?
+82	Liczby to n − 1, n, n + 1, a ich suma to 3n.
+83	3n = 105, więc n = 35.
+84	Największa to n + 1 = 36.
+85	Delegacja
+86	Z sześciu uczniów wybieramy dwuosobową delegację. Na ile sposobów możemy to zrobić?
+87	Najpierw policz pary uporządkowane. Ile ich jest?
+88	Każdą parę policzyliśmy dwa razy (A,B i B,A). Co z tym zrobić?
+89	Pierwszą osobę wybieramy na 6 sposobów, drugą na 5: to 30 par uporządkowanych.
+90	Kolejność nie ma znaczenia, a każdą parę policzyliśmy dwa razy.
+91	Wynik: 30 : 2 = 15.
+92	Ostatnia cyfra
+93	Jaka jest ostatnia cyfra liczby 7¹⁰⁰? Zapisz w polu „Rozwiązanie”, jak do tego doszedłeś(-aś).
+94	Zapisz ostatnie cyfry potęg 7¹, 7², 7³, 7⁴ …
+95	Ostatnie cyfry powtarzają się z pewnym okresem. Jaki on jest i ile wynosi 100 podzielone przez ten okres?
+96	Ostatnie cyfry: 7, 9, 3, 1, potem znów 7, 9, 3, 1 … (okres 4).
+97	100 jest wielokrotnością 4, więc 7¹⁰⁰ kończy się tak samo jak 7⁴.
+98	Ostatnia cyfra to 1.
+99	Wyspa rycerzy i łgarzy
+100	Na wyspie rycerze zawsze mówią prawdę, a łgarze zawsze kłamią. A mówi: „Obaj jesteśmy łgarzami.” Kim jest B?
+101	Rycerzem
+102	Łgarzem
+103	Nie da się ustalić
+104	Czy A może być rycerzem? Co wtedy oznaczałoby jego zdanie?
+105	Jeśli A jest łgarzem, jego zdanie jest fałszywe. Co to mówi o B?
+106	Gdyby A był rycerzem, jego zdanie byłoby prawdziwe – ale mówi ono, że jest łgarzem. Sprzeczność.
+107	Zatem A jest łgarzem, a jego zdanie jest fałszywe: nie obaj są łgarzami.
+108	Skoro A jest łgarzem, B musi być rycerzem.
+109	Kulki w woreczku
+110	W woreczku są 3 czerwone i 2 niebieskie kulki. Losujemy dwie bez zwracania. Jakie jest prawdopodobieństwo, że obie są czerwone?
+111	Jakie jest prawdopodobieństwo, że pierwsza jest czerwona?
+112	Jeśli jej nie odłożysz, ile czerwonych kulek i ile kulek w ogóle zostaje?
+113	Pierwsza czerwona: 3/5.
+114	Potem zostają 2 czerwone na 4 kulki: 2/4 = 1/2.
+115	Razem 3/5 · 1/2 = 3/10.
+116	Zaznacz prawdziwe zdania
+117	Które z tych zdań są prawdziwe? Zaznacz wszystkie.
+118	2¹⁰ jest większe od 10³
+119	Kąty trójkąta sumują się do 180°
+120	Każda liczba pierwsza jest nieparzysta
+121	0,999… jest mniejsze od 1
+122	Sprawdź każde zdanie osobno. Czy potrafisz znaleźć kontrprzykład?
+123	Spójrz na najmniejszą liczbę pierwszą. A ile wynoszą 2¹⁰ i 10³?
+124	2¹⁰ = 1024, a 10³ = 1000, więc pierwsze zdanie jest prawdziwe.
+125	Kąty trójkąta zawsze sumują się do 180° – drugie zdanie jest prawdziwe.
+126	Liczba 2 jest parzystą liczbą pierwszą, więc trzecie zdanie jest fałszywe. A 0,999… równa się 1, więc czwarte jest fałszywe.
+127	Zacznij tam, gdzie w wierszu, kolumnie lub kwadracie brakuje najmniej liczb.
+128	W żadnym wierszu, kolumnie ani kwadracie nie może powtórzyć się liczba.
+129	Zgaś wszystkie światła
+130	Naciśnięcie pola zmienia stan jego światła i światła sąsiadów (w górę, w dół, w lewo, w prawo). Zgaś wszystkie światła (○).
+131	Spróbuj nacisnąć jedno pole dwa razy. Co się stanie?
+132	Najkrótsza trasa
+133	Poprowadź palcem ścieżkę od rakiety 🚀 do mety 🏁. Nie możesz przechodzić przez ściany – a szukamy najkrótszej trasy!
+134	Które korytarze są ślepymi zaułkami?
+135	Wilk, koza i kapusta
+136	Przewieź 🐺 🐐 🥬 przez rzekę. W łodzi mieści się rolnik i jeden pasażer. Zostawieni sami: wilk zjada kozę, koza zjada kapustę.
+137	Kogo nie wolno nigdy zostawić razem? Kto dogaduje się z obiema pozostałymi postaciami?
+138	Koza występuje w obu niebezpiecznych parach. A gdybyś przewiózł(a) ją pierwszą?
+139	Kluczowy pomysł: koza sprawia kłopoty – wilk ją zjada, ona zjada kapustę – więc rolnik nie może zostawić jej samej z żadnym z nich.
+140	Wilk i kapusta nie robią sobie krzywdy, więc mogą czekać razem.
+141	Lis, kura i kukurydza
+142	Wioślarz musi przewieźć przez strumień lisa, kurę i worek kukurydzy. W łodzi mieści się wioślarz i jeden pasażer. Zostawiony sam, lis zjada kurę, a kura wydziobuje kukurydzę. Znajdź bezpieczny plan!
+143	Kto występuje w obu niebezpiecznych parach?
+144	Kura jedzie pierwsza. Co dalej, gdy już jest po drugiej stronie? Możesz ją też przywieźć z powrotem!
+145	Kura jest w obu niebezpiecznych parach, więc wioślarz zabiera ją pierwszą i nigdy nie zostawia jej samej z lisem ani z kukurydzą.
+146	Czasem opłaca się kogoś przywieźć z powrotem – ważne, żeby nikt nie został w niebezpieczeństwie.
+147	Astronauci i roboty
+148	2 astronautów i 2 roboty muszą przeprawić się przez rzekę małą rakietą-łodzią. Mieści ona najwyżej dwie osoby i ktoś musi wiosłować. Jeśli na brzegu robotów jest więcej niż astronautów (a astronauci tam są), astronautom grozi niebezpieczeństwo. Znajdź bezpieczny plan!
+149	Pilnuj liczb na obu brzegach: astronautów ≥ robotów, o ile jest tam jakiś astronauta.
+150	Nie bój się przywieźć kogoś z powrotem – czasem to jedyny sposób.
+151	Na obu brzegach zachowujemy zasadę: jeśli jest tam astronauta, robotów nigdy nie jest więcej niż astronautów.
+152	Trzech astronautów, trzy roboty
+153	3 astronautów i 3 roboty przeprawiają się przez rzekę łodzią dla dwóch osób. Zasada: na brzegu, na którym jest co najmniej jeden astronauta, robotów nie może być więcej niż astronautów. Ile wynosi najmniejsza liczba przepraw?
+154	Wyobraź sobie wszystkie możliwe stany – ile razy możesz zacząć od wysłania „2 robotów”?
+155	Uważaj, kto zostaje na brzegu, który opuszczasz. Czasem najlepiej jest zawrócić jednego robota lub astronautę.
+156	To słynna łamigłówka o misjonarzach i kanibalach w kosmicznej wersji. Pomaga systematyczne zapisywanie stanów brzegów.
+157	Policz różnicę między sąsiednimi liczbami.
+158	Sprawdź, czy liczby powstają przez mnożenie.
+159	Spójrz na różnice między sąsiadami. Czy się zmieniają?
+160	Porównaj liczby z kwadratami 1, 4, 9, 16, 25…
+161	Spróbuj dodać dwie sąsiednie liczby.
+162	Każda liczba jest sumą dwóch poprzednich.
+163	A jeśli dwa ciągi są wymieszane w jeden?
+164	Spróbuj liczb powstałych przez trzykrotne mnożenie: 2 · 2 · 2…
+165	To sześciany: 1³, 2³, 3³…
+166	Liczby to 1³, 2³, 3³, 4³, 5³ – sześciany.
+167	Następna to 6³ = 216.
+168	Wzór liczbowy
+169	Jaka liczba zastępuje znak zapytania?
+170	Pierwsza gwiazdka
+171	Rozwiąż swoje pierwsze zadanie.
+172	Dziesięć zadań
+173	Ukończ 10 zadań.
+174	Odkrywca
+175	Ukończ 25 zadań.
+176	Bystry umysł
+177	Zdobądź 3 gwiazdki w 5 zadaniach.
+178	Wytrwały
+179	Rozwiąż zadanie po kilku próbach.
+180	Kapitan
+181	Rozwiąż zadanie z przeprawą przez rzekę.
+182	Mistrz sudoku
+183	Rozwiąż sudoku.
+184	Nawigator
+185	Znajdź najkrótszą drogę przez labirynt.
+186	Elektryk
+187	Zgaś wszystkie światła.
+188	Wszechstronny
+189	Rozwiąż zadania z 5 różnych kategorii.
+190	Trzy dni z rzędu
+191	Rozwiązuj zadania 3 dni z rzędu.
+192	500 punktów
+193	Zdobądź 500 punktów.
+194	Rozwiązujący codziennie
+195	Rozwiąż codzienne wyzwanie.
+196	Pierwszy poziom
+197	Ukończ cały poziom.
+198	Kolekcjoner
+199	Zbierz 10 naklejek.
+200	Wielki kolekcjoner

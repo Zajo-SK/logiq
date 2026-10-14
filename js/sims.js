@@ -22,7 +22,7 @@ function simSticks({ N, moves, misere }) {
     pile.replaceChildren(...range(Math.ceil(N / 5)).map(gi => h('div', { class: 'stkgrp' }, range(5).map(j => { const idx = gi * 5 + j; if (idx >= N) return null; const there = idx < n, leaving = !there && idx < n + gone; return h('i', { class: 'stk' + (there ? '' : leaving ? ' gone' : ' empty') }); }))));
     info.replaceChildren(h('b', { class: 'bigno' }, n), ' ', over ? '' : `${who[turn]} ${L2('je na ťahu', 'is next')}`);
     ctl.replaceChildren();
-    if (!over) moves.filter(m => m <= n).forEach(m => ctl.append(h('button', { type: 'button', class: 'btn primary', disabled: !!demo, onclick: () => take(m), 'aria-label': L2(`Vziať ${m}`, `Take ${m}`) }, h('span', { class: 'mini-stk' }, '｜'.repeat(m)), ' ' + m)));
+    if (!over) moves.filter(m => m <= n).forEach(m => ctl.append(h('button', { type: 'button', class: 'btn primary', disabled: !!demo, onclick: () => take(m), 'aria-label': L2(`Vziať ${m}`, `Take ${m}`, "Take {0}", [m]) }, h('span', { class: 'mini-stk' }, '｜'.repeat(m)), ' ' + m)));
     else ctl.append(h('p', { class: 'simwin' }, `${who[misere ? 1 - turn : turn]} ${L2('vyhráva!', 'wins!')} (${who[turn]} ${L2('vzal poslednú', 'took the last one')})`));
     ctl.append(h('button', { type: 'button', class: 'btn ghost small', onclick: reset }, '↺ ' + L2('Znova', 'Again')), h('button', { type: 'button', class: 'btn ghost small', disabled: !!demo || over, onclick: play }, '▶ ' + L2('Ukážka', 'Demo')));
   }

@@ -54,9 +54,9 @@ reg('subgame', 'strategy', 2, c => {
     title: S('Paličky', 'Sticks'), prompt: both(l => rule[l] + ' ' + q[l]), type: first ? 'number' : 'choice', sim: N <= 60 ? { kind: 'sticks', N, moves, misere } : null,
     data: first ? { answer: wm[0] } : { options: [S('Začínajúci hráč', 'The first player'), S('Druhý hráč', 'The second player')], correct: win[N] ? 0 : 1, cols: 2 },
     hints: [S('Premýšľaj odzadu: pri akom počte zápaliek vyhráva ten, kto je na ťahu, a pri akom prehráva?', 'Think backwards: with how many matches does the player to move win, and with how many lose?'),
-      S(`Prehrávajúce počty (pre hráča na ťahu) sú: ${loseTxt}. Je ${N} medzi nimi?`, `The losing counts (for the player to move) are: ${loseTxt}. Is ${N} among them?`)],
+      S(`Prehrávajúce počty (pre hráča na ťahu) sú: ${loseTxt}. Je ${N} medzi nimi?`, `The losing counts (for the player to move) are: ${loseTxt}. Is ${N} among them?`, "The losing counts (for the player to move) are: {0}. Is {1} among them?", [loseTxt, N])],
     explain: [S(`Hľadáme „prehrávajúce“ počty: ak na kope zostane taký počet a si na ťahu, súper ťa vždy prekoná. Sú to: ${loseTxt}.${misere ? ' (Poslednú zápalku nechceme, preto je prehrávajúce aj 1.)' : ''}`, `We look for “losing” counts: if you are to move at such a count your opponent can always beat you. They are: ${loseTxt}.${misere ? ' (We do not want the last match, so 1 is losing too.)' : ''}`),
-      win[N] ? S(`Počet ${N} nie je prehrávajúci, takže začínajúci vyhráva: vezme ${wm[0]} a súperovi nechá ${N - wm[0]}.`, `${N} is not a losing count, so the first player wins: take ${wm[0]} and leave ${N - wm[0]}.`) : S(`Počet ${N} je prehrávajúci pre hráča na ťahu, preto vyhráva druhý hráč.`, `${N} is a losing count for the player to move, so the second player wins.`)]
+      win[N] ? S(`Počet ${N} nie je prehrávajúci, takže začínajúci vyhráva: vezme ${wm[0]} a súperovi nechá ${N - wm[0]}.`, `${N} is not a losing count, so the first player wins: take ${wm[0]} and leave ${N - wm[0]}.`, "{0} is not a losing count, so the first player wins: take {1} and leave {2}.", [N, wm[0], N - wm[0]]) : S(`Počet ${N} je prehrávajúci pre hráča na ťahu, preto vyhráva druhý hráč.`, `${N} is a losing count for the player to move, so the second player wins.`, "{0} is a losing count for the player to move, so the second player wins.", [N])]
   };
 });
 
@@ -112,9 +112,9 @@ reg('pilesgame', 'strategy', 3, c => {
     prompt: both(l => rule[l] + ' ' + (two ? (l === 'sk' ? 'Začínaš ty. Koľko vezmeš z väčšej kopy, aby si vyhral?' : 'You start. How many do you take from the bigger pile to win?') : (l === 'sk' ? `Začínaš ty. Koľko vezmeš z kopy s ${cand.from}, aby si vyhral?` : `You start. How many do you take from the pile of ${cand.from} to win?`))),
     data: { answer: cand.ans },
     hints: two ? [S('Čo ak kopy vyrovnáš? Čo potom môže urobiť súper?', 'What if you make the piles equal? What can your opponent do then?'), S('Súperov ťah vždy zopakuješ na druhej kope.', 'You can always copy your opponent’s move on the other pile.')]
-      : [S('Zapíš si veľkosti kôp v dvojkovej sústave. Chceš, aby bol po tvojom ťahu v každom stĺpci párny počet jednotiek.', 'Write the piles in binary. After your move every column should have an even number of ones.'), S(`Nim-súčet (XOR) kôp je teraz ${x}. Ktorú kopu musíš zmenšiť, aby sa nim-súčet stal 0?`, `The nim-sum (XOR) is now ${x}. Which pile must be reduced to make it 0?`)],
-    explain: two ? [S('Pri dvoch kopách vyrovnaj ich veľkosti: z väčšej vezmi rozdiel.', 'With two piles equalise them: take the difference from the bigger one.'), S(`Rozdiel je ${piles[1]} − ${piles[0]} = ${cand.ans}. Potom už stačí kopírovať súperove ťahy na druhej kope.`, `The difference is ${piles[1]} − ${piles[0]} = ${cand.ans}. Then just copy your opponent’s moves on the other pile.`)]
-      : [S(`Nim-súčet (XOR) čísel ${piles.join(', ')} je ${x}, takže si v „vyhrávajúcej“ pozícii.`, `The nim-sum (XOR) of ${piles.join(', ')} is ${x}, so you are in a “winning” position.`), S(`Treba vziať ${cand.ans} z kopy ${cand.from}: ${cand.from} ⊕ ${x} = ${cand.from - cand.ans}, a tak sa nim-súčet zmení na 0.`, `Take ${cand.ans} from the pile of ${cand.from}: ${cand.from} ⊕ ${x} = ${cand.from - cand.ans}, which makes the nim-sum 0.`)]
+      : [S('Zapíš si veľkosti kôp v dvojkovej sústave. Chceš, aby bol po tvojom ťahu v každom stĺpci párny počet jednotiek.', 'Write the piles in binary. After your move every column should have an even number of ones.'), S(`Nim-súčet (XOR) kôp je teraz ${x}. Ktorú kopu musíš zmenšiť, aby sa nim-súčet stal 0?`, `The nim-sum (XOR) is now ${x}. Which pile must be reduced to make it 0?`, "The nim-sum (XOR) is now {0}. Which pile must be reduced to make it 0?", [x])],
+    explain: two ? [S('Pri dvoch kopách vyrovnaj ich veľkosti: z väčšej vezmi rozdiel.', 'With two piles equalise them: take the difference from the bigger one.'), S(`Rozdiel je ${piles[1]} − ${piles[0]} = ${cand.ans}. Potom už stačí kopírovať súperove ťahy na druhej kope.`, `The difference is ${piles[1]} − ${piles[0]} = ${cand.ans}. Then just copy your opponent’s moves on the other pile.`, "The difference is {0} − {1} = {2}. Then just copy your opponent’s moves on the other pile.", [piles[1], piles[0], cand.ans])]
+      : [S(`Nim-súčet (XOR) čísel ${piles.join(', ')} je ${x}, takže si v „vyhrávajúcej“ pozícii.`, `The nim-sum (XOR) of ${piles.join(', ')} is ${x}, so you are in a “winning” position.`), S(`Treba vziať ${cand.ans} z kopy ${cand.from}: ${cand.from} ⊕ ${x} = ${cand.from - cand.ans}, a tak sa nim-súčet zmení na 0.`, `Take ${cand.ans} from the pile of ${cand.from}: ${cand.from} ⊕ ${x} = ${cand.from - cand.ans}, which makes the nim-sum 0.`, "Take {0} from the pile of {1}: {2} ⊕ {3} = {4}, which makes the nim-sum 0.", [cand.ans, cand.from, cand.from, x, cand.from - cand.ans])]
   };
 });
 
@@ -123,10 +123,10 @@ reg('chocolate', 'strategy', 2, c => {
   const [a, b] = pairs[ri(c.r, 0, pairs.length - 1)], n = a * b;
   return {
     title: S('Lámanie čokolády', 'Breaking chocolate'), type: 'number', sim: { kind: 'choc', a, b },
-    prompt: S(`🍫 Čokoláda ${a} × ${b}. Jedno lámanie = jeden kus na dva. Koľko lámaní treba, aby bol každý štvorček osobitne?`, `🍫 A chocolate ${a} × ${b}. One break = one piece into two. How many breaks until every square is separate?`),
+    prompt: S(`🍫 Čokoláda ${a} × ${b}. Jedno lámanie = jeden kus na dva. Koľko lámaní treba, aby bol každý štvorček osobitne?`, `🍫 A chocolate ${a} × ${b}. One break = one piece into two. How many breaks until every square is separate?`, "🍫 A chocolate {0} × {1}. One break = one piece into two. How many breaks until every square is separate?", [a, b]),
     data: { answer: n - 1 },
     hints: [S('Koľko kusov máš na začiatku a koľko na konci? Čo sa stane s počtom kusov pri jednom lámaní?', 'How many pieces do you have at the start and at the end? What happens to the count with one break?'), S('Každé lámanie pridá práve jeden kus. Na dôvode, ako lámeš, nezáleží.', 'Every break adds exactly one piece. How you break does not matter.')],
-    explain: [S('Na začiatku je 1 kus a na konci ich chceme ' + n + '.', 'At the start there is 1 piece and at the end we want ' + n + '.'), S(`Každé lámanie zvýši počet kusov presne o 1, preto potrebujeme ${n} − 1 = ${n - 1} lámaní – bez ohľadu na spôsob.`, `Each break raises the number of pieces by exactly 1, so we need ${n} − 1 = ${n - 1} breaks – whatever the method.`)]
+    explain: [S('Na začiatku je 1 kus a na konci ich chceme ' + n + '.', 'At the start there is 1 piece and at the end we want ' + n + '.'), S(`Každé lámanie zvýši počet kusov presne o 1, preto potrebujeme ${n} − 1 = ${n - 1} lámaní – bez ohľadu na spôsob.`, `Each break raises the number of pieces by exactly 1, so we need ${n} − 1 = ${n - 1} breaks – whatever the method.`, "Each break raises the number of pieces by exactly 1, so we need {0} − 1 = {1} breaks – whatever the method.", [n, n - 1])]
   };
 });
 
@@ -134,16 +134,16 @@ reg('knockout', 'strategy', 2, c => {
   const { D, k, r, g } = c, n = lerp(5, 70, D) + k * 2 + ri(r, 0, 3), v = k % 3;
   if (v === 2) { const m = clamp(2 + Math.floor(k / 2) % 6 + Math.floor(D * 4), 2, 10); return {
     title: S('Turnaj – počet kôl', 'Tournament – rounds'), type: 'number',
-    prompt: S(`🏆 ${2 ** m} hráčov. V každom kole hrajú dvojice a víťaz postupuje. Koľko kôl sa odohrá?`, `🏆 ${2 ** m} players. In each round pairs play and the winner moves on. How many rounds are played?`),
+    prompt: S(`🏆 ${2 ** m} hráčov. V každom kole hrajú dvojice a víťaz postupuje. Koľko kôl sa odohrá?`, `🏆 ${2 ** m} players. In each round pairs play and the winner moves on. How many rounds are played?`, "🏆 {0} players. In each round pairs play and the winner moves on. How many rounds are played?", [2 ** m]),
     data: { answer: m },
     hints: [S('Koľko hráčov zostane po 1. kole?', 'How many players remain after round 1?'), S('Počet hráčov sa každé kolo zníži na polovicu. Koľkokrát môžeš deliť dvoma, kým ostane 1?', 'The number halves each round. How many times can you halve until 1 is left?')],
-    explain: [S(`Po každom kole zostane polovica hráčov: ${range(m + 1).map(i => 2 ** (m - i)).join(' → ')}.`, `After every round half remain: ${range(m + 1).map(i => 2 ** (m - i)).join(' → ')}.`), S(`Je to ${m} polovičení, teda ${m} kôl.`, `That is ${m} halvings, so ${m} rounds.`)] }; }
+    explain: [S(`Po každom kole zostane polovica hráčov: ${range(m + 1).map(i => 2 ** (m - i)).join(' → ')}.`, `After every round half remain: ${range(m + 1).map(i => 2 ** (m - i)).join(' → ')}.`), S(`Je to ${m} polovičení, teda ${m} kôl.`, `That is ${m} halvings, so ${m} rounds.`, "That is {0} halvings, so {1} rounds.", [m, m])] }; }
   return {
     title: S('Turnaj – počet zápasov', 'Tournament – matches'), type: 'number', sim: n <= 16 ? { kind: 'players', n } : null,
     prompt: both(l => l === 'sk' ? `🏆 ${n} hráčov hrá turnaj. Kto prehrá, vypadne. Koľko zápasov sa odohrá, kým zostane víťaz?` : `🏆 ${n} players play a tournament. Whoever loses is out. How many matches until one winner is left?`),
     data: { answer: n - 1 },
     hints: [S('Koľko hráčov musí byť vyradených, aby ostal víťaz?', 'How many players must be eliminated for a champion to remain?'), S('Jeden zápas = jeden vyradený hráč.', 'One match = one eliminated player.')],
-    explain: [S(`Z ${n} hráčov musí byť vyradených ${n - 1}.`, `Out of ${n} players, ${n - 1} must be eliminated.`), S(`Každý zápas vyradí jedného, takže sa odohrá ${n - 1} zápasov – nezáleží na tom, ako sa dvojice losujú.`, `Each match eliminates one, so ${n - 1} matches are played – however the pairs are drawn.`)]
+    explain: [S(`Z ${n} hráčov musí byť vyradených ${n - 1}.`, `Out of ${n} players, ${n - 1} must be eliminated.`, "Out of {0} players, {1} must be eliminated.", [n, n - 1]), S(`Každý zápas vyradí jedného, takže sa odohrá ${n - 1} zápasov – nezáleží na tom, ako sa dvojice losujú.`, `Each match eliminates one, so ${n - 1} matches are played – however the pairs are drawn.`, "Each match eliminates one, so {0} matches are played – however the pairs are drawn.", [n - 1])]
   };
 });
 
@@ -168,7 +168,7 @@ reg('knights', 'truth', 2, c => {
       visual: () => vList(st.map((s, i) => `<b>${L[i]}</b>: „${esc(text(s, LANG))}“`)),
       prompt: both(l => (l === 'sk' ? `🏝️ Rytier hovorí vždy pravdu, luhár vždy klame. Skupina ${J(L, 'sk')} povie vety. ` : `🏝️ A knight always tells the truth, a liar always lies. Group ${J(L, 'en')} speaks. `) + (ask === 'count' ? (l === 'sk' ? 'Koľko rytierov je v skupine?' : 'How many knights are in the group?') : (l === 'sk' ? `Je ${L[who]} rytier?` : `Is ${L[who]} a knight?`))),
       data: ask === 'count' ? { answer: kn } : { options: [S('Áno', 'Yes'), S('Nie', 'No')], correct: sol[who] ? 0 : 1, cols: 2 },
-      hints: [S(`Skús predpokladať, že ${L[0]} je rytier. Čo z toho vyplýva pre ostatných?`, `Try assuming ${L[0]} is a knight. What follows for the others?`), S('Ak sa dostaneš do sporu, tvoj predpoklad bol zlý – skús opačný.', 'If you reach a contradiction your assumption was wrong – try the opposite.')],
+      hints: [S(`Skús predpokladať, že ${L[0]} je rytier. Čo z toho vyplýva pre ostatných?`, `Try assuming ${L[0]} is a knight. What follows for the others?`, "Try assuming {0} is a knight. What follows for the others?", [L[0]]), S('Ak sa dostaneš do sporu, tvoj predpoklad bol zlý – skús opačný.', 'If you reach a contradiction your assumption was wrong – try the opposite.')],
       explain: [S('Skúšame možnosti: rytier musí hovoriť pravdu, luhár klamať. Každý predpoklad overíme proti všetkým vetám.', 'We test cases: a knight must tell the truth, a liar must lie. We check each assumption against all sentences.'),
         both(l => (l === 'sk' ? 'Jediný možný stav: ' : 'The only consistent case: ') + L.map((x, i) => `${x} = ${sol[i] ? (l === 'sk' ? 'rytier' : 'knight') : (l === 'sk' ? 'luhár' : 'liar')}`).join(', ') + '.')]
     };
@@ -190,8 +190,8 @@ reg('culprit', 'truth', 2, c => {
       visual: () => vList(st.map((s, i) => `<b>${P[i]}</b>: „${esc(text(s, i, LANG))}“`)),
       prompt: S(`🪟 Okno rozbil jeden z ${n} detí (${P.join(', ')}). Pravdu ${K === 1 || K >= 5 ? 'hovorí' : 'hovoria'} presne ${K}. Kto to bol?`, `🪟 One of ${n} children (${P.join(', ')}) broke the window. Exactly ${K} ${K === 1 ? 'tells' : 'tell'} the truth. Who did it?`),
       data: { options: P.map(x => x), correct: real, cols: n > 3 ? 2 : 3 },
-      hints: [S('Skús postupne každého podozrivého: ak by to bol on, koľko výrokov by bolo pravdivých?', 'Try each suspect in turn: if it was them, how many statements would be true?'), S(`Hľadáš podozrivého, pri ktorom je pravdivých presne ${K} výrokov.`, `You want the suspect for whom exactly ${K} statements are true.`)],
-      explain: [S('Pre každého podozrivého spočítame, koľko výrokov by bolo pravdivých:', 'For each suspect we count how many statements would be true:'), both(l => P.map((p, cu) => `${p}: ${count(cu)}`).join(' • ')), S(`Presne ${K} pravdivých výrokov vychádza len pri ${P[real]}.`, `Exactly ${K} true statements happens only for ${P[real]}.`)]
+      hints: [S('Skús postupne každého podozrivého: ak by to bol on, koľko výrokov by bolo pravdivých?', 'Try each suspect in turn: if it was them, how many statements would be true?'), S(`Hľadáš podozrivého, pri ktorom je pravdivých presne ${K} výrokov.`, `You want the suspect for whom exactly ${K} statements are true.`, "You want the suspect for whom exactly {0} statements are true.", [K])],
+      explain: [S('Pre každého podozrivého spočítame, koľko výrokov by bolo pravdivých:', 'For each suspect we count how many statements would be true:'), both(l => P.map((p, cu) => `${p}: ${count(cu)}`).join(' • ')), S(`Presne ${K} pravdivých výrokov vychádza len pri ${P[real]}.`, `Exactly ${K} true statements happens only for ${P[real]}.`, "Exactly {0} true statements happens only for {1}.", [K, P[real]])]
     };
   }
   return null;
@@ -201,12 +201,12 @@ reg('numberclue', 'truth', 2, c => {
   const { r, D } = c, hi = lerp(30, 600, D), lo = 1, N = ri(r, 10, hi);
   const dg = x => String(x).split('').map(Number), ds = x => dg(x).reduce((a, b) => a + b, 0);
   const pool = [];
-  [2, 3, 4, 5, 6, 7, 9].forEach(d => { if (N % d === 0) pool.push({ f: x => x % d === 0, t: S(`je deliteľné číslom ${d}`, `is divisible by ${d}`) }); else pool.push({ f: x => x % d !== 0, t: S(`nie je deliteľné číslom ${d}`, `is not divisible by ${d}`) }); });
+  [2, 3, 4, 5, 6, 7, 9].forEach(d => { if (N % d === 0) pool.push({ f: x => x % d === 0, t: S(`je deliteľné číslom ${d}`, `is divisible by ${d}`, "is divisible by {0}", [d]) }); else pool.push({ f: x => x % d !== 0, t: S(`nie je deliteľné číslom ${d}`, `is not divisible by ${d}`, "is not divisible by {0}", [d]) }); });
   pool.push({ f: x => x > N - ri(r, 1, Math.max(2, hi / 6 | 0)), t: null });
   const kid = c.g <= 3, a = kid ? Math.max(1, N - ri(r, 2, 7)) : ri(r, 1, Math.max(1, Math.floor(N * .6))), b = kid ? N + ri(r, 2, 7) : N + ri(r, 1, Math.max(2, Math.floor(hi * .3)));
-  pool.push({ f: x => x > a, t: S(`je väčšie ako ${a}`, `is greater than ${a}`) }, { f: x => x < b, t: S(`je menšie ako ${b}`, `is less than ${b}`) });
-  pool.push({ f: x => ds(x) === ds(N), t: S(`má ciferný súčet ${ds(N)}`, `has digit sum ${ds(N)}`) });
-  pool.push({ f: x => x % 10 === N % 10, t: S(`končí číslicou ${N % 10}`, `ends in the digit ${N % 10}`) });
+  pool.push({ f: x => x > a, t: S(`je väčšie ako ${a}`, `is greater than ${a}`, "is greater than {0}", [a]) }, { f: x => x < b, t: S(`je menšie ako ${b}`, `is less than ${b}`, "is less than {0}", [b]) });
+  pool.push({ f: x => ds(x) === ds(N), t: S(`má ciferný súčet ${ds(N)}`, `has digit sum ${ds(N)}`, "has digit sum {0}", [ds(N)]) });
+  pool.push({ f: x => x % 10 === N % 10, t: S(`končí číslicou ${N % 10}`, `ends in the digit ${N % 10}`, "ends in the digit {0}", [N % 10]) });
   pool.push({ f: x => (x % 2 === 0) === (N % 2 === 0), t: N % 2 === 0 ? S('je párne', 'is even') : S('je nepárne', 'is odd') });
   if (Math.sqrt(N) % 1 === 0) pool.push({ f: x => Math.sqrt(x) % 1 === 0, t: S('je druhá mocnina celého čísla', 'is a perfect square') });
   pool.push({ f: x => String(x).length === String(N).length, t: S(`má ${String(N).length} ${String(N).length === 1 ? 'cifru' : String(N).length < 5 ? 'cifry' : 'cifier'}`, `has ${String(N).length} digit${String(N).length === 1 ? '' : 's'}`) });
@@ -216,10 +216,10 @@ reg('numberclue', 'truth', 2, c => {
   return {
     title: S('Hádaj moje číslo', 'Guess my number'), sim: hi <= 120 ? { kind: 'chart', hi } : null, type: 'number',
     visual: () => vList(used.map(u => esc(tx(u.cl.t)))),
-    prompt: S(`Myslím si číslo od 1 do ${hi}. Platí o ňom všetko zo zoznamu. Aké je to číslo?`, `I am thinking of a number from 1 to ${hi}. Everything on the list is true. Which number is it?`),
+    prompt: S(`Myslím si číslo od 1 do ${hi}. Platí o ňom všetko zo zoznamu. Aké je to číslo?`, `I am thinking of a number from 1 to ${hi}. Everything on the list is true. Which number is it?`, "I am thinking of a number from 1 to {0}. Everything on the list is true. Which number is it?", [hi]),
     data: { answer: N },
     hints: [S('Začni tou podmienkou, ktorá vylúči najviac čísel.', 'Start with the clue that rules out the most numbers.'), S('Kombinuj podmienky: hľadáš číslo, ktoré spĺňa všetky naraz.', 'Combine the clues: you need a number that satisfies all of them at once.')],
-    explain: [S('Čísla postupne vylučujeme podľa podmienok:', 'We cross out numbers clue by clue:'), both(l => used.map((u, i) => `${i + 1}. ${l === 'sk' ? 'zostáva' : 'left'}: ${u.after}`).join(' → ')), S(`Zostane jediné číslo: ${N}.`, `Only one number is left: ${N}.`)]
+    explain: [S('Čísla postupne vylučujeme podľa podmienok:', 'We cross out numbers clue by clue:'), both(l => used.map((u, i) => `${i + 1}. ${l === 'sk' ? 'zostáva' : 'left'}: ${u.after}`).join(' → ')), S(`Zostane jediné číslo: ${N}.`, `Only one number is left: ${N}.`, "Only one number is left: {0}.", [N])]
   };
 });
 
@@ -227,11 +227,11 @@ reg('numberclue', 'truth', 2, c => {
 reg('ordering', 'logic', 2, c => {
   const { r, D } = c, n = clamp(lerp(3, 6, D * 1.15), 3, 6), P = names(r, n), all = allPerms(n); // all[i][person] = position
   const hidden = pick(all, r);
-  const kinds = [() => { const a = ri(r, 0, n - 1), b = pick(range(n).filter(x => x !== a), r); return { f: p => p[a] < p[b], t: S(`${P[a]} stojí pred ${INS[P[b]]}.`, `${P[a]} stands before ${P[b]}.`) }; },
-    () => { const a = ri(r, 0, n - 1), b = pick(range(n).filter(x => x !== a), r); return { f: p => p[a] === p[b] + 1, t: S(`${P[a]} stojí hneď za ${INS[P[b]]}.`, `${P[a]} stands right behind ${P[b]}.`) }; },
-    () => { const a = ri(r, 0, n - 1); return { f: p => p[a] !== 0, t: S(`${P[a]} nestojí na prvom mieste.`, `${P[a]} is not first.`) }; },
-    () => { const a = ri(r, 0, n - 1); return { f: p => p[a] !== n - 1, t: S(`${P[a]} nestojí na poslednom mieste.`, `${P[a]} is not last.`) }; },
-    () => { const [m, a, b] = shuffle(range(n), r); return { f: p => (p[a] < p[m] && p[m] < p[b]) || (p[b] < p[m] && p[m] < p[a]), t: S(`${P[m]} stojí niekde medzi ${INS[P[a]]} a ${INS[P[b]]}.`, `${P[m]} stands somewhere between ${P[a]} and ${P[b]}.`) }; }];
+  const kinds = [() => { const a = ri(r, 0, n - 1), b = pick(range(n).filter(x => x !== a), r); return { f: p => p[a] < p[b], t: S(`${P[a]} stojí pred ${INS[P[b]]}.`, `${P[a]} stands before ${P[b]}.`, "{0} stands before {1}.", [P[a], P[b]]) }; },
+    () => { const a = ri(r, 0, n - 1), b = pick(range(n).filter(x => x !== a), r); return { f: p => p[a] === p[b] + 1, t: S(`${P[a]} stojí hneď za ${INS[P[b]]}.`, `${P[a]} stands right behind ${P[b]}.`, "{0} stands right behind {1}.", [P[a], P[b]]) }; },
+    () => { const a = ri(r, 0, n - 1); return { f: p => p[a] !== 0, t: S(`${P[a]} nestojí na prvom mieste.`, `${P[a]} is not first.`, "{0} is not first.", [P[a]]) }; },
+    () => { const a = ri(r, 0, n - 1); return { f: p => p[a] !== n - 1, t: S(`${P[a]} nestojí na poslednom mieste.`, `${P[a]} is not last.`, "{0} is not last.", [P[a]]) }; },
+    () => { const [m, a, b] = shuffle(range(n), r); return { f: p => (p[a] < p[m] && p[m] < p[b]) || (p[b] < p[m] && p[m] < p[a]), t: S(`${P[m]} stojí niekde medzi ${INS[P[a]]} a ${INS[P[b]]}.`, `${P[m]} stands somewhere between ${P[a]} and ${P[b]}.`, "{0} stands somewhere between {1} and {2}.", [P[m], P[a], P[b]]) }; }];
   const kindMax = D < .3 ? 4 : 5;
   let L = all, clues = [];
   for (let t = 0; t < 60 && L.length > 1; t++) { const cl = kinds[ri(r, 0, kindMax - 1)](); if (!cl.f(hidden)) continue; const nx = L.filter(cl.f); if (nx.length < L.length) { L = nx; clues.push(cl); } }
@@ -252,9 +252,9 @@ reg('ordering', 'logic', 2, c => {
 const PETS = [{ e: '🐶', n: S('Pes', 'Dog'), acc: S('psa', 'a dog'), the: S('psa', 'the dog') }, { e: '🐱', n: S('Mačka', 'Cat'), acc: S('mačku', 'a cat'), the: S('mačku', 'the cat') }, { e: '🐹', n: S('Škrečok', 'Hamster'), acc: S('škrečka', 'a hamster'), the: S('škrečka', 'the hamster') }, { e: '🐰', n: S('Králik', 'Rabbit'), acc: S('králika', 'a rabbit'), the: S('králika', 'the rabbit') }, { e: '🐠', n: S('Rybka', 'Fish'), acc: S('rybku', 'a fish'), the: S('rybku', 'the fish') }];
 reg('assign', 'logic', 2, c => {
   const { r, D } = c, n = D < .4 ? 3 : D < .8 ? 4 : 5, P = names(r, n), items = shuffle(PETS, r).slice(0, n), all = allPerms(n), hidden = pick(all, r); // hidden[person]=item
-  const kinds = [() => { const a = ri(r, 0, n - 1), x = pick(range(n).filter(i => i !== hidden[a]), r); return { f: p => p[a] !== x, t: S(`${P[a]} nemá ${items[x].the.sk}.`, `${P[a]} does not have ${items[x].the.en}.`) }; },
-    () => { const a = ri(r, 0, n - 1), b = pick(range(n).filter(i => i !== a), r), cm = range(n).filter(x => x !== hidden[a] && x !== hidden[b]); if (!cm.length) return { f: () => false }; const x = pick(cm, r); return { f: p => p[a] !== x && p[b] !== x, t: S(`Ani ${P[a]}, ani ${P[b]} nemajú ${items[x].the.sk}.`, `Neither ${P[a]} nor ${P[b]} has ${items[x].the.en}.`) }; },
-    () => { const a = ri(r, 0, n - 1); return { f: p => p[a] === hidden[a], t: S(`${P[a]} má ${items[hidden[a]].the.sk}.`, `${P[a]} has ${items[hidden[a]].the.en}.`) }; }];
+  const kinds = [() => { const a = ri(r, 0, n - 1), x = pick(range(n).filter(i => i !== hidden[a]), r); return { f: p => p[a] !== x, t: S(`${P[a]} nemá ${items[x].the.sk}.`, `${P[a]} does not have ${items[x].the.en}.`, "{0} does not have {1}.", [P[a], items[x].the.en]) }; },
+    () => { const a = ri(r, 0, n - 1), b = pick(range(n).filter(i => i !== a), r), cm = range(n).filter(x => x !== hidden[a] && x !== hidden[b]); if (!cm.length) return { f: () => false }; const x = pick(cm, r); return { f: p => p[a] !== x && p[b] !== x, t: S(`Ani ${P[a]}, ani ${P[b]} nemajú ${items[x].the.sk}.`, `Neither ${P[a]} nor ${P[b]} has ${items[x].the.en}.`, "Neither {0} nor {1} has {2}.", [P[a], P[b], items[x].the.en]) }; },
+    () => { const a = ri(r, 0, n - 1); return { f: p => p[a] === hidden[a], t: S(`${P[a]} má ${items[hidden[a]].the.sk}.`, `${P[a]} has ${items[hidden[a]].the.en}.`, "{0} has {1}.", [P[a], items[hidden[a]].the.en]) }; }];
   let L = all, clues = [], direct = 0;
   for (let t = 0; t < 80 && L.length > 1; t++) { const idx = r() < .12 && direct < 1 ? 2 : ri(r, 0, 1), cl = kinds[idx](); if (!cl.f(hidden)) continue; const nx = L.filter(cl.f); if (nx.length < L.length) { L = nx; clues.push(cl); if (idx === 2) direct++; } }
   if (L.length !== 1) return null;
@@ -273,10 +273,10 @@ reg('assign', 'logic', 2, c => {
 const WORDS = ['blik', 'zork', 'fenn', 'drel', 'tulo', 'mirk', 'plon', 'gax', 'vesk', 'trum', 'nolk', 'sarb'];
 reg('syllogism', 'logic', 2, c => {
   const { r, D, k } = c, w = shuffle(WORDS, r), [A, B, C, Dd] = w;
-  const all = (a, b) => S(`Každý ${a} je ${b}.`, `Every ${a} is a ${b}.`), none = (a, b) => S(`Žiadny ${a} nie je ${b}.`, `No ${a} is a ${b}.`), some = (a, b) => S(`Aspoň jeden ${a} je ${b}.`, `At least one ${a} is a ${b}.`), someNot = (a, b) => S(`Aspoň jeden ${a} nie je ${b}.`, `At least one ${a} is not a ${b}.`);
+  const all = (a, b) => S(`Každý ${a} je ${b}.`, `Every ${a} is a ${b}.`, "Every {0} is a {1}.", [a, b]), none = (a, b) => S(`Žiadny ${a} nie je ${b}.`, `No ${a} is a ${b}.`, "No {0} is a {1}.", [a, b]), some = (a, b) => S(`Aspoň jeden ${a} je ${b}.`, `At least one ${a} is a ${b}.`, "At least one {0} is a {1}.", [a, b]), someNot = (a, b) => S(`Aspoň jeden ${a} nie je ${b}.`, `At least one ${a} is not a ${b}.`, "At least one {0} is not a {1}.", [a, b]);
   const T = [
     () => ({ pre: [all(A, B), all(B, C)], ok: all(A, C), bad: [all(C, A), none(A, C), someNot(A, C)], ex: S('Ak každý A je B a každý B je C, tak každý A je aj C – vetvy sa reťazia.', 'If every A is a B and every B is a C, then every A is a C – the chain continues.') }),
-    () => ({ pre: [all(A, B), S(`Axel nie je ${B}.`, `Axel is not a ${B}.`)], ok: S(`Axel nie je ${A}.`, `Axel is not an ${A}.`), bad: [S(`Axel je ${A}.`, `Axel is an ${A}.`), all(B, A), S(`Axel je ${B}, ale nie ${A}.`, `Axel is a ${B} but not an ${A}.`)], ex: S('Keby Axel bol A, musel by byť aj B. Nie je B, preto nie je ani A.', 'If Axel were an A he would have to be a B. He is not a B, so he is not an A.') }),
+    () => ({ pre: [all(A, B), S(`Axel nie je ${B}.`, `Axel is not a ${B}.`, "Axel is not a {0}.", [B])], ok: S(`Axel nie je ${A}.`, `Axel is not an ${A}.`, "Axel is not an {0}.", [A]), bad: [S(`Axel je ${A}.`, `Axel is an ${A}.`, "Axel is an {0}.", [A]), all(B, A), S(`Axel je ${B}, ale nie ${A}.`, `Axel is a ${B} but not an ${A}.`, "Axel is a {0} but not an {1}.", [B, A])], ex: S('Keby Axel bol A, musel by byť aj B. Nie je B, preto nie je ani A.', 'If Axel were an A he would have to be a B. He is not a B, so he is not an A.') }),
     () => ({ pre: [none(A, B), all(C, B)], ok: none(C, A), bad: [all(C, A), some(C, A), all(A, C)], ex: S('Každý C je B a žiadny B nie je A, takže žiadny C nemôže byť A.', 'Every C is a B and no B is an A, so no C can be an A.') }),
     () => ({ pre: [all(A, B), all(C, A)], ok: all(C, B), bad: [all(B, C), none(C, B), all(B, A)], ex: S('Každý C je A a každý A je B, teda každý C je B.', 'Every C is an A and every A is a B, so every C is a B.') }),
     () => ({ pre: [some(A, B), all(B, C)], ok: some(A, C), bad: [all(A, C), none(A, C), all(C, A)], ex: S('Niektorý A je B a každý B je C, takže tento A je aj C.', 'Some A is a B and every B is a C, so that A is also a C.') }),
@@ -291,6 +291,6 @@ reg('syllogism', 'logic', 2, c => {
     prompt: S('Platia vety v zozname. Ktoré tvrdenie z nich NUTNE vyplýva? (Slová sú vymyslené – spoliehaj sa len na logiku.)', 'The statements in the list are true. Which claim MUST follow from them? (The words are made up – rely on logic only.)'),
     data: { options: opts, correct: opts.indexOf(t.ok), cols: 1 },
     hints: [S('Nakresli si kruhy (množiny) pre jednotlivé druhy. Ktorý kruh je vo vnútri ktorého?', 'Draw circles (sets) for each kind. Which circle sits inside which?'), S('Skús každú možnosť: dá sa nakresliť situácia, kde predpoklady platia, ale možnosť nie? Potom nevyplýva.', 'Test each option: can you draw a case where the premises hold but the option does not? Then it does not follow.')],
-    explain: [t.ex, S(`Správna odpoveď: „${tx(t.ok)}“ – ostatné možnosti sa nedajú z predpokladov odvodiť.`, `Correct: “${tx(t.ok)}” – the others cannot be derived from the premises.`)]
+    explain: [t.ex, S(`Správna odpoveď: „${tx(t.ok)}“ – ostatné možnosti sa nedajú z predpokladov odvodiť.`, `Correct: “${tx(t.ok)}” – the others cannot be derived from the premises.`, "Correct: “{0}” – the others cannot be derived from the premises.", [tx(t.ok)])]
   };
 });

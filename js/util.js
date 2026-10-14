@@ -18,13 +18,19 @@ function loadLang(c) {
   return new Promise(res => { const el = document.createElement('script'); const me = document.querySelector('script[src*="util.js"]'), ver = me ? (me.src.split('v=')[1] || 1) : 1; el.src = 'js/lang/' + c + '.js?v=' + ver; el.onload = () => res(hasPack(c)); el.onerror = () => res(false); document.head.append(el); });
 }
 const hkey = s => { let x = 2166136261; for (let i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return (x >>> 0).toString(36); };
-const S = (sk, en) => ({ sk, en });
+const S = (sk, en, tpl, args) => tpl ? { sk, en, tpl, args } : { sk, en };
+const fillTpl = (s, args) => s.replace(/\{(\d+)\}/g, (m, i) => (args && args[+i] != null ? args[+i] : m));
 /* translate a bilingual {sk,en} object into the current language (other languages: lookup by English text, fall back to English) */
 const tx = o => {
   if (o == null) return '';
   if (typeof o === 'string' || typeof o === 'number') return o;
   if (o[LANG] != null) return o[LANG];
-  if (LANG !== 'sk' && LANG !== 'en') { const hit = TR[LANG] && TR[LANG].s && o.en != null ? TR[LANG].s[hkey(o.en)] : null; return hit != null ? hit : (o.en ?? o.sk ?? ''); }
+  if (LANG !== 'sk' && LANG !== 'en') {
+    const pack = TR[LANG] && TR[LANG].s;
+    if (pack && o.tpl != null) { const hit = pack[hkey(o.tpl)]; if (hit != null) return fillTpl(hit, o.args); }
+    else if (pack && o.en != null) { const hit = pack[hkey(o.en)]; if (hit != null) return hit; }
+    return o.en ?? o.sk ?? '';
+  }
   return o.sk ?? o.en ?? '';
 };
 const L = (o, lang) => (typeof o === 'string' ? o : (o[lang] ?? o.sk));

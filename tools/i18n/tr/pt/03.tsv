@@ -1,0 +1,200 @@
+1	Colecione 30 figurinhas.
+2	Álbum completo
+3	Colecione todas as figurinhas.
+4	Primeira medalha
+5	Termine um mundo inteiro em uma série.
+6	Coleção de medalhas
+7	Ganhe 5 medalhas de mundo.
+8	Cumpridor de missões
+9	Termine todas as missões diárias em 5 dias.
+10	Sequência de uma semana
+11	Resolva tarefas por 7 dias seguidos.
+12	Sequência de um mês
+13	Resolva tarefas por 30 dias seguidos.
+14	Uma centena
+15	Termine 100 tarefas.
+16	Alpinista
+17	Termine 300 tarefas.
+18	Céu estrelado
+19	Ganhe 150 estrelas.
+20	2000 pontos
+21	Ganhe 2000 pontos.
+22	Por conta própria
+23	Resolva 10 tarefas sem dicas.
+24	Nível perfeito
+25	Termine um nível com as 3 estrelas.
+26	Ousado
+27	Resolva uma tarefa de uma série mais avançada.
+28	Os 🐸 verdes só pulam para a direita →, os marrons só para a esquerda ←. Avance para a pedra livre ou pule por cima de UM sapo (de qualquer cor) se a pedra depois dele estiver livre. Não dá para voltar. Troque os sapos de lugar!
+29	pedra
+30	livre
+31	sapo indo para a direita
+32	sapo indo para a esquerda
+33	Você ficou preso 🙂 Desfaça uma jogada ou comece de novo.
+34	Este sapo não pode pular agora. Tente outro.
+35	Daqui não há saída – desfaça uma jogada.
+36	Daqui não há saída – desfaça ou reinicie.
+37	Aqui está a solução completa:
+38	Experimente com os sapos: toque no sapo que deve se mover.
+39	Como os sapos pulam (leia antes da tarefa)
+40	Tente primeiro com menos sapos.
+41	Sapos: quantas jogadas?
+42	Anote as jogadas para 1, 2 e 3 sapos.
+43	O número de jogadas é 3, 8, 15, 24 … Você consegue achar a fórmula?
+44	Os sapos trocaram de lugar!
+45	O melhor número possível de jogadas!
+46	Dá para fazer com menos jogadas – tente de novo!
+47	Sapos de cada lado
+48	Regras
+49	Rei
+50	O rei se move uma casa em qualquer direção – para o lado, para cima/baixo ou na diagonal.
+51	Rainha
+52	A rainha se move qualquer distância em linha reta – para o lado, para cima/baixo ou na diagonal (torre e bispo combinados). Ela não pode saltar.
+53	Torre
+54	A torre se move qualquer distância para o lado ou para cima/baixo. Ela não pode saltar.
+55	Bispo
+56	O bispo se move qualquer distância na diagonal, por isso fica sempre em casas de uma só cor. Ele não pode saltar.
+57	O cavalo salta em L: 2 casas em uma direção e 1 casa em ângulo reto. É a única peça que pode saltar sobre as outras.
+58	Peão
+59	O peão se move uma casa para a frente (para cima). Na fileira inicial, o primeiro movimento pode ser de duas casas.
+60	Como a peça se move? (leia antes da tarefa)
+61	Peão a caminho
+62	Um peão branco está em d2 (a 7ª fileira de cima para baixo). Ele só se move para a frente; o primeiro movimento pode ser de duas casas, os seguintes de uma. Qual é o menor número de jogadas para chegar à última fileira (destacada)?
+63	Quantas fileiras o peão precisa atravessar?
+64	O primeiro movimento pode ser de duas casas – isso economiza uma jogada.
+65	Da fileira 2 até a 8 são 6 fileiras.
+66	Primeiro movimento de 2 casas (o peão fica na fileira 4), restam 4 fileiras uma por uma: 1 + 4 = 5 jogadas no total.
+67	Para onde a peça pode ir?
+68	Analise a peça direção por direção e conte as casas livres em cada uma.
+69	O caminho mais curto da peça
+70	Descubra aonde a peça chega em uma jogada, depois em duas jogadas…
+71	Tente também de trás para frente: de quais casas dá para chegar ao objetivo em uma jogada?
+72	Procuramos todas as opções jogada por jogada (1 jogada, 2 jogadas, …) até alcançar o objetivo.
+73	Uma torre ataca toda a sua linha e coluna, então cada linha comporta no máximo uma torre – N no total – e N torres cabem em uma diagonal.
+74	Bispos não se atacam se estiverem em diagonais diferentes. Preencher a primeira e a última linha, menos dois cantos, dá 2N − 2.
+75	Um rei ataca as casas vizinhas. Divida o tabuleiro em blocos 2×2 – cada um comporta no máximo um rei: ⌈N/2⌉².
+76	Um cavalo ataca apenas casas da cor oposta, então cavalos todos em uma mesma cor nunca se atacam: ⌈N²/2⌉.
+77	Uma rainha ataca linha, coluna e diagonais, então cada linha comporta no máximo uma. Para N ≥ 4, dá para colocar N rainhas.
+78	Nenhuma ataca a outra
+79	Primeiro descubra quais casas uma peça ataca. Como distribuí-las para que não entrem em conflito?
+80	Tente um tabuleiro pequeno 3×3 ou 4×4 e procure um padrão.
+81	Marque todas as jogadas
+82	Mova a peça mentalmente, direção por direção.
+83	Leve a peça até o objetivo
+84	Encontre as casas das quais dá para chegar ao objetivo em uma jogada.
+85	Dominós em um tabuleiro
+86	Cada dominó cobre 2 casas.
+87	Quantas casas tem o tabuleiro? E se o número for ímpar?
+88	Dominós e o tabuleiro de xadrez
+89	🁢 Faltam duas casas (✖). Dá para cobrir o resto com dominós 1×2?
+90	Sim, dá
+91	Não, não dá
+92	Cada dominó cobre uma casa clara e uma escura. Quantas casas claras e escuras restam depois da retirada?
+93	Se as quantidades não forem iguais, é impossível cobrir.
+94	Um dominó sempre cobre uma casa clara e uma escura, então teria de haver quantidades iguais.
+95	As casas retiradas têm cores diferentes, então as quantidades coincidem. Em um tabuleiro com lados pares isso sempre funciona (teorema de Gomory).
+96	As casas retiradas têm a mesma cor, então sobram 2 casas a mais de uma cor. Não dá para cobrir.
+97	Grãos no tabuleiro de xadrez
+98	Escreva os primeiros termos: 1, 2, 4, 8… O que eles têm em comum com a soma acumulada?
+99	A soma dos primeiros termos é sempre 1 a menos que o termo seguinte.
+100	O número de grãos dobra a cada casa.
+101	A casa 1 tem 2⁰, a casa 2 tem 2¹ …
+102	Torre de Hanói: há 3 hastes e uma pilha de discos de tamanhos diferentes na primeira haste (o maior embaixo). Objetivo: mover todos os discos para a última haste.
+103	Mova apenas um disco por vez – o disco de cima de uma haste.
+104	Nunca coloque um disco maior sobre um menor.
+105	Você pode usar as hastes livres como lugares de espera.
+106	Regras da Torre de Hanói (leia antes da tarefa)
+107	Torre de Hanói – o jogo
+108	Para mover o disco maior, para onde todos os menores devem ir antes?
+109	Menor número de jogadas
+110	Descubra quantas jogadas 1, 2 e 3 discos precisam. Perceba o padrão.
+111	Para n discos: primeiro n − 1 discos para o lado, depois uma jogada, depois de novo n − 1 discos.
+112	Seja T(n) o número de jogadas. O disco maior só pode se mover quando os outros n − 1 discos estão em outra haste: T(n) = T(n − 1) + 1 + T(n − 1).
+113	Quantas vezes um disco se move?
+114	Quantas vezes o disco maior se move?
+115	Cada disco menor se move o dobro de vezes que o próximo maior.
+116	Quatro hastes
+117	Primeiro mova alguns discos para uma haste auxiliar usando as quatro hastes.
+118	Mova o restante usando 3 hastes e depois mova a primeira parte de novo.
+119	Divida a torre: os k discos de cima se movem usando 4 hastes, os n − k de baixo usando 3 hastes (2^(n−k) − 1 jogadas), depois a parte de cima de novo.
+120	Comece por uma direção em que a peça pode ir e marque todas as casas que ela alcança por ela.
+121	Para mover uma torre de n discos, primeiro os n − 1 discos de cima precisam estar na haste auxiliar. Qual disco se move primeiro na sua posição?
+122	Regra: para mover n discos, primeiro mova n − 1 discos para a haste auxiliar, depois o disco maior para o destino e por fim os n − 1 discos para o destino.
+123	O que vem a seguir?
+124	Observe o que se repete.
+125	Aponte para cada grupinho.
+126	frutas
+127	animais
+128	veículos
+129	bolas
+130	flores
+131	Qual não pertence?
+132	Qual deles não pertence?
+133	Diga o que cada um é.
+134	Três são do mesmo tipo.
+135	Quantos a mais?
+136	Faça pares com as figuras das duas fileiras.
+137	Conte o que ficou sem par.
+138	Combine cada um da fileira menor com um da fileira maior.
+139	Igual
+140	Qual tem mais?
+141	Conte cada fileira.
+142	Compare os dois números.
+143	São iguais.
+144	Quantos ao todo?
+145	Quantos no total?
+146	Conte todas as figuras.
+147	Conte o primeiro grupo e depois some o segundo.
+148	Quantos sobram?
+149	❌ significa que foram tirados.
+150	Conte os que ficam.
+151	Grupos
+152	Conte um grupo.
+153	Agora some os outros grupos.
+154	Divida igualmente
+155	Divida igualmente. Quantos cada criança recebe?
+156	Dê um a cada criança, por vez, até distribuir tudo.
+157	Conte quantos uma criança tem.
+158	Qual número está faltando?
+159	De quanto os números mudam?
+160	Some o mesmo número.
+161	Conte as formas
+162	Toque em cada forma com o dedo.
+163	Conte só as que você procura.
+164	Preencha o número.
+165	Quantos passos você deu?
+166	Encontre o número do ponto de interrogação.
+167	Experimente números e confira.
+168	Use a operação inversa.
+169	Você começa. Quantos você pega primeiro para ganhar?
+170	O 🐻 começa. Os dois jogam o melhor que podem – ninguém erra. Quem ganha?
+171	O primeiro jogador
+172	O segundo jogador
+173	Pense de trás para frente: com quantos palitos ganha quem joga, e com quantos perde?
+174	Jogo contra o computador
+175	Pense de trás para frente: quais posições são perdedoras para quem joga?
+176	Quem ganha? (montes)
+177	Escreva os tamanhos dos montes em binário e some cada coluna.
+178	Se cada coluna tem uma quantidade par de uns, a posição é perdedora para quem joga.
+179	Com nim-soma 0, quem joga perde – o segundo jogador sempre responde para restaurar 0. O segundo jogador ganha.
+180	Nim – a jogada vencedora
+181	E se você deixar os montes iguais? O que o adversário pode fazer então?
+182	Você sempre pode copiar a jogada do adversário no outro monte.
+183	Escreva os montes em binário. Depois da sua jogada, cada coluna deve ter uma quantidade par de uns.
+184	Com dois montes, iguale-os: tire a diferença do maior.
+185	Quebrando o chocolate
+186	Quantos pedaços você tem no começo e no fim? O que acontece com a contagem a cada quebra?
+187	Cada quebra acrescenta exatamente um pedaço. Não importa como você quebra.
+188	Torneio – rodadas
+189	Quantos jogadores restam depois da rodada 1?
+190	O número cai pela metade a cada rodada. Quantas vezes dá para dividir ao meio até sobrar 1?
+191	Torneio – partidas
+192	Quantos jogadores precisam ser eliminados para sobrar um campeão?
+193	Uma partida = um jogador eliminado.
+194	Cavaleiros e mentirosos
+195	Se você chegar a uma contradição, sua suposição estava errada – tente o oposto.
+196	Testamos casos: um cavaleiro deve dizer a verdade, um mentiroso deve mentir. Conferimos cada suposição com todas as frases.
+197	Quem quebrou a janela?
+198	Experimente cada suspeito por vez: se foi ele, quantas afirmações seriam verdadeiras?
+199	Para cada suspeito contamos quantas afirmações seriam verdadeiras:
+200	é par

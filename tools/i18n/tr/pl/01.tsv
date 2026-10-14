@@ -1,0 +1,200 @@
+1	Klasa
+2	Klasa
+3	Bez klasy
+4	Kod od nauczyciela (opcjonalnie)
+5	Kod klasy
+6	Twoje imię lub pseudonim
+7	Dołącz do nauczyciela
+8	Jeśli wpiszesz kod, nauczyciel zobaczy twoje imię i postępy.
+9	Jestem nauczycielem
+10	Jestem rodzicem
+11	Jakie dane przetwarzamy
+12	Zasady korzystania
+13	O aplikacji
+14	Aplikacja jest wciąż w fazie rozwoju.
+15	Mogą pojawić się błędy. Jeśli na jakiś trafisz, daj nam znać ikoną 💬 w lewym dolnym rogu.
+16	Ukryj
+17	Żabki
+18	Patyczki
+19	poziomy
+20	naklejki
+21	medale
+22	Tryb administratora:
+23	wszystkie poziomy są odblokowane do przeglądania, każda klasa jest wymieniona poniżej w sekcji „Wyzwania”. Jako ukończone oznaczone są tylko poziomy, które naprawdę rozwiązałeś(-aś).
+24	Wieże Hanoi
+25	Skrzynia za poziom: 
+26	(więcej gwiazdek = większa skrzynia)
+27	Skaczące żabki
+28	Zamień miejscami zielone i brązowe żabki
+29	3×3, 4×4, 6×6 i 9×9 · 3 poziomy · notatki i podpowiedzi
+30	Pajęczyny
+31	Liczby i kolorowe strzałki · zainspirowane metodą Hejnego
+32	Wystawa
+33	Przejdź przez pokoje i drzwi · zainspirowane metodą Hejnego
+34	Czytaj zadania automatycznie na głos
+35	Doskonale!
+36	Świetna robota!
+37	Dobrze!
+38	Brawo, mądrze pomyślane!
+39	Prawie!
+40	Przeczytaj zadanie jeszcze raz – jakiś szczegół mógł ci umknąć.
+41	Ciekawa próba!
+42	Nawet błędne próby uczą nas, co działa, a co nie. Spróbuj z innej strony.
+43	Jeszcze nie, ale jesteś na dobrej drodze.
+44	Łamigłówki są po to, żeby próbować. Co byś zmienił(a)? Jeśli chcesz, skorzystaj z podpowiedzi.
+45	Czytaj na głos
+46	Przeczytaj zadanie jeszcze raz i spróbuj z innej strony.
+47	Logika i dedukcja
+48	Zadania tekstowe
+49	Kombinatoryka i strategia
+50	Myślenie przestrzenne
+51	Łamigłówki geometryczne
+52	Ciągi liczbowe
+53	Sudoku
+54	Siatki logiczne
+55	Labirynty i trasy
+56	Przeprawy przez rzekę
+57	Wagi i monety
+58	Prawda i fałsz
+59	Szyfry i kryptogramy
+60	Wykresy i dane
+61	Zadania olimpijskie
+62	Łamigłówki z przełącznikami
+63	Prawdopodobieństwo
+64	Zagadki algebraiczne
+65	Strategia i gry
+66	Szachy i figury
+67	Zadanie oryginalne, napisane na potrzeby tej aplikacji.
+68	Klasyczna łamigłówka (domena publiczna / folklor) przeformułowana własnymi słowami.
+69	Zainspirowane typem zadania konkursowego; własne liczby i sformułowania.
+70	Wygenerowane przez program według wzoru (z ziarnem losowym), bez treści osób trzecich.
+71	Rolnik
+72	Wilk
+73	Koza
+74	Kapusta
+75	Bez rolnika wilk zjadłby kozę! Spróbujmy inaczej.
+76	Bez rolnika koza zjadłaby kapustę! Spróbujmy inaczej.
+77	Wioślarz
+78	Lis
+79	Kura
+80	Kukurydza
+81	Bez wioślarza lis zjadłby kurę! Spróbujmy inaczej.
+82	Bez wioślarza kura wydziobałaby kukurydzę! Spróbujmy inaczej.
+83	Astronauta
+84	Robot
+85	Na brzegu byłoby więcej robotów niż astronautów – to niebezpieczne!
+86	Kolorowy wzór
+87	Jakiego koloru powinno być następne kółko?
+88	Zwróć uwagę, jak powtarzają się kolory. Które dwa występują na zmianę?
+89	Powtarza się para czerwony–niebieski. Ostatnie było czerwone.
+90	Spójrz na wzór: 🔴 🔵 🔴 🔵 🔴 – kolory występują na zmianę.
+91	Po każdym czerwonym był niebieski, więc następne kółko jest niebieskie.
+92	Skarpetki po ciemku
+93	W szufladzie jest 4 czerwone i 4 niebieskie skarpetki. Jest ciemno, więc nie widzisz kolorów. Ile skarpetek musisz wyjąć co najmniej, żeby mieć pewność, że masz dwie tego samego koloru?
+94	Spróbuj najgorszego przypadku: co, jeśli za każdym razem masz pecha?
+95	Dwie skarpetki mogą mieć różne kolory. Co będzie z trzecią?
+96	Wyobraź sobie pecha: pierwsza skarpetka jest czerwona, a druga niebieska.
+97	Trzecia skarpetka jest czerwona albo niebieska – i zawsze pasuje do jednej z pierwszych dwóch.
+98	Zatem 3 skarpetki wystarczą. Matematycy nazywają to zasadą szufladkową Dirichleta.
+99	Kolejka po lody
+100	Adam stoi w kolejce po lody. Przed nim stoi 5 dzieci, a za nim 4. Ile dzieci jest w kolejce?
+101	dzieci
+102	Czy liczysz też Adama?
+103	Dodaj tych przed Adamem, Adama i tych za nim.
+104	Przed Adamem jest 5 dzieci.
+105	Potem jest sam Adam – 1 dziecko.
+106	A za nim 4. W sumie 5 + 1 + 4 = 10.
+107	Budowla z kostek
+108	Patrzysz z góry na budowlę z kostek. Każda liczba pokazuje, ile kostek leży w danej wieży. Ile kostek jest w sumie?
+109	kostek
+110	Każda liczba to jedna wieża. Co trzeba zrobić z wieżami?
+111	Dodaj wszystkie cztery liczby.
+112	Każda liczba mówi, z ilu kostek składa się wieża.
+113	Razem: 2 + 1 + 1 + 3 = 7 kostek.
+114	Tajemnicza liczba kulek
+115	Janek ma więcej niż 3 i mniej niż 6 kulek. Liczba jego kulek jest parzysta. Ile kulek ma Janek?
+116	Które liczby są większe od 3 i mniejsze od 6?
+117	Zostają 4 i 5. Która z nich jest parzysta?
+118	Liczby większe od 3 i mniejsze od 6 to 4 i 5.
+119	Tylko 4 jest parzysta (dzieli się przez dwa bez reszty).
+120	Kto jest najniższy?
+121	Ewa jest wyższa od Darii. Daria jest wyższa od Filipa. Kto jest najniższy?
+122	Ewa
+123	Daria
+124	Filip
+125	Spróbuj ustawić ich od najwyższego.
+126	Ewa jest pierwsza. Kto jest następny, skoro Daria jest wyższa od Filipa?
+127	Ewa > Daria, więc Ewa stoi przed Darią.
+128	Daria > Filip, więc Daria stoi przed Filipem.
+129	Kolejność: Ewa, Daria, Filip. Najniższy jest Filip.
+130	Strój na wycieczkę
+131	Mam 3 koszulki i 2 pary spodni. Ile różnych strojów mogę zestawić (jedna koszulka i jedne spodnie)?
+132	Wybierz jedną koszulkę. Z iloma spodniami możesz ją założyć?
+133	Tak jest dla każdej z 3 koszulek.
+134	Pierwsza koszulka pasuje do 2 par spodni – 2 możliwości.
+135	To samo dotyczy drugiej i trzeciej koszulki.
+136	W sumie 2 + 2 + 2 = 6, czyli 3 × 2 = 6.
+137	Wierzchołki figur
+138	Ile wierzchołków mają razem 1 kwadrat i 2 trójkąty?
+139	Ile wierzchołków ma kwadrat, a ile trójkąt?
+140	Kwadrat ma 4, każdy trójkąt 3. Co dalej?
+141	Kwadrat ma 4 wierzchołki.
+142	Każdy trójkąt ma 3 wierzchołki, dwa mają 6.
+143	Razem 4 + 6 = 10 wierzchołków.
+144	Rosnący ciąg
+145	Wpisz następną liczbę: 2, 6, 18, 54, ?
+146	Zobacz iloraz: ile razy większe jest 6 od 2?
+147	Sprawdź też 18 : 6. Co zauważasz?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3 – zawsze mnożymy przez trzy.
+149	Następna liczba to 54 · 3 = 162.
+150	Ułamki w kolejności
+151	Ułóż karty od najmniejszej liczby do największej. Przeciągaj je lub użyj strzałek.
+152	od najmniejszej do największej
+153	Który ułamek jest mniejszy od jednej drugiej?
+154	Wyobraź sobie pizzę: ile ćwiartek jest na każdej karcie?
+155	Zapisz wszystko w ćwiartkach: 1/4, 2/4, 3/4, 4/4.
+156	Im więcej ćwiartek, tym większa liczba.
+157	Przeczytane książki
+158	Wykres pokazuje, ile książek klasa przeczytała każdego dnia. Ile książek przeczytali w sumie od poniedziałku do czwartku?
+159	pon.
+160	wt.
+161	śr.
+162	czw.
+163	książek
+164	Odczytaj liczbę nad każdym słupkiem.
+165	Jaką liczbę odczytałeś(-aś) dla czwartku?
+166	Ze słupków odczytujemy: 4, 7, 5 i 9.
+167	Razem 4 + 7 + 5 + 9 = 25.
+168	Trzech przyjaciół w rzędzie
+169	Ewa, Tomek i Lea chcą ustawić się do zdjęcia. Na ile różnych sposobów mogą stanąć?
+170	Kto może stanąć pierwszy? Ile jest możliwości?
+171	Gdy wybierzemy pierwszą osobę, ile możliwości zostaje na drugie miejsce?
+172	Pierwsze może być którekolwiek z 3 dzieci.
+173	Na drugie miejsce zostają tylko 2, a ostatnie dziecko zajmuje trzecie (1).
+174	W sumie 3 · 2 · 1 = 6 sposobów.
+175	Waga z owocami
+176	Na wadze: 1 jabłko równoważy 2 śliwki, a 1 śliwka równoważy 3 truskawki. Ile truskawek równoważy 1 jabłko?
+177	truskawek
+178	Najpierw zamień jabłko na śliwki.
+179	Teraz zamień każdą śliwkę na truskawki.
+180	1 jabłko = 2 śliwki.
+181	1 śliwka = 3 truskawki, więc 2 śliwki = 2 · 3 = 6 truskawek.
+182	Fałszywa moneta
+183	Wśród 9 monet jedna jest fałszywa – jest lżejsza. Masz wagę szalkową bez odważników. Ile ważeń wystarczy, żeby na pewno znaleźć fałszywą?
+184	A gdybyś podzielił(a) monety na trzy grupy i porównał(a) dwie grupy?
+185	Po pierwszym ważeniu wiesz, w której trójce jest fałszywa. Jak ją znaleźć wśród trzech monet?
+186	Podziel monety na 3 grupy i zważ dwie z nich. Lżejsza strona – albo równowaga – pokaże, w której grupie jest fałszywa.
+187	Zważ dwie monety z tej grupy: lżejsza jest fałszywa, a jeśli waga się równoważy, to fałszywa jest trzecia.
+188	Wystarczą w sumie dwa ważenia.
+189	Kto mówi prawdę?
+190	Mateusz mówi: „Dziś jest wtorek.” Zosia mówi: „Mateusz kłamie.” Wiemy, że Zosia mówi prawdę. Czy dziś jest wtorek?
+191	Tak
+192	Nie
+193	Nie da się stwierdzić
+194	Jeśli Zosia mówi prawdę, co z tego wynika o Mateuszu?
+195	Mateusz kłamie. Co to znaczy dla jego zdania?
+196	Zosia mówi prawdę, więc zdanie „Mateusz kłamie” jest prawdziwe.
+197	Skoro Mateusz kłamie, jego zdanie „Dziś jest wtorek” nie jest prawdziwe.
+198	Zatem dziś nie jest wtorek.
+199	Zwierzęta
+200	Anna, Bartek i Cyryl mają psa, kota i chomika (każde po jednym). Anna nie ma ani psa, ani kota. Bartek nie ma psa. Co ma Cyryl?

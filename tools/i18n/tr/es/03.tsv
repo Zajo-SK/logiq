@@ -1,0 +1,200 @@
+1	Colecciona 30 pegatinas.
+2	Álbum completo
+3	Colecciona todas las pegatinas.
+4	Primera medalla
+5	Termina un mundo entero de un curso.
+6	Colección de medallas
+7	Consigue 5 medallas de mundo.
+8	Corredor de misiones
+9	Termina todas las misiones diarias durante 5 días.
+10	Racha semanal
+11	Resuelve tareas 7 días seguidos.
+12	Racha mensual
+13	Resuelve tareas 30 días seguidos.
+14	Un centenar
+15	Termina 100 tareas.
+16	Montañero
+17	Termina 300 tareas.
+18	Cielo estrellado
+19	Consigue 150 estrellas.
+20	2000 puntos
+21	Consigue 2000 puntos.
+22	Por mi cuenta
+23	Resuelve 10 tareas sin pistas.
+24	Nivel perfecto
+25	Termina un nivel con las 3 estrellas.
+26	Atrevido
+27	Resuelve una tarea de un curso superior.
+28	Las ranas verdes 🐸 solo saltan a la derecha →, las marrones solo a la izquierda ←. Avanza al nenúfar libre o salta por encima de UNA rana (de cualquier color) si el nenúfar de detrás está libre. No se puede retroceder. ¡Intercambia sus lugares!
+29	nenúfar
+30	libre
+31	rana que va a la derecha
+32	rana que va a la izquierda
+33	Te has atascado 🙂 Deshaz un movimiento o empieza de nuevo.
+34	Esta rana no puede saltar ahora. Prueba con otra.
+35	Desde aquí no hay camino: deshaz un movimiento.
+36	Desde aquí no hay camino: deshaz o reinicia.
+37	Aquí está la solución completa:
+38	Pruébalo con las ranas: toca la rana que debe moverse.
+39	Cómo saltan las ranas (léelo antes de la tarea)
+40	Prueba primero con menos ranas.
+41	Ranas: ¿cuántos movimientos?
+42	Anota los movimientos para 1, 2 y 3 ranas.
+43	Los números de movimientos son 3, 8, 15, 24 … ¿Puedes encontrar la fórmula?
+44	¡Las ranas han intercambiado sus lugares!
+45	¡El mejor número de movimientos posible!
+46	Se puede hacer con menos movimientos: ¡inténtalo otra vez!
+47	Ranas en cada lado
+48	Reglas
+49	Rey
+50	El rey se mueve una casilla en cualquier dirección: de lado, arriba/abajo o en diagonal.
+51	Dama
+52	La dama se mueve cualquier distancia en línea recta: de lado, arriba/abajo o en diagonal (torre y alfil combinados). No puede saltar.
+53	Torre
+54	La torre se mueve cualquier distancia de lado o arriba/abajo. No puede saltar.
+55	Alfil
+56	El alfil se mueve cualquier distancia en diagonal, así que siempre se queda en casillas de un solo color. No puede saltar.
+57	El caballo salta en forma de L: 2 casillas en una dirección y 1 casilla en ángulo recto. Es la única pieza que puede saltar por encima de otras.
+58	Peón
+59	El peón avanza una casilla hacia delante (hacia arriba). Desde su fila de salida, el primer movimiento puede ser de dos casillas.
+60	¿Cómo se mueve la pieza? (léelo antes de la tarea)
+61	Peón en camino
+62	Un peón blanco está en d2 (la 7.ª fila desde arriba). Solo avanza hacia delante; su primer movimiento puede ser de dos casillas y los siguientes de una. ¿Cuál es el menor número de movimientos para llegar a la fila superior (resaltada)?
+63	¿Cuántas filas debe cruzar el peón?
+64	El primer movimiento puede ser de dos casillas: eso ahorra un movimiento.
+65	De la fila 2 a la fila 8 hay 6 filas.
+66	Primer movimiento de 2 casillas (el peón está en la fila 4); quedan 4 filas de una en una: 1 + 4 = 5 movimientos en total.
+67	¿Adónde puede ir la pieza?
+68	Recorre la pieza dirección por dirección y cuenta las casillas libres de cada una.
+69	La ruta más corta de la pieza
+70	Busca adónde puede llegar la pieza en un movimiento, luego en dos movimientos…
+71	Prueba también al revés: ¿desde qué casillas se puede llegar a la meta en un movimiento?
+72	Buscamos todas las opciones movimiento a movimiento (1 movimiento, 2 movimientos, …) hasta llegar a la meta.
+73	Una torre ataca toda su fila y su columna, así que cada fila contiene como máximo una torre (N en total), y N torres caben en una diagonal.
+74	Los alfiles no se atacan si están en diagonales distintas. Llenar la primera y la última fila salvo dos esquinas da 2N − 2.
+75	Un rey ataca las casillas contiguas. Divide el tablero en bloques de 2×2: cada uno contiene como máximo un rey: ⌈N/2⌉².
+76	Un caballo ataca solo casillas del color opuesto, así que caballos todos en un color nunca se atacan: ⌈N²/2⌉.
+77	Una dama ataca fila, columna y diagonales, así que cada fila contiene como máximo una. Para N ≥ 4 se pueden colocar N damas.
+78	Ninguna ataca a otra
+79	Primero averigua qué casillas ataca una pieza. ¿Cómo puedes repartirlas para que no choquen?
+80	Prueba con un tablero pequeño de 3×3 o 4×4 y busca un patrón.
+81	Marca todos los movimientos
+82	Mueve la pieza mentalmente dirección por dirección.
+83	Lleva la pieza a la meta
+84	Busca las casillas desde las que se puede llegar a la meta en un movimiento.
+85	Dominós en un tablero
+86	Cada dominó cubre 2 casillas.
+87	¿Cuántas casillas tiene el tablero? ¿Y si el número es impar?
+88	Dominós y el tablero de ajedrez
+89	🁢 Faltan dos casillas (✖). ¿Se puede cubrir el resto con dominós de 1×2?
+90	Sí, se puede
+91	No, no se puede
+92	Cada dominó cubre una casilla clara y una oscura. ¿Cuántas casillas claras y oscuras quedan tras quitar las dos?
+93	Si las cantidades no coinciden, cubrir es imposible.
+94	Un dominó siempre cubre una casilla clara y una oscura, así que tendría que haber cantidades iguales.
+95	Las casillas quitadas tienen colores distintos, así que las cantidades coinciden. En un tablero de lados pares esto siempre funciona (teorema de Gomory).
+96	Las casillas quitadas tienen el mismo color, así que de un color quedan 2 casillas más. No se puede cubrir.
+97	Granos en el tablero de ajedrez
+98	Escribe los primeros términos: 1, 2, 4, 8… ¿Qué tienen en común con la suma acumulada?
+99	La suma de los primeros términos es siempre 1 menos que el siguiente término.
+100	El número de granos se duplica en cada casilla.
+101	La casilla 1 tiene 2⁰, la casilla 2 tiene 2¹ …
+102	Torres de Hanói: hay 3 postes y una pila de discos de distintos tamaños en el primer poste (el mayor abajo). Objetivo: mover todos los discos al último poste.
+103	Mueve solo un disco cada vez: el disco de arriba de un poste.
+104	Nunca pongas un disco mayor sobre uno menor.
+105	Puedes usar los postes libres como aparcamiento.
+106	Reglas de las Torres de Hanói (léelas antes de la tarea)
+107	Torres de Hanói: el juego
+108	Para mover el disco más grande, ¿adónde deben ir antes todos los más pequeños?
+109	Menos movimientos
+110	Averigua cuántos movimientos necesitan 1, 2 y 3 discos. Descubre el patrón.
+111	Para n discos: primero n − 1 discos a un lado, luego un movimiento, luego otra vez n − 1 discos.
+112	Sea T(n) el número de movimientos. El disco más grande solo puede moverse cuando los otros n − 1 discos están en otro poste: T(n) = T(n − 1) + 1 + T(n − 1).
+113	¿Cada cuánto se mueve un disco?
+114	¿Cuántas veces se mueve el disco más grande?
+115	Cada disco más pequeño se mueve el doble de veces que el siguiente más grande.
+116	Cuatro postes
+117	Primero mueve algunos discos a un poste auxiliar usando los cuatro postes.
+118	Mueve el resto usando 3 postes y luego mueve otra vez la primera parte.
+119	Divide la torre: los k discos de arriba se mueven usando 4 postes, los n − k de abajo usando 3 postes (2^(n−k) − 1 movimientos), y después otra vez la parte de arriba.
+120	Empieza por una dirección en la que pueda ir la pieza y marca cada casilla que alcanza así.
+121	Para mover una torre de n discos primero necesitas los n − 1 discos de arriba en el poste auxiliar. ¿Qué disco se mueve primero en tu posición?
+122	Regla: para mover n discos, primero mueve n − 1 discos al poste auxiliar, luego el disco más grande a la meta y por último los n − 1 discos a la meta.
+123	¿Qué viene después?
+124	Mira qué se repite.
+125	Señala cada grupito.
+126	fruta
+127	animales
+128	vehículos
+129	pelotas
+130	flores
+131	¿Cuál no pertenece?
+132	¿Cuál no pertenece al grupo?
+133	Di qué es cada uno.
+134	Tres son del mismo tipo.
+135	¿Cuántos más?
+136	Empareja los dibujos de las dos filas.
+137	Cuenta los que no tienen pareja.
+138	Empareja cada uno de la fila más corta con uno de la más larga.
+139	Igual
+140	¿Cuál tiene más?
+141	Cuenta cada fila.
+142	Compara los dos números.
+143	Son iguales.
+144	¿Cuántos hay en total?
+145	¿Cuántos hay en total?
+146	Cuenta todos los dibujos.
+147	Cuenta el primer grupo y luego suma el segundo.
+148	¿Cuántos quedan?
+149	❌ significa que se quitan.
+150	Cuenta los que se quedan.
+151	Grupos
+152	Cuenta un grupo.
+153	Ahora suma los otros grupos.
+154	Repartir a partes iguales
+155	Reparte a partes iguales. ¿Cuántos le tocan a cada niño?
+156	Da uno a cada niño por turnos hasta repartirlos todos.
+157	Cuenta cuántos tiene un niño.
+158	¿Qué número falta?
+159	¿Cuánto cambian los números?
+160	Suma el mismo número.
+161	Cuenta las figuras
+162	Toca cada figura con el dedo.
+163	Cuenta solo las que buscas.
+164	Escribe el número.
+165	¿Cuántos pasos diste?
+166	Encuentra el número del signo de interrogación.
+167	Prueba números y comprueba.
+168	Usa la operación contraria.
+169	Empiezas tú. ¿Cuántos coges primero para ganar?
+170	🐻 empieza. Los dos juegan lo mejor posible: nadie se equivoca. ¿Quién gana?
+171	El primer jugador
+172	El segundo jugador
+173	Piensa hacia atrás: ¿con cuántas cerillas gana el jugador que tiene el turno y con cuántas pierde?
+174	Partida contra el ordenador
+175	Piensa hacia atrás: ¿qué posiciones son perdedoras para el jugador que tiene el turno?
+176	¿Quién gana? (montones)
+177	Escribe los tamaños de los montones en binario y suma cada columna.
+178	Si cada columna tiene un número par de unos, la posición es perdedora para el jugador que tiene el turno.
+179	Con suma nim 0 pierde el jugador que tiene el turno: el segundo jugador siempre responde para volver a 0. Gana el segundo jugador.
+180	Nim: la jugada ganadora
+181	¿Y si igualas los montones? ¿Qué puede hacer entonces tu rival?
+182	Siempre puedes copiar la jugada de tu rival en el otro montón.
+183	Escribe los montones en binario. Después de tu jugada, cada columna debe tener un número par de unos.
+184	Con dos montones, iguálalos: quita la diferencia del mayor.
+185	Romper chocolate
+186	¿Cuántas piezas tienes al principio y al final? ¿Qué pasa con la cuenta en cada rotura?
+187	Cada rotura añade exactamente una pieza. Da igual cómo rompas.
+188	Torneo: rondas
+189	¿Cuántos jugadores quedan tras la ronda 1?
+190	El número se reduce a la mitad en cada ronda. ¿Cuántas veces puedes dividir a la mitad hasta que quede 1?
+191	Torneo: partidos
+192	¿Cuántos jugadores deben ser eliminados para que quede un campeón?
+193	Un partido = un jugador eliminado.
+194	Caballeros y mentirosos
+195	Si llegas a una contradicción, tu suposición era incorrecta: prueba la contraria.
+196	Probamos casos: un caballero debe decir la verdad, un mentiroso debe mentir. Comprobamos cada suposición con todas las frases.
+197	¿Quién rompió la ventana?
+198	Prueba a cada sospechoso por turno: si fue él, ¿cuántas afirmaciones serían verdaderas?
+199	Para cada sospechoso contamos cuántas afirmaciones serían verdaderas:
+200	es par

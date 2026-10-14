@@ -1,0 +1,135 @@
+njwfbm	A father is {0} years older than his son. Together they are {1} years old. How old is the father?
+1g4fmum	{0} − {1} = {2} = twice the son’s age.
+f9rfpd	The son is {0}, the father {1} + {2} = {3}.
+n2j7hv	A piggy bank holds {0} coins, some worth €1 and the rest €2. Their total value is €{1}. How many €2 coins are there?
+10ak9cj	With {0} one-euro coins it would be €{1}.
+1p7dvbo	€{0} is missing, so there are {1} two-euro coins.
+q4mntc	Solve the equation: {0}·(x − {1}) + {2} = {3}. What is x?
+nzl7xa	After subtracting {0}, divide by {1}.
+wmnmta	{0} − {1} = {2}, so {3}·(x − {4}) = {5}.
+1k102go	x − {0} = {1}, so x = {2}.
+q60pfu	How many divisors (including 1 and the number itself) does {0} have?
+q8xbre	Try d = 1, 2, 3, … up to the square root of {0}.
+1wixx31	From the square, bus A leaves every {0} minutes and bus B every {1} minutes. They have just left together. After how many minutes will they leave together again?
+4uyyjq	The least common multiple is {0}.
+x63xy8	What is the last digit of {0}^{1}?
+1kbx2my	Write the last digits of the powers {0}¹, {1}², {2}³ …
+1wwswl4	Exponent {0} leaves remainder {1} on division by {2}, so the last digit is {3}.
+135if81	How many numbers from 1 to {0} are divisible by {1} or by {2} (or both)?
+1adou56	Multiples of {0}: {1}, of {2}: {3}, of both ({4}): {5}.
+1rprj7	{0} + {1} − {2} = {3}.
+4ifdij	How many zeros does {0}! = 1 · 2 · 3 · … · {1} end with?
+10vt7fc	Count how often the factor 5 occurs in the numbers from 1 to {0} (also repeatedly, e.g. 25).
+ftg7d0	We want to cover a {0} cm × {1} cm rectangle with identical squares, no gaps and no overlap. What is the largest possible side of a square (in cm)?
+75hmww	The largest is {0}.
+1vbdgsv	A bag holds {0} red, {1} blue and {2} green marbles. One is drawn blindly. What is the probability it is red? (As a fraction in lowest terms, e.g. 1/6.)
+12job25	There are {0} marbles in all, {1} are red.
+11et3cu	The probability is {0}/{1} = {2}.
+cz9ctp	We roll two fair dice. What is the probability that the sum is {0}? (As a fraction in lowest terms.)
+1bluqia	List the pairs with sum {0}.
+xzavh1	Sum {0} comes from {1} pairs, so {2}/36 = {3}.
+rjrr4n	A coin is tossed {0} times. What is the probability of exactly {1} heads? (As a fraction in lowest terms.)
+d0eu48	How many outcomes are there for {0} tosses?
+17h3vc	In how many ways can you choose which {0} of the {1} tosses are heads?
+1s9gdlr	All outcomes: 2^{0} = {1}.
+1pm2zu1	Favourable: C({0}, {1}) = {2}. Probability {3}/{4} = {5}.
+1s7voqx	A bag holds {0} red and {1} blue marbles. Two are drawn without replacement. What is the probability that both are red? (As a fraction in lowest terms.)
+o6f73s	First red: {0}/{1}.
+1yx0fke	Second red: {0}/{1}. Together {2}/{3} · {4}/{5} = {6}.
+1og1dtl	We roll two dice. What is the probability that at least one shows {0}? (As a fraction in lowest terms.)
+1ocl9e2	It is easier to count the opposite: neither shows {0}.
+hjcf0w	Neither die shows {0}: 5 · 5 = 25 of 36 outcomes.
+qwnqwt	Favourable: 36 − 25 = {0}, probability {1}.
+16brhj5	What is {0}% of {1}?
+gejwid	1% of {0} is {1}.
+d8usoa	{0}% is {1} · {2} = {3}.
+1ozcn1d	An item costs €{0}. First it rises by {1}%, then the new price falls by {2}%. What does it cost in the end?
+1q8b5ja	After the rise: {0} · {1} = €{2}.
+exo4ue	After the fall: {0} · {1} = €{2}.
+1igffib	€{0} is shared between Ema and Adam in the ratio {1} : {2}. How many € does Ema get?
+1igxffc	There are {0} + {1} = {2} parts, one part is {3} : {4} = €{5}.
+nzx0s3	Ema gets {0} parts: {1} · {2} = €{3}.
+flmo5	What is {0}/{1} of {2}?
+ni6myt	1/{0} of {1} is {2} : {3} = {4}.
+1debgco	{0}/{1} is {2} · {3} = {4}.
+pn3k7r	What percent is {0} of {1}?
+195r0jm	{0} / {1} = {2}.
+zzz9zv	That is {0} hundredths, i.e. {1}%.
+watjra	Today is {0}. What day of the week will it be in {1} days?
+ob1mhk	Find the remainder of {0} divided by 7.
+77ylld	{0} : 7 = {1} remainder {2}.
+p3aiw	Whole weeks do not change the day; move {0} days forward from {1} to get {2}.
+boja1q	A train leaves at {0} and arrives at {1}. How many minutes does the journey take?
+k4ztjl	{0} = {1} minutes after midnight, {2} = {3} minutes.
+18gm6us	The difference is {0} minutes.
+1x964tn	In {0}, 1 {1} falls on a {2}. What day of the week is 1 {3}?
+13ycak	The month has {0} days: {1} : 7 = {2} remainder {3}.
+rdmffm	Shifting {0} days forward from {1} gives {2}.
+jnhwjx	Hour hand: {0} · 30 + {1} · 0.5 = {2}°. Minute hand: {3} · 6 = {4}°.
+12w57zi	Sudoku {0}×{1}
+10fvgmo	The total time is {0} minutes.
+ys8qhb	You have two jugs without markings: {0} L and {1} L, and plenty of water. A step is: fill a jug completely, empty a jug completely, or pour from one into the other until the source is empty or the target is full. What is the fewest steps needed to have exactly {2} L in one of the jugs?
+qb7fxk	That is {0} steps and fewer is impossible (all options were searched).
+914483	Among {0} coins one is fake – it is lighter than the rest. You have a balance scale without weights. What is the fewest weighings that surely find the fake?
+1gg7jxn	After {0} weighings we can tell apart up to 3^{1} = {2} coins, which is at least {3}; after {4} weighings only {5}. We need {6}.
+pjylos	🕸️ The sum of all numbers in the circles is {0}. Each arrow adds the number of its colour. What is x?
+1cimf3q	Count how many x there are in the sum and what is left over. Then {0} − (the rest) = (number of x) × x.
+t7kfvd	There are {0} x’s and the rest is {1}. So {2}·x + {3} = {4} and x = {5}.
+ucif4s	The arrow adds {0}. All arrows of that colour have the same value, so finding it in one place is enough.
+1bp1ozs	The marked circle should be {0}.
+lw10ck	There are {0} complete routes. At every fork try both options and cross out those that end in a dead end or miss a room.
+1ejy0ux	The marked room should be {0}.
+14qd7u1	Collect stickers: {0}
+16w2ydb	Earn world medals: {0}
+1yd7t2p	Finish all daily missions on {0} days
+n42tm3	{0}-day streak!
+13o8xd0	Take {0}
+jn3gli	Correct! Coin {0} is the fake – found with {1} weighings.
+o9jszw	Coin {0} is not fake. Keep trying.
+tautaj	🎉 Exactly {0} L in a jug! Steps: {1}.
+1pp062m	Fill {0} L
+1hjdei0	Empty {0} L
+13vl45c	🎉 Everyone is across! Time: {0} min.
+1slvrta	{0} of a kind after {1} draws!
+1lr3n1f	It is dark – you draw blindly. When do you have {0} of a kind? Try several times and look for the worst case.
+1nc27jp	🎉 Every child has {0}.
+174n6b3	Yellow ones are given. Add red ones so there are exactly {0} in all. There are more free cells than you need!
+17x5y7a	Toss {0} coins and watch the number of heads. Repeat!
+cg5md6	We start on {0}. Hop day by day – where do you land after {1} days?
+iaho2l	Colour {0} squares out of 100 – that is {1}%.
+kxo93b	Losses in this level: {0}
+1cjllr9	row {0}
+1frz6op	column {0}
+9apa14	box {0}
+1up1q0y	Cell {0} takes {1}.
+16i456i	Cross out candidates – {0}. Another hint fills one cell.
+19bttm9	Technique: {0}. 
+cspnbd	Cell {0} can hold only one number.
+gm9t33	In {0} one number fits in only one cell – look at the highlighted one.
+1oj35y9	The number {0} in {1} is “locked” within {2} – cross it out elsewhere there.
+1tbz3ic	The number {0} forms an X-Wing rectangle – cross it out in the matching lines.
+166vjh4	Wrong cells: {0} (marked “!”).
+1to7wmw	Look at the cell in row {0}, column {1}. Which numbers can still go there?
+n1s4j4	The cell (row {0}, column {1}) takes {2}.
+ofhwzu	Try pressing the cell in row {0}, column {1}.
+1p2v6z8	This is the start. The shortest solution presses {0} cells (marked 👆):
+kgtfai	You reached the finish – great! But a shorter route exists. Yours took {0} steps, try for fewer.
+v28d8w	First try spotting the dead ends. The shortest route takes {0} steps.
+eat2ym	The start of the shortest route (row, column): {0} …
+bxr2b8	We explore and rule out dead ends. The shortest route takes {0} steps and goes like this:
+1opynqg	Done! Everyone is across in {0} moves – and it cannot be done in fewer (a computer checked every possibility).
+1fwjb6d	You start at {0}: take {1} to leave {2} (a losing count for your opponent). Then always answer so that you land on a losing count again.
+fou8rf	The computer starts at {0}, a losing count for the player to move. Whatever it does, answer by leaving a losing count again.
+xnn7uz	Here you win with, for example: take {0} from pile {1}.
+gx2ro0	{0} min ago
+b4mp3w	{0} h ago
+uqpbed	{0} days ago
+ifzuoj	Levels: {0} of {1} · badges: {2}
+1ui4w5m	Create class {0}.{1}
+9z74cr	{0} students
+7j248h	Class {0}
+16yls8u	Selected tasks: {0}
+19eda9z	students: {0}
+h28grf	{0} tasks
+13ebqxz	{0} of {1} students finished
+1xe7fpj	Done {0} of {1}

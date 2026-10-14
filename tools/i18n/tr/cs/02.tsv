@@ -1,0 +1,200 @@
+1	Jméno
+2	Pes
+3	Kočka
+4	Křeček
+5	Začni u toho, o kom víš nejvíc: co musí mít Anna?
+6	Když má Anna křečka, co může mít Boris?
+7	Anna nemá ani psa, ani kočku, takže má křečka.
+8	Boris nemá psa a křeček je obsazený, takže má kočku.
+9	Cyrilovi zbývá pes.
+10	Tajné součty
+11	Tři tajná čísla A, B, C splňují: A + B = 10, B + C = 12, A + C = 8. Kolik je A?
+12	Co když sečteš všechny tři rovnice?
+13	Součet je 2 · (A + B + C) = 30. Kolik je A + B + C a co od toho odečteš?
+14	Sečti tři rovnice: 2 · (A + B + C) = 10 + 12 + 8 = 30, tedy A + B + C = 15.
+15	Protože B + C = 12, dostaneme A = 15 − 12 = 3.
+16	Prázdninová kniha
+17	Jana přečetla 3/8 knihy a potom dalších 2/8. Zbývá jí ještě 15 stran. Kolik stran má celá kniha?
+18	stran
+19	Kolik osmin knihy přečetla celkem?
+20	Když je přečteno 5/8, kolik osmin zbývá? A kolik stran je jedna osmina?
+21	Přečteno: 3/8 + 2/8 = 5/8 knihy.
+22	Zbývají 3/8, což je 15 stran, takže 1/8 je 5 stran.
+23	Celá kniha má 8 · 5 = 40 stran.
+24	Trojciferná čísla
+25	Z cifer 1, 2, 3, 4 sestavuješ trojciferná čísla, v nichž se žádná cifra neopakuje. Kolik takových čísel je?
+26	Kolik cifer může stát na místě stovek?
+27	Když použiješ jednu cifru, kolik jich zbývá na desítky a potom na jednotky?
+28	Na stovky jsou 4 možnosti.
+29	Na desítky zbývají 3 cifry a na jednotky 2.
+30	Celkem 4 · 3 · 2 = 24 čísel.
+31	Hra se sirkami
+32	V hromádce je 15 sirek. Hráči se střídají a odebírají 1, 2 nebo 3. Kdo vezme poslední, vyhrává. Začínáš ty. Kolik máš vzít jako první, abys jistě vyhrál, když pak budeš hrát nejlépe, jak umíš?
+33	Přemýšlej odzadu: při kolika zbývajících sirkách hráč na tahu prohrává?
+34	Když zbývají 4 sirky, hráč na tahu prohrává. Které násobky čtyř chceš nechat soupeři?
+35	Když zbývají 4 sirky a jsi na tahu, prohráváš: vezmeš 1–3 a soupeř vezme zbytek.
+36	Takže chceš soupeři vždy nechat 12, 8, 4 sirky – násobky čtyř.
+37	Z 15 vezmi 3 a nech 12. Pak jeho tah vždy doplň na 4.
+38	Čtvercová zahrada
+39	Čtvercová zahrada má obvod 36 m. Jaký je její obsah?
+40	Jak dlouhá je jedna strana čtverce?
+41	Strana je 36 : 4 = 9 m. Jak se počítá obsah čtverce?
+42	Čtverec má 4 stejné strany: 36 : 4 = 9 m.
+43	Obsah = strana · strana = 9 · 9 = 81 m².
+44	Obdélník z obvodu
+45	Obdélník má obvod 30 cm a jedna strana má 9 cm. Jaký je jeho obsah?
+46	Obvod je 2 · (a + b). Kolik je a + b?
+47	a + b = 15 a jedna strana je 9. Jaká je ta druhá?
+48	Polovina obvodu: 30 : 2 = 15 = a + b.
+49	Druhá strana je 15 − 9 = 6 cm.
+50	Obsah = 9 · 6 = 54 cm².
+51	Natřená krychle
+52	Velká krychle 3×3×3 je složená z 27 malých krychliček a zvenku natřená. Rozebereme ji. Kolik malých krychliček má přesně 3 natřené stěny?
+53	Které malé krychličky jsou v rozích velké krychle?
+54	Kolik rohů má krychle?
+55	Tři natřené stěny mají jen rohové krychličky – tam se stýkají tři stěny velké krychle.
+56	Krychle má 8 rohů, takže takových krychliček je 8.
+57	Gaussův trik
+58	Bez kalkulačky: 1 + 2 + 3 + … + 20.
+59	Zkus spárovat první číslo s posledním: 1 + 20.
+60	Další dvojice je 2 + 19. Kolik takových dvojic je?
+61	1 + 20 = 21, 2 + 19 = 21, 3 + 18 = 21 … každá dvojice dá 21.
+62	Čísel je 20, takže dvojic je 10.
+63	Součet je 10 · 21 = 210.
+64	Nuly na konci
+65	Kolika nulami končí 20! = 1 · 2 · 3 · … · 20?
+66	Nula na konci vzniká z dvojice činitelů 2 a 5. Který z nich je v součinu vzácnější?
+67	Spočítej, kolikrát se činitel 5 objeví mezi čísly 1 až 20.
+68	Každá nula na konci je jeden činitel 10 = 2 · 5. Dvojek je v 20! mnohem víc, takže rozhodují pětky.
+69	Pětky: 5, 10, 15, 20 – každé přispívá jednou pětkou (25 by daly dvě, ale v součinu není).
+70	Takže nul je 4.
+71	Dvě kostky
+72	Hodíme dvěma spravedlivými kostkami. Jaká je pravděpodobnost, že součet bude 7?
+73	Kolik je možných výsledků při hodu dvěma kostkami?
+74	Vypiš dvojice se součtem 7: (1,6), (2,5) … Kolik jich je?
+75	Je 6 · 6 = 36 výsledků.
+76	Součet 7 dostaneme z (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) – šest dvojic.
+77	Pravděpodobnost je 6/36 = 1/6.
+78	Tři za sebou
+79	Součet tří po sobě jdoucích celých čísel je 105. Které z nich je největší?
+80	Prostřední číslo označ n. Jak zapíšeš jeho sousedy?
+81	n − 1, n, n + 1 – jaký je jejich součet?
+82	Čísla jsou n − 1, n, n + 1 a jejich součet je 3n.
+83	3n = 105, tedy n = 35.
+84	Největší je n + 1 = 36.
+85	Delegace
+86	Ze šesti žáků vybíráme dvoučlennou delegaci. Kolika způsoby to lze udělat?
+87	Nejdřív spočítej uspořádané dvojice. Kolik jich je?
+88	Každá dvojice je započítána dvakrát (A,B a B,A). Co s tím?
+89	První se vybere 6 způsoby, druhý 5: 30 uspořádaných dvojic.
+90	Na pořadí nezáleží, každou dvojici jsme započítali dvakrát.
+91	Výsledek 30 : 2 = 15.
+92	Poslední cifra
+93	Jaká je poslední cifra čísla 7¹⁰⁰? Napiš do pole „Postup“, jak jsi na to přišel.
+94	Zapiš si poslední cifry mocnin 7¹, 7², 7³, 7⁴ …
+95	Poslední cifry se opakují s nějakou periodou. Jaká je a kolik je 100 děleno periodou?
+96	Poslední cifry: 7, 9, 3, 1, pak znovu 7, 9, 3, 1 … (perioda 4).
+97	100 je násobek 4, takže 7¹⁰⁰ končí stejně jako 7⁴.
+98	Poslední cifra je 1.
+99	Ostrov rytířů a padouchů
+100	Na ostrově rytíři vždy mluví pravdu a padouši vždy lžou. A říká: „Oba jsme padouši.“ Kdo je B?
+101	Rytíř
+102	Padouch
+103	Nedá se určit
+104	Může být A rytíř? Co by pak znamenala jeho věta?
+105	Když je A padouch, jeho věta je nepravdivá. Co to říká o B?
+106	Kdyby A byl rytíř, jeho věta by byla pravdivá – ale říká, že je padouch. Spor.
+107	Takže A je padouch a jeho věta je nepravdivá: nejsou oba padouši.
+108	Protože A je padouch, B musí být rytíř.
+109	Kuličky v sáčku
+110	V sáčku jsou 3 červené a 2 modré kuličky. Taháme dvě bez vracení. Jaká je pravděpodobnost, že obě jsou červené?
+111	Jaká je pravděpodobnost, že první je červená?
+112	Když ji nevrátíš, kolik červených a kolik kuliček zbývá?
+113	První červená: 3/5.
+114	Pak zbývají 2 červené ze 4 kuliček: 2/4 = 1/2.
+115	Dohromady 3/5 · 1/2 = 3/10.
+116	Označ pravdivá tvrzení
+117	Která z těchto tvrzení jsou pravdivá? Označ všechna.
+118	2¹⁰ je větší než 10³
+119	Úhly trojúhelníku dávají dohromady 180°
+120	Každé prvočíslo je liché
+121	0,999… je menší než 1
+122	Vyzkoušej každé tvrzení zvlášť. Najdeš protipříklad?
+123	Podívej se na nejmenší prvočíslo. A kolik je 2¹⁰ a 10³?
+124	2¹⁰ = 1024 a 10³ = 1000, takže první platí.
+125	Úhly trojúhelníku dávají vždy 180° – druhé platí.
+126	Číslo 2 je sudé prvočíslo, takže třetí neplatí. A 0,999… se rovná 1, takže čtvrté neplatí.
+127	Začni tam, kde řádku, sloupci nebo čtverci chybí nejméně čísel.
+128	Žádné číslo se nesmí opakovat v řádku, sloupci ani čtverci.
+129	Zhasni všechna světla
+130	Stisknutím políčka přepneš jeho světlo i světla sousedů (nahoře, dole, vlevo, vpravo). Zhasni všechna světla (○).
+131	Zkus stisknout jedno políčko dvakrát. Co se stane?
+132	Nejkratší cesta
+133	Nakresli prstem cestu od rakety 🚀 do cíle 🏁. Zdmi procházet nemůžeš – a hledáme nejkratší cestu!
+134	Které chodby jsou slepé?
+135	Vlk, koza a zelí
+136	Převez 🐺 🐐 🥬 přes řeku. Loď unese farmáře a jednoho. Samotní: vlk sní kozu, koza sní zelí.
+137	Kdo nesmí nikdy zůstat sám s kým? Která postava vychází s oběma ostatními?
+138	Koza je v obou nebezpečných dvojicích. Co když ji vezmeš první?
+139	Klíčová myšlenka: koza je potížistka – vlk ji sní, ona sní zelí – proto ji farmář nesmí nechat samotnou ani s jedním z nich.
+140	Vlk a zelí si neublíží, takže mohou čekat spolu.
+141	Liška, slepice a kukuřice
+142	Převozník má přepravit přes potok lišku, slepici a pytel kukuřice. Loď unese převozníka a jednoho pasažéra. Samotná liška sní slepici a slepice zobe kukuřici. Najdi bezpečný plán!
+143	Kdo je v obou nebezpečných dvojicích?
+144	Slepice jede první. Co dál, až bude na druhém břehu? Můžeš ji také vzít zpátky!
+145	Slepice je v obou nebezpečných dvojicích, proto ji převozník veze první a nikdy ji nenechá samotnou s liškou ani s kukuřicí.
+146	Někdy se vyplatí někoho vzít zpátky – důležité je, aby nikdo nezůstal v nebezpečí.
+147	Astronauti a roboti
+148	2 astronauti a 2 roboti musí přejet řeku v malé raketové lodi. Veze nejvýš dva a někdo musí veslovat. Pokud na břehu převažují roboti nad astronauty (a astronauti tam jsou), astronauti jsou v ohrožení. Najdi bezpečný plán!
+149	Hlídej počty na obou březích: astronautů ≥ robotů, kdykoli je tam nějaký astronaut.
+150	Nebój se někoho vzít zpátky – někdy je to jediná cesta.
+151	Na obou březích dodržujeme pravidlo: je-li tam astronaut, roboti nikdy nepřevažují nad astronauty.
+152	Tři astronauti, tři roboti
+153	3 astronauti a 3 roboti přejíždějí řeku lodí pro dva. Pravidlo: na břehu s alespoň jedním astronautem nesmí být robotů víc než astronautů. Jaký je nejmenší počet přejezdů?
+154	Představ si všechny možné stavy – kolikrát bys mohl začít poslat „2 roboty“?
+155	Dávej pozor, kdo zůstane na břehu, který opouštíš. Někdy je nejlepší vrátit jednoho robota nebo astronauta.
+156	Je to slavná hádanka o misionářích a lidožroutech ve vesmírné verzi. Pomáhá systematicky si zapisovat stavy na březích.
+157	Spočítej rozdíl mezi sousedními čísly.
+158	Zkontroluj, jestli čísla nevznikají násobením.
+159	Podívej se na rozdíly mezi sousedy. Mění se?
+160	Porovnej čísla se čtverci 1, 4, 9, 16, 25…
+161	Zkus sečíst dvě sousední čísla.
+162	Každé číslo je součtem dvou předchozích.
+163	Co když jsou dvě řady promíchané do jedné?
+164	Zkus čísla vzniklá trojím násobením: 2 · 2 · 2…
+165	Jsou to třetí mocniny: 1³, 2³, 3³…
+166	Čísla jsou 1³, 2³, 3³, 4³, 5³ – třetí mocniny.
+167	Další je 6³ = 216.
+168	Číselná řada
+169	Které číslo nahradí otazník?
+170	První hvězda
+171	Vyřeš svou první úlohu.
+172	Deset úloh
+173	Dokonči 10 úloh.
+174	Objevitel
+175	Dokonči 25 úloh.
+176	Bystrá hlava
+177	Získej 3 hvězdy u 5 úloh.
+178	Vytrvalec
+179	Vyřeš úlohu po několika pokusech.
+180	Kapitán
+181	Vyřeš úlohu s přepravou přes řeku.
+182	Mistr sudoku
+183	Vyřeš sudoku.
+184	Navigátor
+185	Najdi nejkratší cestu bludištěm.
+186	Elektrikář
+187	Zhasni všechna světla.
+188	Všestranný
+189	Vyřeš úlohy z 5 různých kategorií.
+190	Tři dny v řadě
+191	Řeš úlohy 3 dny po sobě.
+192	500 bodů
+193	Získej 500 bodů.
+194	Denní řešitel
+195	Vyřeš denní výzvu.
+196	První level
+197	Dokonči celý level.
+198	Sběratel
+199	Sbírej 10 samolepek.
+200	Velký sběratel

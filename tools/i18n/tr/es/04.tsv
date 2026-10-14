@@ -1,0 +1,200 @@
+1	es impar
+2	es un cuadrado perfecto
+3	Adivina mi número
+4	Empieza por la pista que descarta más números.
+5	Combina las pistas: necesitas un número que cumpla todas a la vez.
+6	Vamos tachando números pista a pista:
+7	Orden en la fila
+8	Empieza por una pista que dé algo seguro (como «justo detrás»). Encadena las parejas.
+9	Anota los lugares 1, 2, 3 … y ve encajando los nombres paso a paso, descartando lo que no puede ser.
+10	Unimos las pistas en un solo orden: cada lugar imposible se tacha.
+11	Perro
+12	un perro
+13	el perro
+14	Gato
+15	un gato
+16	el gato
+17	Hámster
+18	un hámster
+19	el hámster
+20	Conejo
+21	un conejo
+22	el conejo
+23	Pez
+24	un pez
+25	el pez
+26	¿Quién tiene cada mascota?
+27	Haz una tabla: las filas son los niños y las columnas, las mascotas. Tacha lo imposible.
+28	Cuando en una fila o columna solo queda una casilla libre, esa es la respuesta.
+29	En la tabla marcamos ✗ lo que las pistas descartan y ✓ cuando solo queda una opción.
+30	Si todo A es B y todo B es C, entonces todo A es C: la cadena continúa.
+31	Si Axel fuera A, tendría que ser B. No es B, así que no es A.
+32	Todo C es B y ningún B es A, así que ningún C puede ser A.
+33	Todo C es A y todo A es B, así que todo C es B.
+34	Algún A es B y todo B es C, así que ese A también es C.
+35	Todo A es C y ningún C es D, así que ningún A es D.
+36	Algún A es B y ningún B es C, así que ese A no es C.
+37	¿Qué se deduce?
+38	Las afirmaciones de la lista son verdaderas. ¿Qué afirmación se deduce NECESARIAMENTE de ellas? (Las palabras son inventadas: confía solo en la lógica.)
+39	Dibuja círculos (conjuntos) para cada tipo. ¿Qué círculo está dentro de cuál?
+40	Prueba cada opción: ¿puedes dibujar un caso en el que se cumplan las premisas pero no la opción? Entonces no se deduce.
+41	Lunes
+42	Martes
+43	Miércoles
+44	Jueves
+45	Viernes
+46	Sábado
+47	Domingo
+48	Niños en fila
+49	¿Cuántas opciones hay para el primer lugar? ¿Y para el segundo una vez ocupado el primero?
+50	El número de opciones baja en 1 cada vez. Multiplícalas.
+51	El podio
+52	¿Cuántos corredores pueden ganar el oro? ¿Cuántos pueden ganar entonces la plata?
+53	Las medallas son distintas, así que el orden importa.
+54	Amigos juntos
+55	Pega a los dos amigos en una «pareja». ¿Cuántos elementos ordenas entonces?
+56	Y dentro de la pareja pueden colocarse de dos maneras.
+57	La mesa redonda
+58	Sienta a un niño en un lugar fijo. ¿Qué queda por ordenar?
+59	Queda un niño menos.
+60	Fija a un niño: eso elimina el giro.
+61	¿Cuántas cifras pueden ir en el lugar de las centenas? ¿Y cuántas quedan para las decenas?
+62	Cada cifra usada reduce la elección en 1.
+63	Primero cuenta las parejas ordenadas: ¿cuántas hay?
+64	Contaste cada pareja dos veces. ¿Qué hay que hacer?
+65	Un equipo de tres
+66	¿Cuántas ternas ordenadas hay?
+67	Cada equipo aparece 3! = 6 veces entre ellas.
+68	Apretones de manos
+69	¿Con cuántas personas se da la mano una persona?
+70	Contaste cada apretón dos veces (desde ambos lados).
+71	Diagonales
+72	Desde un vértice: ¿a cuántos vértices puede ir una diagonal? (No a sí mismo ni a sus vecinos.)
+73	Contaste cada diagonal dos veces.
+74	Ingredientes de pizza
+75	Con un ingrediente hay dos opciones. ¿Y con dos ingredientes?
+76	Cada ingrediente extra duplica la cantidad.
+77	Cada ingrediente tiene 2 opciones (sí/no) y las decisiones son independientes.
+78	todas las cifras son impares
+79	todas las cifras son pares
+80	el número no contiene ni la cifra 0 ni la 5
+81	las tres cifras son distintas
+82	las cifras crecen estrictamente (de izquierda a derecha)
+83	la suma de las cifras es 10
+84	es un palíndromo (se lee igual en ambos sentidos)
+85	el número contiene al menos una cifra 7
+86	la suma de las cifras es 9
+87	al menos una cifra es 0
+88	Conjuntos de ropa
+89	¿Cuántos conjuntos distintos puedes formar? (1 👕 + 1 👖 + 1 🧢)
+90	Elige una camiseta. ¿Con cuántas combinaciones de pantalón y gorra se puede llevar?
+91	Multiplica el número de opciones de cada elección.
+92	Candado de números
+93	¿Cuántas opciones tiene una rueda?
+94	Las ruedas son independientes: las opciones se multiplican.
+95	Cada rueda tiene 10 opciones.
+96	Carreteras entre ciudades
+97	¿De cuántas maneras puedes ir de A a B? ¿Y luego a C?
+98	Los números de carreteras de cada tramo se multiplican.
+99	Números de tres cifras con una regla
+100	Divide el número en centenas, decenas y unidades. ¿Cuántas opciones tiene cada una?
+101	Ojo: la cifra de las centenas no puede ser 0.
+102	Contamos las opciones de cada lugar y luego las combinamos (multiplicamos o sumamos casos).
+103	Robot en una cuadrícula
+104	A cada casilla se llega desde arriba o desde la izquierda. ¿De cuántas maneras puedes llegar a las casillas de la primera fila?
+105	Escribe en cada casilla la suma de los caminos de la casilla de arriba y de la de la izquierda.
+106	En cada casilla escribimos cuántos caminos llevan hasta ella: la suma de la casilla de arriba y la de la izquierda (las casillas bloqueadas tienen 0).
+107	Tabla de número de caminos:
+108	Imagina el peor caso: siempre tienes mala suerte.
+109	Cartas y palos
+110	Busca la peor manera posible en que puede salir el reparto.
+111	Cumpleaños en clase
+112	Reparte a los alumnos lo más uniformemente posible entre los 12 meses. ¿Qué obtienes?
+113	Si cada mes tuviera como máximo X alumnos, ¿cuántos habría como máximo en total?
+114	Si cada mes tuviera menos, no habría suficientes en total. Este es el principio del palomar.
+115	Guantes en la oscuridad
+116	El peor caso es sacar guantes sin pareja.
+117	Anagramas
+118	Primero imagina que todas las letras son distintas. ¿Cuántas ordenaciones hay?
+119	Las letras iguales se pueden intercambiar, así que contaste cada ordenación varias veces.
+120	Cuentas en una fila
+121	Primero elige los lugares de las rojas. ¿De cuántas maneras?
+122	Luego, entre los lugares restantes, elige los de las azules.
+123	Comprueba si cada número es el doble del anterior con un pequeño ajuste.
+124	Mira las diferencias entre vecinos. ¿Cuáles son?
+125	Las diferencias crecen de 1 en 1: son números triangulares.
+126	Mira las diferencias y luego las diferencias de las diferencias.
+127	Cuadrado mágico
+128	Busca una fila, columna o diagonal en la que se conozcan todos los números: esa es la suma mágica.
+129	En una línea con una incógnita, esta es igual a la suma mágica menos la suma de los demás.
+130	Ecuaciones de frutas
+131	Empieza por la ecuación que contiene solo un tipo de fruta.
+132	Cuando conozcas el valor de una fruta, sustitúyelo en la siguiente ecuación.
+133	Resolvemos las ecuaciones en orden, empezando por la de una sola fruta:
+134	Criptoaritmética
+135	Empieza donde la respuesta es casi segura, por ejemplo la primera cifra del resultado en una suma.
+136	Prueba opciones y comprueba cada vez todas las columnas.
+137	Descartamos las cifras que llevarían a una contradicción.
+138	ninguna cara pintada
+139	exactamente 1 cara pintada
+140	exactamente 2 caras pintadas
+141	exactamente 3 caras pintadas
+142	Cubos de las esquinas: una caja tiene 8 esquinas.
+143	La caja pintada
+144	¿Qué cubitos están en las esquinas? ¿En las aristas? ¿En las caras? ¿En el interior?
+145	El número de caras pintadas depende de la posición: esquina 3, arista 2, cara 1, interior 0.
+146	La posición decide las caras pintadas: esquina = 3, arista = 2, cara = 1, interior = 0.
+147	¿Cuántos cuadrados?
+148	Primero cuenta los cuadrados de 1×1. Luego los de 2×2. ¿Y después?
+149	Los cuadrados de lado s son (n − s + 1)². Suma todos los tamaños.
+150	Contamos por tamaño de cuadrado. El tamaño s cabe en (n − s + 1)² posiciones.
+151	Cuadrados en un rectángulo
+152	Un cuadrado de lado s cabe en (filas − s + 1) · (columnas − s + 1) posiciones.
+153	Contamos por tamaño de cuadrado s = 1, 2, … hasta la dimensión menor.
+154	¿Cuántos rectángulos?
+155	Un rectángulo queda fijado por dos líneas horizontales y dos verticales.
+156	🧱 Los números muestran las alturas de las torres. ¿Cuántos cubos hay en total?
+157	🧱 Miras desde el frente (borde inferior). ¿Cuántos cuadrados ves?
+158	🧱 Pintamos el edificio por arriba y por los lados (no por abajo). ¿Cuántos cuadrados se pintan?
+159	Cada número es una torre. ¿Qué haces con ellas?
+160	Suma todos los números de la tabla.
+161	Desde el frente solo ves la torre más alta de cada columna.
+162	Toma el número mayor de cada columna y súmalos.
+163	Cuenta por separado las partes de arriba (una por torre) y los lados.
+164	Un lado solo se ve por encima de la torre vecina: la diferencia de alturas (o la altura completa en el borde).
+165	Cada número dice cuántos cubos tiene la torre.
+166	Desde el frente una torre más alta tapa a las más bajas que tiene detrás: solo vemos la más alta de cada columna.
+167	Partes de arriba: el número de casillas no vacías. Lados: para cada lado de una torre, la diferencia de altura con su vecina (el borde cuenta como altura 0).
+168	Figura en forma de L
+169	El área del rectángulo entero menos la parte recortada.
+170	Calcula los dos rectángulos por separado.
+171	Dibuja la figura. Deslizar los lados puede simplificar el perímetro.
+172	El perímetro de una figura en L es igual al del rectángulo original.
+173	Recortar una esquina no cambia el perímetro: los lados nuevos se deslizan sobre los antiguos.
+174	Cuadrado ampliado
+175	¿Cuánto mide el lado del cuadrado original?
+176	El lado nuevo está ampliado; el área es lado por lado.
+177	Área del triángulo
+178	Un triángulo es la mitad de un rectángulo adecuado.
+179	Área = base · altura : 2.
+180	Área del triángulo = (base · altura) : 2.
+181	Marco de un cuadro
+182	¿Cuáles son las dimensiones de la parte interior?
+183	Pienso un número
+184	Trabaja hacia atrás: ¿qué haces con el resultado para deshacer el último paso?
+185	Números en fila
+186	Llama n al número más pequeño. ¿Cómo escribes los demás?
+187	Suma y diferencia
+188	¿Qué obtienes al sumar la suma y la diferencia?
+189	Obtienes el doble del número mayor.
+190	Padre e hijo
+191	años
+192	Si el padre fuera tantos años más joven, tendrían la misma edad. ¿Cuánto sumarían entonces?
+193	La suma disminuiría en la diferencia de edad.
+194	Monedas
+195	Si todas las monedas fueran de 1 €, ¿cuál sería el valor?
+196	Cada cambio de una moneda de 1 € por una de 2 € suma 1 €.
+197	Ecuación con paréntesis
+198	Primero quita lo que se suma fuera de los paréntesis.
+199	Divisores
+200	Busca los divisores por parejas: si d divide a n, también lo hace n : d.

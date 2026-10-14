@@ -51,9 +51,9 @@ function rankCard() {
     h('p', { class: 'muted' }, nx ? t('pointsToGo', { n: nx.p - pts, r: nx.i + ' ' + tx(nx.n) }) : t('maxRank'))));
 }
 function reqText(r) {
-  if (r.k === 'stickers') return L2(`Zbieraj nálepky: ${r.need}`, `Collect stickers: ${r.need}`);
-  if (r.k === 'medals') return L2(`Získaj medaily za svety: ${r.need}`, `Earn world medals: ${r.need}`);
-  if (r.k === 'quests') return L2(`Splň všetky dnešné misie ${r.need}× (v rôzne dni)`, `Finish all daily missions on ${r.need} days`);
+  if (r.k === 'stickers') return L2(`Zbieraj nálepky: ${r.need}`, `Collect stickers: ${r.need}`, "Collect stickers: {0}", [r.need]);
+  if (r.k === 'medals') return L2(`Získaj medaily za svety: ${r.need}`, `Earn world medals: ${r.need}`, "Earn world medals: {0}", [r.need]);
+  if (r.k === 'quests') return L2(`Splň všetky dnešné misie ${r.need}× (v rôzne dni)`, `Finish all daily missions on ${r.need} days`, "Finish all daily missions on {0} days", [r.need]);
   return t('req_' + r.k, { n: r.need });
 }
 function rewardsGrid() {
@@ -135,6 +135,6 @@ function questsCard() {
 const MILESTONES = [{ d: 3, b: 20, i: '🔥' }, { d: 7, b: 50, i: '🌋' }, { d: 14, b: 100, i: '☄️' }, { d: 30, b: 250, i: '🌞' }, { d: 60, b: 400, i: '🌌' }, { d: 100, b: 700, i: '💫' }];
 function evalMilestones() {
   const s = st(); s.mile = s.mile || {}; const out = [];
-  MILESTONES.forEach(m => { if (s.streak.count >= m.d && !s.mile[m.d]) { s.mile[m.d] = Date.now(); Store.addBonus(m.b); out.push({ icon: m.i, n: S(`Séria ${m.d} dní!`, `${m.d}-day streak!`), bonus: m.b }); } });
+  MILESTONES.forEach(m => { if (s.streak.count >= m.d && !s.mile[m.d]) { s.mile[m.d] = Date.now(); Store.addBonus(m.b); out.push({ icon: m.i, n: S(`Séria ${m.d} dní!`, `${m.d}-day streak!`, "{0}-day streak!", [m.d]), bonus: m.b }); } });
   if (out.length) Store.save(); return out;
 }

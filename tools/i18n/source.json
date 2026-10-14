@@ -8805,6 +8805,12 @@
    "file": "teacher.js"
   },
   {
+   "id": "fjkt49",
+   "en": "Support for 15 languages (Slovak, English, Czech, Polish, Hungarian, Ukrainian, German, Spanish, French, Portuguese, Russian, Chinese, Japanese, Hindi, Arabic). The interface is translated, task content is being translated. Arabic is right-to-left.",
+   "sk": "Podpora 15 jazykov (slovenčina, angličtina, čeština, poľština, maďarčina, ukrajinčina, nemčina, španielčina, francúzština, portugalčina, ruština, čínština, japončina, hindčina, arabčina). Rozhranie je preložené, prekladá sa aj obsah úloh. Arabčina sa píše sprava doľava.",
+   "file": "version.js"
+  },
+  {
    "id": "902kgw",
    "en": "The administrator (signed in to the Teacher area) has every level unlocked for browsing, also in the Sticks game.",
    "sk": "Správca (po prihlásení do Učiteľského prostredia) má odomknuté všetky levely na prezeranie, aj v hre Paličky.",
@@ -9177,5 +9183,1677 @@
    "file": "worlds.js"
   }
  ],
- "dynamic": 420
+ "dynamic": 76,
+ "tpl": [
+  {
+   "id": "apo9km",
+   "en": "Grade {0}",
+   "file": "app.js"
+  },
+  {
+   "id": "1fff9si",
+   "en": "Sudoku {0}",
+   "file": "content.js"
+  },
+  {
+   "id": "1km8hfl",
+   "en": "The difference is always {0}. Add it to the last number.",
+   "file": "content.js"
+  },
+  {
+   "id": "1g7ws91",
+   "en": "The differences are always {0}.",
+   "file": "content.js"
+  },
+  {
+   "id": "1idtslf",
+   "en": "The last number is {0}, the next is {1} + {2} = {3}.",
+   "file": "content.js"
+  },
+  {
+   "id": "8lv5qx",
+   "en": "Each number is {0} times the previous one.",
+   "file": "content.js"
+  },
+  {
+   "id": "jvgqkx",
+   "en": "Each number is the previous one times {0}.",
+   "file": "content.js"
+  },
+  {
+   "id": "1dzn60q",
+   "en": "{0} · {1} = {2}.",
+   "file": "content.js"
+  },
+  {
+   "id": "11txncq",
+   "en": "The differences are {0}, {1}, {2}, {3} – growing by 1.",
+   "file": "content.js"
+  },
+  {
+   "id": "1imhc9y",
+   "en": "The differences are {0}, {1}, {2}, {3}: each is 1 bigger.",
+   "file": "content.js"
+  },
+  {
+   "id": "1lclqze",
+   "en": "The next difference is {0}, so {1} + {2} = {3}.",
+   "file": "content.js"
+  },
+  {
+   "id": "1alk5dc",
+   "en": "The next is 6² + {0} = {1}.",
+   "file": "content.js"
+  },
+  {
+   "id": "gzm1lr",
+   "en": "{0} + {1} = {2}, {3} + {4} = {5} … each number is the sum of the previous two.",
+   "file": "content.js"
+  },
+  {
+   "id": "kv7eqp",
+   "en": "Next: {0} + {1} = {2}.",
+   "file": "content.js"
+  },
+  {
+   "id": "1hvkbk4",
+   "en": "Numbers in places 1, 3, 5 grow by {0}, those in places 2, 4 fall by {1}.",
+   "file": "content.js"
+  },
+  {
+   "id": "1pb46j2",
+   "en": "Split into two: {0}, {1}, {2} (grows by {3}) and {4}, {5}, ? (falls by {6}).",
+   "file": "content.js"
+  },
+  {
+   "id": "1asy1t3",
+   "en": "The missing number is {0} − {1} = {2}.",
+   "file": "content.js"
+  },
+  {
+   "id": "llyv2z",
+   "en": "Try moving the frog on pad {0}.",
+   "file": "frogs.js"
+  },
+  {
+   "id": "h2wbmh",
+   "en": "Try moving the frog from pad {0} to pad {1}.",
+   "file": "frogs.js"
+  },
+  {
+   "id": "1vg9aea",
+   "en": "Trick: keep the frogs alternating – step, jump, jump, step… (Jumping a same-colour frog does not help.) The fewest moves is {0}² + 2·{1} = {2}.",
+   "file": "frogs.js"
+  },
+  {
+   "id": "16qngvr",
+   "en": "{0}→ go right, {1}← go left. Swap their places!",
+   "file": "frogs.js"
+  },
+  {
+   "id": "ir4qzh",
+   "en": "{0} × {1}→ and {2} × {3}←. What is the fewest moves to swap them? (a step or a jump = 1 move)",
+   "file": "frogs.js"
+  },
+  {
+   "id": "1j5qux1",
+   "en": "Every frog → must jump over every frog ←: that is {0} · {1} = {2} jumps.",
+   "file": "frogs.js"
+  },
+  {
+   "id": "obcsnd",
+   "en": "Besides that each of the {0} frogs makes one step to a free pad: {1} steps.",
+   "file": "frogs.js"
+  },
+  {
+   "id": "1jfypjd",
+   "en": "In total {0} + {1} = {2} moves.",
+   "file": "frogs.js"
+  },
+  {
+   "id": "1rku493",
+   "en": "Reachable squares: {0} – {1} in total.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "1d2qg2h",
+   "en": "How many {0} fit on a {1}×{2} board so that no two attack each other?",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "1fbabne",
+   "en": "For {0}×{1} this gives {2}.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "521gmn",
+   "en": "🁢 A {0}×{1} board. How many 1×2 dominoes fit at most?",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "hsc5xz",
+   "en": "The board has {0} · {1} = {2} squares.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "dx89si",
+   "en": "We put 1 grain on the first square of a chessboard, 2 on the second, 4 on the third – each square gets twice as many as the one before. How many grains are there in total on the first {0} squares?",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "aj5s45",
+   "en": "We put 1 grain on the first square of a chessboard, 2 on the second, 4 on the third – always twice as many as before. How many grains are on square number {0}?",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "1om8bxm",
+   "en": "The sum is always 1 less than the next term: 2^{0} − 1 = {1}.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "14k1w1h",
+   "en": "Square {0} has 2^{1} grains.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "15hyhgg",
+   "en": "That is {0}.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "n3jxlf",
+   "en": "🗼 Move {0} discs to the last peg in {1} moves.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "7ldqrj",
+   "en": "🗼 A Hanoi tower has {0} discs. Fewest moves to move it?",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "6k4wy",
+   "en": "So T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, hence T({0}) = {1}.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "yqdbw9",
+   "en": "🗼 {0} discs, the fastest way. How many times does disc no. {1} move? (1 = smallest)",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "dmfpda",
+   "en": "Each smaller disc moves twice as often: disc {0} moves 2^{1} = {2} times.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "80wj4h",
+   "en": "A Tower of Hanoi with FOUR pegs (other rules the same) and {0} discs. What is the fewest moves needed? (Hint: for 1, 2, 3, 4 discs it is 1, 3, 5, 9 moves.)",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "818obx",
+   "en": "The best choice of k gives {0} moves.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "1am65nr",
+   "en": "You reached the goal in {0} moves – it can be done faster, the minimum is {1}. Try again!",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "f1usuq",
+   "en": "Mark the square {0}.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "1a0a8ed",
+   "en": "From its current square the piece can go to {0} squares. Which of them is closer to the goal?",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "px9ls1",
+   "en": "A good next move: {0}.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "2xzq2s",
+   "en": "The tower is moved in {0} moves – great! But it can be done in {1}. Try again and look for the pattern.",
+   "file": "gen_chess.js"
+  },
+  {
+   "id": "1hugmxv",
+   "en": "This repeats: {0}",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "1w5r3f0",
+   "en": "Next is {0}.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "cg2w02",
+   "en": "{0} is {1}, so it does not belong.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "siodqp",
+   "en": "{0} are left without a partner.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "1tvhstl",
+   "en": "{0}: {1}, {2}: {3}.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "ghzbms",
+   "en": "{0} + {1} = {2}",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "1y6fj0f",
+   "en": "{0} − {1} = {2}",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "d9fk0n",
+   "en": "{0} : {1} = {2}",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "1es1y8h",
+   "en": "We add {0}. The missing number is {1}.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "vv440c",
+   "en": "How many {0} do you see?",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "1frfze5",
+   "en": "There are {0}.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "1tzh0kd",
+   "en": "Count up from {0} to {1}.",
+   "file": "gen_kid.js"
+  },
+  {
+   "id": "lkscxg",
+   "en": "The losing counts (for the player to move) are: {0}. Is {1} among them?",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "13ylfo5",
+   "en": "{0} is not a losing count, so the first player wins: take {1} and leave {2}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "qbbux3",
+   "en": "{0} is a losing count for the player to move, so the second player wins.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "q8qwnu",
+   "en": "The nim-sum (XOR) is now {0}. Which pile must be reduced to make it 0?",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "khbao9",
+   "en": "The difference is {0} − {1} = {2}. Then just copy your opponent’s moves on the other pile.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1bentat",
+   "en": "Take {0} from the pile of {1}: {2} ⊕ {3} = {4}, which makes the nim-sum 0.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "7oy4yq",
+   "en": "🍫 A chocolate {0} × {1}. One break = one piece into two. How many breaks until every square is separate?",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1v15zk8",
+   "en": "Each break raises the number of pieces by exactly 1, so we need {0} − 1 = {1} breaks – whatever the method.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1cqwvza",
+   "en": "🏆 {0} players. In each round pairs play and the winner moves on. How many rounds are played?",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "f8uwji",
+   "en": "That is {0} halvings, so {1} rounds.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "fu8t9n",
+   "en": "Out of {0} players, {1} must be eliminated.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "kvbsdn",
+   "en": "Each match eliminates one, so {0} matches are played – however the pairs are drawn.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "10178mn",
+   "en": "Try assuming {0} is a knight. What follows for the others?",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1xbjygm",
+   "en": "You want the suspect for whom exactly {0} statements are true.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1ubrlna",
+   "en": "Exactly {0} true statements happens only for {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "2a7jpl",
+   "en": "is divisible by {0}",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "qc7c2",
+   "en": "is not divisible by {0}",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "yaydok",
+   "en": "is greater than {0}",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1iqclgj",
+   "en": "is less than {0}",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "5kgl5b",
+   "en": "has digit sum {0}",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1tqa1gq",
+   "en": "ends in the digit {0}",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "ugnx7c",
+   "en": "I am thinking of a number from 1 to {0}. Everything on the list is true. Which number is it?",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "j99d2r",
+   "en": "Only one number is left: {0}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1olfbf8",
+   "en": "{0} stands before {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "8e7z8z",
+   "en": "{0} stands right behind {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1rbg4ji",
+   "en": "{0} is not first.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "cjx8z0",
+   "en": "{0} is not last.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "v80dmr",
+   "en": "{0} stands somewhere between {1} and {2}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "n8q2vu",
+   "en": "{0} does not have {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "ytvyvc",
+   "en": "Neither {0} nor {1} has {2}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "q96d0",
+   "en": "{0} has {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1yi1s9o",
+   "en": "Every {0} is a {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1i0l9be",
+   "en": "No {0} is a {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "148d8gh",
+   "en": "At least one {0} is a {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1vojawy",
+   "en": "At least one {0} is not a {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "6j86gz",
+   "en": "Axel is not a {0}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "s0ovav",
+   "en": "Axel is not an {0}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "1cy6qjm",
+   "en": "Axel is an {0}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "s965jq",
+   "en": "Axel is a {0} but not an {1}.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "28lns9",
+   "en": "Correct: “{0}” – the others cannot be derived from the premises.",
+   "file": "gen_logic.js"
+  },
+  {
+   "id": "193j21h",
+   "en": "A group of {0} children wants to line up for a photo. In how many different orders can they stand?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1qjbj26",
+   "en": "There are {0} options for the first place, {1} for the second, {2} for the third … down to 1.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ioh2ys",
+   "en": "A group of {0} runners is on the start line. How many different ways can the gold, silver and bronze places be filled?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "8sfcdv",
+   "en": "Gold: {0} options, silver: {1}, bronze: {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "jl2ilr",
+   "en": "In total {0} · {1} · {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1yhh18o",
+   "en": "A group of {0} children lines up. {1} and {2} want to stand next to each other (in either order). How many such arrangements are there?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1j2u3v3",
+   "en": "Treat the pair as one block: we arrange {0} blocks, which is {1} ways.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "gg04do",
+   "en": "Inside the pair there are 2 orders, so 2 · {0} = {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1t1wckr",
+   "en": "A group of {0} children sits around a round table. Two seatings that differ only by rotating the whole table count as the same. How many different seatings are there?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "19mcj2c",
+   "en": "Arrange the other {0} around: {1}! = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1dpmche",
+   "en": "Hundreds: {0} options, tens: {1}, units: {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "vpzols",
+   "en": "We choose a two-person delegation from a group of {0} children. In how many ways can it be done?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ozzney",
+   "en": "There are {0} · {1} = {2} ordered pairs.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ms7uue",
+   "en": "Order does not matter, so divide by 2: {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "e9v3s1",
+   "en": "We choose a team of three from a group of {0} children. How many different teams are possible?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "kv57rm",
+   "en": "Ordered triples: {0} · {1} · {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1bwa3kt",
+   "en": "Each team is counted 6 times, so {0} : 6 = {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "10fqjms",
+   "en": "A group of {0} people meets. Everybody shakes hands with everybody else exactly once. How many handshakes are there?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1y8vgp0",
+   "en": "Everybody shakes {0} hands, in total {1} · {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1x5fd6g",
+   "en": "Each handshake was counted twice, so {0} : 2 = {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ftetqo",
+   "en": "A regular polygon with {0} vertices. How many diagonals can be drawn in it?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "18f2h4w",
+   "en": "From every vertex {0} diagonals start.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "13bme4n",
+   "en": "In total {0} · {1} : 2 = {2} (each is counted twice).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "gh7l8v",
+   "en": "A pizzeria has {0} toppings. A pizza can have any combination (each topping is either on or off; a plain pizza is allowed). How many different pizzas can be ordered?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1jpx8qh",
+   "en": "So 2 · 2 · … ({0} times) = 2^{1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1tqfy17",
+   "en": "For every T-shirt there are {0} · {1} = {2} combinations.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "rkfrtu",
+   "en": "🔒 A lock has {0} dials with digits 0–9. How many codes can be set?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "hl4xk5",
+   "en": "In total 10^{0} = {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "gtv5rb",
+   "en": "There are {0} roads from A to B, {1} from B to C and {2} from C to D. How many different routes lead from A to D via B and C?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1o97fw8",
+   "en": "Leg A–B: {0}, B–C: {1}, C–D: {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1sywn4k",
+   "en": "There are {0} · {1} · {2} = {3} routes.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "jxpzl6",
+   "en": "Systematically counting all numbers from 100 to 999 gives {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "hw6wqg",
+   "en": "At the finish there is {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "ykc3ya",
+   "en": "🧦 Socks of {0} colours, it is dark. How many must you pull out to be sure of {1} of one colour?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1slaq8u",
+   "en": "The worst case is having one fewer than {0} of every colour.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1l09i3v",
+   "en": "With the worst luck you hold {0} socks of each of the {1} colours – that is {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "oz0iud",
+   "en": "The next sock must give {0} of a kind: {1} + 1 = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1gptrge",
+   "en": "A deck has cards of four suits (♠ ♥ ♦ ♣), at least {0} of each. How many cards must you draw blindly to be sure of {1} cards of the same suit?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1eh88sy",
+   "en": "In the worst case you hold {0} cards of every suit.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "di6aeb",
+   "en": "Worst case: {0} cards of each of the 4 suits, {1} in total.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "haitgh",
+   "en": "The next card must make {0} of one suit: {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "j3fcjn",
+   "en": "A school has {0} students. A year has 12 months. What is the largest number of students sharing a birth month that is guaranteed (in at least one month)?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "bdq5lh",
+   "en": "{0} : 12 = {1}…, so some month must have at least {2} students.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "z0htux",
+   "en": "A wardrobe holds {0} different pairs of gloves (each pair its own colour, {1} gloves in all, left and right). You pull them out in the dark. What is the fewest you must take to be sure of a complete pair (left and right of one colour)?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ocfb7c",
+   "en": "Without a pair you can hold at most one glove of each of the {0} colours.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "e48dbl",
+   "en": "In the worst case you hold {0} gloves, each a different colour (all left, say).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1pxfnys",
+   "en": "The next one (number {0}) completes a pair: {1} + 1 = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "t1kv7n",
+   "en": "How many different “words” (nonsense allowed) can be made by rearranging all the letters of {0}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1t8tb3s",
+   "en": "If all letters were different there would be {0}! = {1} arrangements.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "4xxofl",
+   "en": "A string holds {0} beads in a row: red – {1}, blue – {2}, green – {3} (beads of one colour look the same). How many different patterns are possible?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "l74yfn",
+   "en": "Places for red: C({0}, {1}) = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1lwio5d",
+   "en": "From the remaining {0} places choose blue: C({1}, {2}) = {3}; green takes the rest.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1l5y7un",
+   "en": "In total {0} · {1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "15v1rnk",
+   "en": "Each number is 2 · (previous) {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "15d3ltw",
+   "en": "{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "7tkhuj",
+   "en": "Next: {0} · 2 {1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "tqtsav",
+   "en": "The differences of the differences are always {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "19yscyq",
+   "en": "The next difference is {0}, so the next number is {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "63ijzd",
+   "en": "In a magic square all rows, all columns and both diagonals have the same sum. Which number belongs at {0}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "ussfsn",
+   "en": "The magic sum is {0} (from a fully known line).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "177qocx",
+   "en": "Substituting into the question gives {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "aquavx",
+   "en": "Interior cubes: ({0}−2)·({1}−2)·({2}−2) = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ztmj9",
+   "en": "Cubes in the middle of faces: 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "9idhui",
+   "en": "Edge cubes without corners: 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1v9blvx",
+   "en": "Answer: {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1xzo7jd",
+   "en": "How many squares (big ones too) can you find in the {0} × {1} grid?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1pfa25p",
+   "en": "There are {0} squares of size 1×1. How many 2×2 squares are there?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1oxjlxw",
+   "en": "The grid has {0} rows and {1} columns. How many rectangles (squares count too) can you find in it?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "12e56lz",
+   "en": "In how many ways can you choose 2 of the {0} horizontal and 2 of the {1} vertical lines?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "n55t2o",
+   "en": "There are {0} horizontal and {1} vertical lines.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1we33o",
+   "en": "Two horizontal: C({0},2) = {1}, two vertical: C({2},2) = {3}. In total {4}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "14p1q81",
+   "en": "The sum of all numbers is {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "h5y94u",
+   "en": "The sum of the column maxima is {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1gpxqd7",
+   "en": "{0} painted faces in total.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1iy87te",
+   "en": "Whole rectangle: {0} · {1} = {2} cm².",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "6hzyrx",
+   "en": "Cut-out: {0} · {1} = {2} cm². What remains: {3} cm².",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1fm6lxy",
+   "en": "Perimeter = 2 · ({0} + {1}) = {2} cm.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1amar0l",
+   "en": "Original side: {0} cm. New side: {1} cm.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "58pbl1",
+   "en": "New area {0} · {1} = {2} cm² ({3} times bigger).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1h5uv7e",
+   "en": "A rectangle has a perimeter of {0} cm and one side of {1} cm. What is its area?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "b5817u",
+   "en": "You know a = {0}. What is the other side?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "179rm7w",
+   "en": "a + b = {0} (half the perimeter).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1svpryw",
+   "en": "The other side: {0} − {1} = {2} cm, area {3} · {4} = {5} cm².",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "12uhirq",
+   "en": "A triangle has a base of {0} cm and a height to it of {1} cm. What is its area?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1nmy1px",
+   "en": "({0} · {1}) : 2 = {2} cm².",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1baibj5",
+   "en": "A picture measures {0} cm × {1} cm outside, with a frame {2} cm wide all around. What is the area of the frame itself (without the inner part)?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1n9aeq8",
+   "en": "{0} cm goes from each side – {1} cm per dimension.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "300bvh",
+   "en": "Inner part: ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "17ds8bv",
+   "en": "Frame = {0} − {1} = {2} cm².",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1qsvnw0",
+   "en": "I think of a number. When I multiply it by {0} and add {1} I get {2}. What is my number?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "nn8l5j",
+   "en": "First subtract {0}, then divide by {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1xomq6b",
+   "en": "{0} − {1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "x324e3",
+   "en": "{0} : {1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "se4j7t",
+   "en": "The sum of {0} consecutive integers is {1}. What is the largest of them?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "172pw2t",
+   "en": "n, n+1, …, n+{0}: what is the sum?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "42443v",
+   "en": "The sum is {0}·n + {1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1q1xsrf",
+   "en": "n = {0}, so the largest is {1} + {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "7hj1bh",
+   "en": "The sum of two numbers is {0} and their difference is {1}. What is the bigger one?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "16azt8x",
+   "en": "({0} + {1}) = {2} = 2 · the bigger number.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "po819",
+   "en": "The bigger number is {0} : 2 = {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "njwfbm",
+   "en": "A father is {0} years older than his son. Together they are {1} years old. How old is the father?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1g4fmum",
+   "en": "{0} − {1} = {2} = twice the son’s age.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "f9rfpd",
+   "en": "The son is {0}, the father {1} + {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "n2j7hv",
+   "en": "A piggy bank holds {0} coins, some worth €1 and the rest €2. Their total value is €{1}. How many €2 coins are there?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "10ak9cj",
+   "en": "With {0} one-euro coins it would be €{1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1p7dvbo",
+   "en": "€{0} is missing, so there are {1} two-euro coins.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "q4mntc",
+   "en": "Solve the equation: {0}·(x − {1}) + {2} = {3}. What is x?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "nzl7xa",
+   "en": "After subtracting {0}, divide by {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "wmnmta",
+   "en": "{0} − {1} = {2}, so {3}·(x − {4}) = {5}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1k102go",
+   "en": "x − {0} = {1}, so x = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "q60pfu",
+   "en": "How many divisors (including 1 and the number itself) does {0} have?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "q8xbre",
+   "en": "Try d = 1, 2, 3, … up to the square root of {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1wixx31",
+   "en": "From the square, bus A leaves every {0} minutes and bus B every {1} minutes. They have just left together. After how many minutes will they leave together again?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "4uyyjq",
+   "en": "The least common multiple is {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "x63xy8",
+   "en": "What is the last digit of {0}^{1}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1kbx2my",
+   "en": "Write the last digits of the powers {0}¹, {1}², {2}³ …",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1wwswl4",
+   "en": "Exponent {0} leaves remainder {1} on division by {2}, so the last digit is {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "135if81",
+   "en": "How many numbers from 1 to {0} are divisible by {1} or by {2} (or both)?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1adou56",
+   "en": "Multiples of {0}: {1}, of {2}: {3}, of both ({4}): {5}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1rprj7",
+   "en": "{0} + {1} − {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "4ifdij",
+   "en": "How many zeros does {0}! = 1 · 2 · 3 · … · {1} end with?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "10vt7fc",
+   "en": "Count how often the factor 5 occurs in the numbers from 1 to {0} (also repeatedly, e.g. 25).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "ftg7d0",
+   "en": "We want to cover a {0} cm × {1} cm rectangle with identical squares, no gaps and no overlap. What is the largest possible side of a square (in cm)?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "75hmww",
+   "en": "The largest is {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1vbdgsv",
+   "en": "A bag holds {0} red, {1} blue and {2} green marbles. One is drawn blindly. What is the probability it is red? (As a fraction in lowest terms, e.g. 1/6.)",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "12job25",
+   "en": "There are {0} marbles in all, {1} are red.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "11et3cu",
+   "en": "The probability is {0}/{1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "cz9ctp",
+   "en": "We roll two fair dice. What is the probability that the sum is {0}? (As a fraction in lowest terms.)",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1bluqia",
+   "en": "List the pairs with sum {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "xzavh1",
+   "en": "Sum {0} comes from {1} pairs, so {2}/36 = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "rjrr4n",
+   "en": "A coin is tossed {0} times. What is the probability of exactly {1} heads? (As a fraction in lowest terms.)",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "d0eu48",
+   "en": "How many outcomes are there for {0} tosses?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "17h3vc",
+   "en": "In how many ways can you choose which {0} of the {1} tosses are heads?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1s9gdlr",
+   "en": "All outcomes: 2^{0} = {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1pm2zu1",
+   "en": "Favourable: C({0}, {1}) = {2}. Probability {3}/{4} = {5}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1s7voqx",
+   "en": "A bag holds {0} red and {1} blue marbles. Two are drawn without replacement. What is the probability that both are red? (As a fraction in lowest terms.)",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "o6f73s",
+   "en": "First red: {0}/{1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1yx0fke",
+   "en": "Second red: {0}/{1}. Together {2}/{3} · {4}/{5} = {6}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1og1dtl",
+   "en": "We roll two dice. What is the probability that at least one shows {0}? (As a fraction in lowest terms.)",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ocl9e2",
+   "en": "It is easier to count the opposite: neither shows {0}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "hjcf0w",
+   "en": "Neither die shows {0}: 5 · 5 = 25 of 36 outcomes.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "qwnqwt",
+   "en": "Favourable: 36 − 25 = {0}, probability {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "16brhj5",
+   "en": "What is {0}% of {1}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "gejwid",
+   "en": "1% of {0} is {1}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "d8usoa",
+   "en": "{0}% is {1} · {2} = {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1ozcn1d",
+   "en": "An item costs €{0}. First it rises by {1}%, then the new price falls by {2}%. What does it cost in the end?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1q8b5ja",
+   "en": "After the rise: {0} · {1} = €{2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "exo4ue",
+   "en": "After the fall: {0} · {1} = €{2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1igffib",
+   "en": "€{0} is shared between Ema and Adam in the ratio {1} : {2}. How many € does Ema get?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1igxffc",
+   "en": "There are {0} + {1} = {2} parts, one part is {3} : {4} = €{5}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "nzx0s3",
+   "en": "Ema gets {0} parts: {1} · {2} = €{3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "flmo5",
+   "en": "What is {0}/{1} of {2}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "ni6myt",
+   "en": "1/{0} of {1} is {2} : {3} = {4}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1debgco",
+   "en": "{0}/{1} is {2} · {3} = {4}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "pn3k7r",
+   "en": "What percent is {0} of {1}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "195r0jm",
+   "en": "{0} / {1} = {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "zzz9zv",
+   "en": "That is {0} hundredths, i.e. {1}%.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "watjra",
+   "en": "Today is {0}. What day of the week will it be in {1} days?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "ob1mhk",
+   "en": "Find the remainder of {0} divided by 7.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "77ylld",
+   "en": "{0} : 7 = {1} remainder {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "p3aiw",
+   "en": "Whole weeks do not change the day; move {0} days forward from {1} to get {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "boja1q",
+   "en": "A train leaves at {0} and arrives at {1}. How many minutes does the journey take?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "k4ztjl",
+   "en": "{0} = {1} minutes after midnight, {2} = {3} minutes.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "18gm6us",
+   "en": "The difference is {0} minutes.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1x964tn",
+   "en": "In {0}, 1 {1} falls on a {2}. What day of the week is 1 {3}?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "13ycak",
+   "en": "The month has {0} days: {1} : 7 = {2} remainder {3}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "rdmffm",
+   "en": "Shifting {0} days forward from {1} gives {2}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "jnhwjx",
+   "en": "Hour hand: {0} · 30 + {1} · 0.5 = {2}°. Minute hand: {3} · 6 = {4}°.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "12w57zi",
+   "en": "Sudoku {0}×{1}",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "10fvgmo",
+   "en": "The total time is {0} minutes.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "ys8qhb",
+   "en": "You have two jugs without markings: {0} L and {1} L, and plenty of water. A step is: fill a jug completely, empty a jug completely, or pour from one into the other until the source is empty or the target is full. What is the fewest steps needed to have exactly {2} L in one of the jugs?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "qb7fxk",
+   "en": "That is {0} steps and fewer is impossible (all options were searched).",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "914483",
+   "en": "Among {0} coins one is fake – it is lighter than the rest. You have a balance scale without weights. What is the fewest weighings that surely find the fake?",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "1gg7jxn",
+   "en": "After {0} weighings we can tell apart up to 3^{1} = {2} coins, which is at least {3}; after {4} weighings only {5}. We need {6}.",
+   "file": "gen_math.js"
+  },
+  {
+   "id": "pjylos",
+   "en": "🕸️ The sum of all numbers in the circles is {0}. Each arrow adds the number of its colour. What is x?",
+   "file": "hejny.js"
+  },
+  {
+   "id": "1cimf3q",
+   "en": "Count how many x there are in the sum and what is left over. Then {0} − (the rest) = (number of x) × x.",
+   "file": "hejny.js"
+  },
+  {
+   "id": "t7kfvd",
+   "en": "There are {0} x’s and the rest is {1}. So {2}·x + {3} = {4} and x = {5}.",
+   "file": "hejny.js"
+  },
+  {
+   "id": "ucif4s",
+   "en": "The arrow adds {0}. All arrows of that colour have the same value, so finding it in one place is enough.",
+   "file": "hejny.js"
+  },
+  {
+   "id": "1bp1ozs",
+   "en": "The marked circle should be {0}.",
+   "file": "hejny.js"
+  },
+  {
+   "id": "lw10ck",
+   "en": "There are {0} complete routes. At every fork try both options and cross out those that end in a dead end or miss a room.",
+   "file": "hejny.js"
+  },
+  {
+   "id": "1ejy0ux",
+   "en": "The marked room should be {0}.",
+   "file": "hejny.js"
+  },
+  {
+   "id": "14qd7u1",
+   "en": "Collect stickers: {0}",
+   "file": "rewards.js"
+  },
+  {
+   "id": "16w2ydb",
+   "en": "Earn world medals: {0}",
+   "file": "rewards.js"
+  },
+  {
+   "id": "1yd7t2p",
+   "en": "Finish all daily missions on {0} days",
+   "file": "rewards.js"
+  },
+  {
+   "id": "n42tm3",
+   "en": "{0}-day streak!",
+   "file": "rewards.js"
+  },
+  {
+   "id": "13o8xd0",
+   "en": "Take {0}",
+   "file": "sims.js"
+  },
+  {
+   "id": "jn3gli",
+   "en": "Correct! Coin {0} is the fake – found with {1} weighings.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "o9jszw",
+   "en": "Coin {0} is not fake. Keep trying.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "tautaj",
+   "en": "🎉 Exactly {0} L in a jug! Steps: {1}.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "1pp062m",
+   "en": "Fill {0} L",
+   "file": "sims2.js"
+  },
+  {
+   "id": "1hjdei0",
+   "en": "Empty {0} L",
+   "file": "sims2.js"
+  },
+  {
+   "id": "13vl45c",
+   "en": "🎉 Everyone is across! Time: {0} min.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "1slvrta",
+   "en": "{0} of a kind after {1} draws!",
+   "file": "sims2.js"
+  },
+  {
+   "id": "1lr3n1f",
+   "en": "It is dark – you draw blindly. When do you have {0} of a kind? Try several times and look for the worst case.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "1nc27jp",
+   "en": "🎉 Every child has {0}.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "174n6b3",
+   "en": "Yellow ones are given. Add red ones so there are exactly {0} in all. There are more free cells than you need!",
+   "file": "sims2.js"
+  },
+  {
+   "id": "17x5y7a",
+   "en": "Toss {0} coins and watch the number of heads. Repeat!",
+   "file": "sims2.js"
+  },
+  {
+   "id": "cg5md6",
+   "en": "We start on {0}. Hop day by day – where do you land after {1} days?",
+   "file": "sims2.js"
+  },
+  {
+   "id": "iaho2l",
+   "en": "Colour {0} squares out of 100 – that is {1}%.",
+   "file": "sims2.js"
+  },
+  {
+   "id": "kxo93b",
+   "en": "Losses in this level: {0}",
+   "file": "sticksgame.js"
+  },
+  {
+   "id": "1cjllr9",
+   "en": "row {0}",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "1frz6op",
+   "en": "column {0}",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "9apa14",
+   "en": "box {0}",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "1up1q0y",
+   "en": "Cell {0} takes {1}.",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "16i456i",
+   "en": "Cross out candidates – {0}. Another hint fills one cell.",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "19bttm9",
+   "en": "Technique: {0}. ",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "cspnbd",
+   "en": "Cell {0} can hold only one number.",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "gm9t33",
+   "en": "In {0} one number fits in only one cell – look at the highlighted one.",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "1oj35y9",
+   "en": "The number {0} in {1} is “locked” within {2} – cross it out elsewhere there.",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "1tbz3ic",
+   "en": "The number {0} forms an X-Wing rectangle – cross it out in the matching lines.",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "166vjh4",
+   "en": "Wrong cells: {0} (marked “!”).",
+   "file": "sudokugame.js"
+  },
+  {
+   "id": "1to7wmw",
+   "en": "Look at the cell in row {0}, column {1}. Which numbers can still go there?",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "n1s4j4",
+   "en": "The cell (row {0}, column {1}) takes {2}.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "ofhwzu",
+   "en": "Try pressing the cell in row {0}, column {1}.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "1p2v6z8",
+   "en": "This is the start. The shortest solution presses {0} cells (marked 👆):",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "kgtfai",
+   "en": "You reached the finish – great! But a shorter route exists. Yours took {0} steps, try for fewer.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "v28d8w",
+   "en": "First try spotting the dead ends. The shortest route takes {0} steps.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "eat2ym",
+   "en": "The start of the shortest route (row, column): {0} …",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "bxr2b8",
+   "en": "We explore and rule out dead ends. The shortest route takes {0} steps and goes like this:",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "1opynqg",
+   "en": "Done! Everyone is across in {0} moves – and it cannot be done in fewer (a computer checked every possibility).",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "1fwjb6d",
+   "en": "You start at {0}: take {1} to leave {2} (a losing count for your opponent). Then always answer so that you land on a losing count again.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "fou8rf",
+   "en": "The computer starts at {0}, a losing count for the player to move. Whatever it does, answer by leaving a losing count again.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "xnn7uz",
+   "en": "Here you win with, for example: take {0} from pile {1}.",
+   "file": "tasktypes.js"
+  },
+  {
+   "id": "gx2ro0",
+   "en": "{0} min ago",
+   "file": "teacher.js"
+  },
+  {
+   "id": "b4mp3w",
+   "en": "{0} h ago",
+   "file": "teacher.js"
+  },
+  {
+   "id": "uqpbed",
+   "en": "{0} days ago",
+   "file": "teacher.js"
+  },
+  {
+   "id": "ifzuoj",
+   "en": "Levels: {0} of {1} · badges: {2}",
+   "file": "teacher.js"
+  },
+  {
+   "id": "1ui4w5m",
+   "en": "Create class {0}.{1}",
+   "file": "teacher.js"
+  },
+  {
+   "id": "9z74cr",
+   "en": "{0} students",
+   "file": "teacher.js"
+  },
+  {
+   "id": "7j248h",
+   "en": "Class {0}",
+   "file": "teacher.js"
+  },
+  {
+   "id": "16yls8u",
+   "en": "Selected tasks: {0}",
+   "file": "teacher.js"
+  },
+  {
+   "id": "19eda9z",
+   "en": "students: {0}",
+   "file": "teacher.js"
+  },
+  {
+   "id": "h28grf",
+   "en": "{0} tasks",
+   "file": "teacher.js"
+  },
+  {
+   "id": "13ebqxz",
+   "en": "{0} of {1} students finished",
+   "file": "teacher.js"
+  },
+  {
+   "id": "1xe7fpj",
+   "en": "Done {0} of {1}",
+   "file": "teacher.js"
+  }
+ ]
 }

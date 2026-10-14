@@ -1,0 +1,200 @@
+1	Sammle 30 Sticker.
+2	Album komplett
+3	Sammle jeden Sticker.
+4	Erste Medaille
+5	Schließe eine ganze Welt in einer Klasse ab.
+6	Medaillensammlung
+7	Hole 5 Weltmedaillen.
+8	Missionsläufer
+9	Schließe an 5 Tagen alle Tagesmissionen ab.
+10	Wochenserie
+11	Löse an 7 Tagen hintereinander Aufgaben.
+12	Monatsserie
+13	Löse an 30 Tagen hintereinander Aufgaben.
+14	Hundert
+15	Schließe 100 Aufgaben ab.
+16	Bergsteiger
+17	Schließe 300 Aufgaben ab.
+18	Sternenhimmel
+19	Sammle 150 Sterne.
+20	2000 Punkte
+21	Sammle 2000 Punkte.
+22	Ganz allein
+23	Löse 10 Aufgaben ohne Tipps.
+24	Perfektes Level
+25	Schließe ein Level mit allen 3 Sternen ab.
+26	Draufgänger
+27	Löse eine Aufgabe aus einer höheren Klasse.
+28	Grüne 🐸 hüpfen nur nach rechts →, braune nur nach links ←. Geh auf das freie Blatt oder spring über EINEN Frosch (jeder Farbe), wenn das Blatt dahinter frei ist. Kein Zurück. Tausche ihre Plätze!
+29	Blatt
+30	frei
+31	Frosch nach rechts
+32	Frosch nach links
+33	Du steckst fest 🙂 Mache einen Zug rückgängig oder fange neu an.
+34	Dieser Frosch kann jetzt nicht springen. Probiere einen anderen.
+35	Von hier gibt es keinen Weg weiter – mache einen Zug rückgängig.
+36	Von hier gibt es keinen Weg weiter – mache rückgängig oder starte neu.
+37	Hier ist die ganze Lösung:
+38	Probiere es mit den Fröschen: Tippe auf den Frosch, der sich bewegen soll.
+39	Wie die Frösche springen (vor der Aufgabe lesen)
+40	Probiere es zuerst mit weniger Fröschen.
+41	Frösche: wie viele Züge?
+42	Schreibe die Züge für 1, 2 und 3 Frösche auf.
+43	Die Zuganzahlen sind 3, 8, 15, 24 … Findest du die Formel?
+44	Die Frösche haben die Plätze getauscht!
+45	Die bestmögliche Anzahl an Zügen!
+46	Es geht auch mit weniger Zügen – versuche es noch einmal!
+47	Frösche auf jeder Seite
+48	Regeln
+49	König
+50	Der König zieht ein Feld in jede Richtung – seitwärts, vor/zurück oder diagonal.
+51	Dame
+52	Die Dame zieht beliebig weit geradeaus – seitwärts, vor/zurück oder diagonal (Turm und Läufer zusammen). Sie kann nicht springen.
+53	Turm
+54	Der Turm zieht beliebig weit seitwärts oder vor/zurück. Er kann nicht springen.
+55	Läufer
+56	Der Läufer zieht beliebig weit diagonal, bleibt also immer auf Feldern einer Farbe. Er kann nicht springen.
+57	Der Springer springt in L-Form: 2 Felder in eine Richtung und 1 Feld im rechten Winkel dazu. Er ist die einzige Figur, die über andere springen kann.
+58	Bauer
+59	Der Bauer zieht ein Feld vorwärts (nach oben). Aus seiner Grundreihe darf sein erster Zug zwei Felder weit sein.
+60	Wie zieht die Figur? (vor der Aufgabe lesen)
+61	Bauer unterwegs
+62	Ein weißer Bauer steht auf d2 (die 7. Reihe von oben). Er zieht nur vorwärts; sein erster Zug darf zwei Felder weit sein, spätere ein Feld. Wie viele Züge braucht er mindestens bis zur obersten (markierten) Reihe?
+63	Wie viele Reihen muss der Bauer überqueren?
+64	Der erste Zug darf zwei Felder weit sein – das spart einen Zug.
+65	Von Reihe 2 bis Reihe 8 sind es 6 Reihen.
+66	Erster Zug 2 Felder (der Bauer steht auf Reihe 4), 4 Reihen bleiben einzeln: 1 + 4 = 5 Züge insgesamt.
+67	Wohin kann die Figur ziehen?
+68	Nimm die Figur Richtung für Richtung und zähle die freien Felder in jeder.
+69	Der kürzeste Weg der Figur
+70	Finde heraus, wohin die Figur in einem Zug kommt, dann in zwei Zügen…
+71	Probiere es auch rückwärts: Von welchen Feldern erreichst du das Ziel in einem Zug?
+72	Wir suchen alle Möglichkeiten Zug um Zug (1 Zug, 2 Züge, …), bis wir das Ziel treffen.
+73	Ein Turm greift seine ganze Reihe und Spalte an, also steht in jeder Reihe höchstens ein Turm – insgesamt N – und N Türme auf einer Diagonale passen.
+74	Läufer greifen sich nicht an, wenn sie auf verschiedenen Diagonalen stehen. Die erste und letzte Reihe bis auf zwei Ecken zu füllen ergibt 2N − 2.
+75	Ein König greift benachbarte Felder an. Teile das Brett in 2×2-Blöcke – jeder enthält höchstens einen König: ⌈N/2⌉².
+76	Ein Springer greift nur Felder der anderen Farbe an, also greifen Springer, die alle auf einer Farbe stehen, sich nie an: ⌈N²/2⌉.
+77	Eine Dame greift Reihe, Spalte und Diagonalen an, also steht in jeder Reihe höchstens eine. Für N ≥ 4 lassen sich N Damen platzieren.
+78	Keine zwei greifen sich an
+79	Finde zuerst heraus, welche Felder eine Figur angreift. Wie kannst du sie so verteilen, dass sie sich nicht in die Quere kommen?
+80	Probiere ein kleines 3×3- oder 4×4-Brett und suche nach einem Muster.
+81	Markiere alle Züge
+82	Bewege die Figur im Kopf Richtung für Richtung.
+83	Führe die Figur zum Ziel
+84	Finde die Felder, von denen aus das Ziel in einem Zug erreichbar ist.
+85	Dominosteine auf einem Brett
+86	Jeder Dominostein bedeckt 2 Felder.
+87	Wie viele Felder hat das Brett? Was, wenn die Zahl ungerade ist?
+88	Dominosteine und das Schachbrett
+89	🁢 Zwei Felder (✖) fehlen. Lässt sich der Rest mit 1×2-Dominosteinen bedecken?
+90	Ja, es geht
+91	Nein, es geht nicht
+92	Jeder Dominostein bedeckt ein helles und ein dunkles Feld. Wie viele helle und dunkle Felder bleiben nach dem Entfernen übrig?
+93	Wenn die Anzahlen nicht übereinstimmen, ist das Bedecken unmöglich.
+94	Ein Dominostein bedeckt immer ein helles und ein dunkles Feld, also müssten die Anzahlen gleich sein.
+95	Die entfernten Felder haben verschiedene Farben, also stimmen die Anzahlen überein. Bei einem Brett mit geraden Seiten klappt das immer (Satz von Gomory).
+96	Die entfernten Felder haben dieselbe Farbe, also bleiben von einer Farbe 2 Felder mehr übrig. Das Bedecken ist unmöglich.
+97	Körner auf dem Schachbrett
+98	Schreibe die ersten Glieder auf: 1, 2, 4, 8… Was haben sie mit der laufenden Summe gemeinsam?
+99	Die Summe der ersten Glieder ist immer um 1 kleiner als das nächste Glied.
+100	Die Kornzahl verdoppelt sich auf jedem Feld.
+101	Feld 1 hat 2⁰, Feld 2 hat 2¹ …
+102	Türme von Hanoi: Es gibt 3 Stäbe und auf dem ersten einen Stapel Scheiben verschiedener Größe (die größte unten). Ziel: Bewege alle Scheiben auf den letzten Stab.
+103	Bewege immer nur eine Scheibe – die oberste eines Stabs.
+104	Lege nie eine größere Scheibe auf eine kleinere.
+105	Du kannst die freien Stäbe als Parkplätze nutzen.
+106	Regeln der Türme von Hanoi (vor der Aufgabe lesen)
+107	Türme von Hanoi – das Spiel
+108	Um die größte Scheibe zu bewegen, wohin müssen zuerst alle kleineren?
+109	Mindestzahl an Zügen
+110	Finde heraus, wie viele Züge 1, 2 und 3 Scheiben brauchen. Erkenne das Muster.
+111	Für n Scheiben: erst n − 1 Scheiben aus dem Weg, dann ein Zug, dann wieder n − 1 Scheiben.
+112	T(n) sei die Anzahl der Züge. Die größte Scheibe kann sich nur bewegen, wenn die anderen n − 1 Scheiben auf einem anderen Stab liegen: T(n) = T(n − 1) + 1 + T(n − 1).
+113	Wie oft bewegt sich eine Scheibe?
+114	Wie oft bewegt sich die größte Scheibe?
+115	Jede kleinere Scheibe bewegt sich doppelt so oft wie die nächstgrößere.
+116	Vier Stäbe
+117	Bewege zuerst einige Scheiben mit allen vier Stäben auf einen Hilfsstab.
+118	Bewege den Rest mit 3 Stäben, dann bewege den ersten Teil noch einmal.
+119	Teile den Turm: Die obersten k Scheiben bewegen sich mit 4 Stäben, die unteren n − k Scheiben mit 3 Stäben (2^(n−k) − 1 Züge), dann wieder der obere Teil.
+120	Beginne mit einer Richtung, in die die Figur ziehen kann, und markiere jedes Feld, das sie so erreicht.
+121	Um einen Turm aus n Scheiben zu bewegen, brauchst du zuerst die obersten n − 1 Scheiben auf dem Hilfsstab. Welche Scheibe bewegt sich in deiner Stellung zuerst?
+122	Regel: Um n Scheiben zu bewegen, bewege zuerst n − 1 Scheiben auf den Hilfsstab, dann die größte Scheibe zum Ziel und schließlich die n − 1 Scheiben aufs Ziel.
+123	Was kommt als Nächstes?
+124	Sieh dir an, was sich wiederholt.
+125	Zeige auf jede kleine Gruppe.
+126	Obst
+127	Tiere
+128	Fahrzeuge
+129	Bälle
+130	Blumen
+131	Was passt nicht dazu?
+132	Welches passt nicht dazu?
+133	Sag, was jedes davon ist.
+134	Drei sind von der gleichen Art.
+135	Wie viele mehr?
+136	Bilde Paare aus den Bildern beider Reihen.
+137	Zähle, was keinen Partner hat.
+138	Ordne jedem Bild in der kürzeren Reihe eines in der längeren zu.
+139	Gleich
+140	Was hat mehr?
+141	Zähle jede Reihe.
+142	Vergleiche die beiden Zahlen.
+143	Sie sind gleich.
+144	Wie viele sind es zusammen?
+145	Wie viele sind es insgesamt?
+146	Zähle alle Bilder.
+147	Zähle die erste Gruppe, dann addiere die zweite.
+148	Wie viele bleiben übrig?
+149	❌ bedeutet, dass sie weggenommen werden.
+150	Zähle die, die bleiben.
+151	Gruppen
+152	Zähle eine Gruppe.
+153	Addiere nun die anderen Gruppen.
+154	Gleichmäßig verteilen
+155	Verteile gleichmäßig. Wie viele bekommt jedes Kind?
+156	Gib jedem Kind nacheinander eins, bis alles verteilt ist.
+157	Zähle, wie viele ein Kind hat.
+158	Welche Zahl fehlt?
+159	Um wie viel ändern sich die Zahlen?
+160	Addiere dieselbe Zahl.
+161	Zähle die Formen
+162	Berühre jede Form mit dem Finger.
+163	Zähle nur die, die du suchst.
+164	Setze die Zahl ein.
+165	Wie viele Schritte bist du gegangen?
+166	Finde die Zahl für das Fragezeichen.
+167	Probiere Zahlen aus und prüfe.
+168	Nutze die Umkehroperation.
+169	Du fängst an. Wie viele nimmst du zuerst, um zu gewinnen?
+170	🐻 fängt an. Beide spielen so gut sie können – niemand macht einen Fehler. Wer gewinnt?
+171	Der erste Spieler
+172	Der zweite Spieler
+173	Denke rückwärts: Bei wie vielen Streichhölzern gewinnt der Spieler am Zug und bei wie vielen verliert er?
+174	Spiel gegen den Computer
+175	Denke rückwärts: Welche Stellungen sind für den Spieler am Zug verloren?
+176	Wer gewinnt? (Haufen)
+177	Schreibe die Haufengrößen im Binärsystem auf und addiere jede Spalte.
+178	Hat jede Spalte eine gerade Anzahl von Einsen, ist die Stellung für den Spieler am Zug verloren.
+179	Bei Nim-Summe 0 verliert der Spieler am Zug – der zweite Spieler antwortet immer so, dass wieder 0 entsteht. Der zweite Spieler gewinnt.
+180	Nim – der Gewinnzug
+181	Was, wenn du die Haufen gleich groß machst? Was kann dein Gegner dann tun?
+182	Du kannst den Zug deines Gegners immer auf dem anderen Haufen nachmachen.
+183	Schreibe die Haufen im Binärsystem auf. Nach deinem Zug soll jede Spalte eine gerade Anzahl von Einsen haben.
+184	Bei zwei Haufen gleiche sie an: Nimm die Differenz vom größeren.
+185	Schokolade brechen
+186	Wie viele Stücke hast du am Anfang und am Ende? Was passiert mit der Anzahl bei einem Bruch?
+187	Jeder Bruch erzeugt genau ein Stück mehr. Wie du brichst, spielt keine Rolle.
+188	Turnier – Runden
+189	Wie viele Spieler bleiben nach Runde 1 übrig?
+190	Die Anzahl halbiert sich jede Runde. Wie oft kannst du halbieren, bis 1 übrig bleibt?
+191	Turnier – Spiele
+192	Wie viele Spieler müssen ausscheiden, damit ein Sieger übrig bleibt?
+193	Ein Spiel = ein ausgeschiedener Spieler.
+194	Ritter und Lügner
+195	Kommst du zu einem Widerspruch, war deine Annahme falsch – probiere das Gegenteil.
+196	Wir testen Fälle: Ein Ritter muss die Wahrheit sagen, ein Lügner muss lügen. Wir prüfen jede Annahme an allen Sätzen.
+197	Wer hat das Fenster zerbrochen?
+198	Probiere nacheinander jeden Verdächtigen: Wären es die gewesen, wie viele Aussagen wären wahr?
+199	Für jeden Verdächtigen zählen wir, wie viele Aussagen wahr wären:
+200	ist gerade

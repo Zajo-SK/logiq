@@ -1,0 +1,200 @@
+1	Sbírej 30 samolepek.
+2	Kompletní album
+3	Seber všechny samolepky.
+4	První medaile
+5	Dokonči celý svět v jednom ročníku.
+6	Sbírka medailí
+7	Získej 5 medailí za světy.
+8	Plnitel misí
+9	Splň všechny denní mise v 5 dnech.
+10	Týdenní série
+11	Řeš úlohy 7 dní po sobě.
+12	Měsíční série
+13	Řeš úlohy 30 dní po sobě.
+14	Stovka
+15	Dokonči 100 úloh.
+16	Horolezec
+17	Dokonči 300 úloh.
+18	Hvězdná obloha
+19	Získej 150 hvězd.
+20	2000 bodů
+21	Získej 2000 bodů.
+22	Sám na to
+23	Vyřeš 10 úloh bez nápověd.
+24	Dokonalý level
+25	Dokonči level se všemi 3 hvězdami.
+26	Odvážlivec
+27	Vyřeš úlohu z vyššího ročníku.
+28	Zelené 🐸 skáčou jen doprava →, hnědé jen doleva ←. Přesuň se na volný lekn, nebo přeskoč JEDNU žabku (jakékoli barvy), pokud je lekn za ní volný. Zpátky se nesmí. Prohoď jejich místa!
+29	lekn
+30	volný
+31	žabka skáče doprava
+32	žabka skáče doleva
+33	Uvízl jsi 🙂 Vrať tah zpět nebo začni znovu.
+34	Tato žabka teď skákat nemůže. Zkus jinou.
+35	Odtud už cesta dál nevede – vrať tah zpět.
+36	Odtud už cesta dál nevede – vrať tah zpět nebo začni znovu.
+37	Tady je celé řešení:
+38	Zkus to se žabkami: klepni na žabku, která se má pohnout.
+39	Jak žabky skáčou (přečti před úlohou)
+40	Nejdřív to zkus s menším počtem žabek.
+41	Žabky: kolik tahů?
+42	Zapiš si tahy pro 1, 2 a 3 žabky.
+43	Počty tahů jsou 3, 8, 15, 24 … Najdeš vzorec?
+44	Žabky si prohodily místa!
+45	Nejlepší možný počet tahů!
+46	Jde to i méně tahy – zkus to znovu!
+47	Žabek na každé straně
+48	Pravidla
+49	Král
+50	Král chodí o jedno pole libovolným směrem – do strany, nahoru/dolů nebo úhlopříčně.
+51	Dáma
+52	Dáma chodí o libovolný počet polí po přímce – do strany, nahoru/dolů nebo úhlopříčně (věž a střelec dohromady). Nemůže skákat.
+53	Věž
+54	Věž chodí o libovolný počet polí do strany nebo nahoru/dolů. Nemůže skákat.
+55	Střelec
+56	Střelec chodí o libovolný počet polí úhlopříčně, takže zůstává stále na polích jedné barvy. Nemůže skákat.
+57	Kůň skáče do tvaru písmene L: 2 pole jedním směrem a 1 pole kolmo. Je to jediná figurka, která může přeskakovat ostatní.
+58	Pěšec
+59	Pěšec chodí o jedno pole vpřed (nahoru). Z výchozí řady může prvním tahem jít o dvě pole.
+60	Jak se figurka pohybuje? (přečti před úlohou)
+61	Pěšec na cestě
+62	Bílý pěšec stojí na d2 (7. řada shora). Chodí jen vpřed; první tah může být o dvě pole, další vždy o jedno. Kolik nejméně tahů potřebuje k dosažení horní řady (zvýrazněné)?
+63	Kolik řad musí pěšec překonat?
+64	První tah může být o dvě pole – tím ušetříš tah.
+65	Z řady 2 do řady 8 je to 6 řad.
+66	První tah o 2 pole (pěšec je na řadě 4), zbývají 4 řady po jedné: celkem 1 + 4 = 5 tahů.
+67	Kam může figurka jít?
+68	Vezmi figurku směr po směru a spočítej volná pole v každém.
+69	Nejkratší cesta figurky
+70	Najdi, kam se figurka dostane jedním tahem, pak dvěma tahy…
+71	Zkus to i odzadu: z kterých polí se dá dosáhnout cíle jedním tahem?
+72	Hledáme všechny možnosti tah po tahu (1 tah, 2 tahy, …), dokud nenarazíme na cíl.
+73	Věž napadá celou svou řadu a sloupec, takže každá řada obsahuje nejvýš jednu věž – celkem N – a N věží na úhlopříčce se vejde.
+74	Střelci se nenapadají, pokud stojí na různých úhlopříčkách. Obsazením první a poslední řady kromě dvou rohů dostaneme 2N − 2.
+75	Král napadá sousední pole. Rozděl šachovnici na bloky 2×2 – každý obsahuje nejvýš jednoho krále: ⌈N/2⌉².
+76	Kůň napadá jen pole opačné barvy, takže koně na polích jedné barvy se nikdy nenapadají: ⌈N²/2⌉.
+77	Dáma napadá řadu, sloupec a úhlopříčky, takže každá řada obsahuje nejvýš jednu. Pro N ≥ 4 lze umístit N dam.
+78	Žádné dvě se nenapadají
+79	Nejdřív zjisti, která pole jedna figurka napadá. Jak je rozmístit, aby se nepřekrývala?
+80	Zkus malou šachovnici 3×3 nebo 4×4 a hledej vzor.
+81	Označ všechny tahy
+82	Posouvej figurku v duchu směr po směru.
+83	Dovedi figurku do cíle
+84	Najdi pole, z nichž se dá dosáhnout cíle jedním tahem.
+85	Domina na šachovnici
+86	Každé domino pokryje 2 pole.
+87	Kolik polí má šachovnice? Co když je to liché číslo?
+88	Domina a šachovnice
+89	🁢 Dvě pole (✖) chybí. Dá se zbytek pokrýt dominy 1×2?
+90	Ano, dá
+91	Ne, nedá
+92	Každé domino pokryje jedno světlé a jedno tmavé pole. Kolik světlých a tmavých polí zůstane po odebrání?
+93	Pokud se počty neshodují, pokrytí je nemožné.
+94	Domino vždy pokryje jedno světlé a jedno tmavé pole, takže jich musí být stejně.
+95	Odebraná pole mají různé barvy, takže se počty shodují. Na šachovnici se sudými stranami to vždy vyjde (Gomoryho věta).
+96	Odebraná pole mají stejnou barvu, takže jedné barvy zůstane o 2 pole víc. Pokrýt to nejde.
+97	Zrnka na šachovnici
+98	Napiš prvních několik členů: 1, 2, 4, 8… Co mají společného s průběžným součtem?
+99	Součet prvních členů je vždy o 1 menší než další člen.
+100	Počet zrnek se na každém poli zdvojnásobí.
+101	Pole 1 má 2⁰, pole 2 má 2¹ …
+102	Hanojské věže: jsou 3 tyče a na první tyči hromada disků různé velikosti (největší dole). Cíl: přesunout všechny disky na poslední tyč.
+103	Přesouvej vždy jen jeden disk – horní disk z tyče.
+104	Nikdy nepokládej větší disk na menší.
+105	Volné tyče můžeš používat jako odkládací místa.
+106	Pravidla Hanojských věží (přečti před úlohou)
+107	Hanojské věže – hra
+108	Abys přesunul největší disk, kam musí nejdřív všechny menší?
+109	Nejmenší počet tahů
+110	Zjisti, kolik tahů potřebují 1, 2 a 3 disky. Najdi vzor.
+111	Pro n disků: nejdřív n − 1 disků z cesty, pak jeden tah, pak znovu n − 1 disků.
+112	Nechť T(n) je počet tahů. Největší disk se může pohnout, jen když ostatních n − 1 disků leží na jiné tyči: T(n) = T(n − 1) + 1 + T(n − 1).
+113	Jak často se disk pohne?
+114	Kolikrát se pohne největší disk?
+115	Každý menší disk se pohybuje dvakrát častěji než ten o jeden větší.
+116	Čtyři tyče
+117	Nejdřív přesuň některé disky na pomocnou tyč s využitím všech čtyř tyčí.
+118	Zbytek přesuň pomocí 3 tyčí, pak první část přesuň znovu.
+119	Rozděl věž: horních k disků se přesouvá pomocí 4 tyčí, dolních n − k disků pomocí 3 tyčí (2^(n−k) − 1 tahů), pak znovu horní část.
+120	Začni jedním směrem, kterým figurka může jít, a označ každé pole, které tak dosáhne.
+121	Abys přesunul věž o n discích, potřebuješ nejdřív horních n − 1 disků na pomocné tyči. Který disk se v tvé pozici pohne první?
+122	Pravidlo: při přesunu n disků nejdřív přesuň n − 1 disků na pomocnou tyč, pak největší disk do cíle a nakonec n − 1 disků na cíl.
+123	Co bude dál?
+124	Podívej se, co se opakuje.
+125	Ukaž na každou malou skupinku.
+126	ovoce
+127	zvířata
+128	dopravní prostředky
+129	míče
+130	květiny
+131	Co sem nepatří?
+132	Které sem nepatří?
+133	Řekni, co každé z nich je.
+134	Tři jsou stejného druhu.
+135	O kolik víc?
+136	Spáruj obrázky z obou řad.
+137	Spočítej, co nemá pár.
+138	Přiřaď každému z kratší řady jeden z delší.
+139	Stejně
+140	Čeho je víc?
+141	Spočítej každou řadu.
+142	Porovnej obě čísla.
+143	Je jich stejně.
+144	Kolik je to dohromady?
+145	Kolik je to celkem?
+146	Spočítej všechny obrázky.
+147	Spočítej první skupinu a pak přičti druhou.
+148	Kolik zbylo?
+149	❌ znamená, že se odebraly.
+150	Spočítej ty, které zůstaly.
+151	Skupiny
+152	Spočítej jednu skupinu.
+153	Teď přičti ostatní skupiny.
+154	Rozdělit rovným dílem
+155	Rozděl rovným dílem. Kolik dostane každé dítě?
+156	Dávej každému dítěti po jednom, dokud nejsou všechny rozdány.
+157	Spočítej, kolik má jedno dítě.
+158	Které číslo chybí?
+159	O kolik se čísla mění?
+160	Přičítej stejné číslo.
+161	Spočítej tvary
+162	Dotkni se prstem každého tvaru.
+163	Počítej jen ty, které hledáš.
+164	Doplň číslo.
+165	Kolik kroků jsi udělal?
+166	Najdi číslo místo otazníku.
+167	Zkoušej čísla a kontroluj.
+168	Použij opačnou operaci.
+169	Začínáš ty. Kolik jich vezmeš jako první, abys vyhrál?
+170	🐻 začíná. Oba hrají nejlépe, jak umějí – nikdo neudělá chybu. Kdo vyhraje?
+171	První hráč
+172	Druhý hráč
+173	Přemýšlej odzadu: při kolika sirkách hráč na tahu vyhrává a při kolika prohrává?
+174	Hra proti počítači
+175	Přemýšlej odzadu: které pozice jsou pro hráče na tahu prohrávající?
+176	Kdo vyhraje? (hromádky)
+177	Zapiš velikosti hromádek dvojkově a sečti každý sloupec.
+178	Má-li každý sloupec sudý počet jedniček, je pozice pro hráče na tahu prohrávající.
+179	Při nim-součtu 0 hráč na tahu prohrává – druhý hráč vždy odpoví tak, aby se vrátila 0. Druhý hráč vyhrává.
+180	Nim – vítězný tah
+181	Co když hromádky vyrovnáš? Co může soupeř udělat potom?
+182	Soupeřův tah můžeš vždy zopakovat na druhé hromádce.
+183	Zapiš hromádky dvojkově. Po tvém tahu má mít každý sloupec sudý počet jedniček.
+184	Při dvou hromádkách je vyrovnej: z větší vezmi rozdíl.
+185	Lámání čokolády
+186	Kolik dílků máš na začátku a na konci? Co se stane s počtem při jednom zlomení?
+187	Každé zlomení přidá přesně jeden dílek. Na tom, jak lámeš, nezáleží.
+188	Turnaj – kola
+189	Kolik hráčů zůstane po 1. kole?
+190	Počet se každé kolo půlí. Kolikrát můžeš půlit, než zbude 1?
+191	Turnaj – zápasy
+192	Kolik hráčů musí vypadnout, aby zůstal jeden vítěz?
+193	Jeden zápas = jeden vyřazený hráč.
+194	Rytíři a padouši
+195	Pokud dojdeš ke sporu, tvůj předpoklad byl špatný – zkus opak.
+196	Zkoušíme případy: rytíř musí mluvit pravdu, padouch musí lhát. Každý předpoklad ověříme proti všem větám.
+197	Kdo rozbil okno?
+198	Zkus postupně každého podezřelého: kdyby to byl on, kolik výroků by bylo pravdivých?
+199	U každého podezřelého spočítáme, kolik výroků by bylo pravdivých:
+200	je sudé

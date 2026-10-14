@@ -1,0 +1,200 @@
+1	Classe
+2	Classe
+3	Pas de classe
+4	Code de l’enseignant (facultatif)
+5	Code de la classe
+6	Ton nom ou ton pseudo
+7	Rejoindre ton enseignant
+8	Si tu saisis un code, ton enseignant voit ton nom et tes progrès.
+9	Je suis enseignant
+10	Je suis parent
+11	Quelles données nous traitons
+12	Règles d’utilisation
+13	À propos de l’appli
+14	L’appli est encore en développement.
+15	Des bogues peuvent apparaître. Si tu en croises un, signale-le-nous avec l’icône 💬 en bas à gauche.
+16	Masquer
+17	Grenouilles
+18	Bâtonnets
+19	niveaux
+20	autocollants
+21	médailles
+22	Mode admin :
+23	tous les niveaux sont déverrouillés pour la consultation, chaque classe est listée sous « Défis » ci-dessous. Seuls les niveaux que tu as vraiment résolus sont marqués comme terminés.
+24	Tours de Hanoï
+25	Coffre de niveau :
+26	(plus d’étoiles = coffre plus grand)
+27	Grenouilles sauteuses
+28	Échange les grenouilles vertes et brunes
+29	3×3, 4×4, 6×6 et 9×9 · 3 niveaux · notes et indices
+30	Toiles
+31	Nombres et flèches colorées · inspiré de la méthode de Hejný
+32	Exposition
+33	Parcours les salles et les portes · inspiré de la méthode de Hejný
+34	Lire les tâches à voix haute automatiquement
+35	Excellent !
+36	Beau travail !
+37	Correct !
+38	Bravo, bien raisonné !
+39	Presque !
+40	Regarde encore l’énoncé : un détail t’a peut-être échappé.
+41	Essai intéressant !
+42	Même les essais ratés nous apprennent ce qui marche et ce qui ne marche pas. Essaie un autre angle.
+43	Pas encore, mais tu es sur la bonne voie.
+44	Les énigmes sont faites pour essayer. Que changerais-tu ? Utilise un indice si tu veux.
+45	Lire à voix haute
+46	Regarde encore l’énoncé et essaie un autre angle.
+47	Logique et déduction
+48	Problèmes en mots
+49	Combinatoire et stratégie
+50	Pensée spatiale
+51	Énigmes de géométrie
+52	Suites de nombres
+53	Sudoku
+54	Grilles logiques
+55	Labyrinthes et itinéraires
+56	Traversées de rivière
+57	Balances et pièces
+58	Vérité et mensonges
+59	Chiffrements et cryptogrammes
+60	Diagrammes et données
+61	Problèmes d’olympiade
+62	Énigmes d’interrupteurs
+63	Probabilités
+64	Énigmes d’algèbre
+65	Stratégie et jeux
+66	Échecs et pièces
+67	Tâche originale écrite pour cette appli.
+68	Énigme classique librement reformulée (domaine public / folklore), formulation personnelle.
+69	Inspiré d’un type de problème de concours ; nombres et formulation personnels.
+70	Générée par programme à partir d’un modèle (aléatoire à graine), sans contenu de tiers.
+71	Fermier
+72	Loup
+73	Chèvre
+74	Chou
+75	Sans le fermier, le loup mangerait la chèvre ! Essayons autrement.
+76	Sans le fermier, la chèvre mangerait le chou ! Essayons autrement.
+77	Passeur
+78	Renard
+79	Poule
+80	Maïs
+81	Sans le passeur, le renard mangerait la poule ! Essayons autrement.
+82	Sans le passeur, la poule picorerait le maïs ! Essayons autrement.
+83	Astronaute
+84	Robot
+85	Il y aurait plus de robots que d’astronautes sur une rive : ce n’est pas sûr !
+86	Motif de couleurs
+87	De quelle couleur doit être le prochain cercle ?
+88	Remarque comment les couleurs se répètent. Lesquelles alternent ?
+89	Le couple rouge–bleu se répète. Le dernier était rouge.
+90	Regarde le motif : 🔴 🔵 🔴 🔵 🔴 – les couleurs alternent.
+91	Chaque rouge était suivi d’un bleu, donc le prochain cercle est bleu.
+92	Chaussettes dans le noir
+93	Un tiroir contient 4 chaussettes rouges et 4 bleues. Il fait noir, tu ne vois pas les couleurs. Combien de chaussettes dois-tu sortir au minimum pour être sûr d’en avoir deux de la même couleur ?
+94	Essaie le pire des cas : et si tu n’avais pas de chance à chaque fois ?
+95	Deux chaussettes peuvent être de couleurs différentes. Que se passe-t-il avec la troisième ?
+96	Imagine la malchance : la première chaussette est rouge et la deuxième est bleue.
+97	La troisième chaussette est rouge ou bleue – et elle fait toujours une paire avec l’une des deux premières.
+98	Donc 3 chaussettes suffisent. Les mathématiciens appellent cela le principe des tiroirs.
+99	File d’attente de glaces
+100	Adam attend dans une file pour acheter une glace. Il y a 5 enfants devant lui et 4 derrière lui. Combien d’enfants y a-t-il dans la file ?
+101	enfants
+102	Comptes-tu aussi Adam ?
+103	Additionne ceux de devant, Adam et ceux de derrière.
+104	Il y a 5 enfants devant Adam.
+105	Puis il y a Adam lui-même – 1 enfant.
+106	Et 4 derrière lui. Au total 5 + 1 + 4 = 10.
+107	Construction de cubes
+108	Tu regardes d’en haut une construction faite de cubes. Chaque nombre indique combien de cubes sont empilés dans cette tour. Combien y a-t-il de cubes au total ?
+109	cubes
+110	Chaque nombre est une tour. Que dois-tu faire avec les tours ?
+111	Additionne les quatre nombres.
+112	Chaque nombre dit combien de cubes forment la tour.
+113	Total : 2 + 1 + 1 + 3 = 7 cubes.
+114	Nombre secret de billes
+115	Janko a plus de 3 et moins de 6 billes. Son nombre de billes est pair. Combien de billes a-t-il ?
+116	Quels nombres sont plus grands que 3 et plus petits que 6 ?
+117	Il reste 4 et 5. Lequel est pair ?
+118	Les nombres plus grands que 3 et plus petits que 6 sont 4 et 5.
+119	Seul 4 est pair (divisible par deux sans reste).
+120	Qui est le plus petit ?
+121	Ema est plus grande que Dana. Dana est plus grande que Filip. Qui est le plus petit ?
+122	Ema
+123	Dana
+124	Filip
+125	Essaie de les ranger en partant du plus grand.
+126	Ema est la première. Qui vient ensuite si Dana est plus grande que Filip ?
+127	Ema > Dana, donc Ema passe avant Dana.
+128	Dana > Filip, donc Dana passe avant Filip.
+129	Ordre : Ema, Dana, Filip. Le plus petit est Filip.
+130	Tenue pour un voyage
+131	J’ai 3 T-shirts et 2 pantalons. Combien de tenues différentes puis-je faire (un T-shirt et un pantalon) ?
+132	Choisis un T-shirt. Avec combien de pantalons peux-tu le porter ?
+133	C’est vrai pour chacun des 3 T-shirts.
+134	Le premier T-shirt va avec 2 pantalons – 2 possibilités.
+135	Il en va de même pour le deuxième et le troisième T-shirt.
+136	Au total 2 + 2 + 2 = 6, c’est-à-dire 3 × 2 = 6.
+137	Coins des figures
+138	Combien de coins (sommets) ont ensemble 1 carré et 2 triangles ?
+139	Combien de coins a un carré, et un triangle ?
+140	Un carré en a 4, chaque triangle 3. Et maintenant ?
+141	Un carré a 4 coins.
+142	Chaque triangle a 3 coins, deux en ont 6.
+143	Ensemble 4 + 6 = 10 coins.
+144	Suite croissante
+145	Complète avec le nombre suivant : 2, 6, 18, 54, ?
+146	Regarde le rapport : combien de fois 6 est-il plus grand que 2 ?
+147	Essaie aussi 18 : 6. Que remarques-tu ?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3 – on multiplie toujours par trois.
+149	Le nombre suivant est 54 · 3 = 162.
+150	Fractions dans l’ordre
+151	Range les cartes du plus petit nombre au plus grand. Fais-les glisser ou utilise les flèches.
+152	du plus petit au plus grand
+153	Quelle fraction est inférieure à un demi ?
+154	Imagine une pizza : combien de quarts y a-t-il dans chaque carte ?
+155	Réécris tout en quarts : 1/4, 2/4, 3/4, 4/4.
+156	Plus il y a de quarts, plus le nombre est grand.
+157	Livres lus
+158	Le diagramme montre combien de livres la classe a lus chaque jour. Combien de livres ont-ils lus de lundi à jeudi au total ?
+159	Lun
+160	Mar
+161	Mer
+162	Jeu
+163	livres
+164	Lis le nombre au-dessus de chaque barre.
+165	Quel nombre as-tu lu pour jeudi ?
+166	Sur les barres, on lit : 4, 7, 5 et 9.
+167	Total 4 + 7 + 5 + 9 = 25.
+168	Trois amis en rang
+169	Ema, Tom et Lea veulent se mettre en rang pour une photo. De combien de façons différentes peuvent-ils se placer ?
+170	Qui peut se placer en premier ? Combien y a-t-il de possibilités ?
+171	Une fois le premier choisi, combien de possibilités restent-ils pour la deuxième place ?
+172	N’importe lequel des 3 enfants peut être le premier.
+173	Pour la deuxième place il n’en reste que 2, et le dernier enfant prend la troisième (1).
+174	Au total 3 · 2 · 1 = 6 façons.
+175	Balance de fruits
+176	Sur une balance : 1 pomme équilibre 2 prunes et 1 prune équilibre 3 fraises. Combien de fraises équilibrent 1 pomme ?
+177	fraises
+178	Remplace d’abord la pomme par des prunes.
+179	Maintenant remplace chaque prune par des fraises.
+180	1 pomme = 2 prunes.
+181	1 prune = 3 fraises, donc 2 prunes = 2 · 3 = 6 fraises.
+182	La fausse pièce
+183	Parmi 9 pièces, une est fausse – elle est plus légère. Tu as une balance à plateaux sans poids. Combien de pesées suffisent pour trouver à coup sûr la fausse ?
+184	Et si tu partageais les pièces en groupes de trois et comparais deux groupes ?
+185	Après la première pesée, tu sais quel groupe de trois contient la fausse. Comment la trouver parmi trois pièces ?
+186	Partage les pièces en 3 groupes et pèse deux groupes. Le côté le plus léger – ou l’équilibre – te dit quel groupe contient la fausse.
+187	Pèse deux pièces de ce groupe : la plus légère est fausse, et si elles s’équilibrent, c’est la troisième.
+188	Deux pesées au total suffisent.
+189	Qui dit la vérité ?
+190	Matt dit : « Aujourd’hui, c’est mardi. » Zoe dit : « Matt ment. » Nous savons que Zoe dit la vérité. Est-on mardi ?
+191	Oui
+192	Non
+193	On ne peut pas savoir
+194	Si Zoe dit la vérité, qu’en découle-t-il pour Matt ?
+195	Matt ment. Qu’est-ce que cela signifie pour sa phrase ?
+196	Zoe dit la vérité, donc « Matt ment » est vrai.
+197	Comme Matt ment, sa phrase « Aujourd’hui, c’est mardi » n’est pas vraie.
+198	Donc on n’est pas mardi.
+199	Animaux de compagnie
+200	Anna, Boris et Cyril possèdent un chien, un chat et un hamster (un chacun). Anna n’a ni chien ni chat. Boris n’a pas de chien. Que possède Cyril ?

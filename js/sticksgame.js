@@ -56,7 +56,7 @@ VIEWS.sticks = (v, [arg]) => {
       if (first) Store.addBonus(5 + lvl); Store.save(); renderHeader(route()); tone(SND.ok); confetti();
       const stars = G.done[lvl], sh = openSheet(h('div', { class: 'sheetin result' }, h('div', { class: 'burst', 'aria-hidden': 'true' }, '🏆'), h('h2', null, L2('Level ' + lvl + ' hotový!', 'Level ' + lvl + ' complete!')),
         h('div', { class: 'bigstars' }, range(3).map(i => h('span', { class: 'bs' + (i < stars ? ' on' : ''), style: `animation-delay:${.15 + i * .2}s` }, i < stars ? '★' : '☆'))),
-        first ? h('p', { class: 'pts' }, '+' + (5 + lvl) + ' 💎') : null, h('p', { class: 'muted' }, losses ? L2(`Prehry v tomto leveli: ${losses}`, `Losses in this level: ${losses}`) : L2('Bez prehry – skvelé!', 'No losses – great!')),
+        first ? h('p', { class: 'pts' }, '+' + (5 + lvl) + ' 💎') : null, h('p', { class: 'muted' }, losses ? L2(`Prehry v tomto leveli: ${losses}`, `Losses in this level: ${losses}`, "Losses in this level: {0}", [losses]) : L2('Bez prehry – skvelé!', 'No losses – great!')),
         h('div', { class: 'btnrow' }, btn(L2('Zoznam levelov', 'Level list'), 'ghost', () => { sh.close(); go('#/sticks'); }), lvl < STICK_LEVELS ? btn(L2('Ďalší level', 'Next level') + ' ▸', 'primary', () => { sh.close(); go('#/sticks/' + (lvl + 1)); }) : btn(t('close'), 'primary', () => { sh.close(); go('#/sticks'); }))), { dismiss: true, cls: 'center' });
     } };
   const hintBtn = btn('💡 ' + L2('Nápoveda', 'Hint'), 'ghost small', () => { const x = inst && inst.dynHint ? inst.dynHint(Math.min(++hintN, 2)) : null; hintBox.textContent = x ? tx(x.text) : L2('Skús sa pozrieť na hru ešte raz.', 'Take another look at the game.'); });

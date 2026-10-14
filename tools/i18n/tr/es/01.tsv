@@ -1,0 +1,200 @@
+1	Curso
+2	Clase
+3	Sin clase
+4	Código del profesor (opcional)
+5	Código de clase
+6	Tu nombre o apodo
+7	Únete a tu profesor
+8	Si introduces un código, tu profesor verá tu nombre y tu progreso.
+9	Soy profesor
+10	Soy padre o madre
+11	Qué datos tratamos
+12	Normas de uso
+13	Acerca de la app
+14	La app todavía está en desarrollo.
+15	Pueden aparecer errores. Si encuentras alguno, cuéntanoslo con el icono 💬 de abajo a la izquierda.
+16	Ocultar
+17	Ranas
+18	Palillos
+19	niveles
+20	pegatinas
+21	medallas
+22	Modo administrador:
+23	todos los niveles están desbloqueados para explorar; todos los cursos aparecen en «Retos» más abajo. Solo los niveles que has resuelto de verdad se marcan como hechos.
+24	Torres de Hanói
+25	Cofre del nivel:
+26	(más estrellas = cofre más grande)
+27	Ranas saltarinas
+28	Intercambia las ranas verdes y las marrones
+29	3×3, 4×4, 6×6 y 9×9 · 3 niveles · notas y pistas
+30	Telarañas
+31	Números y flechas de colores · inspirado en el método de Hejný
+32	Exposición
+33	Recorre las salas y las puertas · inspirado en el método de Hejný
+34	Leer las tareas en voz alta automáticamente
+35	¡Excelente!
+36	¡Buen trabajo!
+37	¡Correcto!
+38	¡Bravo, qué listo!
+39	¡Casi lo tienes!
+40	Mira la tarea otra vez: quizá se te escapó algún detalle.
+41	¡Intento interesante!
+42	Hasta los intentos equivocados enseñan qué funciona y qué no. Prueba desde otro ángulo.
+43	Todavía no, pero vas por buen camino.
+44	Los acertijos son para probar. ¿Qué cambiarías? Usa una pista si quieres.
+45	Leer en voz alta
+46	Mira la tarea otra vez y prueba desde otro ángulo.
+47	Lógica y deducción
+48	Problemas con texto
+49	Combinatoria y estrategia
+50	Pensamiento espacial
+51	Acertijos de geometría
+52	Patrones numéricos
+53	Sudoku
+54	Cuadrículas lógicas
+55	Laberintos y rutas
+56	Cruces de río
+57	Balanzas y monedas
+58	Verdades y mentiras
+59	Cifrados y criptogramas
+60	Gráficos y datos
+61	Problemas de olimpiada
+62	Acertijos de interruptores
+63	Probabilidad
+64	Acertijos de álgebra
+65	Estrategia y juegos
+66	Ajedrez y piezas
+67	Tarea original escrita para esta app.
+68	Acertijo clásico reformulado libremente (dominio público / folclore), con redacción propia.
+69	Inspirado en un tipo de problema de concurso; con números y redacción propios.
+70	Generado por programa a partir de un patrón (con semilla), sin contenido de terceros.
+71	Granjero
+72	Lobo
+73	Cabra
+74	Col
+75	Barquero
+76	Zorro
+77	Gallina
+78	Maíz
+79	¡Sin el granjero, el lobo se comería a la cabra! Probemos de otra manera.
+80	¡Sin el granjero, la cabra se comería la col! Probemos de otra manera.
+81	¡Sin el barquero, el zorro se comería a la gallina! Probemos de otra manera.
+82	¡Sin el barquero, la gallina picotearía el maíz! Probemos de otra manera.
+83	Astronauta
+84	Robot
+85	¡Habría más robots que astronautas en una orilla: no es seguro!
+86	Patrón de colores
+87	¿De qué color debe ser el siguiente círculo?
+88	Fíjate en cómo se repiten los colores. ¿Cuáles dos se turnan?
+89	La pareja rojo–azul se repite. El último fue rojo.
+90	Mira el patrón: 🔴 🔵 🔴 🔵 🔴: los colores se turnan.
+91	Después de cada rojo venía un azul, así que el siguiente círculo es azul.
+92	Calcetines en la oscuridad
+93	Un cajón tiene 4 calcetines rojos y 4 azules. Está oscuro y no se ven los colores. ¿Cuál es el menor número de calcetines que debes sacar para estar seguro de tener dos del mismo color?
+94	Prueba con el peor caso: ¿y si tienes mala suerte cada vez?
+95	Dos calcetines pueden ser de colores distintos. ¿Qué pasa con el tercero?
+96	Imagina que tienes mala suerte: el primer calcetín es rojo y el segundo, azul.
+97	El tercer calcetín es rojo o azul, y siempre hace pareja con uno de los dos primeros.
+98	Así que 3 calcetines bastan. Los matemáticos lo llaman principio del palomar.
+99	Cola del helado
+100	Adán espera en la cola de los helados. Delante de él hay 5 niños y detrás 4. ¿Cuántos niños hay en la cola?
+101	niños
+102	¿Cuentas también a Adán?
+103	Suma los de delante, Adán y los de detrás.
+104	Delante de Adán hay 5 niños.
+105	Luego está el propio Adán: 1 niño.
+106	Y detrás de él, 4. En total 5 + 1 + 4 = 10.
+107	Construcción con cubos
+108	Miras desde arriba un edificio hecho de cubos. Cada número indica cuántos cubos hay apilados en esa torre. ¿Cuántos cubos hay en total?
+109	cubos
+110	Cada número es una torre. ¿Qué debes hacer con las torres?
+111	Suma los cuatro números.
+112	Cada número dice cuántos cubos forman la torre.
+113	Total: 2 + 1 + 1 + 3 = 7 cubos.
+114	Número secreto de canicas
+115	Janko tiene más de 3 y menos de 6 canicas. Su número de canicas es par. ¿Cuántas canicas tiene?
+116	¿Qué números son mayores que 3 y menores que 6?
+117	Quedan el 4 y el 5. ¿Cuál es par?
+118	Los números mayores que 3 y menores que 6 son 4 y 5.
+119	Solo el 4 es par (divisible entre dos sin resto).
+120	¿Quién es el más bajo?
+121	Ema es más alta que Dana. Dana es más alta que Filip. ¿Quién es el más bajo?
+122	Ema
+123	Dana
+124	Filip
+125	Intenta ordenarlos empezando por el más alto.
+126	Ema es la primera. ¿Quién viene después si Dana es más alta que Filip?
+127	Ema > Dana, así que Ema va antes que Dana.
+128	Dana > Filip, así que Dana va antes que Filip.
+129	Orden: Ema, Dana, Filip. El más bajo es Filip.
+130	Conjunto para un viaje
+131	Tengo 3 camisetas y 2 pantalones. ¿Cuántos conjuntos distintos puedo formar (una camiseta y un pantalón)?
+132	Elige una camiseta. ¿Con cuántos pantalones puedes llevarla?
+133	Esto vale para cada una de las 3 camisetas.
+134	La primera camiseta combina con 2 pantalones: 2 opciones.
+135	Lo mismo ocurre con la segunda y la tercera camiseta.
+136	En total 2 + 2 + 2 = 6, es decir, 3 × 2 = 6.
+137	Esquinas de las figuras
+138	¿Cuántas esquinas (vértices) tienen en total 1 cuadrado y 2 triángulos?
+139	¿Cuántas esquinas tiene un cuadrado y cuántas un triángulo?
+140	Un cuadrado tiene 4, cada triángulo 3. ¿Y ahora?
+141	Un cuadrado tiene 4 esquinas.
+142	Cada triángulo tiene 3 esquinas; dos tienen 6.
+143	En total 4 + 6 = 10 esquinas.
+144	Sucesión creciente
+145	Escribe el siguiente número: 2, 6, 18, 54, ?
+146	Fíjate en la razón: ¿cuántas veces es mayor 6 que 2?
+147	Prueba también 18 : 6. ¿Qué observas?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3: siempre multiplicamos por tres.
+149	El siguiente número es 54 · 3 = 162.
+150	Fracciones en orden
+151	Ordena las tarjetas del número menor al mayor. Arrástralas o usa las flechas.
+152	de menor a mayor
+153	¿Qué fracción es menor que un medio?
+154	Imagina una pizza: ¿cuántos cuartos hay en cada tarjeta?
+155	Reescribe todo en cuartos: 1/4, 2/4, 3/4, 4/4.
+156	Cuantos más cuartos, mayor es el número.
+157	Libros leídos
+158	El gráfico muestra cuántos libros leyó la clase cada día. ¿Cuántos libros leyeron de lunes a jueves en total?
+159	Lun
+160	Mar
+161	Mié
+162	Jue
+163	libros
+164	Lee el número que hay encima de cada barra.
+165	¿Qué número leíste para el jueves?
+166	En las barras leemos: 4, 7, 5 y 9.
+167	Total 4 + 7 + 5 + 9 = 25.
+168	Tres amigos en fila
+169	Ema, Tom y Lea quieren ponerse en fila para una foto. ¿De cuántas maneras distintas pueden colocarse?
+170	¿Quién puede ir primero? ¿Cuántas opciones hay?
+171	Una vez elegido el primero, ¿cuántas opciones quedan para el segundo lugar?
+172	Cualquiera de los 3 niños puede ir primero.
+173	Para el segundo lugar solo quedan 2, y el último niño ocupa el tercero (1).
+174	En total 3 · 2 · 1 = 6 maneras.
+175	Balanza de frutas
+176	En una balanza: 1 manzana equilibra 2 ciruelas y 1 ciruela equilibra 3 fresas. ¿Cuántas fresas equilibran 1 manzana?
+177	fresas
+178	Primero cambia la manzana por ciruelas.
+179	Ahora cambia cada ciruela por fresas.
+180	1 manzana = 2 ciruelas.
+181	1 ciruela = 3 fresas, así que 2 ciruelas = 2 · 3 = 6 fresas.
+182	La moneda falsa
+183	Entre 9 monedas hay una falsa: pesa menos. Tienes una balanza de platillos sin pesas. ¿Cuántas pesadas bastan para encontrar la falsa con seguridad?
+184	¿Y si divides las monedas en grupos de tres y comparas dos grupos?
+185	Tras la primera pesada sabes qué grupo de tres contiene la falsa. ¿Cómo la encuentras entre tres monedas?
+186	Divide las monedas en 3 grupos y pesa dos grupos. El lado más ligero, o el equilibrio, te dice qué grupo tiene la falsa.
+187	Pesa dos monedas de ese grupo: la más ligera es la falsa, y si se equilibran, es la tercera.
+188	En total bastan dos pesadas.
+189	¿Quién dice la verdad?
+190	Matt dice: «Hoy es martes». Zoe dice: «Matt miente». Sabemos que Zoe dice la verdad. ¿Es hoy martes?
+191	Sí
+192	No
+193	No se puede saber
+194	Si Zoe dice la verdad, ¿qué se deduce sobre Matt?
+195	Matt miente. ¿Qué significa eso para su frase?
+196	Zoe dice la verdad, así que «Matt miente» es verdad.
+197	Como Matt miente, su frase «Hoy es martes» no es verdadera.
+198	Así que hoy no es martes.
+199	Mascotas
+200	Ana, Boris y Cirilo tienen un perro, un gato y un hámster (uno cada uno). Ana no tiene ni perro ni gato. Boris no tiene perro. ¿Qué tiene Cirilo?

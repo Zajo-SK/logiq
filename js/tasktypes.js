@@ -241,8 +241,8 @@ TaskTypes.sudoku = {
         for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (!cur[r][c]) { const cs = sudokuCands(cur, n, br, bc, r, c); if (!best || cs.length < best.cs.length) best = { r, c, cs }; }
         if (!best) return null;
         const hl = () => { hlCell = [best.r, best.c]; draw(); };
-        if (idx <= 1) return { text: S(`Pozri sa na políčko v ${best.r + 1}. riadku a ${best.c + 1}. stĺpci. Ktoré čísla tam ešte môžu byť?`, `Look at the cell in row ${best.r + 1}, column ${best.c + 1}. Which numbers can still go there?`), hl };
-        return { text: S(`Do políčka (riadok ${best.r + 1}, stĺpec ${best.c + 1}) patrí ${P.sol[best.r][best.c]}.`, `The cell (row ${best.r + 1}, column ${best.c + 1}) takes ${P.sol[best.r][best.c]}.`), hl };
+        if (idx <= 1) return { text: S(`Pozri sa na políčko v ${best.r + 1}. riadku a ${best.c + 1}. stĺpci. Ktoré čísla tam ešte môžu byť?`, `Look at the cell in row ${best.r + 1}, column ${best.c + 1}. Which numbers can still go there?`, "Look at the cell in row {0}, column {1}. Which numbers can still go there?", [best.r + 1, best.c + 1]), hl };
+        return { text: S(`Do políčka (riadok ${best.r + 1}, stĺpec ${best.c + 1}) patrí ${P.sol[best.r][best.c]}.`, `The cell (row ${best.r + 1}, column ${best.c + 1}) takes ${P.sol[best.r][best.c]}.`, "The cell (row {0}, column {1}) takes {2}.", [best.r + 1, best.c + 1, P.sol[best.r][best.c]]), hl };
       }
     };
   },
@@ -308,7 +308,7 @@ TaskTypes.lights = {
         const sol = lightsSolve(n, D.state); if (!sol.length) return null;
         const hl = () => { hlCell = sol[0]; draw(); };
         if (idx <= 1) return { text: S('Stlač políčko a všimni si, ktoré svetlá sa zmenia. Stačí stlačiť každé políčko najviac raz.', 'Press a cell and notice which lights change. Each cell needs pressing at most once.') };
-        return { text: S(`Skús stlačiť políčko v ${Math.floor(sol[0] / n) + 1}. riadku a ${sol[0] % n + 1}. stĺpci.`, `Try pressing the cell in row ${Math.floor(sol[0] / n) + 1}, column ${sol[0] % n + 1}.`), hl };
+        return { text: S(`Skús stlačiť políčko v ${Math.floor(sol[0] / n) + 1}. riadku a ${sol[0] % n + 1}. stĺpci.`, `Try pressing the cell in row ${Math.floor(sol[0] / n) + 1}, column ${sol[0] % n + 1}.`, "Try pressing the cell in row {0}, column {1}.", [Math.floor(sol[0] / n) + 1, sol[0] % n + 1]), hl };
       }
     };
   },
@@ -316,7 +316,7 @@ TaskTypes.lights = {
     const n = task.data.size, s0 = lightsInit(task), sol = lightsSolve(n, s0);
     return [
       { text: S('Stlačenie políčka prepne seba aj susedov. Dve stlačenia toho istého políčka sa zrušia, preto každé stačí stlačiť najviac raz – na poradí nezáleží.', 'Pressing a cell flips it and its neighbours. Pressing the same cell twice cancels out, so each cell needs at most one press – order does not matter.') },
-      { text: S(`Na začiatku svieti toto. Najkratšie riešenie stlačí ${sol.length} políčok (označené 👆):`, `This is the start. The shortest solution presses ${sol.length} cells (marked 👆):`), render: box => box.append(miniLights(n, s0, sol)) }
+      { text: S(`Na začiatku svieti toto. Najkratšie riešenie stlačí ${sol.length} políčok (označené 👆):`, `This is the start. The shortest solution presses ${sol.length} cells (marked 👆):`, "This is the start. The shortest solution presses {0} cells (marked 👆):", [sol.length]), render: box => box.append(miniLights(n, s0, sol)) }
     ];
   }
 };
@@ -357,7 +357,7 @@ TaskTypes.maze = {
       if (same(path[path.length - 1], M.E)) {
         drawing = false;
         if (path.length - 1 <= M.steps) ctx.solved();
-        else { ctx.wrong(S(`Do cieľa si sa dostal – to je skvelé! Ale existuje kratšia cesta. Tvoja mala ${path.length - 1} krokov, skús nájsť menej.`, `You reached the finish – great! But a shorter route exists. Yours took ${path.length - 1} steps, try for fewer.`)); path = [M.S]; draw(); }
+        else { ctx.wrong(S(`Do cieľa si sa dostal – to je skvelé! Ale existuje kratšia cesta. Tvoja mala ${path.length - 1} krokov, skús nájsť menej.`, `You reached the finish – great! But a shorter route exists. Yours took ${path.length - 1} steps, try for fewer.`, "You reached the finish – great! But a shorter route exists. Yours took {0} steps, try for fewer.", [path.length - 1])); path = [M.S]; draw(); }
       }
     }
     mg.el.addEventListener('pointerdown', e => {
@@ -374,16 +374,16 @@ TaskTypes.maze = {
     draw(); ctx.setCheck(null);
     return {
       dynHint(idx) {
-        if (idx <= 1) return { text: S(`Skús najprv nájsť všetky slepé uličky. Najkratšia cesta má ${M.steps} krokov.`, `First try spotting the dead ends. The shortest route takes ${M.steps} steps.`) };
+        if (idx <= 1) return { text: S(`Skús najprv nájsť všetky slepé uličky. Najkratšia cesta má ${M.steps} krokov.`, `First try spotting the dead ends. The shortest route takes ${M.steps} steps.`, "First try spotting the dead ends. The shortest route takes {0} steps.", [M.steps]) };
         const nxt = M.shortest.slice(1, 4).map(([r, c]) => `(${r + 1},${c + 1})`).join(' → ');
-        return { text: S(`Začiatok najkratšej cesty (riadok, stĺpec): ${nxt} …`, `The start of the shortest route (row, column): ${nxt} …`) };
+        return { text: S(`Začiatok najkratšej cesty (riadok, stĺpec): ${nxt} …`, `The start of the shortest route (row, column): ${nxt} …`, "The start of the shortest route (row, column): {0} …", [nxt]) };
       }
     };
   },
   explainSteps(task) {
     const M = mazeInfo(task.data.rows);
     return [{
-      text: S(`Slepé uličky preskúmame a vyradíme. Najkratšia cesta má ${M.steps} krokov a vedie takto:`, `We explore and rule out dead ends. The shortest route takes ${M.steps} steps and goes like this:`),
+      text: S(`Slepé uličky preskúmame a vyradíme. Najkratšia cesta má ${M.steps} krokov a vedie takto:`, `We explore and rule out dead ends. The shortest route takes ${M.steps} steps and goes like this:`, "We explore and rule out dead ends. The shortest route takes {0} steps and goes like this:", [M.steps]),
       render: box => { const mg = mazeGrid(task.data.rows); M.shortest.forEach(([r, c]) => mg.at(r, c).classList.add('path')); box.append(mg.el); }
     }];
   }
@@ -504,7 +504,7 @@ TaskTypes.ferry = {
     const cfg = FERRY[task.data.cfg], start = { pos: cfg.cast.map(() => 0), boat: 0 }, sol = Ferry.solve(cfg, start);
     const steps = [{ text: S('Poďme si to prehrať krok za krokom:', 'Let us replay it step by step:'), render: box => box.append(Ferry.scene(cfg, start).el) }];
     sol.forEach((m, i) => steps.push({ text: Ferry.moveText(cfg, m.from, m.combo), render: box => box.append(Ferry.scene(cfg, m.to).el) }));
-    steps.push({ text: S(`Hotovo! Všetci sú na druhom brehu za ${sol.length} ťahov – a menej sa to nedá (overil to počítač prehľadaním všetkých možností).`, `Done! Everyone is across in ${sol.length} moves – and it cannot be done in fewer (a computer checked every possibility).`) });
+    steps.push({ text: S(`Hotovo! Všetci sú na druhom brehu za ${sol.length} ťahov – a menej sa to nedá (overil to počítač prehľadaním všetkých možností).`, `Done! Everyone is across in ${sol.length} moves – and it cannot be done in fewer (a computer checked every possibility).`, "Done! Everyone is across in {0} moves – and it cannot be done in fewer (a computer checked every possibility).", [sol.length]) });
     return steps;
   }
 };
@@ -599,14 +599,14 @@ TaskTypes.nim = {
       const N = d.piles[0], lose = range(N + 1).filter(n => !Nim.win([n], d.moves, d.misere, memo));
       steps.push({ text: S(`Najprv zistíme „prehrávajúce“ počty – ak na kope zostane taký počet a si na ťahu, súper ťa vždy prekoná. Sú to: ${lose.join(', ')}.`, `First find the “losing” counts – if you are to move at such a count, your opponent can always beat you. They are: ${lose.join(', ')}.`) });
       const best = Nim.best(d.piles, d.moves, d.misere, memo);
-      steps.push({ text: d.first === 'you' ? S(`Začínaš pri ${N}: vezmi ${best[0].t}, aby zostalo ${N - best[0].t} (prehrávajúci počet pre súpera). Potom vždy dopĺňaj jeho ťah tak, aby si znova trafil prehrávajúci počet.`, `You start at ${N}: take ${best[0].t} to leave ${N - best[0].t} (a losing count for your opponent). Then always answer so that you land on a losing count again.`) : S(`Počítač začína pri ${N}, čo je prehrávajúci počet pre hráča na ťahu. Nech urobí akýkoľvek ťah, ty odpovieš tak, aby si znova nechal súperovi prehrávajúci počet.`, `The computer starts at ${N}, a losing count for the player to move. Whatever it does, answer by leaving a losing count again.`) });
+      steps.push({ text: d.first === 'you' ? S(`Začínaš pri ${N}: vezmi ${best[0].t}, aby zostalo ${N - best[0].t} (prehrávajúci počet pre súpera). Potom vždy dopĺňaj jeho ťah tak, aby si znova trafil prehrávajúci počet.`, `You start at ${N}: take ${best[0].t} to leave ${N - best[0].t} (a losing count for your opponent). Then always answer so that you land on a losing count again.`, "You start at {0}: take {1} to leave {2} (a losing count for your opponent). Then always answer so that you land on a losing count again.", [N, best[0].t, N - best[0].t]) : S(`Počítač začína pri ${N}, čo je prehrávajúci počet pre hráča na ťahu. Nech urobí akýkoľvek ťah, ty odpovieš tak, aby si znova nechal súperovi prehrávajúci počet.`, `The computer starts at ${N}, a losing count for the player to move. Whatever it does, answer by leaving a losing count again.`, "The computer starts at {0}, a losing count for the player to move. Whatever it does, answer by leaving a losing count again.", [N]) });
     } else {
       const x = d.piles.reduce((a, b) => a ^ b, 0);
       steps.push({ text: S(`Spočítame „nim-súčet“ (XOR) veľkostí kôp ${d.piles.join(', ')} v dvojkovej sústave: je ${x}. Ak je 0, hráč na ťahu prehráva; inak vie ťahom dosiahnuť 0.`, `Compute the “nim-sum” (XOR) of the pile sizes ${d.piles.join(', ')} in binary: it is ${x}. If 0, the player to move loses; otherwise a move can make it 0.`) });
       if (d.piles.length === 2) steps.push({ text: S('Pri dvoch kopách stačí kopy vyrovnať: z väčšej vezmi rozdiel. Potom opakuj súperov ťah na druhej kope.', 'With two piles just equalise them: take the difference from the bigger one. Then mirror your opponent on the other pile.') });
       if (d.misere) steps.push({ text: S('Pri hre „kto vezme poslednú, prehráva“ hraj rovnako, kým nezostanú iba kopy s 1 zápalkou – vtedy nechaj súperovi nepárny počet takých kôp.', 'In the “last one loses” version play the same until only piles of size 1 remain – then leave your opponent an odd number of such piles.') });
       const best = Nim.best(d.piles, null, d.misere, memo);
-      if (d.first === 'you' && best.length) steps.push({ text: S(`Tu vyhráš napríklad ťahom: vezmi ${best[0].t} z ${best[0].i + 1}. kopy.`, `Here you win with, for example: take ${best[0].t} from pile ${best[0].i + 1}.`) });
+      if (d.first === 'you' && best.length) steps.push({ text: S(`Tu vyhráš napríklad ťahom: vezmi ${best[0].t} z ${best[0].i + 1}. kopy.`, `Here you win with, for example: take ${best[0].t} from pile ${best[0].i + 1}.`, "Here you win with, for example: take {0} from pile {1}.", [best[0].t, best[0].i + 1]) });
     }
     return steps;
   }

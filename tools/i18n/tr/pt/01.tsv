@@ -1,0 +1,200 @@
+1	Série
+2	Turma
+3	Sem turma
+4	Código do professor (opcional)
+5	Código da turma
+6	Seu nome ou apelido
+7	Entrar na turma do professor
+8	Se você digitar um código, seu professor vê seu nome e seu progresso.
+9	Sou professor
+10	Sou pai/mãe
+11	Quais dados tratamos
+12	Regras de uso
+13	Sobre o app
+14	O app ainda está em desenvolvimento.
+15	Podem aparecer erros. Se encontrar algum, avise-nos pelo ícone 💬 no canto inferior esquerdo.
+16	Ocultar
+17	Sapos
+18	Palitos
+19	níveis
+20	figurinhas
+21	medalhas
+22	Modo administrador:
+23	todos os níveis estão desbloqueados para navegação, todas as séries aparecem em “Desafios” abaixo. Só os níveis que você realmente resolveu são marcados como concluídos.
+24	Torre de Hanói
+25	Baú do nível:
+26	(mais estrelas = baú maior)
+27	Sapos saltadores
+28	Troque os sapos verdes e marrons de lugar
+29	3×3, 4×4, 6×6 e 9×9 · 3 níveis · anotações e dicas
+30	Teias
+31	Números e setas coloridas · inspirado no método de Hejný
+32	Exposição
+33	Passeie pelas salas e portas · inspirado no método de Hejný
+34	Ler as tarefas em voz alta automaticamente
+35	Excelente!
+36	Ótimo trabalho!
+37	Correto!
+38	Bravo, pensou bem!
+39	Quase lá!
+40	Olhe a tarefa mais uma vez – algum detalhe pode ter passado despercebido.
+41	Tentativa interessante!
+42	Até as tentativas erradas nos ensinam o que funciona e o que não funciona. Tente por outro ângulo.
+43	Ainda não, mas você está no caminho certo.
+44	Os quebra-cabeças são para tentar. O que você mudaria? Use uma dica se quiser.
+45	Ler em voz alta
+46	Olhe a tarefa mais uma vez e tente por outro ângulo.
+47	Lógica e dedução
+48	Problemas com texto
+49	Combinatória e estratégia
+50	Pensamento espacial
+51	Quebra-cabeças de geometria
+52	Padrões numéricos
+53	Sudoku
+54	Grades lógicas
+55	Labirintos e rotas
+56	Travessias de rio
+57	Balanças e moedas
+58	Verdades e mentiras
+59	Cifras e criptogramas
+60	Gráficos e dados
+61	Problemas de olimpíada
+62	Quebra-cabeças de interruptores
+63	Probabilidade
+64	Enigmas de álgebra
+65	Estratégia e jogos
+66	Xadrez e peças
+67	Tarefa original escrita para este app.
+68	Quebra-cabeça clássico reescrito livremente (domínio público / folclore), com redação própria.
+69	Inspirado em um tipo de problema de competição; números e redação próprios.
+70	Gerado por programa a partir de um padrão (semente), sem conteúdo de terceiros.
+71	Fazendeiro
+72	Lobo
+73	Cabra
+74	Repolho
+75	Sem o fazendeiro, o lobo comeria a cabra! Vamos tentar de outro jeito.
+76	Sem o fazendeiro, a cabra comeria o repolho! Vamos tentar de outro jeito.
+77	Remador
+78	Raposa
+79	Galinha
+80	Milho
+81	Sem o remador, a raposa comeria a galinha! Vamos tentar de outro jeito.
+82	Sem o remador, a galinha bicaria o milho! Vamos tentar de outro jeito.
+83	Astronauta
+84	Robô
+85	Haveria mais robôs do que astronautas em uma margem – não é seguro!
+86	Padrão de cores
+87	De que cor deve ser o próximo círculo?
+88	Observe como as cores se repetem. Quais duas se alternam?
+89	O par vermelho–azul se repete. O último foi vermelho.
+90	Olhe o padrão: 🔴 🔵 🔴 🔵 🔴 – as cores se alternam.
+91	Depois de cada vermelho veio um azul, então o próximo círculo é azul.
+92	Meias no escuro
+93	Uma gaveta tem 4 meias vermelhas e 4 meias azuis. Está escuro, então você não enxerga as cores. Qual é o menor número de meias que você precisa tirar para ter certeza de que tem duas da mesma cor?
+94	Pense no pior caso: e se você tiver azar todas as vezes?
+95	Duas meias podem ser de cores diferentes. O que acontece com a terceira?
+96	Imagine o azar: a primeira meia é vermelha e a segunda é azul.
+97	A terceira meia é vermelha ou azul – e sempre forma par com uma das duas primeiras.
+98	Então 3 meias bastam. Os matemáticos chamam isso de princípio da casa dos pombos.
+99	Fila do sorvete
+100	Adão está em uma fila de sorvete. Há 5 crianças na frente dele e 4 atrás. Quantas crianças há na fila?
+101	crianças
+102	Você está contando o Adão também?
+103	Some as crianças da frente, o Adão e as de trás.
+104	Há 5 crianças na frente do Adão.
+105	Depois vem o próprio Adão – 1 criança.
+106	E 4 atrás dele. No total 5 + 1 + 4 = 10.
+107	Construção de cubos
+108	Você olha de cima para uma construção feita de cubos. Cada número mostra quantos cubos estão empilhados naquela torre. Quantos cubos há no total?
+109	cubos
+110	Cada número é uma torre. O que você precisa fazer com as torres?
+111	Some os quatro números.
+112	Cada número diz quantos cubos formam a torre.
+113	Total: 2 + 1 + 1 + 3 = 7 cubos.
+114	Número secreto de bolinhas de gude
+115	Janko tem mais de 3 e menos de 6 bolinhas de gude. O número de bolinhas dele é par. Quantas bolinhas ele tem?
+116	Quais números são maiores que 3 e menores que 6?
+117	Sobraram 4 e 5. Qual deles é par?
+118	Os números maiores que 3 e menores que 6 são 4 e 5.
+119	Só o 4 é par (divisível por dois sem resto).
+120	Quem é o mais baixo?
+121	Ema é mais alta que Dana. Dana é mais alta que Filipe. Quem é o mais baixo?
+122	Ema
+123	Dana
+124	Filipe
+125	Tente alinhá-los do mais alto ao mais baixo.
+126	Ema vem primeiro. Quem vem depois, se Dana é mais alta que Filipe?
+127	Ema > Dana, então Ema vem antes de Dana.
+128	Dana > Filipe, então Dana vem antes de Filipe.
+129	Ordem: Ema, Dana, Filipe. O mais baixo é Filipe.
+130	Roupa para um passeio
+131	Tenho 3 camisetas e 2 calças. Quantos looks diferentes posso montar (uma camiseta e uma calça)?
+132	Escolha uma camiseta. Com quantas calças você pode usá-la?
+133	Isso vale para cada uma das 3 camisetas.
+134	A primeira camiseta combina com 2 calças – 2 opções.
+135	O mesmo vale para a segunda e a terceira camiseta.
+136	No total 2 + 2 + 2 = 6, isto é, 3 × 2 = 6.
+137	Cantos das figuras
+138	Quantos cantos (vértices) 1 quadrado e 2 triângulos têm ao todo?
+139	Quantos cantos tem um quadrado e quantos tem um triângulo?
+140	Um quadrado tem 4, cada triângulo tem 3. E agora?
+141	Um quadrado tem 4 cantos.
+142	Cada triângulo tem 3 cantos, dois têm 6.
+143	Juntos 4 + 6 = 10 cantos.
+144	Sequência crescente
+145	Complete com o próximo número: 2, 6, 18, 54, ?
+146	Olhe a razão: quantas vezes 6 é maior que 2?
+147	Tente também 18 : 6. O que você percebe?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3 – sempre multiplicamos por três.
+149	O próximo número é 54 · 3 = 162.
+150	Frações em ordem
+151	Ordene os cartões do menor número para o maior. Arraste-os ou use as setas.
+152	do menor para o maior
+153	Qual fração é menor que um meio?
+154	Imagine uma pizza: quantos quartos há em cada cartão?
+155	Reescreva tudo em quartos: 1/4, 2/4, 3/4, 4/4.
+156	Quanto mais quartos, maior o número.
+157	Livros lidos
+158	O gráfico mostra quantos livros a turma leu em cada dia. Quantos livros leram de segunda a quinta ao todo?
+159	Seg
+160	Ter
+161	Qua
+162	Qui
+163	livros
+164	Leia o número acima de cada barra.
+165	Que número você leu para quinta-feira?
+166	Pelas barras lemos: 4, 7, 5 e 9.
+167	Total 4 + 7 + 5 + 9 = 25.
+168	Três amigos em fila
+169	Ema, Tom e Lea querem se alinhar para uma foto. De quantas ordens diferentes eles podem ficar?
+170	Quem pode ficar em primeiro? Quantas opções há?
+171	Depois de escolher o primeiro, quantas opções restam para o segundo lugar?
+172	Qualquer uma das 3 crianças pode ser a primeira.
+173	Para o segundo lugar restam só 2, e a última criança fica em terceiro (1).
+174	No total 3 · 2 · 1 = 6 maneiras.
+175	Balança de frutas
+176	Em uma balança: 1 maçã equilibra 2 ameixas e 1 ameixa equilibra 3 morangos. Quantos morangos equilibram 1 maçã?
+177	morangos
+178	Primeiro troque a maçã por ameixas.
+179	Agora troque cada ameixa por morangos.
+180	1 maçã = 2 ameixas.
+181	1 ameixa = 3 morangos, então 2 ameixas = 2 · 3 = 6 morangos.
+182	A moeda falsa
+183	Entre 9 moedas, uma é falsa – ela é mais leve. Você tem uma balança de dois pratos, sem pesos. Quantas pesagens bastam para encontrar a falsa com certeza?
+184	E se você dividir as moedas em grupos de três e comparar dois grupos?
+185	Depois da primeira pesagem você sabe qual grupo de três tem a falsa. Como achá-la entre três moedas?
+186	Divida as moedas em 3 grupos e pese dois grupos. O lado mais leve – ou o equilíbrio – mostra qual grupo tem a falsa.
+187	Pese duas moedas desse grupo: a mais leve é a falsa, e se equilibrarem, é a terceira.
+188	Duas pesagens no total bastam.
+189	Quem diz a verdade?
+190	Matt diz: “Hoje é terça-feira.” Zoe diz: “Matt está mentindo.” Sabemos que Zoe diz a verdade. Hoje é terça-feira?
+191	Sim
+192	Não
+193	Não dá para saber
+194	Se Zoe diz a verdade, o que se conclui sobre Matt?
+195	Matt mente. O que isso significa para a frase dele?
+196	Zoe diz a verdade, então “Matt está mentindo” é verdadeiro.
+197	Como Matt mente, a frase dele “Hoje é terça-feira” não é verdadeira.
+198	Então hoje não é terça-feira.
+199	Bichinhos
+200	Anna, Boris e Cyril têm um cachorro, um gato e um hamster (um cada). Anna não tem nem cachorro nem gato. Boris não tem cachorro. O que Cyril tem?

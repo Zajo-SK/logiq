@@ -8,7 +8,7 @@ const sdkLevelDesc = (n, l) => n === 9 ? [L2('Stačí technika „jediný kandid
 const sdkSizeName = n => n === 3 ? '3×3' : n === 4 ? '4×4' : n === 6 ? '6×6 (2×3)' : '9×9 (3×3)';
 const fmtTime = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 const TECH_NAME = () => [L2('Jediný kandidát', 'Naked single'), L2('Skrytý jediný', 'Hidden single'), L2('Uzamknuté kandidáty', 'Locked candidates'), L2('Odkrytá dvojica', 'Naked pair'), L2('Skrytá dvojica', 'Hidden pair'), L2('Odkrytá trojica', 'Naked triple'), L2('X-Wing', 'X-Wing')];
-const unitText = (n, ui) => { const u = SudokuEngine.unitName(n, ui); return u.kind === 'row' ? L2(`${u.k}. riadku`, `row ${u.k}`) : u.kind === 'col' ? L2(`${u.k}. stĺpci`, `column ${u.k}`) : L2(`${u.k}. boxe`, `box ${u.k}`); };
+const unitText = (n, ui) => { const u = SudokuEngine.unitName(n, ui); return u.kind === 'row' ? L2(`${u.k}. riadku`, `row ${u.k}`, "row {0}", [u.k]) : u.kind === 'col' ? L2(`${u.k}. stĺpci`, `column ${u.k}`, "column {0}", [u.k]) : L2(`${u.k}. boxe`, `box ${u.k}`, "box {0}", [u.k]); };
 function sdkPuzzle(n, level, seed) {
   const bank = typeof SDK_BANK !== 'undefined' && SDK_BANK[n] && SDK_BANK[n][level];
   const r = rng(seed);
@@ -90,25 +90,25 @@ VIEWS.sudoku = (v) => {
     if (conflicts().size) { toast(L2('Najprv oprav opakujúce sa čísla („!“).', 'First fix the repeating numbers (“!”).')); return; }
     const flat = cur.flat(), step = SudokuEngine.nextStep(flat, n), names = TECH_NAME(), cn = i => `(${Math.floor(i / n) + 1}, ${i % n + 1})`;
     G.hints++;
-    const fillFewest = () => { let b = null; for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (!cur[r][c]) { const cs = sudokuCands(cur, n, br, bc, r, c); if (!b || cs.length < b.cs.length) b = { r, c, cs }; } if (!b) return; sel = [b.r, b.c]; const sv = P.sol[b.r][b.c]; undo.push({ i: key(b.r, b.c), r: b.r, c: b.c, val: 0, nt: [] }); cur[b.r][b.c] = sv; hl = null; hstep = null; toast(L2(`Do políčka ${cn(key(b.r, b.c))} patrí ${sv}.`, `Cell ${cn(key(b.r, b.c))} takes ${sv}.`)); save(); draw(); checkWin(); };
+    const fillFewest = () => { let b = null; for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (!cur[r][c]) { const cs = sudokuCands(cur, n, br, bc, r, c); if (!b || cs.length < b.cs.length) b = { r, c, cs }; } if (!b) return; sel = [b.r, b.c]; const sv = P.sol[b.r][b.c]; undo.push({ i: key(b.r, b.c), r: b.r, c: b.c, val: 0, nt: [] }); cur[b.r][b.c] = sv; hl = null; hstep = null; toast(L2(`Do políčka ${cn(key(b.r, b.c))} patrí ${sv}.`, `Cell ${cn(key(b.r, b.c))} takes ${sv}.`, "Cell {0} takes {1}.", [cn(key(b.r, b.c)), sv])); save(); draw(); checkWin(); };
     if (hstep && hl) {
-      if (hstep.place) { const [i, d] = hstep.place; sel = [Math.floor(i / n), i % n]; undo.push({ i, r: sel[0], c: sel[1], val: 0, nt: [] }); cur[sel[0]][sel[1]] = d; hl = null; hstep = null; toast(L2(`Do políčka ${cn(i)} patrí ${d}.`, `Cell ${cn(i)} takes ${d}.`)); save(); draw(); checkWin(); }
-      else if (!hstep.shown) { const e = hstep.elim.map(([c, m]) => `${cn(c)}: ${SudokuEngine.bits(m).join(',')}`).join(' · '); hstep.shown = true; toast(L2(`Vyškrtni kandidátov – ${e}. Ďalšia nápoveda vyplní jedno políčko.`, `Cross out candidates – ${e}. Another hint fills one cell.`)); }
+      if (hstep.place) { const [i, d] = hstep.place; sel = [Math.floor(i / n), i % n]; undo.push({ i, r: sel[0], c: sel[1], val: 0, nt: [] }); cur[sel[0]][sel[1]] = d; hl = null; hstep = null; toast(L2(`Do políčka ${cn(i)} patrí ${d}.`, `Cell ${cn(i)} takes ${d}.`, "Cell {0} takes {1}.", [cn(i), d])); save(); draw(); checkWin(); }
+      else if (!hstep.shown) { const e = hstep.elim.map(([c, m]) => `${cn(c)}: ${SudokuEngine.bits(m).join(',')}`).join(' · '); hstep.shown = true; toast(L2(`Vyškrtni kandidátov – ${e}. Ďalšia nápoveda vyplní jedno políčko.`, `Cross out candidates – ${e}. Another hint fills one cell.`, "Cross out candidates – {0}. Another hint fills one cell.", [e])); }
       else fillFewest();
       return;
     }
     if (!step) { fillFewest(); return; }
     hstep = step; hl = new Set(step.cells.map(c => typeof c === 'number' ? c : -1)); sel = step.place ? [Math.floor(step.place[0] / n), step.place[0] % n] : sel;
     const nm = names[step.t];
-    let msg = L2(`Technika: ${nm}. `, `Technique: ${nm}. `);
-    if (step.t === 0) msg += L2(`V políčku ${cn(step.place[0])} môže byť len jedno číslo.`, `Cell ${cn(step.place[0])} can hold only one number.`);
-    else if (step.t === 1) msg += L2(`V ${unitText(n, step.unit)} sa jedno číslo dá umiestniť len na jedno políčko – pozri zvýraznené.`, `In ${unitText(n, step.unit)} one number fits in only one cell – look at the highlighted one.`);
-    else if (step.t === 2) msg += L2(`Číslo ${step.digit} v ${unitText(n, step.unit)} je „uzamknuté“ aj v ${unitText(n, step.unit2)} – inde v ňom ho môžeš vyškrtnúť.`, `The number ${step.digit} in ${unitText(n, step.unit)} is “locked” within ${unitText(n, step.unit2)} – cross it out elsewhere there.`);
-    else if (step.t === 6) msg += L2(`Číslo ${step.digit} tvorí obdĺžnik X-Wing – vyškrtni ho v príslušných stĺpcoch/riadkoch.`, `The number ${step.digit} forms an X-Wing rectangle – cross it out in the matching lines.`);
+    let msg = L2(`Technika: ${nm}. `, `Technique: ${nm}. `, "Technique: {0}. ", [nm]);
+    if (step.t === 0) msg += L2(`V políčku ${cn(step.place[0])} môže byť len jedno číslo.`, `Cell ${cn(step.place[0])} can hold only one number.`, "Cell {0} can hold only one number.", [cn(step.place[0])]);
+    else if (step.t === 1) msg += L2(`V ${unitText(n, step.unit)} sa jedno číslo dá umiestniť len na jedno políčko – pozri zvýraznené.`, `In ${unitText(n, step.unit)} one number fits in only one cell – look at the highlighted one.`, "In {0} one number fits in only one cell – look at the highlighted one.", [unitText(n, step.unit)]);
+    else if (step.t === 2) msg += L2(`Číslo ${step.digit} v ${unitText(n, step.unit)} je „uzamknuté“ aj v ${unitText(n, step.unit2)} – inde v ňom ho môžeš vyškrtnúť.`, `The number ${step.digit} in ${unitText(n, step.unit)} is “locked” within ${unitText(n, step.unit2)} – cross it out elsewhere there.`, "The number {0} in {1} is “locked” within {2} – cross it out elsewhere there.", [step.digit, unitText(n, step.unit), unitText(n, step.unit2)]);
+    else if (step.t === 6) msg += L2(`Číslo ${step.digit} tvorí obdĺžnik X-Wing – vyškrtni ho v príslušných stĺpcoch/riadkoch.`, `The number ${step.digit} forms an X-Wing rectangle – cross it out in the matching lines.`, "The number {0} forms an X-Wing rectangle – cross it out in the matching lines.", [step.digit]);
     else msg += L2(`Zvýraznené políčka v ${unitText(n, step.unit)} obsahujú ${step.digits.join(', ')} – ostatné kandidáty z nich vyškrtni.`, `The highlighted cells in ${unitText(n, step.unit)} hold ${step.digits.join(', ')} – eliminate the other candidates.`);
     toast(msg + L2(' (Ďalšia nápoveda ukáže viac.)', ' (Another hint shows more.)')); save(); draw();
   };
-  const check = () => { flash = new Set(); for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (cur[r][c] && cur[r][c] !== P.sol[r][c]) flash.add(key(r, c)); draw(); toast(flash.size ? L2(`Nesprávnych políčok: ${flash.size} (označené „!“).`, `Wrong cells: ${flash.size} (marked “!”).`) : L2('Zatiaľ je všetko správne – pokračuj!', 'All correct so far – keep going!')); setTimeout(() => { flash = new Set(); draw(); }, 3500); };
+  const check = () => { flash = new Set(); for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (cur[r][c] && cur[r][c] !== P.sol[r][c]) flash.add(key(r, c)); draw(); toast(flash.size ? L2(`Nesprávnych políčok: ${flash.size} (označené „!“).`, `Wrong cells: ${flash.size} (marked “!”).`, "Wrong cells: {0} (marked “!”).", [flash.size]) : L2('Zatiaľ je všetko správne – pokračuj!', 'All correct so far – keep going!')); setTimeout(() => { flash = new Set(); draw(); }, 3500); };
   const undoMove = () => { const u = undo.pop(); if (!u) return; cur[u.r][u.c] = u.val; if (u.nt.length) notes[u.i] = u.nt; else delete notes[u.i]; hl = null; save(); draw(); };
   const chip = (label, on, fn) => h('button', { type: 'button', class: 'fchip' + (on ? ' on' : ''), 'aria-pressed': on, onclick: fn }, label);
   const best = S0.best[`${n}-${G.level}`];

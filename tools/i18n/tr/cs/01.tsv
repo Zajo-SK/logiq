@@ -1,0 +1,200 @@
+1	Ročník
+2	Třída
+3	Bez třídy
+4	Kód od učitele (nepovinné)
+5	Kód třídy
+6	Tvé jméno nebo přezdívka
+7	Připoj se ke svému učiteli
+8	Když zadáš kód, učitel uvidí tvé jméno a pokrok.
+9	Jsem učitel
+10	Jsem rodič
+11	Jaké údaje zpracováváme
+12	Pravidla používání
+13	O aplikaci
+14	Aplikace je stále ve vývoji.
+15	Mohou se objevit chyby. Když na nějakou narazíš, napiš nám přes ikonu 💬 vlevo dole.
+16	Skrýt
+17	Žabky
+18	Špejle
+19	levelů
+20	samolepek
+21	medailí
+22	Režim správce:
+23	všechny levely jsou odemčené k prohlížení, každý ročník najdeš níže v části „Výzvy“. Jako splněné se označí jen levely, které jsi opravdu vyřešil.
+24	Hanojské věže
+25	Truhla za level:
+26	(více hvězd = větší truhla)
+27	Skákající žabky
+28	Prohoď zelené a hnědé žabky
+29	3×3, 4×4, 6×6 a 9×9 · 3 levely · poznámky a nápovědy
+30	Pavučiny
+31	Čísla a barevné šipky · inspirováno Hejného metodou
+32	Výstavisko
+33	Procházej místnostmi a dveřmi · inspirováno Hejného metodou
+34	Automaticky předčítat úlohy
+35	Výborně!
+36	Skvělá práce!
+37	Správně!
+38	Bravo, šikovně vymyšleno!
+39	Skoro to máš!
+40	Podívej se na zadání ještě jednou – nějaký detail ti mohl uniknout.
+41	Zajímavý pokus!
+42	I špatné pokusy nás učí, co funguje a co ne. Zkus to z jiného úhlu.
+43	Ještě ne, ale jsi na správné cestě.
+44	Hádanky jsou od toho, aby se zkoušely. Co bys změnil? Klidně použij nápovědu.
+45	Předčítat
+46	Podívej se na zadání ještě jednou a zkus to z jiného úhlu.
+47	Logika a dedukce
+48	Slovní úlohy
+49	Kombinatorika a strategie
+50	Prostorová představivost
+51	Geometrické hádanky
+52	Číselné řady
+53	Sudoku
+54	Logické mřížky
+55	Bludiště a trasy
+56	Přeprava přes řeku
+57	Váhy a mince
+58	Pravda a lež
+59	Šifry a kryptogramy
+60	Grafy a data
+61	Olympiádní úlohy
+62	Hádanky s přepínači
+63	Pravděpodobnost
+64	Algebraické hádanky
+65	Strategie a hry
+66	Šachy a figurky
+67	Původní úloha napsaná pro tuto aplikaci.
+68	Volně přepracovaná klasická hádanka (volné dílo / lidová), vlastní formulace.
+69	Inspirováno typem soutěžní úlohy; vlastní čísla a formulace.
+70	Programově vygenerováno podle vzoru (seed), žádný cizí obsah.
+71	Farmář
+72	Vlk
+73	Koza
+74	Zelí
+75	Bez farmáře by vlk snědl kozu! Zkusme to jinak.
+76	Bez farmáře by koza snědla zelí! Zkusme to jinak.
+77	Převozník
+78	Liška
+79	Slepice
+80	Kukuřice
+81	Bez převozníka by liška snědla slepici! Zkusme to jinak.
+82	Bez převozníka by slepice zobala kukuřici! Zkusme to jinak.
+83	Astronaut
+84	Robot
+85	Na jednom břehu by bylo víc robotů než astronautů – není to bezpečné!
+86	Barevná řada
+87	Jakou barvu má mít další kolečko?
+88	Všimni si, jak se barvy opakují. Které dvě se střídají?
+89	Dvojice červená–modrá se opakuje. Poslední byla červená.
+90	Podívej se na řadu: 🔴 🔵 🔴 🔵 🔴 – barvy se střídají.
+91	Za každou červenou následovala modrá, takže další kolečko je modré.
+92	Ponožky potmě
+93	V zásuvce je 4 červených a 4 modré ponožky. Je tma, takže barvy nevidíš. Kolik nejméně ponožek musíš vytáhnout, abys měl jistě dvě stejné barvy?
+94	Zkus nejhorší případ: co když budeš mít pokaždé smůlu?
+95	Dvě ponožky mohou mít různé barvy. Co se stane se třetí?
+96	Představ si smůlu: první ponožka je červená a druhá modrá.
+97	Třetí ponožka je červená nebo modrá – a vždy k ní máš pár mezi prvními dvěma.
+98	Takže stačí 3 ponožky. Matematici tomu říkají Dirichletův princip.
+99	Fronta na zmrzlinu
+100	Adam stojí ve frontě na zmrzlinu. Před ním je 5 dětí a za ním 4. Kolik dětí je ve frontě?
+101	dětí
+102	Počítáš i Adama?
+103	Sečti ty před Adamem, Adama a ty za ním.
+104	Před Adamem je 5 dětí.
+105	Pak je tu Adam sám – 1 dítě.
+106	A 4 za ním. Celkem 5 + 1 + 4 = 10.
+107	Stavba z kostek
+108	Díváš se shora na stavbu z kostek. Každé číslo říká, kolik kostek je v dané věži. Kolik kostek je celkem?
+109	kostek
+110	Každé číslo je jedna věž. Co musíš s věžemi udělat?
+111	Sečti všechna čtyři čísla.
+112	Každé číslo říká, z kolika kostek věž stojí.
+113	Celkem: 2 + 1 + 1 + 3 = 7 kostek.
+114	Tajný počet kuliček
+115	Janek má víc než 3 a méně než 6 kuliček. Počet jeho kuliček je sudý. Kolik kuliček má?
+116	Která čísla jsou větší než 3 a menší než 6?
+117	Zbývá 4 a 5. Které z nich je sudé?
+118	Čísla větší než 3 a menší než 6 jsou 4 a 5.
+119	Jen 4 je sudé (dělitelné dvěma beze zbytku).
+120	Kdo je nejmenší?
+121	Ema je vyšší než Dana. Dana je vyšší než Filip. Kdo je nejmenší?
+122	Ema
+123	Dana
+124	Filip
+125	Zkus je seřadit od nejvyššího.
+126	Ema je první. Kdo je další, když Dana je vyšší než Filip?
+127	Ema > Dana, takže Ema je před Danou.
+128	Dana > Filip, takže Dana je před Filipem.
+129	Pořadí: Ema, Dana, Filip. Nejmenší je Filip.
+130	Oblečení na výlet
+131	Mám 3 trička a 2 kalhoty. Kolik různých oblečení mohu sestavit (jedno tričko a jedny kalhoty)?
+132	Vyber jedno tričko. S kolika kalhotami ho můžeš mít na sobě?
+133	To platí pro každé ze 3 triček.
+134	První tričko jde se 2 kalhotami – 2 možnosti.
+135	Totéž platí pro druhé a třetí tričko.
+136	Celkem 2 + 2 + 2 = 6, tedy 3 × 2 = 6.
+137	Rohy tvarů
+138	Kolik rohů (vrcholů) mají dohromady 1 čtverec a 2 trojúhelníky?
+139	Kolik rohů má čtverec a kolik trojúhelník?
+140	Čtverec má 4, každý trojúhelník 3. Co teď?
+141	Čtverec má 4 rohy.
+142	Každý trojúhelník má 3 rohy, dva mají 6.
+143	Dohromady 4 + 6 = 10 rohů.
+144	Rostoucí posloupnost
+145	Doplň další číslo: 2, 6, 18, 54, ?
+146	Podívej se na podíl: kolikrát je 6 větší než 2?
+147	Zkus i 18 : 6. Čeho si všimneš?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3 – pokaždé násobíme třemi.
+149	Další číslo je 54 · 3 = 162.
+150	Zlomky podle velikosti
+151	Seřaď karty od nejmenšího čísla po největší. Přetahuj je nebo použij šipky.
+152	od nejmenšího po největší
+153	Který zlomek je menší než polovina?
+154	Představ si pizzu: kolik čtvrtin je na každé kartě?
+155	Přepiš všechno na čtvrtiny: 1/4, 2/4, 3/4, 4/4.
+156	Čím víc čtvrtin, tím větší číslo.
+157	Přečtené knihy
+158	Graf ukazuje, kolik knih třída přečetla každý den. Kolik knih přečetla od pondělí do čtvrtka dohromady?
+159	Po
+160	Út
+161	St
+162	Čt
+163	knih
+164	Přečti číslo nad každým sloupcem.
+165	Jaké číslo jsi přečetl u čtvrtka?
+166	Ze sloupců čteme: 4, 7, 5 a 9.
+167	Celkem 4 + 7 + 5 + 9 = 25.
+168	Tři kamarádi v řadě
+169	Ema, Tom a Lea se chtějí postavit do řady na fotku. V kolika různých pořadích mohou stát?
+170	Kdo může stát první? Kolik je možností?
+171	Když je první vybraný, kolik možností zbývá pro druhé místo?
+172	Prvním může být kterékoli ze 3 dětí.
+173	Na druhé místo zbývají jen 2 a poslední dítě stojí třetí (1).
+174	Celkem 3 · 2 · 1 = 6 způsobů.
+175	Ovocné váhy
+176	Na vahách: 1 jablko vyvažuje 2 švestky a 1 švestka vyvažuje 3 jahody. Kolik jahod vyvažuje 1 jablko?
+177	jahod
+178	Nejdřív nahraď jablko švestkami.
+179	Teď nahraď každou švestku jahodami.
+180	1 jablko = 2 švestky.
+181	1 švestka = 3 jahody, takže 2 švestky = 2 · 3 = 6 jahod.
+182	Falešná mince
+183	Z 9 mincí je jedna falešná – je lehčí. Máš rovnoramenné váhy bez závaží. Kolik vážení stačí, abys falešnou jistě našel?
+184	Co kdybys mince rozdělil do skupin po třech a porovnal dvě skupiny?
+185	Po prvním vážení víš, ve které trojici je falešná mince. Jak ji najdeš mezi třemi mincemi?
+186	Rozděl mince do 3 skupin a zvaž dvě skupiny. Lehčí strana – nebo rovnováha – ti řekne, ve které skupině je falešná.
+187	Zvaž dvě mince z té skupiny: lehčí je falešná, a když jsou vyvážené, je falešná ta třetí.
+188	Celkem stačí dvě vážení.
+189	Kdo mluví pravdu?
+190	Matěj říká: „Dnes je úterý.“ Zoe říká: „Matěj lže.“ Víme, že Zoe mluví pravdu. Je dnes úterý?
+191	Ano
+192	Ne
+193	Nedá se určit
+194	Když Zoe mluví pravdu, co z toho plyne o Matějovi?
+195	Matěj lže. Co to znamená pro jeho větu?
+196	Zoe mluví pravdu, takže „Matěj lže“ je pravda.
+197	Protože Matěj lže, jeho věta „Dnes je úterý“ není pravdivá.
+198	Takže dnes není úterý.
+199	Domácí mazlíčci
+200	Anna, Boris a Cyril mají psa, kočku a křečka (každý jednoho). Anna nemá ani psa, ani kočku. Boris nemá psa. Co má Cyril?

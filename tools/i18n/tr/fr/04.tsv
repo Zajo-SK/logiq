@@ -1,0 +1,200 @@
+1	est impair
+2	est un carré parfait
+3	Devine mon nombre
+4	Commence par l’indice qui élimine le plus de nombres.
+5	Combine les indices : il te faut un nombre qui les vérifie tous à la fois.
+6	Nous barrons les nombres indice après indice :
+7	Ordre dans la file
+8	Commence par un indice qui donne quelque chose de sûr (comme « juste derrière »). Enchaîne les paires.
+9	Note les places 1, 2, 3 … et associe-leur les noms pas à pas, en écartant ce qui est impossible.
+10	Nous assemblons les indices en un seul ordre – chaque place impossible est barrée.
+11	Chien
+12	un chien
+13	le chien
+14	Chat
+15	un chat
+16	le chat
+17	Hamster
+18	un hamster
+19	le hamster
+20	Lapin
+21	un lapin
+22	le lapin
+23	Poisson
+24	un poisson
+25	le poisson
+26	Qui possède quel animal ?
+27	Fais un tableau : les lignes sont les enfants, les colonnes les animaux. Barre ce qui est impossible.
+28	Quand il ne reste qu’une case libre dans une ligne ou une colonne, c’est la réponse.
+29	Dans le tableau, on marque ✗ ce que les indices excluent et ✓ quand il ne reste qu’une possibilité.
+30	Si tout A est un B et tout B est un C, alors tout A est un C – la chaîne continue.
+31	Si Axel était un A, il devrait être un B. Il n’est pas un B, donc il n’est pas un A.
+32	Tout C est un B et aucun B n’est un A, donc aucun C ne peut être un A.
+33	Tout C est un A et tout A est un B, donc tout C est un B.
+34	Certains A sont des B et tout B est un C, donc ce A est aussi un C.
+35	Tout A est un C et aucun C n’est un D, donc aucun A n’est un D.
+36	Certains A sont des B et aucun B n’est un C – donc ce A n’est pas un C.
+37	Qu’en découle-t-il ?
+38	Les affirmations de la liste sont vraies. Quelle conclusion en découle FORCÉMENT ? (Les mots sont inventés – fie-toi uniquement à la logique.)
+39	Dessine des cercles (ensembles) pour chaque sorte. Quel cercle est à l’intérieur de quel autre ?
+40	Teste chaque option : peux-tu dessiner un cas où les prémisses sont vraies mais pas l’option ? Alors elle n’en découle pas.
+41	Lundi
+42	Mardi
+43	Mercredi
+44	Jeudi
+45	Vendredi
+46	Samedi
+47	Dimanche
+48	Enfants en rang
+49	Combien y a-t-il de possibilités pour la première place ? Et pour la deuxième une fois la première prise ?
+50	Le nombre de possibilités diminue de 1 à chaque fois. Multiplie-les.
+51	Le podium
+52	Combien de coureurs peuvent gagner l’or ? Combien peuvent alors gagner l’argent ?
+53	Les médailles diffèrent, donc l’ordre compte.
+54	Amis côte à côte
+55	Colle les deux amis en une seule « paire ». Combien d’éléments ranges-tu alors ?
+56	Et à l’intérieur de la paire ils peuvent se placer de deux façons.
+57	La table ronde
+58	Installe un enfant à une place fixe. Que reste-t-il à ranger ?
+59	Il reste un enfant de moins.
+60	Fixe un enfant – cela supprime la rotation.
+61	Combien de chiffres peuvent aller à la place des centaines ? Et combien restent pour les dizaines ?
+62	Chaque chiffre utilisé réduit le choix de 1.
+63	Compte d’abord les paires ordonnées – combien y en a-t-il ?
+64	Tu as compté chaque paire deux fois. Que faire à ce sujet ?
+65	Une équipe de trois
+66	Combien y a-t-il de triplets ordonnés ?
+67	Chaque équipe apparaît 3! = 6 fois parmi eux.
+68	Poignées de main
+69	Avec combien de personnes une personne se serre-t-elle la main ?
+70	Tu as compté chaque poignée de main deux fois (des deux côtés).
+71	Diagonales
+72	À partir d’un sommet : vers combien de sommets une diagonale peut-elle aller ? (Pas vers lui-même ni vers ses voisins.)
+73	Tu as compté chaque diagonale deux fois.
+74	Garnitures de pizza
+75	Avec une garniture, il y a deux possibilités. Et avec deux garnitures ?
+76	Chaque garniture supplémentaire double le nombre.
+77	Chaque garniture a 2 possibilités (oui/non) et les décisions sont indépendantes.
+78	tous les chiffres sont impairs
+79	tous les chiffres sont pairs
+80	le nombre ne contient ni le chiffre 0 ni le chiffre 5
+81	les trois chiffres sont différents
+82	les chiffres sont strictement croissants (de gauche à droite)
+83	la somme des chiffres est 10
+84	c’est un palindrome (se lit pareil dans les deux sens)
+85	le nombre contient au moins un chiffre 7
+86	la somme des chiffres est 9
+87	au moins un chiffre est 0
+88	Tenues
+89	Combien de tenues différentes peux-tu faire ? (1 👕 + 1 👖 + 1 🧢)
+90	Choisis un T-shirt. Avec combien de combinaisons pantalon-casquette peut-il être porté ?
+91	Multiplie le nombre de possibilités à chaque choix.
+92	Cadenas à code
+93	Combien de possibilités une molette a-t-elle ?
+94	Les molettes sont indépendantes – les possibilités se multiplient.
+95	Chaque molette a 10 possibilités.
+96	Routes entre villes
+97	De combien de façons peut-on aller de A à B ? Et ensuite à C ?
+98	Les nombres de routes de chaque tronçon se multiplient.
+99	Nombres à trois chiffres avec une règle
+100	Sépare le nombre en centaines, dizaines, unités. Combien de possibilités a chacun ?
+101	Attention : le chiffre des centaines ne peut pas être 0.
+102	Nous comptons les possibilités pour chaque place, puis nous les combinons (on multiplie, ou on additionne des cas).
+103	Robot sur une grille
+104	On arrive à chaque case par le haut ou par la gauche. De combien de façons peut-on atteindre les cases de la première ligne ?
+105	Écris dans chaque case la somme des nombres de chemins de la case du dessus et de la case de gauche.
+106	Dans chaque case, nous écrivons combien de chemins y mènent : la somme de la case du dessus et de la case de gauche (les cases bloquées ont 0).
+107	Tableau des nombres de chemins :
+108	Imagine le pire des cas – tu n’as jamais de chance.
+109	Cartes et couleurs
+110	Cherche la pire façon dont le tirage peut se passer.
+111	Anniversaires en classe
+112	Répartis les élèves le plus uniformément possible sur 12 mois. Que obtiens-tu ?
+113	Si chaque mois avait au plus X élèves, combien y en aurait-il au maximum en tout ?
+114	Si chaque mois en avait moins, il n’y en aurait pas assez au total. C’est le principe des tiroirs.
+115	Gants dans le noir
+116	Le pire cas est de sortir des gants sans partenaire assorti.
+117	Anagrammes
+118	Imagine d’abord que toutes les lettres sont différentes. Combien y a-t-il d’arrangements ?
+119	Des lettres identiques peuvent être échangées – tu as donc compté chaque arrangement plusieurs fois.
+120	Perles en rang
+121	Choisis d’abord les places des rouges. De combien de façons ?
+122	Puis, parmi les places restantes, choisis celles des bleues.
+123	Vérifie si chaque nombre est le double du précédent avec un petit ajustement.
+124	Regarde les différences entre voisins. Que valent-elles ?
+125	Les différences augmentent de 1 – ce sont des nombres triangulaires.
+126	Regarde les différences, puis les différences des différences.
+127	Carré magique
+128	Trouve une ligne, une colonne ou une diagonale dont tous les nombres sont connus – c’est la somme magique.
+129	Dans une ligne avec une inconnue, elle égale la somme magique moins la somme des autres.
+130	Équations de fruits
+131	Commence par l’équation qui ne contient qu’une sorte de fruit.
+132	Une fois que tu connais la valeur d’un fruit, remplace-la dans l’équation suivante.
+133	Nous résolvons les équations dans l’ordre, en commençant par celle d’un seul fruit :
+134	Cryptarithme
+135	Commence là où la réponse est presque certaine – par exemple le premier chiffre du résultat dans une addition.
+136	Essaie des possibilités et vérifie chaque colonne à chaque fois.
+137	Nous écartons les chiffres qui mèneraient à une contradiction.
+138	aucune face peinte
+139	exactement 1 face peinte
+140	exactement 2 faces peintes
+141	exactement 3 faces peintes
+142	Cubes des coins : une boîte a 8 coins.
+143	La boîte peinte
+144	Quels petits cubes sont dans les coins ? Sur les arêtes ? Sur les faces ? À l’intérieur ?
+145	Le nombre de faces peintes dépend de la position : coin 3, arête 2, face 1, intérieur 0.
+146	La position décide des faces peintes : coin = 3, arête = 2, face = 1, intérieur = 0.
+147	Combien de carrés ?
+148	Compte d’abord les carrés 1×1. Puis les 2×2. Et ensuite ?
+149	Les carrés de côté s sont au nombre de (n − s + 1)². Additionne toutes les tailles.
+150	Nous comptons par taille de carré. La taille s tient dans (n − s + 1)² positions.
+151	Carrés dans un rectangle
+152	Un carré de côté s tient dans (lignes − s + 1) · (colonnes − s + 1) positions.
+153	Nous comptons par taille de carré s = 1, 2, … jusqu’à la plus petite dimension.
+154	Combien de rectangles ?
+155	Un rectangle est déterminé par deux lignes horizontales et deux lignes verticales.
+156	🧱 Les nombres indiquent les hauteurs des tours. Combien de cubes en tout ?
+157	🧱 Tu regardes de face (bord du bas). Combien de carrés vois-tu ?
+158	🧱 Nous peignons la construction dessus et sur les côtés (pas dessous). Combien de carrés sont peints ?
+159	Chaque nombre est une tour. Que fais-tu avec ?
+160	Additionne tous les nombres du tableau.
+161	De face, tu ne vois que la tour la plus haute de chaque colonne.
+162	Prends le plus grand nombre de chaque colonne et additionne-les.
+163	Compte séparément les dessus (un par tour) et les côtés.
+164	Un côté n’est visible qu’au-dessus de la tour voisine : la différence de hauteur (ou la hauteur entière au bord).
+165	Chaque nombre dit combien de cubes la tour a.
+166	De face, une tour plus haute cache les plus basses derrière elle – on ne voit que la plus haute de chaque colonne.
+167	Dessus : le nombre de cases non vides. Côtés : pour chaque côté d’une tour, la différence de hauteur avec sa voisine (le bord compte comme hauteur 0).
+168	Figure en L
+169	L’aire du rectangle entier moins la partie découpée.
+170	Calcule séparément les deux rectangles.
+171	Dessine la figure. Faire glisser les côtés peut simplifier le périmètre.
+172	Le périmètre d’une figure en L est égal à celui du rectangle d’origine.
+173	Couper un coin ne change pas le périmètre : les nouveaux côtés glissent sur les anciens.
+174	Carré agrandi
+175	Quelle est la longueur du côté du carré d’origine ?
+176	Le nouveau côté est agrandi ; l’aire est côté fois côté.
+177	Aire du triangle
+178	Un triangle est la moitié d’un rectangle approprié.
+179	Aire = base · hauteur : 2.
+180	Aire du triangle = (base · hauteur) : 2.
+181	Cadre de tableau
+182	Quelles sont les dimensions de la partie intérieure ?
+183	Je pense à un nombre
+184	Remonte à l’envers : que fais-tu au résultat pour annuler la dernière étape ?
+185	Nombres à la suite
+186	Appelle n le plus petit nombre. Comment écris-tu les autres ?
+187	Somme et différence
+188	Que obtiens-tu en additionnant la somme et la différence ?
+189	Tu obtiens le double du plus grand nombre.
+190	Père et fils
+191	ans
+192	Si le père était plus jeune de ce nombre d’années, ils auraient le même âge. Quelle serait alors la somme ?
+193	La somme diminuerait de l’écart d’âge.
+194	Pièces
+195	Si toutes les pièces valaient 1 €, quelle serait la valeur ?
+196	Chaque remplacement d’une pièce de 1 € par une pièce de 2 € ajoute 1 €.
+197	Équation avec parenthèses
+198	Débarrasse-toi d’abord de ce qui est ajouté en dehors des parenthèses.
+199	Diviseurs
+200	Cherche les diviseurs par paires : si d divise n, alors n : d le divise aussi.

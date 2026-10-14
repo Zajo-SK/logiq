@@ -1,0 +1,200 @@
+1	Nom
+2	Le chien
+3	Le chat
+4	Le hamster
+5	Commence par ce que tu sais le mieux : que doit avoir Anna ?
+6	Une fois qu’Anna a le hamster, que peut avoir Boris ?
+7	Anna n’a ni chien ni chat, donc elle a le hamster.
+8	Boris n’a pas de chien et le hamster est pris, donc il a le chat.
+9	Il reste le chien pour Cyril.
+10	Sommes secrètes
+11	Trois nombres secrets A, B, C vérifient : A + B = 10, B + C = 12, A + C = 8. Combien vaut A ?
+12	Et si tu additionnais les trois équations ?
+13	La somme est 2 · (A + B + C) = 30. Combien vaut A + B + C, et que dois-tu en soustraire ?
+14	Additionne les trois équations : 2 · (A + B + C) = 10 + 12 + 8 = 30, donc A + B + C = 15.
+15	Comme B + C = 12, on obtient A = 15 − 12 = 3.
+16	Livre de vacances
+17	Jane a lu 3/8 d’un livre, puis encore 2/8. Il lui reste 15 pages. Combien de pages compte le livre entier ?
+18	pages
+19	Combien de huitièmes du livre a-t-elle lus en tout ?
+20	Si 5/8 sont lus, combien de huitièmes restent-ils ? Et combien de pages fait un huitième ?
+21	Lu : 3/8 + 2/8 = 5/8 du livre.
+22	Il reste 3/8, soit 15 pages, donc 1/8 fait 5 pages.
+23	Le livre entier compte 8 · 5 = 40 pages.
+24	Nombres à trois chiffres
+25	Avec les chiffres 1, 2, 3, 4 tu formes des nombres à trois chiffres sans répéter de chiffre. Combien y a-t-il de tels nombres ?
+26	Combien de chiffres peuvent aller à la place des centaines ?
+27	Après avoir utilisé un chiffre, combien en reste-t-il pour les dizaines, puis pour les unités ?
+28	Il y a 4 possibilités pour les centaines.
+29	Il reste 3 chiffres pour les dizaines et 2 pour les unités.
+30	En tout 4 · 3 · 2 = 24 nombres.
+31	Le jeu des allumettes
+32	Il y a 15 allumettes en tas. Les joueurs retirent à tour de rôle 1, 2 ou 3 allumettes. Celui qui prend la dernière gagne. Tu commences. Combien dois-tu en prendre d’abord pour être sûr de gagner si tu joues ensuite au mieux ?
+33	Raisonne à rebours : avec combien d’allumettes restantes le joueur qui doit jouer perd-il ?
+34	Avec 4 allumettes restantes, le joueur qui doit jouer perd. Quels multiples de 4 veux-tu laisser à ton adversaire ?
+35	S’il reste 4 allumettes et que c’est ton tour, tu perds : tu en prends 1 à 3 et ton adversaire prend le reste.
+36	Tu veux donc toujours laisser à ton adversaire 12, 8, 4 allumettes – des multiples de quatre.
+37	De 15, prends-en 3 et laisse 12. Ensuite, complète toujours son coup pour arriver à 4.
+38	Jardin carré
+39	Un jardin carré a un périmètre de 36 m. Quelle est son aire ?
+40	Quelle est la longueur d’un côté du carré ?
+41	Le côté mesure 36 : 4 = 9 m. Comment trouve-t-on l’aire d’un carré ?
+42	Un carré a 4 côtés égaux : 36 : 4 = 9 m.
+43	Aire = côté · côté = 9 · 9 = 81 m².
+44	Rectangle d’après son périmètre
+45	Un rectangle a un périmètre de 30 cm et un côté de 9 cm. Quelle est son aire ?
+46	Le périmètre est 2 · (a + b). Combien vaut a + b ?
+47	a + b = 15 et un côté mesure 9. Combien mesure l’autre ?
+48	Demi-périmètre : 30 : 2 = 15 = a + b.
+49	L’autre côté mesure 15 − 9 = 6 cm.
+50	Aire = 9 · 6 = 54 cm².
+51	Le cube peint
+52	Un grand cube 3×3×3 est fait de 27 petits cubes et peint à l’extérieur. On le démonte. Combien de petits cubes ont exactement 3 faces peintes ?
+53	Quels petits cubes se trouvent dans les coins du grand cube ?
+54	Combien de coins a un cube ?
+55	Seuls les cubes des coins ont trois faces peintes – trois faces du grand cube s’y rejoignent.
+56	Un cube a 8 coins, donc il y a 8 tels cubes.
+57	L’astuce de Gauss
+58	Sans calculatrice : 1 + 2 + 3 + … + 20.
+59	Essaie d’associer le premier nombre au dernier : 1 + 20.
+60	La paire suivante est 2 + 19. Combien y a-t-il de telles paires ?
+61	1 + 20 = 21, 2 + 19 = 21, 3 + 18 = 21 … chaque paire fait 21.
+62	Il y a 20 nombres, donc 10 paires.
+63	La somme est 10 · 21 = 210.
+64	Zéros finaux
+65	Par combien de zéros se termine 20! = 1 · 2 · 3 · … · 20 ?
+66	Un zéro final vient d’une paire de facteurs 2 et 5. Lequel est le plus rare dans le produit ?
+67	Compte combien de fois le facteur 5 apparaît entre 1 et 20.
+68	Chaque zéro final est un facteur 10 = 2 · 5. Il y a bien plus de deux dans 20!, donc ce sont les cinq qui décident.
+69	Cinq : 5, 10, 15, 20 – chacun apporte un cinq (25 en donnerait deux, mais il n’est pas dans le produit).
+70	Il y a donc 4 zéros.
+71	Deux dés
+72	On lance deux dés équilibrés. Quelle est la probabilité que la somme soit 7 ?
+73	Combien de résultats existe-t-il quand on lance deux dés ?
+74	Liste les paires de somme 7 : (1,6), (2,5) … Combien y en a-t-il ?
+75	Il y a 6 · 6 = 36 résultats.
+76	La somme 7 vient de (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) – six paires.
+77	La probabilité est 6/36 = 1/6.
+78	Trois d’affilée
+79	La somme de trois entiers consécutifs est 105. Quel est le plus grand d’entre eux ?
+80	Appelle n le nombre du milieu. Comment écris-tu ses voisins ?
+81	n − 1, n, n + 1 – quelle est leur somme ?
+82	Les nombres sont n − 1, n, n + 1 et leur somme est 3n.
+83	3n = 105, donc n = 35.
+84	Le plus grand est n + 1 = 36.
+85	La délégation
+86	On choisit une délégation de deux personnes parmi six élèves. De combien de façons peut-on le faire ?
+87	Compte d’abord les paires ordonnées. Combien y en a-t-il ?
+88	Chaque paire est comptée deux fois (A,B et B,A). Que faire à ce sujet ?
+89	Le premier se choisit de 6 façons, le deuxième de 5 : 30 paires ordonnées.
+90	L’ordre n’a pas d’importance, nous avons compté chaque paire deux fois.
+91	Résultat 30 : 2 = 15.
+92	Le dernier chiffre
+93	Quel est le dernier chiffre de 7¹⁰⁰ ? Écris comment tu l’as trouvé dans la case « Calculs ».
+94	Écris les derniers chiffres des puissances 7¹, 7², 7³, 7⁴ …
+95	Les derniers chiffres se répètent avec une certaine période. Quelle est-elle, et combien fait 100 divisé par la période ?
+96	Derniers chiffres : 7, 9, 3, 1, puis de nouveau 7, 9, 3, 1 … (période 4).
+97	100 est un multiple de 4, donc 7¹⁰⁰ se termine comme 7⁴.
+98	Le dernier chiffre est 1.
+99	L’île des chevaliers et des menteurs
+100	Sur une île, les chevaliers disent toujours la vérité et les menteurs mentent toujours. A dit : « Nous sommes tous les deux menteurs. » Qu’est B ?
+101	Chevalier
+102	Menteur
+103	On ne peut pas le déterminer
+104	A peut-il être un chevalier ? Que signifierait alors sa phrase ?
+105	Si A est un menteur, sa phrase est fausse. Qu’est-ce que cela dit de B ?
+106	Si A était un chevalier, sa phrase serait vraie – mais elle dit qu’il est un menteur. Contradiction.
+107	Donc A est un menteur et sa phrase est fausse : ils ne sont pas tous les deux menteurs.
+108	Comme A est un menteur, B doit être un chevalier.
+109	Billes dans un sac
+110	Un sac contient 3 billes rouges et 2 bleues. On en tire deux sans remise. Quelle est la probabilité que les deux soient rouges ?
+111	Quelle est la probabilité que la première soit rouge ?
+112	Si tu ne la remets pas, combien de rouges et combien de billes restent-ils ?
+113	Première rouge : 3/5.
+114	Il reste alors 2 rouges sur 4 billes : 2/4 = 1/2.
+115	Ensemble 3/5 · 1/2 = 3/10.
+116	Marque les affirmations vraies
+117	Lesquelles de ces affirmations sont vraies ? Marque-les toutes.
+118	2¹⁰ est supérieur à 10³
+119	Les angles d’un triangle ont pour somme 180°
+120	Tout nombre premier est impair
+121	0,999… est inférieur à 1
+122	Teste chaque affirmation séparément. Peux-tu trouver un contre-exemple ?
+123	Regarde le plus petit nombre premier. Et que valent 2¹⁰ et 10³ ?
+124	2¹⁰ = 1024 et 10³ = 1000, donc la première est vraie.
+125	Les angles d’un triangle ont toujours pour somme 180° – la deuxième est vraie.
+126	Le nombre 2 est un nombre premier pair, donc la troisième est fausse. Et 0,999… est égal à 1, donc la quatrième est fausse.
+127	Commence là où une ligne, une colonne ou un bloc manque du moins de nombres.
+128	Aucun nombre ne peut se répéter dans une ligne, une colonne ou un bloc.
+129	Éteins toutes les lumières
+130	Appuyer sur une case inverse sa lumière et celles de ses voisines (haut, bas, gauche, droite). Éteins toutes les lumières (○).
+131	Essaie d’appuyer deux fois sur la même case. Que se passe-t-il ?
+132	Le chemin le plus court
+133	Trace avec le doigt un chemin de la fusée 🚀 à l’arrivée 🏁. Tu ne peux pas traverser les murs – et on cherche le chemin le plus court !
+134	Quels couloirs sont des impasses ?
+135	Loup, chèvre et chou
+136	Fais traverser la rivière à 🐺 🐐 🥬. La barque porte le fermier et un seul passager. Seuls, le loup mange la chèvre, la chèvre mange le chou.
+137	Qui ne peut jamais être laissé seul avec qui ? Quel personnage s’entend bien avec les deux autres ?
+138	La chèvre est dans les deux paires dangereuses. Et si tu l’emmenais en premier ?
+139	Idée clé : la chèvre est la source de problèmes – le loup la mange, elle mange le chou – donc le fermier ne doit jamais la laisser seule avec l’un ou l’autre.
+140	Le loup et le chou ne se font pas de mal, ils peuvent donc attendre ensemble.
+141	Renard, poule et maïs
+142	Un passeur doit faire traverser un ruisseau à un renard, une poule et un sac de maïs. La barque porte le passeur et un passager. Seuls, le renard mange la poule et la poule picore le maïs. Trouve un plan sûr !
+143	Qui apparaît dans les deux paires dangereuses ?
+144	La poule passe en premier. Et ensuite, une fois qu’elle est de l’autre côté ? Tu peux aussi la ramener !
+145	La poule est dans les deux paires dangereuses, donc le passeur l’emmène en premier et ne la laisse jamais seule avec le renard ou le maïs.
+146	Parfois il est utile de ramener quelqu’un – l’important est que personne ne reste en danger.
+147	Astronautes et robots
+148	2 astronautes et 2 robots doivent traverser une rivière dans une petite fusée-barque. Elle porte au plus deux personnes et quelqu’un doit ramer. Si les robots sont plus nombreux que les astronautes sur une rive (alors qu’il y a des astronautes), les astronautes sont en danger. Trouve un plan sûr !
+149	Surveille les effectifs sur les deux rives : astronautes ≥ robots dès qu’un astronaute est présent.
+150	N’aie pas peur de ramener quelqu’un – parfois c’est le seul moyen.
+151	Sur les deux rives, on respecte la règle : s’il y a un astronaute, les robots ne sont jamais plus nombreux que les astronautes.
+152	Trois astronautes, trois robots
+153	3 astronautes et 3 robots traversent une rivière dans une barque pour deux. Règle : sur une rive avec au moins un astronaute, les robots ne peuvent pas être plus nombreux que les astronautes. Quel est le plus petit nombre de traversées ?
+154	Imagine tous les états possibles – combien de fois pourrais-tu commencer par envoyer « 2 robots » ?
+155	Fais attention à qui reste sur la rive que tu quittes. Parfois, ramener un robot ou un astronaute est le mieux.
+156	C’est le fameux casse-tête des missionnaires et des cannibales en version spatiale. Noter systématiquement les états des rives aide.
+157	Calcule la différence entre nombres voisins.
+158	Vérifie si les nombres viennent d’une multiplication.
+159	Regarde les différences entre voisins. Changent-elles ?
+160	Compare les nombres avec les carrés 1, 4, 9, 16, 25…
+161	Essaie d’additionner deux nombres voisins.
+162	Chaque nombre est la somme des deux précédents.
+163	Et si deux suites étaient mélangées en une seule ?
+164	Essaie des nombres obtenus en multipliant trois fois : 2 · 2 · 2…
+165	Ce sont des cubes : 1³, 2³, 3³…
+166	Les nombres sont 1³, 2³, 3³, 4³, 5³ – des cubes.
+167	Le suivant est 6³ = 216.
+168	Suite de nombres
+169	Quel nombre remplace le point d’interrogation ?
+170	Première étoile
+171	Résous ta première tâche.
+172	Dix tâches
+173	Termine 10 tâches.
+174	Explorateur
+175	Termine 25 tâches.
+176	Esprit vif
+177	Gagne 3 étoiles sur 5 tâches.
+178	Persévérant
+179	Résous une tâche après plusieurs essais.
+180	Capitaine
+181	Résous une tâche de traversée de rivière.
+182	Maître du sudoku
+183	Résous un sudoku.
+184	Navigateur
+185	Trouve le chemin le plus court dans un labyrinthe.
+186	Électricien
+187	Éteins toutes les lumières.
+188	Touche-à-tout
+189	Résous des tâches de 5 catégories différentes.
+190	Série de trois jours
+191	Résous des tâches 3 jours de suite.
+192	500 points
+193	Gagne 500 points.
+194	Solveur du jour
+195	Résous un défi quotidien.
+196	Premier niveau
+197	Termine un niveau entier.
+198	Collectionneur
+199	Collecte 10 autocollants.
+200	Grand collectionneur

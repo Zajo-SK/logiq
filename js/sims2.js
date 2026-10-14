@@ -19,7 +19,7 @@ SIM_KINDS.scale = ({ n }) => {
     ctl.replaceChildren(simBtn('⚖️ ' + L2('Zváž', 'Weigh'), weigh, 'primary', { disabled: done }), simBtn((guess ? '✋ ' : '🔍 ') + (guess ? L2('Zrušiť tip', 'Cancel guess') : L2('Tipnem falošnú', 'Guess the fake')), () => { guess = !guess; msg = guess ? L2('Ťukni na mincu, ktorú tipuješ.', 'Tap the coin you think is fake.') : ''; draw(); }, 'ghost small', { disabled: done }), simBtn('↺ ' + L2('Nová hra', 'New game'), reset));
   }
   function weigh() { const L = range(n).filter(i => zone[i] === 0), R = range(n).filter(i => zone[i] === 2); if (!L.length || !R.length) { msg = L2('Daj mince na obe misky.', 'Put coins on both pans.'); return draw(); } if (L.length !== R.length) { msg = L2('Na obe misky daj rovnaký počet mincí.', 'Put the same number of coins on both pans.'); return draw(); } count++; const wl = L.reduce((s, i) => s + (i === fake ? 1 : 2), 0), wr = R.reduce((s, i) => s + (i === fake ? 1 : 2), 0); tilt = wl === wr ? 0 : wl < wr ? 12 : -12; msg = wl === wr ? L2('Rovnováha ⚖️', 'Balanced ⚖️') : wl < wr ? L2('Ľavá strana je ľahšia', 'The left side is lighter') : L2('Pravá strana je ľahšia', 'The right side is lighter'); simTap(); draw(); }
-  function pick1(i) { if (i === fake) { done = true; msg = L2(`Správne! Minca ${i + 1} je falošná – našiel si ju na ${count} vážení.`, `Correct! Coin ${i + 1} is the fake – found with ${count} weighings.`); } else { msg = L2(`Minca ${i + 1} nie je falošná. Skús ďalej.`, `Coin ${i + 1} is not fake. Keep trying.`); } guess = false; draw(); }
+  function pick1(i) { if (i === fake) { done = true; msg = L2(`Správne! Minca ${i + 1} je falošná – našiel si ju na ${count} vážení.`, `Correct! Coin ${i + 1} is the fake – found with ${count} weighings.`, "Correct! Coin {0} is the fake – found with {1} weighings.", [i + 1, count]); } else { msg = L2(`Minca ${i + 1} nie je falošná. Skús ďalej.`, `Coin ${i + 1} is not fake. Keep trying.`, "Coin {0} is not fake. Keep trying.", [i + 1]); } guess = false; draw(); }
   function reset() { fake = rndI(n); zone = Array(n).fill(1); count = 0; tilt = 0; msg = ''; guess = false; done = false; draw(); }
   draw();
   return simWrap(L2('Jedna z mincí je ľahšia. Ťukaním meníš miesto mince (vľavo → vpravo → mimo), potom stlač „Zváž“.', 'One coin is lighter. Tap a coin to move it (left → right → off), then press “Weigh”.'), h('div', { class: 'scalebox' }, beam), zones, info, ctl);
@@ -32,10 +32,10 @@ SIM_KINDS.jugs = ({ a, b, t }) => {
   const lv = () => [x, y];
   function draw() {
     jugs.replaceChildren(...[0, 1].map(i => h('div', { class: 'jugcol' }, h('div', { class: 'jug', style: `height:${cap[i] * unit + 6}px` }, h('div', { class: 'water', style: `height:${lv()[i] * unit}px` })), h('b', null, `${lv()[i]} / ${cap[i]} l`))));
-    const hit = x === t || y === t; info.textContent = hit ? L2(`🎉 V džbáne je presne ${t} l! Krokov: ${steps}.`, `🎉 Exactly ${t} L in a jug! Steps: ${steps}.`) : `${L2('Cieľ', 'Goal')}: ${t} l · ${L2('kroky', 'steps')}: ${steps}`;
+    const hit = x === t || y === t; info.textContent = hit ? L2(`🎉 V džbáne je presne ${t} l! Krokov: ${steps}.`, `🎉 Exactly ${t} L in a jug! Steps: ${steps}.`, "🎉 Exactly {0} L in a jug! Steps: {1}.", [t, steps]) : `${L2('Cieľ', 'Goal')}: ${t} l · ${L2('kroky', 'steps')}: ${steps}`;
     ctl.replaceChildren(
-      simBtn(L2(`Naplniť ${a} l`, `Fill ${a} L`), () => go1(() => { x = a; })), simBtn(L2(`Naplniť ${b} l`, `Fill ${b} L`), () => go1(() => { y = b; })),
-      simBtn(L2(`Vyliať ${a} l`, `Empty ${a} L`), () => go1(() => { x = 0; })), simBtn(L2(`Vyliať ${b} l`, `Empty ${b} L`), () => go1(() => { y = 0; })),
+      simBtn(L2(`Naplniť ${a} l`, `Fill ${a} L`, "Fill {0} L", [a]), () => go1(() => { x = a; })), simBtn(L2(`Naplniť ${b} l`, `Fill ${b} L`, "Fill {0} L", [b]), () => go1(() => { y = b; })),
+      simBtn(L2(`Vyliať ${a} l`, `Empty ${a} L`, "Empty {0} L", [a]), () => go1(() => { x = 0; })), simBtn(L2(`Vyliať ${b} l`, `Empty ${b} L`, "Empty {0} L", [b]), () => go1(() => { y = 0; })),
       simBtn(`${a} ➜ ${b}`, () => go1(() => { const m = Math.min(x, b - y); x -= m; y += m; })), simBtn(`${b} ➜ ${a}`, () => go1(() => { const m = Math.min(y, a - x); y -= m; x += m; })), simBtn('↺', () => { x = 0; y = 0; steps = 0; draw(); }));
   }
   function go1(f) { f(); steps++; simTap(); draw(); }
@@ -50,7 +50,7 @@ SIM_KINDS.bridge = ({ times }) => {
   function draw() {
     const person = i => h('button', { type: 'button', class: 'plyr' + (sel.has(i) ? ' selp' : ''), disabled: side[i] !== torch, 'aria-label': `${times[i]} ${L2('min', 'min')}`, onclick: () => { sel.has(i) ? sel.delete(i) : sel.size < 2 && sel.add(i); draw(); } }, '🚶', h('small', null, times[i]));
     banks.replaceChildren(h('div', { class: 'bank0' }, h('b', null, L2('Tu', 'Here') + (torch === 0 ? ' 🔦' : '')), h('div', { class: 'players' }, range(n).filter(i => side[i] === 0).map(person))), h('div', { class: 'bridge' }, '🌉'), h('div', { class: 'bank1' }, h('b', null, L2('Tam', 'There') + (torch === 1 ? ' 🔦' : '')), h('div', { class: 'players' }, range(n).filter(i => side[i] === 1).map(person))));
-    const all = side.every(s => s === 1); info.textContent = all ? L2(`🎉 Všetci sú na druhej strane! Čas: ${total} min.`, `🎉 Everyone is across! Time: ${total} min.`) : `${L2('Čas', 'Time')}: ${total} min`;
+    const all = side.every(s => s === 1); info.textContent = all ? L2(`🎉 Všetci sú na druhej strane! Čas: ${total} min.`, `🎉 Everyone is across! Time: ${total} min.`, "🎉 Everyone is across! Time: {0} min.", [total]) : `${L2('Čas', 'Time')}: ${total} min`;
     ctl.replaceChildren(simBtn('➡️ ' + L2('Prejsť s baterkou', 'Cross with the torch'), cross, 'primary', { disabled: !sel.size || all }), simBtn('↺', () => { side = Array(n).fill(0); torch = 0; total = 0; sel.clear(); draw(); }));
   }
   function cross() { const who = [...sel]; total += Math.max(...who.map(i => times[i])); who.forEach(i => side[i] = 1 - side[i]); torch = 1 - torch; sel.clear(); simTap(); draw(); }
@@ -62,10 +62,10 @@ SIM_KINDS.bridge = ({ times }) => {
 SIM_KINDS.socks = ({ col, need, suits }) => {
   const pool = suits ? ['♠️', '♥️', '♦️', '♣️'] : ['🔴', '🔵', '🟢', '🟡', '🟣', '🟠', '⚫', '🟤'].slice(0, col); let hand = [], hit = null;
   const out = h('div', { class: 'hand' }), info = h('p', { class: 'siminfo', role: 'status' });
-  function draw() { out.replaceChildren(...hand.map(c => h('span', { class: 'sock' }, (suits ? '' : '🧦') + c))); const counts = pool.map(c => hand.filter(x => x === c).length); info.textContent = `${L2('Vytiahnuté', 'Drawn')}: ${hand.length} · ${L2('najviac rovnakých', 'most of a kind')}: ${Math.max(0, ...counts)}` + (hit ? ` · 🎉 ${L2(`${need} rovnaké po ${hit} ťahoch!`, `${need} of a kind after ${hit} draws!`)}` : ''); }
+  function draw() { out.replaceChildren(...hand.map(c => h('span', { class: 'sock' }, (suits ? '' : '🧦') + c))); const counts = pool.map(c => hand.filter(x => x === c).length); info.textContent = `${L2('Vytiahnuté', 'Drawn')}: ${hand.length} · ${L2('najviac rovnakých', 'most of a kind')}: ${Math.max(0, ...counts)}` + (hit ? ` · 🎉 ${L2(`${need} rovnaké po ${hit} ťahoch!`, `${need} of a kind after ${hit} draws!`, "{0} of a kind after {1} draws!", [need, hit])}` : ''); }
   function pull() { hand.push(pool[rndI(pool.length)]); if (!hit && pool.some(c => hand.filter(x => x === c).length >= need)) hit = hand.length; simTap(); draw(); }
   draw();
-  return simWrap(L2(`Je tma – ťahaš naslepo. Kedy máš ${need} rovnaké? Skús to viackrát a hľadaj najhorší prípad.`, `It is dark – you draw blindly. When do you have ${need} of a kind? Try several times and look for the worst case.`), out, info, h('div', { class: 'simctl' }, simBtn('✋ ' + L2('Vytiahni naslepo', 'Draw blindly'), pull, 'primary'), simBtn('↺ ' + L2('Znova', 'Again'), () => { hand = []; hit = null; draw(); })));
+  return simWrap(L2(`Je tma – ťahaš naslepo. Kedy máš ${need} rovnaké? Skús to viackrát a hľadaj najhorší prípad.`, `It is dark – you draw blindly. When do you have ${need} of a kind? Try several times and look for the worst case.`, "It is dark – you draw blindly. When do you have {0} of a kind? Try several times and look for the worst case.", [need]), out, info, h('div', { class: 'simctl' }, simBtn('✋ ' + L2('Vytiahni naslepo', 'Draw blindly'), pull, 'primary'), simBtn('↺ ' + L2('Znova', 'Again'), () => { hand = []; hit = null; draw(); })));
 };
 
 /* ---- arrange kids in a row ---- */
@@ -127,7 +127,7 @@ SIM_KINDS.share = ({ kids, total, e, who }) => {
   let pile = total; const got = Array(kids).fill(0); const pileEl = h('div', { class: 'cmpbox' }), row = h('div', { class: 'players' }), info = h('p', { class: 'siminfo', role: 'status' });
   function draw() {
     pileEl.textContent = e.repeat(pile) || '—'; row.replaceChildren(...who.map((w, i) => h('button', { type: 'button', class: 'kidbox', disabled: pile === 0, onclick: () => { pile--; got[i]++; simTap(); draw(); }, 'aria-label': L2('Dať jedno', 'Give one') }, h('span', { class: 'kface' }, w), h('span', { class: 'kitems' }, e.repeat(got[i])), h('b', null, got[i]))));
-    info.textContent = pile ? `${L2('Zostáva', 'Left')}: ${pile}` : (got.every(x => x === got[0]) ? L2(`🎉 Každé dieťa má ${got[0]}.`, `🎉 Every child has ${got[0]}.`) : L2('Nie je rovnako – skús znova.', 'Not equal – try again.'));
+    info.textContent = pile ? `${L2('Zostáva', 'Left')}: ${pile}` : (got.every(x => x === got[0]) ? L2(`🎉 Každé dieťa má ${got[0]}.`, `🎉 Every child has ${got[0]}.`, "🎉 Every child has {0}.", [got[0]]) : L2('Nie je rovnako – skús znova.', 'Not equal – try again.'));
   }
   draw();
   return simWrap(L2('Ťukni na dieťa – dostane jedno. Rozdeľ všetko rovnako!', 'Tap a child – they get one. Share everything equally!'), pileEl, row, info, h('div', { class: 'simctl' }, simBtn('↺', () => { pile = total; got.fill(0); draw(); })));
@@ -149,7 +149,7 @@ SIM_KINDS.tenframe = ({ T, a }) => {
     const sum = a + add.size; info.textContent = `${a} + ${add.size} = ${sum}` + (sum === T ? ` 🎉 ${L2('Presne ' + T + '!', 'Exactly ' + T + '!')}` : sum > T ? ' · ' + L2('To je viac než ' + T + '.', 'That is more than ' + T + '.') : ' · ' + L2('Cieľ: ' + T, 'Goal: ' + T));
   }
   draw();
-  return simWrap(L2(`Žlté sú dané. Pridaj červené tak, aby ich bolo spolu presne ${T}. Voľných políčok je viac!`, `Yellow ones are given. Add red ones so there are exactly ${T} in all. There are more free cells than you need!`), grid, info, h('div', { class: 'simctl' }, simBtn('↺', () => { add.clear(); draw(); })));
+  return simWrap(L2(`Žlté sú dané. Pridaj červené tak, aby ich bolo spolu presne ${T}. Voľných políčok je viac!`, `Yellow ones are given. Add red ones so there are exactly ${T} in all. There are more free cells than you need!`, "Yellow ones are given. Add red ones so there are exactly {0} in all. There are more free cells than you need!", [T]), grid, info, h('div', { class: 'simctl' }, simBtn('↺', () => { add.clear(); draw(); })));
 };
 
 /* ---- place dominoes ---- */
@@ -202,7 +202,7 @@ SIM_KINDS.prob = (cfg) => {
   }
   const run = k => { for (let i = 0; i < k; i++) trial(); simTap(); draw(); };
   draw();
-  const hintTxt = { dice: L2('Hádž dvoma kockami veľa-krát a pozoruj, ktoré súčty padajú najčastejšie.', 'Roll two dice many times and watch which sums come up most.'), coins: L2(`Hoď ${cfg.n} mincí a pozoruj počet hláv. Opakuj!`, `Toss ${cfg.n} coins and watch the number of heads. Repeat!`), bag: L2('Ťahaj naslepo (a vráť späť). Pozoruj, ako často vyjde ktorá farba.', 'Draw blindly (and put back). Watch how often each colour appears.'), bag2: L2('Ťahaj dve guľôčky bez vrátenia. Ako často sú obe 🔴?', 'Draw two marbles without putting back. How often are both 🔴?') }[cfg.mode];
+  const hintTxt = { dice: L2('Hádž dvoma kockami veľa-krát a pozoruj, ktoré súčty padajú najčastejšie.', 'Roll two dice many times and watch which sums come up most.'), coins: L2(`Hoď ${cfg.n} mincí a pozoruj počet hláv. Opakuj!`, `Toss ${cfg.n} coins and watch the number of heads. Repeat!`, "Toss {0} coins and watch the number of heads. Repeat!", [cfg.n]), bag: L2('Ťahaj naslepo (a vráť späť). Pozoruj, ako často vyjde ktorá farba.', 'Draw blindly (and put back). Watch how often each colour appears.'), bag2: L2('Ťahaj dve guľôčky bez vrátenia. Ako často sú obe 🔴?', 'Draw two marbles without putting back. How often are both 🔴?') }[cfg.mode];
   return simWrap(hintTxt, balls ? h('p', { class: 'marbles' }, balls.join('')) : null, out, info, h('div', { class: 'simctl' }, simBtn('×1', () => run(1), 'primary'), simBtn('×10', () => run(10), 'primary'), simBtn('×100', () => run(100), 'primary'), simBtn('↺', () => { counts = {}; total = 0; both = 0; draw(); })));
 };
 
@@ -229,7 +229,7 @@ SIM_KINDS.week = ({ d0, n }) => {
   function draw() { wheel.replaceChildren(...DAYS.map((d, i) => h('div', { class: 'wd' + (i === pos ? ' now' : '') + (i === d0 ? ' start' : '') }, tx(d).slice(0, 2), i === pos ? h('span', { class: 'tok' }, '📍') : null))); info.textContent = `${L2('Prešlo dní', 'Days passed')}: ${steps} / ${n}`; }
   const hop = k => { for (let i = 0; i < k && steps < n; i++) { pos = (pos + 1) % 7; steps++; } simTap(); draw(); };
   draw();
-  return simWrap(L2(`Začíname v ${tx(DAYS[d0])}. Posúvaj sa po dňoch – kam dôjdeš po ${n} dňoch?`, `We start on ${tx(DAYS[d0])}. Hop day by day – where do you land after ${n} days?`), wheel, info, h('div', { class: 'simctl' }, simBtn('+1', () => hop(1), 'primary'), simBtn('+7', () => hop(7), 'primary'), simBtn('▶', () => { clearInterval(timer); timer = setInterval(() => { if (steps >= n) clearInterval(timer); else hop(1); }, 380); }), simBtn('↺', () => { clearInterval(timer); pos = d0; steps = 0; draw(); })));
+  return simWrap(L2(`Začíname v ${tx(DAYS[d0])}. Posúvaj sa po dňoch – kam dôjdeš po ${n} dňoch?`, `We start on ${tx(DAYS[d0])}. Hop day by day – where do you land after ${n} days?`, "We start on {0}. Hop day by day – where do you land after {1} days?", [tx(DAYS[d0]), n]), wheel, info, h('div', { class: 'simctl' }, simBtn('+1', () => hop(1), 'primary'), simBtn('+7', () => hop(7), 'primary'), simBtn('▶', () => { clearInterval(timer); timer = setInterval(() => { if (steps >= n) clearInterval(timer); else hop(1); }, 380); }), simBtn('↺', () => { clearInterval(timer); pos = d0; steps = 0; draw(); })));
 };
 
 /* ---- hundred square: percent ---- */
@@ -237,5 +237,5 @@ SIM_KINDS.hundred = ({ p }) => {
   const on = new Set(), grid = h('div', { class: 'hundred' }), info = h('p', { class: 'siminfo', role: 'status' });
   function draw() { grid.replaceChildren(...range(100).map(i => h('button', { type: 'button', class: 'hc' + (on.has(i) ? ' on' : ''), 'aria-pressed': on.has(i), onclick: () => { on.has(i) ? on.delete(i) : on.add(i); draw(); } }))); info.textContent = `${on.size} ${L2('zo 100', 'of 100')} = ${on.size} %`; }
   draw();
-  return simWrap(L2(`Vyfarbi ${p} štvorčekov zo 100 – to je ${p} %.`, `Colour ${p} squares out of 100 – that is ${p}%.`), grid, info, h('div', { class: 'simctl' }, simBtn('↺', () => { on.clear(); draw(); })));
+  return simWrap(L2(`Vyfarbi ${p} štvorčekov zo 100 – to je ${p} %.`, `Colour ${p} squares out of 100 – that is ${p}%.`, "Colour {0} squares out of 100 – that is {1}%.", [p, p]), grid, info, h('div', { class: 'simctl' }, simBtn('↺', () => { on.clear(); draw(); })));
 };

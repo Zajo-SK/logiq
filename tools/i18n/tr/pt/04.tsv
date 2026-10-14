@@ -1,0 +1,200 @@
+1	é ímpar
+2	é um quadrado perfeito
+3	Adivinhe meu número
+4	Comece pela pista que elimina mais números.
+5	Combine as pistas: você precisa de um número que satisfaça todas ao mesmo tempo.
+6	Riscamos números pista por pista:
+7	Ordem na fila
+8	Comece por uma pista que dê algo certo (como “logo atrás”). Encadeie os pares.
+9	Anote as posições 1, 2, 3 … e encaixe os nomes passo a passo, descartando o que não pode ser.
+10	Juntamos as pistas em uma só ordem – cada posição impossível é riscada.
+11	Cachorro
+12	um cachorro
+13	o cachorro
+14	Gato
+15	um gato
+16	o gato
+17	Hamster
+18	um hamster
+19	o hamster
+20	Coelho
+21	um coelho
+22	o coelho
+23	Peixe
+24	um peixe
+25	o peixe
+26	Quem tem qual bichinho?
+27	Faça uma tabela: linhas são as crianças, colunas os bichinhos. Risque o que é impossível.
+28	Quando uma linha ou coluna tem só uma célula livre, essa é a resposta.
+29	Na tabela marcamos ✗ para o que as pistas excluem e ✓ quando sobra só uma opção.
+30	Se todo A é B e todo B é C, então todo A é C – a cadeia continua.
+31	Se Axel fosse um A, ele teria de ser um B. Ele não é um B, então não é um A.
+32	Todo C é B e nenhum B é A, então nenhum C pode ser A.
+33	Todo C é A e todo A é B, então todo C é B.
+34	Algum A é B e todo B é C, então esse A também é C.
+35	Todo A é C e nenhum C é D, então nenhum A é D.
+36	Algum A é B e nenhum B é C – então esse A não é C.
+37	O que se conclui?
+38	As afirmações da lista são verdadeiras. Qual afirmação DEVE decorrer delas? (As palavras são inventadas – confie só na lógica.)
+39	Desenhe círculos (conjuntos) para cada tipo. Qual círculo fica dentro de qual?
+40	Teste cada opção: você consegue desenhar um caso em que as premissas valem mas a opção não? Então ela não decorre.
+41	Segunda-feira
+42	Terça-feira
+43	Quarta-feira
+44	Quinta-feira
+45	Sexta-feira
+46	Sábado
+47	Domingo
+48	Crianças em fila
+49	Quantas opções há para o primeiro lugar? E para o segundo depois que o primeiro foi escolhido?
+50	O número de opções diminui 1 a cada vez. Multiplique-as.
+51	O pódio
+52	Quantos corredores podem ganhar o ouro? Quantos podem então ganhar a prata?
+53	As medalhas são diferentes, então a ordem importa.
+54	Amigos lado a lado
+55	Cole os dois amigos em um “par”. Quantos itens você está organizando então?
+56	E dentro do par eles podem ficar de duas maneiras.
+57	A mesa redonda
+58	Sente uma criança em um lugar fixo. O que sobra para organizar?
+59	Sobra uma criança a menos.
+60	Fixe uma criança – isso elimina a rotação.
+61	Quantos algarismos podem ficar nas centenas? E quantos sobram para as dezenas?
+62	Cada algarismo usado reduz a escolha em 1.
+63	Primeiro conte os pares ordenados – quantos são?
+64	Você contou cada par duas vezes. O que fazer com isso?
+65	Uma equipe de três
+66	Quantas ternas ordenadas existem?
+67	Cada equipe aparece 3! = 6 vezes entre elas.
+68	Apertos de mão
+69	Com quantas pessoas uma pessoa aperta a mão?
+70	Você contou cada aperto de mão duas vezes (dos dois lados).
+71	Diagonais
+72	De um vértice: para quantos vértices pode ir uma diagonal? (Não para ele mesmo nem para os vizinhos.)
+73	Você contou cada diagonal duas vezes.
+74	Coberturas de pizza
+75	Com uma cobertura há duas opções. E com duas coberturas?
+76	Cada cobertura a mais dobra a contagem.
+77	Cada cobertura tem 2 opções (sim/não) e as decisões são independentes.
+78	todos os algarismos são ímpares
+79	todos os algarismos são pares
+80	o número não contém nem o algarismo 0 nem o 5
+81	os três algarismos são diferentes
+82	os algarismos são estritamente crescentes (da esquerda para a direita)
+83	a soma dos algarismos é 10
+84	é um palíndromo (lê-se igual nos dois sentidos)
+85	o número contém pelo menos um algarismo 7
+86	a soma dos algarismos é 9
+87	pelo menos um algarismo é 0
+88	Looks
+89	Quantos looks diferentes você consegue montar? (1 👕 + 1 👖 + 1 🧢)
+90	Escolha uma camiseta. Com quantas combinações de calça e boné ela pode ser usada?
+91	Multiplique o número de opções de cada escolha.
+92	Cadeado de números
+93	Quantas opções tem um disco?
+94	Os discos são independentes – as opções se multiplicam.
+95	Cada disco tem 10 opções.
+96	Estradas entre cidades
+97	De quantas maneiras dá para ir de A até B? E depois seguir até C?
+98	Os números de estradas dos trechos se multiplicam.
+99	Números de três algarismos com uma regra
+100	Divida o número em centenas, dezenas e unidades. Quantas opções cada um tem?
+101	Cuidado: o algarismo das centenas não pode ser 0.
+102	Contamos as opções de cada posição e depois as combinamos (multiplicando ou somando casos).
+103	Robô em uma grade
+104	Cada célula é alcançada por cima ou pela esquerda. De quantas maneiras dá para chegar às células da primeira linha?
+105	Escreva em cada célula a soma das quantidades de caminhos da célula de cima e da célula à esquerda.
+106	Em cada célula escrevemos quantas maneiras levam até lá: a soma da célula de cima e da célula à esquerda (células bloqueadas têm 0).
+107	Tabela das quantidades de caminhos:
+108	Imagine o pior caso – você sempre tem azar.
+109	Cartas e naipes
+110	Procure a pior maneira possível de a retirada acontecer.
+111	Aniversários na turma
+112	Distribua os alunos o mais uniformemente possível pelos 12 meses. O que você obtém?
+113	Se cada mês tivesse no máximo X alunos, quantos haveria no máximo no total?
+114	Se cada mês tivesse menos, não haveria alunos suficientes no total. Esse é o princípio da casa dos pombos.
+115	Luvas no escuro
+116	O pior caso é tirar luvas sem nenhum par correspondente.
+117	Anagramas
+118	Primeiro imagine que todas as letras são diferentes. Quantos arranjos há?
+119	Letras idênticas podem ser trocadas – então você contou cada arranjo várias vezes.
+120	Contas em fila
+121	Primeiro escolha as posições das vermelhas. De quantas maneiras?
+122	Depois, entre as posições restantes, escolha as azuis.
+123	Verifique se cada número é o dobro do anterior com um pequeno ajuste.
+124	Olhe as diferenças entre vizinhos. Quais são?
+125	As diferenças aumentam de 1 em 1 – são números triangulares.
+126	Olhe as diferenças e depois as diferenças das diferenças.
+127	Quadrado mágico
+128	Encontre uma linha, coluna ou diagonal em que todos os números são conhecidos – essa é a soma mágica.
+129	Em uma linha com uma incógnita, ela é igual à soma mágica menos a soma dos outros.
+130	Equações de frutas
+131	Comece pela equação que tem só um tipo de fruta.
+132	Quando souber o valor de uma fruta, substitua na próxima equação.
+133	Resolvemos as equações em ordem, começando pela de uma só fruta:
+134	Criptoaritmética
+135	Comece onde a resposta é quase certa – por exemplo, o primeiro algarismo do resultado em uma adição.
+136	Teste opções e confira todas as colunas a cada vez.
+137	Eliminamos os algarismos que levariam a uma contradição.
+138	nenhuma face pintada
+139	exatamente 1 face pintada
+140	exatamente 2 faces pintadas
+141	exatamente 3 faces pintadas
+142	Cubos dos cantos: uma caixa tem 8 cantos.
+143	A caixa pintada
+144	Quais cubinhos ficam nos cantos? Nas arestas? Nas faces? No interior?
+145	O número de faces pintadas depende da posição: canto 3, aresta 2, face 1, interior 0.
+146	A posição decide as faces pintadas: canto = 3, aresta = 2, face = 1, interior = 0.
+147	Quantos quadrados?
+148	Primeiro conte os quadrados 1×1. Depois os 2×2. E em seguida?
+149	O número de quadrados de lado s é (n − s + 1)². Some todos os tamanhos.
+150	Contamos por tamanho de quadrado. O tamanho s cabe em (n − s + 1)² posições.
+151	Quadrados em um retângulo
+152	Um quadrado de lado s cabe em (linhas − s + 1) · (colunas − s + 1) posições.
+153	Contamos por tamanho de quadrado s = 1, 2, … até a menor dimensão.
+154	Quantos retângulos?
+155	Um retângulo fica determinado por duas linhas horizontais e duas verticais.
+156	🧱 Os números mostram as alturas das torres. Quantos cubos há ao todo?
+157	🧱 Você olha de frente (pela borda de baixo). Quantos quadrados você vê?
+158	🧱 Pintamos a construção por cima e pelos lados (não por baixo). Quantos quadrados são pintados?
+159	Cada número é uma torre. O que você faz com elas?
+160	Some todos os números da tabela.
+161	De frente você só vê a torre mais alta de cada coluna.
+162	Pegue o maior número de cada coluna e some-os.
+163	Conte os topos (um por torre) e os lados separadamente.
+164	Um lado só é visível acima da torre vizinha: a diferença de altura (ou a altura toda na borda).
+165	Cada número diz quantos cubos a torre tem.
+166	De frente, uma torre mais alta esconde as mais baixas atrás dela – vemos só a mais alta de cada coluna.
+167	Topos: o número de células não vazias. Lados: para cada lado de uma torre, a diferença de altura para a vizinha (a borda conta como altura 0).
+168	Figura em L
+169	A área do retângulo inteiro menos a parte recortada.
+170	Calcule os dois retângulos separadamente.
+171	Desenhe a figura. Deslizar os lados pode simplificar o perímetro.
+172	O perímetro de uma figura em L é igual ao do retângulo original.
+173	Cortar um canto não altera o perímetro: os novos lados deslizam sobre os antigos.
+174	Quadrado ampliado
+175	Quanto mede o lado do quadrado original?
+176	O novo lado é ampliado; a área é lado vezes lado.
+177	Área do triângulo
+178	Um triângulo é metade de um retângulo adequado.
+179	Área = base · altura : 2.
+180	Área do triângulo = (base · altura) : 2.
+181	Moldura de quadro
+182	Quais são as dimensões da parte interna?
+183	Penso em um número
+184	Trabalhe de trás para frente: o que você faz com o resultado para desfazer o último passo?
+185	Números em sequência
+186	Chame o menor número de n. Como se escrevem os outros?
+187	Soma e diferença
+188	O que você obtém ao somar a soma e a diferença?
+189	Você obtém o dobro do número maior.
+190	Pai e filho
+191	anos
+192	Se o pai fosse tantos anos mais novo, teriam a mesma idade. Qual seria a soma?
+193	A soma diminuiria pela diferença de idade.
+194	Moedas
+195	Se todas as moedas fossem de €1, qual seria o valor?
+196	Cada troca de uma moeda de €1 por uma de €2 acrescenta €1.
+197	Equação com parênteses
+198	Primeiro elimine o que é somado fora dos parênteses.
+199	Divisores
+200	Procure divisores em pares: se d divide n, então n : d também divide.

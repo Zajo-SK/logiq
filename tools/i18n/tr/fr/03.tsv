@@ -1,0 +1,200 @@
+1	Collecte 30 autocollants.
+2	Album complet
+3	Collecte tous les autocollants.
+4	Première médaille
+5	Termine un monde entier d’une classe.
+6	Collection de médailles
+7	Gagne 5 médailles de monde.
+8	Coureur de missions
+9	Termine toutes les missions quotidiennes pendant 5 jours.
+10	Série d’une semaine
+11	Résous des tâches 7 jours de suite.
+12	Série d’un mois
+13	Résous des tâches 30 jours de suite.
+14	Une centaine
+15	Termine 100 tâches.
+16	Alpiniste
+17	Termine 300 tâches.
+18	Ciel étoilé
+19	Gagne 150 étoiles.
+20	2000 points
+21	Gagne 2000 points.
+22	Tout seul
+23	Résous 10 tâches sans indices.
+24	Niveau parfait
+25	Termine un niveau avec les 3 étoiles.
+26	Casse-cou
+27	Résous une tâche d’une classe supérieure.
+28	Les 🐸 vertes sautent uniquement vers la droite →, les brunes uniquement vers la gauche ←. Avance sur le nénuphar libre, ou saute par-dessus UNE grenouille (de n’importe quelle couleur) si le nénuphar derrière elle est libre. Pas de retour en arrière. Échange leurs places !
+29	nénuphar
+30	libre
+31	grenouille allant vers la droite
+32	grenouille allant vers la gauche
+33	Tu es bloqué 🙂 Annule un coup ou recommence.
+34	Cette grenouille ne peut pas sauter maintenant. Essaie une autre.
+35	Plus aucun coup possible d’ici – annule un coup.
+36	Il n’y a aucun coup possible d’ici – annule ou recommence.
+37	Voici toute la solution :
+38	Essaie avec les grenouilles : touche la grenouille qui doit bouger.
+39	Comment sautent les grenouilles (à lire avant la tâche)
+40	Essaie d’abord avec moins de grenouilles.
+41	Grenouilles : combien de coups ?
+42	Note les coups pour 1, 2 et 3 grenouilles.
+43	Les nombres de coups sont 3, 8, 15, 24 … Peux-tu trouver la formule ?
+44	Les grenouilles ont échangé leurs places !
+45	Le meilleur nombre de coups possible !
+46	On peut le faire en moins de coups – essaie encore !
+47	Grenouilles de chaque côté
+48	Règles
+49	Roi
+50	Le roi se déplace d’une case dans toutes les directions – de côté, en haut/en bas ou en diagonale.
+51	Dame
+52	La dame se déplace d’autant de cases qu’on veut en ligne droite – de côté, en haut/en bas ou en diagonale (tour et fou combinés). Elle ne peut pas sauter.
+53	Tour
+54	La tour se déplace d’autant de cases qu’on veut de côté ou en haut/en bas. Elle ne peut pas sauter.
+55	Fou
+56	Le fou se déplace d’autant de cases qu’on veut en diagonale, il reste donc toujours sur les cases d’une même couleur. Il ne peut pas sauter.
+57	Le cavalier saute en forme de L : 2 cases dans une direction et 1 case à angle droit. C’est la seule pièce qui peut sauter par-dessus les autres.
+58	Pion
+59	Le pion avance d’une case vers l’avant (vers le haut). Depuis sa rangée de départ, son premier coup peut être de deux cases.
+60	Comment la pièce se déplace-t-elle ? (à lire avant la tâche)
+61	Pion en route
+62	Un pion blanc se trouve sur d2 (la 7e rangée en partant du haut). Il avance seulement vers l’avant ; son premier coup peut être de deux cases, les suivants d’une seule. Quel est le plus petit nombre de coups pour atteindre la rangée du haut (en surbrillance) ?
+63	Combien de rangées le pion doit-il franchir ?
+64	Le premier coup peut être long de deux cases – cela économise un coup.
+65	De la rangée 2 à la rangée 8, il y a 6 rangées.
+66	Premier coup de 2 cases (le pion est sur la rangée 4), il reste 4 rangées une par une : 1 + 4 = 5 coups au total.
+67	Où la pièce peut-elle aller ?
+68	Prends la pièce direction par direction et compte les cases libres dans chacune.
+69	Le plus court chemin de la pièce
+70	Trouve où la pièce peut aller en un coup, puis en deux coups…
+71	Essaie aussi à l’envers : depuis quelles cases peut-on atteindre le but en un coup ?
+72	Nous cherchons toutes les possibilités coup par coup (1 coup, 2 coups, …) jusqu’à atteindre le but.
+73	Une tour attaque toute sa ligne et toute sa colonne, donc chaque ligne contient au plus une tour – N en tout – et N tours sur une diagonale conviennent.
+74	Les fous ne s’attaquent pas s’ils sont sur des diagonales différentes. Remplir la première et la dernière ligne sauf deux coins donne 2N − 2.
+75	Un roi attaque les cases voisines. Découpe l’échiquier en blocs 2×2 – chacun contient au plus un roi : ⌈N/2⌉².
+76	Un cavalier n’attaque que des cases de la couleur opposée, donc des cavaliers tous sur une même couleur ne s’attaquent jamais : ⌈N²/2⌉.
+77	Une dame attaque la ligne, la colonne et les diagonales, donc chaque ligne en contient au plus une. Pour N ≥ 4, on peut placer N dames.
+78	Aucune pièce n’en attaque une autre
+79	Trouve d’abord quelles cases une pièce attaque. Comment les répartir pour qu’elles ne se gênent pas ?
+80	Essaie un petit échiquier 3×3 ou 4×4 et cherche une régularité.
+81	Marque tous les coups
+82	Déplace la pièce dans ta tête direction par direction.
+83	Mène la pièce jusqu’au but
+84	Trouve les cases depuis lesquelles on peut atteindre le but en un coup.
+85	Dominos sur un plateau
+86	Chaque domino couvre 2 cases.
+87	Combien de cases le plateau a-t-il ? Et si ce nombre est impair ?
+88	Dominos et échiquier
+89	🁢 Deux cases (✖) manquent. Peut-on couvrir le reste avec des dominos 1×2 ?
+90	Oui, c’est possible
+91	Non, c’est impossible
+92	Chaque domino couvre une case claire et une case foncée. Combien de cases claires et foncées restent-ils après le retrait ?
+93	Si les nombres ne correspondent pas, le recouvrement est impossible.
+94	Un domino couvre toujours une case claire et une case foncée, il faudrait donc des nombres égaux.
+95	Les cases retirées ont des couleurs différentes, donc les nombres correspondent. Sur un plateau aux côtés pairs, cela marche toujours (théorème de Gomory).
+96	Les cases retirées ont la même couleur, donc il reste 2 cases de plus d’une couleur. On ne peut pas couvrir.
+97	Grains sur l’échiquier
+98	Écris les premiers termes : 1, 2, 4, 8… Qu’ont-ils en commun avec la somme cumulée ?
+99	La somme des premiers termes est toujours inférieure de 1 au terme suivant.
+100	Le nombre de grains double à chaque case.
+101	La case 1 a 2⁰, la case 2 a 2¹ …
+102	Tours de Hanoï : il y a 3 tiges et une pile de disques de tailles différentes sur la première tige (le plus grand en bas). But : déplacer tous les disques sur la dernière tige.
+103	Ne déplace qu’un disque à la fois – le disque du dessus d’une tige.
+104	Ne pose jamais un grand disque sur un plus petit.
+105	Tu peux utiliser les tiges libres comme places de stationnement.
+106	Règles des Tours de Hanoï (à lire avant la tâche)
+107	Tours de Hanoï – le jeu
+108	Pour déplacer le plus grand disque, où tous les plus petits doivent-ils d’abord aller ?
+109	Le moins de coups
+110	Trouve combien de coups il faut pour 1, 2 et 3 disques. Repère la régularité.
+111	Pour n disques : d’abord n − 1 disques à l’écart, puis un coup, puis de nouveau n − 1 disques.
+112	Soit T(n) le nombre de coups. Le plus grand disque ne peut bouger que lorsque les n − 1 autres disques sont sur une autre tige : T(n) = T(n − 1) + 1 + T(n − 1).
+113	Combien de fois un disque bouge-t-il ?
+114	Combien de fois le plus grand disque bouge-t-il ?
+115	Chaque disque plus petit bouge deux fois plus souvent que le disque plus grand suivant.
+116	Quatre tiges
+117	Déplace d’abord quelques disques sur une tige auxiliaire en utilisant les quatre tiges.
+118	Déplace le reste avec 3 tiges, puis déplace de nouveau la première partie.
+119	Sépare la tour : les k disques du haut se déplacent avec 4 tiges, les n − k disques du bas avec 3 tiges (2^(n−k) − 1 coups), puis de nouveau la partie du haut.
+120	Commence par une direction où la pièce peut aller et marque chaque case qu’elle atteint ainsi.
+121	Pour déplacer une tour de n disques, il te faut d’abord les n − 1 disques du haut sur la tige auxiliaire. Quel disque bouge en premier dans ta position ?
+122	Règle : pour déplacer n disques, déplace d’abord n − 1 disques sur la tige auxiliaire, puis le plus grand disque vers le but, et enfin les n − 1 disques sur le but.
+123	Que vient ensuite ?
+124	Regarde ce qui se répète.
+125	Montre chaque petit groupe du doigt.
+126	fruits
+127	animaux
+128	véhicules
+129	ballons
+130	fleurs
+131	Lequel n’appartient pas au groupe ?
+132	Lequel n’appartient pas au groupe ?
+133	Dis ce qu’est chacun.
+134	Trois sont du même genre.
+135	Combien en plus ?
+136	Fais des paires avec les images des deux rangées.
+137	Compte ce qui n’a pas de partenaire.
+138	Associe chaque élément de la rangée la plus courte à un de la plus longue.
+139	Pareil
+140	Lequel en a le plus ?
+141	Compte chaque rangée.
+142	Compare les deux nombres.
+143	Ils sont pareils.
+144	Combien en tout ?
+145	Combien en tout ?
+146	Compte toutes les images.
+147	Compte le premier groupe, puis ajoute le deuxième.
+148	Combien en reste-t-il ?
+149	❌ signifie qu’on les enlève.
+150	Compte ceux qui restent.
+151	Groupes
+152	Compte un groupe.
+153	Ajoute maintenant les autres groupes.
+154	Partager équitablement
+155	Partage équitablement. Combien chaque enfant reçoit-il ?
+156	Donne-en un à chaque enfant à la fois jusqu’à ce que tout soit distribué.
+157	Compte combien un enfant en a.
+158	Quel nombre manque ?
+159	De combien les nombres changent-ils ?
+160	Ajoute le même nombre.
+161	Compte les formes
+162	Touche chaque forme avec ton doigt.
+163	Compte seulement celles que tu cherches.
+164	Complète avec le nombre.
+165	Combien de pas as-tu faits ?
+166	Trouve le nombre pour le point d’interrogation.
+167	Essaie des nombres et vérifie.
+168	Utilise l’opération inverse.
+169	Tu commences. Combien en prends-tu d’abord pour gagner ?
+170	🐻 commence. Les deux jouent le mieux possible – personne ne fait d’erreur. Qui gagne ?
+171	Le premier joueur
+172	Le deuxième joueur
+173	Raisonne à rebours : avec combien d’allumettes le joueur qui doit jouer gagne-t-il, et avec combien perd-il ?
+174	Jeu contre l’ordinateur
+175	Raisonne à rebours : quelles positions sont perdantes pour le joueur qui doit jouer ?
+176	Qui gagne ? (tas)
+177	Écris les tailles des tas en binaire et additionne chaque colonne.
+178	Si chaque colonne a un nombre pair de uns, la position est perdante pour le joueur qui doit jouer.
+179	Avec une somme de Nim égale à 0, le joueur qui doit jouer perd – le deuxième joueur répond toujours pour rétablir 0. Le deuxième joueur gagne.
+180	Nim – le coup gagnant
+181	Et si tu rendais les tas égaux ? Que peut faire ton adversaire alors ?
+182	Tu peux toujours copier le coup de ton adversaire sur l’autre tas.
+183	Écris les tas en binaire. Après ton coup, chaque colonne doit avoir un nombre pair de uns.
+184	Avec deux tas, égalise-les : enlève la différence au plus grand.
+185	Casser du chocolat
+186	Combien de morceaux as-tu au début et à la fin ? Que devient ce nombre à chaque cassure ?
+187	Chaque cassure ajoute exactement un morceau. La façon de casser n’a pas d’importance.
+188	Tournoi – tours
+189	Combien de joueurs restent après le tour 1 ?
+190	Le nombre est divisé par deux à chaque tour. Combien de fois peux-tu diviser par deux jusqu’à ce qu’il reste 1 ?
+191	Tournoi – matchs
+192	Combien de joueurs doivent être éliminés pour qu’il reste un champion ?
+193	Un match = un joueur éliminé.
+194	Chevaliers et menteurs
+195	Si tu arrives à une contradiction, ton hypothèse était fausse – essaie le contraire.
+196	Nous testons les cas : un chevalier doit dire la vérité, un menteur doit mentir. Nous vérifions chaque hypothèse avec toutes les phrases.
+197	Qui a cassé la fenêtre ?
+198	Essaie chaque suspect à tour de rôle : si c’était lui, combien de déclarations seraient vraies ?
+199	Pour chaque suspect, nous comptons combien de déclarations seraient vraies :
+200	est pair

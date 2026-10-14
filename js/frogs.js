@@ -48,10 +48,10 @@ function frogsWidget(n, S0, opts = {}) {
   const undo = () => { if (!S0.hist.length || busy) return; S0.s = S0.hist.pop(); S0.moves = Math.max(0, S0.moves - 1); hop = -1; hl = -1; msg.textContent = ''; draw(); };
   const reset = () => { S0.s = Frogs.start(n); S0.moves = 0; S0.hist = []; hop = -1; hl = -1; msg.textContent = ''; draw(); };
   function auto() { if (busy) return; const p = Frogs.solve(S0.s, n); if (!p || !p.length) return; busy = true; const step = () => { const x = p.shift(); if (!x) { busy = false; draw(); return; } doMove(x.move); timer = setTimeout(step, 520); }; draw(); timer = setTimeout(step, 300); }
-  ctl.append(simBtn('↶ ' + t('undo'), undo), simBtn(t('restart'), reset), opts.free ? simBtn('💡 ' + t('hint'), () => { const p = Frogs.solve(S0.s, n); if (p && p[0]) { hl = p[0].move[0]; msg.textContent = L2(`Skús pohnúť žabku z lístka ${p[0].move[0] + 1}.`, `Try moving the frog on pad ${p[0].move[0] + 1}.`); draw(); } else msg.textContent = L2('Odtiaľto sa už nedá – vráť ťah späť.', 'No way forward from here – undo a move.'); }) : null, opts.free ? simBtn('▶ ' + t('hanoiAuto'), auto, 'primary small') : null);
+  ctl.append(simBtn('↶ ' + t('undo'), undo), simBtn(t('restart'), reset), opts.free ? simBtn('💡 ' + t('hint'), () => { const p = Frogs.solve(S0.s, n); if (p && p[0]) { hl = p[0].move[0]; msg.textContent = L2(`Skús pohnúť žabku z lístka ${p[0].move[0] + 1}.`, `Try moving the frog on pad ${p[0].move[0] + 1}.`, "Try moving the frog on pad {0}.", [p[0].move[0] + 1]); draw(); } else msg.textContent = L2('Odtiaľto sa už nedá – vráť ťah späť.', 'No way forward from here – undo a move.'); }) : null, opts.free ? simBtn('▶ ' + t('hanoiAuto'), auto, 'primary small') : null);
   draw();
   return { el: [row, msg, info, ctl], reset,
-    dynHint() { const p = Frogs.solve(S0.s, n); if (!p || !p.length) return { text: S('Odtiaľto sa už nedá – vráť ťah späť alebo začni znova.', 'There is no way forward from here – undo or restart.') }; const m = p[0].move; return { text: S(`Skús pohnúť žabku z lístka ${m[0] + 1} na lístok ${m[1] + 1}.`, `Try moving the frog from pad ${m[0] + 1} to pad ${m[1] + 1}.`), hl: () => { hl = m[0]; draw(); } }; } };
+    dynHint() { const p = Frogs.solve(S0.s, n); if (!p || !p.length) return { text: S('Odtiaľto sa už nedá – vráť ťah späť alebo začni znova.', 'There is no way forward from here – undo or restart.') }; const m = p[0].move; return { text: S(`Skús pohnúť žabku z lístka ${m[0] + 1} na lístok ${m[1] + 1}.`, `Try moving the frog from pad ${m[0] + 1} to pad ${m[1] + 1}.`, "Try moving the frog from pad {0} to pad {1}.", [m[0] + 1, m[1] + 1]), hl: () => { hl = m[0]; draw(); } }; } };
 }
 
 TaskTypes.frogs = {
@@ -62,7 +62,7 @@ TaskTypes.frogs = {
   explainSteps(task) {
     const n = task.data.n, p = Frogs.solve(Frogs.start(n), n), th = FROG_THEMES[task.data.theme || 0];
     const draw = s => h('div', { class: 'frogs demo', style: `--n:${s.length}` }, [...s].map(c => h('span', { class: 'pad' }, c === '_' ? null : h('span', { class: 'frog ' + (c === '>' ? 'g' : 'b') + (c === '<' && th.brown ? ' brown' : '') }, c === '>' ? th.a : th.b, h('i', null, c === '>' ? '→' : '←')))));
-    return [{ text: S(`Trik: skáč tak, aby sa žabky striedali – posuň, preskoč, preskoč, posuň… (Skok cez žabku rovnakej farby nepomáha.) Najmenší počet ťahov je ${n}² + 2·${n} = ${p.length}.`, `Trick: keep the frogs alternating – step, jump, jump, step… (Jumping a same-colour frog does not help.) The fewest moves is ${n}² + 2·${n} = ${p.length}.`) },
+    return [{ text: S(`Trik: skáč tak, aby sa žabky striedali – posuň, preskoč, preskoč, posuň… (Skok cez žabku rovnakej farby nepomáha.) Najmenší počet ťahov je ${n}² + 2·${n} = ${p.length}.`, `Trick: keep the frogs alternating – step, jump, jump, step… (Jumping a same-colour frog does not help.) The fewest moves is ${n}² + 2·${n} = ${p.length}.`, "Trick: keep the frogs alternating – step, jump, jump, step… (Jumping a same-colour frog does not help.) The fewest moves is {0}² + 2·{1} = {2}.", [n, n, p.length]) },
       { text: S('Takto vyzerá celé riešenie:', 'Here is the whole solution:'), render: b => { b.append(draw(Frogs.start(n))); p.forEach(x => b.append(draw(x.to))); } }];
   }
 };
@@ -71,15 +71,15 @@ SIM_KINDS.frogs = ({ n, theme }) => { const w = frogsWidget(n, {}, { theme: FROG
 reg('frogs', 'logic', 2, c => {
   const { r, D } = c, n = clamp(2 + Math.floor(D * 4.2) + (r() < .25 ? 1 : 0), 2, 5), ti = ri(r, 0, FROG_THEMES.length - 1), th = FROG_THEMES[ti];
   return { title: S('Skákajúce žabky', 'Leaping frogs'), type: 'frogs', pts: 15, intro: frogsIntro, introTitle: S('Ako žabky skáču (prečítaj si pred úlohou)', 'How the frogs jump (read before the task)'),
-    prompt: S(`${th.a}→ idú doprava, ${th.b}← doľava. Vymeň ich miesta!`, `${th.a}→ go right, ${th.b}← go left. Swap their places!`), data: { n, theme: ti },
+    prompt: S(`${th.a}→ idú doprava, ${th.b}← doľava. Vymeň ich miesta!`, `${th.a}→ go right, ${th.b}← go left. Swap their places!`, "{0}→ go right, {1}← go left. Swap their places!", [th.a, th.b]), data: { n, theme: ti },
     hints: [S('Skús najprv s menším počtom žabiek.', 'Try with fewer frogs first.'), 'dyn', 'dyn'], explain: [] };
 });
 reg('frogmoves', 'logic', 3, c => {
   const { r, D } = c, n = clamp(2 + Math.floor(D * 7) + ri(r, 0, 1), 2, 8), ti = ri(r, 0, FROG_THEMES.length - 1), th = FROG_THEMES[ti];
   return { title: S('Žabky: koľko ťahov?', 'Frogs: how many moves?'), type: 'number', sim: { kind: 'frogs', n: Math.min(n, 6), theme: ti }, intro: frogsIntro, introTitle: S('Ako žabky skáču (prečítaj si pred úlohou)', 'How the frogs jump (read before the task)'),
-    prompt: S(`${n} × ${th.a}→ a ${n} × ${th.b}←. Koľko ťahov najmenej treba na výmenu? (krok aj skok = 1 ťah)`, `${n} × ${th.a}→ and ${n} × ${th.b}←. What is the fewest moves to swap them? (a step or a jump = 1 move)`), data: { answer: n * n + 2 * n },
+    prompt: S(`${n} × ${th.a}→ a ${n} × ${th.b}←. Koľko ťahov najmenej treba na výmenu? (krok aj skok = 1 ťah)`, `${n} × ${th.a}→ and ${n} × ${th.b}←. What is the fewest moves to swap them? (a step or a jump = 1 move)`, "{0} × {1}→ and {2} × {3}←. What is the fewest moves to swap them? (a step or a jump = 1 move)", [n, th.a, n, th.b]), data: { answer: n * n + 2 * n },
     hints: [S('Zapíš si počet ťahov pre 1, 2 a 3 žabky.', 'Write down the moves for 1, 2 and 3 frogs.'), S('Počty ťahov sú 3, 8, 15, 24 … Nájdeš vzorec?', 'The move counts are 3, 8, 15, 24 … Can you find the formula?')],
-    explain: [S(`Každá žabka → musí preskočiť každú žabku ←: to je ${n} · ${n} = ${n * n} skokov.`, `Every frog → must jump over every frog ←: that is ${n} · ${n} = ${n * n} jumps.`), S(`Okrem toho každá z ${2 * n} žabiek urobí jeden krok na voľný lístok: ${2 * n} krokov.`, `Besides that each of the ${2 * n} frogs makes one step to a free pad: ${2 * n} steps.`), S(`Spolu ${n * n} + ${2 * n} = ${n * n + 2 * n} ťahov.`, `In total ${n * n} + ${2 * n} = ${n * n + 2 * n} moves.`)] };
+    explain: [S(`Každá žabka → musí preskočiť každú žabku ←: to je ${n} · ${n} = ${n * n} skokov.`, `Every frog → must jump over every frog ←: that is ${n} · ${n} = ${n * n} jumps.`, "Every frog → must jump over every frog ←: that is {0} · {1} = {2} jumps.", [n, n, n * n]), S(`Okrem toho každá z ${2 * n} žabiek urobí jeden krok na voľný lístok: ${2 * n} krokov.`, `Besides that each of the ${2 * n} frogs makes one step to a free pad: ${2 * n} steps.`, "Besides that each of the {0} frogs makes one step to a free pad: {1} steps.", [2 * n, 2 * n]), S(`Spolu ${n * n} + ${2 * n} = ${n * n + 2 * n} ťahov.`, `In total ${n * n} + ${2 * n} = ${n * n + 2 * n} moves.`, "In total {0} + {1} = {2} moves.", [n * n, 2 * n, n * n + 2 * n])] };
 });
 
 /* stand-alone game */

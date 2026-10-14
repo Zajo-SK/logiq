@@ -1,0 +1,200 @@
+1	Évfolyam
+2	Osztály
+3	Nincs osztály
+4	Tanártól kapott kód (nem kötelező)
+5	Osztálykód
+6	A neved vagy beceneved
+7	Csatlakozz a tanáraddal
+8	Ha megadsz egy kódot, a tanárod látja a neved és a haladásod.
+9	Tanár vagyok
+10	Szülő vagyok
+11	Milyen adatokat kezelünk
+12	Használati szabályok
+13	Az alkalmazásról
+14	Az alkalmazás még fejlesztés alatt áll.
+15	Előfordulhatnak hibák. Ha találkozol eggyel, jelezd nekünk a bal alsó sarokban lévő 💬 ikonnal.
+16	Elrejtés
+17	Békák
+18	Pálcikák
+19	szint
+20	matrica
+21	érem
+22	Admin mód:
+23	minden szint fel van oldva a böngészéshez, minden évfolyam megtalálható lent a „Kihívások” alatt. Csak a valóban megoldott szintek vannak késznek jelölve.
+24	Hanoi tornyai
+25	Szintláda:
+26	(több csillag = nagyobb láda)
+27	Ugró békák
+28	Cseréld meg a zöld és a barna békákat
+29	3×3, 4×4, 6×6 és 9×9 · 3 szint · jegyzetek és tippek
+30	Hálók
+31	Számok és színes nyilak · Hejný módszere alapján
+32	Kiállítás
+33	Járj végig a termeken és az ajtókon · Hejný módszere alapján
+34	Feladatok automatikus felolvasása
+35	Kiváló!
+36	Szép munka!
+37	Helyes!
+38	Bravó, okos gondolat!
+39	Majdnem!
+40	Nézd meg még egyszer a feladatot – lehet, hogy elkerült egy részlet.
+41	Érdekes próbálkozás!
+42	A rossz próbálkozás is megtanít valamit arra, mi működik és mi nem. Próbáld meg másik oldalról.
+43	Még nem, de jó úton jársz.
+44	A fejtörőket próbálgatni kell. Mit változtatnál? Ha kéred, használj tippet.
+45	Felolvasás
+46	Nézd meg még egyszer a feladatot, és próbáld meg másik oldalról.
+47	Logika és következtetés
+48	Szöveges feladatok
+49	Kombinatorika és stratégia
+50	Térlátás
+51	Geometriai fejtörők
+52	Számsorozatok
+53	Sudoku
+54	Logikai rácsok
+55	Labirintusok és útvonalak
+56	Átkelések a folyón
+57	Mérlegek és érmék
+58	Igazság és hazugság
+59	Titkosírások és rejtjelek
+60	Diagramok és adatok
+61	Olimpiai feladatok
+62	Kapcsolós fejtörők
+63	Valószínűség
+64	Algebrai rejtvények
+65	Stratégia és játékok
+66	Sakk és bábuk
+67	Ehhez az alkalmazáshoz írt eredeti feladat.
+68	Szabadon átfogalmazott klasszikus fejtörő (közkincs / népi), saját megfogalmazásban.
+69	Egy versenyfeladat-típus ihlette; saját számokkal és megfogalmazással.
+70	Mintából (véletlenmaggal) programmal generálva, harmadik féltől származó tartalom nélkül.
+71	Gazda
+72	Farkas
+73	Kecske
+74	Káposzta
+75	A gazda nélkül a farkas megenné a kecskét! Próbáljuk másképp.
+76	A gazda nélkül a kecske megenné a káposztát! Próbáljuk másképp.
+77	Evezős
+78	Róka
+79	Tyúk
+80	Kukorica
+81	Az evezős nélkül a róka megenné a tyúkot! Próbáljuk másképp.
+82	Az evezős nélkül a tyúk megcsipegetné a kukoricát! Próbáljuk másképp.
+83	Űrhajós
+84	Robot
+85	Az egyik parton több robot lenne, mint űrhajós – ez nem biztonságos!
+86	Színminta
+87	Milyen színű legyen a következő kör?
+88	Figyeld meg, hogyan ismétlődnek a színek. Melyik két szín követi egymást felváltva?
+89	A piros–kék páros ismétlődik. Az utolsó piros volt.
+90	Nézd a mintát: 🔴 🔵 🔴 🔵 🔴 – a színek felváltva követik egymást.
+91	Minden piros után kék jött, tehát a következő kör kék.
+92	Zoknik a sötétben
+93	Egy fiókban 4 piros és 4 kék zokni van. Sötét van, ezért nem látod a színeket. Legalább hány zoknit kell kihúznod, hogy biztosan legyen két azonos színű?
+94	Gondolj a legrosszabb esetre: mi van, ha minden alkalommal peched van?
+95	Két zokni lehet különböző színű. Mi történik a harmadikkal?
+96	Képzeld el a balszerencsét: az első zokni piros, a második kék.
+97	A harmadik zokni piros vagy kék – és mindenképp párba áll az első kettő egyikével.
+98	Tehát 3 zokni elég. A matematikusok ezt skatulyaelvnek hívják.
+99	Fagylaltsor
+100	Ádám a fagylaltosnál áll sorban. Előtte 5 gyerek áll, mögötte 4. Hány gyerek áll a sorban?
+101	gyerek
+102	Ádámot is beleszámoltad?
+103	Add össze az előtte állókat, Ádámot és a mögötte állókat.
+104	Ádám előtt 5 gyerek áll.
+105	Aztán ott van maga Ádám – 1 gyerek.
+106	És mögötte 4. Összesen 5 + 1 + 4 = 10.
+107	Kockaépítmény
+108	Felülről nézel egy kockákból épült építményt. Minden szám azt mutatja, hány kocka van egymásra rakva abban a toronyban. Hány kocka van összesen?
+109	kocka
+110	Minden szám egy torony. Mit kell tenned a tornyokkal?
+111	Add össze mind a négy számot.
+112	Minden szám megmondja, hány kockából áll a torony.
+113	Összesen: 2 + 1 + 1 + 3 = 7 kocka.
+114	A titkos golyószám
+115	Janinak több mint 3 és kevesebb mint 6 golyója van. A golyóinak a száma páros. Hány golyója van?
+116	Melyik számok nagyobbak 3-nál és kisebbek 6-nál?
+117	Marad a 4 és az 5. Melyik páros?
+118	A 3-nál nagyobb és 6-nál kisebb számok: 4 és 5.
+119	Csak a 4 páros (maradék nélkül osztható kettővel).
+120	Ki a legalacsonyabb?
+121	Emma magasabb, mint Dóra. Dóra magasabb, mint Fülöp. Ki a legalacsonyabb?
+122	Emma
+123	Dóra
+124	Fülöp
+125	Próbáld sorba állítani őket a legmagasabbtól.
+126	Emma az első. Ki jön utána, ha Dóra magasabb Fülöpnél?
+127	Emma > Dóra, tehát Emma Dóra előtt áll.
+128	Dóra > Fülöp, tehát Dóra Fülöp előtt áll.
+129	A sorrend: Emma, Dóra, Fülöp. A legalacsonyabb Fülöp.
+130	Ruha egy kiránduláshoz
+131	Van 3 pólóm és 2 nadrágom. Hányféle különböző öltözetet állíthatok össze (egy póló és egy nadrág)?
+132	Válassz ki egy pólót. Hány nadrággal veheted fel?
+133	Ez igaz mind a 3 pólóra.
+134	Az első póló 2 nadrággal jó – 2 lehetőség.
+135	Ugyanez igaz a második és a harmadik pólóra is.
+136	Összesen 2 + 2 + 2 = 6, vagyis 3 × 2 = 6.
+137	Az alakzatok csúcsai
+138	Hány csúcsa (sarka) van összesen 1 négyzetnek és 2 háromszögnek?
+139	Hány csúcsa van egy négyzetnek, és hány egy háromszögnek?
+140	A négyzetnek 4, minden háromszögnek 3 van. Mi következik?
+141	A négyzetnek 4 csúcsa van.
+142	Minden háromszögnek 3 csúcsa van, kettőnek 6.
+143	Együtt 4 + 6 = 10 csúcs.
+144	Növekvő sorozat
+145	Írd be a következő számot: 2, 6, 18, 54, ?
+146	Nézd meg a hányadost: hányszor nagyobb a 6, mint a 2?
+147	Próbáld ki a 18 : 6-ot is. Mit veszel észre?
+148	6 : 2 = 3, 18 : 6 = 3, 54 : 18 = 3 – mindig hárommal szorzunk.
+149	A következő szám 54 · 3 = 162.
+150	Törtek sorba rendezése
+151	Rendezd a kártyákat a legkisebb számtól a legnagyobbig. Húzd őket, vagy használd a nyilakat.
+152	a legkisebbtől a legnagyobbig
+153	Melyik tört kisebb egy felénél?
+154	Képzelj el egy pizzát: hány negyed van az egyes kártyákon?
+155	Írd át mindet negyedekre: 1/4, 2/4, 3/4, 4/4.
+156	Minél több negyed, annál nagyobb a szám.
+157	Elolvasott könyvek
+158	A diagram azt mutatja, hány könyvet olvasott el az osztály naponta. Hány könyvet olvastak el összesen hétfőtől csütörtökig?
+159	Hé
+160	Ke
+161	Sze
+162	Csü
+163	könyv
+164	Olvasd le az oszlopok fölötti számot.
+165	Milyen számot olvastál le csütörtökre?
+166	Az oszlopokról leolvasható: 4, 7, 5 és 9.
+167	Összesen 4 + 7 + 5 + 9 = 25.
+168	Három barát egy sorban
+169	Emma, Tomi és Lea fényképezkedni szeretnének egymás mellett. Hányféle különböző sorrendben állhatnak?
+170	Ki állhat legelöl? Hány lehetőség van?
+171	Ha már kiválasztottad az elsőt, hány lehetőség marad a második helyre?
+172	A 3 gyerek bármelyike lehet az első.
+173	A második helyre már csak 2 marad, az utolsó gyerek pedig a harmadik (1).
+174	Összesen 3 · 2 · 1 = 6 féleképpen.
+175	Gyümölcsmérleg
+176	Egy mérlegen: 1 alma egyensúlyban van 2 szilvával, és 1 szilva egyensúlyban van 3 eperrel. Hány eper tart egyensúlyt 1 almával?
+177	eper
+178	Először cseréld ki az almát szilvákra.
+179	Most cseréld ki az egyes szilvákat epreckre.
+180	1 alma = 2 szilva.
+181	1 szilva = 3 eper, tehát 2 szilva = 2 · 3 = 6 eper.
+182	A hamis érme
+183	9 érme között az egyik hamis – könnyebb. Van egy kétkarú mérleged súlyok nélkül. Hány mérés elég ahhoz, hogy biztosan megtaláld a hamisat?
+184	Mi lenne, ha az érméket hármas csoportokra osztanád, és két csoportot összehasonlítanál?
+185	Az első mérés után tudod, melyik hármas csoportban van a hamis. Hogyan találod meg három érme közül?
+186	Oszd az érméket 3 csoportra, és mérj össze két csoportot. A könnyebb oldal – vagy az egyensúly – megmutatja, melyik csoportban van a hamis.
+187	Mérj össze két érmét abból a csoportból: a könnyebb a hamis, ha pedig egyensúlyban vannak, a harmadik az.
+188	Összesen két mérés elég.
+189	Ki mond igazat?
+190	Matyi azt mondja: „Ma kedd van.” Zsófi azt mondja: „Matyi hazudik.” Tudjuk, hogy Zsófi igazat mond. Kedd van ma?
+191	Igen
+192	Nem
+193	Nem lehet tudni
+194	Ha Zsófi igazat mond, mi következik ebből Matyira?
+195	Matyi hazudik. Mit jelent ez a mondatára nézve?
+196	Zsófi igazat mond, tehát a „Matyi hazudik” igaz.
+197	Mivel Matyi hazudik, a „Ma kedd van” mondata nem igaz.
+198	Tehát ma nincs kedd.
+199	Házi kedvencek
+200	Anna, Boris és Cirill egy kutyát, egy macskát és egy hörcsögöt tart (mindegyikük egyet). Annának nincs sem kutyája, sem macskája. Borisnak nincs kutyája. Mi van Cirillnek?

@@ -172,7 +172,7 @@ function classPicker(init, onChange) {
     h('div', { class: 'cp-row', role: 'radiogroup', 'aria-label': L2('Ročník', 'Grade') }, range(8).map(i => { const n = i + 2; return h('button', { type: 'button', role: 'radio', 'aria-checked': g === n, class: 'cp-btn' + (g === n ? ' on' : ''), onclick: () => { g = n; onChange({ g, l }); draw(); } }, n + '.'); })),
     h('p', { class: 'flabel' }, L2('Trieda', 'Class')),
     h('div', { class: 'cp-row cp-letters', role: 'radiogroup', 'aria-label': L2('Trieda', 'Class') }, ['A', 'B', 'C', ''].map(x => h('button', { type: 'button', role: 'radio', 'aria-checked': l === x, class: 'cp-btn' + (l === x ? ' on' : ''), onclick: () => { l = x; onChange({ g, l }); draw(); } }, x || L2('Bez triedy', 'No class')))),
-    ...(g && l !== null ? [h('p', { class: 'cp-sel' }, '🏫 ' + (l ? `${g}.${l}` : L2(`${g}. ročník`, `Grade ${g}`)))] : []));
+    ...(g && l !== null ? [h('p', { class: 'cp-sel' }, '🏫 ' + (l ? `${g}.${l}` : L2(`${g}. ročník`, `Grade ${g}`, "Grade {0}", [g])))] : []));
   draw(); return wrap;
 }
 VIEWS.welcome = (v) => {

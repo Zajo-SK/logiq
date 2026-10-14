@@ -1,0 +1,200 @@
+1	Nombre
+2	El perro
+3	El gato
+4	El hámster
+5	Empieza por quien más información da: ¿qué debe tener Ana?
+6	Una vez que Ana tiene el hámster, ¿qué puede tener Boris?
+7	Ana no tiene ni perro ni gato, así que tiene el hámster.
+8	Boris no tiene perro y el hámster ya está cogido, así que tiene el gato.
+9	A Cirilo le queda el perro.
+10	Sumas secretas
+11	Tres números secretos A, B, C cumplen: A + B = 10, B + C = 12, A + C = 8. ¿Cuánto vale A?
+12	¿Y si sumas las tres ecuaciones?
+13	La suma es 2 · (A + B + C) = 30. ¿Cuánto es A + B + C y qué le debes restar?
+14	Suma las tres ecuaciones: 2 · (A + B + C) = 10 + 12 + 8 = 30, así que A + B + C = 15.
+15	Como B + C = 12, resulta A = 15 − 12 = 3.
+16	Libro de vacaciones
+17	Jana leyó 3/8 de un libro y luego otros 2/8. Todavía le quedan 15 páginas. ¿Cuántas páginas tiene el libro entero?
+18	páginas
+19	¿Cuántos octavos del libro ha leído en total?
+20	Si ha leído 5/8, ¿cuántos octavos faltan? ¿Y cuántas páginas es un octavo?
+21	Leído: 3/8 + 2/8 = 5/8 del libro.
+22	Quedan 3/8, que son 15 páginas, así que 1/8 son 5 páginas.
+23	El libro entero tiene 8 · 5 = 40 páginas.
+24	Números de tres cifras
+25	Con las cifras 1, 2, 3, 4 formas números de tres cifras sin repetir ninguna. ¿Cuántos números así hay?
+26	¿Cuántas cifras pueden ir en el lugar de las centenas?
+27	Después de usar una cifra, ¿cuántas quedan para las decenas y luego para las unidades?
+28	Hay 4 opciones para las centenas.
+29	Quedan 3 cifras para las decenas y 2 para las unidades.
+30	En total 4 · 3 · 2 = 24 números.
+31	El juego de las cerillas
+32	Hay un montón de 15 cerillas. Los jugadores se turnan para quitar 1, 2 o 3. Gana quien coja la última. Empiezas tú. ¿Cuántas debes coger primero para ganar seguro si luego juegas lo mejor posible?
+33	Piensa hacia atrás: ¿con cuántas cerillas restantes pierde el jugador que tiene el turno?
+34	Con 4 cerillas restantes pierde quien tiene el turno. ¿Qué múltiplos de 4 quieres dejarle a tu rival?
+35	Si quedan 4 cerillas y es tu turno, pierdes: coges de 1 a 3 y tu rival coge el resto.
+36	Así que siempre quieres dejarle a tu rival 12, 8, 4 cerillas: múltiplos de cuatro.
+37	De 15 coge 3 y deja 12. Luego completa siempre su jugada hasta 4.
+38	Jardín cuadrado
+39	Un jardín cuadrado tiene un perímetro de 36 m. ¿Cuál es su área?
+40	¿Cuánto mide un lado del cuadrado?
+41	El lado mide 36 : 4 = 9 m. ¿Cómo se calcula el área de un cuadrado?
+42	Un cuadrado tiene 4 lados iguales: 36 : 4 = 9 m.
+43	Área = lado · lado = 9 · 9 = 81 m².
+44	Rectángulo a partir del perímetro
+45	Un rectángulo tiene un perímetro de 30 cm y un lado mide 9 cm. ¿Cuál es su área?
+46	El perímetro es 2 · (a + b). ¿Cuánto es a + b?
+47	a + b = 15 y un lado mide 9. ¿Cuánto mide el otro?
+48	Mitad del perímetro: 30 : 2 = 15 = a + b.
+49	El otro lado mide 15 − 9 = 6 cm.
+50	Área = 9 · 6 = 54 cm².
+51	El cubo pintado
+52	Un cubo grande de 3×3×3 está formado por 27 cubitos y pintado por fuera. Lo desmontamos. ¿Cuántos cubitos tienen exactamente 3 caras pintadas?
+53	¿Qué cubitos están en las esquinas del cubo grande?
+54	¿Cuántas esquinas tiene un cubo?
+55	Solo los cubitos de las esquinas tienen tres caras pintadas: ahí se juntan tres caras del cubo grande.
+56	Un cubo tiene 8 esquinas, así que hay 8 cubitos así.
+57	El truco de Gauss
+58	Sin calculadora: 1 + 2 + 3 + … + 20.
+59	Prueba a emparejar el primer número con el último: 1 + 20.
+60	La siguiente pareja es 2 + 19. ¿Cuántas parejas así hay?
+61	1 + 20 = 21, 2 + 19 = 21, 3 + 18 = 21 … cada pareja suma 21.
+62	Hay 20 números, así que 10 parejas.
+63	La suma es 10 · 21 = 210.
+64	Ceros finales
+65	¿Con cuántos ceros termina 20! = 1 · 2 · 3 · … · 20?
+66	Un cero final viene de una pareja de factores 2 y 5. ¿Cuál es más escaso en el producto?
+67	Cuenta cuántas veces aparece el factor 5 entre 1 y 20.
+68	Cada cero final es un factor 10 = 2 · 5. Hay muchos más doses en 20!, así que deciden los cincos.
+69	Cincos: 5, 10, 15, 20: cada uno aporta un cinco (25 daría dos, pero no está en el producto).
+70	Así que hay 4 ceros.
+71	Dos dados
+72	Lanzamos dos dados equilibrados. ¿Cuál es la probabilidad de que la suma sea 7?
+73	¿Cuántos resultados posibles hay al lanzar dos dados?
+74	Escribe las parejas con suma 7: (1,6), (2,5) … ¿Cuántas hay?
+75	Hay 6 · 6 = 36 resultados.
+76	La suma 7 sale con (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): seis parejas.
+77	La probabilidad es 6/36 = 1/6.
+78	Tres seguidos
+79	La suma de tres números enteros consecutivos es 105. ¿Cuál es el mayor de ellos?
+80	Llama n al número del medio. ¿Cómo escribes sus vecinos?
+81	n − 1, n, n + 1: ¿cuál es su suma?
+82	Los números son n − 1, n, n + 1 y su suma es 3n.
+83	3n = 105, así que n = 35.
+84	El mayor es n + 1 = 36.
+85	La delegación
+86	Elegimos una delegación de dos personas entre seis estudiantes. ¿De cuántas maneras podemos hacerlo?
+87	Primero cuenta las parejas ordenadas. ¿Cuántas hay?
+88	Cada pareja se cuenta dos veces (A,B y B,A). ¿Qué hay que hacer?
+89	El primero se elige de 6 maneras, el segundo de 5: 30 parejas ordenadas.
+90	El orden no importa, contamos cada pareja dos veces.
+91	Resultado: 30 : 2 = 15.
+92	La última cifra
+93	¿Cuál es la última cifra de 7¹⁰⁰? Escribe cómo la has encontrado en el recuadro «Desarrollo».
+94	Escribe las últimas cifras de las potencias 7¹, 7², 7³, 7⁴ …
+95	Las últimas cifras se repiten con cierto periodo. ¿Cuál es y cuánto da 100 dividido entre el periodo?
+96	Últimas cifras: 7, 9, 3, 1, y otra vez 7, 9, 3, 1 … (periodo 4).
+97	100 es múltiplo de 4, así que 7¹⁰⁰ termina como 7⁴.
+98	La última cifra es 1.
+99	La isla de caballeros y mentirosos
+100	En una isla los caballeros siempre dicen la verdad y los mentirosos siempre mienten. A dice: «Los dos somos mentirosos». ¿Qué es B?
+101	Caballero
+102	Mentiroso
+103	No se puede determinar
+104	¿Puede A ser un caballero? ¿Qué significaría entonces su frase?
+105	Si A es un mentiroso, su frase es falsa. ¿Qué dice eso de B?
+106	Si A fuera un caballero, su frase sería verdadera, pero dice que es un mentiroso. Contradicción.
+107	Así que A es un mentiroso y su frase es falsa: no los dos son mentirosos.
+108	Como A es un mentiroso, B debe ser un caballero.
+109	Canicas en una bolsa
+110	Una bolsa tiene 3 canicas rojas y 2 azules. Sacamos dos sin devolverlas. ¿Cuál es la probabilidad de que las dos sean rojas?
+111	¿Cuál es la probabilidad de que la primera sea roja?
+112	Si no la devuelves, ¿cuántas rojas y cuántas canicas quedan?
+113	Primera roja: 3/5.
+114	Luego quedan 2 rojas de 4 canicas: 2/4 = 1/2.
+115	Juntas: 3/5 · 1/2 = 3/10.
+116	Marca las afirmaciones verdaderas
+117	¿Cuáles de estas afirmaciones son verdaderas? Márcalas todas.
+118	2¹⁰ es mayor que 10³
+119	Los ángulos de un triángulo suman 180°
+120	Todo número primo es impar
+121	0,999… es menor que 1
+122	Comprueba cada afirmación por separado. ¿Puedes encontrar un contraejemplo?
+123	Mira el primo más pequeño. ¿Y cuánto son 2¹⁰ y 10³?
+124	2¹⁰ = 1024 y 10³ = 1000, así que la primera se cumple.
+125	Los ángulos de un triángulo siempre suman 180°: la segunda se cumple.
+126	El número 2 es un primo par, así que la tercera falla. Y 0,999… es igual a 1, así que la cuarta falla.
+127	Empieza por donde a una fila, columna o bloque le faltan menos números.
+128	Ningún número puede repetirse en una fila, columna o bloque.
+129	Apaga todas las luces
+130	Al pulsar una casilla se invierte su luz y la de sus vecinas (arriba, abajo, izquierda, derecha). Apaga todas las luces (○).
+131	Prueba a pulsar una casilla dos veces. ¿Qué pasa?
+132	La ruta más corta
+133	Dibuja con el dedo un camino desde el cohete 🚀 hasta la meta 🏁. No puedes atravesar paredes, ¡y buscamos la ruta más corta!
+134	¿Qué pasillos son callejones sin salida?
+135	Lobo, cabra y col
+136	Lleva 🐺 🐐 🥬 al otro lado del río. La barca lleva al granjero y a uno más. Si se quedan solos: el lobo se come a la cabra y la cabra se come la col.
+137	¿Quiénes no pueden quedarse nunca solos juntos? ¿Qué personaje se lleva bien con los otros dos?
+138	La cabra está en las dos parejas peligrosas. ¿Y si la llevas primero?
+139	Idea clave: la cabra es la problemática (el lobo se la come y ella se come la col), así que el granjero nunca debe dejarla sola con ninguno de los dos.
+140	El lobo y la col no se hacen daño, así que pueden esperar juntos.
+141	Zorro, gallina y maíz
+142	Un barquero debe cruzar un arroyo con un zorro, una gallina y un saco de maíz. La barca lleva al barquero y a un pasajero. Si se quedan solos, el zorro se come a la gallina y la gallina picotea el maíz. ¡Encuentra un plan seguro!
+143	¿Quién aparece en las dos parejas peligrosas?
+144	La gallina va primero. ¿Qué sigue una vez que ella está al otro lado? ¡También puedes traerla de vuelta!
+145	La gallina está en las dos parejas peligrosas, así que el barquero la lleva primero y nunca la deja sola con el zorro ni con el maíz.
+146	A veces conviene traer a alguien de vuelta: lo que importa es que nadie quede en peligro.
+147	Astronautas y robots
+148	2 astronautas y 2 robots deben cruzar un río en una pequeña nave-barca. Lleva como máximo a dos y alguien tiene que remar. Si en una orilla hay más robots que astronautas (mientras haya astronautas), los astronautas corren peligro. ¡Encuentra un plan seguro!
+149	Vigila las cuentas en las dos orillas: astronautas ≥ robots siempre que haya algún astronauta.
+150	No tengas miedo de traer a alguien de vuelta: a veces es la única manera.
+151	En las dos orillas se cumple la regla: si hay un astronauta, los robots nunca son más que los astronautas.
+152	Tres astronautas, tres robots
+153	3 astronautas y 3 robots cruzan un río en una barca para dos. Regla: en una orilla con al menos un astronauta, los robots no pueden ser más que los astronautas. ¿Cuál es el menor número de travesías?
+154	Imagina todos los estados posibles: ¿cuántas veces podrías empezar enviando «2 robots»?
+155	Fíjate en quién queda en la orilla que dejas. A veces lo mejor es devolver un robot o un astronauta.
+156	Este es el famoso acertijo de los misioneros y los caníbales en versión espacial. Anotar sistemáticamente los estados de las orillas ayuda.
+157	Calcula la diferencia entre números vecinos.
+158	Comprueba si los números salen de multiplicar.
+159	Mira las diferencias entre vecinos. ¿Cambian?
+160	Compara los números con los cuadrados 1, 4, 9, 16, 25…
+161	Prueba a sumar dos números vecinos.
+162	Cada número es la suma de los dos anteriores.
+163	¿Y si hay dos sucesiones mezcladas en una?
+164	Prueba con números que salen de multiplicar tres veces: 2 · 2 · 2…
+165	Son cubos: 1³, 2³, 3³…
+166	Los números son 1³, 2³, 3³, 4³, 5³: cubos.
+167	El siguiente es 6³ = 216.
+168	Patrón numérico
+169	¿Qué número sustituye al signo de interrogación?
+170	Primera estrella
+171	Resuelve tu primera tarea.
+172	Diez tareas
+173	Termina 10 tareas.
+174	Explorador
+175	Termina 25 tareas.
+176	Mente aguda
+177	Consigue 3 estrellas en 5 tareas.
+178	Perseverante
+179	Resuelve una tarea después de varios intentos.
+180	Capitán
+181	Resuelve una tarea de cruce de río.
+182	Maestro del sudoku
+183	Resuelve un sudoku.
+184	Navegante
+185	Encuentra la ruta más corta en un laberinto.
+186	Electricista
+187	Apaga todas las luces.
+188	Todoterreno
+189	Resuelve tareas de 5 categorías distintas.
+190	Racha de tres días
+191	Resuelve tareas 3 días seguidos.
+192	500 puntos
+193	Consigue 500 puntos.
+194	Resolutor diario
+195	Resuelve un reto diario.
+196	Primer nivel
+197	Completa un nivel entero.
+198	Coleccionista
+199	Colecciona 10 pegatinas.
+200	Gran coleccionista
