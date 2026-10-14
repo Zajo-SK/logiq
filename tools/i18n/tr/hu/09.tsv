@@ -1,0 +1,135 @@
+1	Az apa {0} évvel idősebb a fiánál. Együtt {1} évesek. Hány éves az apa?
+2	{0} − {1} = {2} = a fiú életkorának kétszerese.
+3	A fiú {0} éves, az apa {1} + {2} = {3}.
+4	Egy malacperselyben {0} érme van, némelyik 1 €-s, a többi 2 €-s. Az értékük összesen {1} €. Hány 2 €-s érme van?
+5	{0} egyeuróssal az összeg {1} € lenne.
+6	{0} € hiányzik, tehát {1} darab 2 €-s érme van.
+7	Oldd meg az egyenletet: {0}·(x − {1}) + {2} = {3}. Mennyi x?
+8	Ha kivonod ezt: {0}, oszd el ezzel: {1}.
+9	{0} − {1} = {2}, tehát {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, tehát x = {2}.
+11	Hány osztója van (az 1-et és magát a számot is beleértve) a(z) {0} számnak?
+12	Próbáld a d = 1, 2, 3, … értékeket a(z) {0} négyzetgyökéig.
+13	A térről az A busz {0} percenként, a B busz {1} percenként indul. Épp most indultak együtt. Hány perc múlva indulnak újra együtt?
+14	A legkisebb közös többszörös {0}.
+15	Mi a(z) {0}^{1} utolsó számjegye?
+16	Írd le a hatványok utolsó számjegyeit: {0}¹, {1}², {2}³ …
+17	A(z) {0} kitevő maradéka {2}-es osztásnál {1}, ezért az utolsó számjegy {3}.
+18	Hány szám van 1 és {0} között, amely osztható ezzel: {1}, vagy ezzel: {2} (vagy mindkettővel)?
+19	{0} többszörösei: {1}, {2} többszörösei: {3}, mindkettőé ({4}): {5}.
+20	{0} + {1} − {2} = {3}.
+21	Hány nullára végződik a(z) {0}! = 1 · 2 · 3 · … · {1} szorzat?
+22	Számold meg, hányszor fordul elő az 5-ös tényező az 1 és {0} közötti számokban (ismétlődően is, pl. a 25-ben).
+23	Egy {0} cm × {1} cm-es téglalapot kell lefednünk egyforma négyzetekkel, hézag és átfedés nélkül. Mekkora lehet a négyzet legnagyobb oldala (cm-ben)?
+24	A legnagyobb: {0}.
+25	Egy zsákban {0} piros, {1} kék és {2} zöld golyó van. Vakon húzunk egyet. Mennyi a valószínűsége, hogy piros? (Tovább nem egyszerűsíthető törtként, pl. 1/6.)
+26	Összesen {0} golyó van, ebből {1} piros.
+27	A valószínűség {0}/{1} = {2}.
+28	Két szabályos kockával dobunk. Mennyi a valószínűsége, hogy az összeg {0}? (Tovább nem egyszerűsíthető törtként.)
+29	Sorold fel azokat a párokat, amelyek összege {0}.
+30	A(z) {0} összeget {1} pár adja, tehát {2}/36 = {3}.
+31	Egy érmét {0} alkalommal dobunk fel. Mennyi a valószínűsége, hogy pontosan {1} fej lesz? (Tovább nem egyszerűsíthető törtként.)
+32	Hány kimenetele van {0} dobásnak?
+33	Hányféleképpen választható ki, hogy a(z) {1} dobásból melyik {0} lesz fej?
+34	Összes kimenet: 2^{0} = {1}.
+35	Kedvező: C({0}, {1}) = {2}. Valószínűség: {3}/{4} = {5}.
+36	Egy zsákban {0} piros és {1} kék golyó van. Kettőt húzunk visszatevés nélkül. Mennyi a valószínűsége, hogy mindkettő piros? (Tovább nem egyszerűsíthető törtként.)
+37	Az első piros: {0}/{1}.
+38	A második piros: {0}/{1}. Együtt {2}/{3} · {4}/{5} = {6}.
+39	Két kockával dobunk. Mennyi a valószínűsége, hogy legalább az egyiken {0} van? (Tovább nem egyszerűsíthető törtként.)
+40	Könnyebb az ellenkezőjét megszámolni: egyiken sincs {0}.
+41	Egyik kockán sincs {0}: 5 · 5 = 25 a 36 kimenetből.
+42	Kedvező: 36 − 25 = {0}, a valószínűség {1}.
+43	Mennyi {1} {0}%-a?
+44	{0} 1%-a {1}.
+45	{0}% = {1} · {2} = {3}.
+46	Egy áru ára {0} €. Először {1}%-kal drágul, majd az új ár {2}%-kal csökken. Mennyibe kerül a végén?
+47	A drágulás után: {0} · {1} = {2} €.
+48	A csökkenés után: {0} · {1} = {2} €.
+49	{0} € Ema és Adam között {1} : {2} arányban oszlik meg. Hány eurót kap Ema?
+50	{0} + {1} = {2} rész van, egy rész {3} : {4} = {5} €.
+51	Ema {0} részt kap: {1} · {2} = {3} €.
+52	Mennyi a(z) {2} {0}/{1} része?
+53	{1} 1/{0} része {2} : {3} = {4}.
+54	A {0}/{1} rész {2} · {3} = {4}.
+55	Hány százaléka {0} ennek: {1}?
+56	{0} / {1} = {2}.
+57	Ez {0} század, azaz {1}%.
+58	Ma {0} van. Milyen nap lesz {1} nap múlva?
+59	Határozd meg a 7-tel való osztás maradékát: {0}.
+60	{0} : 7 = {1} maradék {2}.
+61	A teljes hetek nem változtatják a napot; lépj {0} napot előre innen: {1}, így: {2}.
+62	Egy vonat {0}-kor indul és {1}-kor érkezik. Hány percig tart az út?
+63	{0} = éjfél után {1} perc, {2} = {3} perc.
+64	A különbség {0} perc.
+65	Az évben ({0}) {1} 1-je {2} napra esik. Milyen napra esik {3} 1-je?
+66	A hónapnak {0} napja van: {1} : 7 = {2} maradék {3}.
+67	Ha {0} napot előreugrunk innen: {1}, ide jutunk: {2}.
+68	Óramutató: {0} · 30 + {1} · 0,5 = {2}°. Percmutató: {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	Az összes idő {0} perc.
+71	Van két jelölés nélküli kancsód: {0} L-es és {1} L-es, és bőven van víz. Egy lépés: egy kancsó teljes megtöltése, egy kancsó teljes kiürítése, vagy átöntés az egyikből a másikba, amíg a forrás ki nem ürül vagy a cél tele nem lesz. Legkevesebb hány lépés kell ahhoz, hogy valamelyik kancsóban pontosan {2} L legyen?
+72	Ez {0} lépés, kevesebb nem lehetséges (minden lehetőséget végignéztünk).
+73	{0} érme közül egy hamis – könnyebb a többinél. Van egy kétkarú mérleged súlyok nélkül. Legkevesebb hány méréssel találod meg biztosan a hamisat?
+74	{0} méréssel legfeljebb 3^{1} = {2} érmét tudunk megkülönböztetni, ami legalább {3}; {4} méréssel csak {5}-öt. Szükséges: {6}.
+75	🕸️ A körökben lévő számok összege {0}. Minden nyíl hozzáadja a saját színének számát. Mennyi x?
+76	Számold meg, hány x van az összegben, és mennyi marad. Aztán {0} − (a maradék) = (x-ek száma) × x.
+77	{0} darab x van, a maradék {1}. Tehát {2}·x + {3} = {4}, és x = {5}.
+78	A nyíl ennyit ad hozzá: {0}. Az azonos színű nyilak értéke egyforma, ezért elég egy helyen megtalálni.
+79	A megjelölt körbe {0} kerül.
+80	{0} teljes útvonal van. Minden elágazásnál próbáld ki mindkét lehetőséget, és húzd ki azokat, amelyek zsákutcába vezetnek vagy kihagynak egy szobát.
+81	A megjelölt szobába {0} kerül.
+82	Gyűjts matricákat: {0}
+83	Szerezz világérmeket: {0}
+84	Teljesítsd az összes napi küldetést ennyi napon: {0}
+85	{0} napos sorozat!
+86	Vegyél el: {0}
+87	Helyes! A(z) {0}. érme a hamis – {1} méréssel megtaláltad.
+88	A(z) {0}. érme nem hamis. Próbálkozz tovább.
+89	🎉 Pontosan {0} L van egy kancsóban! Lépések: {1}.
+90	Töltsd meg: {0} L
+91	Ürítsd ki: {0} L
+92	🎉 Mindenki átért! Idő: {0} perc.
+93	{1} húzás után meglett {0} egyforma!
+94	Sötét van – vakon húzol. Mikor lesz {0} egyformád? Próbáld ki többször, és keresd a legrosszabb esetet.
+95	🎉 Minden gyereknek {0} van.
+96	A sárgák adottak. Tegyél hozzá pirosakat úgy, hogy pontosan {0} legyen összesen. Több a szabad cella, mint amennyi kell!
+97	Dobj fel {0} érmét, és figyeld a fejek számát. Ismételd!
+98	Innen indulunk: {0}. Lépkedj napról napra – hol kötsz ki {1} nap után?
+99	Színezz ki {0} négyzetet a 100-ból – ez {1}%.
+100	Veszteségek ezen a szinten: {0}
+101	{0}. sor
+102	{0}. oszlop
+103	{0}. blokk
+104	A(z) {0} cellába {1} kerül.
+105	Húzd ki a jelölteket – {0}. Még egy tipp kitölt egy cellát.
+106	Módszer: {0}. 
+107	A(z) {0} cellában csak egy szám állhat.
+108	Itt: {0} – egy szám csak egyetlen cellába fér. Nézd a kiemeltet.
+109	A(z) {0} szám itt: {1} „be van zárva” ide: {2} – máshol húzd ki.
+110	A(z) {0} szám X-Wing téglalapot alkot – húzd ki a megfelelő vonalakban.
+111	Hibás cellák: {0} („!” jelöli).
+112	Nézd a(z) {0}. sor {1}. oszlopában lévő cellát. Milyen számok kerülhetnek még oda?
+113	A cellába ({0}. sor, {1}. oszlop) {2} kerül.
+114	Próbáld megnyomni a(z) {0}. sor {1}. oszlopában lévő cellát.
+115	Ez a kiindulás. A legrövidebb megoldás {0} cellát nyom meg (👆 jelöli):
+116	Elérted a célt – szuper! De van rövidebb út is. A tiéd {0} lépés volt, próbálj kevesebből.
+117	Először próbáld felfedezni a zsákutcákat. A legrövidebb út {0} lépés.
+118	A legrövidebb út eleje (sor, oszlop): {0} …
+119	Felfedezzük és kizárjuk a zsákutcákat. A legrövidebb út {0} lépés, és így megy:
+120	Kész! Mindenki átért {0} lépésben – és kevesebből nem is lehet (a számítógép minden lehetőséget végignézett).
+121	Itt kezdesz: {0}. Végy el ennyit: {1}, hogy ennyi maradjon: {2} (az ellenfeled számára vesztes szám). Aztán mindig úgy válaszolj, hogy megint vesztes számot hagyj.
+122	Itt kezd a számítógép: {0} – ez a soron lévő játékosnak vesztes szám. Bármit lép, válaszolj úgy, hogy megint vesztes számot hagyj.
+123	Itt nyerhetsz például így: végy el ennyit: {0} a(z) {1}. kupacból.
+124	{0} perce
+125	{0} órája
+126	{0} napja
+127	Szintek: {0} / {1} · jelvények: {2}
+128	{0}.{1} osztály létrehozása
+129	{0} tanuló
+130	{0} osztály
+131	Kiválasztott feladatok: {0}
+132	tanulók: {0}
+133	{0} feladat
+134	{1} tanulóból {0} végzett
+135	Kész: {0} / {1}

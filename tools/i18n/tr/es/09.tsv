@@ -1,0 +1,135 @@
+1	Un padre es {0} años mayor que su hijo. Entre los dos suman {1} años. ¿Cuántos años tiene el padre?
+2	{0} − {1} = {2} = el doble de la edad del hijo.
+3	El hijo tiene {0} años, el padre {1} + {2} = {3}.
+4	Una hucha contiene {0} monedas, unas de 1 € y las demás de 2 €. Su valor total es de {1} €. ¿Cuántas monedas de 2 € hay?
+5	Con {0} monedas de un euro serían {1} €.
+6	Faltan {0} €, así que hay {1} monedas de dos euros.
+7	Resuelve la ecuación: {0}·(x − {1}) + {2} = {3}. ¿Cuánto vale x?
+8	Después de restar {0}, divide entre {1}.
+9	{0} − {1} = {2}, así que {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, así que x = {2}.
+11	¿Cuántos divisores (incluidos el 1 y el propio número) tiene {0}?
+12	Prueba con d = 1, 2, 3, … hasta la raíz cuadrada de {0}.
+13	Desde la plaza, el autobús A sale cada {0} minutos y el autobús B cada {1} minutos. Acaban de salir juntos. ¿Cuántos minutos pasarán hasta que vuelvan a salir juntos?
+14	El mínimo común múltiplo es {0}.
+15	¿Cuál es la última cifra de {0}^{1}?
+16	Escribe las últimas cifras de las potencias {0}¹, {1}², {2}³ …
+17	El exponente {0} deja resto {1} al dividir entre {2}, así que la última cifra es {3}.
+18	¿Cuántos números del 1 al {0} son divisibles entre {1} o entre {2} (o entre ambos)?
+19	Múltiplos de {0}: {1}, de {2}: {3}, de ambos ({4}): {5}.
+20	{0} + {1} − {2} = {3}.
+21	¿Con cuántos ceros termina {0}! = 1 · 2 · 3 · … · {1}?
+22	Cuenta cuántas veces aparece el factor 5 en los números del 1 al {0} (también repetido, por ejemplo en 25).
+23	Queremos cubrir un rectángulo de {0} cm × {1} cm con cuadrados iguales, sin huecos ni solapamientos. ¿Cuál es el lado más grande posible de un cuadrado (en cm)?
+24	El mayor es {0}.
+25	Una bolsa contiene {0} canicas rojas, {1} azules y {2} verdes. Se saca una sin mirar. ¿Cuál es la probabilidad de que sea roja? (Como fracción irreducible, p. ej. 1/6.)
+26	En total hay {0} canicas, {1} son rojas.
+27	La probabilidad es {0}/{1} = {2}.
+28	Lanzamos dos dados equilibrados. ¿Cuál es la probabilidad de que la suma sea {0}? (Como fracción irreducible.)
+29	Escribe las parejas cuya suma es {0}.
+30	La suma {0} sale con {1} parejas, así que {2}/36 = {3}.
+31	Se lanza una moneda {0} veces. ¿Cuál es la probabilidad de obtener exactamente {1} caras? (Como fracción irreducible.)
+32	¿Cuántos resultados posibles hay en {0} lanzamientos?
+33	¿De cuántas formas puedes elegir cuáles {0} de los {1} lanzamientos son cara?
+34	Todos los resultados: 2^{0} = {1}.
+35	Favorables: C({0}, {1}) = {2}. Probabilidad {3}/{4} = {5}.
+36	Una bolsa contiene {0} canicas rojas y {1} azules. Se sacan dos sin reemplazo. ¿Cuál es la probabilidad de que las dos sean rojas? (Como fracción irreducible.)
+37	La primera roja: {0}/{1}.
+38	La segunda roja: {0}/{1}. Juntas {2}/{3} · {4}/{5} = {6}.
+39	Lanzamos dos dados. ¿Cuál es la probabilidad de que al menos uno muestre {0}? (Como fracción irreducible.)
+40	Es más fácil contar lo contrario: ninguno muestra {0}.
+41	Ninguno de los dados muestra {0}: 5 · 5 = 25 de 36 resultados.
+42	Favorables: 36 − 25 = {0}, probabilidad {1}.
+43	¿Cuánto es el {0} % de {1}?
+44	El 1 % de {0} es {1}.
+45	El {0} % es {1} · {2} = {3}.
+46	Un artículo cuesta {0} €. Primero sube un {1} % y luego el nuevo precio baja un {2} %. ¿Cuánto cuesta al final?
+47	Después de la subida: {0} · {1} = {2} €.
+48	Después de la bajada: {0} · {1} = {2} €.
+49	{0} € se reparten entre Ema y Adam en la proporción {1} : {2}. ¿Cuántos euros recibe Ema?
+50	Hay {0} + {1} = {2} partes, una parte es {3} : {4} = {5} €.
+51	Ema recibe {0} partes: {1} · {2} = {3} €.
+52	¿Cuánto son {0}/{1} de {2}?
+53	1/{0} de {1} es {2} : {3} = {4}.
+54	{0}/{1} es {2} · {3} = {4}.
+55	¿Qué porcentaje es {0} de {1}?
+56	{0} / {1} = {2}.
+57	Son {0} centésimas, es decir, el {1} %.
+58	Hoy es {0}. ¿Qué día de la semana será dentro de {1} días?
+59	Halla el resto de dividir {0} entre 7.
+60	{0} : 7 = {1} y resto {2}.
+61	Las semanas completas no cambian el día; avanza {0} días desde {1} y llegarás a {2}.
+62	Un tren sale a las {0} y llega a las {1}. ¿Cuántos minutos dura el viaje?
+63	{0} = {1} minutos después de la medianoche, {2} = {3} minutos.
+64	La diferencia es de {0} minutos.
+65	En {0}, el 1 de {1} cae en {2}. ¿Qué día de la semana es el 1 de {3}?
+66	El mes tiene {0} días: {1} : 7 = {2} y resto {3}.
+67	Avanzar {0} días desde {1} nos lleva a {2}.
+68	Manecilla de las horas: {0} · 30 + {1} · 0,5 = {2}°. Minutero: {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	El tiempo total es de {0} minutos.
+71	Tienes dos jarras sin marcas: de {0} L y de {1} L, y agua de sobra. Un paso consiste en llenar una jarra por completo, vaciar una jarra por completo o verter de una a otra hasta que la de origen quede vacía o la de destino quede llena. ¿Cuál es el menor número de pasos para tener exactamente {2} L en una de las jarras?
+72	Son {0} pasos y con menos es imposible (se probaron todas las opciones).
+73	Entre {0} monedas hay una falsa: pesa menos que las demás. Tienes una balanza de platillos sin pesas. ¿Cuál es el menor número de pesadas que encuentra seguro la falsa?
+74	Con {0} pesadas podemos distinguir hasta 3^{1} = {2} monedas, que son al menos {3}; con {4} pesadas solo {5}. Necesitamos {6}.
+75	🕸️ La suma de todos los números de los círculos es {0}. Cada flecha suma el número de su color. ¿Cuánto vale x?
+76	Cuenta cuántas x hay en la suma y cuánto sobra. Luego {0} − (el resto) = (número de x) × x.
+77	Hay {0} x y el resto es {1}. Así que {2}·x + {3} = {4} y x = {5}.
+78	La flecha suma {0}. Todas las flechas de ese color tienen el mismo valor, así que basta con averiguarlo en un sitio.
+79	El círculo marcado debería ser {0}.
+80	Hay {0} rutas completas. En cada bifurcación prueba las dos opciones y tacha las que acaban en un callejón sin salida o se saltan una sala.
+81	La sala marcada debería ser {0}.
+82	Colecciona pegatinas: {0}
+83	Gana medallas de los mundos: {0}
+84	Completa todas las misiones diarias durante {0} días
+85	¡Racha de {0} días!
+86	Quita {0}
+87	¡Correcto! La moneda {0} es la falsa: la encontraste con {1} pesadas.
+88	La moneda {0} no es falsa. Sigue intentándolo.
+89	🎉 ¡Exactamente {0} L en una jarra! Pasos: {1}.
+90	Llenar {0} L
+91	Vaciar {0} L
+92	🎉 ¡Todos han cruzado! Tiempo: {0} min.
+93	¡{0} iguales después de {1} extracciones!
+94	Está oscuro: sacas a ciegas. ¿Cuándo tienes {0} iguales? Prueba varias veces y busca el peor caso.
+95	🎉 Cada niño tiene {0}.
+96	Los amarillos ya están puestos. Añade rojos hasta que haya exactamente {0} en total. ¡Hay más casillas libres de las que necesitas!
+97	Lanza {0} monedas y observa el número de caras. ¡Repite!
+98	Empezamos en {0}. Salta día a día: ¿dónde caes después de {1} días?
+99	Colorea {0} cuadrados de 100: eso es el {1} %.
+100	Derrotas en este nivel: {0}
+101	fila {0}
+102	columna {0}
+103	bloque {0}
+104	La casilla {0} lleva {1}.
+105	Tacha candidatos: {0}. Otra pista rellena una casilla.
+106	Técnica: {0}.
+107	La casilla {0} solo puede contener un número.
+108	En {0} un número cabe en una sola casilla: mira la resaltada.
+109	El número {0} en {1} está «bloqueado» dentro de {2}: táchalo en el resto de esa zona.
+110	El número {0} forma un rectángulo X-Wing: táchalo en las líneas correspondientes.
+111	Casillas incorrectas: {0} (marcadas con «!»).
+112	Mira la casilla de la fila {0}, columna {1}. ¿Qué números pueden ir todavía ahí?
+113	La casilla (fila {0}, columna {1}) lleva {2}.
+114	Prueba a pulsar la casilla de la fila {0}, columna {1}.
+115	Este es el inicio. La solución más corta pulsa {0} casillas (marcadas con 👆):
+116	¡Llegaste a la meta, genial! Pero existe una ruta más corta. La tuya tardó {0} pasos, intenta con menos.
+117	Primero intenta localizar los callejones sin salida. La ruta más corta tiene {0} pasos.
+118	El comienzo de la ruta más corta (fila, columna): {0} …
+119	Exploramos y descartamos los callejones sin salida. La ruta más corta tiene {0} pasos y va así:
+120	¡Hecho! Todos han cruzado en {0} movimientos, y no se puede en menos (un ordenador comprobó todas las posibilidades).
+121	Empiezas en {0}: quita {1} para dejar {2} (una cuenta perdedora para tu rival). Después responde siempre de modo que vuelvas a dejar una cuenta perdedora.
+122	El ordenador empieza en {0}, una cuenta perdedora para quien mueve. Haga lo que haga, responde dejando de nuevo una cuenta perdedora.
+123	Aquí ganas, por ejemplo, así: quita {0} del montón {1}.
+124	hace {0} min
+125	hace {0} h
+126	hace {0} días
+127	Niveles: {0} de {1} · insignias: {2}
+128	Crear la clase {0}.{1}
+129	{0} alumnos
+130	Clase {0}
+131	Tareas seleccionadas: {0}
+132	alumnos: {0}
+133	{0} tareas
+134	{0} de {1} alumnos han terminado
+135	Hecho {0} de {1}

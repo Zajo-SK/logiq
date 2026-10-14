@@ -1,0 +1,200 @@
+1	Unterstützung für 15 Sprachen (Slowakisch, Englisch, Tschechisch, Polnisch, Ungarisch, Ukrainisch, Deutsch, Spanisch, Französisch, Portugiesisch, Russisch, Chinesisch, Japanisch, Hindi, Arabisch). Die Oberfläche ist übersetzt, die Aufgabentexte werden gerade übersetzt. Arabisch wird von rechts nach links geschrieben.
+2	Klasse {0}
+3	Sudoku {0}
+4	Der Unterschied ist immer {0}. Addiere ihn zur letzten Zahl.
+5	Die Unterschiede sind immer {0}.
+6	Die letzte Zahl ist {0}, die nächste ist {1} + {2} = {3}.
+7	Jede Zahl ist das {0}-Fache der vorherigen.
+8	Jede Zahl ist die vorherige mal {0}.
+9	{0} · {1} = {2}.
+10	Die Unterschiede sind {0}, {1}, {2}, {3} – sie wachsen jeweils um 1.
+11	Die Unterschiede sind {0}, {1}, {2}, {3}: jeder ist um 1 größer.
+12	Der nächste Unterschied ist {0}, also {1} + {2} = {3}.
+13	Die nächste Zahl ist 6² + {0} = {1}.
+14	{0} + {1} = {2}, {3} + {4} = {5} … jede Zahl ist die Summe der beiden vorherigen.
+15	Als Nächstes: {0} + {1} = {2}.
+16	Die Zahlen an den Stellen 1, 3, 5 wachsen um {0}, die an den Stellen 2, 4 sinken um {1}.
+17	Teile in zwei Folgen: {0}, {1}, {2} (wächst um {3}) und {4}, {5}, ? (sinkt um {6}).
+18	Die fehlende Zahl ist {0} − {1} = {2}.
+19	Versuche, den Frosch auf Blatt {0} zu bewegen.
+20	Versuche, den Frosch von Blatt {0} auf Blatt {1} zu bewegen.
+21	Trick: Die Frösche sollen abwechselnd stehen – Schritt, Sprung, Sprung, Schritt … (Über einen gleichfarbigen Frosch zu springen hilft nicht.) Die wenigsten Züge sind {0}² + 2·{1} = {2}.
+22	{0}→ gehen nach rechts, {1}← gehen nach links. Tausche ihre Plätze!
+23	{0} × {1}→ und {2} × {3}←. Was ist die kleinste Anzahl an Zügen, um sie zu tauschen? (ein Schritt oder ein Sprung = 1 Zug)
+24	Jeder Frosch → muss über jeden Frosch ← springen: das sind {0} · {1} = {2} Sprünge.
+25	Außerdem macht jeder der {0} Frösche einen Schritt auf ein freies Blatt: {1} Schritte.
+26	Insgesamt {0} + {1} = {2} Züge.
+27	Erreichbare Felder: {0} – insgesamt {1}.
+28	Wie viele {0} passen auf ein {1}×{2}-Brett, sodass sich keine zwei bedrohen?
+29	Für {0}×{1} ergibt das {2}.
+30	🁢 Ein {0}×{1}-Brett. Wie viele 1×2-Dominosteine passen höchstens darauf?
+31	Das Brett hat {0} · {1} = {2} Felder.
+32	Wir legen 1 Korn auf das erste Feld eines Schachbretts, 2 auf das zweite, 4 auf das dritte – jedes Feld bekommt doppelt so viele wie das vorherige. Wie viele Körner liegen insgesamt auf den ersten {0} Feldern?
+33	Wir legen 1 Korn auf das erste Feld eines Schachbretts, 2 auf das zweite, 4 auf das dritte – immer doppelt so viele wie zuvor. Wie viele Körner liegen auf Feld Nummer {0}?
+34	Die Summe ist immer um 1 kleiner als das nächste Glied: 2^{0} − 1 = {1}.
+35	Auf Feld {0} liegen 2^{1} Körner.
+36	Das sind {0}.
+37	🗼 Bewege {0} Scheiben in {1} Zügen auf den letzten Stab.
+38	🗼 Ein Turm von Hanoi hat {0} Scheiben. Wie viele Züge braucht man mindestens, um ihn umzusetzen?
+39	Also T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, somit T({0}) = {1}.
+40	🗼 {0} Scheiben, auf dem schnellsten Weg. Wie oft wird Scheibe Nr. {1} bewegt? (1 = die kleinste)
+41	Jede kleinere Scheibe wird doppelt so oft bewegt: Scheibe {0} wird 2^{1} = {2}-mal bewegt.
+42	Ein Turm von Hanoi mit VIER Stäben (sonst gleiche Regeln) und {0} Scheiben. Wie viele Züge sind mindestens nötig? (Tipp: für 1, 2, 3, 4 Scheiben sind es 1, 3, 5, 9 Züge.)
+43	Die beste Wahl von k ergibt {0} Züge.
+44	Du hast das Ziel in {0} Zügen erreicht – es geht schneller, das Minimum ist {1}. Versuche es noch einmal!
+45	Markiere das Feld {0}.
+46	Von seinem aktuellen Feld aus kann die Figur auf {0} Felder ziehen. Welches davon liegt näher am Ziel?
+47	Ein guter nächster Zug: {0}.
+48	Der Turm wurde in {0} Zügen umgesetzt – super! Es geht aber auch in {1}. Versuche es noch einmal und suche nach dem Muster.
+49	Das wiederholt sich: {0}
+50	Als Nächstes kommt {0}.
+51	{0} ist {1}, gehört also nicht dazu.
+52	{0} bleiben ohne Partner übrig.
+53	{0}: {1}, {2}: {3}.
+54	{0} + {1} = {2}
+55	{0} − {1} = {2}
+56	{0} : {1} = {2}
+57	Wir addieren {0}. Die fehlende Zahl ist {1}.
+58	Wie viele {0} siehst du?
+59	Es sind {0}.
+60	Zähle von {0} bis {1}.
+61	Die Verlustzahlen (für den Spieler, der am Zug ist) sind: {0}. Ist {1} dabei?
+62	{0} ist keine Verlustzahl, also gewinnt der erste Spieler: Nimm {1} und lass {2} übrig.
+63	{0} ist für den Spieler am Zug eine Verlustzahl, also gewinnt der zweite Spieler.
+64	Die Nim-Summe (XOR) ist jetzt {0}. Von welchem Haufen musst du nehmen, damit sie 0 wird?
+65	Der Unterschied ist {0} − {1} = {2}. Danach machst du einfach die Züge deines Gegners auf dem anderen Haufen nach.
+66	Nimm {0} vom Haufen mit {1}: {2} ⊕ {3} = {4}, damit wird die Nim-Summe 0.
+67	🍫 Eine Schokolade {0} × {1}. Ein Bruch = ein Stück wird in zwei geteilt. Wie viele Brüche braucht man, bis jedes Quadrat einzeln ist?
+68	Jeder Bruch erhöht die Anzahl der Stücke um genau 1, also brauchen wir {0} − 1 = {1} Brüche – egal, wie man vorgeht.
+69	🏆 {0} Spieler. In jeder Runde spielen Paare gegeneinander und der Sieger kommt weiter. Wie viele Runden werden gespielt?
+70	Das sind {0} Halbierungen, also {1} Runden.
+71	Von {0} Spielern müssen {1} ausscheiden.
+72	Jedes Spiel scheidet einen aus, also werden {0} Spiele gespielt – egal, wie die Paare gelost werden.
+73	Nimm an, dass {0} ein Ritter ist. Was folgt daraus für die anderen?
+74	Du suchst den Verdächtigen, für den genau {0} Aussagen wahr sind.
+75	Genau {0} wahre Aussagen gibt es nur bei {1}.
+76	ist durch {0} teilbar
+77	ist nicht durch {0} teilbar
+78	ist größer als {0}
+79	ist kleiner als {0}
+80	hat die Quersumme {0}
+81	endet auf die Ziffer {0}
+82	Ich denke an eine Zahl von 1 bis {0}. Alles auf der Liste stimmt. Welche Zahl ist es?
+83	Nur eine Zahl bleibt übrig: {0}.
+84	{0} steht vor {1}.
+85	{0} steht direkt hinter {1}.
+86	{0} steht nicht an erster Stelle.
+87	{0} steht nicht an letzter Stelle.
+88	{0} steht irgendwo zwischen {1} und {2}.
+89	{0} hat kein {1}.
+90	Weder {0} noch {1} hat {2}.
+91	{0} hat {1}.
+92	Jeder {0} ist ein {1}.
+93	Kein {0} ist ein {1}.
+94	Mindestens ein {0} ist ein {1}.
+95	Mindestens ein {0} ist kein {1}.
+96	Axel ist kein {0}.
+97	Axel ist kein {0}.
+98	Axel ist ein {0}.
+99	Axel ist ein {0}, aber kein {1}.
+100	Richtig: „{0}“ – die anderen lassen sich aus den Voraussetzungen nicht ableiten.
+101	Eine Gruppe von {0} Kindern will sich für ein Foto aufstellen. In wie vielen verschiedenen Reihenfolgen können sie stehen?
+102	Für den ersten Platz gibt es {0} Möglichkeiten, für den zweiten {1}, für den dritten {2} … bis hinunter zu 1.
+103	Eine Gruppe von {0} Läufern steht an der Startlinie. Auf wie viele verschiedene Arten können Gold, Silber und Bronze vergeben werden?
+104	Gold: {0} Möglichkeiten, Silber: {1}, Bronze: {2}.
+105	Insgesamt {0} · {1} · {2} = {3}.
+106	Eine Gruppe von {0} Kindern stellt sich auf. {1} und {2} wollen nebeneinander stehen (in beliebiger Reihenfolge). Wie viele solche Anordnungen gibt es?
+107	Behandle das Paar wie einen Block: Wir ordnen {0} Blöcke an, das geht auf {1} Arten.
+108	Im Paar gibt es 2 Reihenfolgen, also 2 · {0} = {1}.
+109	Eine Gruppe von {0} Kindern sitzt an einem runden Tisch. Zwei Sitzordnungen, die sich nur durch Drehen des ganzen Tisches unterscheiden, zählen als gleich. Wie viele verschiedene Sitzordnungen gibt es?
+110	Ordne die übrigen {0} drumherum an: {1}! = {2}.
+111	Hunderter: {0} Möglichkeiten, Zehner: {1}, Einer: {2}.
+112	Aus einer Gruppe von {0} Kindern wählen wir eine Abordnung aus zwei Personen. Auf wie viele Arten ist das möglich?
+113	Es gibt {0} · {1} = {2} geordnete Paare.
+114	Die Reihenfolge spielt keine Rolle, also teilen wir durch 2: {0}.
+115	Aus einer Gruppe von {0} Kindern wählen wir ein Dreierteam. Wie viele verschiedene Teams sind möglich?
+116	Geordnete Dreiergruppen: {0} · {1} · {2} = {3}.
+117	Jedes Team wurde 6-mal gezählt, also {0} : 6 = {1}.
+118	Eine Gruppe von {0} Personen trifft sich. Jeder schüttelt jedem anderen genau einmal die Hand. Wie viele Händedrücke gibt es?
+119	Jeder schüttelt {0} Hände, insgesamt {1} · {2} = {3}.
+120	Jeder Händedruck wurde doppelt gezählt, also {0} : 2 = {1}.
+121	Ein regelmäßiges Vieleck mit {0} Ecken. Wie viele Diagonalen kann man darin zeichnen?
+122	Von jeder Ecke gehen {0} Diagonalen aus.
+123	Insgesamt {0} · {1} : 2 = {2} (jede wurde doppelt gezählt).
+124	Eine Pizzeria hat {0} Zutaten. Eine Pizza kann jede beliebige Kombination haben (jede Zutat ist entweder drauf oder nicht; eine Pizza ohne alles ist erlaubt). Wie viele verschiedene Pizzen kann man bestellen?
+125	Also 2 · 2 · … ({0}-mal) = 2^{1} = {2}.
+126	Zu jedem T-Shirt gibt es {0} · {1} = {2} Kombinationen.
+127	🔒 Ein Schloss hat {0} Rädchen mit den Ziffern 0–9. Wie viele Codes lassen sich einstellen?
+128	Insgesamt 10^{0} = {1}.
+129	Es gibt {0} Straßen von A nach B, {1} von B nach C und {2} von C nach D. Wie viele verschiedene Routen führen von A über B und C nach D?
+130	Strecke A–B: {0}, B–C: {1}, C–D: {2}.
+131	Es gibt {0} · {1} · {2} = {3} Routen.
+132	Systematisches Zählen aller Zahlen von 100 bis 999 ergibt {0}.
+133	Im Ziel gibt es {0}.
+134	🧦 Socken in {0} Farben, es ist dunkel. Wie viele musst du herausziehen, um sicher {1} einer Farbe zu haben?
+135	Im schlimmsten Fall hast du von jeder Farbe eine weniger als {0}.
+136	Mit dem größten Pech hast du von jeder der {1} Farben {0} Socken – das sind {2}.
+137	Die nächste Socke muss {0} gleiche ergeben: {1} + 1 = {2}.
+138	Ein Kartenspiel hat Karten in vier Farben (♠ ♥ ♦ ♣), von jeder mindestens {0}. Wie viele Karten musst du blind ziehen, um sicher {1} Karten derselben Farbe zu haben?
+139	Im schlimmsten Fall hast du von jeder Farbe {0} Karten.
+140	Schlimmster Fall: {0} Karten von jeder der 4 Farben, insgesamt {1}.
+141	Die nächste Karte muss {0} einer Farbe vollmachen: {1}.
+142	Eine Schule hat {0} Schüler. Ein Jahr hat 12 Monate. Was ist die größte Anzahl von Schülern mit gleichem Geburtsmonat, die garantiert ist (in mindestens einem Monat)?
+143	{0} : 12 = {1}…, also muss es einen Monat mit mindestens {2} Schülern geben.
+144	In einem Schrank liegen {0} verschiedene Paare Handschuhe (jedes Paar hat seine eigene Farbe, insgesamt {1} Handschuhe, links und rechts). Du ziehst sie im Dunkeln heraus. Wie viele musst du mindestens nehmen, um sicher ein vollständiges Paar zu haben (links und rechts in einer Farbe)?
+145	Ohne Paar kannst du höchstens einen Handschuh von jeder der {0} Farben halten.
+146	Im schlimmsten Fall hältst du {0} Handschuhe, jeden in einer anderen Farbe (zum Beispiel alle links).
+147	Der nächste (Nummer {0}) macht ein Paar komplett: {1} + 1 = {2}.
+148	Wie viele verschiedene „Wörter“ (Unsinn erlaubt) lassen sich bilden, wenn man alle Buchstaben von {0} umordnet?
+149	Wären alle Buchstaben verschieden, gäbe es {0}! = {1} Anordnungen.
+150	Eine Kette hat {0} Perlen in einer Reihe: rot – {1}, blau – {2}, grün – {3} (Perlen einer Farbe sehen gleich aus). Wie viele verschiedene Muster sind möglich?
+151	Plätze für Rot: C({0}, {1}) = {2}.
+152	Aus den übrigen {0} Plätzen wähle Blau: C({1}, {2}) = {3}; Grün nimmt den Rest.
+153	Insgesamt {0} · {1} = {2}.
+154	Jede Zahl ist 2 · (vorherige) {0}.
+155	{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …
+156	Als Nächstes: {0} · 2 {1} = {2}.
+157	Die Unterschiede der Unterschiede sind immer {0}.
+158	Der nächste Unterschied ist {0}, also ist die nächste Zahl {1}.
+159	In einem magischen Quadrat haben alle Zeilen, alle Spalten und beide Diagonalen dieselbe Summe. Welche Zahl gehört an die Stelle {0}?
+160	Die magische Summe ist {0} (aus einer vollständig bekannten Linie).
+161	Einsetzen in die Frage ergibt {0}.
+162	Innere Würfel: ({0}−2)·({1}−2)·({2}−2) = {3}.
+163	Würfel in der Mitte der Flächen: 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.
+164	Kantenwürfel ohne Ecken: 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.
+165	Antwort: {0}.
+166	Wie viele Quadrate (auch große) findest du im {0} × {1}-Gitter?
+167	Es gibt {0} Quadrate der Größe 1×1. Wie viele 2×2-Quadrate gibt es?
+168	Das Gitter hat {0} Zeilen und {1} Spalten. Wie viele Rechtecke (Quadrate zählen auch) findest du darin?
+169	Auf wie viele Arten kannst du 2 der {0} waagerechten und 2 der {1} senkrechten Linien auswählen?
+170	Es gibt {0} waagerechte und {1} senkrechte Linien.
+171	Zwei waagerechte: C({0},2) = {1}, zwei senkrechte: C({2},2) = {3}. Insgesamt {4}.
+172	Die Summe aller Zahlen ist {0}.
+173	Die Summe der Spaltenmaxima ist {0}.
+174	Insgesamt {0} bemalte Flächen.
+175	Ganzes Rechteck: {0} · {1} = {2} cm².
+176	Ausschnitt: {0} · {1} = {2} cm². Was übrig bleibt: {3} cm².
+177	Umfang = 2 · ({0} + {1}) = {2} cm.
+178	Ursprüngliche Seite: {0} cm. Neue Seite: {1} cm.
+179	Neue Fläche {0} · {1} = {2} cm² ({3}-mal so groß).
+180	Ein Rechteck hat einen Umfang von {0} cm und eine Seite von {1} cm. Wie groß ist seine Fläche?
+181	Du kennst a = {0}. Wie lang ist die andere Seite?
+182	a + b = {0} (halber Umfang).
+183	Die andere Seite: {0} − {1} = {2} cm, Fläche {3} · {4} = {5} cm².
+184	Ein Dreieck hat eine Grundseite von {0} cm und eine dazugehörige Höhe von {1} cm. Wie groß ist seine Fläche?
+185	({0} · {1}) : 2 = {2} cm².
+186	Ein Bild ist außen {0} cm × {1} cm groß und hat ringsum einen {2} cm breiten Rahmen. Wie groß ist die Fläche des Rahmens selbst (ohne den inneren Teil)?
+187	Auf jeder Seite gehen {0} cm weg – {1} cm je Maß.
+188	Innerer Teil: ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².
+189	Rahmen = {0} − {1} = {2} cm².
+190	Ich denke mir eine Zahl. Wenn ich sie mit {0} multipliziere und {1} addiere, erhalte ich {2}. Wie heißt meine Zahl?
+191	Zuerst {0} abziehen, dann durch {1} teilen.
+192	{0} − {1} = {2}.
+193	{0} : {1} = {2}.
+194	Die Summe von {0} aufeinanderfolgenden ganzen Zahlen ist {1}. Welche ist die größte davon?
+195	n, n+1, …, n+{0}: Wie groß ist die Summe?
+196	Die Summe ist {0}·n + {1} = {2}.
+197	n = {0}, also ist die größte {1} + {2} = {3}.
+198	Die Summe zweier Zahlen ist {0} und ihre Differenz ist {1}. Welche ist die größere?
+199	({0} + {1}) = {2} = 2 · die größere Zahl.
+200	Die größere Zahl ist {0} : 2 = {1}.

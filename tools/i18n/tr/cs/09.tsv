@@ -1,0 +1,135 @@
+1	Otec je o {0} let starší než jeho syn. Dohromady jim je {1} let. Kolik let je otci?
+2	{0} − {1} = {2} = dvojnásobek synova věku.
+3	Synovi je {0}, otci {1} + {2} = {3}.
+4	V pokladničce je {0} mincí, některé po 1 €, ostatní po 2 €. Jejich celková hodnota je {1} €. Kolik je dvoueurových mincí?
+5	S {0} jedním eurem by to bylo {1} €.
+6	Chybí {0} €, takže dvoueurových mincí je {1}.
+7	Vyřeš rovnici: {0}·(x − {1}) + {2} = {3}. Kolik je x?
+8	Po odečtení {0} vyděl {1}.
+9	{0} − {1} = {2}, takže {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, takže x = {2}.
+11	Kolik dělitelů (včetně 1 a samotného čísla) má číslo {0}?
+12	Zkoušej d = 1, 2, 3, … až do odmocniny z {0}.
+13	Z náměstí odjíždí autobus A každých {0} minut a autobus B každých {1} minut. Právě odjeli spolu. Za kolik minut odjedou znovu spolu?
+14	Nejmenší společný násobek je {0}.
+15	Jaká je poslední číslice čísla {0}^{1}?
+16	Zapiš poslední číslice mocnin {0}¹, {1}², {2}³ …
+17	Exponent {0} dává při dělení {2} zbytek {1}, takže poslední číslice je {3}.
+18	Kolik čísel od 1 do {0} je dělitelných {1} nebo {2} (nebo oběma)?
+19	Násobků {0}: {1}, násobků {2}: {3}, násobků obou ({4}): {5}.
+20	{0} + {1} − {2} = {3}.
+21	Kolika nulami končí {0}! = 1 · 2 · 3 · … · {1}?
+22	Spočítej, kolikrát se činitel 5 vyskytuje v číslech od 1 do {0} (i opakovaně, např. v 25).
+23	Chceme pokrýt obdélník {0} cm × {1} cm stejnými čtverci, bez mezer a bez překrývání. Jaká je největší možná strana čtverce (v cm)?
+24	Největší je {0}.
+25	V pytlíku je {0} červených, {1} modrých a {2} zelených kuliček. Poslepu se vytáhne jedna. Jaká je pravděpodobnost, že bude červená? (Zlomkem v základním tvaru, např. 1/6.)
+26	Všech kuliček je {0}, z toho {1} červených.
+27	Pravděpodobnost je {0}/{1} = {2}.
+28	Hodíme dvěma spravedlivými kostkami. Jaká je pravděpodobnost, že součet bude {0}? (Zlomkem v základním tvaru.)
+29	Vypiš dvojice se součtem {0}.
+30	Součet {0} vzniká z {1} dvojic, takže {2}/36 = {3}.
+31	Mincí se hodí {0}krát. Jaká je pravděpodobnost, že padne právě {1}krát hlava? (Zlomkem v základním tvaru.)
+32	Kolik je všech výsledků při {0} hodech?
+33	Kolika způsoby můžeš vybrat, které {0} z {1} hodů budou hlavy?
+34	Všech výsledků: 2^{0} = {1}.
+35	Příznivých: C({0}, {1}) = {2}. Pravděpodobnost {3}/{4} = {5}.
+36	V pytlíku je {0} červených a {1} modrých kuliček. Vytáhnou se dvě bez vracení. Jaká je pravděpodobnost, že obě budou červené? (Zlomkem v základním tvaru.)
+37	První červená: {0}/{1}.
+38	Druhá červená: {0}/{1}. Dohromady {2}/{3} · {4}/{5} = {6}.
+39	Hodíme dvěma kostkami. Jaká je pravděpodobnost, že aspoň na jedné padne {0}? (Zlomkem v základním tvaru.)
+40	Snazší je spočítat opak: na žádné nepadne {0}.
+41	Na žádné kostce nepadne {0}: 5 · 5 = 25 z 36 výsledků.
+42	Příznivých: 36 − 25 = {0}, pravděpodobnost {1}.
+43	Kolik je {0} % z {1}?
+44	1 % z {0} je {1}.
+45	{0} % je {1} · {2} = {3}.
+46	Zboží stojí {0} €. Nejdřív zdraží o {1} %, pak se nová cena sníží o {2} %. Kolik stojí nakonec?
+47	Po zdražení: {0} · {1} = {2} €.
+48	Po zlevnění: {0} · {1} = {2} €.
+49	{0} € se rozdělí mezi Emu a Adama v poměru {1} : {2}. Kolik € dostane Ema?
+50	Je tam {0} + {1} = {2} dílů, jeden díl je {3} : {4} = {5} €.
+51	Ema dostane {0} dílů: {1} · {2} = {3} €.
+52	Kolik je {0}/{1} z {2}?
+53	1/{0} z {1} je {2} : {3} = {4}.
+54	{0}/{1} je {2} · {3} = {4}.
+55	Kolik procent je {0} z {1}?
+56	{0} / {1} = {2}.
+57	To je {0} setin, tedy {1} %.
+58	Dnes je {0}. Jaký den v týdnu bude za {1} dní?
+59	Najdi zbytek po dělení čísla {0} sedmi.
+60	{0} : 7 = {1} zbytek {2}.
+61	Celé týdny den nemění; posuň se o {0} dní dopředu z {1} a dostaneš {2}.
+62	Vlak odjíždí v {0} a přijíždí v {1}. Kolik minut jízda trvá?
+63	{0} = {1} minut po půlnoci, {2} = {3} minut.
+64	Rozdíl je {0} minut.
+65	V {0} připadá 1. {1} na {2}. Jaký den v týdnu je 1. {3}?
+66	Měsíc má {0} dní: {1} : 7 = {2} zbytek {3}.
+67	Posun o {0} dní dopředu z {1} dává {2}.
+68	Hodinová ručička: {0} · 30 + {1} · 0,5 = {2}°. Minutová ručička: {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	Celková doba je {0} minut.
+71	Máš dva džbány bez značek: {0} l a {1} l, a hodně vody. Krok je: džbán úplně naplnit, džbán úplně vyprázdnit, nebo přelít z jednoho do druhého, dokud se zdrojový nevyprázdní nebo cílový nenaplní. Kolik nejméně kroků je potřeba, aby v jednom z džbánů bylo přesně {2} l?
+72	To je {0} kroků a méně to nejde (prověřily se všechny možnosti).
+73	Mezi {0} mincemi je jedna falešná – je lehčí než ostatní. Máš rovnoramenné váhy bez závaží. Kolik nejméně vážení jistě najde falešnou minci?
+74	Po {0} vážení rozlišíme nejvýše 3^{1} = {2} mincí, což je aspoň {3}; po {4} vážení jen {5}. Potřebujeme {6}.
+75	🕸️ Součet všech čísel v kolečkách je {0}. Každá šipka přičte číslo své barvy. Kolik je x?
+76	Spočítej, kolik x je v součtu a kolik zbývá. Pak {0} − (zbytek) = (počet x) × x.
+77	Je tam {0} x a zbytek je {1}. Takže {2}·x + {3} = {4} a x = {5}.
+78	Šipka přičítá {0}. Všechny šipky té barvy mají stejnou hodnotu, takže stačí ji zjistit na jednom místě.
+79	Označené kolečko má být {0}.
+80	Úplných tras je {0}. U každé odbočky zkus obě možnosti a škrtni ty, které končí slepou uličkou nebo vynechají některou místnost.
+81	Označená místnost má být {0}.
+82	Sbírej nálepky: {0}
+83	Získej světové medaile: {0}
+84	Splň všechny denní mise ve dnech: {0}
+85	Série {0} dnů!
+86	Vezmi {0}
+87	Správně! Mince {0} je falešná – nalezena na {1} vážení.
+88	Mince {0} není falešná. Zkoušej dál.
+89	🎉 Přesně {0} l ve džbánu! Kroky: {1}.
+90	Naplnit {0} l
+91	Vyprázdnit {0} l
+92	🎉 Všichni jsou na druhé straně! Čas: {0} min.
+93	{0} stejných po {1} tazích!
+94	Je tma – tahej poslepu. Kdy budeš mít {0} stejných? Zkus to několikrát a hledej nejhorší případ.
+95	🎉 Každé dítě má {0}.
+96	Žluté jsou dané. Přidej červené tak, aby jich bylo celkem přesně {0}. Volných buněk je víc, než potřebuješ!
+97	Hoď {0} mincemi a sleduj počet hlav. Opakuj!
+98	Začínáme na {0}. Skákej den po dni – kde skončíš po {1} dnech?
+99	Vybarvi {0} čtverců ze 100 – to je {1} %.
+100	Prohry v této úrovni: {0}
+101	řádek {0}
+102	sloupec {0}
+103	čtverec {0}
+104	Buňka {0} bere číslo {1}.
+105	Škrtni kandidáty – {0}. Další nápověda doplní jednu buňku.
+106	Postup: {0}.
+107	Buňka {0} může mít jen jedno číslo.
+108	V {0} se jedno číslo vejde jen do jedné buňky – podívej se na zvýrazněnou.
+109	Číslo {0} je v {1} „uzamčené“ v {2} – jinde tam ho škrtni.
+110	Číslo {0} tvoří obdélník X-Wing – škrtni ho v odpovídajících řadách.
+111	Chybné buňky: {0} (označené „!“).
+112	Podívej se na buňku v řádku {0}, sloupci {1}. Která čísla tam ještě mohou být?
+113	Buňka (řádek {0}, sloupec {1}) bere číslo {2}.
+114	Zkus stisknout buňku v řádku {0}, sloupci {1}.
+115	Tohle je začátek. Nejkratší řešení stiskne {0} buněk (označeny 👆):
+116	Došel jsi do cíle – skvělé! Existuje ale kratší cesta. Tvoje měla {0} kroků, zkus jich méně.
+117	Nejdřív zkus odhalit slepé uličky. Nejkratší cesta má {0} kroků.
+118	Začátek nejkratší cesty (řádek, sloupec): {0} …
+119	Prozkoumáme a vyloučíme slepé uličky. Nejkratší cesta má {0} kroků a vede takto:
+120	Hotovo! Všichni jsou na druhé straně na {0} tahů – a míň to nejde (počítač prověřil všechny možnosti).
+121	Začínáš na {0}: vezmi {1}, aby zůstalo {2} (prohrávající stav pro soupeře). Pak vždy odpovídej tak, abys znovu skončil na prohrávajícím stavu.
+122	Počítač začíná na {0}, což je prohrávající stav pro hráče na tahu. Ať udělá cokoli, odpověz tak, abys znovu nechal prohrávající stav.
+123	Tady vyhraješ například takto: vezmi {0} z hromádky {1}.
+124	před {0} min
+125	před {0} h
+126	před {0} dny
+127	Úrovně: {0} z {1} · odznaky: {2}
+128	Založit třídu {0}.{1}
+129	Žáků: {0}
+130	Třída {0}
+131	Vybrané úlohy: {0}
+132	žáků: {0}
+133	Úloh: {0}
+134	{0} z {1} žáků dokončilo
+135	Hotovo {0} z {1}

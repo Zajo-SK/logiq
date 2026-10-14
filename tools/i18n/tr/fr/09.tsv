@@ -1,0 +1,135 @@
+1	Un père a {0} ans de plus que son fils. À eux deux, ils ont {1} ans. Quel âge a le père ?
+2	{0} − {1} = {2} = le double de l’âge du fils.
+3	Le fils a {0} ans, le père {1} + {2} = {3}.
+4	Une tirelire contient {0} pièces, certaines de 1 € et les autres de 2 €. Leur valeur totale est de {1} €. Combien y a-t-il de pièces de 2 € ?
+5	Avec {0} pièces de un euro, cela ferait {1} €.
+6	Il manque {0} €, donc il y a {1} pièces de deux euros.
+7	Résous l’équation : {0}·(x − {1}) + {2} = {3}. Combien vaut x ?
+8	Après avoir soustrait {0}, divise par {1}.
+9	{0} − {1} = {2}, donc {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, donc x = {2}.
+11	Combien de diviseurs (1 et le nombre lui-même compris) {0} a-t-il ?
+12	Essaie d = 1, 2, 3, … jusqu’à la racine carrée de {0}.
+13	De la place, le bus A part toutes les {0} minutes et le bus B toutes les {1} minutes. Ils viennent de partir ensemble. Dans combien de minutes repartiront-ils ensemble ?
+14	Le plus petit commun multiple est {0}.
+15	Quel est le dernier chiffre de {0}^{1} ?
+16	Écris les derniers chiffres des puissances {0}¹, {1}², {2}³ …
+17	L’exposant {0} donne le reste {1} dans la division par {2}, donc le dernier chiffre est {3}.
+18	Combien de nombres de 1 à {0} sont divisibles par {1} ou par {2} (ou par les deux) ?
+19	Multiples de {0} : {1}, de {2} : {3}, des deux ({4}) : {5}.
+20	{0} + {1} − {2} = {3}.
+21	Par combien de zéros se termine {0}! = 1 · 2 · 3 · … · {1} ?
+22	Compte combien de fois le facteur 5 apparaît dans les nombres de 1 à {0} (y compris plusieurs fois, par exemple pour 25).
+23	On veut recouvrir un rectangle de {0} cm × {1} cm avec des carrés identiques, sans trou ni chevauchement. Quel est le plus grand côté possible d’un carré (en cm) ?
+24	Le plus grand est {0}.
+25	Un sac contient {0} billes rouges, {1} bleues et {2} vertes. On en tire une au hasard. Quelle est la probabilité qu’elle soit rouge ? (Sous forme de fraction irréductible, par exemple 1/6.)
+26	Il y a {0} billes en tout, dont {1} rouges.
+27	La probabilité est {0}/{1} = {2}.
+28	On lance deux dés équilibrés. Quelle est la probabilité que la somme soit {0} ? (Sous forme de fraction irréductible.)
+29	Fais la liste des paires dont la somme est {0}.
+30	La somme {0} s’obtient avec {1} paires, donc {2}/36 = {3}.
+31	On lance une pièce {0} fois. Quelle est la probabilité d’obtenir exactement {1} fois face ? (Sous forme de fraction irréductible.)
+32	Combien y a-t-il de résultats possibles pour {0} lancers ?
+33	De combien de façons peut-on choisir quels {0} lancers parmi les {1} donnent face ?
+34	Tous les résultats : 2^{0} = {1}.
+35	Cas favorables : C({0}, {1}) = {2}. Probabilité {3}/{4} = {5}.
+36	Un sac contient {0} billes rouges et {1} bleues. On en tire deux sans remise. Quelle est la probabilité que les deux soient rouges ? (Sous forme de fraction irréductible.)
+37	Première rouge : {0}/{1}.
+38	Deuxième rouge : {0}/{1}. Ensemble {2}/{3} · {4}/{5} = {6}.
+39	On lance deux dés. Quelle est la probabilité qu’au moins un affiche {0} ? (Sous forme de fraction irréductible.)
+40	Il est plus facile de compter le contraire : aucun dé n’affiche {0}.
+41	Aucun dé n’affiche {0} : 5 · 5 = 25 résultats sur 36.
+42	Cas favorables : 36 − 25 = {0}, probabilité {1}.
+43	Combien font {0} % de {1} ?
+44	1 % de {0} font {1}.
+45	{0} %, c’est {1} · {2} = {3}.
+46	Un article coûte {0} €. D’abord il augmente de {1} %, puis le nouveau prix baisse de {2} %. Combien coûte-t-il à la fin ?
+47	Après la hausse : {0} · {1} = {2} €.
+48	Après la baisse : {0} · {1} = {2} €.
+49	{0} € sont partagés entre Ema et Adam dans le rapport {1} : {2}. Combien d’euros reçoit Ema ?
+50	Il y a {0} + {1} = {2} parts, une part vaut {3} : {4} = {5} €.
+51	Ema reçoit {0} parts : {1} · {2} = {3} €.
+52	Combien font {0}/{1} de {2} ?
+53	1/{0} de {1} font {2} : {3} = {4}.
+54	{0}/{1}, c’est {2} · {3} = {4}.
+55	Quel pourcentage de {1} représente {0} ?
+56	{0} / {1} = {2}.
+57	Cela fait {0} centièmes, soit {1} %.
+58	Aujourd’hui, nous sommes {0}. Quel jour de la semaine serons-nous dans {1} jours ?
+59	Trouve le reste de la division de {0} par 7.
+60	{0} : 7 = {1} reste {2}.
+61	Les semaines entières ne changent pas le jour ; avance de {0} jours à partir de {1} pour obtenir {2}.
+62	Un train part à {0} et arrive à {1}. Combien de minutes dure le trajet ?
+63	{0} = {1} minutes après minuit, {2} = {3} minutes.
+64	La différence est de {0} minutes.
+65	En {0}, le 1er {1} tombe un {2}. Quel jour de la semaine est le 1er {3} ?
+66	Le mois a {0} jours : {1} : 7 = {2} reste {3}.
+67	En avançant de {0} jours à partir de {1}, on arrive à {2}.
+68	Petite aiguille : {0} · 30 + {1} · 0,5 = {2}°. Grande aiguille : {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	Le temps total est de {0} minutes.
+71	Tu as deux cruches sans graduation : {0} L et {1} L, et beaucoup d’eau. Une étape consiste à : remplir complètement une cruche, vider complètement une cruche, ou verser de l’une dans l’autre jusqu’à ce que la source soit vide ou la cible pleine. Quel est le plus petit nombre d’étapes pour avoir exactement {2} L dans l’une des cruches ?
+72	Cela fait {0} étapes et moins est impossible (toutes les possibilités ont été explorées).
+73	Parmi {0} pièces, une est fausse – elle est plus légère que les autres. Tu as une balance à plateaux sans poids. Quel est le plus petit nombre de pesées qui trouve à coup sûr la fausse pièce ?
+74	Après {0} pesées, on peut distinguer jusqu’à 3^{1} = {2} pièces, ce qui est au moins {3} ; après {4} pesées, seulement {5}. Il en faut donc {6}.
+75	🕸️ La somme de tous les nombres dans les cercles est {0}. Chaque flèche ajoute le nombre de sa couleur. Combien vaut x ?
+76	Compte combien il y a de x dans la somme et ce qui reste. Alors {0} − (le reste) = (nombre de x) × x.
+77	Il y a {0} x et le reste vaut {1}. Donc {2}·x + {3} = {4} et x = {5}.
+78	La flèche ajoute {0}. Toutes les flèches de cette couleur ont la même valeur, il suffit donc de la trouver à un seul endroit.
+79	Le cercle marqué doit être {0}.
+80	Il y a {0} parcours complets. À chaque embranchement, essaie les deux options et barre celles qui finissent dans une impasse ou qui oublient une salle.
+81	La salle marquée doit être {0}.
+82	Collectionne des autocollants : {0}
+83	Gagne des médailles du monde : {0}
+84	Termine toutes les missions du jour pendant {0} jours
+85	Série de {0} jours !
+86	Prends {0}
+87	Correct ! La pièce {0} est la fausse – trouvée en {1} pesées.
+88	La pièce {0} n’est pas fausse. Continue d’essayer.
+89	🎉 Exactement {0} L dans une cruche ! Étapes : {1}.
+90	Remplir {0} L
+91	Vider {0} L
+92	🎉 Tout le monde a traversé ! Temps : {0} min.
+93	{0} identiques après {1} tirages !
+94	Il fait noir – tu tires à l’aveugle. Quand en as-tu {0} identiques ? Essaie plusieurs fois et cherche le pire cas.
+95	🎉 Chaque enfant a {0}.
+96	Les jaunes sont donnés. Ajoute des rouges pour qu’il y en ait exactement {0} en tout. Il y a plus de cases libres que nécessaire !
+97	Lance {0} pièces et observe le nombre de faces. Recommence !
+98	On part de {0}. Avance jour après jour – où arrives-tu après {1} jours ?
+99	Colorie {0} carrés sur 100 – cela fait {1} %.
+100	Défaites dans ce niveau : {0}
+101	ligne {0}
+102	colonne {0}
+103	bloc {0}
+104	La case {0} prend {1}.
+105	Barre des candidats – {0}. Un autre indice remplit une case.
+106	Technique : {0}.
+107	La case {0} ne peut contenir qu’un seul nombre.
+108	Dans {0}, un nombre ne tient que dans une seule case – regarde celle qui est mise en évidence.
+109	Le nombre {0} dans {1} est « bloqué » dans {2} – barre-le ailleurs à cet endroit.
+110	Le nombre {0} forme un rectangle X-Wing – barre-le dans les lignes correspondantes.
+111	Cases fausses : {0} (marquées « ! »).
+112	Regarde la case de la ligne {0}, colonne {1}. Quels nombres peuvent encore y aller ?
+113	La case (ligne {0}, colonne {1}) prend {2}.
+114	Essaie d’appuyer sur la case de la ligne {0}, colonne {1}.
+115	C’est le départ. La solution la plus courte appuie sur {0} cases (marquées 👆) :
+116	Tu as atteint l’arrivée – bravo ! Mais il existe un chemin plus court. Le tien a pris {0} pas, essaie d’en faire moins.
+117	Essaie d’abord de repérer les impasses. Le chemin le plus court compte {0} pas.
+118	Le début du chemin le plus court (ligne, colonne) : {0} …
+119	On explore et on écarte les impasses. Le chemin le plus court compte {0} pas et se déroule ainsi :
+120	Bravo ! Tout le monde a traversé en {0} coups – et on ne peut pas faire moins (un ordinateur a vérifié toutes les possibilités).
+121	Tu commences à {0} : prends {1} pour laisser {2} (un nombre perdant pour ton adversaire). Ensuite, réponds toujours de façon à retomber sur un nombre perdant.
+122	L’ordinateur commence à {0}, un nombre perdant pour celui qui doit jouer. Quoi qu’il fasse, réponds en laissant de nouveau un nombre perdant.
+123	Ici, tu gagnes par exemple avec : prends {0} dans le tas {1}.
+124	il y a {0} min
+125	il y a {0} h
+126	il y a {0} j
+127	Niveaux : {0} sur {1} · badges : {2}
+128	Créer la classe {0}.{1}
+129	{0} élèves
+130	Classe {0}
+131	Exercices sélectionnés : {0}
+132	élèves : {0}
+133	{0} exercices
+134	{0} élèves sur {1} ont terminé
+135	Terminé : {0} sur {1}
