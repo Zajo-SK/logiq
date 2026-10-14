@@ -1,0 +1,200 @@
+1	défis mathématiques
+2	Langue
+3	Étoiles et points
+4	Marqué
+5	Cette pièce ne peut pas bouger ainsi. Lis les règles de déplacement.
+6	Tige
+7	Au moins
+8	Il n’y a aucun disque sur cette tige.
+9	On ne peut pas poser un grand disque sur un plus petit.
+10	Essaie de déplacer le disque {d} de la tige {a} vers la tige {b}.
+11	Montrer la solution
+12	Jeux indépendants
+13	Tours de Hanoï
+14	Déplace toute la tour sur la troisième tige. Touche une tige (départ), puis une tige (arrivée).
+15	Nombre de disques
+16	Ton record
+17	La tour est déplacée !
+18	Rejouer
+19	Jouer
+20	Rang
+21	Il te manque encore {n} points pour atteindre le rang {r}.
+22	Tu as atteint le rang le plus élevé. Tu es une légende !
+23	Nouveau rang !
+24	Nouvelle récompense !
+25	Bonus quotidien
+26	🏆 Bonus de niveau
+27	Récompenses
+28	Les points, les étoiles, les séries de jours et les tâches résolues débloquent des compagnons et des thèmes de couleur. Ton rang vient des points et n’est jamais perdu.
+29	Compagnon
+30	Thème de couleur
+31	Utiliser
+32	Utilisé
+33	Badges
+34	Gagne {n} points
+35	Gagne {n} étoiles
+36	Série de {n} jours
+37	Résous {n} tâches
+38	Séries d’entraînement (tâches sans fin)
+39	Chaque appui crée une nouvelle tâche de ce type pour ta classe. Pas de points ici : c’est de l’entraînement libre.
+40	Entraînement – aucun point compté.
+41	Tâches faites à la main
+42	Tas
+43	jeton
+44	Prends {n}
+45	Prends {n} du tas {p}
+46	Touche un jeton : tu le prends avec tous les jetons à sa droite.
+47	À toi de jouer.
+48	L’ordinateur réfléchit…
+49	Toi :
+50	Ordinateur :
+51	Accueil
+52	Carte
+53	Quotidien
+54	Collection
+55	Réussites
+56	Profil
+57	Découvre des énigmes, de la logique et de la stratégie à ton rythme. Ici, personne n’est puni pour ses erreurs : chaque essai te fait avancer.
+58	Ton prénom (facultatif)
+59	Comment doit-on t’appeler ?
+60	Choisis ta classe
+61	C’est parti
+62	Tu pourras changer de classe plus tard dans ton profil.
+63	Sans inscription, sans publicité. La progression est enregistrée uniquement sur cet appareil.
+64	Salut, {n} !
+65	Salut, explorateur !
+66	Le monde « {w} » t’attend – niveau « {l} ».
+67	Tu as terminé tous les niveaux de cette classe ! Essaie les défis ou la collection.
+68	Commencer
+69	Continuer
+70	Ouvrir la collection
+71	étoiles
+72	points
+73	jours de suite
+74	tâches résolues
+75	Ta progression
+76	{a} niveaux sur {b} terminés
+77	Ouvrir la carte
+78	Résoudre celle du jour
+79	Voir
+80	Le défi du jour est terminé !
+81	Nous te proposons
+82	Aller
+83	Points forts
+84	Continue avec le niveau « {n} ».
+85	Commence par le niveau « {n} ».
+86	Entraîne-toi sur « {c} » : tu peux y gagner plus d’étoiles.
+87	Essaie quelque chose de nouveau : « {c} ».
+88	« {c} » se passe très bien – essaie des tâches plus difficiles !
+89	Résous quelques tâches et nous te ferons des suggestions.
+90	Tu as terminé la classe ! Essaie les défis des mondes des classes supérieures.
+91	Mondes et niveaux
+92	Termine d’abord le niveau précédent.
+93	Verrouillé
+94	Défis pour les audacieux
+95	Des mondes plus difficiles d’une classe supérieure – toujours débloqués si tu veux te dépasser.
+96	Ce niveau contient {n} tâches. Résous-les dans l’ordre que tu veux.
+97	Ce qui t’attend
+98	Récompenses
+99	jusqu’à {n} étoiles
+100	jusqu’à {n} points
+101	des badges pour tes découvertes
+102	d’autres niveaux sur la carte
+103	Thèmes
+104	Les erreurs ne sont jamais punies. Les étoiles dépendent seulement des indices utilisés et du nombre d’essais.
+105	Commencer le niveau
+106	Retour
+107	Défi
+108	Difficulté
+109	Indice
+110	Expliquer la solution
+111	Vérifier
+112	Tâche suivante
+113	Terminé
+114	Terminer le niveau
+115	Plus d’indices
+116	Choisis d’abord une réponse.
+117	Écris d’abord une réponse.
+118	Ta réponse
+119	Effacer
+120	Ton raisonnement
+121	Écris comment tu as trouvé…
+122	Touche d’abord une case vide.
+123	Certaines cases sont encore vides.
+124	ligne
+125	colonne
+126	Monter
+127	Descendre
+128	Recommencer
+129	Coups
+130	Étapes
+131	Annuler le coup
+132	Naviguer
+133	Le bateau est plein. Touche quelqu’un dans le bateau pour le faire descendre.
+134	Quelqu’un doit être dans le bateau pour ramer.
+135	Rive gauche
+136	Rive droite
+137	dans le bateau
+138	Annulons ce coup…
+139	points
+140	Indices utilisés : {n}.
+141	Aucun indice utilisé – bravo !
+142	Nouveau badge !
+143	Réessaie
+144	Une erreur, ce n’est pas grave : ça fait partie de la découverte.
+145	Tu veux voir la méthode ?
+146	Tu peux encore essayer seul ou utiliser d’abord un indice. Si tu révèles la solution, la tâche compte sans points.
+147	Je continue d’essayer
+148	Montrer la méthode
+149	Tâche marquée comme explorée. Continuons !
+150	Voyons pourquoi cela marche.
+151	Étape suivante
+152	Tout afficher
+153	Fermer
+154	Bonne réponse
+155	Niveau terminé !
+156	Chaque tâche entraîne ton esprit. Tu t’améliores sans cesse – continue !
+157	Quoi essayer ensuite
+158	Niveau suivant
+159	Défi du jour
+160	Une tâche par jour. Pas à pas, nous construisons une série.
+161	Tu as terminé le défi du jour. Reviens demain !
+162	Un nouveau demain.
+163	Rejouer
+164	Série
+165	pas encore
+166	Ta série grandit quand tu résous au moins une tâche chaque jour.
+167	Toutes les tâches ({n}) pour s’entraîner librement. Tu peux aussi essayer des classes plus difficiles.
+168	Toutes
+169	Catégorie
+170	Classe
+171	Tâche au hasard
+172	nouveau
+173	Badges obtenus : {a} sur {b}
+174	obtenu
+175	Ton profil
+176	Élève
+177	Changer de classe change la carte des niveaux. Tes étoiles restent.
+178	Paramètres
+179	Sons
+180	Animations
+181	Texte plus grand
+182	Enregistré
+183	Historique
+184	Rien pour l’instant – résous ta première tâche !
+185	Pour les enseignants et auteurs : base de données des tâches
+186	Aperçu de toutes les tâches avec la source d’inspiration et la licence. Les nouvelles tâches s’ajoutent dans js/content.js.
+187	Exporter la base (JSON)
+188	Type
+189	Source
+190	Licence
+191	L’architecture est prête pour une future connexion et synchronisation (adaptateur de stockage interchangeable).
+192	Données
+193	La progression est enregistrée uniquement sur cet appareil.
+194	Réinitialiser la progression
+195	Supprimer vraiment les étoiles, les points et les badges ? Ton prénom, ta classe et tes paramètres restent.
+196	Annuler
+197	Oui, supprimer
+198	La progression a été réinitialisée.
+199	Impossible de charger la langue (internet nécessaire).
+200	Les traductions sont automatiques et partiellement terminées ; les textes manquants s’affichent en anglais ou en slovaque.

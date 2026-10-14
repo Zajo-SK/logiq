@@ -1,0 +1,200 @@
+1	matematikai kihívások
+2	Nyelv
+3	Csillagok és pontok
+4	Megjelölve
+5	Ez a bábu nem léphet így. Olvasd el a lépésszabályokat.
+6	Rúd
+7	Legkevesebb
+8	Ezen a rúdon nincs korong.
+9	Nagyobb korongot nem szabad kisebbre tenni.
+10	Próbáld meg a(z) {d}. korongot a(z) {a}. rúdról a(z) {b}. rúdra áttenni.
+11	Megoldás megmutatása
+12	Önálló játékok
+13	Hanoi tornyai
+14	Told át az egész tornyot a harmadik rúdra. Koppints egy rúdra (honnan), aztán egy rúdra (hová).
+15	Korongok száma
+16	A rekordod
+17	A torony át van helyezve!
+18	Újra játszom
+19	Játék
+20	Rang
+21	A(z) {r} rangig még {n} pont hiányzik.
+22	Elérted a legmagasabb rangot. Te vagy a legenda!
+23	Új rang!
+24	Új jutalom!
+25	Napi bónusz
+26	🏆 Szintbónusz
+27	Jutalmak
+28	A pontok, csillagok, napi sorozatok és megoldott feladatok társakat és színtémákat nyitnak meg. A rangod a pontokból jön, és soha nem vész el.
+29	Társ
+30	Színtéma
+31	Használom
+32	Használatban
+33	Jelvények
+34	Szerezz {n} pontot
+35	Szerezz {n} csillagot
+36	{n} napos sorozat
+37	Oldj meg {n} feladatot
+38	Gyakorlókészletek (végtelen feladatok)
+39	Minden koppintás új, ilyen típusú feladatot készít az évfolyamodnak. Itt nincs pont – szabad gyakorlás.
+40	Gyakorlás – pontok nem számítanak.
+41	Kézzel készített feladatok
+42	Halom
+43	korong
+44	Vegyél el {n}-t
+45	Vegyél el {n}-t a(z) {p}. halomból
+46	Koppints egy korongra – elveszed azt és az összes tőle jobbra lévőt.
+47	Te jössz.
+48	A számítógép gondolkodik…
+49	Te:
+50	Számítógép:
+51	Kezdőlap
+52	Térkép
+53	Napi
+54	Gyűjtemény
+55	Eredmények
+56	Profil
+57	Fedezd fel a rejtvényeket, a logikát és a stratégiát a saját tempódban. Itt senkit nem büntetnek a hibákért – minden próbálkozás előrevisz.
+58	A neved (nem kötelező)
+59	Hogyan szólítsunk?
+60	Válaszd ki az évfolyamodat
+61	Kezdjük!
+62	Az évfolyamot később a profilban megváltoztathatod.
+63	Regisztráció és reklámok nélkül. Az előrehaladás csak ezen az eszközön tárolódik.
+64	Szia, {n}!
+65	Szia, felfedező!
+66	Vár rád a(z) „{w}” világ – „{l}” szint.
+67	Befejezted ennek az évfolyamnak az összes szintjét! Próbáld ki a kihívásokat vagy a gyűjteményt.
+68	Indítás
+69	Folytatás
+70	Gyűjtemény megnyitása
+71	csillag
+72	pont
+73	nap egymás után
+74	megoldott feladat
+75	Az előrehaladásod
+76	{a} / {b} szint kész
+77	Térkép megnyitása
+78	Mai feladat megoldása
+79	Megtekintés
+80	A mai kihívás kész!
+81	Javaslat
+82	Menj
+83	Erős területek
+84	Folytasd a(z) „{n}” szinttel.
+85	Kezdd a(z) „{n}” szinttel.
+86	Gyakorold: „{c}” – ott több csillagot szerezhetsz.
+87	Próbálj ki valami újat: „{c}”.
+88	A(z) „{c}” remekül megy – próbálj nehezebb feladatokat!
+89	Oldj meg pár feladatot, és javaslatokat adunk.
+90	Befejezted az évfolyamot! Próbáld ki a magasabb évfolyam világainak kihívásait.
+91	Világok és szintek
+92	Előbb fejezd be az előző szintet.
+93	Zárolva
+94	Kihívások a bátraknak
+95	Nehezebb világok magasabb évfolyamról – mindig nyitva vannak, ha kihívást keresel.
+96	Ennek a szintnek {n} feladata van. Bármilyen sorrendben megoldhatod őket.
+97	Mi vár rád
+98	Jutalmak
+99	legfeljebb {n} csillag
+100	legfeljebb {n} pont
+101	jelvények a felfedezésekért
+102	további szintek a térképen
+103	Témák
+104	A hibákat soha nem büntetjük. A csillagok csak a használt segítségektől és a próbálkozások számától függnek.
+105	Szint indítása
+106	Vissza
+107	Kihívás
+108	Nehézség
+109	Segítség
+110	Megoldás magyarázata
+111	Ellenőrzés
+112	Következő feladat
+113	Kész
+114	Szint befejezése
+115	Nincs több segítség
+116	Előbb válassz egy választ.
+117	Előbb írj be egy választ.
+118	A válaszod
+119	Törlés
+120	A levezetésed
+121	Írd le, hogyan jutottál el idáig…
+122	Előbb koppints egy üres mezőre.
+123	Néhány mező még üres.
+124	sor
+125	oszlop
+126	Fel
+127	Le
+128	Újrakezdés
+129	Lépések
+130	Lépések
+131	Lépés visszavonása
+132	Evezés
+133	A csónak tele van. Koppints valakire a csónakban, hogy kiszálljon.
+134	Valakinek a csónakban kell lennie, hogy evezzen.
+135	Bal part
+136	Jobb part
+137	a csónakban
+138	Vonjuk vissza ezt a lépést…
+139	pont
+140	Felhasznált segítségek: {n}.
+141	Segítség nélkül – nagyszerű!
+142	Új jelvény!
+143	Próbáld újra
+144	A hiba nem baj – a felfedezés része.
+145	Szeretnéd látni a módszert?
+146	Még megpróbálhatod egyedül, vagy kérhetsz segítséget. Ha felfeded a megoldást, a feladat pont nélkül számít.
+147	Még próbálkozom
+148	Módszer megmutatása
+149	A feladat felfedezettként megjelölve. Menjünk tovább!
+150	Nézzük meg, miért működik ez.
+151	Következő lépés
+152	Összes mutatása
+153	Bezár
+154	Helyes válasz
+155	Szint kész!
+156	Minden feladat edzi az elmédet. Egyre jobb vagy – csak így tovább!
+157	Mit próbálj ki legközelebb
+158	Következő szint
+159	Mai kihívás
+160	Naponta egy feladat. Lépésről lépésre építjük a sorozatot.
+161	A mai kihívást teljesítetted. Gyere vissza holnap!
+162	Holnap jön egy új.
+163	Újra játszom
+164	Sorozat
+165	még nem
+166	A sorozatod nő, ha minden nap megoldasz legalább egy feladatot.
+167	Az összes feladat ({n}) szabad gyakorlásra. Nehezebb évfolyamokat is kipróbálhatsz.
+168	Mind
+169	Kategória
+170	Évfolyam
+171	Véletlen feladat
+172	új
+173	Megszerzett jelvények: {a} / {b}
+174	megszerezve
+175	A profilod
+176	Tanuló
+177	Az évfolyam módosítása megváltoztatja a szintek térképét. A csillagaid megmaradnak.
+178	Beállítások
+179	Hangok
+180	Animációk
+181	Nagyobb szöveg
+182	Elmentve
+183	Előzmények
+184	Még semmi – oldd meg az első feladatot!
+185	Tanároknak és szerzőknek: feladatadatbázis
+186	Az összes feladat áttekintése az inspiráció forrásával és a licenccel együtt. Új feladatokat a js/content.js fájlban lehet hozzáadni.
+187	Adatbázis exportálása (JSON)
+188	Típus
+189	Forrás
+190	Licenc
+191	Az architektúra fel van készítve a későbbi bejelentkezésre és szinkronizálásra (cserélhető tárolóadapter).
+192	Adatok
+193	Az előrehaladás csak ezen az eszközön tárolódik.
+194	Előrehaladás nullázása
+195	Biztosan törlöd a csillagokat, pontokat és jelvényeket? A neved, évfolyamod és beállításaid megmaradnak.
+196	Mégse
+197	Igen, törlöm
+198	Az előrehaladás nullázva.
+199	A nyelvet nem sikerült betölteni (internet szükséges).
+200	A fordítások gépiek és részben elkészültek; a hiányzó szövegek angolul vagy szlovákul jelennek meg.

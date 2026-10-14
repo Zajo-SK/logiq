@@ -1,0 +1,200 @@
+1	wyzwania matematyczne
+2	Język
+3	Gwiazdki i punkty
+4	Zaznaczone
+5	Ta figura nie może się tak poruszać. Przeczytaj zasady ruchu.
+6	Kołek
+7	Najmniej
+8	Na tym kołku nie ma żadnego krążka.
+9	Większego krążka nie wolno kłaść na mniejszym.
+10	Spróbuj przenieść krążek {d} z kołka {a} na kołek {b}.
+11	Pokaż rozwiązanie
+12	Samodzielne gry
+13	Wieże Hanoi
+14	Przenieś całą wieżę na trzeci kołek. Dotknij kołka (skąd), potem kołka (dokąd).
+15	Liczba krążków
+16	Twój rekord
+17	Wieża została przeniesiona!
+18	Zagraj jeszcze raz
+19	Graj
+20	Ranga
+21	Do rangi {r} brakuje ci jeszcze: {n} pkt.
+22	Osiągnąłeś najwyższą rangę. Jesteś legendą!
+23	Nowa ranga!
+24	Nowa nagroda!
+25	Bonus dzienny
+26	🏆 Bonus za poziom
+27	Nagrody
+28	Punkty, gwiazdki, serie dni i rozwiązane zadania odblokowują towarzyszy i motywy kolorystyczne. Ranga zależy od punktów i nigdy nie przepada.
+29	Towarzysz
+30	Motyw kolorystyczny
+31	Użyj
+32	W użyciu
+33	Odznaki
+34	Zdobądź {n} punktów
+35	Zdobądź {n} gwiazdek
+36	Seria {n} dni
+37	Rozwiąż {n} zadań
+38	Zestawy treningowe (nieskończone zadania)
+39	Każde dotknięcie tworzy nowe zadanie tego typu dla twojej klasy. Punktów tu nie liczymy – to swobodne ćwiczenie.
+40	Ćwiczenie – punkty się nie liczą.
+41	Zadania ręcznie przygotowane
+42	Stosik
+43	żeton
+44	Weź {n}
+45	Weź {n} ze stosiku {p}
+46	Dotknij żetonu – bierzesz go i wszystkie żetony po jego prawej stronie.
+47	Twój ruch.
+48	Komputer myśli…
+49	Ty:
+50	Komputer:
+51	Start
+52	Mapa
+53	Dzienne
+54	Zbiór
+55	Osiągnięcia
+56	Profil
+57	Odkrywaj zagadki, logikę i strategię we własnym tempie. Tu nikt nie jest karany za błędy – każda próba popycha cię naprzód.
+58	Twoje imię (opcjonalnie)
+59	Jak mamy cię nazywać?
+60	Wybierz swoją klasę
+61	Zaczynamy
+62	Klasę możesz później zmienić w profilu.
+63	Bez rejestracji i bez reklam. Postępy zapisują się tylko na tym urządzeniu.
+64	Cześć, {n}!
+65	Cześć, odkrywco!
+66	Czeka na ciebie świat „{w}” – poziom „{l}”.
+67	Ukończyłeś wszystkie poziomy tej klasy! Wypróbuj wyzwania lub zbiór.
+68	Zacznij
+69	Kontynuuj
+70	Otwórz zbiór
+71	gwiazdki
+72	punkty
+73	dni z rzędu
+74	rozwiązanych zadań
+75	Twoje postępy
+76	Ukończono {a} z {b} poziomów
+77	Otwórz mapę
+78	Rozwiąż dzisiejsze
+79	Zobacz
+80	Dzisiejsze wyzwanie jest ukończone!
+81	Proponujemy
+82	Idź
+83	Mocne strony
+84	Kontynuuj poziomem „{n}”.
+85	Zacznij od poziomu „{n}”.
+86	Poćwicz „{c}” – możesz tam zdobyć więcej gwiazdek.
+87	Spróbuj czegoś nowego: „{c}”.
+88	„{c}” idzie ci świetnie – spróbuj trudniejszych zadań!
+89	Rozwiąż kilka zadań, a zaproponujemy ci wskazówki.
+90	Ukończyłeś klasę! Spróbuj wyzwań ze światów wyższej klasy.
+91	Światy i poziomy
+92	Najpierw ukończ poprzedni poziom.
+93	Zablokowane
+94	Wyzwania dla odważnych
+95	Trudniejsze światy z wyższej klasy – zawsze odblokowane, jeśli chcesz się sprawdzić.
+96	Ten poziom ma {n} zadań. Rozwiązuj je w dowolnej kolejności.
+97	Co cię czeka
+98	Nagrody
+99	do {n} gwiazdek
+100	do {n} punktów
+101	odznaki za odkrycia
+102	więcej poziomów na mapie
+103	Tematy
+104	Błędy nie są karane. Gwiazdki zależą tylko od użytych podpowiedzi i liczby prób.
+105	Rozpocznij poziom
+106	Wstecz
+107	Wyzwanie
+108	Trudność
+109	Podpowiedź
+110	Wyjaśnij rozwiązanie
+111	Sprawdź
+112	Następne zadanie
+113	Gotowe
+114	Zakończ poziom
+115	Nie ma więcej podpowiedzi
+116	Najpierw wybierz odpowiedź.
+117	Najpierw wpisz odpowiedź.
+118	Twoja odpowiedź
+119	Usuń
+120	Twój tok rozumowania
+121	Napisz, jak do tego doszedłeś…
+122	Najpierw dotknij pustego pola.
+123	Niektóre pola są jeszcze puste.
+124	wiersz
+125	kolumna
+126	Przesuń w górę
+127	Przesuń w dół
+128	Zacznij od nowa
+129	Ruchy
+130	Kroki
+131	Cofnij ruch
+132	Płyń
+133	Łódź jest pełna. Dotknij kogoś na łodzi, aby wysiadł.
+134	Na łodzi musi ktoś być, żeby mógł wiosłować.
+135	Lewy brzeg
+136	Prawy brzeg
+137	na łodzi
+138	Cofnijmy ten ruch…
+139	punktów
+140	Użyte podpowiedzi: {n}.
+141	Bez podpowiedzi – świetnie!
+142	Nowa odznaka!
+143	Spróbuj jeszcze raz
+144	Błąd nie szkodzi – to część odkrywania.
+145	Chcesz zobaczyć sposób rozwiązania?
+146	Możesz jeszcze spróbować sam albo użyć podpowiedzi. Jeśli odkryjesz rozwiązanie, zadanie liczy się bez punktów.
+147	Spróbuję jeszcze
+148	Pokaż sposób
+149	Zadanie oznaczone jako zbadane. Idziemy dalej!
+150	Zobaczmy, dlaczego to działa.
+151	Następny krok
+152	Pokaż wszystko
+153	Zamknij
+154	Poprawna odpowiedź
+155	Poziom ukończony!
+156	Każde zadanie ćwiczy twój umysł. Jesteś coraz lepszy – tak trzymaj!
+157	Co spróbować dalej
+158	Następny poziom
+159	Dzisiejsze wyzwanie
+160	Jedno zadanie dziennie. Krok po kroku budujemy serię.
+161	Dzisiejsze wyzwanie masz za sobą. Wróć jutro!
+162	Jutro będzie nowe.
+163	Zagraj jeszcze raz
+164	Seria
+165	jeszcze nie
+166	Twoja seria rośnie, gdy każdego dnia rozwiążesz co najmniej jedno zadanie.
+167	Wszystkie zadania ({n}) do swobodnego ćwiczenia. Możesz spróbować też trudniejszych klas.
+168	Wszystkie
+169	Kategoria
+170	Klasa
+171	Losowe zadanie
+172	nowe
+173	Zdobyte odznaki: {a} z {b}
+174	zdobyto
+175	Twój profil
+176	Uczeń
+177	Zmiana klasy zmienia mapę poziomów. Twoje gwiazdki zostają.
+178	Ustawienia
+179	Dźwięki
+180	Animacje
+181	Większy tekst
+182	Zapisano
+183	Historia
+184	Na razie nic – rozwiąż swoje pierwsze zadanie!
+185	Dla nauczycieli i autorów: baza zadań
+186	Przegląd wszystkich zadań wraz ze źródłem inspiracji i licencją. Nowe zadania dodaje się w pliku js/content.js.
+187	Eksportuj bazę (JSON)
+188	Typ
+189	Źródło
+190	Licencja
+191	Architektura jest gotowa na przyszłe logowanie i synchronizację (wymienny adapter pamięci).
+192	Dane
+193	Postępy są zapisywane tylko na tym urządzeniu.
+194	Zeruj postępy
+195	Naprawdę usunąć gwiazdki, punkty i odznaki? Twoje imię, klasa i ustawienia zostaną.
+196	Anuluj
+197	Tak, usuń
+198	Postępy zostały wyzerowane.
+199	Nie udało się wczytać języka (potrzebny internet).
+200	Tłumaczenia są maszynowe i częściowo ukończone; brakujące teksty wyświetlają się po angielsku lub słowacku.

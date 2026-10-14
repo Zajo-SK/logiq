@@ -1,0 +1,200 @@
+1	retos matemáticos
+2	Idioma
+3	Estrellas y puntos
+4	Marcado
+5	Esta pieza no puede moverse así. Lee las reglas de movimiento.
+6	Poste
+7	Mínimo
+8	No hay ningún disco en este poste.
+9	No se puede poner un disco grande sobre uno más pequeño.
+10	Prueba a mover el disco {d} del poste {a} al poste {b}.
+11	Mostrar la solución
+12	Juegos independientes
+13	Torres de Hanói
+14	Mueve toda la torre al tercer poste. Toca un poste (origen) y luego otro poste (destino).
+15	Número de discos
+16	Tu récord
+17	¡La torre está movida!
+18	Jugar otra vez
+19	Jugar
+20	Rango
+21	Para llegar al rango {r} te faltan {n} puntos.
+22	Has alcanzado el rango más alto. ¡Eres una leyenda!
+23	¡Nuevo rango!
+24	¡Nueva recompensa!
+25	Bono diario
+26	🏆 Bono de nivel
+27	Recompensas
+28	Los puntos, las estrellas, las rachas de días y las tareas resueltas desbloquean compañeros y temas de color. Tu rango viene de los puntos y nunca se pierde.
+29	Compañero
+30	Tema de color
+31	Usar
+32	En uso
+33	Insignias
+34	Consigue {n} puntos
+35	Consigue {n} estrellas
+36	Racha de {n} días
+37	Resuelve {n} tareas
+38	Conjuntos de entrenamiento (tareas infinitas)
+39	Cada toque crea una tarea nueva de ese tipo para tu curso. Aquí no hay puntos: es práctica libre.
+40	Práctica: no se cuentan puntos.
+41	Tareas hechas a mano
+42	Montón
+43	ficha
+44	Toma {n}
+45	Toma {n} del montón {p}
+46	Toca una ficha: te llevas esa y todas las que están a su derecha.
+47	Es tu turno.
+48	El ordenador está pensando…
+49	Tú:
+50	Ordenador:
+51	Inicio
+52	Mapa
+53	Diario
+54	Colección
+55	Logros
+56	Perfil
+57	Descubre acertijos, lógica y estrategia a tu propio ritmo. Aquí nadie recibe castigo por equivocarse: cada intento te hace avanzar.
+58	Tu nombre (opcional)
+59	¿Cómo te llamamos?
+60	Elige tu curso
+61	¡Vamos!
+62	Puedes cambiar tu curso más tarde en el perfil.
+63	Sin registro y sin anuncios. El progreso se guarda solo en este dispositivo.
+64	¡Hola, {n}!
+65	¡Hola, explorador!
+66	Te espera el mundo «{w}»: nivel «{l}».
+67	¡Has terminado todos los niveles de este curso! Prueba los retos o la colección.
+68	Empezar
+69	Continuar
+70	Abrir la colección
+71	estrellas
+72	puntos
+73	días seguidos
+74	tareas resueltas
+75	Tu progreso
+76	{a} de {b} niveles completados
+77	Abrir el mapa
+78	Resolver la de hoy
+79	Ver
+80	¡El reto de hoy está hecho!
+81	Te sugerimos
+82	Ir
+83	Áreas fuertes
+84	Continúa con el nivel «{n}».
+85	Empieza con el nivel «{n}».
+86	Practica «{c}»: ahí puedes conseguir más estrellas.
+87	Prueba algo nuevo: «{c}».
+88	«{c}» te va genial: ¡prueba tareas más difíciles!
+89	Resuelve unas cuantas tareas y te haremos sugerencias.
+90	¡Has terminado el curso! Prueba retos de mundos de cursos superiores.
+91	Mundos y niveles
+92	Termina primero el nivel anterior.
+93	Bloqueado
+94	Retos para valientes
+95	Mundos más difíciles de un curso superior: siempre desbloqueados si quieres superarte.
+96	Este nivel tiene {n} tareas. Resuélvelas en el orden que quieras.
+97	Lo que te espera
+98	Recompensas
+99	hasta {n} estrellas
+100	hasta {n} puntos
+101	insignias por tus descubrimientos
+102	más niveles en el mapa
+103	Temas
+104	Los errores nunca se castigan. Las estrellas dependen solo de las pistas usadas y del número de intentos.
+105	Empezar nivel
+106	Atrás
+107	Reto
+108	Dificultad
+109	Pista
+110	Explicar la solución
+111	Comprobar
+112	Siguiente tarea
+113	Hecho
+114	Terminar nivel
+115	No hay más pistas
+116	Primero elige una respuesta.
+117	Primero escribe una respuesta.
+118	Tu respuesta
+119	Borrar
+120	Tu desarrollo
+121	Escribe cómo lo has resuelto…
+122	Primero toca una casilla vacía.
+123	Todavía hay casillas vacías.
+124	fila
+125	columna
+126	Subir
+127	Bajar
+128	Empezar de nuevo
+129	Movimientos
+130	Pasos
+131	Deshacer movimiento
+132	Navegar
+133	La barca está llena. Toca a alguien de la barca para que se baje.
+134	Alguien tiene que estar en la barca para remar.
+135	Orilla izquierda
+136	Orilla derecha
+137	en la barca
+138	Deshagamos ese movimiento…
+139	puntos
+140	Pistas usadas: {n}.
+141	Sin pistas: ¡genial!
+142	¡Nueva insignia!
+143	Inténtalo otra vez
+144	Equivocarse no pasa nada: es parte de descubrir.
+145	¿Quieres ver el método?
+146	Aún puedes intentarlo por tu cuenta o usar antes una pista. Si descubres la solución, la tarea cuenta sin puntos.
+147	Seguiré intentándolo
+148	Mostrar el método
+149	Tarea marcada como explorada. ¡Sigamos!
+150	Veamos por qué funciona esto.
+151	Siguiente paso
+152	Mostrar todo
+153	Cerrar
+154	Respuesta correcta
+155	¡Nivel completado!
+156	Cada tarea entrena tu mente. Cada vez lo haces mejor: ¡sigue así!
+157	Qué probar a continuación
+158	Siguiente nivel
+159	Reto de hoy
+160	Una tarea al día. Paso a paso construimos una racha.
+161	Has terminado el reto de hoy. ¡Vuelve mañana!
+162	Mañana habrá uno nuevo.
+163	Jugar otra vez
+164	Racha
+165	todavía no
+166	Tu racha crece cuando resuelves al menos una tarea cada día.
+167	Todas las tareas ({n}) para practicar libremente. También puedes probar cursos más difíciles.
+168	Todas
+169	Categoría
+170	Curso
+171	Tarea al azar
+172	nueva
+173	Insignias conseguidas: {a} de {b}
+174	conseguida
+175	Tu perfil
+176	Alumno
+177	Cambiar de curso cambia el mapa de niveles. Tus estrellas se quedan.
+178	Ajustes
+179	Sonidos
+180	Animaciones
+181	Texto más grande
+182	Guardado
+183	Historial
+184	Todavía nada: ¡resuelve tu primera tarea!
+185	Para docentes y autores: base de datos de tareas
+186	Resumen de todas las tareas con su fuente de inspiración y licencia. Las tareas nuevas se añaden en js/content.js.
+187	Exportar la base de datos (JSON)
+188	Tipo
+189	Fuente
+190	Licencia
+191	La arquitectura está preparada para un futuro inicio de sesión y sincronización (adaptador de almacenamiento intercambiable).
+192	Datos
+193	El progreso se guarda solo en este dispositivo.
+194	Reiniciar el progreso
+195	¿Seguro que quieres borrar las estrellas, los puntos y las insignias? Tu nombre, curso y ajustes se conservan.
+196	Cancelar
+197	Sí, borrar
+198	El progreso se ha reiniciado.
+199	No se pudo cargar el idioma (necesita internet).
+200	Las traducciones son automáticas y están parcialmente terminadas; los textos que faltan se muestran en inglés o eslovaco.

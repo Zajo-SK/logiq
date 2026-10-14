@@ -1,0 +1,200 @@
+1	Mathe-Herausforderungen
+2	Sprache
+3	Sterne und Punkte
+4	Markiert
+5	Diese Figur kann sich so nicht bewegen. Lies die Zugregeln.
+6	Stab
+7	Mindestens
+8	Auf diesem Stab liegt keine Scheibe.
+9	Eine größere Scheibe darf nicht auf eine kleinere gelegt werden.
+10	Versuche, Scheibe {d} von Stab {a} auf Stab {b} zu bewegen.
+11	Lösung zeigen
+12	Eigenständige Spiele
+13	Türme von Hanoi
+14	Bewege den ganzen Turm auf den dritten Stab. Tippe auf einen Stab (von), dann auf einen Stab (nach).
+15	Anzahl der Scheiben
+16	Dein Rekord
+17	Der Turm ist umgesetzt!
+18	Nochmal spielen
+19	Spielen
+20	Rang
+21	Bis zum Rang {r} fehlen dir noch {n} Punkte.
+22	Du hast den höchsten Rang erreicht. Du bist eine Legende!
+23	Neuer Rang!
+24	Neue Belohnung!
+25	Tagesbonus
+26	🏆 Levelbonus
+27	Belohnungen
+28	Punkte, Sterne, Tagesserien und gelöste Aufgaben schalten Begleiter und Farbthemen frei. Dein Rang kommt von den Punkten und geht nie verloren.
+29	Begleiter
+30	Farbthema
+31	Benutzen
+32	In Benutzung
+33	Abzeichen
+34	Sammle {n} Punkte
+35	Sammle {n} Sterne
+36	{n} Tage in Folge
+37	Löse {n} Aufgaben
+38	Trainingssätze (endlose Aufgaben)
+39	Jedes Tippen erzeugt eine frische Aufgabe dieser Art für deine Klasse. Hier gibt es keine Punkte – es ist freies Üben.
+40	Üben – keine Punkte.
+41	Handgemachte Aufgaben
+42	Haufen
+43	Spielstein
+44	Nimm {n}
+45	Nimm {n} vom Haufen {p}
+46	Tippe auf einen Spielstein – du nimmst ihn und alle Steine rechts davon.
+47	Du bist dran.
+48	Der Computer denkt nach…
+49	Du:
+50	Computer:
+51	Start
+52	Karte
+53	Täglich
+54	Sammlung
+55	Erfolge
+56	Profil
+57	Entdecke Rätsel, Logik und Strategie in deinem eigenen Tempo. Hier wird niemand für Fehler bestraft – jeder Versuch bringt dich weiter.
+58	Dein Name (optional)
+59	Wie sollen wir dich nennen?
+60	Wähle deine Klasse
+61	Los geht’s
+62	Du kannst deine Klasse später im Profil ändern.
+63	Ohne Anmeldung, ohne Werbung. Der Fortschritt wird nur auf diesem Gerät gespeichert.
+64	Hallo, {n}!
+65	Hallo, Entdecker!
+66	Die Welt „{w}“ wartet – Level „{l}“.
+67	Du hast alle Level dieser Klasse geschafft! Probiere die Herausforderungen oder die Sammlung.
+68	Starten
+69	Weiter
+70	Sammlung öffnen
+71	Sterne
+72	Punkte
+73	Tage in Folge
+74	gelöste Aufgaben
+75	Dein Fortschritt
+76	{a} von {b} Leveln geschafft
+77	Karte öffnen
+78	Heutige lösen
+79	Ansehen
+80	Die heutige Herausforderung ist geschafft!
+81	Wir empfehlen
+82	Los
+83	Starke Bereiche
+84	Mach weiter mit Level „{n}“.
+85	Beginne mit Level „{n}“.
+86	Übe „{c}“ – dort kannst du mehr Sterne holen.
+87	Probiere etwas Neues: „{c}“.
+88	„{c}“ läuft super – probiere schwerere Aufgaben!
+89	Löse ein paar Aufgaben, dann machen wir dir Vorschläge.
+90	Du hast die Klasse geschafft! Probiere Herausforderungen aus Welten höherer Klassen.
+91	Welten und Level
+92	Schließe zuerst das vorherige Level ab.
+93	Gesperrt
+94	Herausforderungen für Mutige
+95	Schwerere Welten aus einer höheren Klasse – immer freigeschaltet, wenn du dich fordern willst.
+96	Dieses Level hat {n} Aufgaben. Löse sie in beliebiger Reihenfolge.
+97	Was dich erwartet
+98	Belohnungen
+99	bis zu {n} Sterne
+100	bis zu {n} Punkte
+101	Abzeichen für Entdeckungen
+102	weitere Level auf der Karte
+103	Themen
+104	Fehler werden nie bestraft. Die Sterne hängen nur von benutzten Hinweisen und der Zahl der Versuche ab.
+105	Level starten
+106	Zurück
+107	Herausforderung
+108	Schwierigkeit
+109	Hinweis
+110	Lösung erklären
+111	Prüfen
+112	Nächste Aufgabe
+113	Fertig
+114	Level beenden
+115	Keine weiteren Hinweise
+116	Wähle zuerst eine Antwort.
+117	Gib zuerst eine Antwort ein.
+118	Deine Antwort
+119	Löschen
+120	Dein Lösungsweg
+121	Schreibe, wie du darauf gekommen bist…
+122	Tippe zuerst auf ein leeres Feld.
+123	Einige Felder sind noch leer.
+124	Zeile
+125	Spalte
+126	Nach oben
+127	Nach unten
+128	Neu beginnen
+129	Züge
+130	Schritte
+131	Zug zurücknehmen
+132	Fahren
+133	Das Boot ist voll. Tippe jemanden im Boot an, damit er aussteigt.
+134	Jemand muss im Boot sein, um zu rudern.
+135	Linkes Ufer
+136	Rechtes Ufer
+137	im Boot
+138	Nehmen wir diesen Zug zurück…
+139	Punkte
+140	Benutzte Hinweise: {n}.
+141	Keine Hinweise benutzt – super!
+142	Neues Abzeichen!
+143	Versuche es nochmal
+144	Ein Fehler ist okay – er gehört zum Entdecken.
+145	Möchtest du den Lösungsweg sehen?
+146	Du kannst es noch selbst versuchen oder zuerst einen Hinweis nehmen. Wenn du die Lösung aufdeckst, zählt die Aufgabe ohne Punkte.
+147	Ich probiere weiter
+148	Lösungsweg zeigen
+149	Aufgabe als erkundet markiert. Weiter geht’s!
+150	Schauen wir, warum das funktioniert.
+151	Nächster Schritt
+152	Alles zeigen
+153	Schließen
+154	Richtige Antwort
+155	Level geschafft!
+156	Jede Aufgabe trainiert deinen Verstand. Du wirst immer besser – weiter so!
+157	Was du als Nächstes probieren kannst
+158	Nächstes Level
+159	Heutige Herausforderung
+160	Eine Aufgabe pro Tag. Schritt für Schritt bauen wir eine Serie auf.
+161	Du hast die heutige Herausforderung geschafft. Komm morgen wieder!
+162	Morgen gibt es eine neue.
+163	Nochmal spielen
+164	Serie
+165	noch nicht
+166	Deine Serie wächst, wenn du jeden Tag mindestens eine Aufgabe löst.
+167	Alle Aufgaben ({n}) zum freien Üben. Du kannst auch schwerere Klassen ausprobieren.
+168	Alle
+169	Kategorie
+170	Klasse
+171	Zufällige Aufgabe
+172	neu
+173	Verdiente Abzeichen: {a} von {b}
+174	verdient
+175	Dein Profil
+176	Schüler
+177	Ein Klassenwechsel ändert die Levelkarte. Deine Sterne bleiben.
+178	Einstellungen
+179	Töne
+180	Animationen
+181	Größere Schrift
+182	Gespeichert
+183	Verlauf
+184	Noch nichts – löse deine erste Aufgabe!
+185	Für Lehrkräfte und Autoren: Aufgabendatenbank
+186	Übersicht aller Aufgaben mit Inspirationsquelle und Lizenz. Neue Aufgaben werden in js/content.js hinzugefügt.
+187	Datenbank exportieren (JSON)
+188	Typ
+189	Quelle
+190	Lizenz
+191	Die Architektur ist für künftige Anmeldung und Synchronisierung vorbereitet (austauschbarer Speicheradapter).
+192	Daten
+193	Der Fortschritt wird nur auf diesem Gerät gespeichert.
+194	Fortschritt zurücksetzen
+195	Wirklich Sterne, Punkte und Abzeichen löschen? Dein Name, deine Klasse und deine Einstellungen bleiben.
+196	Abbrechen
+197	Ja, löschen
+198	Der Fortschritt wurde zurückgesetzt.
+199	Die Sprache konnte nicht geladen werden (Internet nötig).
+200	Die Übersetzungen sind maschinell erstellt und teilweise fertig; fehlende Texte werden auf Englisch oder Slowakisch angezeigt.

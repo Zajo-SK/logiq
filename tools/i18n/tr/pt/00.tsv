@@ -1,0 +1,200 @@
+1	desafios de matemática
+2	Idioma
+3	Estrelas e pontos
+4	Marcado
+5	Esta peça não pode se mover assim. Leia as regras de movimento.
+6	Haste
+7	No mínimo
+8	Não há nenhum disco nesta haste.
+9	Não se pode colocar um disco maior sobre um menor.
+10	Tente mover o disco {d} da haste {a} para a haste {b}.
+11	Mostrar a solução
+12	Jogos independentes
+13	Torre de Hanói
+14	Mova a torre inteira para a terceira haste. Toque em uma haste (origem) e depois em outra (destino).
+15	Número de discos
+16	Seu recorde
+17	A torre foi movida!
+18	Jogar de novo
+19	Jogar
+20	Patente
+21	Para chegar à patente {r} faltam {n} pontos.
+22	Você alcançou a patente mais alta. Você é uma lenda!
+23	Nova patente!
+24	Nova recompensa!
+25	Bônus diário
+26	🏆 Bônus de nível
+27	Recompensas
+28	Pontos, estrelas, sequências de dias e tarefas resolvidas desbloqueiam companheiros e temas de cor. Sua patente vem dos pontos e nunca se perde.
+29	Companheiro
+30	Tema de cor
+31	Usar
+32	Em uso
+33	Insígnias
+34	Ganhe {n} pontos
+35	Ganhe {n} estrelas
+36	Sequência de {n} dias
+37	Resolva {n} tarefas
+38	Conjuntos de treino (tarefas infinitas)
+39	Cada toque cria uma tarefa nova desse tipo para o seu ano. Aqui não há pontos – é prática livre.
+40	Prática – os pontos não contam.
+41	Tarefas feitas à mão
+42	Pilha
+43	ficha
+44	Pegue {n}
+45	Pegue {n} da pilha {p}
+46	Toque numa ficha – você leva essa e todas as que estão à direita dela.
+47	Sua vez.
+48	O computador está pensando…
+49	Você:
+50	Computador:
+51	Início
+52	Mapa
+53	Diário
+54	Coleção
+55	Conquistas
+56	Perfil
+57	Descubra enigmas, lógica e estratégia no seu ritmo. Aqui ninguém é punido por errar – cada tentativa faz você avançar.
+58	Seu nome (opcional)
+59	Como devemos chamar você?
+60	Escolha seu ano
+61	Vamos lá
+62	Você pode mudar o ano depois no perfil.
+63	Sem cadastro e sem anúncios. O progresso é salvo apenas neste dispositivo.
+64	Olá, {n}!
+65	Olá, explorador!
+66	O mundo “{w}” espera por você – nível “{l}”.
+67	Você terminou todos os níveis deste ano! Experimente os desafios ou a coleção.
+68	Começar
+69	Continuar
+70	Abrir coleção
+71	estrelas
+72	pontos
+73	dias seguidos
+74	tarefas resolvidas
+75	Seu progresso
+76	{a} de {b} níveis concluídos
+77	Abrir mapa
+78	Resolver a de hoje
+79	Ver
+80	O desafio de hoje está concluído!
+81	Sugerimos
+82	Ir
+83	Áreas fortes
+84	Continue com o nível “{n}”.
+85	Comece pelo nível “{n}”.
+86	Pratique “{c}” – lá você pode ganhar mais estrelas.
+87	Experimente algo novo: “{c}”.
+88	“{c}” está indo muito bem – tente tarefas mais difíceis!
+89	Resolva algumas tarefas e faremos sugestões.
+90	Você terminou o ano! Experimente desafios de mundos de anos mais altos.
+91	Mundos e níveis
+92	Termine primeiro o nível anterior.
+93	Bloqueado
+94	Desafios para os corajosos
+95	Mundos mais difíceis de um ano superior – sempre desbloqueados se quiser se desafiar.
+96	Este nível tem {n} tarefas. Resolva-as em qualquer ordem.
+97	O que espera por você
+98	Recompensas
+99	até {n} estrelas
+100	até {n} pontos
+101	insígnias por descobertas
+102	mais níveis no mapa
+103	Tópicos
+104	Erros nunca são punidos. As estrelas dependem apenas das dicas usadas e do número de tentativas.
+105	Iniciar nível
+106	Voltar
+107	Desafio
+108	Dificuldade
+109	Dica
+110	Explicar a solução
+111	Verificar
+112	Próxima tarefa
+113	Concluído
+114	Concluir nível
+115	Não há mais dicas
+116	Escolha primeiro uma resposta.
+117	Digite primeiro uma resposta.
+118	Sua resposta
+119	Apagar
+120	Seu raciocínio
+121	Escreva como você chegou lá…
+122	Toque primeiro numa casa vazia.
+123	Algumas casas ainda estão vazias.
+124	linha
+125	coluna
+126	Subir
+127	Descer
+128	Recomeçar
+129	Movimentos
+130	Passos
+131	Desfazer movimento
+132	Navegar
+133	O barco está cheio. Toque em alguém no barco para ele descer.
+134	Alguém precisa estar no barco para remar.
+135	Margem esquerda
+136	Margem direita
+137	no barco
+138	Vamos desfazer esse movimento…
+139	pontos
+140	Dicas usadas: {n}.
+141	Nenhuma dica usada – ótimo!
+142	Nova insígnia!
+143	Tente de novo
+144	Errar tudo bem – faz parte de descobrir.
+145	Quer ver o método?
+146	Você ainda pode tentar sozinho ou usar uma dica antes. Se revelar a solução, a tarefa conta sem pontos.
+147	Vou continuar tentando
+148	Mostrar o método
+149	Tarefa marcada como explorada. Vamos em frente!
+150	Vamos ver por que isso funciona.
+151	Próximo passo
+152	Mostrar tudo
+153	Fechar
+154	Resposta correta
+155	Nível concluído!
+156	Cada tarefa treina sua mente. Você melhora cada vez mais – continue!
+157	O que tentar a seguir
+158	Próximo nível
+159	Desafio de hoje
+160	Uma tarefa por dia. Passo a passo construímos uma sequência.
+161	Você concluiu o desafio de hoje. Volte amanhã!
+162	Amanhã tem um novo.
+163	Jogar de novo
+164	Sequência
+165	ainda não
+166	Sua sequência cresce quando você resolve pelo menos uma tarefa por dia.
+167	Todas as tarefas ({n}) para prática livre. Você também pode tentar anos mais difíceis.
+168	Todas
+169	Categoria
+170	Ano
+171	Tarefa aleatória
+172	nova
+173	Insígnias conquistadas: {a} de {b}
+174	conquistada
+175	Seu perfil
+176	Aluno
+177	Mudar de ano muda o mapa de níveis. Suas estrelas continuam.
+178	Configurações
+179	Sons
+180	Animações
+181	Texto maior
+182	Salvo
+183	Histórico
+184	Ainda nada – resolva sua primeira tarefa!
+185	Para professores e autores: banco de tarefas
+186	Visão geral de todas as tarefas com a fonte de inspiração e a licença. Novas tarefas são adicionadas em js/content.js.
+187	Exportar banco de dados (JSON)
+188	Tipo
+189	Fonte
+190	Licença
+191	A arquitetura está pronta para um futuro login e sincronização (adaptador de armazenamento substituível).
+192	Dados
+193	O progresso é salvo apenas neste dispositivo.
+194	Zerar o progresso
+195	Quer mesmo apagar estrelas, pontos e insígnias? Seu nome, ano e configurações permanecem.
+196	Cancelar
+197	Sim, apagar
+198	O progresso foi zerado.
+199	Não foi possível carregar o idioma (precisa de internet).
+200	As traduções são automáticas e parcialmente concluídas; os textos que faltam aparecem em inglês ou eslovaco.

@@ -7,7 +7,7 @@ button{cursor:pointer;touch-action:manipulation}
 h1,h2,h3{line-height:1.2;margin:0 0 .4em;color:var(--navy)}h1{font-size:1.7rem}h2{font-size:1.2rem}h3{font-size:1.05rem}
 p{margin:.3em 0 .6em}.muted{color:var(--muted)}.fine{font-size:.82rem;color:var(--muted)}.mt{margin-top:1.2rem}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.skip{position:absolute;left:-999px;top:0;background:#fff;padding:.6rem;z-index:100}.skip:focus{left:8px;top:8px}
+.skip{position:absolute;left:8px;top:-999px;background:#fff;padding:.6rem;z-index:100}.skip:focus{top:8px}
 :focus-visible{outline:3px solid var(--violet);outline-offset:2px}
 .ic{width:1.35em;height:1.35em;flex:none}
 .no-anim *,.no-anim *::before{animation:none!important;transition:none!important}
