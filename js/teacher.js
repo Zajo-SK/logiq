@@ -33,17 +33,30 @@ const Sync = {
   schedule() { if (!Sync.connected() || !API.on()) return; clearTimeout(Sync.timer); Sync.timer = setTimeout(Sync.push, 2500); },
   async push() {
     const s = st().sync; if (!Sync.connected() || !API.on()) return;
-    try { const r = await API.call('/api/sync', 'POST', { classCode: s.classCode, studentId: s.studentId, secret: s.secret, data: Sync.payload() }); Sync.keep(r.assignments); s.lastSynced = Date.now(); s.dirty = false; }
+    try { const r = await API.call('/api/sync', 'POST', { classCode: s.classCode, studentId: s.studentId, secret: s.secret, data: Sync.payload() }); Sync.keep(r.assignments); if (r.recovery) s.recovery = r.recovery; Sync.backup(); s.lastSynced = Date.now(); s.dirty = false; }
     catch (e) { s.dirty = true; if (e.status === 403) Sync.leave(true); }
     Store.save();
   },
+  /* full copy of the progress (tasks, badges, rewards, settings…) so it can be restored on another device with the recovery code */
+  fullState() { const s = JSON.parse(JSON.stringify(st())); delete s.sync; return s; },
+  async backup(force) {
+    const s = st().sync; if (!Sync.connected() || !API.on()) return; if (!force && Date.now() - (Sync.lastBackup || 0) < 20000) return; Sync.lastBackup = Date.now();
+    try { await API.call('/api/backup', 'POST', { classCode: s.classCode, studentId: s.studentId, secret: s.secret, state: Sync.fullState() }); s.lastBackup = Date.now(); Store.save(); } catch (e) { /* retried on the next sync */ }
+  },
+  async restore(code, recovery) {
+    const r = await API.call('/api/restore', 'POST', { code, recovery });
+    if (r.state) { const keepLang = st().profile.lang; Store.replaceState(r.state); st().profile.lang = keepLang || st().profile.lang; }
+    Object.assign(st().sync, { studentId: r.studentId, secret: r.secret, classCode: r.classCode, classLabel: r.classLabel, parentCode: r.parentCode, recovery: r.recovery, dirty: false });
+    st().assign = r.assignments || []; if (r.classLabel && !st().profile.cls) st().profile.cls = r.classLabel;
+    Store.save(); return r;
+  },
   async join(code) {
     const r = await API.call('/api/join', 'POST', { code, nick: st().profile.name || 'Žiak', grade: grade() || 0, cls: st().profile.cls });
-    Object.assign(st().sync, { studentId: r.studentId, secret: r.secret, classCode: r.classCode, classLabel: r.classLabel, parentCode: r.parentCode }); st().assign = r.assignments || [];
+    Object.assign(st().sync, { studentId: r.studentId, secret: r.secret, classCode: r.classCode, classLabel: r.classLabel, parentCode: r.parentCode, recovery: r.recovery }); st().assign = r.assignments || [];
     if (r.classLabel) { st().profile.cls = r.classLabel; if (!grade()) st().profile.grade = parseInt(r.classLabel); }
     Store.save(); Sync.push(); return r;
   },
-  leave(quiet) { Object.assign(st().sync, { studentId: null, secret: null, classCode: null, classLabel: null, parentCode: null }); st().assign = []; Store.save(); if (!quiet) toast(L2('Odpojené od triedy.', 'Disconnected from the class.')); }
+  leave(quiet) { Object.assign(st().sync, { studentId: null, secret: null, classCode: null, classLabel: null, parentCode: null, recovery: null }); st().assign = []; Store.save(); if (!quiet) toast(L2('Odpojené od triedy.', 'Disconnected from the class.')); }
 };
 document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') Sync.schedule(); });
 
@@ -66,6 +79,7 @@ function studentDetail(s, onDelete) {
       cats.length ? h('div', null, h('h3', { class: 'mt' }, L2('Silné a slabé stránky (priemer hviezd)', 'Strengths and weaknesses (average stars)')), h('div', { class: 'bars2' }, cats.map(([c, v]) => h('div', { class: 'bar2' }, h('span', null, (CATS[c] ? CATS[c].icon + ' ' + tx(CATS[c].n) : c)), h('div', { class: 'track', role: 'img', 'aria-label': v.avg + '/3' }, h('div', { style: `width:${v.avg / 3 * 100}%` })), h('b', null, v.avg.toFixed(1) + '★ · ' + v.n))))) : null,
       d.history && d.history.length ? h('div', null, h('h3', { class: 'mt' }, L2('Posledné úlohy', 'Recent tasks')), h('ul', { class: 'histlist' }, d.history.map(x => h('li', null, h('span', { 'aria-hidden': 'true' }, CATS[x.c] ? CATS[x.c].icon : '•'), h('span', { class: 'ht' }, tx(x.t), h('small', null, ago(x.ts))), starsHtml(x.s), h('b', null, '+' + x.p))))) : null],
     h('p', { class: 'muted mt' }, L2('Rodičovský kód', 'Parent code') + ': ', h('b', { class: 'code' }, s.parentCode)),
+    s.recovery ? h('p', { class: 'muted' }, L2('Záchranný kód žiaka', 'Pupil recovery code') + ': ', h('b', { class: 'code' }, fmtRec(s.recovery))) : null,
     onDelete ? h('div', { class: 'btnrow' }, btn(L2('Zmazať žiaka', 'Delete student'), 'ghost small danger', onDelete)) : null);
 }
 
@@ -75,11 +89,22 @@ function connectCard() {
   const s = st().sync;
   if (Sync.connected()) return card('', h('h2', null, '🏫 ' + L2('Pripojený k učiteľovi', 'Connected to teacher')),
     h('p', null, L2(`Trieda ${s.classLabel || ''}. Učiteľ vidí tvoje meno a postup. Posledná synchronizácia: ${s.lastSynced ? ago(s.lastSynced) : '–'}.`, `Class ${s.classLabel || ''}. Your teacher sees your name and progress. Last sync: ${s.lastSynced ? ago(s.lastSynced) : '–'}.`)),
+    s.recovery ? h('p', null, '🛟 ' + L2('Záchranný kód', 'Recovery code') + ': ', h('b', { class: 'code' }, fmtRec(s.recovery)), h('br'), h('small', { class: 'muted' }, L2('Napíš si ho a nikomu ho nedávaj. Ak stratíš postup alebo dostaneš nový iPad, zadaj kód triedy a tento kód a postup sa obnoví. Záloha sa robí sama.', 'Write it down and do not share it. If you lose your progress or get a new device, enter the class code and this code to restore it. Backups are made automatically.'))) : null,
     h('p', null, L2('Rodičovský kód', 'Parent code') + ': ', h('b', { class: 'code' }, s.parentCode), h('br'), h('small', { class: 'muted' }, L2('Ak ho dáš rodičovi, uvidí tvoj postup na stránke Rodičovský prístup.', 'Give it to a parent so they can see your progress in the Parent access area.'))),
     h('div', { class: 'btnrow left' }, btn(L2('Synchronizovať teraz', 'Sync now'), 'ghost small', async () => { await Sync.push(); toast(L2('Hotovo', 'Done')); render(); }), btn(L2('Odpojiť', 'Disconnect'), 'ghost small danger', () => { Sync.leave(); render(); })));
   const inp = h('input', { class: 'textin', type: 'text', maxlength: 10, placeholder: L2('Kód od učiteľa (napr. K7M2QX)', 'Code from teacher (e.g. K7M2QX)'), 'aria-label': L2('Kód triedy', 'Class code'), autocapitalize: 'characters' });
-  return card('', h('h2', null, '🏫 ' + L2('Pripojiť k učiteľovi', 'Connect to a teacher')), h('p', { class: 'muted' }, L2('Po pripojení uvidí učiteľ tvoje meno a postup. Nič iné sa neodosiela.', 'After connecting, your teacher sees your name and progress. Nothing else is sent.')), inp,
-    h('div', { class: 'btnrow left' }, btn(L2('Pripojiť', 'Connect'), 'primary', async () => { try { await Sync.join(inp.value.trim().toUpperCase()); toast(L2('Pripojené!', 'Connected!')); render(); } catch (e) { toast(fmtErr(e)); } })));
+  return h('div', null, card('', h('h2', null, '🏫 ' + L2('Pripojiť k učiteľovi', 'Connect to a teacher')), h('p', { class: 'muted' }, L2('Po pripojení uvidí učiteľ tvoje meno a postup. Nič iné sa neodosiela.', 'After connecting, your teacher sees your name and progress. Nothing else is sent.')), inp,
+    h('div', { class: 'btnrow left' }, btn(L2('Pripojiť', 'Connect'), 'primary', async () => { try { await Sync.join(inp.value.trim().toUpperCase()); toast(L2('Pripojené!', 'Connected!')); render(); } catch (e) { toast(fmtErr(e)); } }))), card('', h('h2', null, '🛟 ' + L2('Obnoviť môj postup', 'Restore my progress')), h('p', { class: 'muted' }, L2('Máš záchranný kód z predchádzajúceho zariadenia? Postup sa načíta späť.', 'Do you have a recovery code from a previous device? Your progress will be loaded back.')), btn(L2('Obnoviť pomocou kódu', 'Restore with a code'), 'ghost', openRestore)));
+}
+const fmtRec = c => String(c || '').replace(/^(.{4})(.+)$/, '$1-$2');
+function openRestore() {
+  const cls = h('input', { class: 'textin', type: 'text', maxlength: 10, placeholder: L2('Kód triedy (napr. K7M2QX)', 'Class code (e.g. K7M2QX)'), 'aria-label': L2('Kód triedy', 'Class code'), autocapitalize: 'characters' });
+  const rec = h('input', { class: 'textin', type: 'text', maxlength: 12, placeholder: L2('Záchranný kód (napr. ABCD-2345)', 'Recovery code (e.g. ABCD-2345)'), 'aria-label': L2('Záchranný kód', 'Recovery code'), autocapitalize: 'characters' }), err = h('p', { class: 'errmsg', role: 'alert' });
+  const sh = openSheet(h('div', { class: 'sheetin' }, h('h2', null, '🛟 ' + L2('Obnoviť môj postup', 'Restore my progress')), h('p', { class: 'muted' }, L2('Zadaj kód triedy a záchranný kód. Postup v tomto zariadení sa nahradí uloženou zálohou.', 'Enter the class code and the recovery code. Progress on this device is replaced by the saved backup.')), cls, h('div', { style: 'height:.5rem' }), rec, err,
+    h('div', { class: 'btnrow' }, btn(L2('Zrušiť', 'Cancel'), 'ghost', () => sh.close()), btn(L2('Obnoviť', 'Restore'), 'primary', async () => {
+      err.textContent = ''; if (Store.totals().done > 0 && !confirm(L2('Tento prístroj už má vlastný postup. Nahradiť ho zálohou?', 'This device already has its own progress. Replace it with the backup?'))) return;
+      try { await Sync.restore(cls.value.trim().toUpperCase(), rec.value.trim()); sh.close(); toast(L2('Postup bol obnovený.', 'Progress restored.')); applySettings(); await setLang(st().profile.lang || 'sk'); go('#/home'); render(); } catch (e) { err.textContent = fmtErr(e); }
+    }))));
 }
 const teacherEntry = () => card('', h('h2', null, '👩‍🏫 ' + L2('Učiteľ, správca, rodič', 'Teacher, admin, parent')), h('div', { class: 'btnrow left' }, btn(L2('Prihlásenie učiteľa / správcu', 'Teacher / admin login'), 'ghost', () => go('#/teacher')), btn(L2('Rodičovský prístup', 'Parent access'), 'ghost', () => go('#/parent'))));
 
@@ -282,7 +307,7 @@ VIEWS.atask = (v, [aid, idx]) => {
 };
 
 /* ---------- privacy information ---------- */
-const privacyCard = () => card('', h('h2', null, '🔒 ' + L2('Ochrana údajov', 'Privacy')), h('p', { class: 'muted' }, L2('Prehľad toho, aké údaje aplikácia spracúva a kde sa ukladajú.', 'What data the app processes and where it is stored.')), h('div', { class: 'btnrow left' }, btn(L2('Aké údaje spracúvame', 'What data we process'), 'ghost', () => go('#/privacy')), btn('📜 ' + L2('Pravidlá používania', 'Rules of use'), 'ghost', () => go('#/rules')), btn('ℹ️ ' + L2('O aplikácii', 'About the app'), 'ghost', () => { location.href = 'info/index.html'; })));
+const privacyCard = () => card('', h('h2', null, '🔒 ' + L2('Ochrana údajov', 'Privacy')), h('p', { class: 'muted' }, L2('Prehľad toho, aké údaje aplikácia spracúva a kde sa ukladajú.', 'What data the app processes and where it is stored.')), h('div', { class: 'btnrow left' }, btn(L2('Aké údaje spracúvame', 'What data we process'), 'ghost', () => go('#/privacy')), btn('📜 ' + L2('Pravidlá používania', 'Rules of use'), 'ghost', () => go('#/rules')), btn('ℹ️ ' + L2('O aplikácii', 'About the app'), 'ghost', () => { location.href = 'info/index.html'; })), h('p', { class: 'fine' }, '© 2026 LogiQ. ' + L2('Všetky práva vyhradené.', 'All rights reserved.')));
 VIEWS.privacy = (v) => {
   const contact = window.LOGIQ_CONTACT || '', sec = (title, ...kids) => card('', h('h2', null, title), ...kids), li = (...k) => h('li', null, ...k), ul = (...k) => h('ul', { class: 'privlist' }, ...k);
   v.append(h('div', { class: 'page privacy' }, backLink(), h('div', { class: 'pagehead' }, h('h1', null, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), h('p', null, L2('LogiQ je školská výučbová aplikácia. Zbierame len to, čo je nutné na fungovanie, a nepoužívame reklamu ani sledovanie.', 'LogiQ is a school learning app. We collect only what is needed for it to work, and use no advertising or tracking.'))),
@@ -292,7 +317,7 @@ VIEWS.privacy = (v) => {
       h('p', null, L2('Nič z toho sa neodosiela na server. Údaje zmažeš vymazaním údajov stránky v nastaveniach prehliadača.', 'None of it is sent to a server. You can delete it by clearing the site data in your browser settings.'))),
     sec('🏫 ' + L2('2. Ak sa pripojíš k učiteľovi kódom triedy', '2. If you connect to a teacher with a class code'),
       h('p', null, L2('Na server (Cloudflare, databáza v Európe) sa odosiela:', 'The following is sent to the server (Cloudflare, database in Europe):')),
-      ul(li(L2('prezývka alebo krstné meno a ročník', 'nickname or first name and grade')), li(L2('trieda, ku ktorej si pripojený/á (podľa kódu)', 'the class you joined (by code)')), li(L2('súhrn výsledkov: hviezdy, body, počet úloh, séria, hodnosť, silné a slabé oblasti, posledných 15 úloh', 'a summary of results: stars, points, number of tasks, streak, rank, strong and weak topics, the last 15 tasks')), li(L2('postup v úlohách zadaných učiteľom', 'progress on tasks assigned by the teacher')), li(L2('čas poslednej aktivity', 'time of last activity'))),
+      ul(li(L2('prezývka alebo krstné meno a ročník', 'nickname or first name and grade')), li(L2('trieda, ku ktorej si pripojený/á (podľa kódu)', 'the class you joined (by code)')), li(L2('súhrn výsledkov: hviezdy, body, počet úloh, séria, hodnosť, silné a slabé oblasti, posledných 15 úloh', 'a summary of results: stars, points, number of tasks, streak, rank, strong and weak topics, the last 15 tasks')), li(L2('postup v úlohách zadaných učiteľom', 'progress on tasks assigned by the teacher')), li(L2('čas poslednej aktivity', 'time of last activity')), li(L2('záloha celého postupu (splnené úlohy, odznaky, nálepky, odmeny, nastavenia) a záchranný kód, aby sa dal postup obnoviť na inom zariadení', 'a backup of your whole progress (solved tasks, badges, stickers, rewards, settings) and a recovery code so that it can be restored on another device'))),
       h('p', null, L2('Ak cez tlačidlo 💬 pošleš hlásenie podpore, odošle sa meno (ak ho zadáš), text správy a technické údaje: stránka, názov úlohy, ročník, trieda, verzia aplikácie a typ zariadenia.', 'If you send a report with the 💬 button, the name (if you enter one), the message text and technical details are sent: page, task title, grade, class, app version and device type.')),
       h('p', null, L2('Neodosielame priezvisko, adresu, e-mail, telefón, polohu ani fotografie. Prosíme, nepíš do prezývky priezvisko.', 'We do not send surname, address, e-mail, phone, location or photos. Please do not put a surname in the nickname.')),
       h('p', null, L2('Údaje vidí učiteľ tvojej triedy, správca aplikácie a rodič, ktorý má tvoj rodičovský kód (len čítanie). Nie sú verejné.', 'The data is visible to your class teacher, the app administrator and a parent who has your parent code (read-only). It is not public.'))),

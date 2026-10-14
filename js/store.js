@@ -39,6 +39,7 @@ const Store = (() => {
     save() { adapter.save(state); },
     reset() { const keep = { profile: state.profile, settings: state.settings, userId: state.userId }; state = Object.assign(fresh(), keep); api.save(); },
     resetAll() { state = fresh(); api.save(); },
+    replaceState(n) { const sync = state.sync; state = Object.assign(fresh(), n); state.profile = Object.assign(fresh().profile, n.profile); state.settings = Object.assign(fresh().settings, n.settings); state.sync = sync; api.save(); },
     info(id) { return state.tasks[id] || null; },
     isDone(id) { return !!(state.tasks[id] && state.tasks[id].done); },
     stars(id) { return (state.tasks[id] && state.tasks[id].stars) || 0; },

@@ -191,7 +191,7 @@ VIEWS.welcome = (v) => {
       h('h1', { class: 'wl-title' }, 'Logi', h('i', null, 'Q')), h('p', { class: 'wl-sub' }, t('subtitle')), h('p', { class: 'wl-lead' }, t('welcomeLead')),
       h('label', { class: 'flabel' }, L2('Tvoje meno alebo prezývka', 'Your name or nickname')), nameIn,
       classPicker(sel, x => { sel = x; start.disabled = !sel.g; }), h('p', { class: 'fine' }, t('gradeChangeLater')),
-      codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.'))] : null,
+      codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.')), h('div', { class: 'btnrow left' }, btn('🛟 ' + L2('Mám záchranný kód', 'I have a recovery code'), 'ghost small', openRestore))] : null,
       devNotice(true),
       start,
       h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))),
