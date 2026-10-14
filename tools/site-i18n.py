@@ -23,7 +23,7 @@ for code, _ in LANGS:
             continue
         s = io.open(p, encoding='utf-8').read()
         s = re.sub(r'<html lang="[^"]*"', '<html lang="%s" dir="%s"' % (code, 'rtl' if code == 'ar' else 'ltr'), s, count=1)
-        s = s.replace('href="site.css"', 'href="../site.css"').replace('../icons/', '../../icons/')
+        s = s.replace('href="site.css"', 'href="../site.css"'); s = re.sub(r'(?:\.\./)+icons/', '../../icons/', s)
         s = re.sub(r'href="\.\./(#/[^"]*)?"', lambda m: 'href="../../%s"' % (m.group(1) or ''), s)
         s = s.replace('href="../#/', 'href="../../#/') if False else s
         s = re.sub(r'<label class="langsel">.*?</label>', '', s, flags=re.S)
