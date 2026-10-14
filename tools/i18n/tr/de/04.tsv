@@ -1,0 +1,200 @@
+1	ist ungerade
+2	ist eine Quadratzahl
+3	Errate meine Zahl
+4	Beginne mit dem Hinweis, der die meisten Zahlen ausschließt.
+5	Kombiniere die Hinweise: Du brauchst eine Zahl, die alle gleichzeitig erfüllt.
+6	Wir streichen Zahlen Hinweis für Hinweis durch:
+7	Reihenfolge in der Schlange
+8	Beginne mit einem Hinweis, der etwas Sicheres liefert (wie „direkt hinter“). Verkette Paare miteinander.
+9	Schreibe die Plätze 1, 2, 3 … auf und ordne Schritt für Schritt Namen zu, wobei du Unmögliches ausschließt.
+10	Wir verbinden die Hinweise zu einer Reihenfolge – jeder unmögliche Platz wird durchgestrichen.
+11	Hund
+12	einen Hund
+13	den Hund
+14	Katze
+15	eine Katze
+16	die Katze
+17	Hamster
+18	einen Hamster
+19	den Hamster
+20	Kaninchen
+21	ein Kaninchen
+22	das Kaninchen
+23	Fisch
+24	einen Fisch
+25	den Fisch
+26	Wer hat welches Haustier?
+27	Mache eine Tabelle: Zeilen sind Kinder, Spalten Haustiere. Streiche durch, was unmöglich ist.
+28	Wenn in einer Zeile oder Spalte nur noch ein freies Feld übrig ist, ist das die Antwort.
+29	In der Tabelle markieren wir mit ✗, was die Hinweise ausschließen, und mit ✓, wenn nur noch eine Möglichkeit bleibt.
+30	Wenn jedes A ein B ist und jedes B ein C, dann ist jedes A ein C – die Kette geht weiter.
+31	Wäre Axel ein A, müsste er ein B sein. Er ist kein B, also ist er kein A.
+32	Jedes C ist ein B und kein B ist ein A, also kann kein C ein A sein.
+33	Jedes C ist ein A und jedes A ist ein B, also ist jedes C ein B.
+34	Manche A sind B und jedes B ist ein C, also ist dieses A auch ein C.
+35	Jedes A ist ein C und kein C ist ein D, also ist kein A ein D.
+36	Manche A sind B und kein B ist ein C – also ist dieses A kein C.
+37	Was folgt daraus?
+38	Die Aussagen in der Liste sind wahr. Welche Behauptung MUSS daraus folgen? (Die Wörter sind erfunden – verlasse dich nur auf die Logik.)
+39	Zeichne für jede Art Kreise (Mengen). Welcher Kreis liegt in welchem?
+40	Teste jede Option: Kannst du einen Fall zeichnen, in dem die Voraussetzungen gelten, die Option aber nicht? Dann folgt sie nicht.
+41	Montag
+42	Dienstag
+43	Mittwoch
+44	Donnerstag
+45	Freitag
+46	Samstag
+47	Sonntag
+48	Kinder in einer Reihe
+49	Wie viele Möglichkeiten gibt es für den ersten Platz? Und für den zweiten, wenn der erste vergeben ist?
+50	Die Zahl der Möglichkeiten sinkt jedes Mal um 1. Multipliziere sie.
+51	Das Siegerpodest
+52	Wie viele Läufer können Gold gewinnen? Wie viele dann Silber?
+53	Die Medaillen sind verschieden, also kommt es auf die Reihenfolge an.
+54	Freunde nebeneinander
+55	Klebe die beiden Freunde zu einem „Paar“ zusammen. Wie viele Dinge ordnest du dann an?
+56	Und im Paar können sie auf zwei Arten stehen.
+57	Der runde Tisch
+58	Setze ein Kind auf einen festen Platz. Was bleibt noch anzuordnen?
+59	Es bleibt ein Kind weniger.
+60	Lege ein Kind fest – so fällt die Drehung weg.
+61	Wie viele Ziffern können an der Hunderterstelle stehen? Und wie viele bleiben für die Zehner?
+62	Jede verwendete Ziffer verringert die Auswahl um 1.
+63	Zähle zuerst die geordneten Paare – wie viele sind es?
+64	Du hast jedes Paar zweimal gezählt. Was tun wir dagegen?
+65	Ein Dreierteam
+66	Wie viele geordnete Tripel gibt es?
+67	Jedes Team kommt darunter 3! = 6-mal vor.
+68	Händeschütteln
+69	Wie vielen Personen gibt eine Person die Hand?
+70	Du hast jeden Händedruck zweimal gezählt (von beiden Seiten).
+71	Diagonalen
+72	Von einer Ecke: Zu wie vielen Ecken kann eine Diagonale führen? (Nicht zu sich selbst oder ihren Nachbarn.)
+73	Du hast jede Diagonale zweimal gezählt.
+74	Pizzabeläge
+75	Mit einem Belag gibt es zwei Möglichkeiten. Und mit zwei Belägen?
+76	Jeder zusätzliche Belag verdoppelt die Anzahl.
+77	Jeder Belag hat 2 Möglichkeiten (ja/nein) und die Entscheidungen sind unabhängig.
+78	alle Ziffern sind ungerade
+79	alle Ziffern sind gerade
+80	die Zahl enthält weder die Ziffer 0 noch 5
+81	alle drei Ziffern sind verschieden
+82	die Ziffern wachsen streng (von links nach rechts)
+83	die Quersumme ist 10
+84	sie ist ein Palindrom (liest sich in beide Richtungen gleich)
+85	die Zahl enthält mindestens eine Ziffer 7
+86	die Quersumme ist 9
+87	mindestens eine Ziffer ist 0
+88	Outfits
+89	Wie viele verschiedene Outfits kannst du zusammenstellen? (1 👕 + 1 👖 + 1 🧢)
+90	Wähle ein T-Shirt. Mit wie vielen Hosen-und-Mützen-Kombinationen kann man es tragen?
+91	Multipliziere die Anzahl der Möglichkeiten bei jeder Wahl.
+92	Zahlenschloss
+93	Wie viele Möglichkeiten hat ein Rädchen?
+94	Die Rädchen sind unabhängig – die Möglichkeiten werden multipliziert.
+95	Jedes Rädchen hat 10 Möglichkeiten.
+96	Straßen zwischen Städten
+97	Auf wie viele Arten kommst du von A nach B? Und dann weiter nach C?
+98	Die Anzahlen der Straßen auf den Teilstrecken werden multipliziert.
+99	Dreistellige Zahlen mit einer Regel
+100	Zerlege die Zahl in Hunderter, Zehner, Einer. Wie viele Möglichkeiten hat jede Stelle?
+101	Vorsicht: Die Hunderterziffer darf nicht 0 sein.
+102	Wir zählen die Möglichkeiten für jede Stelle und kombinieren sie dann (multiplizieren oder Fälle addieren).
+103	Roboter auf einem Gitter
+104	Jedes Feld wird von oben oder von links erreicht. Auf wie viele Arten erreichst du die Felder der ersten Zeile?
+105	Schreibe in jedes Feld die Summe der Wegzahlen des Feldes darüber und des Feldes links davon.
+106	In jedes Feld schreiben wir, wie viele Wege dorthin führen: die Summe des Feldes darüber und des Feldes links (blockierte Felder haben 0).
+107	Tabelle der Wegzahlen:
+108	Stell dir den schlimmsten Fall vor – du hast immer Pech.
+109	Karten und Farben
+110	Suche nach dem schlimmstmöglichen Verlauf der Ziehung.
+111	Geburtstage in der Klasse
+112	Verteile die Schüler so gleichmäßig wie möglich auf 12 Monate. Was erhältst du?
+113	Wenn jeder Monat höchstens X Schüler hätte, wie viele wären es insgesamt höchstens?
+114	Hätte jeder Monat weniger, würde es insgesamt nicht reichen. Das ist das Schubfachprinzip.
+115	Handschuhe im Dunkeln
+116	Der schlimmste Fall ist, Handschuhe ohne passendes Gegenstück zu ziehen.
+117	Anagramme
+118	Stell dir zuerst vor, alle Buchstaben sind verschieden. Wie viele Anordnungen gibt es?
+119	Gleiche Buchstaben lassen sich vertauschen – du hast also jede Anordnung mehrfach gezählt.
+120	Perlen in einer Reihe
+121	Wähle zuerst die Plätze für die roten. Auf wie viele Arten?
+122	Wähle dann unter den übrigen Plätzen die blauen.
+123	Prüfe, ob jede Zahl das Doppelte der vorherigen mit einer kleinen Abweichung ist.
+124	Sieh dir die Differenzen benachbarter Zahlen an. Wie groß sind sie?
+125	Die Differenzen wachsen um 1 – das sind Dreieckszahlen.
+126	Sieh dir die Differenzen an und dann die Differenzen der Differenzen.
+127	Magisches Quadrat
+128	Finde eine Zeile, Spalte oder Diagonale, in der alle Zahlen bekannt sind – das ist die magische Summe.
+129	In einer Linie mit einer Unbekannten ist sie gleich der magischen Summe minus der Summe der anderen.
+130	Obstgleichungen
+131	Beginne mit der Gleichung, die nur eine Obstsorte enthält.
+132	Wenn du den Wert einer Frucht kennst, setze ihn in die nächste Gleichung ein.
+133	Wir lösen die Gleichungen der Reihe nach, beginnend mit der mit nur einer Frucht:
+134	Kryptarithmetik
+135	Beginne dort, wo die Antwort fast sicher ist – z. B. bei der ersten Ziffer des Ergebnisses einer Addition.
+136	Probiere Möglichkeiten aus und prüfe jedes Mal jede Spalte.
+137	Wir schließen Ziffern aus, die zu einem Widerspruch führen würden.
+138	keine bemalte Fläche
+139	genau 1 bemalte Fläche
+140	genau 2 bemalte Flächen
+141	genau 3 bemalte Flächen
+142	Eckwürfel: Ein Quader hat 8 Ecken.
+143	Der bemalte Quader
+144	Welche kleinen Würfel sitzen in den Ecken? An den Kanten? In den Flächen? Innen?
+145	Die Anzahl der bemalten Flächen hängt von der Lage ab: Ecke 3, Kante 2, Fläche 1, innen 0.
+146	Die Lage entscheidet über die bemalten Flächen: Ecke = 3, Kante = 2, Fläche = 1, innen = 0.
+147	Wie viele Quadrate?
+148	Zähle zuerst die 1×1-Quadrate. Dann die 2×2-Quadrate. Und weiter?
+149	Quadrate der Größe s gibt es (n − s + 1)². Addiere alle Größen.
+150	Wir zählen nach Quadratgröße. Die Größe s passt an (n − s + 1)² Positionen.
+151	Quadrate in einem Rechteck
+152	Ein Quadrat der Größe s passt an (Zeilen − s + 1) · (Spalten − s + 1) Positionen.
+153	Wir zählen nach Quadratgröße s = 1, 2, … bis zur kleineren Abmessung.
+154	Wie viele Rechtecke?
+155	Ein Rechteck wird durch zwei waagrechte und zwei senkrechte Linien festgelegt.
+156	🧱 Die Zahlen zeigen die Turmhöhen. Wie viele Würfel sind es insgesamt?
+157	🧱 Du schaust von vorn (untere Kante). Wie viele Quadrate siehst du?
+158	🧱 Wir bemalen das Bauwerk oben und an den Seiten (nicht unten). Wie viele Quadrate werden bemalt?
+159	Jede Zahl ist ein Turm. Was machst du mit ihnen?
+160	Addiere alle Zahlen in der Tabelle.
+161	Von vorn siehst du nur den höchsten Turm jeder Spalte.
+162	Nimm aus jeder Spalte die größte Zahl und addiere sie.
+163	Zähle Oberseiten (eine pro Turm) und Seiten getrennt.
+164	Eine Seite ist nur über dem Nachbarturm sichtbar: der Höhenunterschied (oder die volle Höhe am Rand).
+165	Jede Zahl sagt, wie viele Würfel der Turm hat.
+166	Von vorn verdeckt ein höherer Turm niedrigere dahinter – wir sehen nur den höchsten in jeder Spalte.
+167	Oberseiten: die Anzahl der nicht leeren Felder. Seiten: für jede Seite eines Turms der Höhenunterschied zum Nachbarn (der Rand zählt als Höhe 0).
+168	L-förmige Figur
+169	Die Fläche des ganzen Rechtecks minus des ausgeschnittenen Teils.
+170	Berechne beide Rechtecke einzeln.
+171	Zeichne die Figur. Das Verschieben der Seiten kann den Umfang vereinfachen.
+172	Der Umfang einer L-Form ist gleich dem des ursprünglichen Rechtecks.
+173	Das Abschneiden einer Ecke lässt den Umfang unverändert: Die neuen Seiten rutschen auf die alten.
+174	Vergrößertes Quadrat
+175	Wie lang ist die Seite des ursprünglichen Quadrats?
+176	Die neue Seite ist vergrößert; die Fläche ist Seite mal Seite.
+177	Dreiecksfläche
+178	Ein Dreieck ist die Hälfte eines passenden Rechtecks.
+179	Fläche = Grundseite · Höhe : 2.
+180	Dreiecksfläche = (Grundseite · Höhe) : 2.
+181	Bilderrahmen
+182	Welche Maße hat der innere Teil?
+183	Ich denke mir eine Zahl
+184	Rechne rückwärts: Was tust du mit dem Ergebnis, um den letzten Schritt rückgängig zu machen?
+185	Zahlen in einer Reihe
+186	Nenne die kleinste Zahl n. Wie schreibst du die anderen?
+187	Summe und Differenz
+188	Was erhältst du, wenn du die Summe und die Differenz addierst?
+189	Du erhältst die doppelte größere Zahl.
+190	Vater und Sohn
+191	Jahre
+192	Wäre der Vater so viele Jahre jünger, wären beide gleich alt. Wie groß wäre dann die Summe?
+193	Die Summe würde um den Altersunterschied schrumpfen.
+194	Münzen
+195	Wenn alle Münzen 1-€-Münzen wären, wie groß wäre der Wert?
+196	Jeder Tausch einer 1-€-Münze gegen eine 2-€-Münze erhöht den Wert um 1 €.
+197	Gleichung mit Klammern
+198	Werde zuerst das los, was außerhalb der Klammern addiert wird.
+199	Teiler
+200	Suche Teiler paarweise: Wenn d die Zahl n teilt, dann auch n : d.

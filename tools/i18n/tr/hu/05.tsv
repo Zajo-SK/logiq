@@ -1,0 +1,200 @@
+1	Az osztókat párokban soroljuk fel (d, n : d).
+2	Két busz
+3	perc
+4	Olyan számot keresel, amely mindkét idő többszöröse.
+5	A legkisebb közös többszörös.
+6	Két szám többszörösei
+7	Számold meg külön az egyes számok többszöröseit.
+8	A mindkettővel osztható számokat kétszer számoltuk – egyszer vond ki őket.
+9	Egy záró nulla a 2 és az 5 tényezőpárból származik. Melyik ritkább a szorzatban?
+10	Sokkal több kettes van, mint ötös, ezért az ötösök döntenek.
+11	A legnagyobb négyzet
+12	A négyzet oldalának osztania kell mindkét méretet.
+13	A legnagyobb közös osztóra van szükséged.
+14	Golyóhúzás
+15	Valószínűség = kedvező : összes lehetséges.
+16	Összesen hány golyó van, és hány kedvező?
+17	Hány kimenetele van két kocka dobásának?
+18	Pénzfeldobások
+19	Két golyó, visszatevés nélkül
+20	Miután húztál egy pirosat, hány piros és hány golyó marad?
+21	Legalább egy … (és társai)
+22	Vond ki 1-ből az ellentétes esemény valószínűségét.
+23	Egy szám százaléka
+24	Először keresd meg az egész 1%-át.
+25	Drágulás és olcsóbbodás
+26	Mindig az aktuális ár százalékát vedd.
+27	Először számold ki az árat a drágulás után.
+28	Elosztás adott arányban
+29	Összesen hány rész van?
+30	Keresd meg egy rész értékét.
+31	Egy szám törtrésze
+32	Aztán szorozd meg a részek számával.
+33	Hány százalék?
+34	Képezd a rész / egész törtet.
+35	Alakítsd át a törtet századokra.
+36	Milyen nap lesz?
+37	Egy hétnek 7 napja van. Mi történik 7 nap után?
+38	Menetrend
+39	Váltsd át az órákat percekre, vagy számolj fel egy egész óráig.
+40	Először a következő egész óráig, aztán egész órák, aztán a megmaradt percek.
+41	január
+42	február
+43	március
+44	április
+45	május
+46	június
+47	július
+48	augusztus
+49	szeptember
+50	október
+51	november
+52	december
+53	Naptár
+54	Hány napja van az adott hónapnak? Keresd meg a 7-tel való osztás maradékát.
+55	A hét napja ennyi nappal tolódik el.
+56	A mutatók szöge
+57	A percmutató percenként 6°-ot, az óramutató percenként 0,5°-ot tesz meg.
+58	Számold ki, hol áll mindkét mutató a 12-től mérve, és vond ki egymásból.
+59	💡 Egy koppintás átfordítja a cellát és a szomszédait. Kapcsold le az összes lámpát (○).
+60	🚀 Húzd végig az ujjaddal a legrövidebb utat a 🏁-ig. Falakon nem mehetsz át.
+61	Híd éjjel
+62	A lámpást mindig vissza kell vinni. Ki vigye vissza?
+63	A két leglassabbnak együtt kell átkelnie, hogy az idejük ne számítson kétszer.
+64	Minden tervet kipróbálunk (egy számítógép átvizsgálta őket), és keressük a legrövidebbet:
+65	
+66	Vizeskancsók
+67	Írd fel az állapotot párként (első kancsó, második kancsó), és próbáld ki a lehetséges lépéseket.
+68	Próbáld úgy kezdeni, hogy megtöltöd a nagyobbik kancsót, és átöntöd a kisebbikbe.
+69	A legrövidebb utat adó állapotok (első, második kancsó):
+70	Mi lenne, ha az érméket három kupacra osztanád? Mit árul el egy mérés két kupacról?
+71	Minden mérésnek 3 kimenetele van (a bal könnyebb, a jobb könnyebb, egyensúly), tehát 3 lehetőséget tud megkülönböztetni.
+72	Egy mérés harmadokra bontja a lehetőségeket: két kupacot hasonlítunk össze, a harmadik félre marad.
+73	piros
+74	kék
+75	zöld
+76	Háló egy betűvel
+77	Írj fel minden számot x segítségével. Az x melletti kör mondjuk x + 2.
+78	Mennyit ad hozzá a nyíl?
+79	Keress két ismert számot, amelyeket ilyen színű nyilak kötnek össze. Mennyivel különböznek?
+80	Ha az úton több nyíl van, oszd el közöttük a különbséget (miután kivontad a más színű nyilakét).
+81	🕸️ Az azonos színű nyilak ugyanannyit adnak hozzá (néhány érték ismeretlen). Töltsd ki az üres köröket. Koppints egy körre, és írj be egy számot.
+82	🕸️ Minden nyíl annyit ad hozzá, amennyi a színéhez tartozik. Töltsd ki az üres köröket. Koppints egy körre, és írj be egy számot.
+83	Háló
+84	Keress egy nyilat, amely két ismert számot köt össze – mennyivel különböznek? Ebből kiderül, mennyit ad hozzá a színe.
+85	Az egy színű nyilak mindig ugyanannyit adnak hozzá. A háló „működik”, ha minden nyíl stimmel.
+86	Kezdd ott, ahol egy nyíl két ismert számot köt össze: a különbségük az adott szín értéke. Aztán haladj tovább a nyilak mentén (előre haladva add hozzá, visszafelé vond ki).
+87	Előbb koppints egy üres körre.
+88	Töltsd ki az összes üres kört.
+89	Valami nem stimmel. A szaggatott nyilak mutatják, hol nem egyeznek a számok a nyíl színével.
+90	Próbálj ki először egy olyan kört, amely egy ismert szám mellett van, olyan nyíl mentén, amelynek az értékét ismered.
+91	Hányféle útvonal van?
+92	🎪 A 🚪 bejárattól a 🏁 kijáratig úgy sétálsz, hogy minden termen pontosan egyszer haladsz át. Csak a nyitott ajtókat használhatod. Hányféleképpen lehetséges ez?
+93	Indulj a bejáratnál, és lépésről lépésre próbáld ki a lehetőségeket. Hol ágazik el az útvonal?
+94	Írd fel az útvonalakat termek sorozataként. A zsákutcák megmutatják, mely útvonalak nem járhatók.
+95	Séta a kiállításon
+96	🎪 Lépj be a 🚪-on, és járd végig pontosan egyszer az összes termet, a 🏁 kijáratnál befejezve. Koppints a szomszédos termekre a nyitott ajtókon át.
+97	🎪 Lépj be a 🚪-on, és járd végig pontosan egyszer az összes termet. Koppints a szomszédos termekre a nyitott ajtókon át.
+98	Ha zsákutcába kerülsz, lépj vissza a Vissza gombbal, és próbálj másik utat.
+99	Az egyetlen ajtóval rendelkező terem csak az útvonal eleje vagy vége lehet. Az ilyen termeket hagyd a végére.
+100	Nézd meg azokat a termeket, amelyeknek csak egy kijárata van (zsákutca). Csak az útvonal végén léphetsz beléjük, ezért hagyd őket a végére.
+101	Töltsd ki a terem számait
+102	🎪 Egy látogató a 🚪 bejárattól a 🏁 kijáratig sétált, és minden teremben pontosan egyszer járt. A termek a látogatás sorrendjében vannak megszámozva: 1, 2, 3, … Töltsd ki a hiányzó számokat. Koppints egy üres teremre, és írj be egy számot.
+103	Nézd a szomszédokat: az n+1-es szám mindig egy nyitott ajtón át szomszédos teremben van.
+104	Az egyetlen ajtóval rendelkező terem a vég vagy az eleje. Próbálj a kijárattól visszafelé haladni.
+105	Az n+1-es szám mindig az n-es mellett van, nyitott ajtón át. Dolgozz az ismert számokból kiindulva, és zárd ki a zsákutcákat.
+106	Ebben a teremben már jártál. Mindegyik csak egyszer használható.
+107	Arra nincs ajtó. Koppints egy szomszédos teremre, amelyhez nyitott átjáró vezet.
+108	Minden termet bejártál, de nem a kijáratnál vagy. Próbálj másik útvonalat.
+109	Vissza
+110	Innen már nem tudod bejárni az összes termet. Lépj vissza néhány lépést (↩ Vissza).
+111	Ellenőrizd, hogy nem hagysz-e hátra olyan termet, amelyet már nem tudsz elérni (zsákutca).
+112	Folytasd a megjelölt terembe.
+113	Előbb koppints egy üres teremre.
+114	Töltsd ki az összes üres termet.
+115	Néhány szám nem stimmel. Ne feledd: az n+1 mindig egy szomszédos teremben van, nyitott ajtón át.
+116	Próbálj ki egy ismert szám melletti termet: a következő számot keresed.
+117	Tanonc
+118	Megoldó
+119	Stratéga
+120	Logikus
+121	Mester
+122	Nagymester
+123	Legenda
+124	Bölcs
+125	Kozmikus bölcs
+126	Polip
+127	Bagoly
+128	Rakéta
+129	Panda
+130	Sárkány
+131	Egyszarvú
+132	Korona
+133	Klasszikus
+134	Óceán
+135	Erdő
+136	Naplemente
+137	Béka
+138	Oroszlán
+139	Pingvin
+140	Dinoszaurusz
+141	Varázsló
+142	Nindzsa
+143	Hős
+144	Sas
+145	Földönkívüli
+146	Cukorka
+147	Éjszakai ég
+148	Menta
+149	Galaxis
+150	Arany
+151	Új matricák!
+152	Érem:
+153	Küldetés teljesítve:
+154	Ma minden küldetést teljesítettél! Láda: +40 💎
+155	Világérmek a 2–9. évfolyamra
+156	Matrica- és éremalbum
+157	Minden befejezett szint egy matricát ad. Fejezz be egy egész világot egy évfolyamon, és aranyérmet kapsz (+100 💎). Érmek a 2.–9. évfolyamra léteznek.
+158	Oldj meg 3 feladatot
+159	Oldj meg 5 feladatot
+160	Oldj meg 8 feladatot
+161	Szerezz 8 csillagot
+162	Szerezz 15 csillagot
+163	Szerezz 3 csillagot 2 feladatra
+164	Oldj meg 3 feladatot tipp nélkül
+165	Próbálj ki 3 különböző témát
+166	Oldd meg a napi kihívást
+167	A mai küldetések
+168	Láda kinyitva: +40 💎. Holnap új küldetések!
+169	Teljesítsd mind a három küldetést a láda kinyitásához: +40 💎.
+170	következik
+171	nyer!
+172	az utolsót vette el
+173	Újra
+174	Bemutató
+175	Próbáld ki magad
+176	🐻 és 🐰 játszik – koppints arra, hány pálcikát vegyenek el.
+177	Törd szét ezt a darabot
+178	Törések
+179	darab
+180	Koppints egy darabra, hogy kettétörd. Törd szét mindent egyetlen négyzetekre!
+181	Játékos kiejtése
+182	Lejátszott mérkőzések
+183	Minden mérkőzés = egy játékos kiesik. Koppints arra a játékosra, aki veszített.
+184	⬅️ Bal serpenyő
+185	Lekerült a mérlegről
+186	Jobb serpenyő ➡️
+187	érme
+188	Mérések
+189	Mérés
+190	Tipp visszavonása
+191	Tippeld meg a hamisat
+192	Koppints arra az érmére, amelyről szerinted hamis.
+193	Új játék
+194	Tegyél érméket mindkét serpenyőre.
+195	Tegyél ugyanannyi érmét mindkét serpenyőre.
+196	Egyensúlyban ⚖️
+197	A bal oldal könnyebb
+198	A jobb oldal könnyebb
+199	Egy érme könnyebb. Koppints egy érmére a mozgatáshoz (bal → jobb → le), majd nyomd meg a „Mérés” gombot.
+200	Cél

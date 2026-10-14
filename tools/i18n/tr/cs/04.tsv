@@ -1,0 +1,200 @@
+1	je liché
+2	je druhá mocnina (čtverec) celého čísla
+3	Hádej mé číslo
+4	Začni nápovědou, která vyloučí nejvíc čísel.
+5	Spoj nápovědy: potřebuješ číslo, které splňuje všechny najednou.
+6	Čísla vyškrtáváme nápovědu po nápovědě:
+7	Pořadí ve frontě
+8	Začni nápovědou, která dává něco jistého (třeba „hned za“). Řetěz dvojice za sebe.
+9	Napiš si místa 1, 2, 3 … a postupně k nim přiřazuj jména, přičemž vylučuj, co být nemůže.
+10	Nápovědy spojíme do jednoho pořadí – každé nemožné místo se vyškrtne.
+11	Pes
+12	psa
+13	pes
+14	Kočka
+15	kočku
+16	kočka
+17	Křeček
+18	křečka
+19	křeček
+20	Králík
+21	králíka
+22	králík
+23	Ryba
+24	rybu
+25	ryba
+26	Kdo má které zvíře?
+27	Udělej tabulku: řádky jsou děti, sloupce zvířata. Vyškrtni, co je nemožné.
+28	Když v řádku nebo sloupci zbývá jen jedno volné políčko, je to odpověď.
+29	V tabulce značíme ✗ to, co nápovědy vylučují, a ✓, když zbývá jediná možnost.
+30	Jestliže každé A je B a každé B je C, pak každé A je C – řetěz pokračuje.
+31	Kdyby Axel byl A, musel by být i B. B není, takže A není.
+32	Každé C je B a žádné B není A, takže žádné C nemůže být A.
+33	Každé C je A a každé A je B, takže každé C je B.
+34	Některé A je B a každé B je C, takže toto A je také C.
+35	Každé A je C a žádné C není D, takže žádné A není D.
+36	Některé A je B a žádné B není C – takže toto A není C.
+37	Co z toho plyne?
+38	Tvrzení v seznamu jsou pravdivá. Které tvrzení z nich MUSÍ plynout? (Slova jsou vymyšlená – spoléhej jen na logiku.)
+39	Nakresli kruhy (množiny) pro každý druh. Který kruh leží uvnitř kterého?
+40	Vyzkoušej každou možnost: dokážeš nakreslit případ, kdy předpoklady platí, ale možnost ne? Pak z nich neplyne.
+41	Pondělí
+42	Úterý
+43	Středa
+44	Čtvrtek
+45	Pátek
+46	Sobota
+47	Neděle
+48	Děti v řadě
+49	Kolik je možností pro první místo? A pro druhé, když je první obsazené?
+50	Počet možností se pokaždé zmenší o 1. Vynásob je.
+51	Stupně vítězů
+52	Kolik běžců může získat zlato? Kolik jich pak může získat stříbro?
+53	Medaile se liší, takže na pořadí záleží.
+54	Kamarádi vedle sebe
+55	Slep dva kamarády do jedné „dvojice“. Kolik položek pak řadíš?
+56	A uvnitř dvojice mohou stát dvěma způsoby.
+57	Kulatý stůl
+58	Posaď jedno dítě na pevné místo. Co zbývá seřadit?
+59	Zbývá o jedno dítě méně.
+60	Zafixuj jedno dítě – tím odpadne otáčení.
+61	Kolik cifer může stát na místě stovek? A kolik jich zbývá na desítky?
+62	Každá použitá cifra sníží výběr o 1.
+63	Nejdřív spočítej uspořádané dvojice – kolik jich je?
+64	Každou dvojici jsi započítal dvakrát. Co s tím?
+65	Tříčlenný tým
+66	Kolik je uspořádaných trojic?
+67	Každý tým se mezi nimi objeví 3! = 6krát.
+68	Podání rukou
+69	S kolika lidmi si jeden člověk podá ruku?
+70	Každé podání rukou jsi započítal dvakrát (z obou stran).
+71	Úhlopříčky
+72	Z jednoho vrcholu: do kolika vrcholů může vést úhlopříčka? (Ne do sebe samého ani do sousedů.)
+73	Každou úhlopříčku jsi započítal dvakrát.
+74	Pizza se zálivkami
+75	S jednou zálivkou jsou dvě možnosti. A se dvěma zálivkami?
+76	Každá další zálivka zdvojnásobí počet.
+77	Každá zálivka má 2 možnosti (ano/ne) a rozhodnutí jsou nezávislá.
+78	všechny cifry jsou liché
+79	všechny cifry jsou sudé
+80	číslo neobsahuje ani cifru 0, ani 5
+81	všechny tři cifry jsou různé
+82	cifry rostou (zleva doprava)
+83	ciferný součet je 10
+84	je to palindrom (čte se stejně z obou stran)
+85	číslo obsahuje alespoň jednu cifru 7
+86	ciferný součet je 9
+87	alespoň jedna cifra je 0
+88	Oblečení
+89	Kolik různých oblečení můžeš sestavit? (1 👕 + 1 👖 + 1 🧢)
+90	Vyber tričko. S kolika kombinacemi kalhot a čepice ho lze nosit?
+91	Vynásob počty možností při každém výběru.
+92	Číselný zámek
+93	Kolik možností má jedno kolečko?
+94	Kolečka jsou nezávislá – možnosti se násobí.
+95	Každé kolečko má 10 možností.
+96	Silnice mezi městy
+97	Kolika způsoby se dostaneš z A do B? A pak dál do C?
+98	Počty silnic na jednotlivých úsecích se násobí.
+99	Trojciferná čísla s pravidlem
+100	Rozlož číslo na stovky, desítky, jednotky. Kolik možností má každé místo?
+101	Pozor: cifra stovek nemůže být 0.
+102	Spočítáme možnosti pro každé místo a pak je zkombinujeme (vynásobíme, nebo sečteme případy).
+103	Robot na mřížce
+104	Do každého políčka se dostaneš shora nebo zleva. Kolika způsoby se dostaneš na políčka v prvním řádku?
+105	Do každého políčka napiš součet počtů cest políčka nad ním a políčka vlevo od něj.
+106	Do každého políčka píšeme, kolik cest tam vede: součet políčka nad ním a políčka vlevo (zablokovaná políčka mají 0).
+107	Tabulka počtů cest:
+108	Představ si nejhorší případ – máš pokaždé smůlu.
+109	Karty a barvy
+110	Hledej nejhorší možný průběh tahání.
+111	Narozeniny ve třídě
+112	Rozlož žáky co nejrovnoměrněji do 12 měsíců. Co dostaneš?
+113	Kdyby měl každý měsíc nejvýš X žáků, kolik by jich bylo nejvýš celkem?
+114	Kdyby jich měl každý měsíc méně, celkem by jich nebylo dost. To je Dirichletův princip.
+115	Rukavice potmě
+116	Nejhorší případ je tahat rukavice, které nemají shodný protějšek.
+117	Anagramy
+118	Nejdřív si představ, že všechna písmena jsou různá. Kolik je uspořádání?
+119	Stejná písmena lze zaměnit – takže jsi každé uspořádání započítal vícekrát.
+120	Korálky v řadě
+121	Nejdřív vyber místa pro červené. Kolika způsoby?
+122	Pak z zbývajících míst vyber ta pro modré.
+123	Zkontroluj, jestli je každé číslo dvojnásobkem předchozího s malou úpravou.
+124	Podívej se na rozdíly mezi sousedy. Jaké jsou?
+125	Rozdíly rostou o 1 – to jsou trojúhelníková čísla.
+126	Podívej se na rozdíly a pak na rozdíly rozdílů.
+127	Magický čtverec
+128	Najdi řádek, sloupec nebo úhlopříčku, kde jsou všechna čísla známá – to je magický součet.
+129	V řadě s jednou neznámou se neznámá rovná magickému součtu minus součet ostatních.
+130	Ovocné rovnice
+131	Začni rovnicí, která obsahuje jen jeden druh ovoce.
+132	Až znáš hodnotu jednoho ovoce, dosaď ji do další rovnice.
+133	Rovnice řešíme popořadě, začneme tou s jedním druhem ovoce:
+134	Kryptaritmus
+135	Začni tam, kde je odpověď téměř jistá – např. první cifra výsledku u sčítání.
+136	Zkoušej možnosti a pokaždé zkontroluj všechny sloupce.
+137	Vyloučíme cifry, které by vedly ke sporu.
+138	žádná natřená stěna
+139	právě 1 natřená stěna
+140	právě 2 natřené stěny
+141	právě 3 natřené stěny
+142	Rohové krychličky: kvádr má 8 rohů.
+143	Natřený kvádr
+144	Které malé krychličky jsou v rozích? Na hranách? Ve stěnách? Uvnitř?
+145	Počet natřených stěn závisí na poloze: roh 3, hrana 2, stěna 1, vnitřek 0.
+146	O natřených stěnách rozhoduje poloha: roh = 3, hrana = 2, stěna = 1, vnitřek = 0.
+147	Kolik je čtverců?
+148	Nejdřív spočítej čtverce 1×1. Pak ty 2×2. Co dál?
+149	Čtverců velikosti s je (n − s + 1)². Sečti všechny velikosti.
+150	Počítáme podle velikosti čtverce. Velikost s se vejde do (n − s + 1)² poloh.
+151	Čtverce v obdélníku
+152	Čtverec velikosti s se vejde do (řádků − s + 1) · (sloupců − s + 1) poloh.
+153	Počítáme podle velikosti čtverce s = 1, 2, … až po menší rozměr.
+154	Kolik je obdélníků?
+155	Obdélník je určen dvěma vodorovnými a dvěma svislými čarami.
+156	🧱 Čísla ukazují výšky věží. Kolik kostek je celkem?
+157	🧱 Díváš se zepředu (od dolního okraje). Kolik čtverců vidíš?
+158	🧱 Stavbu natřeme shora a ze stran (ne zespodu). Kolik čtverců se natře?
+159	Každé číslo je jedna věž. Co s nimi uděláš?
+160	Sečti všechna čísla v tabulce.
+161	Zepředu vidíš v každém sloupci jen nejvyšší věž.
+162	Vezmi z každého sloupce největší číslo a sečti je.
+163	Počítej zvlášť vršky (jeden na věž) a zvlášť boky.
+164	Bok je vidět jen nad sousední věží: rozdíl výšek (nebo celá výška na okraji).
+165	Každé číslo říká, kolik kostek věž má.
+166	Zepředu vyšší věž zakrývá nižší za ní – v každém sloupci vidíme jen tu nejvyšší.
+167	Vršky: počet neprázdných políček. Boky: u každé strany věže rozdíl výšek vůči sousedovi (okraj se počítá jako výška 0).
+168	Útvar ve tvaru L
+169	Obsah celého obdélníku minus vyříznutá část.
+170	Spočítej oba obdélníky zvlášť.
+171	Nakresli tvar. Posouváním stran lze obvod zjednodušit.
+172	Obvod útvaru ve tvaru L se rovná obvodu původního obdélníku.
+173	Odříznutím rohu se obvod nezmění: nové strany se posunou na staré.
+174	Zvětšený čtverec
+175	Jak dlouhá je strana původního čtverce?
+176	Nová strana je zvětšená; obsah je strana krát strana.
+177	Obsah trojúhelníku
+178	Trojúhelník je polovina vhodného obdélníku.
+179	Obsah = základna · výška : 2.
+180	Obsah trojúhelníku = (základna · výška) : 2.
+181	Rámeček na obrázek
+182	Jaké jsou rozměry vnitřní části?
+183	Myslím si číslo
+184	Počítej odzadu: co uděláš s výsledkem, abys vrátil poslední krok?
+185	Čísla v řadě
+186	Nejmenší číslo označ n. Jak zapíšeš ostatní?
+187	Součet a rozdíl
+188	Co dostaneš, když sečteš součet a rozdíl?
+189	Dostaneš dvojnásobek většího čísla.
+190	Otec a syn
+191	let
+192	Kdyby byl otec o tolik let mladší, byli by stejně staří. Jaký by byl součet?
+193	Součet by se zmenšil o věkový rozdíl.
+194	Mince
+195	Kdyby všechny mince byly po 1 €, jaká by byla hodnota?
+196	Každá výměna mince 1 € za minci 2 € přidá 1 €.
+197	Rovnice se závorkami
+198	Nejdřív se zbav toho, co se přičítá vně závorek.
+199	Dělitelé
+200	Hledej dělitele v párech: když d dělí n, dělí ho i n : d.

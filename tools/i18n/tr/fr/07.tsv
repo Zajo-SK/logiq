@@ -1,0 +1,195 @@
+1	Supprimer
+2	Actualiser
+3	Code pour les élèves :
+4	Attribuer des tâches à la classe
+5	Rang
+6	Tâches
+7	Série
+8	Activité
+9	Personne n’a encore rejoint. Les élèves saisissent le code de la classe dans le Profil ou au premier lancement.
+10	Supprimer l’élève ?
+11	E-mail de l’enseignant
+12	Mot de passe temporaire (8 caractères min.)
+13	Nouvel enseignant
+14	Générer un mot de passe
+15	Créer le compte
+16	Compte créé – envoie à l’enseignant l’e-mail et le mot de passe.
+17	Pas encore d’enseignants.
+18	Saisis le code que ton enfant ou l’enseignant t’a donné. Tu verras les progrès de cet élève uniquement.
+19	Afficher
+20	Monde
+21	Ajouter tout le niveau (10 tâches)
+22	Tous
+23	Toute la classe
+24	Choisir des élèves individuels
+25	Crée d’abord une classe.
+26	Titre du devoir
+27	Titre
+28	Note pour les élèves (facultatif)
+29	Note
+30	Date limite
+31	Nouveau devoir
+32	Date limite (facultatif)
+33	Choisir les tâches
+34	Depuis les niveaux
+35	Depuis la collection
+36	Retirer
+37	Attribuer à
+38	Attribuer
+39	Saisis un titre.
+40	Choisis au moins une tâche.
+41	Choisis une classe ou des élèves.
+42	Devoir envoyé
+43	Pas encore de devoirs. Crée le premier ci-dessus.
+44	Classes :
+45	pour le
+46	Supprimer le devoir ?
+47	Liste des tâches
+48	Élève
+49	Statut
+50	terminé
+51	en cours
+52	pas commencé
+53	Pas encore d’élèves.
+54	Tâches de ton enseignant
+55	Tous les devoirs
+56	Tâches attribuées
+57	Tâches que ton enseignant t’a données.
+58	Connecte-toi à un enseignant dans le Profil pour voir les tâches attribuées.
+59	Ouvrir le Profil
+60	en retard
+61	Terminé, bravo !
+62	Pas encore de tâches attribuées.
+63	Tâche introuvable – essaie de recharger l’appli.
+64	Confidentialité
+65	Quelles données l’appli traite et où elles sont stockées.
+66	LogiQ est une appli d’apprentissage scolaire. Nous ne collectons que ce qui est nécessaire à son fonctionnement, et n’utilisons ni publicité ni suivi.
+67	1. Si tu ne te connectes pas à un enseignant
+68	Tout reste uniquement sur cet appareil (dans le stockage du navigateur) :
+69	le nom ou pseudo, la classe et le niveau que tu as saisis
+70	tes résultats : tâches résolues, étoiles, points, badges, autocollants, série
+71	les réglages (son, animations, grand texte, thème, avatar)
+72	Rien n’est envoyé à un serveur. Tu peux tout supprimer en effaçant les données du site dans les réglages de ton navigateur.
+73	2. Si tu te connectes à un enseignant avec un code de classe
+74	Les éléments suivants sont envoyés au serveur (Cloudflare, base de données en Europe) :
+75	pseudo ou prénom et classe
+76	la classe que tu as rejointe (via le code)
+77	un résumé des résultats : étoiles, points, nombre de tâches, série, rang, sujets forts et faibles, les 15 dernières tâches
+78	les progrès sur les tâches attribuées par l’enseignant
+79	l’heure de la dernière activité
+80	Si tu envoies un signalement avec le bouton 💬, le nom (si tu en saisis un), le texte du message et des détails techniques sont envoyés : page, titre de la tâche, classe, niveau, version de l’appli et type d’appareil.
+81	Nous n’envoyons ni nom de famille, ni adresse, ni e-mail, ni téléphone, ni position, ni photos. Merci de ne pas mettre de nom de famille dans le pseudo.
+82	Les données sont visibles par l’enseignant de ta classe, l’administrateur de l’appli et un parent qui possède ton code parent (en lecture seule). Elles ne sont pas publiques.
+83	3. Enseignants
+84	e-mail et mot de passe de l’enseignant (stocké uniquement sous forme de hachage salé)
+85	classes et devoirs créés
+86	4. Ce que nous ne faisons pas
+87	pas de publicité, pas de suivi ni d’analyse, pas de cookies tiers
+88	nous ne vendons ni ne partageons les données avec des tiers
+89	la lecture à voix haute utilise la voix de l’appareil, rien n’est envoyé
+90	5. Journaux techniques
+91	À chaque connexion, les hébergeurs (GitHub, Cloudflare) voient l’adresse IP de l’appareil dans les journaux de fonctionnement normaux. Le serveur ne retient l’IP que quelques minutes pour se protéger des abus (limite des tentatives de connexion).
+92	6. Suppression et tes droits
+93	Se déconnecter dans le Profil arrête l’envoi de nouvelles données. Les données déjà sur le serveur sont supprimées par l’enseignant ou l’administrateur sur demande (un élève ou un parent peut le demander à l’enseignant).
+94	Un enseignant peut supprimer un élève ou une classe entière ; les données sont alors retirées du serveur.
+95	Tu as le droit d’accéder à tes données, de les corriger et de les supprimer.
+96	Contact :
+97	Le contact de l’exploitant (l’école) est ajouté par l’école.
+98	Pour que chacun puisse bien apprendre et jouer dans LogiQ.
+99	Pour les élèves
+100	Résous les tâches toi-même. Un indice sert à t’aider à avancer, pas à décider à ta place.
+101	Une erreur, ce n’est pas grave. Les deux premiers essais sont gratuits ; les étoiles baissent seulement avec des indices ou après trois mauvais essais. Réessaie.
+102	Utilise seulement un pseudo ou un prénom, pas de nom de famille.
+103	Ne donne pas le code de la classe ni le code parent à des personnes extérieures à l’école et à la famille.
+104	N’utilise pas de gros mots dans ton nom et ne te moque pas des autres.
+105	N’essaie pas de casser l’appli ni de regarder les données des autres élèves.
+106	Si quelque chose ne marche pas ou si tu es bloqué, dis-le à ton enseignant.
+107	Pour les enseignants
+108	Ne partagez pas votre mot de passe et déconnectez-vous après usage, surtout sur un ordinateur partagé.
+109	Demandez aux élèves de ne pas utiliser de nom de famille – un pseudo ou un prénom suffit.
+110	Utilisez l’aperçu des progrès pour soutenir les élèves, pas pour les humilier ni les comparer devant les autres.
+111	Ne donnez les codes de classe et parent qu’aux élèves et à leurs parents.
+112	Sur demande, supprimez un élève ou une classe.
+113	Pour les parents
+114	Le code parent est en lecture seule et concerne uniquement votre enfant. Ne le partagez pas.
+115	Voyez les progrès comme un repère, pas comme une note. Les tâches sont volontairement exigeantes.
+116	En général
+117	L’appli sert à apprendre et à s’amuser. Les tâches ont un but éducatif.
+118	L’exploitant (l’école) peut bloquer ou supprimer un compte en cas d’abus.
+119	L’appli est fournie telle quelle, sans garantie d’absence d’erreurs. Les réponses sont soigneusement vérifiées, mais si tu trouves une erreur, dis-le-nous.
+120	Les données sont traitées comme décrit sur la page « Quelles données nous traitons ».
+121	Bogue
+122	Idée
+123	Nouveau
+124	En cours
+125	Assistance – problèmes signalés
+126	Aucun ticket dans ce groupe.
+127	Note interne (visible par toi seul)
+128	Enregistré
+129	classe
+130	Marquer comme terminé
+131	Rouvrir
+132	Enregistrer la note
+133	Supprimer ce ticket ?
+134	L’administrateur (connecté à l’espace Enseignant) a tous les niveaux déverrouillés pour la consultation, y compris dans le jeu des Allumettes.
+135	Les Toiles et l’Exposition sont aussi dans la Collection (dans Jeux et comme filtre de catégorie).
+136	Nouveaux environnements inspirés de la méthode de Hejný : Toiles (nombres et flèches colorées) et Exposition (parcours dans des salles avec des portes). Ils sont dans les mondes « Nombres et suites » et « Casse-tête » et dans l’entraînement.
+137	Site compagnon (à propos, pour élèves doués, lien avec le programme, pour enseignants, pour parents, FAQ) et un lien « À propos de l’appli ».
+138	Avis indiquant que l’appli est encore en développement et comment signaler un bogue (écran d’accueil et Accueil).
+139	Nouveau jeu indépendant « Allumettes – entraînement » : 36 niveaux contre l’ordinateur de difficulté croissante (ordinateur plus fort, nouvelles règles, jeu inversé, plusieurs tas).
+140	Corrigé : le bouton d’assistance 💬 était caché sous le menu de gauche sur ordinateur et tablette.
+141	L’appli vérifie s’il y a une nouvelle version lorsqu’elle revient au premier plan et se met à jour toute seule.
+142	La base de tâches a été déplacée du Profil de l’élève vers le panneau admin (onglet Base de tâches).
+143	Un bouton 💬 « Contacter l’assistance / signaler un problème » sur chaque écran avec un formulaire de signalement.
+144	L’administrateur dispose d’un onglet Assistance pour suivre et résoudre les signalements.
+145	Nouvelles pages « Quelles données nous traitons » et « Règles d’utilisation » (Profil et écran d’accueil).
+146	Jeux d’allumettes : formulation plus claire – qui commence et que les deux jouent sans erreur.
+147	Écran d’accueil : suppression de la ligne « sans inscription, sans pub », boutons Je suis enseignant / parent plus grands.
+148	Les enseignants peuvent attribuer des tâches à des classes entières ou à des élèves individuels (depuis les niveaux ou la collection), avec dates limites et aperçu des progrès.
+149	Les élèves voient les tâches attribuées sur l’Accueil et dans la liste des Tâches attribuées.
+150	Le code de la classe peut être affiché en plein écran (pour un projecteur).
+151	Création de classe corrigée (nouvelle base de données), commandes plus grandes.
+152	Appli connectée au serveur (espace enseignant et parent, synchronisation des élèves).
+153	Badge de version de l’appli et journal des modifications (cette fenêtre).
+154	Nouvelle carte : un chemin de niveaux sinueux comme dans Candy Crush, avec étoiles, ton avatar et sauts entre mondes.
+155	Récompenses : autocollants de niveau, médailles d’or de monde, album, coffres de niveau, missions quotidiennes, bonus de série, nouveaux rangs, avatars, thèmes et badges.
+156	Les tâches se répètent moins (surtout aux échecs) ; plus de variantes de dominos.
+157	Tâche des astronautes : numéraux slovaques corrigés.
+158	La lecture à voix haute automatique est désormais uniquement sur option (Profil).
+159	Grammaire slovaque corrigée dans les tâches des astronautes et des robots.
+160	Labyrinthes plus petits.
+161	Cadre de dix avec des cases libres supplémentaires ; tâches en images plus difficiles pour les classes 2–3.
+162	Les nouvelles versions de l’appli se chargent automatiquement.
+163	Grenouilles : une grenouille peut sauter par-dessus n’importe quelle grenouille isolée si le nénuphar derrière elle est libre.
+164	Grenouilles sauteuses : tâches, panneau d’essai et jeu indépendant.
+165	Plus de simulations : balance, cruches, pont, chaussettes, poignées de main, probabilités, tableau de cent et plus.
+166	Pour les jeunes élèves : grand sélecteur de classe, lecture à voix haute, tâches en images, simulations, consignes plus courtes.
+167	Sudoku : 6 niveaux de difficulté gradués avec indices de techniques.
+168	Sudoku indépendant 3×3, 4×4, 6×6 et 9×9 avec notes, indices et chronomètre.
+169	Choix de la classe, espace enseignant/parent/admin, récompenses, échecs et Tours de Hanoï.
+170	Première version de LogiQ : tâches pour les classes 2–9, carte des niveaux, défi quotidien, collection, réussites.
+171	Dernière modification :
+172	Mise à jour
+173	Jeux et stratégie
+174	Trouve la stratégie gagnante et bats l’ordinateur.
+175	Vérité, mensonges et déduction
+176	Chevaliers, menteurs, suspects et nombres secrets.
+177	Raisonnement logique
+178	Ordres, appariements et conclusions valides.
+179	Combinatoire
+180	De combien de façons ? Compte astucieusement.
+181	Nombres et suites
+182	Suites, carrés magiques, cryptarithmes et toiles.
+183	Espace et formes
+184	Cubes, grilles, aires et constructions.
+185	Casse-tête
+186	Sudoku, lumières, labyrinthes, exposition, ponts et cruches.
+187	Échecs et Hanoï
+188	Comment les pièces se déplacent, dominos et Tours de Hanoï.
+189	Olympiade de maths
+190	Algèbre, divisibilité, probabilités et temps.
+191	Premiers pas
+192	On prend de la vitesse
+193	Défi
+194	Réflexion approfondie
+195	Champion

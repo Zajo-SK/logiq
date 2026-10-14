@@ -1,0 +1,200 @@
+1	jest nieparzysta
+2	jest kwadratem liczby naturalnej
+3	Zgadnij moją liczbę
+4	Zacznij od wskazówki, która wyklucza najwięcej liczb.
+5	Połącz wskazówki: potrzebujesz liczby, która spełnia je wszystkie naraz.
+6	Wykreślamy liczby wskazówka po wskazówce:
+7	Kolejność w kolejce
+8	Zacznij od wskazówki, która daje coś pewnego (np. „tuż za”). Łącz pary w łańcuch.
+9	Zapisz miejsca 1, 2, 3 … i dopasowuj do nich imiona krok po kroku, wykluczając to, co niemożliwe.
+10	Łączymy wskazówki w jedną kolejność – każde miejsce, które jest niemożliwe, zostaje wykreślone.
+11	Pies
+12	psa
+13	pies
+14	Kot
+15	kota
+16	kot
+17	Chomik
+18	chomika
+19	chomik
+20	Królik
+21	królika
+22	królik
+23	Rybka
+24	rybkę
+25	rybka
+26	Kto ma które zwierzę?
+27	Zrób tabelę: wiersze to dzieci, kolumny to zwierzęta. Wykreśl to, co niemożliwe.
+28	Gdy w wierszu lub kolumnie zostaje tylko jedno wolne pole, to jest odpowiedź.
+29	W tabeli zaznaczamy ✗ to, co wykluczają wskazówki, i ✓ gdy zostaje tylko jedna możliwość.
+30	Jeśli każde A jest B, a każde B jest C, to każde A jest C – łańcuch trwa dalej.
+31	Gdyby Aksel był A, musiałby być B. Nie jest B, więc nie jest A.
+32	Każde C jest B, a żadne B nie jest A, więc żadne C nie może być A.
+33	Każde C jest A, a każde A jest B, więc każde C jest B.
+34	Pewne A jest B, a każde B jest C, więc to A jest też C.
+35	Każde A jest C, a żadne C nie jest D, więc żadne A nie jest D.
+36	Pewne A jest B, a żadne B nie jest C – więc to A nie jest C.
+37	Co z tego wynika?
+38	Zdania z listy są prawdziwe. Które twierdzenie MUSI z nich wynikać? (Słowa są zmyślone – opieraj się tylko na logice.)
+39	Narysuj koła (zbiory) dla każdego rodzaju. Które koło mieści się wewnątrz którego?
+40	Sprawdź każdą opcję: czy potrafisz narysować przypadek, w którym założenia są spełnione, a opcja nie? Wtedy z nich nie wynika.
+41	Poniedziałek
+42	Wtorek
+43	Środa
+44	Czwartek
+45	Piątek
+46	Sobota
+47	Niedziela
+48	Dzieci w rzędzie
+49	Ile jest możliwości na pierwsze miejsce? A na drugie, gdy pierwsze jest zajęte?
+50	Liczba możliwości za każdym razem maleje o 1. Pomnóż je.
+51	Podium
+52	Ilu biegaczy może zdobyć złoto? Ilu może wtedy zdobyć srebro?
+53	Medale się różnią, więc kolejność ma znaczenie.
+54	Przyjaciele obok siebie
+55	Sklej dwoje przyjaciół w jedną „parę”. Ile elementów układasz wtedy?
+56	A wewnątrz pary mogą stać na dwa sposoby.
+57	Okrągły stół
+58	Posadź jedno dziecko na stałym miejscu. Co zostaje do ułożenia?
+59	Zostaje o jedno dziecko mniej.
+60	Ustal jedno dziecko – to usuwa obroty.
+61	Ile cyfr może stać na miejscu setek? A ile zostaje na dziesiątki?
+62	Każda użyta cyfra zmniejsza wybór o 1.
+63	Najpierw policz pary uporządkowane – ile ich jest?
+64	Policzyłeś(-aś) każdą parę dwa razy. Co z tym zrobić?
+65	Drużyna trzyosobowa
+66	Ile jest uporządkowanych trójek?
+67	Każda drużyna pojawia się wśród nich 3! = 6 razy.
+68	Uściski dłoni
+69	Z iloma osobami wita się jedna osoba?
+70	Policzyłeś(-aś) każdy uścisk dwa razy (z obu stron).
+71	Przekątne
+72	Z jednego wierzchołka: do ilu wierzchołków może prowadzić przekątna? (Nie do niego samego ani do jego sąsiadów.)
+73	Policzyłeś(-aś) każdą przekątną dwa razy.
+74	Dodatki do pizzy
+75	Przy jednym dodatku są dwie możliwości. A przy dwóch dodatkach?
+76	Każdy dodatkowy dodatek podwaja liczbę możliwości.
+77	Każdy dodatek ma 2 możliwości (jest lub go nie ma), a decyzje są niezależne.
+78	wszystkie cyfry są nieparzyste
+79	wszystkie cyfry są parzyste
+80	liczba nie zawiera ani cyfry 0, ani 5
+81	wszystkie trzy cyfry są różne
+82	cyfry rosną ściśle (od lewej do prawej)
+83	suma cyfr wynosi 10
+84	jest palindromem (czyta się tak samo w obie strony)
+85	liczba zawiera co najmniej jedną cyfrę 7
+86	suma cyfr wynosi 9
+87	co najmniej jedna cyfra to 0
+88	Stroje
+89	Ile różnych strojów możesz zestawić? (1 👕 + 1 👖 + 1 🧢)
+90	Wybierz koszulkę. Z iloma zestawami spodni i czapki można ją założyć?
+91	Pomnóż liczby możliwości przy każdym wyborze.
+92	Zamek szyfrowy
+93	Ile możliwości ma jedno pokrętło?
+94	Pokrętła są niezależne – możliwości się mnożą.
+95	Każde pokrętło ma 10 możliwości.
+96	Drogi między miastami
+97	Na ile sposobów możesz dojechać z A do B? A potem dalej do C?
+98	Liczby dróg na kolejnych odcinkach się mnożą.
+99	Liczby trzycyfrowe z warunkiem
+100	Rozłóż liczbę na setki, dziesiątki i jedności. Ile możliwości ma każde z nich?
+101	Uwaga: cyfra setek nie może być 0.
+102	Liczymy możliwości dla każdego miejsca, a potem je łączymy (mnożymy lub dodajemy przypadki).
+103	Robot na siatce
+104	Do każdego pola dochodzi się z góry lub z lewej. Na ile sposobów można dojść do pól w pierwszym wierszu?
+105	Wpisz w każde pole sumę liczb dróg pola nad nim i pola po jego lewej stronie.
+106	W każde pole wpisujemy, ile dróg do niego prowadzi: sumę pola nad nim i pola po lewej (zablokowane pola mają 0).
+107	Tabela liczby dróg:
+108	Wyobraź sobie najgorszy przypadek – zawsze masz pecha.
+109	Karty i kolory
+110	Szukaj najgorszego możliwego przebiegu losowania.
+111	Urodziny w klasie
+112	Rozmieść uczniów jak najrówniej na 12 miesięcy. Co otrzymasz?
+113	Gdyby w każdym miesiącu było co najwyżej X uczniów, ilu byłoby najwyżej w sumie?
+114	Gdyby w każdym miesiącu było mniej, w sumie by nie wystarczyło. To jest zasada szufladkowa Dirichleta.
+115	Rękawiczki po ciemku
+116	Najgorszy przypadek to wyciąganie rękawiczek bez pasującej pary.
+117	Anagramy
+118	Najpierw wyobraź sobie, że wszystkie litery są różne. Ile jest ustawień?
+119	Jednakowe litery można zamienić miejscami – więc policzyłeś(-aś) każde ustawienie kilka razy.
+120	Koraliki w rzędzie
+121	Najpierw wybierz miejsca dla czerwonych. Na ile sposobów?
+122	Potem spośród pozostałych miejsc wybierz miejsca dla niebieskich.
+123	Sprawdź, czy każda liczba jest dwukrotnością poprzedniej z małą poprawką.
+124	Spójrz na różnice między sąsiadami. Ile wynoszą?
+125	Różnice rosną o 1 – to liczby trójkątne.
+126	Spójrz na różnice, a potem na różnice różnic.
+127	Kwadrat magiczny
+128	Znajdź wiersz, kolumnę lub przekątną, w której wszystkie liczby są znane – to jest suma magiczna.
+129	W linii z jedną niewiadomą wynosi ona sumę magiczną minus suma pozostałych.
+130	Równania z owocami
+131	Zacznij od równania zawierającego tylko jeden rodzaj owocu.
+132	Gdy znasz wartość jednego owocu, podstaw ją do następnego równania.
+133	Rozwiązujemy równania po kolei, zaczynając od tego z jednym owocem:
+134	Kryptarytm
+135	Zacznij tam, gdzie odpowiedź jest niemal pewna – np. pierwsza cyfra wyniku w dodawaniu.
+136	Próbuj możliwości i za każdym razem sprawdzaj każdą kolumnę.
+137	Wykluczamy cyfry, które prowadziłyby do sprzeczności.
+138	bez pomalowanej ściany
+139	dokładnie 1 pomalowana ściana
+140	dokładnie 2 pomalowane ściany
+141	dokładnie 3 pomalowane ściany
+142	Kostki narożne: prostopadłościan ma 8 wierzchołków.
+143	Pomalowany prostopadłościan
+144	Które małe kostki są w narożnikach? Na krawędziach? Na ścianach? We wnętrzu?
+145	Liczba pomalowanych ścian zależy od położenia: narożnik 3, krawędź 2, ściana 1, wnętrze 0.
+146	O liczbie pomalowanych ścian decyduje położenie: narożnik = 3, krawędź = 2, ściana = 1, wnętrze = 0.
+147	Ile jest kwadratów?
+148	Najpierw policz kwadraty 1×1. Potem te 2×2. Co dalej?
+149	Kwadratów o boku s jest (n − s + 1)². Dodaj wszystkie rozmiary.
+150	Liczymy według rozmiaru kwadratu. Rozmiar s mieści się w (n − s + 1)² położeniach.
+151	Kwadraty w prostokącie
+152	Kwadrat o boku s mieści się w (wiersze − s + 1) · (kolumny − s + 1) położeniach.
+153	Liczymy według rozmiaru kwadratu s = 1, 2, … aż do mniejszego wymiaru.
+154	Ile jest prostokątów?
+155	Prostokąt wyznaczają dwie linie poziome i dwie pionowe.
+156	🧱 Liczby pokazują wysokości wież. Ile kostek jest w sumie?
+157	🧱 Patrzysz od przodu (od dolnej krawędzi). Ile kwadratów widzisz?
+158	🧱 Malujemy budowlę z góry i z boków (nie od spodu). Ile kwadratów zostanie pomalowanych?
+159	Każda liczba to jedna wieża. Co z nimi zrobić?
+160	Dodaj wszystkie liczby w tabeli.
+161	Od przodu widać tylko najwyższą wieżę w każdej kolumnie.
+162	Weź największą liczbę z każdej kolumny i dodaj je.
+163	Policz osobno wierzchy (po jednym na wieżę) i boki.
+164	Bok jest widoczny tylko nad sąsiednią wieżą: to różnica wysokości (albo pełna wysokość na brzegu).
+165	Każda liczba mówi, ile kostek ma wieża.
+166	Od przodu wyższa wieża zasłania niższe za nią – widzimy tylko najwyższą w każdej kolumnie.
+167	Wierzchy: liczba niepustych pól. Boki: dla każdego boku wieży różnica wysokości względem sąsiada (brzeg liczy się jako wysokość 0).
+168	Figura w kształcie litery L
+169	Pole całego prostokąta minus wycięta część.
+170	Oblicz oba prostokąty osobno.
+171	Narysuj figurę. Przesuwanie boków może uprościć obwód.
+172	Obwód figury w kształcie litery L równa się obwodowi pierwotnego prostokąta.
+173	Odcięcie narożnika nie zmienia obwodu: nowe boki przesuwają się na dawne.
+174	Powiększony kwadrat
+175	Jak długi jest bok pierwotnego kwadratu?
+176	Nowy bok jest powiększony; pole to bok razy bok.
+177	Pole trójkąta
+178	Trójkąt to połowa odpowiedniego prostokąta.
+179	Pole = podstawa · wysokość : 2.
+180	Pole trójkąta = (podstawa · wysokość) : 2.
+181	Ramka na obraz
+182	Jakie wymiary ma wewnętrzna część?
+183	Myślę o liczbie
+184	Idź od końca: co robisz z wynikiem, by cofnąć ostatni krok?
+185	Liczby po kolei
+186	Oznacz najmniejszą liczbę przez n. Jak zapiszesz pozostałe?
+187	Suma i różnica
+188	Co otrzymasz, dodając sumę i różnicę?
+189	Otrzymasz dwukrotność większej liczby.
+190	Ojciec i syn
+191	lat
+192	Gdyby ojciec był o tyle lat młodszy, mieliby tyle samo lat. Ile wynosiłaby wtedy suma?
+193	Suma zmniejszyłaby się o różnicę wieku.
+194	Monety
+195	Gdyby wszystkie monety były po 1 €, ile wynosiłaby wartość?
+196	Każda zamiana monety 1 € na monetę 2 € zwiększa wartość o 1 €.
+197	Równanie z nawiasami
+198	Najpierw pozbądź się tego, co jest dodawane poza nawiasami.
+199	Dzielniki
+200	Szukaj dzielników parami: jeśli d dzieli n, to dzieli też n : d.

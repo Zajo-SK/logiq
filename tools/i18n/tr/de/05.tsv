@@ -1,0 +1,200 @@
+1	Wir listen Teiler paarweise auf (d, n : d).
+2	Zwei Busse
+3	Minuten
+4	Du brauchst eine Zahl, die ein Vielfaches beider Zeiten ist.
+5	Das kleinste gemeinsame Vielfache.
+6	Vielfache zweier Zahlen
+7	Zähle die Vielfachen jeder Zahl getrennt.
+8	Zahlen, die durch beide teilbar sind, wurden doppelt gezählt – ziehe sie einmal ab.
+9	Eine Null am Ende entsteht aus einem Paar von Faktoren 2 und 5. Welcher ist im Produkt seltener?
+10	Es gibt viel mehr Zweien als Fünfen, also entscheiden die Fünfen.
+11	Das größte Quadrat
+12	Die Seite des Quadrats muss beide Abmessungen teilen.
+13	Du brauchst den größten gemeinsamen Teiler.
+14	Eine Murmel ziehen
+15	Wahrscheinlichkeit = günstige : mögliche.
+16	Wie viele Murmeln gibt es insgesamt und wie viele sind günstig?
+17	Wie viele Ergebnisse gibt es beim Wurf zweier Würfel?
+18	Münzwürfe
+19	Zwei Murmeln, ohne Zurücklegen
+20	Wie viele rote und wie viele Murmeln insgesamt bleiben übrig, nachdem eine rote gezogen wurde?
+21	Mindestens ein … (und Co.)
+22	Ziehe die Gegenwahrscheinlichkeit von 1 ab.
+23	Prozent einer Zahl
+24	Finde zuerst 1 % des Ganzen.
+25	Preis rauf, Preis runter
+26	Nimm immer den Prozentsatz vom aktuellen Preis.
+27	Berechne zuerst den Preis nach der Erhöhung.
+28	Aufteilen im Verhältnis
+29	Wie viele Teile gibt es insgesamt?
+30	Finde den Wert eines Teils.
+31	Bruchteil einer Zahl
+32	Multipliziere dann mit der Anzahl der Teile.
+33	Wie viel Prozent?
+34	Bilde den Bruch Teil / Ganzes.
+35	Wandle den Bruch in Hundertstel um.
+36	Welcher Tag ist dann?
+37	Eine Woche hat 7 Tage. Was passiert nach 7 Tagen?
+38	Fahrplan
+39	Wandle Stunden in Minuten um oder zähle bis zur vollen Stunde.
+40	Erst bis zur nächsten vollen Stunde, dann ganze Stunden, dann die übrigen Minuten.
+41	Januar
+42	Februar
+43	März
+44	April
+45	Mai
+46	Juni
+47	Juli
+48	August
+49	September
+50	Oktober
+51	November
+52	Dezember
+53	Kalender
+54	Wie viele Tage hat dieser Monat? Finde den Rest bei der Division durch 7.
+55	Der Wochentag verschiebt sich um so viele Tage.
+56	Winkel zwischen den Zeigern
+57	Der Minutenzeiger bewegt sich 6° pro Minute, der Stundenzeiger 0,5° pro Minute.
+58	Berechne, wo jeder Zeiger von der 12 aus gemessen steht, und subtrahiere.
+59	💡 Ein Tippen schaltet das Feld und seine Nachbarn um. Schalte alle Lichter aus (○).
+60	🚀 Zeichne mit dem Finger den kürzesten Weg zu 🏁. Keine Wände überqueren.
+61	Brücke bei Nacht
+62	Die Taschenlampe muss immer zurückgebracht werden. Wer sollte sie zurücktragen?
+63	Die zwei Langsamsten sollten gemeinsam hinübergehen, damit ihre Zeit nicht doppelt zählt.
+64	Wir probieren alle Pläne aus (ein Computer hat sie durchsucht) und suchen den kürzesten:
+65	
+66	Wasserkrüge
+67	Schreibe den Zustand als Paar (erster Krug, zweiter Krug) und probiere die möglichen Schritte.
+68	Fange damit an, den größeren Krug zu füllen und in den kleineren umzugießen.
+69	Zustände (erster, zweiter Krug), die den kürzesten Weg bilden:
+70	Was, wenn du die Münzen in drei Haufen teilst? Was sagt dir eine Wägung zweier Haufen?
+71	Jede Wägung hat 3 Ergebnisse (links leichter, rechts leichter, Gleichgewicht), kann also 3 Möglichkeiten unterscheiden.
+72	Eine Wägung teilt die Möglichkeiten in Drittel: Vergleiche zwei Haufen, der dritte bleibt beiseite.
+73	rot
+74	blau
+75	grün
+76	Netz mit einem Buchstaben
+77	Schreibe jede Zahl mit x. Der Kreis neben x ist zum Beispiel x + 2.
+78	Wie viel addiert der Pfeil?
+79	Finde zwei bekannte Zahlen, die durch Pfeile dieser Farbe verbunden sind. Um wie viel unterscheiden sie sich?
+80	Wenn der Weg mehrere Pfeile hat, teile die Differenz auf sie auf (nachdem du die Pfeile anderer Farben abgezogen hast).
+81	🕸️ Pfeile derselben Farbe addieren dieselbe Zahl (einige Werte sind unbekannt). Fülle die leeren Kreise aus. Tippe auf einen Kreis und tippe die Zahl ein.
+82	🕸️ Jeder Pfeil addiert die Zahl seiner Farbe. Fülle die leeren Kreise aus. Tippe auf einen Kreis und tippe die Zahl ein.
+83	Netz
+84	Finde einen Pfeil, der zwei bekannte Zahlen verbindet – um wie viel unterscheiden sie sich? Das verrät dir, was seine Farbe addiert.
+85	Pfeile einer Farbe addieren immer dasselbe. Das Netz „geht auf“, wenn jeder Pfeil passt.
+86	Beginne dort, wo zwei bekannte Zahlen durch einen Pfeil verbunden sind: Ihre Differenz ist der Wert dieser Farbe. Mache dann entlang der Pfeile weiter (vorwärts addieren, rückwärts subtrahieren).
+87	Tippe zuerst auf einen leeren Kreis.
+88	Fülle alle leeren Kreise aus.
+89	Etwas passt nicht. Gestrichelte Pfeile zeigen, wo die Zahlen nicht zur Pfeilfarbe passen.
+90	Probiere zuerst einen Kreis neben einer bekannten Zahl entlang eines Pfeils, dessen Wert du kennst.
+91	Wie viele Wege?
+92	🎪 Vom Eingang 🚪 zum Ausgang 🏁 gehst du so, dass du jeden Raum genau einmal durchquerst. Du darfst nur die offenen Türen benutzen. Auf wie viele Arten ist das möglich?
+93	Beginne am Eingang und probiere die Möglichkeiten Schritt für Schritt. Wo teilt sich der Weg?
+94	Schreibe die Wege als Folge von Räumen auf. Sackgassen zeigen, welche Wege scheitern.
+95	Gang durch die Ausstellung
+96	🎪 Betritt die Ausstellung durch die 🚪 und geh durch jeden Raum genau einmal, bis du am Ausgang 🏁 endest. Tippe auf die Nachbarräume durch offene Türen.
+97	🎪 Betritt die Ausstellung durch die 🚪 und geh durch jeden Raum genau einmal. Tippe auf die Nachbarräume durch offene Türen.
+98	Wenn du in einer Sackgasse feststeckst, geh mit der Zurück-Taste zurück und probiere einen anderen Weg.
+99	Ein Raum mit nur einer Tür muss der Anfang oder das Ende des Weges sein. Spare dir solche Räume für zuletzt auf.
+100	Sieh dir Räume mit nur einem Ausgang an (Sackgassen). Du kannst sie nur am Ende des Weges betreten, also spare sie dir für zuletzt auf.
+101	Trage die Raumnummern ein
+102	🎪 Ein Besucher ging vom Eingang 🚪 zum Ausgang 🏁 und war in jedem Raum genau einmal. Die Räume sind in der Reihenfolge des Besuchs mit 1, 2, 3, … nummeriert. Trage die fehlenden Zahlen ein. Tippe auf einen leeren Raum und tippe die Zahl ein.
+103	Sieh dir die Nachbarn an: Die Nummer n+1 liegt immer in einem Nachbarraum durch eine offene Tür.
+104	Ein Raum mit nur einer Tür ist das Ende oder der Anfang. Versuche, vom Ausgang rückwärts zu gehen.
+105	Die Nummer n+1 liegt immer neben der Nummer n durch eine offene Tür. Arbeite von den bekannten Zahlen aus und schließe Sackgassen aus.
+106	Du warst schon in diesem Raum. Jeder darf nur einmal benutzt werden.
+107	In dieser Richtung gibt es keine Tür. Tippe auf einen Nachbarraum mit offenem Durchgang.
+108	Du hast alle Räume besucht, bist aber nicht am Ausgang. Probiere einen anderen Weg.
+109	Zurück
+110	Von hier aus kannst du nicht mehr alle Räume besuchen. Geh ein paar Schritte zurück (↩ Zurück).
+111	Achte darauf, dass du keinen Raum zurücklässt, den du nicht mehr erreichen kannst (eine Sackgasse).
+112	Geh weiter zum markierten Raum.
+113	Tippe zuerst auf einen leeren Raum.
+114	Fülle alle leeren Räume aus.
+115	Einige Zahlen passen nicht. Denk daran: n+1 liegt immer in einem Nachbarraum durch eine offene Tür.
+116	Probiere einen Raum neben einer bekannten Zahl: Du suchst die nächste Zahl.
+117	Lehrling
+118	Löser
+119	Stratege
+120	Logiker
+121	Meister
+122	Großmeister
+123	Legende
+124	Weiser
+125	Kosmischer Weiser
+126	Oktopus
+127	Eule
+128	Rakete
+129	Panda
+130	Drache
+131	Einhorn
+132	Krone
+133	Klassisch
+134	Ozean
+135	Wald
+136	Sonnenuntergang
+137	Frosch
+138	Löwe
+139	Pinguin
+140	Dinosaurier
+141	Zauberer
+142	Ninja
+143	Held
+144	Adler
+145	Alien
+146	Bonbon
+147	Nachthimmel
+148	Minze
+149	Galaxie
+150	Gold
+151	Neue Sticker!
+152	Medaille:
+153	Mission erfüllt:
+154	Alle Missionen heute geschafft! Truhe: +40 💎
+155	Weltmedaillen für die Klassen 2–9
+156	Sticker- und Medaillenalbum
+157	Jedes abgeschlossene Level gibt einen Sticker. Schließe eine ganze Welt in einer Klasse ab, um eine Goldmedaille zu verdienen (+100 💎). Medaillen gibt es für die Klassen 2 bis 9.
+158	Löse 3 Aufgaben
+159	Löse 5 Aufgaben
+160	Löse 8 Aufgaben
+161	Sammle 8 Sterne
+162	Sammle 15 Sterne
+163	Hole 3 Sterne bei 2 Aufgaben
+164	Löse 3 Aufgaben ohne Tipp
+165	Probiere 3 verschiedene Themen
+166	Löse die tägliche Herausforderung
+167	Missionen für heute
+168	Truhe geöffnet: +40 💎. Morgen gibt es neue Missionen!
+169	Schließe alle drei Missionen ab, um die Truhe zu öffnen: +40 💎.
+170	ist als Nächstes dran
+171	gewinnt!
+172	hat das letzte genommen
+173	Nochmal
+174	Demo
+175	Probiere es selbst
+176	🐻 und 🐰 spielen – tippe, wie viele Hölzer genommen werden.
+177	Dieses Stück brechen
+178	Brüche
+179	Stücke
+180	Tippe auf ein Stück, um es in zwei zu brechen. Brich alles in einzelne Quadrate!
+181	Spieler ausscheiden lassen
+182	Gespielte Partien
+183	Jede Partie = ein Spieler scheidet aus. Tippe auf den Spieler, der verloren hat.
+184	⬅️ Linke Schale
+185	Von der Waage
+186	Rechte Schale ➡️
+187	Münze
+188	Wägungen
+189	Wiegen
+190	Tipp zurücknehmen
+191	Die falsche erraten
+192	Tippe auf die Münze, die du für falsch hältst.
+193	Neues Spiel
+194	Lege Münzen auf beide Schalen.
+195	Lege gleich viele Münzen auf beide Schalen.
+196	Im Gleichgewicht ⚖️
+197	Die linke Seite ist leichter
+198	Die rechte Seite ist leichter
+199	Eine Münze ist leichter. Tippe auf eine Münze, um sie zu bewegen (links → rechts → weg), dann drücke „Wiegen“.
+200	Ziel

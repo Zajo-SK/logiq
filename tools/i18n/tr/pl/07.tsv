@@ -1,0 +1,195 @@
+1	Usuń
+2	Odśwież
+3	Kod dla uczniów: 
+4	Przydziel zadania klasie
+5	Ranga
+6	Zadania
+7	Seria
+8	Aktywność
+9	Nikt jeszcze nie dołączył. Uczniowie wpisują kod klasy w Profilu lub przy pierwszym uruchomieniu.
+10	Usunąć ucznia?
+11	E-mail nauczyciela
+12	Hasło tymczasowe (min. 8 znaków)
+13	Nowy nauczyciel
+14	Wygeneruj hasło
+15	Utwórz konto
+16	Konto utworzone – wyślij nauczycielowi e-mail i hasło.
+17	Brak nauczycieli.
+18	Wpisz kod, który dało ci dziecko lub nauczyciel. Zobaczysz postępy tylko tego jednego ucznia.
+19	Pokaż
+20	Świat
+21	Dodaj cały poziom (10 zadań)
+22	Wszystkie
+23	Cała klasa 
+24	Wybierz poszczególnych uczniów
+25	Najpierw utwórz klasę.
+26	Tytuł zadania domowego
+27	Tytuł
+28	Notatka dla uczniów (opcjonalnie)
+29	Notatka
+30	Termin
+31	Nowe zadanie domowe
+32	Termin (opcjonalnie)
+33	Wybierz zadania
+34	Z poziomów
+35	Z kolekcji
+36	Usuń
+37	Przydziel do
+38	Przydziel
+39	Wpisz tytuł.
+40	Wybierz co najmniej jedno zadanie.
+41	Wybierz klasę lub uczniów.
+42	Zadanie domowe wysłane
+43	Brak zadań domowych. Utwórz pierwsze powyżej.
+44	Klasy: 
+45	termin 
+46	Usunąć zadanie domowe?
+47	Lista zadań
+48	Uczeń
+49	Status
+50	ukończone
+51	w trakcie
+52	nierozpoczęte
+53	Brak uczniów.
+54	Zadania od nauczyciela
+55	Wszystkie zadania domowe
+56	Przydzielone zadania
+57	Zadania, które dał ci nauczyciel.
+58	Połącz się z nauczycielem w Profilu, aby zobaczyć przydzielone zadania.
+59	Otwórz Profil
+60	po terminie
+61	Zrobione, świetna robota!
+62	Brak przydzielonych zadań.
+63	Nie znaleziono zadania – spróbuj ponownie załadować aplikację.
+64	Prywatność
+65	Jakie dane przetwarza aplikacja i gdzie są przechowywane.
+66	LogiQ to szkolna aplikacja do nauki. Zbieramy tylko to, co jest potrzebne do jej działania, i nie stosujemy reklam ani śledzenia.
+67	1. Jeśli nie łączysz się z nauczycielem
+68	Wszystko zostaje tylko na tym urządzeniu (w pamięci przeglądarki):
+69	imię lub pseudonim, klasa i oddział, które wpisałeś(-aś)
+70	twoje wyniki: rozwiązane zadania, gwiazdki, punkty, odznaki, naklejki, seria
+71	ustawienia (dźwięk, animacje, duży tekst, motyw, awatar)
+72	Nic z tego nie jest wysyłane na serwer. Możesz to usunąć, czyszcząc dane witryny w ustawieniach przeglądarki.
+73	2. Jeśli łączysz się z nauczycielem za pomocą kodu klasy
+74	Na serwer (Cloudflare, baza danych w Europie) wysyłane są następujące dane:
+75	pseudonim lub imię i klasa
+76	oddział, do którego dołączyłeś(-aś) (według kodu)
+77	podsumowanie wyników: gwiazdki, punkty, liczba zadań, seria, ranga, mocne i słabe tematy, ostatnie 15 zadań
+78	postępy w zadaniach przydzielonych przez nauczyciela
+79	czas ostatniej aktywności
+80	Jeśli wyślesz zgłoszenie przyciskiem 💬, wysyłane są imię (jeśli je wpiszesz), treść wiadomości i dane techniczne: strona, tytuł zadania, klasa, oddział, wersja aplikacji i typ urządzenia.
+81	Nie wysyłamy nazwiska, adresu, e-maila, telefonu, lokalizacji ani zdjęć. Nie wpisuj nazwiska w pseudonimie.
+82	Dane są widoczne dla wychowawcy klasy, administratora aplikacji i rodzica, który ma twój kod rodzica (tylko do odczytu). Nie są publiczne.
+83	3. Nauczyciele
+84	e-mail i hasło nauczyciela (przechowywane tylko jako hash z solą)
+85	utworzone klasy i zadania domowe
+86	4. Czego nie robimy
+87	żadnych reklam, śledzenia ani analityki, żadnych ciasteczek podmiotów trzecich
+88	nie sprzedajemy danych ani nie udostępniamy ich osobom trzecim
+89	czytanie na głos korzysta z głosu urządzenia, nic nie jest wysyłane
+90	5. Logi techniczne
+91	Za każdym razem, gdy się łączysz, dostawcy hostingu (GitHub, Cloudflare) widzą adres IP urządzenia w zwykłych logach działania. Serwer zapamiętuje IP tylko na kilka minut, aby chronić przed nadużyciami (limit prób logowania).
+92	6. Usuwanie danych i twoje prawa
+93	Odłączenie w Profilu zatrzymuje wysyłanie nowych danych. Dane już znajdujące się na serwerze usuwa nauczyciel lub administrator na prośbę (uczeń lub rodzic może poprosić nauczyciela).
+94	Nauczyciel może usunąć ucznia lub całą klasę; dane są wtedy usuwane z serwera.
+95	Masz prawo dostępu do swoich danych, ich poprawiania i usuwania.
+96	Kontakt: 
+97	Dane kontaktowe operatora (szkoły) uzupełnia szkoła.
+98	Aby każdy mógł dobrze uczyć się i bawić w LogiQ.
+99	Dla uczniów
+100	Rozwiązuj zadania samodzielnie. Podpowiedź ma pomóc ci ruszyć dalej, a nie rozstrzygać za ciebie.
+101	Pomyłka to nic złego. Pierwsze dwie próby są bezpłatne; gwiazdki spadają tylko przy podpowiedziach lub po trzech błędnych próbach. Spróbuj jeszcze raz.
+102	Używaj tylko pseudonimu lub imienia, nie nazwiska.
+103	Nie podawaj kodu klasy ani kodu rodzica osobom spoza szkoły i rodziny.
+104	Nie używaj wulgarnych słów w swoim imieniu i nie wyśmiewaj innych.
+105	Nie próbuj zepsuć aplikacji ani zaglądać do danych innych uczniów.
+106	Jeśli coś nie działa albo utknąłeś(-aś), powiedz o tym nauczycielowi.
+107	Dla nauczycieli
+108	Nie udostępniaj swojego hasła i wylogowuj się po użyciu, zwłaszcza na wspólnym komputerze.
+109	Poproś uczniów, by nie używali nazwiska – wystarczy pseudonim lub imię.
+110	Korzystaj z przeglądu postępów, by wspierać uczniów, a nie by ich zawstydzać lub porównywać przy innych.
+111	Kody klasy i rodzica przekazuj tylko uczniom i ich rodzicom.
+112	Na prośbę usuń ucznia lub klasę.
+113	Dla rodziców
+114	Kod rodzica jest tylko do odczytu i należy wyłącznie do twojego dziecka. Nie udostępniaj go.
+115	Traktuj postępy jako wskazówkę, a nie ocenę. Zadania są celowo wymagające.
+116	Ogólnie
+117	Aplikacja służy do nauki i zabawy. Zadania mają cele edukacyjne.
+118	Operator (szkoła) może zablokować lub usunąć konto w przypadku nadużyć.
+119	Aplikacja jest udostępniana w stanie, w jakim jest, bez gwarancji braku błędów. Odpowiedzi są starannie sprawdzane, ale jeśli znajdziesz błąd, daj nam znać.
+120	Dane są przetwarzane tak, jak opisano na stronie „Jakie dane przetwarzamy”.
+121	Błąd
+122	Pomysł
+123	Nowe
+124	W toku
+125	Pomoc – zgłoszone problemy
+126	Brak zgłoszeń w tej grupie.
+127	Notatka wewnętrzna (widzisz ją tylko ty)
+128	Zapisano
+129	klasa 
+130	Oznacz jako zrobione
+131	Otwórz ponownie
+132	Zapisz notatkę
+133	Usunąć to zgłoszenie?
+134	Administrator (zalogowany w panelu nauczyciela) ma odblokowane wszystkie poziomy do przeglądania, także w grze w patyczki.
+135	Pajęczyny i Wystawa są też w Kolekcji (w Grach i jako filtr kategorii).
+136	Nowe środowiska zainspirowane metodą Hejnego: Pajęczyny (liczby i kolorowe strzałki) i Wystawa (spacer po pokojach z drzwiami). Są w światach „Liczby i wzory” oraz „Łamigłówki” i w treningu.
+137	Strona towarzysząca (o aplikacji, dla uzdolnionych uczniów, zgodność z programem nauczania, dla nauczycieli, dla rodziców, FAQ) i link „O aplikacji”.
+138	Informacja, że aplikacja jest wciąż w fazie rozwoju, i jak zgłosić błąd (ekran powitalny i Start).
+139	Nowa samodzielna gra „Patyczki – trening”: 36 poziomów przeciwko komputerowi o rosnącej trudności (silniejszy komputer, nowe zasady, gra odwrócona, kilka stosów).
+140	Naprawiono: przycisk pomocy 💬 był ukryty pod lewym menu na komputerze i tablecie.
+141	Aplikacja sprawdza nową wersję po powrocie na pierwszy plan i sama się odświeża.
+142	Baza zadań przeniosła się z Profilu ucznia do panelu administratora (zakładka Baza zadań).
+143	Przycisk 💬 „Skontaktuj się z pomocą / zgłoś problem” na każdym ekranie z formularzem zgłoszenia.
+144	Administrator ma zakładkę Pomoc do śledzenia i rozwiązywania zgłoszeń.
+145	Nowe strony „Jakie dane przetwarzamy” i „Zasady korzystania” (Profil i ekran powitalny).
+146	Gry z patyczkami: jaśniejsze sformułowania – kto zaczyna i że oboje grają bez błędów.
+147	Ekran powitalny: usunięto wiersz „bez rejestracji, bez reklam”, większe przyciski Jestem nauczycielem / rodzicem.
+148	Nauczyciele mogą przydzielać zadania całym klasom lub poszczególnym uczniom (z poziomów lub z kolekcji), z terminami i przeglądem postępów.
+149	Uczniowie widzą przydzielone zadania na ekranie Start i na liście Przydzielone zadania.
+150	Kod klasy można pokazać na pełnym ekranie (do rzutnika).
+151	Naprawiono tworzenie klas (nowa baza danych), większe elementy sterujące.
+152	Aplikacja połączona z serwerem (panel nauczyciela i rodzica, synchronizacja uczniów).
+153	Plakietka wersji aplikacji i lista zmian (to okno).
+154	Nowa mapa: kręta ścieżka poziomów jak w Candy Crush, z gwiazdkami, twoim awatarem i skokami między światami.
+155	Nagrody: naklejki za poziomy, złote medale za światy, album, skrzynie za poziomy, codzienne misje, bonusy za serie, nowe rangi, awatary, motywy i odznaki.
+156	Zadania rzadziej się powtarzają (zwłaszcza szachowe); więcej wariantów domina.
+157	Zadanie z astronautami: poprawne liczebniki słowackie.
+158	Automatyczne czytanie na głos jest teraz tylko opcjonalne (Profil).
+159	Poprawiono słowacką gramatykę w zadaniach o astronautach i robotach.
+160	Mniejsze labirynty.
+161	Dziesiątkowa ramka z dodatkowymi wolnymi polami; trudniejsze zadania obrazkowe dla klas 2–3.
+162	Nowe wersje aplikacji ładują się automatycznie.
+163	Żabki: żabka może przeskoczyć dowolną pojedynczą żabkę, jeśli płytka za nią jest wolna.
+164	Skaczące żabki: zadania, panel do wypróbowania i samodzielna gra.
+165	Więcej symulacji: waga, dzbanki, most, skarpetki, uściski dłoni, prawdopodobieństwo, tablica setki i inne.
+166	Dla młodszych uczniów: duży wybór klasy, czytanie na głos, zadania obrazkowe, symulacje, krótsze polecenia.
+167	Sudoku: 6 stopniowanych poziomów trudności z podpowiedziami o technikach.
+168	Samodzielne sudoku 3×3, 4×4, 6×6 i 9×9 z notatkami, podpowiedziami i stoperem.
+169	Wybór klasy, panel nauczyciela/rodzica/administratora, nagrody, szachy i Wieże Hanoi.
+170	Pierwsze wydanie LogiQ: zadania dla klas 2–9, mapa poziomów, codzienne wyzwanie, kolekcja, osiągnięcia.
+171	Ostatnia zmiana: 
+172	Aktualizacja
+173	Gry i strategia
+174	Znajdź strategię wygrywającą i pokonaj komputer.
+175	Prawda, fałsz i dedukcja
+176	Rycerze, łgarze, podejrzani i tajne liczby.
+177	Rozumowanie logiczne
+178	Porządkowanie, dopasowywanie i poprawne wnioski.
+179	Kombinatoryka
+180	Na ile sposobów? Licz sprytnie.
+181	Liczby i wzory
+182	Ciągi, kwadraty magiczne, kryptarytmy i pajęczyny.
+183	Przestrzeń i kształty
+184	Kostki, siatki, pola i budowle.
+185	Łamigłówki
+186	Sudoku, światła, labirynty, wystawa, mosty i dzbanki.
+187	Szachy i Hanoi
+188	Jak poruszają się figury, domina i Wieże Hanoi.
+189	Olimpiada matematyczna
+190	Algebra, podzielność, prawdopodobieństwo i czas.
+191	Pierwsze kroki
+192	Nabieranie tempa
+193	Wyzwanie
+194	Głębsze myślenie
+195	Mistrz

@@ -1,0 +1,200 @@
+1	étapes
+2	Essaie les étapes : remplir, vider, verser.
+3	min
+4	Ici
+5	Là-bas
+6	Temps
+7	Traverser avec la torche
+8	Choisis 1 ou 2 personnes du côté de la torche 🔦 et appuie sur « Traverser ». Une paire marche à l’allure du plus lent.
+9	Tiré
+10	le plus d’une sorte
+11	Tirer à l’aveugle
+12	Tu as déjà cet ordre.
+13	Nouvel ordre ! ✓
+14	Ordres trouvés
+15	Touche les enfants pour les mettre en rang. Trouve tous les ordres différents !
+16	Ordre suivant
+17	Tout réinitialiser
+18	Tenues faites
+19	Choisis un élément de chaque rangée et appuie sur « Ajouter ». Trouve toutes les tenues différentes !
+20	Ajouter
+21	Tu l’as déjà.
+22	Nouveau ! ✓
+23	Paires
+24	Paire supprimée.
+25	Touche deux personnes – elles sont reliées par un trait. Relie chaque paire exactement une fois !
+26	Chemins trouvés
+27	Tu ne peux pas aller là.
+28	Tu as déjà ce chemin.
+29	Nouveau chemin ! ✓
+30	Déplace 🤖 vers la droite ou vers le bas jusqu’au 🏁. Trouve tous les chemins différents !
+31	En donner un
+32	Reste
+33	Pas égal – essaie encore.
+34	Touche un enfant – il en reçoit un. Partage tout équitablement !
+35	Touche les images pour compter. Le nombre augmente à chaque appui.
+36	Dominos posés
+37	cases libres
+38	Touche deux cases voisines pour poser un domino. Touche un domino pour le retirer.
+39	Affiché
+40	taille
+41	Suivant
+42	Tout jouer
+43	Essais
+44	les deux 🔴
+45	somme
+46	Lance deux dés plusieurs fois et regarde quelles sommes sortent le plus souvent.
+47	Tire à l’aveugle (en remettant). Regarde combien de fois chaque couleur apparaît.
+48	Tire deux billes sans remettre. Combien de fois les deux sont-elles 🔴 ?
+49	Nombres restants
+50	Touche un nombre qui ne convient pas aux indices – il est barré. Il n’en restera qu’un !
+51	Tableau d’aide : touche pour passer de vide ➜ ✗ (non) ➜ ✓ (oui).
+52	Jours écoulés
+53	sur 100
+54	Échauffement
+55	Premières astuces
+56	Règles étranges
+57	À l’envers : le dernier perd
+58	Deux tas
+59	Maître des allumettes
+60	Allumettes – entraînement
+61	Joue contre l’ordinateur. Au début c’est facile, puis il joue mieux et les règles changent. Gagne un niveau pour débloquer le suivant.
+62	étape actuelle
+63	Continuer
+64	Commencer
+65	niveau
+66	Niveau
+67	Aucune défaite – super !
+68	Liste des niveaux
+69	Niveau suivant
+70	Indice
+71	Regarde encore le jeu.
+72	Allumettes – niveau
+73	Niveaux
+74	1 · Débutant
+75	2 · Facile
+76	3 · Moyen
+77	4 · Difficile
+78	5 · Expert
+79	6 · Maître
+80	Seuls des « singletons nus » sont nécessaires, beaucoup de chiffres donnés.
+81	Il faut aussi des « singletons cachés » dans une ligne, une colonne ou un bloc.
+82	Mêmes techniques mais beaucoup moins de chiffres donnés.
+83	Demande des candidats verrouillés ou des paires nues.
+84	Demande des paires cachées ou des triplets nus.
+85	Techniques avancées (X-Wing et au-delà) – pour les maîtres.
+86	Beaucoup de chiffres donnés (23).
+87	Moins de chiffres donnés (19).
+88	Seulement 12 chiffres donnés ; singletons cachés nécessaires.
+89	Environ 11 chiffres donnés seulement.
+90	Environ 10 chiffres donnés seulement.
+91	Le plus petit nombre possible de chiffres donnés (9).
+92	Le nombre de chiffres donnés diminue avec le niveau.
+93	Singleton nu
+94	Singleton caché
+95	Candidats verrouillés
+96	Paire nue
+97	Paire cachée
+98	Triplet nu
+99	X-Wing
+100	ligne
+101	colonne
+102	Indices
+103	Touche d’abord une case vide.
+104	Certains nombres se répètent – regarde les cases marquées « ! ».
+105	Sudoku résolu !
+106	indices
+107	Nouveau record personnel !
+108	Ton meilleur
+109	Fermer
+110	Notes
+111	Corrige d’abord les nombres qui se répètent (« ! »).
+112	 (Un autre indice en montre plus.)
+113	Tout est correct jusqu’ici – continue !
+114	Taille
+115	Grille n°
+116	meilleur
+117	Annuler
+118	Vérifier
+119	Bogue dans l’appli
+120	Idée / demande
+121	Question
+122	Ton nom (facultatif)
+123	Décris ce qui s’est passé ou ce que tu aimerais changer…
+124	Message
+125	Envoyer
+126	Décris-le en quelques mots, s’il te plaît.
+127	Merci ! Ton message a été envoyé.
+128	Contacter l’assistance
+129	Dis-nous si quelque chose ne marche pas, si une réponse semble fausse, ou si tu as une idée.
+130	Nous joignons automatiquement la page, le titre de la tâche et le type d’appareil pour trouver le problème. N’écris ici ni mots de passe ni nom de famille.
+131	Annuler
+132	L’assistance a besoin de la connexion au serveur, qui n’est pas configurée. Dis-le à ton enseignant.
+133	Contacter l’assistance / signaler un problème
+134	Signaler un problème / assistance
+135	Certains nombres se répètent dans une ligne, une colonne ou un bloc. Regarde les cases marquées « ! ».
+136	Certains nombres se répètent – regarde les cases marquées « ! ». Laquelle faut-il changer ?
+137	Une fois un nombre placé, les autres cases ont moins de possibilités. Continue – cherche toujours une case où un seul nombre convient.
+138	Voici la solution terminée :
+139	Appuie sur une case et remarque quelles lumières changent. Chaque case ne demande qu’au plus un appui.
+140	Appuyer sur une case l’inverse ainsi que ses voisines. Appuyer deux fois sur la même case s’annule, donc chaque case ne demande qu’un appui au plus – l’ordre n’a pas d’importance.
+141	Rejouons-le pas à pas :
+142	L’ordinateur a gagné cette fois – mais tu peux rejouer ! Réfléchis au coup qui laisse à ton adversaire une position « perdante ».
+143	Il n’y a pas de coup gagnant d’ici – l’ordinateur devrait se tromper. Recommence et regarde où il s’est trompé.
+144	Cherche un coup qui laisse ton adversaire dans une position perdante. Avec deux tas, essaie de les rendre égaux.
+145	Avec deux tas, égalise-les simplement : enlève la différence au plus grand. Ensuite, imite ton adversaire sur l’autre tas.
+146	Dans la version « le dernier perd », joue pareil jusqu’à ce qu’il ne reste que des tas de taille 1 – laisse alors à ton adversaire un nombre impair de tels tas.
+147	Déconnecté de la classe.
+148	à l’instant
+149	Erreur de connexion
+150	Serveur non configuré
+151	L’espace enseignant et parent a besoin d’un serveur (Cloudflare Worker). Les étapes de configuration sont dans server/README.md. Après la configuration, mets son adresse dans js/config.js.
+152	classe
+153	Pas encore de données – l’élève n’a rien résolu ou n’a pas été en ligne.
+154	dernière activité
+155	étoiles
+156	points
+157	tâches
+158	série
+159	Points forts et points faibles (moyenne d’étoiles)
+160	Tâches récentes
+161	Code parent
+162	Supprimer l’élève
+163	Connecté à l’enseignant
+164	Donne-le à un parent pour qu’il voie tes progrès dans l’espace Accès parent.
+165	Synchroniser maintenant
+166	Terminé
+167	Se déconnecter
+168	Code de l’enseignant (p. ex. K7M2QX)
+169	Se connecter à un enseignant
+170	Après la connexion, ton enseignant voit ton nom et tes progrès. Rien d’autre n’est envoyé.
+171	Se connecter
+172	Connecté !
+173	Enseignant, admin, parent
+174	Connexion enseignant / admin
+175	Accès parent
+176	Espace enseignant
+177	E-mail (admin : admin)
+178	Mot de passe
+179	Se connecter
+180	Les comptes enseignants sont créés par l’admin. L’admin se connecte avec « admin ».
+181	admin
+182	enseignant
+183	Se déconnecter
+184	Classes
+185	Devoirs
+186	Base de tâches
+187	Assistance
+188	Enseignants
+189	Classe
+190	Ouvre LogiQ → Profil → « Se connecter à un enseignant » → tape ce code.
+191	Afficher le code en plein écran
+192	Lettre de la classe
+193	Classe créée
+194	Nouvelle classe
+195	Tu n’as pas encore de classe. Crées-en une ci-dessus et donne le code aux élèves.
+196	Code pour les élèves
+197	Ouvrir
+198	Supprimer la classe
+199	Supprimer la classe ?
+200	Tous les élèves et leurs progrès seront supprimés. Cette action est irréversible.

@@ -1,0 +1,200 @@
+1	Listamos os divisores em pares (d, n : d).
+2	Dois ônibus
+3	minutos
+4	Você precisa de um número que seja múltiplo dos dois tempos.
+5	O mínimo múltiplo comum.
+6	Múltiplos de dois números
+7	Conte os múltiplos de cada número separadamente.
+8	Os números divisíveis pelos dois foram contados duas vezes – subtraia-os uma vez.
+9	Um zero no final vem de um par de fatores 2 e 5. Qual é mais raro no produto?
+10	Há muito mais fatores 2 do que 5, então os cincos decidem.
+11	O maior quadrado
+12	O lado do quadrado deve dividir as duas dimensões.
+13	Você precisa do máximo divisor comum.
+14	Tirando uma bolinha
+15	Probabilidade = casos favoráveis : casos possíveis.
+16	Quantas bolinhas há ao todo e quantas são favoráveis?
+17	Quantos resultados existem ao lançar dois dados?
+18	Lançamentos de moeda
+19	Duas bolinhas, sem reposição
+20	Depois de tirar uma vermelha, quantas vermelhas e quantas bolinhas restam?
+21	Pelo menos um … (e semelhantes)
+22	Subtraia de 1 a probabilidade do evento oposto.
+23	Porcentagem de um número
+24	Primeiro encontre 1% do todo.
+25	Preço sobe, preço desce
+26	Sempre calcule a porcentagem sobre o preço atual.
+27	Primeiro calcule o preço depois do aumento.
+28	Divisão em uma razão
+29	Quantas partes há no total?
+30	Encontre o valor de uma parte.
+31	Fração de um número
+32	Depois multiplique pelo número de partes.
+33	Quantos por cento?
+34	Forme a fração parte / todo.
+35	Converta a fração em centésimos.
+36	Que dia da semana será?
+37	Uma semana tem 7 dias. O que acontece depois de 7 dias?
+38	Horário
+39	Converta horas em minutos ou conte até uma hora cheia.
+40	Primeiro até a próxima hora cheia, depois horas inteiras, depois os minutos que sobram.
+41	Janeiro
+42	Fevereiro
+43	Março
+44	Abril
+45	Maio
+46	Junho
+47	Julho
+48	Agosto
+49	Setembro
+50	Outubro
+51	Novembro
+52	Dezembro
+53	Calendário
+54	Quantos dias tem esse mês? Encontre o resto da divisão por 7.
+55	O dia da semana avança essa quantidade de dias.
+56	Ângulo entre os ponteiros
+57	O ponteiro dos minutos anda 6° por minuto, o das horas 0,5° por minuto.
+58	Calcule onde está cada ponteiro, medido a partir do 12, e subtraia.
+59	💡 Um toque inverte a célula e as vizinhas. Apague todas as luzes (○).
+60	🚀 Desenhe com o dedo o caminho mais curto até 🏁. Sem atravessar paredes.
+61	Ponte à noite
+62	A lanterna sempre precisa ser trazida de volta. Quem deve levá-la de volta?
+63	Os dois mais lentos devem atravessar juntos para que o tempo deles não seja contado duas vezes.
+64	Testamos todos os planos (um computador os pesquisou) e procuramos o mais curto:
+65	
+66	Jarras de água
+67	Escreva o estado como um par (primeira jarra, segunda jarra) e experimente os passos possíveis.
+68	Tente começar enchendo a jarra maior e despejando na menor.
+69	Estados (primeira, segunda jarra) que formam o caminho mais curto:
+70	E se você dividir as moedas em três montes? O que uma pesagem de dois montes revela?
+71	Cada pesagem tem 3 resultados (esquerda mais leve, direita mais leve, equilíbrio), então consegue distinguir 3 opções.
+72	Uma pesagem divide as opções em terços: compare dois montes, o terceiro fica de lado.
+73	vermelho
+74	azul
+75	verde
+76	Teia com uma letra
+77	Escreva cada número usando x. O círculo ao lado de x é, por exemplo, x + 2.
+78	Quanto a seta acrescenta?
+79	Encontre dois números conhecidos ligados por setas dessa cor. Quanto eles diferem?
+80	Se o caminho tem várias setas, divida a diferença entre elas (depois de subtrair as setas de outras cores).
+81	🕸️ Setas da mesma cor acrescentam o mesmo número (alguns valores são desconhecidos). Preencha os círculos vazios. Toque em um círculo e digite.
+82	🕸️ Cada seta acrescenta o número da sua cor. Preencha os círculos vazios. Toque em um círculo e digite.
+83	Teia
+84	Encontre uma seta ligando dois números conhecidos – quanto eles diferem? Isso diz o que a cor dela acrescenta.
+85	Setas de uma cor sempre acrescentam o mesmo. A teia “funciona” se todas as setas se encaixam.
+86	Comece onde dois números conhecidos estão ligados por uma seta: a diferença deles é o valor daquela cor. Depois continue pelas setas (some indo para a frente, subtraia voltando).
+87	Toque primeiro em um círculo vazio.
+88	Preencha todos os círculos vazios.
+89	Algo não se encaixa. As setas tracejadas mostram onde os números discordam da cor da seta.
+90	Tente primeiro um círculo ao lado de um número conhecido, por uma seta cujo valor você sabe.
+91	Quantos caminhos?
+92	🎪 Da entrada 🚪 até a saída 🏁 você caminha passando por cada sala exatamente uma vez. Só pode usar as portas abertas. De quantas maneiras isso pode ser feito?
+93	Comece na entrada e teste as opções passo a passo. Onde o caminho se divide?
+94	Escreva os caminhos como uma sequência de salas. Os becos sem saída mostram quais caminhos falham.
+95	Percorra a exposição
+96	🎪 Entre pela 🚪 e passe por todas as salas exatamente uma vez, terminando na saída 🏁. Toque nas salas vizinhas pelas portas abertas.
+97	🎪 Entre pela 🚪 e passe por todas as salas exatamente uma vez. Toque nas salas vizinhas pelas portas abertas.
+98	Se ficar preso em um beco sem saída, volte com o botão Voltar e tente outro caminho.
+99	Uma sala com uma única porta deve ser o início ou o fim do caminho. Deixe essas salas para o final.
+100	Observe as salas com uma só saída (becos sem saída). Só dá para entrar nelas no fim do caminho, então deixe-as para o final.
+101	Preencha os números das salas
+102	🎪 Um visitante foi da entrada 🚪 até a saída 🏁 e esteve em cada sala exatamente uma vez. As salas são numeradas na ordem da visita 1, 2, 3, … Preencha os números que faltam. Toque em uma sala vazia e digite.
+103	Olhe os vizinhos: o número n+1 está sempre em uma sala vizinha por uma porta aberta.
+104	Uma sala com uma única porta é o fim ou o começo. Tente ir de trás para frente a partir da saída.
+105	O número n+1 está sempre ao lado do número n por uma porta aberta. Trabalhe a partir dos números conhecidos e elimine os becos sem saída.
+106	Você já esteve nesta sala. Cada uma só pode ser usada uma vez.
+107	Não há porta por esse lado. Toque em uma sala vizinha com passagem aberta.
+108	Você visitou todas as salas, mas não está na saída. Tente outro caminho.
+109	Voltar
+110	Daqui você não consegue mais visitar todas as salas. Volte alguns passos (↩ Voltar).
+111	Verifique se você não deixa para trás uma sala que não consegue mais alcançar (um beco sem saída).
+112	Continue até a sala marcada.
+113	Toque primeiro em uma sala vazia.
+114	Preencha todas as salas vazias.
+115	Alguns números não se encaixam. Lembre-se: n+1 está sempre em uma sala vizinha por uma porta aberta.
+116	Tente uma sala ao lado de um número conhecido: você está procurando o próximo número.
+117	Aprendiz
+118	Solucionador
+119	Estrategista
+120	Lógico
+121	Mestre
+122	Grão-mestre
+123	Lenda
+124	Sábio
+125	Sábio cósmico
+126	Polvo
+127	Coruja
+128	Foguete
+129	Panda
+130	Dragão
+131	Unicórnio
+132	Coroa
+133	Clássico
+134	Oceano
+135	Floresta
+136	Pôr do sol
+137	Sapo
+138	Leão
+139	Pinguim
+140	Dinossauro
+141	Mago
+142	Ninja
+143	Herói
+144	Águia
+145	Alienígena
+146	Doce
+147	Céu noturno
+148	Menta
+149	Galáxia
+150	Ouro
+151	Novas figurinhas!
+152	Medalha:
+153	Missão cumprida:
+154	Todas as missões de hoje concluídas! Baú: +40 💎
+155	Medalhas de mundo para as séries 2–9
+156	Álbum de figurinhas e medalhas
+157	Cada nível terminado dá uma figurinha. Termine um mundo inteiro em uma série para ganhar uma medalha de ouro (+100 💎). Há medalhas para as séries de 2 a 9.
+158	Resolva 3 tarefas
+159	Resolva 5 tarefas
+160	Resolva 8 tarefas
+161	Ganhe 8 estrelas
+162	Ganhe 15 estrelas
+163	Consiga 3 estrelas em 2 tarefas
+164	Resolva 3 tarefas sem dica
+165	Experimente 3 temas diferentes
+166	Resolva o desafio diário
+167	Missões de hoje
+168	Baú aberto: +40 💎. Novas missões amanhã!
+169	Termine as três missões para abrir o baú: +40 💎.
+170	é o próximo
+171	ganha!
+172	pegou o último
+173	De novo
+174	Demonstração
+175	Experimente você mesmo
+176	🐻 e 🐰 jogam – toque em quantos palitos pegar.
+177	Quebre este pedaço
+178	Quebras
+179	pedaços
+180	Toque em um pedaço para quebrá-lo em dois. Quebre tudo em quadradinhos!
+181	Eliminar jogador
+182	Partidas jogadas
+183	Cada partida = um jogador sai. Toque no jogador que perdeu.
+184	⬅️ Prato esquerdo
+185	Fora da balança
+186	Prato direito ➡️
+187	moeda
+188	Pesagens
+189	Pesar
+190	Cancelar palpite
+191	Adivinhar a falsa
+192	Toque na moeda que você acha que é falsa.
+193	Novo jogo
+194	Coloque moedas nos dois pratos.
+195	Coloque o mesmo número de moedas nos dois pratos.
+196	Equilibrado ⚖️
+197	O lado esquerdo está mais leve
+198	O lado direito está mais leve
+199	Uma moeda é mais leve. Toque em uma moeda para movê-la (esquerda → direita → fora), depois pressione “Pesar”.
+200	Objetivo

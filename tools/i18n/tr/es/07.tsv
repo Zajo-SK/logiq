@@ -1,0 +1,195 @@
+1	Eliminar
+2	Actualizar
+3	Código para los alumnos:
+4	Asignar tareas a la clase
+5	Rango
+6	Tareas
+7	Racha
+8	Actividad
+9	Todavía no se ha unido nadie. Los alumnos introducen el código de clase en el Perfil o al abrir la app por primera vez.
+10	¿Eliminar al alumno?
+11	Correo del profesor
+12	Contraseña temporal (mín. 8 caracteres)
+13	Nuevo profesor
+14	Generar contraseña
+15	Crear cuenta
+16	Cuenta creada: envía al profesor el correo y la contraseña.
+17	Todavía no hay profesores.
+18	Introduce el código que te dio tu hijo o tu profesor. Verás solo el progreso de ese alumno.
+19	Mostrar
+20	Mundo
+21	Añadir el nivel entero (10 tareas)
+22	Todos
+23	Toda la clase
+24	Elegir alumnos concretos
+25	Primero crea una clase.
+26	Título de la tarea asignada
+27	Título
+28	Nota para los alumnos (opcional)
+29	Nota
+30	Fecha de entrega
+31	Nueva tarea asignada
+32	Fecha de entrega (opcional)
+33	Elegir tareas
+34	De los niveles
+35	De la colección
+36	Quitar
+37	Asignar a
+38	Asignar
+39	Escribe un título.
+40	Elige al menos una tarea.
+41	Elige una clase o alumnos.
+42	Tarea asignada enviada
+43	Todavía no hay tareas asignadas. Crea la primera arriba.
+44	Clases:
+45	entrega
+46	¿Eliminar la tarea asignada?
+47	Lista de tareas
+48	Alumno
+49	Estado
+50	hecha
+51	en curso
+52	sin empezar
+53	Todavía no hay alumnos.
+54	Tareas de tu profesor
+55	Todas las tareas asignadas
+56	Tareas asignadas
+57	Tareas que te dio tu profesor.
+58	Conéctate con un profesor en el Perfil para ver las tareas asignadas.
+59	Abrir el Perfil
+60	atrasada
+61	¡Hecho, buen trabajo!
+62	Todavía no hay tareas asignadas.
+63	Tarea no encontrada: prueba a recargar la app.
+64	Privacidad
+65	Qué datos trata la app y dónde se almacenan.
+66	LogiQ es una app escolar de aprendizaje. Recogemos solo lo necesario para que funcione y no usamos publicidad ni seguimiento.
+67	1. Si no te conectas con un profesor
+68	Todo se queda solo en este dispositivo (en el almacenamiento del navegador):
+69	el nombre o apodo, el curso y la clase que introdujiste
+70	tus resultados: tareas resueltas, estrellas, puntos, insignias, pegatinas, racha
+71	los ajustes (sonido, animaciones, texto grande, tema, compañero)
+72	Nada de esto se envía a un servidor. Puedes borrarlo eliminando los datos del sitio en los ajustes del navegador.
+73	2. Si te conectas con un profesor mediante un código de clase
+74	Se envía lo siguiente al servidor (Cloudflare, base de datos en Europa):
+75	apodo o nombre de pila y curso
+76	la clase a la que te uniste (mediante el código)
+77	un resumen de resultados: estrellas, puntos, número de tareas, racha, rango, temas fuertes y débiles, las últimas 15 tareas
+78	el progreso en las tareas asignadas por el profesor
+79	la hora de la última actividad
+80	Si envías un informe con el botón 💬, se envían el nombre (si lo escribes), el texto del mensaje y detalles técnicos: página, título de la tarea, curso, clase, versión de la app y tipo de dispositivo.
+81	No enviamos apellidos, dirección, correo electrónico, teléfono, ubicación ni fotos. Por favor, no pongas el apellido en el apodo.
+82	Los datos son visibles para el profesor de tu clase, el administrador de la app y un padre o madre que tenga tu código para padres (solo lectura). No son públicos.
+83	3. Profesores
+84	correo electrónico y contraseña del profesor (almacenada solo como hash con sal)
+85	clases y tareas asignadas creadas
+86	4. Lo que no hacemos
+87	nada de publicidad, seguimiento ni analítica, ni cookies de terceros
+88	no vendemos ni compartimos datos con terceros
+89	la lectura en voz alta usa la voz del dispositivo, no se envía nada
+90	5. Registros técnicos
+91	Cada vez que te conectas, los proveedores de alojamiento (GitHub, Cloudflare) ven la dirección IP del dispositivo en los registros normales de funcionamiento. El servidor recuerda la IP solo unos minutos para protegerse de abusos (límite de intentos de inicio de sesión).
+92	6. Eliminación y tus derechos
+93	Desconectarte en el Perfil detiene el envío de datos nuevos. Los datos que ya están en el servidor los elimina el profesor o el administrador si lo pides (un alumno o un padre puede pedírselo al profesor).
+94	Un profesor puede eliminar a un alumno o una clase entera; los datos se borran entonces del servidor.
+95	Tienes derecho a acceder a tus datos, corregirlos y eliminarlos.
+96	Contacto:
+97	El contacto del responsable (el colegio) lo añade el colegio.
+98	Para que todos puedan aprender y jugar bien en LogiQ.
+99	Para alumnos
+100	Resuelve las tareas tú mismo. Una pista está para ayudarte a avanzar, no para decidir por ti.
+101	Equivocarse no pasa nada. Los dos primeros intentos son gratis; las estrellas bajan solo con pistas o tras tres intentos erróneos. Inténtalo de nuevo.
+102	Usa solo un apodo o tu nombre de pila, no el apellido.
+103	No des el código de clase ni el código para padres a personas ajenas al colegio y a la familia.
+104	No uses palabras groseras en tu nombre ni te burles de los demás.
+105	No intentes romper la app ni mirar los datos de otros alumnos.
+106	Si algo no funciona o te atascas, díselo a tu profesor.
+107	Para profesores
+108	No compartas tu contraseña y cierra sesión al terminar, sobre todo en un ordenador compartido.
+109	Pide a los alumnos que no usen apellido: basta con un apodo o el nombre de pila.
+110	Usa el resumen de progreso para apoyar a los alumnos, no para avergonzarlos ni compararlos delante de los demás.
+111	Da los códigos de clase y de padres solo a los alumnos y a sus padres.
+112	Si se solicita, elimina a un alumno o una clase.
+113	Para padres
+114	El código para padres es de solo lectura y pertenece únicamente a tu hijo. No lo compartas.
+115	Mira el progreso como una guía, no como una nota. Las tareas son desafiantes a propósito.
+116	En general
+117	La app es para aprender y divertirse. Las tareas tienen fines educativos.
+118	El responsable (el colegio) puede bloquear o eliminar una cuenta en caso de uso indebido.
+119	La app se ofrece tal cual, sin garantía de estar libre de errores. Las respuestas se comprueban con cuidado, pero si encuentras un error, avísanos.
+120	Los datos se tratan como se describe en la página «Qué datos tratamos».
+121	Error
+122	Idea
+123	Nuevo
+124	En curso
+125	Soporte: problemas notificados
+126	No hay tickets en este grupo.
+127	Nota interna (solo la ves tú)
+128	Guardado
+129	curso
+130	Marcar como hecho
+131	Reabrir
+132	Guardar nota
+133	¿Eliminar este ticket?
+134	El administrador (con sesión iniciada en el área del profesor) tiene todos los niveles desbloqueados para explorar, también en el juego de los palillos.
+135	Las telarañas y la exposición también están en la Colección (en Juegos y como filtro de categoría).
+136	Nuevos entornos inspirados en el método de Hejný: Telarañas (números y flechas de colores) y Exposición (recorrer salas con puertas). Están en los mundos «Números y patrones» y «Rompecabezas» y en el entrenamiento.
+137	Sitio web complementario (acerca de, para alumnos con talento, alineación curricular, para profesores, para padres, preguntas frecuentes) y un enlace «Acerca de la app».
+138	Aviso de que la app aún está en desarrollo y de cómo notificar un error (pantalla de bienvenida e Inicio).
+139	Nuevo juego independiente «Palillos: entrenamiento»: 36 niveles contra el ordenador con dificultad creciente (un ordenador más fuerte, reglas nuevas, juego invertido, varios montones).
+140	Corregido: el botón de soporte 💬 quedaba oculto bajo el menú izquierdo en escritorio y tableta.
+141	La app comprueba si hay una versión nueva al volver a primer plano y se actualiza sola.
+142	La base de tareas pasó del Perfil del alumno al panel de administración (pestaña Base de tareas).
+143	Un botón 💬 «Contactar con soporte / informar de un problema» en cada pantalla, con formulario de informe.
+144	El administrador tiene una pestaña de Soporte para seguir y resolver los informes.
+145	Nuevas páginas «Qué datos tratamos» y «Normas de uso» (Perfil y pantalla de bienvenida).
+146	Juegos de palillos: redacción más clara sobre quién empieza y que ambos juegan sin errores.
+147	Pantalla de bienvenida: se quitó la línea «sin registro y sin anuncios» y los botones Soy profesor / Soy padre o madre son más grandes.
+148	Los profesores pueden asignar tareas a clases enteras o a alumnos concretos (de los niveles o de la colección), con fechas de entrega y resumen de progreso.
+149	Los alumnos ven las tareas asignadas en Inicio y en la lista de Tareas asignadas.
+150	El código de clase se puede mostrar a pantalla completa (para un proyector).
+151	Corregida la creación de clases (base de datos nueva), controles más grandes.
+152	App conectada al servidor (área de profesores y padres, sincronización de alumnos).
+153	Insignia de versión de la app y registro de cambios (esta ventana).
+154	Mapa nuevo: un camino sinuoso de niveles como Candy Crush, con estrellas, tu compañero y saltos entre mundos.
+155	Recompensas: pegatinas de nivel, medallas de oro de mundo, álbum, cofres de nivel, misiones diarias, bonos de racha, rangos nuevos, compañeros, temas e insignias.
+156	Las tareas se repiten menos (sobre todo las de ajedrez); más variantes de dominó.
+157	Tarea del astronauta: numerales eslovacos correctos.
+158	La lectura en voz alta automática ahora es solo opcional (Perfil).
+159	Corregida la gramática eslovaca en las tareas del astronauta y el robot.
+160	Laberintos más pequeños.
+161	Marco de diez con casillas libres adicionales; tareas con dibujos más difíciles para los cursos 2–3.
+162	Las versiones nuevas de la app se cargan automáticamente.
+163	Ranas: una rana puede saltar por encima de cualquier rana si el nenúfar de detrás está libre.
+164	Ranas saltarinas: tareas, un panel para probar y un juego independiente.
+165	Más simulaciones: balanza, jarras, puente, calcetines, apretones de manos, probabilidad, tabla del cien y más.
+166	Para alumnos pequeños: selector de curso grande, lectura en voz alta, tareas con dibujos, simulaciones, enunciados más cortos.
+167	Sudoku: 6 niveles de dificultad graduados con pistas de técnicas.
+168	Sudoku independiente de 3×3, 4×4, 6×6 y 9×9 con notas, pistas y cronómetro.
+169	Selección de curso, área de profesor/padres/administrador, recompensas, ajedrez y Torres de Hanói.
+170	Primera versión de LogiQ: tareas para los cursos 2–9, mapa de niveles, reto diario, colección, logros.
+171	Último cambio:
+172	Actualización
+173	Juegos y estrategia
+174	Encuentra la estrategia ganadora y vence al ordenador.
+175	Verdad, mentiras y deducción
+176	Caballeros, mentirosos, sospechosos y números secretos.
+177	Razonamiento lógico
+178	Ordenaciones, emparejamientos y conclusiones válidas.
+179	Combinatoria
+180	¿De cuántas maneras? Cuenta con astucia.
+181	Números y patrones
+182	Sucesiones, cuadrados mágicos, criptoaritmética y telarañas.
+183	Espacio y figuras
+184	Cubos, cuadrículas, áreas y edificios.
+185	Rompecabezas
+186	Sudoku, luces, laberintos, exposición, puentes y jarras.
+187	Ajedrez y Hanói
+188	Cómo se mueven las piezas, dominós y las Torres de Hanói.
+189	Olimpiada de matemáticas
+190	Álgebra, divisibilidad, probabilidad y tiempo.
+191	Primeros pasos
+192	Cogiendo velocidad
+193	Desafío
+194	Pensar más a fondo
+195	Campeón

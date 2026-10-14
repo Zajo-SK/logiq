@@ -1,0 +1,200 @@
+1	Zbierz 30 naklejek.
+2	Pełny album
+3	Zbierz wszystkie naklejki.
+4	Pierwszy medal
+5	Ukończ cały świat w jednej klasie.
+6	Kolekcja medali
+7	Zdobądź 5 medali za światy.
+8	Wykonawca misji
+9	Ukończ wszystkie codzienne misje w ciągu 5 dni.
+10	Tydzień z rzędu
+11	Rozwiązuj zadania 7 dni z rzędu.
+12	Miesiąc z rzędu
+13	Rozwiązuj zadania 30 dni z rzędu.
+14	Setka
+15	Ukończ 100 zadań.
+16	Wspinacz
+17	Ukończ 300 zadań.
+18	Rozgwieżdżone niebo
+19	Zdobądź 150 gwiazdek.
+20	2000 punktów
+21	Zdobądź 2000 punktów.
+22	Na własną rękę
+23	Rozwiąż 10 zadań bez podpowiedzi.
+24	Idealny poziom
+25	Ukończ poziom ze wszystkimi 3 gwiazdkami.
+26	Śmiałek
+27	Rozwiąż zadanie z wyższej klasy.
+28	Zielone 🐸 skaczą tylko w prawo →, brązowe tylko w lewo ←. Przejdź na wolną płytkę albo przeskocz JEDNĄ żabkę (dowolnego koloru), jeśli płytka za nią jest wolna. Nie wolno cofać się. Zamień je miejscami!
+29	płytka
+30	wolna
+31	żabka skacząca w prawo
+32	żabka skacząca w lewo
+33	Utknąłeś(-aś) 🙂 Cofnij ruch albo zacznij od nowa.
+34	Ta żabka nie może teraz skoczyć. Spróbuj inną.
+35	Stąd nie ma drogi naprzód – cofnij ruch.
+36	Stąd nie ma drogi naprzód – cofnij ruch albo zacznij od nowa.
+37	Oto całe rozwiązanie:
+38	Spróbuj z żabkami: dotknij żabki, która ma się ruszyć.
+39	Jak skaczą żabki (przeczytaj przed zadaniem)
+40	Najpierw spróbuj z mniejszą liczbą żabek.
+41	Żabki: ile ruchów?
+42	Zapisz ruchy dla 1, 2 i 3 żabek.
+43	Liczby ruchów to 3, 8, 15, 24 … Czy potrafisz znaleźć wzór?
+44	Żabki zamieniły się miejscami!
+45	Najmniejsza możliwa liczba ruchów!
+46	Da się to zrobić w mniejszej liczbie ruchów – spróbuj jeszcze raz!
+47	Żabki po każdej stronie
+48	Zasady
+49	Król
+50	Król porusza się o jedno pole w dowolnym kierunku – na boki, w górę/w dół lub po przekątnej.
+51	Hetman
+52	Hetman porusza się o dowolną liczbę pól po linii prostej – na boki, w górę/w dół lub po przekątnej (jak wieża i goniec razem). Nie może przeskakiwać.
+53	Wieża
+54	Wieża porusza się o dowolną liczbę pól na boki lub w górę/w dół. Nie może przeskakiwać.
+55	Goniec
+56	Goniec porusza się o dowolną liczbę pól po przekątnej, więc zawsze pozostaje na polach jednego koloru. Nie może przeskakiwać.
+57	Skoczek skacze w kształcie litery L: 2 pola w jednym kierunku i 1 pole pod kątem prostym. Jest jedyną figurą, która może przeskakiwać inne.
+58	Pionek
+59	Pionek porusza się o jedno pole do przodu (w górę). Ze swojego wiersza startowego może pierwszym ruchem przejść o dwa pola.
+60	Jak porusza się ta figura? (przeczytaj przed zadaniem)
+61	Pionek w drodze
+62	Biały pionek stoi na d2 (7. wiersz od góry). Porusza się tylko do przodu; pierwszy ruch może być o dwa pola, kolejne o jedno. Jaka jest najmniejsza liczba ruchów potrzebna, by dojść do górnego wiersza (zaznaczonego)?
+63	Ile wierszy musi pokonać pionek?
+64	Pierwszy ruch może być o dwa pola – to oszczędza jeden ruch.
+65	Od wiersza 2 do wiersza 8 jest 6 wierszy.
+66	Pierwszy ruch o 2 pola (pionek jest w wierszu 4), pozostają 4 wiersze po jednym: 1 + 4 = 5 ruchów w sumie.
+67	Dokąd może pójść figura?
+68	Rozpatrz figurę kierunek po kierunku i policz wolne pola w każdym z nich.
+69	Najkrótsza droga figury
+70	Znajdź, dokąd figura może dojść jednym ruchem, potem dwoma ruchami…
+71	Spróbuj też od końca: z których pól można dojść do celu jednym ruchem?
+72	Przeszukujemy wszystkie możliwości ruch po ruchu (1 ruch, 2 ruchy, …), aż trafimy na cel.
+73	Wieża atakuje cały swój wiersz i kolumnę, więc w każdym wierszu stoi najwyżej jedna wieża – razem N – i N wież mieści się na przekątnej.
+74	Gońce nie atakują się nawzajem, jeśli stoją na różnych przekątnych. Wypełnienie pierwszego i ostatniego wiersza z wyjątkiem dwóch narożników daje 2N − 2.
+75	Król atakuje sąsiednie pola. Podziel szachownicę na bloki 2×2 – w każdym mieści się najwyżej jeden król: ⌈N/2⌉².
+76	Skoczek atakuje tylko pola przeciwnego koloru, więc skoczki stojące wszystkie na jednym kolorze nigdy się nie atakują: ⌈N²/2⌉.
+77	Hetman atakuje wiersz, kolumnę i przekątne, więc w każdym wierszu mieści się najwyżej jeden. Dla N ≥ 4 można ustawić N hetmanów.
+78	Żadne dwie figury się nie atakują
+79	Najpierw znajdź, które pola atakuje jedna figura. Jak je rozmieścić, żeby nie kolidowały?
+80	Spróbuj na małej szachownicy 3×3 lub 4×4 i poszukaj wzoru.
+81	Zaznacz wszystkie ruchy
+82	Poruszaj figurą w myślach kierunek po kierunku.
+83	Doprowadź figurę do celu
+84	Znajdź pola, z których można dojść do celu jednym ruchem.
+85	Domino na planszy
+86	Każde domino zakrywa 2 pola.
+87	Ile pól ma plansza? A co, jeśli ta liczba jest nieparzysta?
+88	Domino i szachownica
+89	🁢 Brakuje dwóch pól (✖). Czy resztę da się pokryć dominami 1×2?
+90	Tak, da się
+91	Nie, nie da się
+92	Każde domino zakrywa jedno jasne i jedno ciemne pole. Ile jasnych i ciemnych pól zostaje po usunięciu?
+93	Jeśli liczby się nie zgadzają, pokrycie jest niemożliwe.
+94	Domino zawsze zakrywa jedno jasne i jedno ciemne pole, więc musiałoby ich być po tyle samo.
+95	Usunięte pola mają różne kolory, więc liczby się zgadzają. Na planszy o parzystych bokach to zawsze działa (twierdzenie Gomory’ego).
+96	Usunięte pola mają ten sam kolor, więc jednego koloru zostaje o 2 pola więcej. Nie da się pokryć.
+97	Ziarna na szachownicy
+98	Zapisz pierwsze wyrazy: 1, 2, 4, 8… Co mają wspólnego z sumą bieżącą?
+99	Suma pierwszych wyrazów jest zawsze o 1 mniejsza od następnego wyrazu.
+100	Liczba ziaren podwaja się na każdym polu.
+101	Pole 1 ma 2⁰, pole 2 ma 2¹ …
+102	Wieże Hanoi: są 3 kołki, a na pierwszym leży stos krążków różnej wielkości (największy na dole). Cel: przenieść wszystkie krążki na ostatni kołek.
+103	Przenoś tylko jeden krążek naraz – górny krążek z kołka.
+104	Nigdy nie kładź większego krążka na mniejszym.
+105	Wolne kołki możesz wykorzystać jako miejsca odkładcze.
+106	Zasady Wież Hanoi (przeczytaj przed zadaniem)
+107	Wieże Hanoi – gra
+108	Aby przenieść największy krążek, dokąd muszą wcześniej trafić wszystkie mniejsze?
+109	Najmniej ruchów
+110	Sprawdź, ile ruchów potrzeba dla 1, 2 i 3 krążków. Zauważ wzór.
+111	Dla n krążków: najpierw n − 1 krążków z drogi, potem jeden ruch, potem znów n − 1 krążków.
+112	Niech T(n) będzie liczbą ruchów. Największy krążek może się ruszyć tylko wtedy, gdy pozostałe n − 1 krążków leży na innym kołku: T(n) = T(n − 1) + 1 + T(n − 1).
+113	Jak często rusza się krążek?
+114	Ile razy rusza się największy krążek?
+115	Każdy mniejszy krążek rusza się dwa razy częściej niż następny większy.
+116	Cztery kołki
+117	Najpierw przenieś część krążków na kołek pomocniczy, używając wszystkich czterech kołków.
+118	Resztę przenieś, używając 3 kołków, a potem przenieś jeszcze raz pierwszą część.
+119	Podziel wieżę: górne k krążków przenosimy na 4 kołkach, dolne n − k krążków na 3 kołkach (2^(n−k) − 1 ruchów), potem znów górną część.
+120	Zacznij od jednego kierunku, w którym może iść figura, i zaznacz każde pole, do którego w ten sposób dojdzie.
+121	Aby przenieść wieżę z n krążków, najpierw potrzebujesz górnych n − 1 krążków na kołku pomocniczym. Który krążek rusza się pierwszy w twojej sytuacji?
+122	Zasada: aby przenieść n krążków, najpierw przenieś n − 1 krążków na kołek pomocniczy, potem największy krążek na cel, a na końcu n − 1 krążków na cel.
+123	Co będzie dalej?
+124	Zobacz, co się powtarza.
+125	Pokaż palcem każdą małą grupę.
+126	owoce
+127	zwierzęta
+128	pojazdy
+129	piłki
+130	kwiaty
+131	Co nie pasuje?
+132	Które nie pasuje?
+133	Powiedz, czym jest każdy z nich.
+134	Trzy są tego samego rodzaju.
+135	O ile więcej?
+136	Połącz w pary obrazki z obu rzędów.
+137	Policz te, które nie mają pary.
+138	Dopasuj każdy obrazek z krótszego rzędu do jednego z dłuższego.
+139	Tyle samo
+140	Którego jest więcej?
+141	Policz każdy rząd.
+142	Porównaj obie liczby.
+143	Jest ich tyle samo.
+144	Ile jest razem?
+145	Ile jest w sumie?
+146	Policz wszystkie obrazki.
+147	Policz pierwszą grupę, potem dodaj drugą.
+148	Ile zostało?
+149	❌ oznacza, że zostały zabrane.
+150	Policz te, które zostają.
+151	Grupy
+152	Policz jedną grupę.
+153	Teraz dodaj pozostałe grupy.
+154	Podziel po równo
+155	Podziel po równo. Ile dostaje każde dziecko?
+156	Dawaj każdemu dziecku po jednym, aż wszystko się rozda.
+157	Policz, ile ma jedno dziecko.
+158	Której liczby brakuje?
+159	O ile zmieniają się liczby?
+160	Dodaj tę samą liczbę.
+161	Policz figury
+162	Dotknij palcem każdej figury.
+163	Licz tylko te, których szukasz.
+164	Wpisz liczbę.
+165	Ile kroków zrobiłeś(-aś)?
+166	Znajdź liczbę dla znaku zapytania.
+167	Próbuj liczb i sprawdzaj.
+168	Użyj działania odwrotnego.
+169	Ty zaczynasz. Ile bierzesz na początku, żeby wygrać?
+170	🐻 zaczyna. Oboje grają najlepiej, jak umieją – nikt nie popełnia błędu. Kto wygrywa?
+171	Pierwszy gracz
+172	Drugi gracz
+173	Myśl od końca: przy ilu zapałkach gracz mający ruch wygrywa, a przy ilu przegrywa?
+174	Gra przeciwko komputerowi
+175	Myśl od końca: które pozycje są przegrane dla gracza mającego ruch?
+176	Kto wygrywa? (stosy)
+177	Zapisz wielkości stosów w systemie dwójkowym i dodaj każdą kolumnę.
+178	Jeśli w każdej kolumnie jest parzysta liczba jedynek, pozycja jest przegrana dla gracza mającego ruch.
+179	Przy sumie nim równej 0 gracz mający ruch przegrywa – drugi gracz zawsze odpowiada tak, by przywrócić 0. Wygrywa drugi gracz.
+180	Nim – ruch wygrywający
+181	A gdybyś wyrównał(a) stosy? Co może wtedy zrobić przeciwnik?
+182	Zawsze możesz powtórzyć ruch przeciwnika na drugim stosie.
+183	Zapisz stosy w systemie dwójkowym. Po twoim ruchu w każdej kolumnie powinna być parzysta liczba jedynek.
+184	Przy dwóch stosach wyrównaj je: z większego zabierz różnicę.
+185	Łamanie czekolady
+186	Ile kawałków masz na początku, a ile na końcu? Co dzieje się z liczbą kawałków przy jednym złamaniu?
+187	Każde złamanie dodaje dokładnie jeden kawałek. To, jak łamiesz, nie ma znaczenia.
+188	Turniej – rundy
+189	Ilu graczy zostaje po 1. rundzie?
+190	Liczba zmniejsza się o połowę w każdej rundzie. Ile razy możesz podzielić na pół, aż zostanie 1?
+191	Turniej – mecze
+192	Ilu graczy trzeba wyeliminować, żeby został mistrz?
+193	Jeden mecz = jeden wyeliminowany gracz.
+194	Rycerze i łgarze
+195	Jeśli dojdziesz do sprzeczności, twoje założenie było błędne – spróbuj przeciwnego.
+196	Sprawdzamy przypadki: rycerz musi mówić prawdę, łgarz musi kłamać. Każde założenie sprawdzamy ze wszystkimi zdaniami.
+197	Kto stłukł okno?
+198	Sprawdzaj po kolei każdego podejrzanego: jeśli to on, ile wypowiedzi byłoby prawdziwych?
+199	Dla każdego podejrzanego liczymy, ile wypowiedzi byłoby prawdziwych:
+200	jest parzysta

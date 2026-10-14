@@ -1,0 +1,200 @@
+1	Nous listons les diviseurs par paires (d, n : d).
+2	Deux bus
+3	minutes
+4	Il te faut un nombre qui soit un multiple des deux durées.
+5	Le plus petit commun multiple.
+6	Multiples de deux nombres
+7	Compte séparément les multiples de chaque nombre.
+8	Les nombres divisibles par les deux ont été comptés deux fois – soustrais-les une fois.
+9	Un zéro final vient d’une paire de facteurs 2 et 5. Lequel est le plus rare dans le produit ?
+10	Il y a bien plus de deux que de cinq, donc ce sont les cinq qui décident.
+11	Le plus grand carré
+12	Le côté du carré doit diviser les deux dimensions.
+13	Il te faut le plus grand commun diviseur.
+14	Tirer une bille
+15	Probabilité = cas favorables : cas possibles.
+16	Combien y a-t-il de billes en tout, et combien sont favorables ?
+17	Combien de résultats y a-t-il quand on lance deux dés ?
+18	Lancers de pièce
+19	Deux billes, sans remise
+20	Après avoir tiré une rouge, combien de rouges et combien de billes restent-ils ?
+21	Au moins un … (et compagnie)
+22	Soustrais de 1 la probabilité de l’événement contraire.
+23	Pourcentage d’un nombre
+24	Trouve d’abord 1 % du tout.
+25	Prix qui monte, prix qui baisse
+26	Prends toujours le pourcentage du prix actuel.
+27	Calcule d’abord le prix après la hausse.
+28	Partage selon un rapport
+29	Combien y a-t-il de parts en tout ?
+30	Trouve la valeur d’une part.
+31	Fraction d’un nombre
+32	Multiplie ensuite par le nombre de parts.
+33	Quel pourcentage ?
+34	Forme la fraction partie / tout.
+35	Convertis la fraction en centièmes.
+36	Quel jour sera-t-on ?
+37	Une semaine a 7 jours. Que se passe-t-il après 7 jours ?
+38	Horaire
+39	Convertis les heures en minutes ou compte jusqu’à une heure pleine.
+40	D’abord jusqu’à l’heure pleine suivante, puis les heures entières, puis les minutes restantes.
+41	Janvier
+42	Février
+43	Mars
+44	Avril
+45	Mai
+46	Juin
+47	Juillet
+48	Août
+49	Septembre
+50	Octobre
+51	Novembre
+52	Décembre
+53	Calendrier
+54	Combien de jours ce mois a-t-il ? Trouve le reste de la division par 7.
+55	Le jour de la semaine se décale d’autant de jours.
+56	Angle entre les aiguilles
+57	La grande aiguille avance de 6° par minute, la petite de 0,5° par minute.
+58	Calcule où est chaque aiguille mesurée depuis 12 et soustrais.
+59	💡 Un appui inverse la case et ses voisines. Éteins toutes les lumières (○).
+60	🚀 Trace du doigt le plus court chemin vers 🏁. Sans traverser les murs.
+61	Pont de nuit
+62	La torche doit toujours être ramenée. Qui doit la rapporter ?
+63	Les deux plus lents doivent traverser ensemble pour que leur temps ne soit pas compté deux fois.
+64	Nous essayons tous les plans (un ordinateur les a explorés) et cherchons le plus court :
+65	
+66	Cruches d’eau
+67	Note l’état sous forme de paire (première cruche, deuxième cruche) et essaie les étapes possibles.
+68	Essaie de commencer par remplir la plus grande cruche et de verser dans la plus petite.
+69	États (première, deuxième cruche) qui forment le chemin le plus court :
+70	Et si tu partageais les pièces en trois tas ? Que t’apprend une pesée de deux tas ?
+71	Chaque pesée a 3 résultats (gauche plus léger, droite plus léger, équilibre), elle peut donc départager 3 possibilités.
+72	Une pesée partage les possibilités en tiers : compare deux tas, le troisième reste de côté.
+73	rouge
+74	bleu
+75	vert
+76	Toile avec une lettre
+77	Écris chaque nombre à l’aide de x. Le cercle à côté de x est, par exemple, x + 2.
+78	Combien la flèche ajoute-t-elle ?
+79	Trouve deux nombres connus reliés par des flèches de cette couleur. De combien diffèrent-ils ?
+80	Si le chemin a plusieurs flèches, répartis la différence entre elles (après avoir soustrait les flèches d’autres couleurs).
+81	🕸️ Les flèches de la même couleur ajoutent le même nombre (certaines valeurs sont inconnues). Remplis les cercles vides. Touche un cercle et tape.
+82	🕸️ Chaque flèche ajoute le nombre de sa couleur. Remplis les cercles vides. Touche un cercle et tape.
+83	Toile
+84	Trouve une flèche reliant deux nombres connus – de combien diffèrent-ils ? Cela te dit ce qu’ajoute sa couleur.
+85	Les flèches d’une même couleur ajoutent toujours la même chose. La toile « fonctionne » si chaque flèche convient.
+86	Commence là où deux nombres connus sont reliés par une flèche : leur différence est la valeur de cette couleur. Continue ensuite le long des flèches (on ajoute en avançant, on soustrait en reculant).
+87	Touche d’abord un cercle vide.
+88	Remplis tous les cercles vides.
+89	Quelque chose ne va pas. Les flèches en pointillés montrent où les nombres ne concordent pas avec la couleur de la flèche.
+90	Essaie d’abord un cercle à côté d’un nombre connu le long d’une flèche dont tu connais la valeur.
+91	Combien de parcours ?
+92	🎪 De l’entrée 🚪 à la sortie 🏁, tu marches de façon à passer par chaque salle exactement une fois. Tu ne peux utiliser que les portes ouvertes. De combien de façons peut-on le faire ?
+93	Commence à l’entrée et essaie les possibilités pas à pas. Où le parcours se divise-t-il ?
+94	Note les parcours comme une suite de salles. Les impasses montrent quels parcours échouent.
+95	Parcours de l’exposition
+96	🎪 Entre par la 🚪 et traverse chaque salle exactement une fois, pour finir à la sortie 🏁. Touche les salles voisines par les portes ouvertes.
+97	🎪 Entre par la 🚪 et traverse chaque salle exactement une fois. Touche les salles voisines par les portes ouvertes.
+98	Si tu es bloqué dans une impasse, reviens avec le bouton Retour et essaie un autre chemin.
+99	Une salle avec une seule porte doit être le début ou la fin du parcours. Garde de telles salles pour la fin.
+100	Regarde les salles avec une seule sortie (impasses). On ne peut y entrer qu’à la fin du parcours, garde-les donc pour la fin.
+101	Remplis les numéros des salles
+102	🎪 Un visiteur est allé de l’entrée 🚪 à la sortie 🏁 en passant exactement une fois dans chaque salle. Les salles sont numérotées dans l’ordre de la visite 1, 2, 3, … Remplis les numéros manquants. Touche une salle vide et tape.
+103	Regarde les voisines : le numéro n+1 est toujours dans une salle voisine par une porte ouverte.
+104	Une salle avec une seule porte est la fin ou le début. Essaie de remonter depuis la sortie.
+105	Le numéro n+1 est toujours à côté du numéro n par une porte ouverte. Pars des numéros connus et écarte les impasses.
+106	Tu es déjà passé par cette salle. Chacune ne peut être utilisée qu’une seule fois.
+107	Il n’y a pas de porte dans cette direction. Touche une salle voisine avec un passage ouvert.
+108	Tu as visité toutes les salles mais tu n’es pas à la sortie. Essaie un autre parcours.
+109	Retour
+110	D’ici, tu ne peux plus visiter toutes les salles. Reviens quelques pas en arrière (↩ Retour).
+111	Vérifie de ne pas laisser derrière toi une salle que tu ne peux plus atteindre (une impasse).
+112	Continue vers la salle marquée.
+113	Touche d’abord une salle vide.
+114	Remplis toutes les salles vides.
+115	Certains numéros ne conviennent pas. Rappelle-toi : n+1 est toujours dans une salle voisine par une porte ouverte.
+116	Essaie une salle à côté d’un numéro connu : tu cherches le numéro suivant.
+117	Apprenti
+118	Chercheur
+119	Stratège
+120	Logicien
+121	Maître
+122	Grand maître
+123	Légende
+124	Sage
+125	Sage cosmique
+126	Pieuvre
+127	Hibou
+128	Fusée
+129	Panda
+130	Dragon
+131	Licorne
+132	Couronne
+133	Classique
+134	Océan
+135	Forêt
+136	Coucher de soleil
+137	Grenouille
+138	Lion
+139	Pingouin
+140	Dinosaure
+141	Magicien
+142	Ninja
+143	Héros
+144	Aigle
+145	Extraterrestre
+146	Bonbon
+147	Ciel nocturne
+148	Menthe
+149	Galaxie
+150	Or
+151	Nouveaux autocollants !
+152	Médaille :
+153	Mission accomplie :
+154	Toutes les missions du jour sont terminées ! Coffre : +40 💎
+155	Médailles de monde pour les classes 2 à 9
+156	Album d’autocollants et de médailles
+157	Chaque niveau terminé donne un autocollant. Termine un monde entier d’une classe pour gagner une médaille d’or (+100 💎). Il existe des médailles pour les classes 2 à 9.
+158	Résous 3 tâches
+159	Résous 5 tâches
+160	Résous 8 tâches
+161	Gagne 8 étoiles
+162	Gagne 15 étoiles
+163	Obtiens 3 étoiles sur 2 tâches
+164	Résous 3 tâches sans indice
+165	Essaie 3 sujets différents
+166	Résous le défi quotidien
+167	Missions du jour
+168	Coffre ouvert : +40 💎. De nouvelles missions demain !
+169	Termine les trois missions pour ouvrir le coffre : +40 💎.
+170	est le suivant
+171	gagne !
+172	a pris le dernier
+173	Encore
+174	Démo
+175	Essaie toi-même
+176	🐻 et 🐰 jouent – touche le nombre d’allumettes à prendre.
+177	Casse ce morceau
+178	Cassures
+179	morceaux
+180	Touche un morceau pour le casser en deux. Casse tout en carrés isolés !
+181	Éliminer un joueur
+182	Matchs joués
+183	Chaque match = un joueur sort. Touche le joueur qui a perdu.
+184	⬅️ Plateau gauche
+185	Hors de la balance
+186	Plateau droit ➡️
+187	pièce
+188	Pesées
+189	Peser
+190	Annuler l’hypothèse
+191	Deviner la fausse
+192	Touche la pièce que tu crois fausse.
+193	Nouvelle partie
+194	Pose des pièces sur les deux plateaux.
+195	Pose le même nombre de pièces sur les deux plateaux.
+196	Équilibré ⚖️
+197	Le côté gauche est plus léger
+198	Le côté droit est plus léger
+199	Une pièce est plus légère. Touche une pièce pour la déplacer (gauche → droite → hors balance), puis appuie sur « Peser ».
+200	Objectif

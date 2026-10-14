@@ -1,0 +1,200 @@
+1	pasos
+2	Prueba los pasos: llenar, vaciar, verter.
+3	min
+4	Aquí
+5	Allí
+6	Tiempo
+7	Cruzar con la linterna
+8	Elige 1 o 2 personas del lado de la linterna 🔦 y pulsa «Cruzar». Una pareja camina al ritmo del más lento.
+9	Sacado
+10	la mayoría de un tipo
+11	Saca a ciegas
+12	Ya tienes este orden.
+13	¡Orden nuevo! ✓
+14	Órdenes encontrados
+15	Toca a los niños para ponerlos en fila. ¡Encuentra todos los órdenes distintos!
+16	Siguiente orden
+17	Reiniciar todo
+18	Conjuntos formados
+19	Elige uno de cada fila y pulsa «Añadir». ¡Encuentra todos los conjuntos distintos!
+20	Añadir
+21	Ya lo tienes.
+22	¡Nuevo! ✓
+23	Parejas
+24	Pareja eliminada.
+25	Toca a dos personas: se unen con una línea. ¡Une cada pareja exactamente una vez!
+26	Caminos encontrados
+27	No puedes ir allí.
+28	Ya tienes este camino.
+29	¡Camino nuevo! ✓
+30	Mueve el 🤖 a la derecha o hacia abajo hasta la 🏁. ¡Encuentra todos los caminos distintos!
+31	Dar uno
+32	Quedan
+33	No es igual: inténtalo otra vez.
+34	Toca a un niño: recibe uno. ¡Reparte todo a partes iguales!
+35	Toca los dibujos para contar. El número crece con cada toque.
+36	Dominós colocados
+37	casillas libres
+38	Toca dos casillas vecinas para colocar un dominó. Toca un dominó para quitarlo.
+39	Mostrado
+40	tamaño
+41	Siguiente
+42	Jugar todo
+43	Intentos
+44	las dos 🔴
+45	suma
+46	Lanza dos dados muchas veces y observa qué sumas salen más.
+47	Saca a ciegas (y devuelve). Observa con qué frecuencia aparece cada color.
+48	Saca dos canicas sin devolverlas. ¿Con qué frecuencia son las dos 🔴?
+49	Números que quedan
+50	Toca un número que no encaje con las pistas: se tacha. ¡Quedará uno!
+51	Tabla de ayuda: toca para alternar vacío ➜ ✗ (no) ➜ ✓ (sí).
+52	Días transcurridos
+53	de 100
+54	Calentamiento
+55	Primeros trucos
+56	Reglas raras
+57	Al revés: pierde quien coja la última
+58	Dos montones
+59	Maestro de los palillos
+60	Palillos: entrenamiento
+61	Juega contra el ordenador. Al principio es fácil, luego juega mejor y las reglas cambian. Gana un nivel para desbloquear el siguiente.
+62	etapa actual
+63	Continuar
+64	Empezar
+65	nivel
+66	Nivel
+67	Sin derrotas: ¡genial!
+68	Lista de niveles
+69	Siguiente nivel
+70	Pista
+71	Echa otro vistazo al juego.
+72	Palillos: nivel
+73	Niveles
+74	1 · Principiante
+75	2 · Fácil
+76	3 · Medio
+77	4 · Difícil
+78	5 · Experto
+79	6 · Maestro
+80	Solo hacen falta «únicos desnudos» y hay muchos datos iniciales.
+81	También necesitas «únicos ocultos» en una fila, columna o bloque.
+82	Las mismas técnicas pero con muchos menos datos iniciales.
+83	Requiere candidatos bloqueados o parejas desnudas.
+84	Requiere parejas ocultas o tríos desnudos.
+85	Técnicas avanzadas (X-Wing y más allá): para maestros.
+86	Muchos datos iniciales (23).
+87	Menos datos iniciales (19).
+88	Solo 12 datos iniciales; hacen falta únicos ocultos.
+89	Solo unos 11 datos iniciales.
+90	Solo unos 10 datos iniciales.
+91	El menor número posible de datos iniciales (9).
+92	El número de datos iniciales disminuye con el nivel.
+93	Único desnudo
+94	Único oculto
+95	Candidatos bloqueados
+96	Pareja desnuda
+97	Pareja oculta
+98	Trío desnudo
+99	X-Wing
+100	fila
+101	columna
+102	Pistas
+103	Toca primero una casilla vacía.
+104	Algunos números se repiten: mira las casillas marcadas con «!».
+105	¡Sudoku resuelto!
+106	pistas
+107	¡Nuevo récord personal!
+108	Tu mejor marca
+109	Cerrar
+110	Notas
+111	Primero corrige los números repetidos («!»).
+112	 (Otra pista muestra más.)
+113	¡Todo correcto hasta ahora: sigue así!
+114	Tamaño
+115	Acertijo n.º
+116	mejor
+117	Deshacer
+118	Comprobar
+119	Error en la app
+120	Idea / petición
+121	Pregunta
+122	Tu nombre (opcional)
+123	Describe qué pasó o qué te gustaría cambiar…
+124	Mensaje
+125	Enviar
+126	Descríbelo en pocas palabras, por favor.
+127	¡Gracias! Tu mensaje se ha enviado.
+128	Contactar con soporte
+129	Cuéntanos si algo no funciona, una respuesta parece errónea o tienes una idea.
+130	Adjuntamos automáticamente la página, el título de la tarea y el tipo de dispositivo para poder encontrar el problema. No escribas aquí contraseñas ni apellidos.
+131	Cancelar
+132	El soporte necesita la conexión con el servidor, que no está configurada. Díselo a tu profesor, por favor.
+133	Contactar con soporte / informar de un problema
+134	Informar de un problema / soporte
+135	Algunos números se repiten en una fila, columna o bloque. Mira las casillas marcadas con «!».
+136	Algunos números se repiten: mira las casillas marcadas con «!». ¿Cuál hay que cambiar?
+137	Cuando se coloca un número, otras casillas tienen menos opciones. Sigue: busca siempre una casilla donde solo quepa un número.
+138	Aquí está la solución terminada:
+139	Pulsa una casilla y fíjate qué luces cambian. Cada casilla necesita pulsarse como mucho una vez.
+140	Pulsar una casilla la invierte a ella y a sus vecinas. Pulsar la misma casilla dos veces se anula, así que cada casilla necesita como mucho una pulsación; el orden no importa.
+141	Repitámoslo paso a paso:
+142	Esta vez ganó el ordenador, ¡pero puedes jugar otra vez! Piensa qué jugada le deja a tu rival una posición «perdedora».
+143	Desde aquí no hay jugada ganadora: el ordenador tendría que equivocarse. Reinicia y observa dónde falló.
+144	Busca una jugada que deje a tu rival en una posición perdedora. Con dos montones, intenta igualarlos.
+145	Con dos montones, simplemente iguálalos: quita la diferencia del mayor. Luego imita a tu rival en el otro montón.
+146	En la versión «pierde quien coja la última», juega igual hasta que solo queden montones de tamaño 1; entonces deja a tu rival una cantidad impar de esos montones.
+147	Desconectado de la clase.
+148	ahora
+149	Error de conexión
+150	Servidor no configurado
+151	El área de profesores y padres necesita un servidor (Cloudflare Worker). Los pasos de configuración están en server/README.md. Una vez configurado, pon su dirección en js/config.js.
+152	curso
+153	Todavía no hay datos: el alumno no ha resuelto nada o no ha estado conectado.
+154	última actividad
+155	estrellas
+156	puntos
+157	tareas
+158	racha
+159	Puntos fuertes y débiles (estrellas de media)
+160	Tareas recientes
+161	Código para padres
+162	Eliminar alumno
+163	Conectado con el profesor
+164	Dáselo a un padre o madre para que pueda ver tu progreso en el área de acceso para padres.
+165	Sincronizar ahora
+166	Hecho
+167	Desconectar
+168	Código del profesor (p. ej. K7M2QX)
+169	Conectar con un profesor
+170	Tras conectarte, tu profesor verá tu nombre y tu progreso. No se envía nada más.
+171	Conectar
+172	¡Conectado!
+173	Profesor, administrador, padres
+174	Acceso de profesor / administrador
+175	Acceso para padres
+176	Área del profesor
+177	Correo electrónico (administrador: admin)
+178	Contraseña
+179	Iniciar sesión
+180	Las cuentas de profesor las crea el administrador. El administrador inicia sesión como «admin».
+181	admin
+182	profesor
+183	Cerrar sesión
+184	Clases
+185	Tareas asignadas
+186	Base de tareas
+187	Soporte
+188	Profesores
+189	Clase
+190	Abre LogiQ → Perfil → «Conectar con un profesor» → escribe este código.
+191	Mostrar el código a pantalla completa
+192	Letra de la clase
+193	Clase creada
+194	Nueva clase
+195	Todavía no tienes ninguna clase. Crea una arriba y da el código a los alumnos.
+196	Código para los alumnos
+197	Abrir
+198	Eliminar clase
+199	¿Eliminar la clase?
+200	Se eliminarán todos los alumnos y su progreso. Esta acción no se puede deshacer.

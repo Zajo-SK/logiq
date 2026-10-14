@@ -1,0 +1,200 @@
+1	Gyűjts 30 matricát.
+2	Teljes album
+3	Gyűjts össze minden matricát.
+4	Első érem
+5	Fejezz be egy egész világot egy évfolyamon.
+6	Éremgyűjtemény
+7	Szerezz 5 világérmet.
+8	Küldetésfutó
+9	Teljesítsd az összes napi küldetést 5 napon.
+10	Hétnapos sorozat
+11	Oldj meg feladatokat 7 egymást követő napon.
+12	Hónapos sorozat
+13	Oldj meg feladatokat 30 egymást követő napon.
+14	Százas
+15	Fejezz be 100 feladatot.
+16	Hegymászó
+17	Fejezz be 300 feladatot.
+18	Csillagos ég
+19	Szerezz 150 csillagot.
+20	2000 pont
+21	Szerezz 2000 pontot.
+22	Egyedül
+23	Oldj meg 10 feladatot tipp nélkül.
+24	Tökéletes szint
+25	Fejezz be egy szintet mind a 3 csillaggal.
+26	Vakmerő
+27	Oldj meg egy feladatot magasabb évfolyamról.
+28	A zöld 🐸 békák csak jobbra → ugranak, a barnák csak balra ←. Lépj a szabad levélre, vagy ugorj át EGY békát (bármilyen színűt), ha a mögötte lévő levél szabad. Visszafelé nem lehet menni. Cseréld meg a helyüket!
+29	levél
+30	szabad
+31	jobbra haladó béka
+32	balra haladó béka
+33	Elakadtál 🙂 Vonj vissza egy lépést, vagy kezdd újra.
+34	Ez a béka most nem tud ugrani. Próbálj egy másikat.
+35	Innen nincs tovább – vonj vissza egy lépést.
+36	Innen nincs tovább – vonj vissza egy lépést, vagy kezdd újra.
+37	Itt a teljes megoldás:
+38	Próbáld ki a békákkal: koppints arra a békára, amelyiknek lépnie kell.
+39	Hogyan ugranak a békák (olvasd el a feladat előtt)
+40	Próbáld először kevesebb békával.
+41	Békák: hány lépés kell?
+42	Írd fel a lépéseket 1, 2 és 3 békára.
+43	A lépések száma 3, 8, 15, 24 … Rájössz a képletre?
+44	A békák helyet cseréltek!
+45	A lehető legkevesebb lépés!
+46	Kevesebb lépésből is megoldható – próbáld újra!
+47	Békák mindkét oldalon
+48	Szabályok
+49	Király
+50	A király egy mezőt lép bármelyik irányba – oldalra, fel/le vagy átlósan.
+51	Vezér
+52	A vezér bármennyit léphet egyenes vonalban – oldalra, fel/le vagy átlósan (a bástya és a futó együtt). Nem ugorhat át bábut.
+53	Bástya
+54	A bástya bármennyit léphet oldalra vagy fel/le. Nem ugorhat át bábut.
+55	Futó
+56	A futó bármennyit léphet átlósan, ezért mindig az egyik színű mezőkön marad. Nem ugorhat át bábut.
+57	A huszár L alakban ugrik: 2 mezőt az egyik irányba, 1 mezőt arra merőlegesen. Ez az egyetlen bábu, amely átugorhat más bábukat.
+58	Gyalog
+59	A gyalog egy mezőt lép előre (felfelé). A kiindulósorából az első lépése lehet két mező is.
+60	Hogyan lép a bábu? (olvasd el a feladat előtt)
+61	Úton lévő gyalog
+62	Egy fehér gyalog áll a d2 mezőn (felülről a 7. sor). Csak előre lép; az első lépése lehet két mező, a későbbiek egy mező. Legalább hány lépéssel ér el a legfelső (kiemelt) sorba?
+63	Hány soron kell átkelnie a gyalognak?
+64	Az első lépés két mező hosszú is lehet – ez megspórol egy lépést.
+65	A 2. sortól a 8.-ig 6 sor van.
+66	Az első lépés 2 mező (a gyalog a 4. sorban van), marad 4 sor egyesével: összesen 1 + 4 = 5 lépés.
+67	Hová mehet a bábu?
+68	Vedd sorra az irányokat, és számold meg a szabad mezőket mindegyikben.
+69	A bábu legrövidebb útja
+70	Keresd meg, hová juthat a bábu egy lépéssel, aztán két lépéssel…
+71	Próbáld visszafelé is: mely mezőkről érhető el a cél egy lépéssel?
+72	Lépésről lépésre (1 lépés, 2 lépés, …) átvizsgáljuk az összes lehetőséget, amíg el nem érjük a célt.
+73	A bástya a teljes sorát és oszlopát támadja, ezért minden sorban legfeljebb egy bástya lehet – összesen N –, és N bástya elfér az átlón.
+74	A futók nem támadják egymást, ha különböző átlókon állnak. Ha az első és az utolsó sort kitöltjük két sarok kivételével, 2N − 2 jön ki.
+75	A király a szomszédos mezőket támadja. Oszd fel a táblát 2×2-es blokkokra – mindegyikben legfeljebb egy király lehet: ⌈N/2⌉².
+76	A huszár csak az ellenkező színű mezőket támadja, ezért az azonos színű mezőkön álló huszárok sosem támadják egymást: ⌈N²/2⌉.
+77	A vezér támadja a sort, az oszlopot és az átlókat, ezért minden sorban legfeljebb egy lehet. N ≥ 4 esetén N vezér elhelyezhető.
+78	Egyik sem támadja a másikat
+79	Először keresd meg, mely mezőket támadja egy bábu. Hogyan tudod úgy szétszórni őket, hogy ne ütközzenek?
+80	Próbálj ki egy kis 3×3-as vagy 4×4-es táblát, és keress mintát.
+81	Jelöld meg az összes lépést
+82	Lépj a bábuval fejben irányról irányra.
+83	Vezesd a bábut a célba
+84	Keresd meg azokat a mezőket, ahonnan a cél egy lépéssel elérhető.
+85	Dominók a táblán
+86	Minden dominó 2 mezőt fed le.
+87	Hány mezője van a táblának? Mi van, ha a szám páratlan?
+88	Dominók és a sakktábla
+89	🁢 Két mező (✖) hiányzik. Lefedhető a többi 1×2-es dominókkal?
+90	Igen, lefedhető
+91	Nem, nem fedhető le
+92	Minden dominó egy világos és egy sötét mezőt fed le. Hány világos és hány sötét mező marad az eltávolítás után?
+93	Ha a darabszámok nem egyeznek, a lefedés lehetetlen.
+94	Egy dominó mindig egy világos és egy sötét mezőt fed le, tehát egyenlő számúnak kellene lenniük.
+95	Az eltávolított mezők különböző színűek, így a darabszámok egyeznek. Páros oldalú táblán ez mindig működik (Gomory tétele).
+96	Az eltávolított mezők azonos színűek, így az egyik színből 2-vel több mező marad. Nem fedhető le.
+97	Gabonaszemek a sakktáblán
+98	Írd fel az első tagokat: 1, 2, 4, 8… Mi a közös bennük és a részösszegben?
+99	Az első tagok összege mindig 1-gyel kisebb, mint a következő tag.
+100	A gabonaszemek száma minden mezőn megduplázódik.
+101	Az 1. mezőn 2⁰ van, a 2.-on 2¹ …
+102	Hanoi tornyai: 3 rúd van, és az elsőn különböző méretű korongok halmaza (alul a legnagyobb). Cél: az összes korongot áttenni az utolsó rúdra.
+103	Egyszerre csak egy korongot mozgass – a rúd legfelső korongját.
+104	Soha ne tegyél nagyobb korongot kisebbre.
+105	A szabad rudakat használhatod parkolóhelyként.
+106	A Hanoi tornyai szabályai (olvasd el a feladat előtt)
+107	Hanoi tornyai – a játék
+108	A legnagyobb korong mozgatásához hová kell előtte vinni az összes kisebbet?
+109	Legkevesebb lépés
+110	Találd ki, hány lépés kell 1, 2 és 3 korongnál. Vedd észre a mintát.
+111	n korongnál: először n − 1 korongot állíts el az útból, aztán egy lépés, aztán megint n − 1 korong.
+112	Legyen T(n) a lépések száma. A legnagyobb korong csak akkor mozdulhat, ha a többi n − 1 korong egy másik rúdon van: T(n) = T(n − 1) + 1 + T(n − 1).
+113	Milyen gyakran mozog egy korong?
+114	Hányszor mozog a legnagyobb korong?
+115	Minden kisebb korong kétszer olyan gyakran mozog, mint a következő nagyobb.
+116	Négy rúd
+117	Először vigyél át néhány korongot egy segédrúdra mind a négy rudat használva.
+118	A többit vidd át 3 rúddal, aztán az első részt mozgasd újra.
+119	Oszd ketté a tornyot: a felső k korong 4 rúddal mozog, az alsó n − k korong 3 rúddal (2^(n−k) − 1 lépés), aztán a felső rész újra.
+120	Indulj egyetlen iránnyal, amerre a bábu léphet, és jelöld meg az összes mezőt, amelyet így elér.
+121	Egy n korongból álló torony mozgatásához először a felső n − 1 korongnak a segédrúdon kell lennie. Melyik korong mozog először a te állásodban?
+122	Szabály: n korong mozgatásához előbb vidd át az n − 1 korongot a segédrúdra, aztán a legnagyobb korongot a célra, végül az n − 1 korongot a célra.
+123	Mi következik?
+124	Nézd meg, mi ismétlődik.
+125	Mutass rá minden kis csoportra.
+126	gyümölcs
+127	állatok
+128	járművek
+129	labdák
+130	virágok
+131	Melyik nem illik közéjük?
+132	Melyik nem tartozik ide?
+133	Mondd meg, melyik micsoda.
+134	Három azonos fajta.
+135	Hánnyal van több?
+136	Párosítsd a képeket a két sorból.
+137	Számold meg, melyiknek nincs párja.
+138	Párosíts a rövidebb sor minden elemét a hosszabb sor egy-egy elemével.
+139	Egyenlő
+140	Melyikből van több?
+141	Számold meg mindkét sort.
+142	Hasonlítsd össze a két számot.
+143	Egyenlők.
+144	Hány van összesen?
+145	Hány van együtt?
+146	Számold meg az összes képet.
+147	Számold meg az első csoportot, aztán add hozzá a másodikat.
+148	Hány marad?
+149	Az ❌ azt jelenti, hogy elveszik.
+150	Számold meg, amelyik marad.
+151	Csoportok
+152	Számold meg az egyik csoportot.
+153	Most add hozzá a többi csoportot.
+154	Osszuk el egyenlően
+155	Osszuk el egyenlően. Hányat kap egy gyerek?
+156	Adj minden gyereknek egyet-egyet, amíg el nem fogy.
+157	Számold meg, hány van egy gyereknél.
+158	Melyik szám hiányzik?
+159	Mennyivel változnak a számok?
+160	Adj hozzá mindig ugyanannyit.
+161	Számold meg az alakzatokat
+162	Érintsd meg ujjaddal az alakzatokat egyenként.
+163	Csak azokat számold, amiket keresel.
+164	Írd be a számot.
+165	Hány lépést tettél?
+166	Keresd meg a kérdőjelhez tartozó számot.
+167	Próbálj számokat, és ellenőrizd.
+168	Használd a fordított műveletet.
+169	Te kezdesz. Hányat vegyél el először, hogy nyerj?
+170	🐻 kezd. Mindketten a lehető legjobban játszanak – senki sem hibázik. Ki nyer?
+171	Az első játékos
+172	A második játékos
+173	Gondolkodj visszafelé: hány gyufa mellett nyer az, aki lépésre kerül, és hány mellett veszít?
+174	Játék a számítógép ellen
+175	Gondolkodj visszafelé: mely állások vesztők annak, aki lépésre kerül?
+176	Ki nyer? (kupacok)
+177	Írd fel a kupacok méretét kettes számrendszerben, és add össze oszloponként.
+178	Ha minden oszlopban páros számú egyes van, az állás vesztes annak, aki lépésre kerül.
+179	0 nim-összegnél a lépésre kerülő veszít – a második játékos mindig úgy válaszol, hogy visszaállítsa a 0-t. A második játékos nyer.
+180	Nim – a nyerő lépés
+181	Mi lenne, ha egyenlővé tennéd a kupacokat? Mit tehet akkor az ellenfeled?
+182	A másik kupacnál mindig lemásolhatod az ellenfeled lépését.
+183	Írd fel a kupacokat kettes számrendszerben. A lépésed után minden oszlopban páros számú egyesnek kell lennie.
+184	Két kupacnál tedd egyenlővé őket: a nagyobbikból vedd el a különbséget.
+185	Csokoládétörés
+186	Hány darabod van az elején és a végén? Mi történik a darabszámmal egy töréskor?
+187	Minden törés pontosan egy darabbal növeli a darabok számát. Mindegy, hogyan töröd.
+188	Bajnokság – fordulók
+189	Hány játékos marad az 1. forduló után?
+190	A szám minden fordulóban felére csökken. Hányszor felezhetsz, amíg 1 marad?
+191	Bajnokság – mérkőzések
+192	Hány játékosnak kell kiesnie, hogy egy bajnok maradjon?
+193	Egy mérkőzés = egy kiesett játékos.
+194	Lovagok és hazugok
+195	Ha ellentmondásra jutsz, a feltevésed rossz volt – próbáld az ellenkezőjét.
+196	Eseteket vizsgálunk: a lovagnak igazat kell mondania, a hazugnak hazudnia. Minden feltevést ellenőrzünk az összes mondattal.
+197	Ki törte be az ablakot?
+198	Próbáld végig a gyanúsítottakat: ha ő volt, hány állítás lenne igaz?
+199	Minden gyanúsítottnál megszámoljuk, hány állítás lenne igaz:
+200	páros

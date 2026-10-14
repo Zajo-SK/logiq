@@ -1,0 +1,200 @@
+1	Dzielniki zapisujemy parami (d, n : d).
+2	Dwa autobusy
+3	minut
+4	Potrzebujesz liczby, która jest wielokrotnością obu czasów.
+5	Najmniejsza wspólna wielokrotność.
+6	Wielokrotności dwóch liczb
+7	Policz osobno wielokrotności każdej z liczb.
+8	Liczby podzielne przez obie policzyliśmy dwa razy – odejmij je raz.
+9	Zero na końcu powstaje z pary czynników 2 i 5. Który występuje rzadziej w iloczynie?
+10	Dwójek jest znacznie więcej niż piątek, więc o wszystkim decydują piątki.
+11	Największy kwadrat
+12	Bok kwadratu musi dzielić oba wymiary.
+13	Potrzebujesz największego wspólnego dzielnika.
+14	Losowanie kulki
+15	Prawdopodobieństwo = zdarzenia sprzyjające : wszystkie możliwe.
+16	Ile jest wszystkich kulek, a ile sprzyjających?
+17	Ile jest wyników rzutu dwiema kostkami?
+18	Rzuty monetą
+19	Dwie kulki, bez zwracania
+20	Po wylosowaniu czerwonej, ile czerwonych i ile kulek w ogóle zostaje?
+21	Co najmniej jeden … (i podobne)
+22	Odejmij od 1 prawdopodobieństwo zdarzenia przeciwnego.
+23	Procent liczby
+24	Najpierw znajdź 1% całości.
+25	Cena w górę, cena w dół
+26	Zawsze licz procent z aktualnej ceny.
+27	Najpierw oblicz cenę po podwyżce.
+28	Podział w stosunku
+29	Ile jest wszystkich części?
+30	Znajdź wartość jednej części.
+31	Ułamek liczby
+32	Potem pomnóż przez liczbę części.
+33	Ile procent?
+34	Utwórz ułamek część / całość.
+35	Zamień ułamek na setne części.
+36	Jaki to będzie dzień?
+37	Tydzień ma 7 dni. Co się dzieje po 7 dniach?
+38	Rozkład jazdy
+39	Zamień godziny na minuty albo dolicz do pełnej godziny.
+40	Najpierw do najbliższej pełnej godziny, potem pełne godziny, potem pozostałe minuty.
+41	styczeń
+42	luty
+43	marzec
+44	kwiecień
+45	maj
+46	czerwiec
+47	lipiec
+48	sierpień
+49	wrzesień
+50	październik
+51	listopad
+52	grudzień
+53	Kalendarz
+54	Ile dni ma ten miesiąc? Znajdź resztę z dzielenia przez 7.
+55	Dzień tygodnia przesuwa się o tyle dni.
+56	Kąt między wskazówkami
+57	Wskazówka minutowa przesuwa się o 6° na minutę, godzinowa o 0,5° na minutę.
+58	Oblicz, gdzie jest każda wskazówka, mierząc od godziny 12, i odejmij.
+59	💡 Dotknięcie zmienia stan pola i jego sąsiadów. Zgaś wszystkie światła (○).
+60	🚀 Narysuj palcem najkrótszą drogę do 🏁. Nie przechodź przez ściany.
+61	Most nocą
+62	Latarkę trzeba zawsze przynieść z powrotem. Kto powinien ją odnieść?
+63	Dwie najwolniejsze osoby powinny przejść razem, żeby ich czas nie liczył się dwa razy.
+64	Sprawdzamy wszystkie plany (przeszukał je komputer) i szukamy najkrótszego:
+65	
+66	Dzbanki z wodą
+67	Zapisz stan jako parę (pierwszy dzbanek, drugi dzbanek) i wypróbuj możliwe kroki.
+68	Spróbuj zacząć od napełnienia większego dzbanka i przelania do mniejszego.
+69	Stany (pierwszy, drugi dzbanek) tworzące najkrótszą drogę:
+70	A gdybyś podzielił(a) monety na trzy stosy? Co mówi jedno ważenie dwóch stosów?
+71	Każde ważenie ma 3 wyniki (lżejsza lewa, lżejsza prawa, równowaga), więc pozwala rozróżnić 3 możliwości.
+72	Jedno ważenie dzieli możliwości na trzy części: porównaj dwa stosy, trzeci zostaw na boku.
+73	czerwona
+74	niebieska
+75	zielona
+76	Pajęczyna z literą
+77	Zapisz każdą liczbę za pomocą x. Kółko obok x to na przykład x + 2.
+78	Ile dodaje strzałka?
+79	Znajdź dwie znane liczby połączone strzałkami tego koloru. O ile się różnią?
+80	Jeśli droga ma kilka strzałek, podziel różnicę między nie (po odjęciu strzałek innych kolorów).
+81	🕸️ Strzałki tego samego koloru dodają tę samą liczbę (niektóre wartości są nieznane). Uzupełnij puste kółka. Dotknij kółka i wpisz.
+82	🕸️ Każda strzałka dodaje liczbę swojego koloru. Uzupełnij puste kółka. Dotknij kółka i wpisz.
+83	Pajęczyna
+84	Znajdź strzałkę łączącą dwie znane liczby – o ile się różnią? To mówi, ile dodaje jej kolor.
+85	Strzałki jednego koloru zawsze dodają tyle samo. Pajęczyna „działa”, jeśli pasuje każda strzałka.
+86	Zacznij tam, gdzie dwie znane liczby łączy strzałka: ich różnica to wartość tego koloru. Potem idź dalej po strzałkach (idąc do przodu dodajesz, wracając odejmujesz).
+87	Najpierw dotknij pustego kółka.
+88	Uzupełnij wszystkie puste kółka.
+89	Coś nie pasuje. Przerywane strzałki pokazują, gdzie liczby nie zgadzają się z kolorem strzałki.
+90	Spróbuj najpierw kółka obok znanej liczby, wzdłuż strzałki, której wartość znasz.
+91	Ile jest dróg?
+92	🎪 Od wejścia 🚪 do wyjścia 🏁 idziesz tak, by przejść przez każdy pokój dokładnie raz. Możesz używać tylko otwartych drzwi. Na ile sposobów można to zrobić?
+93	Zacznij od wejścia i sprawdzaj możliwości krok po kroku. Gdzie droga się rozdziela?
+94	Zapisuj drogi jako ciąg pokoi. Ślepe zaułki pokażą, które drogi odpadają.
+95	Przejdź przez wystawę
+96	🎪 Wejdź przez 🚪 i przejdź przez każdy pokój dokładnie raz, kończąc przy wyjściu 🏁. Dotykaj sąsiednich pokoi przez otwarte drzwi.
+97	🎪 Wejdź przez 🚪 i przejdź przez każdy pokój dokładnie raz. Dotykaj sąsiednich pokoi przez otwarte drzwi.
+98	Jeśli utkniesz w ślepym zaułku, wróć przyciskiem Wstecz i spróbuj inaczej.
+99	Pokój z jednymi drzwiami musi być początkiem lub końcem drogi. Takie pokoje zostaw na koniec.
+100	Zwróć uwagę na pokoje z jednym wyjściem (ślepe zaułki). Wejść do nich można tylko na końcu drogi, więc zostaw je na koniec.
+101	Uzupełnij numery pokoi
+102	🎪 Zwiedzający przeszedł od wejścia 🚪 do wyjścia 🏁 i był w każdym pokoju dokładnie raz. Pokoje są ponumerowane w kolejności zwiedzania 1, 2, 3, … Uzupełnij brakujące numery. Dotknij pustego pokoju i wpisz.
+103	Spójrz na sąsiadów: numer n+1 jest zawsze w sąsiednim pokoju przez otwarte drzwi.
+104	Pokój z jednymi drzwiami to koniec lub początek. Spróbuj iść od wyjścia wstecz.
+105	Numer n+1 jest zawsze obok numeru n przez otwarte drzwi. Wychodź od znanych numerów i wykluczaj ślepe zaułki.
+106	Już tu byłeś(-aś). Każdy pokój można odwiedzić tylko raz.
+107	W tę stronę nie ma drzwi. Dotknij sąsiedniego pokoju z otwartym przejściem.
+108	Odwiedziłeś(-aś) wszystkie pokoje, ale nie jesteś przy wyjściu. Spróbuj innej drogi.
+109	Wstecz
+110	Stąd nie da się już odwiedzić wszystkich pokoi. Cofnij się o kilka kroków (↩ Wstecz).
+111	Sprawdź, czy nie zostawiasz za sobą pokoju, do którego nie da się już dojść (ślepy zaułek).
+112	Idź dalej do zaznaczonego pokoju.
+113	Najpierw dotknij pustego pokoju.
+114	Uzupełnij wszystkie puste pokoje.
+115	Niektóre numery nie pasują. Pamiętaj: n+1 jest zawsze w sąsiednim pokoju przez otwarte drzwi.
+116	Spróbuj pokoju obok znanego numeru: szukasz następnego numeru.
+117	Uczeń
+118	Rozwiązujący
+119	Stratega
+120	Logik
+121	Mistrz
+122	Wielki mistrz
+123	Legenda
+124	Mędrzec
+125	Kosmiczny mędrzec
+126	Ośmiornica
+127	Sowa
+128	Rakieta
+129	Panda
+130	Smok
+131	Jednorożec
+132	Korona
+133	Klasyczny
+134	Ocean
+135	Las
+136	Zachód słońca
+137	Żaba
+138	Lew
+139	Pingwin
+140	Dinozaur
+141	Czarodziej
+142	Ninja
+143	Bohater
+144	Orzeł
+145	Kosmita
+146	Cukierek
+147	Nocne niebo
+148	Mięta
+149	Galaktyka
+150	Złoto
+151	Nowe naklejki!
+152	Medal: 
+153	Misja ukończona: 
+154	Wszystkie dzisiejsze misje wykonane! Skrzynia: +40 💎
+155	Medale światów dla klas 2–9
+156	Album naklejek i medali
+157	Każdy ukończony poziom daje naklejkę. Ukończ cały świat w danej klasie, by zdobyć złoty medal (+100 💎). Medale są dla klas od 2 do 9.
+158	Rozwiąż 3 zadania
+159	Rozwiąż 5 zadań
+160	Rozwiąż 8 zadań
+161	Zdobądź 8 gwiazdek
+162	Zdobądź 15 gwiazdek
+163	Zdobądź 3 gwiazdki w 2 zadaniach
+164	Rozwiąż 3 zadania bez podpowiedzi
+165	Spróbuj 3 różnych tematów
+166	Rozwiąż codzienne wyzwanie
+167	Dzisiejsze misje
+168	Skrzynia otwarta: +40 💎. Nowe misje jutro!
+169	Ukończ wszystkie trzy misje, aby otworzyć skrzynię: +40 💎.
+170	ma ruch
+171	wygrywa!
+172	zabrał(a) ostatnią
+173	Jeszcze raz
+174	Pokaz
+175	Spróbuj sam(a)
+176	🐻 i 🐰 grają – dotknij, ile patyczków zabrać.
+177	Złam ten kawałek
+178	Złamania
+179	kawałki
+180	Dotknij kawałka, aby złamać go na dwa. Połam wszystko na pojedyncze kwadraciki!
+181	Wyeliminuj gracza
+182	Rozegrane mecze
+183	Każdy mecz = jeden gracz odpada. Dotknij gracza, który przegrał.
+184	⬅️ Lewa szalka
+185	Poza wagą
+186	Prawa szalka ➡️
+187	moneta
+188	Ważenia
+189	Zważ
+190	Anuluj typowanie
+191	Zgadnij fałszywą
+192	Dotknij monety, którą uważasz za fałszywą.
+193	Nowa gra
+194	Połóż monety na obu szalkach.
+195	Połóż tyle samo monet na obu szalkach.
+196	Równowaga ⚖️
+197	Lewa strona jest lżejsza
+198	Prawa strona jest lżejsza
+199	Jedna moneta jest lżejsza. Dotknij monety, by ją przenieść (lewa → prawa → poza wagę), potem naciśnij „Zważ”.
+200	Cel

@@ -1,0 +1,195 @@
+1	Smazat
+2	Obnovit
+3	Kód pro žáky:
+4	Zadat úlohy třídě
+5	Hodnost
+6	Úlohy
+7	Série
+8	Aktivita
+9	Zatím se nikdo nepřipojil. Žáci zadávají kód třídy v Profilu nebo při prvním spuštění.
+10	Smazat žáka?
+11	E-mail učitele
+12	Dočasné heslo (min. 8 znaků)
+13	Nový učitel
+14	Vygenerovat heslo
+15	Vytvořit účet
+16	Účet vytvořen – pošli učiteli e-mail a heslo.
+17	Zatím žádní učitelé.
+18	Zadej kód, který ti dalo tvé dítě nebo učitel. Uvidíš pokrok pouze toho jednoho žáka.
+19	Zobrazit
+20	Svět
+21	Přidat celý level (10 úloh)
+22	Všichni
+23	Celá třída
+24	Vybrat jednotlivé žáky
+25	Nejdřív vytvoř třídu.
+26	Název zadání
+27	Název
+28	Poznámka pro žáky (nepovinné)
+29	Poznámka
+30	Termín
+31	Nové zadání
+32	Termín (nepovinné)
+33	Vyber úlohy
+34	Z levelů
+35	Ze sbírky
+36	Odebrat
+37	Zadat komu
+38	Zadat
+39	Zadej název.
+40	Vyber alespoň jednu úlohu.
+41	Vyber třídu nebo žáky.
+42	Zadání odesláno
+43	Zatím žádná zadání. Vytvoř první výše.
+44	Třídy:
+45	termín
+46	Smazat zadání?
+47	Seznam úloh
+48	Žák
+49	Stav
+50	hotovo
+51	rozpracováno
+52	nezačato
+53	Zatím žádní žáci.
+54	Úlohy od učitele
+55	Všechna zadání
+56	Zadané úlohy
+57	Úlohy, které ti zadal učitel.
+58	Připoj se v Profilu k učiteli a uvidíš zadané úlohy.
+59	Otevřít Profil
+60	po termínu
+61	Hotovo, skvělá práce!
+62	Zatím žádné zadané úlohy.
+63	Úloha nenalezena – zkus aplikaci načíst znovu.
+64	Soukromí
+65	Jaké údaje aplikace zpracovává a kde jsou uložené.
+66	LogiQ je školní vzdělávací aplikace. Sbíráme jen to, co je potřeba k jejímu fungování, a nepoužíváme reklamu ani sledování.
+67	1. Pokud se nepřipojíš k učiteli
+68	Všechno zůstává jen v tomto zařízení (v úložišti prohlížeče):
+69	jméno nebo přezdívka, ročník a třída, které jsi zadal
+70	tvé výsledky: vyřešené úlohy, hvězdy, body, odznaky, samolepky, série
+71	nastavení (zvuk, animace, velké písmo, motiv, parťák)
+72	Nic z toho se neodesílá na server. Můžeš to smazat vymazáním dat webu v nastavení prohlížeče.
+73	2. Pokud se připojíš k učiteli pomocí kódu třídy
+74	Na server (Cloudflare, databáze v Evropě) se odesílá toto:
+75	přezdívka nebo křestní jméno a ročník
+76	třída, ke které ses připojil (podle kódu)
+77	souhrn výsledků: hvězdy, body, počet úloh, série, hodnost, silná a slabá témata, posledních 15 úloh
+78	pokrok v úlohách zadaných učitelem
+79	čas poslední aktivity
+80	Pokud odešleš hlášení tlačítkem 💬, odešle se jméno (pokud ho zadáš), text zprávy a technické údaje: stránka, název úlohy, ročník, třída, verze aplikace a typ zařízení.
+81	Neodesíláme příjmení, adresu, e-mail, telefon, polohu ani fotografie. Prosím nepiš do přezdívky příjmení.
+82	Údaje vidí tvůj třídní učitel, správce aplikace a rodič, který má tvůj kód pro rodiče (jen pro čtení). Nejsou veřejné.
+83	3. Učitelé
+84	e-mail a heslo učitele (heslo se ukládá jen jako hash se solí)
+85	vytvořené třídy a zadání
+86	4. Co neděláme
+87	žádná reklama, žádné sledování ani analytika, žádné cookies třetích stran
+88	údaje neprodáváme ani nesdílíme se třetími stranami
+89	předčítání používá hlas zařízení, nic se neodesílá
+90	5. Technické logy
+91	Kdykoli se připojíš, poskytovatelé hostingu (GitHub, Cloudflare) vidí IP adresu zařízení v běžných provozních logech. Server si IP adresu pamatuje jen několik minut kvůli ochraně proti zneužití (limit pokusů o přihlášení).
+92	6. Smazání a tvá práva
+93	Odpojením v Profilu se přestanou odesílat nová data. Data, která už jsou na serveru, smaže na požádání učitel nebo správce (žák nebo rodič může požádat učitele).
+94	Učitel může smazat žáka nebo celou třídu; data se pak ze serveru odstraní.
+95	Máš právo na přístup ke svým údajům, jejich opravu a smazání.
+96	Kontakt:
+97	Kontakt na provozovatele (školu) doplní škola.
+98	Aby se v LogiQ mohli všichni dobře učit a hrát.
+99	Pro žáky
+100	Řeš úlohy sám. Nápověda je tu proto, aby ti pomohla pokročit, ne aby rozhodovala za tebe.
+101	Chyba nevadí. První dva pokusy jsou zdarma; hvězdy ubývají jen s nápovědami nebo po třech špatných pokusech. Zkus to znovu.
+102	Používej jen přezdívku nebo křestní jméno, ne příjmení.
+103	Nedávej kód třídy ani kód pro rodiče lidem mimo školu a rodinu.
+104	Nepoužívej ve jméně sprostá slova a nedělej si z ostatních legraci.
+105	Nesnaž se aplikaci rozbít ani se dívat na údaje ostatních žáků.
+106	Pokud něco nefunguje nebo nevíš kudy kam, řekni to učiteli.
+107	Pro učitele
+108	Nesdílejte své heslo a po použití se odhlaste, zejména na sdíleném počítači.
+109	Požádejte žáky, aby nepoužívali příjmení – stačí přezdívka nebo křestní jméno.
+110	Přehled pokroku používejte k podpoře žáků, ne k jejich zahanbování či srovnávání před ostatními.
+111	Kódy tříd a rodičů dávejte jen žákům a jejich rodičům.
+112	Na požádání žáka nebo třídu smažte.
+113	Pro rodiče
+114	Kód pro rodiče je jen pro čtení a patří pouze vašemu dítěti. Nesdílejte ho.
+115	Pokrok berte jako vodítko, ne jako známku. Úlohy jsou záměrně náročné.
+116	Obecně
+117	Aplikace slouží k učení a zábavě. Úlohy mají vzdělávací účel.
+118	Provozovatel (škola) může v případě zneužití účet zablokovat nebo smazat.
+119	Aplikace je poskytována tak, jak je, bez záruky bezchybnosti. Odpovědi pečlivě kontrolujeme, ale pokud najdeš chybu, dej nám vědět.
+120	Údaje se zpracovávají tak, jak je popsáno na stránce „Jaké údaje zpracováváme“.
+121	Chyba
+122	Nápad
+123	Nové
+124	Rozpracováno
+125	Podpora – nahlášené problémy
+126	V této skupině nejsou žádné tikety.
+127	Interní poznámka (vidíš ji jen ty)
+128	Uloženo
+129	ročník
+130	Označit jako hotové
+131	Znovu otevřít
+132	Uložit poznámku
+133	Smazat tento tiket?
+134	Správce (přihlášený v oblasti pro učitele) má všechny levely odemčené k prohlížení, i ve hře Sirky.
+135	Pavučiny a Výstavisko jsou také ve Sbírce (ve Hrách a jako filtr kategorií).
+136	Nová prostředí inspirovaná Hejného metodou: Pavučiny (čísla a barevné šipky) a Výstavisko (procházení místnostmi s dveřmi). Jsou ve světech „Čísla a vzory“ a „Hlavolamy“ a v tréninku.
+137	Doprovodný web (o aplikaci, pro nadané žáky, soulad s osnovami, pro učitele, pro rodiče, časté dotazy) a odkaz „O aplikaci“.
+138	Upozornění, že aplikace je stále ve vývoji, a jak nahlásit chybu (uvítací obrazovka a Domů).
+139	Nová samostatná hra „Sirky – trénink“: 36 levelů proti počítači s rostoucí obtížností (silnější počítač, nová pravidla, obrácená hra, několik hromádek).
+140	Opraveno: tlačítko podpory 💬 bylo na počítači a tabletu skryté pod levým menu.
+141	Aplikace při návratu do popředí zkontroluje novou verzi a sama se obnoví.
+142	Databáze úloh se přesunula z Profilu žáka do panelu správce (záložka Databáze úloh).
+143	Tlačítko 💬 „Kontaktovat podporu / nahlásit problém“ na každé obrazovce s formulářem hlášení.
+144	Správce má záložku Podpora ke sledování a řešení hlášení.
+145	Nové stránky „Jaké údaje zpracováváme“ a „Pravidla používání“ (Profil a uvítací obrazovka).
+146	Hry se sirkami: jasnější formulace – kdo začíná a že oba hrají bez chyb.
+147	Uvítací obrazovka: odstraněn řádek „bez registrace, bez reklam“, větší tlačítka Jsem učitel / rodič.
+148	Učitelé mohou zadávat úlohy celým třídám nebo jednotlivým žákům (z levelů nebo ze sbírky), s termíny a přehledem pokroku.
+149	Žáci vidí zadané úlohy na Domovské obrazovce a v seznamu Zadané úlohy.
+150	Kód třídy lze zobrazit na celou obrazovku (pro projektor).
+151	Opraveno vytváření tříd (nová databáze), větší ovládací prvky.
+152	Aplikace připojena k serveru (oblast pro učitele a rodiče, synchronizace žáků).
+153	Odznak verze aplikace a seznam změn (toto okno).
+154	Nová mapa: klikatá cesta levely jako v Candy Crush, s hvězdami, tvým parťákem a skoky mezi světy.
+155	Odměny: samolepky za levely, zlaté medaile za světy, album, truhly za levely, denní mise, bonusy za série, nové hodnosti, parťáci, motivy a odznaky.
+156	Úlohy se méně opakují (zejména šachové); více variant domin.
+157	Úloha s astronauty: správné slovenské číslovky.
+158	Automatické předčítání je nyní jen na přání (Profil).
+159	Opravena slovenská gramatika v úlohách s astronauty a roboty.
+160	Menší bludiště.
+161	Desítkový rámeček s dalšími volnými políčky; těžší obrázkové úlohy pro ročníky 2–3.
+162	Nové verze aplikace se načítají automaticky.
+163	Žabky: žabka může přeskočit libovolnou jednu žabku, pokud je lekn za ní volný.
+164	Skákající žabky: úlohy, panel pro vyzkoušení a samostatná hra.
+165	Další simulace: váhy, džbány, most, ponožky, podání rukou, pravděpodobnost, stovková tabulka a další.
+166	Pro mladší žáky: velký výběr třídy, předčítání, obrázkové úlohy, simulace, kratší zadání.
+167	Sudoku: 6 odstupňovaných úrovní obtížnosti s nápovědami k technikám.
+168	Samostatné sudoku 3×3, 4×4, 6×6 a 9×9 s poznámkami, nápovědami a časovačem.
+169	Výběr třídy, oblast pro učitele/rodiče/správce, odměny, šachy a Hanojské věže.
+170	První vydání LogiQ: úlohy pro ročníky 2–9, mapa levelů, denní výzva, sbírka, úspěchy.
+171	Poslední změna:
+172	Aktualizace
+173	Hry a strategie
+174	Najdi vítěznou strategii a poraz počítač.
+175	Pravda, lži a dedukce
+176	Rytíři, padouši, podezřelí a tajná čísla.
+177	Logické uvažování
+178	Řazení, přiřazování a platné závěry.
+179	Kombinatorika
+180	Kolika způsoby? Počítej chytře.
+181	Čísla a vzory
+182	Posloupnosti, magické čtverce, kryptaritmy a pavučiny.
+183	Prostor a tvary
+184	Krychle, mřížky, obsahy a stavby.
+185	Hlavolamy
+186	Sudoku, světla, bludiště, výstavisko, mosty a džbány.
+187	Šachy a Hanoj
+188	Jak se figurky pohybují, domina a Hanojské věže.
+189	Matematická olympiáda
+190	Algebra, dělitelnost, pravděpodobnost a čas.
+191	První kroky
+192	Nabíráme tempo
+193	Výzva
+194	Hlubší přemýšlení
+195	Šampion

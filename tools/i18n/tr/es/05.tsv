@@ -1,0 +1,200 @@
+1	Listamos los divisores por parejas (d, n : d).
+2	Dos autobuses
+3	minutos
+4	Necesitas un número que sea múltiplo de ambos tiempos.
+5	El mínimo común múltiplo.
+6	Múltiplos de dos números
+7	Cuenta por separado los múltiplos de cada número.
+8	Los números divisibles entre ambos se contaron dos veces: réstalos una vez.
+9	Un cero final viene de una pareja de factores 2 y 5. ¿Cuál es más escaso en el producto?
+10	Hay muchos más doses que cincos, así que deciden los cincos.
+11	El cuadrado más grande
+12	El lado del cuadrado debe dividir las dos dimensiones.
+13	Necesitas el máximo común divisor.
+14	Sacar una canica
+15	Probabilidad = casos favorables : casos posibles.
+16	¿Cuántas canicas hay en total y cuántas son favorables?
+17	¿Cuántos resultados hay al lanzar dos dados?
+18	Lanzamientos de moneda
+19	Dos canicas, sin devolución
+20	Después de sacar una roja, ¿cuántas rojas y cuántas canicas quedan?
+21	Al menos una … (y similares)
+22	Resta de 1 la probabilidad contraria.
+23	Porcentaje de un número
+24	Primero calcula el 1 % del total.
+25	El precio sube, el precio baja
+26	Toma siempre el porcentaje del precio actual.
+27	Primero calcula el precio después de la subida.
+28	Reparto en una razón
+29	¿Cuántas partes hay en total?
+30	Calcula el valor de una parte.
+31	Fracción de un número
+32	Luego multiplica por el número de partes.
+33	¿Qué porcentaje?
+34	Forma la fracción parte / total.
+35	Convierte la fracción en centésimas.
+36	¿Qué día será?
+37	Una semana tiene 7 días. ¿Qué pasa después de 7 días?
+38	Horario
+39	Convierte las horas en minutos o cuenta hasta una hora en punto.
+40	Primero hasta la siguiente hora en punto, luego horas enteras y después los minutos sobrantes.
+41	Enero
+42	Febrero
+43	Marzo
+44	Abril
+45	Mayo
+46	Junio
+47	Julio
+48	Agosto
+49	Septiembre
+50	Octubre
+51	Noviembre
+52	Diciembre
+53	Calendario
+54	¿Cuántos días tiene ese mes? Halla el resto al dividir entre 7.
+55	El día de la semana se desplaza esa cantidad de días.
+56	Ángulo entre las agujas
+57	El minutero se mueve 6° por minuto y la aguja horaria 0,5° por minuto.
+58	Calcula dónde está cada aguja medida desde las 12 y resta.
+59	💡 Un toque invierte la casilla y sus vecinas. Apaga todas las luces (○).
+60	🚀 Dibuja con el dedo el camino más corto hasta 🏁. Sin atravesar paredes.
+61	Puente de noche
+62	La linterna siempre debe traerse de vuelta. ¿Quién debería llevarla de vuelta?
+63	Los dos más lentos deben cruzar juntos para que su tiempo no se cuente dos veces.
+64	Probamos todos los planes (un ordenador los buscó) y buscamos el más corto:
+65	
+66	Jarras de agua
+67	Escribe el estado como una pareja (primera jarra, segunda jarra) y prueba los pasos posibles.
+68	Prueba a empezar llenando la jarra grande y vertiendo en la pequeña.
+69	Estados (primera, segunda jarra) que forman la ruta más corta:
+70	¿Y si divides las monedas en tres montones? ¿Qué te dice una pesada de dos montones?
+71	Cada pesada tiene 3 resultados (izquierda más ligera, derecha más ligera, equilibrio), así que puede distinguir 3 opciones.
+72	Una pesada divide las opciones en tercios: compara dos montones y el tercero queda aparte.
+73	rojo
+74	azul
+75	verde
+76	Telaraña con una letra
+77	Escribe cada número usando x. El círculo junto a x es, por ejemplo, x + 2.
+78	¿Cuánto suma la flecha?
+79	Busca dos números conocidos unidos por flechas de ese color. ¿En cuánto se diferencian?
+80	Si el camino tiene varias flechas, reparte la diferencia entre ellas (después de restar las flechas de otros colores).
+81	🕸️ Las flechas del mismo color suman el mismo número (algunos valores son desconocidos). Rellena los círculos vacíos. Toca un círculo y escribe.
+82	🕸️ Cada flecha suma el número de su color. Rellena los círculos vacíos. Toca un círculo y escribe.
+83	Telaraña
+84	Busca una flecha que una dos números conocidos: ¿en cuánto se diferencian? Eso te dice lo que suma su color.
+85	Las flechas de un color siempre suman lo mismo. La telaraña «funciona» si todas las flechas encajan.
+86	Empieza donde dos números conocidos estén unidos por una flecha: su diferencia es el valor de ese color. Luego sigue por las flechas (suma al avanzar, resta al retroceder).
+87	Toca primero un círculo vacío.
+88	Rellena todos los círculos vacíos.
+89	Algo no encaja. Las flechas discontinuas muestran dónde los números no concuerdan con el color de la flecha.
+90	Prueba primero con un círculo junto a un número conocido, siguiendo una flecha cuyo valor conozcas.
+91	¿Cuántas rutas?
+92	🎪 De la entrada 🚪 a la salida 🏁 caminas pasando por cada sala exactamente una vez. Solo puedes usar las puertas abiertas. ¿De cuántas maneras se puede hacer?
+93	Empieza en la entrada y prueba las opciones paso a paso. ¿Dónde se divide la ruta?
+94	Anota las rutas como una sucesión de salas. Los callejones sin salida muestran qué rutas fallan.
+95	Recorre la exposición
+96	🎪 Entra por la 🚪 y recorre cada sala exactamente una vez, terminando en la salida 🏁. Toca las salas vecinas a través de las puertas abiertas.
+97	🎪 Entra por la 🚪 y recorre cada sala exactamente una vez. Toca las salas vecinas a través de las puertas abiertas.
+98	Si te quedas atascado en un callejón sin salida, vuelve con el botón Atrás y prueba otro camino.
+99	Una sala con una sola puerta debe ser el principio o el final de la ruta. Deja esas salas para el final.
+100	Mira las salas con una sola salida (callejones sin salida). Solo se puede entrar en ellas al final de la ruta, así que déjalas para el final.
+101	Rellena los números de las salas
+102	🎪 Un visitante fue de la entrada 🚪 a la salida 🏁 y estuvo en cada sala exactamente una vez. Las salas están numeradas en el orden de la visita 1, 2, 3, … Rellena los números que faltan. Toca una sala vacía y escribe.
+103	Mira los vecinos: el número n+1 siempre está en una sala vecina a través de una puerta abierta.
+104	Una sala con una sola puerta es el final o el principio. Prueba a ir hacia atrás desde la salida.
+105	El número n+1 siempre está junto al número n a través de una puerta abierta. Trabaja a partir de los números conocidos y descarta los callejones sin salida.
+106	Ya has estado en esta sala. Cada una se puede usar solo una vez.
+107	No hay puerta en esa dirección. Toca una sala vecina con un paso abierto.
+108	Has visitado todas las salas pero no estás en la salida. Prueba otra ruta.
+109	Atrás
+110	Desde aquí ya no puedes visitar todas las salas. Retrocede unos pasos (↩ Atrás).
+111	Comprueba que no dejas atrás una sala a la que ya no puedas llegar (un callejón sin salida).
+112	Continúa hasta la sala marcada.
+113	Toca primero una sala vacía.
+114	Rellena todas las salas vacías.
+115	Algunos números no encajan. Recuerda: n+1 siempre está en una sala vecina a través de una puerta abierta.
+116	Prueba con una sala junto a un número conocido: buscas el siguiente número.
+117	Aprendiz
+118	Resolutor
+119	Estratega
+120	Lógico
+121	Maestro
+122	Gran maestro
+123	Leyenda
+124	Sabio
+125	Sabio cósmico
+126	Pulpo
+127	Búho
+128	Cohete
+129	Panda
+130	Dragón
+131	Unicornio
+132	Corona
+133	Clásico
+134	Océano
+135	Bosque
+136	Atardecer
+137	Rana
+138	León
+139	Pingüino
+140	Dinosaurio
+141	Mago
+142	Ninja
+143	Héroe
+144	Águila
+145	Alienígena
+146	Caramelo
+147	Cielo nocturno
+148	Menta
+149	Galaxia
+150	Oro
+151	¡Pegatinas nuevas!
+152	Medalla:
+153	Misión completada:
+154	¡Todas las misiones de hoy hechas! Cofre: +40 💎
+155	Medallas de mundo para los cursos 2–9
+156	Álbum de pegatinas y medallas
+157	Cada nivel terminado da una pegatina. Termina un mundo entero de un curso para ganar una medalla de oro (+100 💎). Hay medallas para los cursos 2 a 9.
+158	Resuelve 3 tareas
+159	Resuelve 5 tareas
+160	Resuelve 8 tareas
+161	Consigue 8 estrellas
+162	Consigue 15 estrellas
+163	Consigue 3 estrellas en 2 tareas
+164	Resuelve 3 tareas sin pista
+165	Prueba 3 temas distintos
+166	Resuelve el reto diario
+167	Misiones de hoy
+168	¡Cofre abierto: +40 💎. Misiones nuevas mañana!
+169	Termina las tres misiones para abrir el cofre: +40 💎.
+170	es el siguiente
+171	¡gana!
+172	cogió la última
+173	Otra vez
+174	Demo
+175	Pruébalo tú
+176	🐻 y 🐰 juegan: toca cuántos palillos coger.
+177	Rompe esta pieza
+178	Roturas
+179	piezas
+180	Toca una pieza para partirla en dos. ¡Rompe todo en cuadrados sueltos!
+181	Eliminar jugador
+182	Partidos jugados
+183	Cada partido = un jugador queda fuera. Toca al jugador que perdió.
+184	⬅️ Platillo izquierdo
+185	Fuera de la balanza
+186	Platillo derecho ➡️
+187	moneda
+188	Pesadas
+189	Pesar
+190	Cancelar suposición
+191	Adivina la falsa
+192	Toca la moneda que creas que es falsa.
+193	Partida nueva
+194	Pon monedas en ambos platillos.
+195	Pon el mismo número de monedas en ambos platillos.
+196	Equilibrado ⚖️
+197	El lado izquierdo es más ligero
+198	El lado derecho es más ligero
+199	Una moneda es más ligera. Toca una moneda para moverla (izquierda → derecha → fuera) y luego pulsa «Pesar».
+200	Meta

@@ -1,0 +1,200 @@
+1	Név
+2	A kutya
+3	A macska
+4	A hörcsög
+5	Kezdd azzal, akiről a legtöbbet tudod: mije kell hogy legyen Annának?
+6	Ha Annánál van a hörcsög, mije lehet Borisnak?
+7	Annának nincs sem kutyája, sem macskája, tehát neki a hörcsög van.
+8	Borisnak nincs kutyája, és a hörcsög már foglalt, tehát neki a macska van.
+9	Cirillnek marad a kutya.
+10	Titkos összegek
+11	Három titkos szám, A, B, C kielégíti: A + B = 10, B + C = 12, A + C = 8. Mennyi A?
+12	Mi lenne, ha mindhárom egyenletet összeadnád?
+13	Az összeg 2 · (A + B + C) = 30. Mennyi A + B + C, és mit kell kivonnod belőle?
+14	Adjuk össze a három egyenletet: 2 · (A + B + C) = 10 + 12 + 8 = 30, tehát A + B + C = 15.
+15	Mivel B + C = 12, kapjuk: A = 15 − 12 = 3.
+16	Nyári olvasmány
+17	Jane elolvasta egy könyv 3/8 részét, majd még 2/8 részét. Még 15 oldala van hátra. Hány oldalas az egész könyv?
+18	oldal
+19	Összesen hány nyolcadát olvasta el a könyvnek?
+20	Ha 5/8 van elolvasva, hány nyolcad van hátra? És hány oldal egy nyolcad?
+21	Elolvasott rész: 3/8 + 2/8 = 5/8 a könyvből.
+22	3/8 van hátra, ez 15 oldal, tehát 1/8 az 5 oldal.
+23	Az egész könyv 8 · 5 = 40 oldalas.
+24	Háromjegyű számok
+25	Az 1, 2, 3, 4 számjegyekből háromjegyű számokat képezel úgy, hogy egy számjegy sem ismétlődik. Hány ilyen szám van?
+26	Hány számjegy állhat a százasok helyén?
+27	Miután felhasználtál egy számjegyet, hány marad a tízesekhez, majd az egyesekhez?
+28	A százasok helyére 4 lehetőség van.
+29	A tízesekhez 3 számjegy marad, az egyesekhez 2.
+30	Összesen 4 · 3 · 2 = 24 szám.
+31	A gyufaszálas játék
+32	Egy kupacban 15 gyufaszál van. A játékosok felváltva elvesznek 1, 2 vagy 3 szálat. Az nyer, aki az utolsót elveszi. Te kezdesz. Hányat vegyél el először, hogy biztosan nyerj, ha utána a lehető legjobban játszol?
+33	Gondolkodj visszafelé: hány szál mellett veszít az, aki lépésre kerül?
+34	4 szál mellett veszít, akinek lépnie kell. A 4 melyik többszöröseit akarod az ellenfélnek hagyni?
+35	Ha 4 szál marad, és te jössz, veszítesz: elveszel 1–3 szálat, az ellenfeled pedig a többit.
+36	Tehát mindig 12, 8, 4 szálat akarsz hagyni az ellenfélnek – a négy többszöröseit.
+37	A 15-ből végy el 3-at, hogy 12 maradjon. Aztán mindig egészítsd ki az ő lépését 4-re.
+38	Négyzet alakú kert
+39	Egy négyzet alakú kert kerülete 36 m. Mekkora a területe?
+40	Milyen hosszú a négyzet egy oldala?
+41	Az oldal 36 : 4 = 9 m. Hogyan számolod ki a négyzet területét?
+42	A négyzetnek 4 egyenlő oldala van: 36 : 4 = 9 m.
+43	Terület = oldal · oldal = 9 · 9 = 81 m².
+44	Téglalap a kerületéből
+45	Egy téglalap kerülete 30 cm, és az egyik oldala 9 cm. Mekkora a területe?
+46	A kerület 2 · (a + b). Mennyi a + b?
+47	a + b = 15, és az egyik oldal 9. Mennyi a másik?
+48	A kerület fele: 30 : 2 = 15 = a + b.
+49	A másik oldal 15 − 9 = 6 cm.
+50	Terület = 9 · 6 = 54 cm².
+51	A kifestett kocka
+52	Egy nagy 3×3×3-as kocka 27 kis kockából áll, és kívülről ki van festve. Szétszedjük. Hány kis kockának van pontosan 3 kifestett lapja?
+53	Melyik kis kockák vannak a nagy kocka sarkaiban?
+54	Hány csúcsa van egy kockának?
+55	Csak a sarokkockáknak van három kifestett lapja – ott a nagy kocka három lapja találkozik.
+56	Egy kockának 8 csúcsa van, tehát 8 ilyen kocka van.
+57	Gauss trükkje
+58	Számológép nélkül: 1 + 2 + 3 + … + 20.
+59	Próbáld párosítani az első számot az utolsóval: 1 + 20.
+60	A következő pár 2 + 19. Hány ilyen pár van?
+61	1 + 20 = 21, 2 + 19 = 21, 3 + 18 = 21 … minden pár összege 21.
+62	20 szám van, tehát 10 pár.
+63	Az összeg 10 · 21 = 210.
+64	Záró nullák
+65	Hány nullára végződik a 20! = 1 · 2 · 3 · … · 20?
+66	Egy záró nulla a 2 és az 5 tényezőpárból származik. Melyik ritkább a szorzatban?
+67	Számold meg, hányszor szerepel az 5-ös tényező az 1-től 20-ig terjedő számok között.
+68	Minden záró nulla egy 10 = 2 · 5 tényező. A 20!-ban sokkal több kettes van, ezért az ötösök döntenek.
+69	Ötösök: 5, 10, 15, 20 – mindegyik egy ötöst ad (a 25 kettőt adna, de nincs benne a szorzatban).
+70	Tehát 4 nulla van.
+71	Két kocka
+72	Két szabályos kockával dobunk. Mekkora a valószínűsége, hogy az összeg 7?
+73	Hány kimenetele van két kocka dobásának?
+74	Sorold fel a 7 összegű párokat: (1,6), (2,5) … Hány van belőlük?
+75	6 · 6 = 36 kimenetel van.
+76	A 7 összeg ezekből adódik: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) – hat pár.
+77	A valószínűség 6/36 = 1/6.
+78	Három egymás után
+79	Három egymást követő egész szám összege 105. Melyik a legnagyobb közülük?
+80	Nevezd a középső számot n-nek. Hogyan írod fel a szomszédait?
+81	n − 1, n, n + 1 – mennyi az összegük?
+82	A számok n − 1, n, n + 1, az összegük 3n.
+83	3n = 105, tehát n = 35.
+84	A legnagyobb n + 1 = 36.
+85	A küldöttség
+86	Hat diák közül kétfős küldöttséget választunk. Hányféleképpen tehetjük ezt meg?
+87	Először számold meg a rendezett párokat. Hány van?
+88	Minden párt kétszer számoltunk (A,B és B,A). Mit kell ezzel tenni?
+89	Az elsőt 6-féleképpen választhatjuk, a másodikat 5-féleképpen: 30 rendezett pár.
+90	A sorrend nem számít, minden párt kétszer számoltunk.
+91	Az eredmény 30 : 2 = 15.
+92	Az utolsó számjegy
+93	Mi a 7¹⁰⁰ utolsó számjegye? Írd le a „Számolás” mezőbe, hogyan jöttél rá.
+94	Írd fel a 7¹, 7², 7³, 7⁴ … hatványok utolsó számjegyeit.
+95	Az utolsó számjegyek valamilyen periódussal ismétlődnek. Mekkora ez a periódus, és mennyi a 100 osztva a periódussal?
+96	Utolsó számjegyek: 7, 9, 3, 1, aztán újra 7, 9, 3, 1 … (a periódus 4).
+97	A 100 a 4 többszöröse, tehát a 7¹⁰⁰ ugyanúgy végződik, mint a 7⁴.
+98	Az utolsó számjegy 1.
+99	A lovagok és hazugok szigete
+100	Egy szigeten a lovagok mindig igazat mondanak, a hazugok mindig hazudnak. A azt mondja: „Mindketten hazugok vagyunk.” Mi B?
+101	Lovag
+102	Hazug
+103	Nem dönthető el
+104	Lehet A lovag? Mit jelentene akkor a mondata?
+105	Ha A hazug, a mondata hamis. Mit árul ez el B-ről?
+106	Ha A lovag lenne, a mondata igaz lenne – de azt állítja, hogy hazug. Ellentmondás.
+107	Tehát A hazug, és a mondata hamis: nem mindketten hazugok.
+108	Mivel A hazug, B-nek lovagnak kell lennie.
+109	Golyók a zsákban
+110	Egy zsákban 3 piros és 2 kék golyó van. Visszatevés nélkül húzunk kettőt. Mekkora a valószínűsége, hogy mindkettő piros?
+111	Mekkora a valószínűsége, hogy az első piros?
+112	Ha nem teszed vissza, hány piros és hány golyó marad?
+113	Az első piros: 3/5.
+114	Aztán 2 piros marad 4 golyóból: 2/4 = 1/2.
+115	Együtt 3/5 · 1/2 = 3/10.
+116	Jelöld meg az igaz állításokat
+117	Melyik állítás igaz az alábbiak közül? Jelöld meg mindet.
+118	2¹⁰ nagyobb, mint 10³
+119	A háromszög szögeinek összege 180°
+120	Minden prímszám páratlan
+121	0,999… kisebb, mint 1
+122	Vizsgáld meg az állításokat külön-külön. Találsz ellenpéldát?
+123	Nézd meg a legkisebb prímszámot. És mennyi a 2¹⁰ és a 10³?
+124	2¹⁰ = 1024 és 10³ = 1000, tehát az első igaz.
+125	A háromszög szögeinek összege mindig 180° – a második igaz.
+126	A 2 páros prímszám, tehát a harmadik nem igaz. A 0,999… pedig egyenlő 1-gyel, tehát a negyedik sem igaz.
+127	Kezdd ott, ahol egy sorból, oszlopból vagy dobozból a legkevesebb szám hiányzik.
+128	Egyetlen sorban, oszlopban vagy dobozban sem ismétlődhet szám.
+129	Kapcsold le az összes lámpát
+130	Egy mezőre nyomva átfordul a saját lámpája és a szomszédaié (fent, lent, balra, jobbra). Kapcsold le az összes lámpát (○).
+131	Próbálj meg egy mezőt kétszer megnyomni. Mi történik?
+132	A legrövidebb út
+133	Húzz végig egy utat az ujjaddal a 🚀 rakétától a 🏁 célig. Falakon nem mehetsz át – és a legrövidebb utat keressük!
+134	Melyik folyosók zsákutcák?
+135	Farkas, kecske és káposzta
+136	Vidd át a 🐺 🐐 🥬 a folyón. A csónakba a gazda és még egy fér. Egyedül hagyva: a farkas megeszi a kecskét, a kecske megeszi a káposztát.
+137	Kik nem maradhatnak soha kettesben? Melyik szereplő megvan mindkét másikkal?
+138	A kecske mindkét veszélyes párban benne van. Mi lenne, ha őt vinnéd át először?
+139	Kulcsötlet: a kecske a bajkeverő – a farkas megeszi őt, ő pedig megeszi a káposztát –, ezért a gazda soha nem hagyhatja egyedül egyikükkel sem.
+140	A farkas és a káposzta nem árt egymásnak, ezért maradhatnak együtt.
+141	Róka, tyúk és kukorica
+142	Egy evezősnek át kell vinnie egy rókát, egy tyúkot és egy zsák kukoricát a patakon. A csónakban az evezős és egy utas fér el. Egyedül hagyva a róka megeszi a tyúkot, a tyúk pedig megcsipegeti a kukoricát. Találj biztonságos tervet!
+143	Ki szerepel mindkét veszélyes párban?
+144	A tyúk megy először. Mi jön ezután, ha ő már átért? Vissza is hozhatod!
+145	A tyúk mindkét veszélyes párban benne van, ezért az evezős őt viszi át először, és soha nem hagyja egyedül a rókával vagy a kukoricával.
+146	Néha megéri valakit visszahozni – az a fontos, hogy senki se maradjon veszélyben.
+147	Űrhajósok és robotok
+148	2 űrhajósnak és 2 robotnak kell átkelnie egy folyón egy kis rakétacsónakban. Legfeljebb ketten fér el benne, és valakinek evezni kell. Ha egy parton a robotok többen vannak, mint az űrhajósok (miközben űrhajósok is vannak ott), az űrhajósok veszélybe kerülnek. Találj biztonságos tervet!
+149	Figyeld a számokat mindkét parton: űrhajósok ≥ robotok, valahányszor van ott űrhajós.
+150	Ne félj visszahozni valakit – néha ez az egyetlen megoldás.
+151	Mindkét parton betartjuk a szabályt: ha van ott űrhajós, a robotok sosem lehetnek többen az űrhajósoknál.
+152	Három űrhajós, három robot
+153	3 űrhajós és 3 robot kel át egy folyón egy kétszemélyes csónakban. Szabály: ahol legalább egy űrhajós van a parton, ott a robotok nem lehetnek többen az űrhajósoknál. Mi a legkevesebb átkelések száma?
+154	Képzeld el az összes lehetséges állapotot – hányszor kezdhetnél úgy, hogy „2 robotot” küldesz át?
+155	Figyelj arra, kik maradnak a parton, amelyet elhagysz. Néha a legjobb egy robotot vagy űrhajóst visszahozni.
+156	Ez a híres misszionáriusok és kannibálok feladvány űrbeli változata. Segít, ha szisztematikusan felírod a partok állapotait.
+157	Számold ki a szomszédos számok különbségét.
+158	Ellenőrizd, hogy a számok szorzásból származnak-e.
+159	Nézd meg a szomszédok közti különbségeket. Változnak?
+160	Hasonlítsd össze a számokat a négyzetszámokkal: 1, 4, 9, 16, 25…
+161	Próbálj összeadni két szomszédos számot.
+162	Minden szám a két előző szám összege.
+163	Mi van, ha két sorozat keveredik egybe?
+164	Próbálj háromszoros szorzással kapott számokat: 2 · 2 · 2…
+165	Ezek köbszámok: 1³, 2³, 3³…
+166	A számok 1³, 2³, 3³, 4³, 5³ – köbszámok.
+167	A következő 6³ = 216.
+168	Számminta
+169	Melyik szám helyettesíti a kérdőjelet?
+170	Első csillag
+171	Oldd meg az első feladatodat.
+172	Tíz feladat
+173	Fejezz be 10 feladatot.
+174	Felfedező
+175	Fejezz be 25 feladatot.
+176	Éles elme
+177	Szerezz 3 csillagot 5 feladatra.
+178	Kitartó
+179	Oldj meg egy feladatot több próbálkozás után.
+180	Kapitány
+181	Oldj meg egy átkelős feladatot.
+182	Sudoku-mester
+183	Oldj meg egy sudokut.
+184	Navigátor
+185	Találd meg a legrövidebb utat egy labirintusban.
+186	Villanyszerelő
+187	Kapcsold le az összes lámpát.
+188	Sokoldalú
+189	Oldj meg feladatokat 5 különböző kategóriából.
+190	Háromnapos sorozat
+191	Oldj meg feladatokat 3 egymást követő napon.
+192	500 pont
+193	Szerezz 500 pontot.
+194	Napi megoldó
+195	Oldj meg egy napi kihívást.
+196	Első szint
+197	Teljesíts egy egész szintet.
+198	Gyűjtő
+199	Gyűjts 10 matricát.
+200	Nagy gyűjtő

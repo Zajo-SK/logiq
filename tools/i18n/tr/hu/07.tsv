@@ -1,0 +1,195 @@
+1	Törlés
+2	Frissítés
+3	Kód a diákoknak:
+4	Feladatok kiosztása az osztálynak
+5	Rang
+6	Feladatok
+7	Sorozat
+8	Aktivitás
+9	Még senki nem csatlakozott. A diákok az osztálykódot a Profilban vagy az első indításkor adják meg.
+10	Törlöd a diákot?
+11	Tanár e-mail-címe
+12	Ideiglenes jelszó (legalább 8 karakter)
+13	Új tanár
+14	Jelszó generálása
+15	Fiók létrehozása
+16	A fiók létrejött – küldd el a tanárnak az e-mail-címet és a jelszót.
+17	Még nincs tanár.
+18	Add meg a kódot, amelyet a gyereked vagy a tanár adott neked. Csak annak az egy diáknak a haladását fogod látni.
+19	Mutatás
+20	Világ
+21	Az egész szint hozzáadása (10 feladat)
+22	Mind
+23	Az egész osztály
+24	Egyes diákok kiválasztása
+25	Előbb hozz létre egy osztályt.
+26	A feladatkiosztás címe
+27	Cím
+28	Megjegyzés a diákoknak (nem kötelező)
+29	Megjegyzés
+30	Határidő
+31	Új feladatkiosztás
+32	Határidő (nem kötelező)
+33	Feladatok kiválasztása
+34	A szintekből
+35	A gyűjteményből
+36	Eltávolítás
+37	Kinek osztod ki
+38	Kiosztás
+39	Adj meg egy címet.
+40	Válassz legalább egy feladatot.
+41	Válassz egy osztályt vagy diákokat.
+42	A feladatkiosztás elküldve
+43	Még nincs feladatkiosztás. Hozd létre az elsőt fent.
+44	Osztályok:
+45	határidő
+46	Törlöd a feladatkiosztást?
+47	Feladatlista
+48	Diák
+49	Állapot
+50	kész
+51	folyamatban
+52	nincs elkezdve
+53	Még nincs diák.
+54	Feladatok a tanárodtól
+55	Az összes feladatkiosztás
+56	Kiosztott feladatok
+57	A tanárod által adott feladatok.
+58	Csatlakozz egy tanárhoz a Profilban, hogy lásd a kiosztott feladatokat.
+59	Profil megnyitása
+60	lejárt
+61	Kész, szép munka!
+62	Még nincs kiosztott feladat.
+63	A feladat nem található – próbáld újratölteni az alkalmazást.
+64	Adatvédelem
+65	Milyen adatokat kezel az alkalmazás, és hol tárolja őket.
+66	A LogiQ egy iskolai tanulóalkalmazás. Csak azt gyűjtjük, ami a működéséhez szükséges, és nem használunk sem hirdetést, sem követést.
+67	1. Ha nem csatlakozol tanárhoz
+68	Minden csak ezen az eszközön marad (a böngésző tárhelyén):
+69	a megadott név vagy becenév, évfolyam és osztály
+70	az eredményeid: megoldott feladatok, csillagok, pontok, jelvények, matricák, sorozat
+71	a beállítások (hang, animációk, nagy betűméret, téma, avatár)
+72	Semmi sem kerül el szerverre. Törölheted, ha a böngésző beállításaiban törlöd az oldal adatait.
+73	2. Ha osztálykóddal csatlakozol egy tanárhoz
+74	A következők kerülnek a szerverre (Cloudflare, európai adatbázis):
+75	becenév vagy keresztnév és évfolyam
+76	az osztály, amelyhez csatlakoztál (kód alapján)
+77	az eredmények összegzése: csillagok, pontok, feladatok száma, sorozat, rang, erős és gyenge témák, az utolsó 15 feladat
+78	a tanár által kiosztott feladatok haladása
+79	az utolsó aktivitás ideje
+80	Ha a 💬 gombbal jelentést küldesz, elküldjük a nevet (ha megadsz egyet), az üzenet szövegét és technikai adatokat: oldal, feladat címe, évfolyam, osztály, alkalmazásverzió és eszköztípus.
+81	Nem küldünk vezetéknevet, lakcímet, e-mail-címet, telefonszámot, tartózkodási helyet vagy fényképeket. Kérlek, ne írj vezetéknevet a becenévbe.
+82	Az adatokat az osztályfőnököd, az alkalmazás adminisztrátora és a szülői kóddal rendelkező szülő látja (csak olvasásra). Nem nyilvánosak.
+83	3. Tanárok
+84	a tanár e-mail-címe és jelszava (a jelszót csak sózott hashként tároljuk)
+85	a létrehozott osztályok és feladatkiosztások
+86	4. Amit nem csinálunk
+87	nincs hirdetés, nincs követés vagy analitika, nincsenek harmadik féltől származó sütik
+88	nem adjuk el az adatokat, és nem osztjuk meg harmadik féllel
+89	a felolvasás az eszköz hangját használja, semmi sem kerül elküldésre
+90	5. Technikai naplók
+91	Valahányszor csatlakozol, a tárhelyszolgáltatók (GitHub, Cloudflare) a szokásos működési naplókban látják az eszköz IP-címét. A szerver az IP-címet csak néhány percig jegyzi meg a visszaélések elleni védelem érdekében (bejelentkezési kísérletek korlátozása).
+92	6. Törlés és a jogaid
+93	A Profilban a lecsatlakozás megállítja az új adatok küldését. A szerveren már meglévő adatokat a tanár vagy az adminisztrátor kérésre törli (a diák vagy a szülő kérheti a tanártól).
+94	A tanár törölhet egy diákot vagy egy egész osztályt; ekkor az adatok eltávolításra kerülnek a szerverről.
+95	Jogod van az adataidhoz hozzáférni, azokat helyesbíteni és törölni.
+96	Kapcsolat:
+97	Az üzemeltető (az iskola) elérhetőségét az iskola adja meg.
+98	Hogy mindenki jól tanulhasson és játszhasson a LogiQ-ban.
+99	Diákoknak
+100	Oldd meg magad a feladatokat. A tipp azért van, hogy továbblépj, nem azért, hogy helyetted döntsön.
+101	A hiba nem baj. Az első két próbálkozás ingyenes; csillagot csak a tippek vagy a három rossz próbálkozás után veszítesz. Próbáld újra.
+102	Csak becenevet vagy keresztnevet használj, vezetéknevet ne.
+103	Az osztálykódot és a szülői kódot ne add meg az iskolán és a családon kívüli embereknek.
+104	Ne használj durva szavakat a nevedben, és ne gúnyolódj másokon.
+105	Ne próbáld meg elrontani az alkalmazást, és ne nézd más diákok adatait.
+106	Ha valami nem működik, vagy elakadtál, szólj a tanárodnak.
+107	Tanároknak
+108	Ne add meg a jelszavadat senkinek, és használat után jelentkezz ki, különösen közös számítógépen.
+109	Kérd meg a diákokat, hogy ne használjanak vezetéknevet – elég a becenév vagy a keresztnév.
+110	A haladási áttekintést a diákok támogatására használd, ne arra, hogy mások előtt megszégyeníts vagy összehasonlíts valakit.
+111	Az osztály- és szülői kódokat csak a diákoknak és szüleiknek add meg.
+112	Kérésre töröld a diákot vagy az osztályt.
+113	Szülőknek
+114	A szülői kód csak olvasásra szól, és kizárólag a gyermekedhez tartozik. Ne oszd meg.
+115	A haladást útmutatónak tekintsd, ne jegynek. A feladatok szándékosan kihívást jelentenek.
+116	Általában
+117	Az alkalmazás tanulásra és szórakozásra való. A feladatok oktatási célúak.
+118	Az üzemeltető (az iskola) visszaélés esetén letilthat vagy törölhet egy fiókot.
+119	Az alkalmazást „ahogy van” biztosítjuk, hibamentességre vonatkozó garancia nélkül. A válaszokat gondosan ellenőrizzük, de ha hibát találsz, jelezd nekünk.
+120	Az adatokat a „Milyen adatokat kezelünk” oldalon leírtak szerint kezeljük.
+121	Hiba
+122	Ötlet
+123	Új
+124	Folyamatban
+125	Ügyfélszolgálat – jelentett problémák
+126	Ebben a csoportban nincs jegy.
+127	Belső megjegyzés (csak te látod)
+128	Mentve
+129	évfolyam
+130	Késznek jelölöm
+131	Újranyitás
+132	Megjegyzés mentése
+133	Törlöd ezt a jegyet?
+134	Az adminisztrátor (a Tanári felületen bejelentkezve) minden szintet fel tud oldva böngészni, a Pálcikák játékban is.
+135	A Hálók és a Kiállítás a Gyűjteményben is megtalálható (a Játékok között és kategóriaszűrőként).
+136	Új környezetek Hejný módszere alapján: Hálók (számok és színes nyilak) és Kiállítás (séta ajtós termeken át). A „Számok és minták” és a „Fejtörők” világban, valamint a gyakorlásban találod őket.
+137	Kísérőweboldal (rólunk, tehetséges diákoknak, tantervi illeszkedés, tanároknak, szülőknek, GYIK) és egy „Az alkalmazásról” hivatkozás.
+138	Figyelmeztetés, hogy az alkalmazás még fejlesztés alatt áll, és hogyan jelents hibát (üdvözlőképernyő és Kezdőlap).
+139	Új önálló játék, a „Pálcikák – gyakorlás”: 36 szint a számítógép ellen növekvő nehézséggel (erősebb számítógép, új szabályok, fordított játék, több kupac).
+140	Javítva: az ügyfélszolgálati 💬 gomb el volt rejtve a bal oldali menü alatt asztali gépen és tableten.
+141	Az alkalmazás ellenőrzi az új verziót, amikor visszatér az előtérbe, és magától frissül.
+142	A feladatadatbázis átkerült a diák Profiljából az admin felületre (Feladatadatbázis fül).
+143	Minden képernyőn megjelent egy 💬 „Kapcsolat az ügyfélszolgálattal / hiba jelentése” gomb jelentési űrlappal.
+144	Az adminisztrátornak van egy Ügyfélszolgálat füle a jelentések követéséhez és megoldásához.
+145	Új „Milyen adatokat kezelünk” és „Használati szabályok” oldalak (Profil és üdvözlőképernyő).
+146	Pálcikajátékok: érthetőbb megfogalmazás – ki kezd, és hogy mindketten hibátlanul játszanak.
+147	Üdvözlőképernyő: eltávolítottuk a „nincs regisztráció, nincs hirdetés” sort, nagyobb Tanár vagyok / Szülő vagyok gombok.
+148	A tanárok feladatokat oszthatnak ki egész osztályoknak vagy egyes diákoknak (a szintekből vagy a gyűjteményből), határidővel és haladási áttekintéssel.
+149	A diákok a kiosztott feladatokat a Kezdőlapon és a Kiosztott feladatok listában látják.
+150	Az osztálykód teljes képernyőn megjeleníthető (kivetítőhöz).
+151	Javítva az osztály létrehozása (új adatbázis), nagyobb kezelőelemek.
+152	Az alkalmazás csatlakozik a szerverhez (tanári és szülői felület, diákok szinkronizálása).
+153	Alkalmazásverzió-jelvény és változásnapló (ez az ablak).
+154	Új térkép: kanyargó szintösvény, mint a Candy Crushban, csillagokkal, az avatároddal és ugrásokkal a világok között.
+155	Jutalmak: szintmatricák, arany világérmek, album, szintládák, napi küldetések, sorozatbónuszok, új rangok, avatárok, témák és jelvények.
+156	A feladatok kevésbé ismétlődnek (főleg a sakk); több dominóváltozat.
+157	Űrhajós feladat: helyes szlovák számnevek.
+158	Az automatikus felolvasás mostantól csak engedélyezés esetén működik (Profil).
+159	Javítva a szlovák nyelvtan az űrhajós és robotos feladatokban.
+160	Kisebb labirintusok.
+161	Tízes keret további szabad cellákkal; nehezebb képes feladatok a 2–3. évfolyamnak.
+162	Az új alkalmazásverziók automatikusan betöltődnek.
+163	Békák: egy béka átugorhat bármelyik egyetlen békát, ha a mögötte lévő levél szabad.
+164	Ugró békák: feladatok, kipróbáló panel és önálló játék.
+165	További szimulációk: mérleg, kancsók, híd, zoknik, kézfogások, valószínűség, százas tábla és más.
+166	Kisebb diákoknak: nagy osztályválasztó, felolvasás, képes feladatok, szimulációk, rövidebb szövegek.
+167	Sudoku: 6 fokozatú nehézségi szint technikai tippekkel.
+168	Önálló sudoku 3×3, 4×4, 6×6 és 9×9 méretben jegyzetekkel, tippekkel és időmérővel.
+169	Osztályválasztás, tanári/szülői/admin felület, jutalmak, sakk és Hanoi tornyai.
+170	Az első LogiQ-kiadás: feladatok a 2–9. évfolyamnak, szinttérkép, napi kihívás, gyűjtemény, teljesítmények.
+171	Utolsó módosítás:
+172	Frissítés
+173	Játékok és stratégia
+174	Találd meg a nyerő stratégiát, és győzd le a számítógépet.
+175	Igazság, hazugság és következtetés
+176	Lovagok, hazugok, gyanúsítottak és titkos számok.
+177	Logikus gondolkodás
+178	Sorrendek, párosítások és érvényes következtetések.
+179	Kombinatorika
+180	Hányféleképpen? Számolj okosan.
+181	Számok és minták
+182	Sorozatok, mágikus négyzetek, kriptaritmuszok és hálók.
+183	Tér és alakzatok
+184	Kockák, rácsok, területek és építmények.
+185	Fejtörők
+186	Sudoku, lámpák, labirintusok, kiállítás, hidak és kancsók.
+187	Sakk és Hanoi
+188	Hogyan lépnek a bábuk, dominók és Hanoi tornyai.
+189	Matematikai olimpia
+190	Algebra, oszthatóság, valószínűség és idő.
+191	Első lépések
+192	Gyorsulás
+193	Kihívás
+194	Mélyebb gondolkodás
+195	Bajnok

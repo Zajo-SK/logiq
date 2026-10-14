@@ -1,0 +1,200 @@
+1	kroki
+2	Wypróbuj kroki: napełnij, opróżnij, przelej.
+3	min
+4	Tu
+5	Tam
+6	Czas
+7	Przejdź z latarką
+8	Wybierz 1 lub 2 osoby po stronie latarki 🔦 i naciśnij „Przejdź”. Para idzie w tempie wolniejszej osoby.
+9	Wylosowano
+10	najwięcej jednego rodzaju
+11	Losuj na ślepo
+12	Masz już taką kolejność.
+13	Nowa kolejność! ✓
+14	Znalezione kolejności
+15	Dotykaj dzieci, aby je ustawić w rzędzie. Znajdź wszystkie różne kolejności!
+16	Następna kolejność
+17	Zeruj wszystko
+18	Zestawione stroje
+19	Wybierz po jednym z każdego rzędu i naciśnij „Dodaj”. Znajdź wszystkie różne stroje!
+20	Dodaj
+21	Już to masz.
+22	Nowe! ✓
+23	Pary
+24	Para usunięta.
+25	Dotknij dwóch osób – zostaną połączone linią. Połącz każdą parę dokładnie raz!
+26	Znalezione drogi
+27	Nie możesz tam iść.
+28	Masz już tę drogę.
+29	Nowa droga! ✓
+30	Przesuwaj 🤖 w prawo lub w dół do 🏁. Znajdź wszystkie różne drogi!
+31	Daj jednego
+32	Zostało
+33	Nie po równo – spróbuj jeszcze raz.
+34	Dotknij dziecka – dostanie jeden. Podziel wszystko po równo!
+35	Dotykaj obrazków, aby liczyć. Liczba rośnie z każdym dotknięciem.
+36	Ułożone domina
+37	wolne pola
+38	Dotknij dwóch sąsiednich pól, aby położyć domino. Dotknij domina, aby je podnieść.
+39	Pokazano
+40	rozmiar
+41	Dalej
+42	Zagraj wszystko
+43	Próby
+44	obie 🔴
+45	suma
+46	Rzucaj dwiema kostkami wiele razy i obserwuj, które sumy wypadają najczęściej.
+47	Losuj na ślepo (ze zwracaniem). Obserwuj, jak często pojawia się każdy kolor.
+48	Losuj dwie kulki bez zwracania. Jak często obie są 🔴?
+49	Pozostałe liczby
+50	Dotknij liczby, która nie pasuje do wskazówek – zostanie przekreślona. Zostanie jedna!
+51	Tabela pomocnicza: dotykaj, aby przełączać puste ➜ ✗ (nie) ➜ ✓ (tak).
+52	Minione dni
+53	ze 100
+54	Rozgrzewka
+55	Pierwsze sztuczki
+56	Dziwne zasady
+57	Odwrotnie: kto zabierze ostatnią, przegrywa
+58	Dwa stosy
+59	Mistrz patyczków
+60	Patyczki – trening
+61	Graj przeciwko komputerowi. Na początku jest łatwo, potem gra lepiej i zmieniają się zasady. Wygraj poziom, aby odblokować następny.
+62	bieżący etap
+63	Kontynuuj
+64	Start
+65	poziom 
+66	Poziom
+67	Bez porażek – świetnie!
+68	Lista poziomów
+69	Następny poziom
+70	Podpowiedź
+71	Spójrz jeszcze raz na grę.
+72	Patyczki – poziom 
+73	Poziomy
+74	1 · Początkujący
+75	2 · Łatwy
+76	3 · Średni
+77	4 · Trudny
+78	5 · Ekspert
+79	6 · Mistrz
+80	Potrzebne tylko „gołe jedynki”, dużo liczb danych.
+81	Potrzebne też „ukryte jedynki” w wierszu, kolumnie lub kwadracie.
+82	Te same techniki, ale znacznie mniej liczb danych.
+83	Potrzebne zablokowane kandydaty lub gołe pary.
+84	Potrzebne ukryte pary lub gołe trójki.
+85	Zaawansowane techniki (X-Wing i dalej) – dla mistrzów.
+86	Dużo liczb danych (23).
+87	Mniej liczb danych (19).
+88	Tylko 12 liczb danych; potrzebne ukryte jedynki.
+89	Tylko około 11 liczb danych.
+90	Tylko około 10 liczb danych.
+91	Najmniejsza możliwa liczba liczb danych (9).
+92	Liczba liczb danych maleje wraz z poziomem.
+93	Goła jedynka
+94	Ukryta jedynka
+95	Zablokowani kandydaci
+96	Goła para
+97	Ukryta para
+98	Goła trójka
+99	X-Wing
+100	wiersz
+101	kolumna
+102	Podpowiedzi
+103	Najpierw dotknij pustego pola.
+104	Niektóre liczby się powtarzają – spójrz na pola oznaczone „!”.
+105	Sudoku rozwiązane!
+106	podpowiedzi
+107	Nowy rekord osobisty!
+108	Twój najlepszy wynik
+109	Zamknij
+110	Notatki
+111	Najpierw popraw powtarzające się liczby („!”).
+112	 (Kolejna podpowiedź pokaże więcej.)
+113	Na razie wszystko dobrze – tak trzymaj!
+114	Rozmiar
+115	Łamigłówka nr 
+116	najlepszy
+117	Cofnij
+118	Sprawdź
+119	Błąd w aplikacji
+120	Pomysł / prośba
+121	Pytanie
+122	Twoje imię (opcjonalnie)
+123	Opisz, co się stało albo co chciał(a)byś zmienić…
+124	Wiadomość
+125	Wyślij
+126	Opisz to proszę w kilku słowach.
+127	Dziękujemy! Twoja wiadomość została wysłana.
+128	Skontaktuj się z pomocą
+129	Daj nam znać, jeśli coś nie działa, odpowiedź wygląda na błędną albo masz pomysł.
+130	Automatycznie dołączamy stronę, tytuł zadania i typ urządzenia, żebyśmy mogli znaleźć problem. Nie wpisuj tu haseł ani nazwiska.
+131	Anuluj
+132	Pomoc techniczna wymaga połączenia z serwerem, które nie jest skonfigurowane. Powiedz o tym nauczycielowi.
+133	Kontakt z pomocą / zgłoś problem
+134	Zgłoś problem / pomoc
+135	Niektóre liczby powtarzają się w wierszu, kolumnie lub kwadracie. Spójrz na pola oznaczone „!”.
+136	Niektóre liczby się powtarzają – spójrz na pola oznaczone „!”. Które trzeba zmienić?
+137	Gdy wstawisz jedną liczbę, inne pola mają mniej możliwości. Idź dalej – zawsze szukaj pola, do którego pasuje tylko jedna liczba.
+138	Oto gotowe rozwiązanie:
+139	Naciśnij pole i zobacz, które światła się zmieniają. Każde pole wystarczy nacisnąć najwyżej raz.
+140	Naciśnięcie pola zmienia stan jego i jego sąsiadów. Dwukrotne naciśnięcie tego samego pola się znosi, więc każde pole wystarczy nacisnąć najwyżej raz – kolejność nie ma znaczenia.
+141	Odtwórzmy to krok po kroku:
+142	Tym razem wygrał komputer – ale możesz zagrać jeszcze raz! Pomyśl, jaki ruch zostawia przeciwnikowi pozycję „przegraną”.
+143	Stąd nie ma ruchu wygrywającego – komputer musiałby się pomylić. Zacznij od nowa i zobacz, gdzie popełnił błąd.
+144	Szukaj ruchu, który zostawia przeciwnika w pozycji przegranej. Przy dwóch stosach spróbuj je wyrównać.
+145	Przy dwóch stosach po prostu je wyrównaj: z większego zabierz różnicę. Potem naśladuj przeciwnika na drugim stosie.
+146	W wersji „kto zabierze ostatni, przegrywa” graj tak samo, aż zostaną tylko stosy o wielkości 1 – wtedy zostaw przeciwnikowi nieparzystą liczbę takich stosów.
+147	Odłączono od klasy.
+148	teraz
+149	Błąd połączenia
+150	Serwer nie jest skonfigurowany
+151	Panel nauczyciela i rodzica wymaga serwera (Cloudflare Worker). Kroki konfiguracji są w server/README.md. Po konfiguracji wpisz jego adres w js/config.js.
+152	klasa
+153	Brak danych – uczeń niczego jeszcze nie rozwiązał albo nie był online.
+154	ostatnio aktywny(-a)
+155	gwiazdki
+156	punkty
+157	zadania
+158	seria
+159	Mocne i słabe strony (średnia liczba gwiazdek)
+160	Ostatnie zadania
+161	Kod rodzica
+162	Usuń ucznia
+163	Połączono z nauczycielem
+164	Przekaż go rodzicowi, aby mógł zobaczyć twoje postępy w sekcji Dostęp dla rodzica.
+165	Synchronizuj teraz
+166	Gotowe
+167	Rozłącz
+168	Kod od nauczyciela (np. K7M2QX)
+169	Połącz z nauczycielem
+170	Po połączeniu nauczyciel widzi twoje imię i postępy. Nic więcej nie jest wysyłane.
+171	Połącz
+172	Połączono!
+173	Nauczyciel, administrator, rodzic
+174	Logowanie nauczyciela / administratora
+175	Dostęp dla rodzica
+176	Panel nauczyciela
+177	E-mail (administrator: admin)
+178	Hasło
+179	Zaloguj się
+180	Konta nauczycieli tworzy administrator. Administrator loguje się jako „admin”.
+181	administrator
+182	nauczyciel
+183	Wyloguj się
+184	Klasy
+185	Zadania domowe
+186	Baza zadań
+187	Pomoc
+188	Nauczyciele
+189	Klasa 
+190	Otwórz LogiQ → Profil → „Połącz z nauczycielem” → wpisz ten kod.
+191	Pokaż kod na pełnym ekranie
+192	Litera klasy
+193	Klasa utworzona
+194	Nowa klasa
+195	Nie masz jeszcze klasy. Utwórz ją powyżej i przekaż kod uczniom.
+196	Kod dla uczniów
+197	Otwórz
+198	Usuń klasę
+199	Usunąć klasę?
+200	Wszyscy uczniowie i ich postępy zostaną usunięci. Tej operacji nie można cofnąć.

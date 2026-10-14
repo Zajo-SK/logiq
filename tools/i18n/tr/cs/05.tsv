@@ -1,0 +1,200 @@
+1	Dělitele vypisujeme v párech (d, n : d).
+2	Dva autobusy
+3	minut
+4	Potřebuješ číslo, které je násobkem obou časů.
+5	Nejmenší společný násobek.
+6	Násobky dvou čísel
+7	Spočítej násobky každého čísla zvlášť.
+8	Čísla dělitelná oběma byla započítána dvakrát – jednou je odečti.
+9	Nula na konci vzniká z dvojice činitelů 2 a 5. Který z nich je v součinu vzácnější?
+10	Dvojek je mnohem víc než pětek, takže rozhodují pětky.
+11	Největší čtverec
+12	Strana čtverce musí dělit oba rozměry.
+13	Potřebuješ největšího společného dělitele.
+14	Tažení kuličky
+15	Pravděpodobnost = příznivé : všechny možné.
+16	Kolik je kuliček celkem a kolik je příznivých?
+17	Kolik je možných výsledků při hodu dvěma kostkami?
+18	Hody mincí
+19	Dvě kuličky, bez vracení
+20	Když vytáhneš červenou, kolik červených a kolik kuliček zbývá?
+21	Alespoň jeden … (a podobně)
+22	Odečti pravděpodobnost opačného jevu od 1.
+23	Procento z čísla
+24	Nejdřív najdi 1 % z celku.
+25	Cena nahoru, cena dolů
+26	Procento vždy počítej z aktuální ceny.
+27	Nejdřív spočítej cenu po zdražení.
+28	Rozdělení v poměru
+29	Kolik je dílů celkem?
+30	Najdi hodnotu jednoho dílu.
+31	Zlomek z čísla
+32	Pak vynásob počtem dílů.
+33	Kolik procent?
+34	Utvoř zlomek část / celek.
+35	Převeď zlomek na setiny.
+36	Jaký to bude den?
+37	Týden má 7 dní. Co se stane po 7 dnech?
+38	Jízdní řád
+39	Převeď hodiny na minuty nebo dopočítej do celé hodiny.
+40	Nejdřív do další celé hodiny, pak celé hodiny, pak zbylé minuty.
+41	Leden
+42	Únor
+43	Březen
+44	Duben
+45	Květen
+46	Červen
+47	Červenec
+48	Srpen
+49	Září
+50	Říjen
+51	Listopad
+52	Prosinec
+53	Kalendář
+54	Kolik dní má ten měsíc? Najdi zbytek po dělení 7.
+55	Den v týdnu se posune o tolik dní.
+56	Úhel mezi ručičkami
+57	Minutová ručička se posune o 6° za minutu, hodinová o 0,5° za minutu.
+58	Spočítej, kde je každá ručička měřeno od 12, a odečti.
+59	💡 Klepnutím přepneš políčko i jeho sousedy. Zhasni všechna světla (○).
+60	🚀 Nakresli prstem nejkratší cestu do 🏁. Zdmi procházet nesmíš.
+61	Most v noci
+62	Baterku je třeba vždy přinést zpět. Kdo ji má nést zpět?
+63	Dva nejpomalejší by měli přejít společně, aby se jejich čas nepočítal dvakrát.
+64	Vyzkoušíme všechny plány (prohledal je počítač) a hledáme nejkratší:
+65	
+66	Džbány s vodou
+67	Zapiš stav jako dvojici (první džbán, druhý džbán) a zkoušej možné kroky.
+68	Zkus začít naplněním většího džbánu a přelitím do menšího.
+69	Stavy (první, druhý džbán), které tvoří nejkratší cestu:
+70	Co kdybys mince rozdělil na tři hromádky? Co ti řekne jedno vážení dvou hromádek?
+71	Každé vážení má 3 výsledky (levá lehčí, pravá lehčí, rovnováha), takže rozliší 3 možnosti.
+72	Jedno vážení rozdělí možnosti na třetiny: porovnáš dvě hromádky, třetí zůstane stranou.
+73	červená
+74	modrá
+75	zelená
+76	Pavučina s písmenem
+77	Zapiš každé číslo pomocí x. Kolečko vedle x je třeba x + 2.
+78	Kolik šipka přidává?
+79	Najdi dvě známá čísla spojená šipkami té barvy. O kolik se liší?
+80	Když má cesta několik šipek, rozděl rozdíl mezi ně (po odečtení šipek jiných barev).
+81	🕸️ Šipky stejné barvy přičítají stejné číslo (některé hodnoty jsou neznámé). Doplň prázdná kolečka. Klepni na kolečko a napiš číslo.
+82	🕸️ Každá šipka přičítá číslo své barvy. Doplň prázdná kolečka. Klepni na kolečko a napiš číslo.
+83	Pavučina
+84	Najdi šipku spojující dvě známá čísla – o kolik se liší? To ti prozradí, co její barva přičítá.
+85	Šipky jedné barvy přičítají vždy totéž. Pavučina „funguje“, když všechny šipky sedí.
+86	Začni tam, kde jsou dvě známá čísla spojená šipkou: jejich rozdíl je hodnota té barvy. Pak pokračuj po šipkách (po směru přičítej, proti směru odečítej).
+87	Nejdřív klepni na prázdné kolečko.
+88	Doplň všechna prázdná kolečka.
+89	Něco nesedí. Přerušované šipky ukazují, kde se čísla neshodují s barvou šipky.
+90	Zkus nejdřív kolečko vedle známého čísla podél šipky, jejíž hodnotu znáš.
+91	Kolik je tras?
+92	🎪 Ze vstupu 🚪 do východu 🏁 jdeš tak, že projdeš každou místnost právě jednou. Smíš použít jen otevřené dveře. Kolika způsoby to jde?
+93	Začni u vstupu a zkoušej možnosti krok po kroku. Kde se trasa větví?
+94	Zapiš trasy jako posloupnost místností. Slepé uličky ukážou, které trasy nevyjdou.
+95	Procházka výstavou
+96	🎪 Vejdi vchodem 🚪 a projdi každou místnost právě jednou, až skončíš u východu 🏁. Klepej na sousední místnosti přes otevřené dveře.
+97	🎪 Vejdi vchodem 🚪 a projdi každou místnost právě jednou. Klepej na sousední místnosti přes otevřené dveře.
+98	Pokud uvízneš ve slepé uličce, vrať se tlačítkem Zpět a zkus jinou cestu.
+99	Místnost s jedinými dveřmi musí být začátek nebo konec trasy. Takové místnosti nech nakonec.
+100	Podívej se na místnosti s jediným východem (slepé uličky). Můžeš do nich vejít jen na konci trasy, proto je nech nakonec.
+101	Doplň čísla místností
+102	🎪 Návštěvník šel ze vstupu 🚪 k východu 🏁 a v každé místnosti byl právě jednou. Místnosti jsou očíslované v pořadí návštěvy 1, 2, 3, … Doplň chybějící čísla. Klepni na prázdnou místnost a napiš číslo.
+103	Podívej se na sousedy: číslo n+1 je vždy v sousední místnosti přes otevřené dveře.
+104	Místnost s jedinými dveřmi je konec nebo začátek. Zkus jít odzadu od východu.
+105	Číslo n+1 je vždy vedle čísla n přes otevřené dveře. Pracuj ze známých čísel a vylučuj slepé uličky.
+106	V této místnosti jsi už byl. Každou lze použít jen jednou.
+107	Tímto směrem nejsou dveře. Klepni na sousední místnost s otevřeným průchodem.
+108	Navštívil jsi všechny místnosti, ale nejsi u východu. Zkus jinou trasu.
+109	Zpět
+110	Odsud už nelze navštívit všechny místnosti. Vrať se o pár kroků (↩ Zpět).
+111	Zkontroluj, jestli nenecháváš za sebou místnost, do které se už nedostaneš (slepá ulička).
+112	Pokračuj do označené místnosti.
+113	Nejdřív klepni na prázdnou místnost.
+114	Doplň všechny prázdné místnosti.
+115	Některá čísla nesedí. Pamatuj: n+1 je vždy v sousední místnosti přes otevřené dveře.
+116	Zkus místnost vedle známého čísla: hledáš následující číslo.
+117	Učeň
+118	Řešitel
+119	Stratég
+120	Logik
+121	Mistr
+122	Velmistr
+123	Legenda
+124	Mudrc
+125	Kosmický mudrc
+126	Chobotnice
+127	Sova
+128	Raketa
+129	Panda
+130	Drak
+131	Jednorožec
+132	Koruna
+133	Klasický
+134	Oceán
+135	Les
+136	Západ slunce
+137	Žába
+138	Lev
+139	Tučňák
+140	Dinosaurus
+141	Čaroděj
+142	Nindža
+143	Hrdina
+144	Orel
+145	Mimozemšťan
+146	Cukrovinky
+147	Noční obloha
+148	Máta
+149	Galaxie
+150	Zlato
+151	Nové samolepky!
+152	Medaile:
+153	Mise splněna:
+154	Všechny dnešní mise hotové! Truhla: +40 💎
+155	Medaile za světy pro ročníky 2–9
+156	Album samolepek a medailí
+157	Každý dokončený level dává samolepku. Dokonči celý svět v ročníku a získáš zlatou medaili (+100 💎). Medaile jsou pro ročníky 2 až 9.
+158	Vyřeš 3 úlohy
+159	Vyřeš 5 úloh
+160	Vyřeš 8 úloh
+161	Získej 8 hvězd
+162	Získej 15 hvězd
+163	Získej 3 hvězdy u 2 úloh
+164	Vyřeš 3 úlohy bez nápovědy
+165	Zkus 3 různá témata
+166	Vyřeš denní výzvu
+167	Dnešní mise
+168	Truhla otevřena: +40 💎. Zítra nové mise!
+169	Splň všechny tři mise a otevři truhlu: +40 💎.
+170	je na řadě
+171	vyhrává!
+172	vzal poslední
+173	Znovu
+174	Ukázka
+175	Zkus to sám
+176	🐻 a 🐰 hrají – klepni, kolik sirek vzít.
+177	Zlom tento kus
+178	Zlomení
+179	kousků
+180	Klepni na kus, abys ho zlomil na dva. Rozlámej všechno na jednotlivé čtverečky!
+181	Vyřaď hráče
+182	Odehrané zápasy
+183	Každý zápas = jeden hráč vypadne. Klepni na hráče, který prohrál.
+184	⬅️ Levá miska
+185	Mimo váhy
+186	Pravá miska ➡️
+187	mince
+188	Vážení
+189	Zvážit
+190	Zrušit tip
+191	Tipni falešnou
+192	Klepni na minci, o které si myslíš, že je falešná.
+193	Nová hra
+194	Polož mince na obě misky.
+195	Polož na obě misky stejný počet mincí.
+196	Rovnováha ⚖️
+197	Levá strana je lehčí
+198	Pravá strana je lehčí
+199	Jedna mince je lehčí. Klepnutím ji přesuneš (vlevo → vpravo → pryč), pak stiskni „Zvážit“.
+200	Cíl

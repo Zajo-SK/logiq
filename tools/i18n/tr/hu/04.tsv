@@ -1,0 +1,200 @@
+1	páratlan
+2	négyzetszám
+3	Találd ki a számom
+4	Kezdd azzal a nyomravezetővel, amely a legtöbb számot kizárja.
+5	Kombináld a nyomokat: olyan számot keresel, amely mindegyiknek egyszerre megfelel.
+6	Nyomról nyomra kihúzzuk a számokat:
+7	Sorrend a sorban
+8	Kezdd olyan nyomravezetővel, amely valami biztosat ad (például „közvetlenül mögötte”). Fűzd össze a párokat.
+9	Írd fel az 1., 2., 3. … helyeket, és lépésről lépésre illeszd hozzájuk a neveket, kizárva, ami nem lehet.
+10	A nyomokat egyetlen sorrenddé fűzzük össze – minden lehetetlen helyet kihúzunk.
+11	Kutya
+12	egy kutya
+13	a kutya
+14	Macska
+15	egy macska
+16	a macska
+17	Hörcsög
+18	egy hörcsög
+19	a hörcsög
+20	Nyúl
+21	egy nyúl
+22	a nyúl
+23	Hal
+24	egy hal
+25	a hal
+26	Kinek melyik háziállata van?
+27	Készíts táblázatot: a sorok a gyerekek, az oszlopok a háziállatok. Húzd ki, ami lehetetlen.
+28	Ha egy sorban vagy oszlopban csak egy szabad cella marad, az a válasz.
+29	A táblázatban ✗-szel jelöljük, amit a nyomok kizárnak, és ✓-val, ha már csak egy lehetőség marad.
+30	Ha minden A egy B, és minden B egy C, akkor minden A egy C – a lánc folytatódik.
+31	Ha Axel A lenne, akkor B-nek is kellene lennie. Ő nem B, tehát nem A.
+32	Minden C egy B, és egyetlen B sem A, tehát egyetlen C sem lehet A.
+33	Minden C egy A, és minden A egy B, tehát minden C egy B.
+34	Van olyan A, amely B, és minden B egy C, tehát az az A is egy C.
+35	Minden A egy C, és egyetlen C sem D, tehát egyetlen A sem D.
+36	Van olyan A, amely B, és egyetlen B sem C – tehát az az A nem C.
+37	Mi következik?
+38	A listában szereplő állítások igazak. Melyik kijelentésnek KELL következnie belőlük? (A szavak kitaláltak – csak a logikára támaszkodj.)
+39	Rajzolj köröket (halmazokat) minden fajtához. Melyik kör van benne melyikben?
+40	Vizsgáld meg az egyes lehetőségeket: tudsz-e olyan esetet rajzolni, amelyben a feltételek teljesülnek, de a lehetőség nem? Akkor nem következik.
+41	Hétfő
+42	Kedd
+43	Szerda
+44	Csütörtök
+45	Péntek
+46	Szombat
+47	Vasárnap
+48	Gyerekek egy sorban
+49	Hány lehetőség van az első helyre? És a másodikra, ha az első már foglalt?
+50	A lehetőségek száma minden alkalommal 1-gyel csökken. Szorozd össze őket.
+51	A dobogó
+52	Hány futó nyerheti az aranyat? Hányan nyerhetik utána az ezüstöt?
+53	Az érmek különbözőek, tehát a sorrend számít.
+54	Barátok egymás mellett
+55	Ragaszd össze a két barátot egyetlen „párrá”. Hány dolgot rendezel ekkor sorba?
+56	És a páron belül kétféleképpen állhatnak.
+57	A kerek asztal
+58	Ültess le egy gyereket rögzített helyre. Mit kell még elrendezni?
+59	Eggyel kevesebb gyerek marad.
+60	Rögzíts egy gyereket – ezzel megszűnik a forgatás.
+61	Hány számjegy állhat a százasok helyén? És hány marad a tízesekhez?
+62	Minden felhasznált számjegy 1-gyel csökkenti a választékot.
+63	Először számold meg a rendezett párokat – hány van?
+64	Minden párt kétszer számoltál. Mit kell ezzel tenni?
+65	Hármas csapat
+66	Hány rendezett hármas van?
+67	Mindegyik csapat köztük 3! = 6-szor szerepel.
+68	Kézfogások
+69	Hány emberrel fog kezet egy ember?
+70	Minden kézfogást kétszer számoltál (mindkét oldalról).
+71	Átlók
+72	Egy csúcsból: hány csúcsba húzható átló? (Önmagába és a szomszédaiba nem.)
+73	Minden átlót kétszer számoltál.
+74	Pizzafeltétek
+75	Egy feltétnél két lehetőség van. Mi a helyzet két feltétnél?
+76	Minden további feltét megduplázza a darabszámot.
+77	Minden feltétnek 2 lehetősége van (igen/nem), és a döntések egymástól függetlenek.
+78	minden számjegye páratlan
+79	minden számjegye páros
+80	a szám sem 0-t, sem 5-ös számjegyet nem tartalmaz
+81	mind a három számjegye különböző
+82	a számjegyek szigorúan növekednek (balról jobbra)
+83	a számjegyek összege 10
+84	palindrom (mindkét irányból ugyanúgy olvasható)
+85	a szám legalább egy 7-es számjegyet tartalmaz
+86	a számjegyek összege 9
+87	legalább egy számjegye 0
+88	Öltözetek
+89	Hányféle különböző öltözetet állíthatsz össze? (1 👕 + 1 👖 + 1 🧢)
+90	Válassz egy pólót. Hány nadrág–sapka kombinációval viselhető?
+91	Szorozd össze a lehetőségek számát minden választásnál.
+92	Számzár
+93	Hány lehetőség van egy tárcsán?
+94	A tárcsák függetlenek – a lehetőségek szorzódnak.
+95	Mindegyik tárcsának 10 lehetősége van.
+96	Utak a városok között
+97	Hányféleképpen juthatsz el A-ból B-be? És onnan tovább C-be?
+98	Az útszakaszokon az utak számai szorzódnak.
+99	Háromjegyű számok szabállyal
+100	Bontsd a számot százasokra, tízesekre, egyesekre. Hány lehetőség van mindegyikre?
+101	Vigyázz: a százasok helyén nem állhat 0.
+102	Megszámoljuk az egyes helyiértékek lehetőségeit, aztán kombináljuk őket (szorzással, vagy esetek összeadásával).
+103	Robot a rácson
+104	Minden cellába felülről vagy balról lehet eljutni. Hányféleképpen érheted el az első sor celláit?
+105	Írd be minden cellába a fölötte lévő és a tőle balra lévő cella útszámainak összegét.
+106	Minden cellába beírjuk, hányféleképpen lehet oda eljutni: a fölötte és a tőle balra lévő cella összegét (a letiltott celláknál 0).
+107	Az útszámok táblázata:
+108	Képzeld el a legrosszabb esetet – mindig peched van.
+109	Kártyák és színek
+110	Keresd a legrosszabb lehetséges húzást.
+111	Születésnapok az osztályban
+112	Oszd el a diákokat a lehető legegyenletesebben a 12 hónap között. Mit kapsz?
+113	Ha minden hónapban legfeljebb X diák lenne, legfeljebb hány lenne összesen?
+114	Ha mindegyik hónapban kevesebb lenne, összesen nem lenne elég. Ez a skatulyaelv.
+115	Kesztyűk a sötétben
+116	A legrosszabb eset az, ha olyan kesztyűket húzol, amelyeknek nincs párjuk.
+117	Betűcserék
+118	Először képzeld el, hogy minden betű különböző. Hány elrendezés van?
+119	Az azonos betűk felcserélhetők – tehát minden elrendezést többször számoltál.
+120	Gyöngyök egy sorban
+121	Először válaszd ki a piros gyöngyök helyét. Hányféleképpen lehet?
+122	Aztán a megmaradt helyek közül válaszd ki a kékekét.
+123	Nézd meg, hogy minden szám az előző kétszerese-e egy kis módosítással.
+124	Nézd meg a szomszédok közti különbségeket. Mekkorák?
+125	A különbségek 1-gyel nőnek – ezek a háromszögszámok.
+126	Nézd meg a különbségeket, aztán a különbségek különbségeit.
+127	Mágikus négyzet
+128	Keress egy olyan sort, oszlopot vagy átlót, amelyben minden szám ismert – ez a mágikus összeg.
+129	Abban a sorban, ahol egy ismeretlen van, az egyenlő a mágikus összeg és a többi összegének különbségével.
+130	Gyümölcsegyenletek
+131	Kezdd azzal az egyenlettel, amelyben csak egyféle gyümölcs van.
+132	Ha ismered az egyik gyümölcs értékét, helyettesítsd be a következő egyenletbe.
+133	Sorban megoldjuk az egyenleteket, az egyetlen gyümölcsöset kezdve:
+134	Kriptaritmusz
+135	Kezdd ott, ahol a válasz szinte biztos – például egy összeadás eredményének első számjegyénél.
+136	Próbálj ki lehetőségeket, és minden alkalommal ellenőrizd az összes oszlopot.
+137	Kizárjuk azokat a számjegyeket, amelyek ellentmondáshoz vezetnének.
+138	nincs kifestett lapja
+139	pontosan 1 kifestett lapja
+140	pontosan 2 kifestett lapja
+141	pontosan 3 kifestett lapja
+142	Sarokkockák: egy dobozban 8 sarok van.
+143	A kifestett doboz
+144	Mely kis kockák vannak a sarkokban? Az éleken? A lapokon? Belül?
+145	A kifestett lapok száma a helyzettől függ: sarok 3, él 2, lap 1, belső 0.
+146	A helyzet dönti el a kifestett lapokat: sarok = 3, él = 2, lap = 1, belső = 0.
+147	Hány négyzet van?
+148	Először számold meg az 1×1-es négyzeteket. Aztán a 2×2-eseket. Mi jön ezután?
+149	Az s méretű négyzetekből (n − s + 1)² van. Add össze az összes méretet.
+150	Négyzetméret szerint számolunk. Az s méret (n − s + 1)² helyen fér el.
+151	Négyzetek egy téglalapban
+152	Az s méretű négyzet (sorok − s + 1) · (oszlopok − s + 1) helyen fér el.
+153	Az s = 1, 2, … négyzetméretek szerint számolunk a kisebbik oldalig.
+154	Hány téglalap van?
+155	Egy téglalapot két vízszintes és két függőleges vonal határoz meg.
+156	🧱 A számok a tornyok magasságát mutatják. Összesen hány kocka van?
+157	🧱 Elölről nézed (az alsó él felől). Hány négyzetet látsz?
+158	🧱 Az építményt felül és oldalt festjük ki (alul nem). Hány négyzet lesz kifestve?
+159	Minden szám egy torony. Mit teszel velük?
+160	Add össze a táblázat összes számát.
+161	Elölről minden oszlopban csak a legmagasabb tornyot látod.
+162	Vedd minden oszlop legnagyobb számát, és add össze őket.
+163	Számold külön a tetőket (tornyonként egyet) és az oldalakat.
+164	Egy oldal csak a szomszédos torony fölött látszik: a magasságkülönbség (a szélen a teljes magasság).
+165	Minden szám megmondja, hány kockából áll a torony.
+166	Elölről egy magasabb torony eltakarja a mögötte lévő alacsonyabbakat – oszloponként csak a legmagasabbat látjuk.
+167	Tetők: a nem üres cellák száma. Oldalak: egy torony minden oldalán a szomszéddal vett magasságkülönbség (a határ 0 magasságnak számít).
+168	L alakú ábra
+169	A teljes téglalap területe mínusz a kivágott rész.
+170	Számold ki külön mindkét téglalapot.
+171	Rajzold le az alakzatot. Az oldalak eltolása egyszerűsítheti a kerületet.
+172	Az L alakzat kerülete megegyezik az eredeti téglalap kerületével.
+173	Egy sarok levágása nem változtatja a kerületet: az új oldalak a régiekre tolhatók.
+174	Megnagyobbított négyzet
+175	Milyen hosszú az eredeti négyzet oldala?
+176	Az új oldal megnövekedett; a terület oldal szorozva oldallal.
+177	Háromszög területe
+178	A háromszög egy megfelelő téglalap fele.
+179	Terület = alap · magasság : 2.
+180	Háromszög területe = (alap · magasság) : 2.
+181	Képkeret
+182	Mekkorák a belső rész méretei?
+183	Gondoltam egy számra
+184	Dolgozz visszafelé: mit kell tenned az eredménnyel, hogy visszacsináld az utolsó lépést?
+185	Számok egymás után
+186	Nevezd a legkisebb számot n-nek. Hogyan írod fel a többit?
+187	Összeg és különbség
+188	Mit kapsz, ha összeadod az összeget és a különbséget?
+189	A nagyobbik szám kétszeresét kapod.
+190	Apa és fia
+191	év
+192	Ha az apa ennyi évvel fiatalabb lenne, egyidősek lennének. Mennyi lenne akkor az összeg?
+193	Az összeg a korkülönbséggel csökkenne.
+194	Érmék
+195	Ha az összes érme 1 eurós lenne, mekkora lenne az érték?
+196	Minden 1 eurós érme 2 eurósra cserélése 1 euróval növeli az értéket.
+197	Egyenlet zárójelekkel
+198	Először szabadulj meg attól, ami a zárójelen kívül hozzá van adva.
+199	Osztók
+200	Keresd az osztókat párokban: ha d osztja n-et, akkor n : d is osztja.
