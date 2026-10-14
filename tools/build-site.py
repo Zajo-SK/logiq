@@ -29,7 +29,7 @@ def page(fname, title, desc, body, hero=None):
 <footer class="foot"><div class="wrap"><div class="fcols"><div><b>LogiQ</b><p>Bezplatná aplikácia na rozvoj logického a matematického myslenia pre 2.–9. ročník.</p></div>
 <div><b>Aplikácia</b><p><a href="%(app)s">Otvoriť LogiQ</a><br><a href="%(app)s#/privacy">Aké údaje spracúvame</a><br><a href="%(app)s#/rules">Pravidlá používania</a></p></div>
 <div><b>Stránky</b><p>%(flinks)s</p></div></div>
-<p class="fine">🚧 Aplikácia je vo vývoji. Ak nájdete chybu, napíšte nám cez ikonku 💬 v aplikácii. LogiQ nie je oficiálny produkt ministerstva školstva; súlad so ŠVP je orientačný.</p></div></footer>
+<p class="fine">🚧 Aplikácia je vo vývoji. Ak nájdete chybu, napíšte nám cez ikonku 💬 v aplikácii. LogiQ nie je oficiálny produkt ministerstva školstva; súlad so ŠVP je orientačný.</p><p class="fine">© 2026 LogiQ. Všetky práva vyhradené.</p></div></footer>
 </body></html>''' % {'t': title, 'd': desc, 'nav': nav, 'app': APP, 'hero': hero or '', 'body': body, 'flinks': '<br>'.join('<a href="%s">%s</a>' % (f, n) for f, n in NAV)}
     io.open(os.path.join(OUT, fname), 'w', encoding='utf-8').write(html)
 

@@ -63,16 +63,35 @@ export default {
         if (!await rateLimit(env, 'join:' + ip, 40, 3600)) return J({ error: 'Príliš veľa pokusov' }, 429, cors);
         const code = clean(body.code, 10).toUpperCase(), cls = await first('SELECT label FROM classes WHERE code=?', code);
         if (!cls) return J({ error: 'Kód triedy neexistuje' }, 404, cors);
-        const id = rnd(8, CODE_ALPHA), secret = rnd(28, TOKEN_ALPHA), parentCode = rnd(8, CODE_ALPHA), now = Date.now();
-        await run('INSERT INTO students (id, code, nick, grade, secret_hash, parent_code, created, updated, data) VALUES (?,?,?,?,?,?,?,?,NULL)', id, code, clean(body.nick, 30) || 'Žiak', +body.grade || 0, await sha256(secret), parentCode, now, now);
-        return J({ studentId: id, secret, parentCode, classLabel: cls.label, classCode: code, assignments: await myAssignments(code, id) }, 200, cors);
+        const id = rnd(8, CODE_ALPHA), secret = rnd(28, TOKEN_ALPHA), parentCode = rnd(8, CODE_ALPHA), recovery = rnd(8, CODE_ALPHA), now = Date.now();
+        await run('INSERT INTO students (id, code, nick, grade, secret_hash, parent_code, created, updated, data, recovery) VALUES (?,?,?,?,?,?,?,?,NULL,?)', id, code, clean(body.nick, 30) || 'Žiak', +body.grade || 0, await sha256(secret), parentCode, now, now, recovery);
+        return J({ studentId: id, secret, parentCode, recovery, classLabel: cls.label, classCode: code, assignments: await myAssignments(code, id) }, 200, cors);
       }
       if (p === '/api/sync' && m === 'POST') {
-        const code = clean(body.classCode, 10).toUpperCase(), id = clean(body.studentId, 12), rec = await first('SELECT secret_hash, nick, grade FROM students WHERE id=? AND code=?', id, code);
+        const code = clean(body.classCode, 10).toUpperCase(), id = clean(body.studentId, 12), rec = await first('SELECT secret_hash, nick, grade, recovery FROM students WHERE id=? AND code=?', id, code);
         if (!rec || !safeEq(await sha256(String(body.secret || '')), rec.secret_hash)) return J({ error: 'Neplatný prístup' }, 403, cors);
         const raw = JSON.stringify(body.data || {}); if (raw.length > 30000) return J({ error: 'Príliš veľké dáta' }, 413, cors);
         await run('UPDATE students SET data=?, nick=?, grade=?, updated=? WHERE id=?', raw, clean(body.data?.nick, 30) || rec.nick, +body.data?.grade || rec.grade, Date.now(), id);
-        return J({ ok: true, assignments: await myAssignments(code, id) }, 200, cors);
+        let recovery = rec.recovery; if (!recovery) { recovery = rnd(8, CODE_ALPHA); await run('UPDATE students SET recovery=? WHERE id=?', recovery, id); }
+        return J({ ok: true, recovery, assignments: await myAssignments(code, id) }, 200, cors);
+      }
+
+      /* ---- full progress backup + restore on a new device (student device only) ---- */
+      if (p === '/api/backup' && m === 'POST') {
+        const code = clean(body.classCode, 10).toUpperCase(), id = clean(body.studentId, 12), rec = await first('SELECT secret_hash FROM students WHERE id=? AND code=?', id, code);
+        if (!rec || !safeEq(await sha256(String(body.secret || '')), rec.secret_hash)) return J({ error: 'Neplatný prístup' }, 403, cors);
+        const raw = JSON.stringify(body.state || {}); if (raw.length > 900000) return J({ error: 'Príliš veľké dáta' }, 413, cors);
+        await run('INSERT INTO backups (student, code, data, updated) VALUES (?,?,?,?) ON CONFLICT(student) DO UPDATE SET data=excluded.data, updated=excluded.updated', id, code, raw, Date.now());
+        return J({ ok: true }, 200, cors);
+      }
+      if (p === '/api/restore' && m === 'POST') {
+        if (!await rateLimit(env, 'restore:' + ip, 15, 3600)) return J({ error: 'Príliš veľa pokusov, skús neskôr' }, 429, cors);
+        const code = clean(body.code, 10).toUpperCase(), rcv = clean(body.recovery, 12).toUpperCase().replace(/[^A-Z0-9]/g, '');
+        const r = await first('SELECT s.id, s.nick, s.parent_code, c.label FROM students s JOIN classes c ON c.code = s.code WHERE s.code = ? AND s.recovery = ?', code, rcv);
+        if (!r || rcv.length < 6) return J({ error: 'Kód triedy alebo záchranný kód nesedí' }, 404, cors);
+        const secret = rnd(28, TOKEN_ALPHA); await run('UPDATE students SET secret_hash=?, updated=? WHERE id=?', await sha256(secret), Date.now(), r.id);
+        const b = await first('SELECT data FROM backups WHERE student=?', r.id);
+        return J({ studentId: r.id, secret, parentCode: r.parent_code, classLabel: r.label, classCode: code, recovery: rcv, state: b && b.data ? JSON.parse(b.data) : null, assignments: await myAssignments(code, r.id) }, 200, cors);
       }
 
       /* ---- parent (read only) ---- */
@@ -81,7 +100,7 @@ export default {
         if (!await rateLimit(env, 'parent:' + ip, 60, 600)) return J({ error: 'Príliš veľa pokusov' }, 429, cors);
         const r = await first('SELECT s.*, c.label FROM students s JOIN classes c ON c.code = s.code WHERE s.parent_code = ?', pm[1].toUpperCase());
         if (!r) return J({ error: 'Kód neexistuje' }, 404, cors);
-        return J({ student: pub(r), classLabel: r.label }, 200, cors);
+        return J({ student: Object.assign(pub(r), { recovery: undefined }), classLabel: r.label }, 200, cors);
       }
 
       /* ---- support tickets: anyone can submit ---- */
@@ -145,10 +164,10 @@ export default {
       if (cm) {
         const code = cm[1].toUpperCase(), c = await ownClass(code); if (!c) return J({ error: 'Trieda nenájdená' }, 404, cors);
         if (cm[2] && m === 'GET') return J({ label: c.label, students: (await all('SELECT * FROM students WHERE code=?', code)).map(pub) }, 200, cors);
-        if (!cm[2] && m === 'DELETE') { await run('DELETE FROM students WHERE code=?', code); await run('DELETE FROM targets WHERE code=?', code); await run('DELETE FROM classes WHERE code=?', code); return J({ ok: true }, 200, cors); }
+        if (!cm[2] && m === 'DELETE') { await run('DELETE FROM students WHERE code=?', code); await run('DELETE FROM backups WHERE code=?', code); await run('DELETE FROM targets WHERE code=?', code); await run('DELETE FROM classes WHERE code=?', code); return J({ ok: true }, 200, cors); }
       }
       const sm = p.match(/^\/api\/students\/([A-Z0-9]+)\/([A-Z0-9]+)$/i);
-      if (sm && m === 'DELETE') { const code = sm[1].toUpperCase(); if (!await ownClass(code)) return J({ error: 'Nenájdené' }, 404, cors); await run('DELETE FROM students WHERE id=? AND code=?', sm[2].toUpperCase(), code); await run('DELETE FROM targets WHERE student=?', sm[2].toUpperCase()); return J({ ok: true }, 200, cors); }
+      if (sm && m === 'DELETE') { const code = sm[1].toUpperCase(); if (!await ownClass(code)) return J({ error: 'Nenájdené' }, 404, cors); await run('DELETE FROM students WHERE id=? AND code=?', sm[2].toUpperCase(), code); await run('DELETE FROM backups WHERE student=?', sm[2].toUpperCase()); await run('DELETE FROM targets WHERE student=?', sm[2].toUpperCase()); return J({ ok: true }, 200, cors); }
 
       /* ---- assignments ---- */
       const targetsOf = async aid => {
@@ -195,4 +214,4 @@ export default {
     } catch (e) { return J({ error: 'Chyba servera' }, 500, cors); }
   }
 };
-const pub = r => ({ id: r.id, classCode: r.code, nick: r.nick, grade: r.grade, parentCode: r.parent_code, created: r.created, updated: r.updated, data: r.data ? JSON.parse(r.data) : null });
+const pub = r => ({ id: r.id, classCode: r.code, nick: r.nick, grade: r.grade, parentCode: r.parent_code, recovery: r.recovery, created: r.created, updated: r.updated, data: r.data ? JSON.parse(r.data) : null });

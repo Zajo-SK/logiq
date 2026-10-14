@@ -26,6 +26,8 @@ for code, _ in LANGS:
         s = s.replace('href="site.css"', 'href="../site.css"'); s = re.sub(r'(?:\.\./)+icons/', '../../icons/', s)
         s = re.sub(r'href="\.\./(#/[^"]*)?"', lambda m: 'href="../../%s"' % (m.group(1) or ''), s)
         s = s.replace('href="../#/', 'href="../../#/') if False else s
+        if '© 2026 LogiQ' not in s:
+            s = s.replace('</div></footer>', '<p class="fine">© 2026 LogiQ. All rights reserved.</p></div></footer>', 1)
         s = re.sub(r'<label class="langsel">.*?</label>', '', s, flags=re.S)
         s = s.replace('<a class="btn gold" href="../../">', switcher(code, page) + '<a class="btn gold" href="../../">', 1)
         io.open(p, 'w', encoding='utf-8').write(s)
