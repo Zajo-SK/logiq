@@ -1,6 +1,6 @@
 'use strict';
 /* LogiQ – class selection, student sync, teacher / parent / admin environment */
-const L2 = (sk, en) => LANG === 'sk' ? sk : en;
+const L2 = (sk, en) => LANG === 'sk' ? sk : LANG === 'en' ? en : ((TR[LANG] && TR[LANG].s && TR[LANG].s[hkey(en)]) ?? en);
 const CLASS_LABELS = range(8).flatMap(i => ['A', 'B', 'C'].map(l => `${i + 2}.${l}`));
 const API = {
   base() { try { return localStorage.getItem('logiq.api') || window.LOGIQ_API || ''; } catch (e) { return window.LOGIQ_API || ''; } },

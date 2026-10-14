@@ -1,0 +1,200 @@
+c9ljxw	steps
+bkzloe	Try the steps: fill, empty, pour.
+1jxbmtz	min
+18s8a97	Here
+q9gsu5	There
+1q4eyv8	Time
+wz8k54	Cross with the torch
+wjgmvy	Pick 1 or 2 people on the torch 🔦 side and press “Cross”. A pair walks at the slower pace.
+19zw8yv	Drawn
+1cuxxli	most of a kind
+fcso7z	Draw blindly
+1un3vgg	You already have this order.
+fiidth	New order! ✓
+qepco8	Orders found
+1jgvv09	Tap the children to line them up. Find all different orders!
+1tpd0j4	Next order
+gpq4qb	Reset all
+35sg1s	Outfits made
+1iepuwt	Pick one from each row and press “Add”. Find all different outfits!
+17rv3f8	Add
+10qjvm6	Already have it.
+4wsyop	New! ✓
+eb94hy	Pairs
+1a1trgt	Pair removed.
+4l1hr0	Tap two people – they get joined by a line. Join every pair exactly once!
+5xk7fb	Paths found
+dedkld	You cannot go there.
+vtmyeh	You already have this path.
+nzw8m2	New path! ✓
+4yllvi	Move 🤖 right or down to the 🏁. Find all different paths!
+1rs88tk	Give one
+14n06mo	Left
+xxpzzo	Not equal – try again.
+s5qal0	Tap a child – they get one. Share everything equally!
+1wwbmn0	Tap the pictures to count. The number grows with every tap.
+1ral3rm	Dominoes placed
+lf2c7y	free cells
+1xzvi6w	Tap two neighbouring cells to place a domino. Tap a domino to lift it.
+w5mkza	Shown
+9vvq70	size
+1padbm0	Next
+spzk2o	Play all
+bmyhvk	Trials
+uibyb3	both 🔴
+1pek5go	sum
+117yf4n	Roll two dice many times and watch which sums come up most.
+62186n	Draw blindly (and put back). Watch how often each colour appears.
+13layfa	Draw two marbles without putting back. How often are both 🔴?
+jftjte	Numbers left
+rw27d0	Tap a number that does not fit the clues – it gets crossed out. One will be left!
+jxcyl9	Helper table: tap to cycle empty ➜ ✗ (not) ➜ ✓ (is).
+1ng5h72	Days passed
+1uzwklf	of 100
+15bn7ne	Warm-up
+1rezfnv	First tricks
+1qpq6i5	Odd rules
+122iwcr	Reversed: last one loses
+rlfmoo	Two piles
+1iatg37	Stick master
+17t80fl	Sticks – training
+bs35na	Play against the computer. At first it is easy, then it plays better and the rules change. Win a level to unlock the next.
+1lyeig	current stage
+1bipuuc	Continue
+30xvgf	Start
+1uo3yvb	level 
+i4lhtp	Level
+w453mg	No losses – great!
+1g15pbj	Level list
+jgpwku	Next level
+1kl8s7s	Hint
+1w98uaq	Take another look at the game.
+ke0wjx	Sticks – level 
+1s6yaru	Levels
+1ln5q0h	1 · Beginner
+e08p4u	2 · Easy
+1dt6ooy	3 · Medium
+1odu5in	4 · Hard
+auqvnz	5 · Expert
+1hkaxei	6 · Master
+sh31d8	Only “naked singles” needed, many givens.
+uhrn0x	You also need “hidden singles” in a row, column or box.
+136i359	Same techniques but far fewer givens.
+isqz5p	Needs locked candidates or naked pairs.
+1kjygdo	Needs hidden pairs or naked triples.
+101l4nm	Advanced techniques (X-Wing and beyond) – for masters.
+t7xsjo	Many givens (23).
+q7n5kx	Fewer givens (19).
+luxcib	Only 12 givens; hidden singles needed.
+m172be	About 11 givens only.
+19f50mv	About 10 givens only.
+19oai3r	Smallest possible number of givens (9).
+fuvxbb	The number of givens shrinks with the level.
+1mxlvdw	Naked single
+1wt7d0j	Hidden single
+1vh4o93	Locked candidates
+18ixni4	Naked pair
+19wr163	Hidden pair
+1hrpuqw	Naked triple
+bipnnx	X-Wing
+ivs7sr	row
+1w8y147	column
+1gc8fg1	Hints
+us8t4c	Tap an empty cell first.
+aihcu1	Some numbers repeat – look at the cells marked “!”.
+xuyl1w	Sudoku solved!
+6cs4nl	hints
+tgauny	New personal best!
+13pglt8	Your best
+1l0xxoj	Close
+4f76ga	Notes
+107t2k3	First fix the repeating numbers (“!”).
+1ih1ecd	 (Another hint shows more.)
+12syg8a	All correct so far – keep going!
+1a4x3zw	Size
+gwnmik	Puzzle #
+17f7sqv	best
+vmlwpb	Undo
+oqqg2v	Check
+1ue0kic	Bug in the app
+krlh66	Idea / request
+6ikx1	Question
+d8api0	Your name (optional)
+1kn5oaq	Describe what happened or what you would like to change…
+1cam7ic	Message
+1vatbdb	Send
+mwbi9e	Please describe it in a few words.
+1rhn25g	Thank you! Your message was sent.
+1ms7gdo	Contact support
+vb7em	Tell us if something does not work, an answer looks wrong, or you have an idea.
+1200say	We automatically attach the page, task title and device type so we can find the problem. Do not write passwords or a surname here.
+ew9em3	Cancel
+1d5ovp0	Support needs the server connection, which is not set up. Please tell your teacher.
+1nwnc9p	Contact support / report a problem
+7suimx	Report a problem / support
+1d6a6k4	Some numbers repeat in a row, column or box. Look at the cells marked “!”.
+g99kvl	Some numbers repeat – look at the cells marked “!”. Which one needs changing?
+184y4o6	Once one number is placed, other cells have fewer options. Keep going – always look for a cell where only one number fits.
+1wsoccj	Here is the finished solution:
+cnq6ze	Press a cell and notice which lights change. Each cell needs pressing at most once.
+e2qtdh	Pressing a cell flips it and its neighbours. Pressing the same cell twice cancels out, so each cell needs at most one press – order does not matter.
+77208h	Let us replay it step by step:
+xyb5ss	The computer won this time – but you can play again! Think about which move leaves your opponent a “losing” position.
+1e93mky	There is no winning move from here – the computer would have to slip. Restart and watch where it went wrong.
+1moumec	Look for a move that leaves your opponent in a losing position. With two piles, try to make them equal.
+1gtu96j	With two piles just equalise them: take the difference from the bigger one. Then mirror your opponent on the other pile.
+b33xjo	In the “last one loses” version play the same until only piles of size 1 remain – then leave your opponent an odd number of such piles.
+a023nx	Disconnected from the class.
+bah8fr	now
+1fmx9lv	Connection error
+1k0sg7s	Server not set up
+18snw8z	The teacher and parent area needs a server (Cloudflare Worker). Setup steps are in server/README.md. After setting it up put its address into js/config.js.
+1g8mlh0	grade
+igyxy0	No data yet – the student has not solved anything or has not been online.
+1v984j9	last active
+r8klye	stars
+1gbpj2e	points
+1c1urpp	tasks
+otcbub	streak
+1b7ef9e	Strengths and weaknesses (average stars)
+c2cmbw	Recent tasks
+1h8mzs6	Parent code
+rh6vyt	Delete student
+6hh9d3	Connected to teacher
+ixjour	Give it to a parent so they can see your progress in the Parent access area.
+19b75z2	Sync now
+13cn9g1	Done
+1ompkaz	Disconnect
+1gi00sr	Code from teacher (e.g. K7M2QX)
+bgdnuv	Connect to a teacher
+1y27cx6	After connecting, your teacher sees your name and progress. Nothing else is sent.
+1owwfx5	Connect
+wsaydf	Connected!
+16wezhg	Teacher, admin, parent
+p9fxo2	Teacher / admin login
+1651e7p	Parent access
+mdfzk2	Teacher area
+1geoflr	E-mail (admin: admin)
+cf437c	Password
+w9nig3	Sign in
+10wx9vx	Teacher accounts are created by the admin. The admin signs in as “admin”.
+en845w	admin
+vhy1h	teacher
+12niv00	Sign out
+19bdow7	Classes
+1s400d5	Assignments
+nnshsp	Task database
+txsyvc	Support
+suo8i	Teachers
+fgwp7x	Class 
+1omrwje	Open LogiQ → Profile → “Connect to a teacher” → type this code.
+1pjwsva	Show code full screen
+1qrim0l	Class letter
+1arohyr	Class created
+cfj3it	New class
+wwzkzx	You have no class yet. Create one above and give the code to students.
+115dvkt	Code for students
+n6hn1l	Open
+1r3frry	Delete class
+pc4xpv	Delete class?
+4kgk29	All students and their progress will be deleted. This cannot be undone.

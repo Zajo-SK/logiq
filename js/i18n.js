@@ -63,7 +63,7 @@ const I18N = {
   }
 };
 function t(key, vars) {
-  let s = (I18N[LANG] && I18N[LANG][key]) ?? I18N.sk[key] ?? key;
+  let s = (I18N[LANG] && I18N[LANG][key]) ?? (TR[LANG] && TR[LANG].ui && TR[LANG].ui[key]) ?? (LANG === 'sk' ? I18N.sk[key] : (I18N.en[key] ?? I18N.sk[key])) ?? key;
   if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll('{' + k + '}', v);
   return s;
 }

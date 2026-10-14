@@ -1,0 +1,200 @@
+7drivf	We list divisors in pairs (d, n : d).
+day6qj	Two buses
+1c7ex2m	minutes
+13n9h7o	You need a number that is a multiple of both times.
+1e67ja8	The least common multiple.
+4ybzwv	Multiples of two numbers
+fyasd9	Count the multiples of each number separately.
+mw1wi7	Numbers divisible by both were counted twice – subtract them once.
+1vpvci0	A trailing zero comes from a pair of factors 2 and 5. Which is rarer in the product?
+1hn7xym	There are far more twos than fives, so the fives decide.
+fi32eb	The largest square
+ypi02	The square’s side must divide both dimensions.
+1h959w9	You need the greatest common divisor.
+1qrvgn	Drawing a marble
+lem73m	Probability = favourable : all possible.
+1s08724	How many marbles are there in all, and how many are favourable?
+1dl2eto	How many outcomes are there when rolling two dice?
+12wzgkb	Coin tosses
+lr9sk4	Two marbles, no replacement
+1mx0r4v	After drawing a red one, how many reds and how many marbles remain?
+4chh1z	At least one … (and co.)
+c8zx4f	Subtract the opposite probability from 1.
+ip6tp	Percent of a number
+ihkhaz	First find 1% of the whole.
+hgc5q4	Price up, price down
+ii8m1o	Always take the percentage of the current price.
+f4lmnm	First compute the price after the rise.
+6xw2pu	Sharing in a ratio
+1b4m7ys	How many parts are there in total?
+1rdyv0k	Find the value of one part.
+11ddn2g	Fraction of a number
+1gn1lfa	Then multiply by the number of parts.
+t8lrjr	What percent?
+164p58p	Form the fraction part / whole.
+17yne21	Convert the fraction to hundredths.
+29ugsu	What day will it be?
+1b2jbhq	A week has 7 days. What happens after 7 days?
+xd6n2w	Timetable
+ihyagx	Convert hours to minutes or count up to a full hour.
+14pt8t3	First up to the next full hour, then whole hours, then the leftover minutes.
+17lzfr1	January
+1y3owmr	February
+1hf0040	March
+16euumv	April
+gjvv3a	May
+1sonp8l	June
+b3swv	July
+q1ie1o	August
+1hujif4	September
+1tqs8hz	October
+hdqwxr	November
+scmx0e	December
+17xfl1b	Calendar
+1xrxp48	How many days does that month have? Find the remainder on dividing by 7.
+141mqxr	The weekday shifts by that many days.
+1qef08e	Angle between hands
+6a97qm	The minute hand moves 6° per minute, the hour hand 0.5° per minute.
+1vpk0st	Work out where each hand is measured from 12 and subtract.
+bd7iej	💡 A tap flips the cell and its neighbours. Turn all lights off (○).
+w6vme0	🚀 Draw the shortest path to 🏁 with your finger. No crossing walls.
+1e812s7	Bridge at night
+18fh0iy	The torch must always be brought back. Who should carry it back?
+1fimgch	The two slowest should cross together so that their time is not counted twice.
+dryicb	We try all plans (a computer searched them) and look for the shortest:
+ztntfp	
+1lqvtrn	Water jugs
+uwzp8v	Write the state as a pair (first jug, second jug) and try the possible steps.
+vgt19l	Try starting by filling the bigger jug and pouring into the smaller.
+1idm9gl	States (first, second jug) that form the shortest route:
+ydrmww	What if you split the coins into three piles? What does one weighing of two piles tell you?
+eq58wz	Each weighing has 3 outcomes (left lighter, right lighter, balance), so it can tell 3 options apart.
+1tb6jit	One weighing splits the options into thirds: compare two piles, the third stays aside.
+i0tgik	red
+10cd4ul	blue
+b5mm4	green
+kpgjrk	Web with a letter
+1n191mp	Write every number using x. The circle next to x is, say, x + 2.
+76ncmj	How much does the arrow add?
+s7iqgn	Find two known numbers joined by arrows of that colour. By how much do they differ?
+1x4o9l1	If the path has several arrows, share the difference among them (after subtracting the arrows of other colours).
+1q3f5y5	🕸️ Arrows of the same colour add the same number (some values are unknown). Fill in the empty circles. Tap a circle and type.
+rq3y1s	🕸️ Each arrow adds the number of its colour. Fill in the empty circles. Tap a circle and type.
+vqmn1t	Web
+wi1uie	Find an arrow joining two known numbers – by how much do they differ? That tells you what its colour adds.
+rl0ib8	Arrows of one colour always add the same. The web “works” if every arrow fits.
+1pdv7ke	Start where two known numbers are joined by an arrow: their difference is the value of that colour. Then continue along the arrows (add going forward, subtract going back).
+zcxfx0	Tap an empty circle first.
+1li9y2n	Fill in all the empty circles.
+1hp5n54	Something does not fit. Dashed arrows show where the numbers disagree with the arrow colour.
+luc1fk	Try first a circle next to a known number along an arrow whose value you know.
+6u1ozz	How many routes?
+l27wh9	🎪 From the 🚪 entrance to the 🏁 exit you walk so that you pass every room exactly once. You can only use the open doors. In how many ways can it be done?
+j0jfke	Start at the entrance and try the options step by step. Where does the route split?
+4rda6y	Write the routes as a sequence of rooms. Dead ends show which routes fail.
+u0ppor	Walk through the exhibition
+19jeq45	🎪 Enter through the 🚪 and walk through every room exactly once, ending at the 🏁 exit. Tap the neighbouring rooms through open doors.
+a30lg7	🎪 Enter through the 🚪 and walk through every room exactly once. Tap the neighbouring rooms through open doors.
+rtq5nx	If you are stuck in a dead end, go back with the Back button and try another way.
+1gbyp48	A room with a single door must be the start or the end of the route. Leave such rooms for last.
+1hguq5d	Look at rooms with only one exit (dead ends). You can only enter them at the end of the route, so leave them for last.
+18rmept	Fill in the room numbers
+18nklmq	🎪 A visitor walked from the 🚪 entrance to the 🏁 exit and was in every room exactly once. Rooms are numbered in the order of the visit 1, 2, 3, … Fill in the missing numbers. Tap an empty room and type.
+dyqz3m	Look at the neighbours: number n+1 is always in a neighbouring room through an open door.
+1xxfkha	A room with a single door is the end or the start. Try going backwards from the exit.
+13yh2jm	Number n+1 is always next to number n through an open door. Work from the known numbers and rule out dead ends.
+1xm6nw8	You have been in this room. Each can be used once only.
+5lb3fl	There is no door that way. Tap a neighbouring room with an open passage.
+miskzh	You visited all rooms but you are not at the exit. Try another route.
+1hzmxtu	Back
+1cvjz48	From here you cannot visit all rooms any more. Go back a few steps (↩ Back).
+erqq6r	Check that you do not leave behind a room you can no longer reach (a dead end).
+1u74zbp	Continue to the marked room.
+szt409	Tap an empty room first.
+9l7sig	Fill in all the empty rooms.
+1ke78fm	Some numbers do not fit. Remember: n+1 is always in a neighbouring room through an open door.
+f7fdsh	Try a room next to a known number: you are looking for the next number.
+173jh96	Apprentice
+da6dc6	Solver
+59fbhf	Strategist
+1b87ozj	Logician
+18p2hxv	Master
+176mji3	Grandmaster
+k0ttac	Legend
+mkaky5	Sage
+ol5ngt	Cosmic sage
+1ufds4u	Octopus
+2o5i11	Owl
+cd3o8l	Rocket
+1he8zyz	Panda
+1kmwcou	Dragon
+iz8x2v	Unicorn
+1hnb50w	Crown
+y7erjn	Classic
+xwbz8x	Ocean
+15eoolc	Forest
+r387c7	Sunset
+8g73t3	Frog
+vx4pzz	Lion
+1qo1tzz	Penguin
+7w362i	Dinosaur
+ic72ga	Wizard
+18gp6bv	Ninja
+174ao3d	Hero
+92dabz	Eagle
+1n5x9o	Alien
+16qthby	Candy
+1fr280o	Night sky
+1nhp73t	Mint
+1bnnrxt	Galaxy
+u4l1gz	Gold
+1mlcxlu	New stickers!
+1wii11i	Medal: 
+ry9naa	Mission complete: 
+r0bu1k	All missions done today! Chest: +40 💎
+erq1j0	World medals for grades 2–9
+1e0r9bm	Sticker & medal album
+e05m7h	Every finished level gives a sticker. Finish a whole world in a grade to earn a gold medal (+100 💎). Medals exist for grades 2 to 9.
+4suzx7	Solve 3 tasks
+1fuxx4l	Solve 5 tasks
+1bha1ju	Solve 8 tasks
+4kevja	Earn 8 stars
+kae0hu	Earn 15 stars
+1c4jpe4	Get 3 stars on 2 tasks
+1m0nmx1	Solve 3 tasks without a hint
+ew9zui	Try 3 different topics
+bops0f	Solve the daily challenge
+hw487z	Today's missions
+1cie4zo	Chest opened: +40 💎. New missions tomorrow!
+qcyii7	Finish all three missions to open the chest: +40 💎.
+1k6pvm6	is next
+1vd3fvx	wins!
+1v4g86j	took the last one
+ootbe7	Again
+62dmc6	Demo
+9tpfwc	Try it yourself
+bl67gn	🐻 and 🐰 play – tap how many sticks to take.
+1yty7jq	Break this piece
+1sg5vn5	Breaks
+kfbk1u	pieces
+p5jkro	Tap a piece to break it in two. Break everything into single squares!
+kwtiu4	Eliminate player
+mn0jnp	Matches played
+am5qhs	Each match = one player drops out. Tap the player who lost.
+zn4t6x	⬅️ Left pan
+49qpkv	Off the scale
+1h9feqi	Right pan ➡️
+1mcmxak	coin
+1db8uom	Weighings
+asee53	Weigh
+1aaja32	Cancel guess
+xtk6bq	Guess the fake
+y069f6	Tap the coin you think is fake.
+7cr30x	New game
+1ootdfa	Put coins on both pans.
+9214nr	Put the same number of coins on both pans.
+143ztxg	Balanced ⚖️
+1xcwthz	The left side is lighter
+ovi9rw	The right side is lighter
+l6ydep	One coin is lighter. Tap a coin to move it (left → right → off), then press “Weigh”.
+15sdt3q	Goal

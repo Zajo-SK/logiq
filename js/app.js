@@ -52,9 +52,15 @@ function openSheet(content, { dismiss = true, cls = '' } = {}) {
 }
 
 /* ---------- language, settings ---------- */
-function setLang(l) {
-  LANG = l; st().profile.lang = l; Store.save(); document.documentElement.lang = l;
-  document.title = 'LogiQ – ' + t('subtitle'); render();
+function applyLangAttrs() { const li = langInfo(LANG); document.documentElement.lang = LANG; document.documentElement.dir = li.rtl ? 'rtl' : 'ltr'; document.title = 'LogiQ – ' + t('subtitle'); }
+async function setLang(l) {
+  if (!hasPack(l)) { toast('…'); const ok = await loadLang(l); if (!ok) { toast(L2('Jazyk sa nepodarilo načítať (potrebuje internet).', 'Could not load the language (needs internet).')); return; } }
+  LANG = l; st().profile.lang = l; Store.save(); applyLangAttrs(); render();
+}
+/* language picker: a button in the header opens a list of all languages */
+function openLangPicker() {
+  const sh = openSheet(h('div', { class: 'sheetin langsheet' }, h('h2', null, '🌐 ' + t('language')), h('div', { class: 'langgrid' }, LANGS.map(x => h('button', { type: 'button', class: 'btn ' + (x.c === LANG ? 'primary' : 'ghost'), lang: x.c, 'aria-pressed': x.c === LANG, onclick: async () => { sh.close(); if (x.c !== LANG) await setLang(x.c); } }, x.n))),
+    h('p', { class: 'fine' }, L2('Preklady sú strojové a čiastočne dokončené; chýbajúce texty sa zobrazia po anglicky alebo slovensky.', 'Translations are machine-made and partly complete; missing texts are shown in English or Slovak.')), h('div', { class: 'btnrow' }, btn(t('close'), 'ghost', () => sh.close()))));
 }
 function applySettings() {
   document.body.classList.toggle('no-anim', !st().settings.anim);
@@ -63,7 +69,7 @@ function applySettings() {
 }
 
 /* ---------- domain helpers ---------- */
-const gradeLabel = g => LANG === 'sk' ? `${g}. ročník` : `Grade ${g}`;
+const gradeLabel = g => LANG === 'sk' ? `${g}. ročník` : (TR[LANG] && TR[LANG].ui && TR[LANG].ui.gradeN) ? TR[LANG].ui.gradeN.replace('{n}', g) : `Grade ${g}`;
 const bandLabel = b => LANG === 'sk' ? `${BANDS[b].label} ročník` : `Grade ${BANDS[b].label.replace(/\./g, '')}`;
 const diffDots = n => '●'.repeat(n) + '○'.repeat(3 - n);
 function levelInfo(entry, g) {
@@ -130,8 +136,7 @@ function renderHeader(r) {
     h('a', { class: 'logo', href: '#/home', 'aria-label': 'LogiQ', html: logoMark + `<span><b>Logi<i>Q</i></b><small>${esc(t('subtitle'))}</small></span>` }),
     h('div', { class: 'spacer' }),
     r.name !== 'welcome' ? h('div', { class: 'chip', title: t('starsPoints') }, h('span', { class: 'av', 'aria-hidden': 'true' }, st().settings.avatar), h('span', { class: 'gold', 'aria-hidden': 'true' }, '★'), h('b', null, tot.stars), h('span', { class: 'sep', 'aria-hidden': 'true' }, '·'), h('span', { 'aria-hidden': 'true' }, '💎'), h('b', null, tot.points), h('span', { class: 'sr' }, t('starsPoints'))) : null,
-    h('div', { class: 'seg lang', role: 'group', 'aria-label': t('language') },
-      ['sk', 'en'].map(l => h('button', { type: 'button', 'aria-pressed': LANG === l, class: LANG === l ? 'on' : '', onclick: () => LANG !== l && setLang(l) }, l.toUpperCase())))].filter(Boolean));
+    h('button', { type: 'button', class: 'langbtn', 'aria-label': t('language'), title: t('language'), onclick: openLangPicker }, '🌐 ' + LANG.toUpperCase())].filter(Boolean));
 }
 const NAV = [['home', 'home'], ['map', 'map'], ['daily', 'daily'], ['collection', 'collection'], ['badges', 'badges'], ['profile', 'profile']];
 function renderNav(r) {
@@ -431,7 +436,7 @@ VIEWS.profile = (v) => {
         classPicker({ g, l: (p.cls || '').split('.')[1] || '' }, x => { if (!x.g) return; p.grade = x.g; p.cls = x.l ? `${x.g}.${x.l}` : ''; Store.save(); Sync.schedule(); }),
         h('p', { class: 'fine' }, t('gradeChangeNote'))),
       card('', h('h2', null, t('settings')),
-        h('div', { class: 'setrow' }, h('span', null, t('language')), h('div', { class: 'seg' }, ['sk', 'en'].map(l => h('button', { type: 'button', 'aria-pressed': LANG === l, class: LANG === l ? 'on' : '', onclick: () => LANG !== l && setLang(l) }, l === 'sk' ? 'Slovenčina' : 'English')))),
+        h('div', { class: 'setrow' }, h('span', null, t('language')), h('button', { type: 'button', class: 'btn ghost', onclick: openLangPicker }, '🌐 ' + langInfo(LANG).n)),
         toggle('sound', t('sounds'), () => tone(SND.tap)), toggle('anim', t('animations')), toggle('bigtext', t('bigText')), toggle('autoRead', L2('Čítať zadania nahlas automaticky', 'Read tasks aloud automatically')))),
     card('', h('h2', null, t('strongAreas')), sg.length ? h('div', { class: 'bars2' }, sg.map(x => h('div', { class: 'bar2' }, h('span', null, CATS[x.cat].icon + ' ' + tx(CATS[x.cat].n)), h('div', { class: 'track', role: 'img', 'aria-label': x.avg.toFixed(1) + '/3' }, h('div', { style: `width:${x.avg / 3 * 100}%` })), h('b', null, x.avg.toFixed(1) + '★ · ' + x.n)))) : h('p', { class: 'muted' }, t('noHistory')),
       h('h2', { class: 'mt' }, t('recommended')), h('ul', { class: 'reclist' }, recs.length ? recs.map(rc => h('li', null, h('span', { class: 'ri', 'aria-hidden': 'true' }, rc.icon), h('span', { class: 'rt' }, rc.text), rc.go ? h('a', { class: 'btn ghost small', href: rc.go, onclick: () => { if (rc.cat) colFilter = { cat: rc.cat, band: 'all' }; } }, t('go') + ' ▸') : null)) : h('li', null, t('recNone')))),
@@ -564,9 +569,10 @@ function openExplain(task, { onClose } = {}) {
 
 /* ---------- boot ---------- */
 function boot() {
-  LANG = st().profile.lang || 'sk'; document.documentElement.lang = LANG; document.title = 'LogiQ – ' + t('subtitle');
+  LANG = st().profile.lang || 'sk'; applyLangAttrs();
   applySettings();
   window.addEventListener('hashchange', render);
+  if (!hasPack(LANG)) { loadLang(LANG).then(ok => { if (!ok) LANG = 'sk'; applyLangAttrs(); render(); }); }
   render();
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => { });
   Sync.schedule();

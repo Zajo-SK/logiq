@@ -1,0 +1,200 @@
+ui:subtitle	maths challenges
+ui:language	Language
+ui:starsPoints	Stars and points
+ui:chessMarked	Marked
+ui:chessIllegal	This piece cannot move like that. Read the movement rules.
+ui:hanoiPeg	Peg
+ui:hanoiMin	Fewest
+ui:hanoiEmpty	There is no disc on this peg.
+ui:hanoiBig	A larger disc may not be placed on a smaller one.
+ui:hanoiHintMsg	Try moving disc {d} from peg {a} to peg {b}.
+ui:hanoiAuto	Show the solution
+ui:gamesTitle	Stand-alone games
+ui:hanoiGame	Tower of Hanoi
+ui:hanoiLead	Move the whole tower to the third peg. Tap a peg (source), then a peg (target).
+ui:hanoiDiscs	Number of discs
+ui:hanoiBest	Your record
+ui:hanoiDone	The tower is moved!
+ui:playAgain	Play again
+ui:openGame	Play
+ui:rank	Rank
+ui:pointsToGo	To reach {r} you still need: {n} pts.
+ui:maxRank	You reached the highest rank. You are a legend!
+ui:rankUp	New rank!
+ui:newReward	New reward!
+ui:dailyBonus	Daily bonus
+ui:levelBonus	🏆 Level bonus
+ui:rewardsTitle	Rewards
+ui:rewardsLead	Points, stars, day streaks and solved tasks unlock companions and colour themes. Your rank comes from points and is never lost.
+ui:avatarTitle	Companion
+ui:themeTitle	Colour theme
+ui:rewardUse	Use
+ui:rewardInUse	In use
+ui:badgesTitle	Badges
+ui:req_points	Earn {n} points
+ui:req_stars	Earn {n} stars
+ui:req_streak	{n}-day streak
+ui:req_tasks	Solve {n} tasks
+ui:trainSets	Training sets (endless tasks)
+ui:trainLead	Every tap creates a fresh task of that type for your grade. No points here – it is free practice.
+ui:trainNote	Practice – no points counted.
+ui:handmade	Hand-made tasks
+ui:nimPile	Pile
+ui:nimToken	token
+ui:nimTake	Take {n}
+ui:nimTakeFrom	Take {n} from pile {p}
+ui:nimPickHint	Tap a token – you take it and all tokens to its right.
+ui:nimYourTurn	Your turn.
+ui:nimCpuTurn	The computer is thinking…
+ui:nimYouTook	You:
+ui:nimCpuTook	Computer:
+ui:nav_home	Home
+ui:nav_map	Map
+ui:nav_daily	Daily
+ui:nav_collection	Collection
+ui:nav_badges	Awards
+ui:nav_profile	Profile
+ui:welcomeLead	Discover puzzles, logic and strategy at your own pace. Nobody is punished for mistakes here – every attempt moves you forward.
+ui:yourName	Your name (optional)
+ui:namePh	What should we call you?
+ui:pickGrade	Choose your grade
+ui:letsGo	Let’s go
+ui:gradeChangeLater	You can change your grade later in your profile.
+ui:noAccount	No sign-up, no ads. Progress is saved only on this device.
+ui:hello	Hi, {n}!
+ui:helloAnon	Hi, explorer!
+ui:heroNext	World “{w}” awaits – level “{l}”.
+ui:heroAllDone	You finished every level of this grade! Try the challenges or the collection.
+ui:start	Start
+ui:continue	Continue
+ui:browseCollection	Open collection
+ui:stars	stars
+ui:points	points
+ui:streakDays	days in a row
+ui:tasksSolved	tasks solved
+ui:yourProgress	Your progress
+ui:levelsDone	{a} of {b} levels done
+ui:openMap	Open map
+ui:playDaily	Solve today’s
+ui:seeDaily	View
+ui:dailyDone	Today’s challenge is done!
+ui:recommended	We suggest
+ui:go	Go
+ui:strongAreas	Strong areas
+ui:recNext	Continue with level “{n}”.
+ui:recStart	Start with level “{n}”.
+ui:recPractice	Practise “{c}” – more stars to earn there.
+ui:recNew	Try something new: “{c}”.
+ui:recStrong	“{c}” is going great – try harder tasks!
+ui:recNone	Solve a few tasks and we will offer suggestions.
+ui:recChallenge	You finished the grade! Try challenges from higher-grade worlds.
+ui:mapLead	Worlds and levels
+ui:finishPrev	Finish the previous level first.
+ui:locked	Locked
+ui:challengeWorlds	Challenges for the bold
+ui:challengeLead	Harder worlds from a higher grade – always unlocked if you want to stretch yourself.
+ui:levelIntro	This level has {n} tasks. Solve them in any order.
+ui:whatWaits	What awaits you
+ui:rewards	Rewards
+ui:rewStars	up to {n} stars
+ui:rewPoints	up to {n} points
+ui:rewBadge	badges for discoveries
+ui:rewMap	more levels on the map
+ui:topics	Topics
+ui:noPenalty	Mistakes are never punished. Stars depend only on hints used and number of attempts.
+ui:startLevel	Start level
+ui:back	Back
+ui:challenge	Challenge
+ui:difficulty	Difficulty
+ui:hint	Hint
+ui:explain	Explain solution
+ui:check	Check
+ui:next	Next task
+ui:done	Done
+ui:finishLevel	Finish level
+ui:noMoreHints	No more hints
+ui:pickFirst	Pick an answer first.
+ui:typeFirst	Type an answer first.
+ui:yourAnswer	Your answer
+ui:erase	Erase
+ui:workLabel	Your working
+ui:workPh	Write how you worked it out…
+ui:pickCell	Tap an empty cell first.
+ui:sudFill	Some cells are still empty.
+ui:row	row
+ui:col	column
+ui:moveUp	Move up
+ui:moveDown	Move down
+ui:restart	Start over
+ui:moves	Moves
+ui:steps	Steps
+ui:undo	Undo move
+ui:sail	Sail
+ui:boatFull	The boat is full. Tap someone on the boat to let them off.
+ui:needRower	Someone must be on the boat to row it.
+ui:leftBank	Left bank
+ui:rightBank	Right bank
+ui:onBoat	on the boat
+ui:ferryUndoNote	Let us undo that move…
+ui:pointsLower	points
+ui:usedHints	Hints used: {n}.
+ui:noHintsUsed	No hints used – great!
+ui:newBadges	New badge!
+ui:tryAgain	Try again
+ui:mistakeOk	A mistake is fine – it is part of discovering.
+ui:explainAsk	Want to see the method?
+ui:explainConfirm	You can still try on your own or use a hint first. If you reveal the solution, the task counts without points.
+ui:keepTrying	I’ll keep trying
+ui:showSolution	Show the method
+ui:explainedToast	Task marked as explored. Let us move on!
+ui:explainIntro	Let us look at why this works.
+ui:nextStep	Next step
+ui:showAll	Show all
+ui:close	Close
+ui:correctAnswer	Correct answer
+ui:levelDoneTitle	Level complete!
+ui:motivation	Every task trains your mind. You keep getting better – keep going!
+ui:whatNext	What to try next
+ui:nextLevel	Next level
+ui:todayChallenge	Today’s challenge
+ui:dailyLead	One task a day. Step by step we build a streak.
+ui:dailyDoneLong	You have finished today’s challenge. Come back tomorrow!
+ui:comeBack	A new one tomorrow.
+ui:replay	Play again
+ui:streak	Streak
+ui:notYet	not yet
+ui:streakLead	Your streak grows when you solve at least one task each day.
+ui:collectionLead	All tasks ({n}) for free practice. You may try harder grades too.
+ui:all	All
+ui:category	Category
+ui:gradeBand	Grade
+ui:randomTask	Random task
+ui:new	new
+ui:badgesLead	Badges earned: {a} of {b}
+ui:earned	earned
+ui:yourProfile	Your profile
+ui:anon	Student
+ui:gradeChangeNote	Changing grade changes the level map. Your stars stay.
+ui:settings	Settings
+ui:sounds	Sounds
+ui:animations	Animations
+ui:bigText	Larger text
+ui:saved	Saved
+ui:history	History
+ui:noHistory	Nothing yet – solve your first task!
+ui:adminTitle	For teachers & authors: task database
+ui:adminLead	Overview of all tasks including inspiration source and licence. Add new tasks in js/content.js.
+ui:exportDb	Export database (JSON)
+ui:taskType	Type
+ui:source	Source
+ui:license	Licence
+ui:syncNote	The architecture is ready for future sign-in and sync (swappable storage adapter).
+ui:dataTitle	Data
+ui:dataLead	Progress is stored only on this device.
+ui:resetProgress	Reset progress
+ui:resetConfirm	Really delete stars, points and badges? Your name, grade and settings stay.
+ui:cancel	Cancel
+ui:yesReset	Yes, delete
+ui:resetDone	Progress was reset.
+ee326t	Could not load the language (needs internet).
+1xin1hu	Translations are machine-made and partly complete; missing texts are shown in English or Slovak.

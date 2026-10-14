@@ -1,0 +1,200 @@
+1	matematické výzvy
+2	Jazyk
+3	Hvězdy a body
+4	Označeno
+5	Takhle se tato figurka hýbat nemůže. Přečti si pravidla pohybu.
+6	Tyč
+7	Nejméně
+8	Na této tyči není žádný disk.
+9	Větší disk nelze položit na menší.
+10	Zkus přesunout disk {d} z tyče {a} na tyč {b}.
+11	Ukázat řešení
+12	Samostatné hry
+13	Hanojské věže
+14	Přesuň celou věž na třetí tyč. Klepni na tyč (odkud), pak na tyč (kam).
+15	Počet disků
+16	Tvůj rekord
+17	Věž je přesunuta!
+18	Hrát znovu
+19	Hrát
+20	Hodnost
+21	Do hodnosti {r} ti ještě chybí: {n} b.
+22	Dosáhl jsi nejvyšší hodnosti. Jsi legenda!
+23	Nová hodnost!
+24	Nová odměna!
+25	Denní bonus
+26	🏆 Bonus za level
+27	Odměny
+28	Body, hvězdy, série dnů a vyřešené úlohy odemykají parťáky a barevné motivy. Hodnost vzniká z bodů a nikdy se neztrácí.
+29	Parťák
+30	Barevný motiv
+31	Použít
+32	Používá se
+33	Odznaky
+34	Získej {n} bodů
+35	Získej {n} hvězd
+36	Série {n} dnů
+37	Vyřeš {n} úloh
+38	Tréninkové sady (nekonečné úlohy)
+39	Každé klepnutí vytvoří novou úlohu tohoto typu pro tvůj ročník. Body se tu nepočítají – je to volné cvičení.
+40	Cvičení – body se nepočítají.
+41	Ručně vytvořené úlohy
+42	Hromádka
+43	žeton
+44	Vezmi {n}
+45	Vezmi {n} z hromádky {p}
+46	Klepni na žeton – vezmeš ho i všechny žetony vpravo od něj.
+47	Jsi na tahu.
+48	Počítač přemýšlí…
+49	Ty:
+50	Počítač:
+51	Domů
+52	Mapa
+53	Denní
+54	Sbírka
+55	Úspěchy
+56	Profil
+57	Objevuj hlavolamy, logiku a strategii vlastním tempem. Za chyby se tu nikdo netrestá – každý pokus tě posouvá dál.
+58	Tvé jméno (nepovinné)
+59	Jak ti máme říkat?
+60	Vyber svůj ročník
+61	Jdeme na to
+62	Ročník můžeš později změnit v profilu.
+63	Bez registrace a bez reklam. Postup se ukládá jen v tomto zařízení.
+64	Ahoj, {n}!
+65	Ahoj, objeviteli!
+66	Čeká na tebe svět „{w}“ – level „{l}“.
+67	Dokončil jsi všechny levely tohoto ročníku! Vyzkoušej výzvy nebo sbírku.
+68	Začít
+69	Pokračovat
+70	Otevřít sbírku
+71	hvězdy
+72	body
+73	dní po sobě
+74	vyřešených úloh
+75	Tvůj pokrok
+76	Hotovo {a} z {b} levelů
+77	Otevřít mapu
+78	Vyřešit dnešní
+79	Zobrazit
+80	Dnešní výzva je hotová!
+81	Doporučujeme
+82	Jít
+83	Silné oblasti
+84	Pokračuj levelem „{n}“.
+85	Začni levelem „{n}“.
+86	Procvič „{c}“ – můžeš tam získat víc hvězd.
+87	Zkus něco nového: „{c}“.
+88	„{c}“ ti jde skvěle – zkus těžší úlohy!
+89	Vyřeš pár úloh a nabídneme ti doporučení.
+90	Dokončil jsi ročník! Zkus výzvy ze světů vyššího ročníku.
+91	Světy a levely
+92	Nejdřív dokonči předchozí level.
+93	Zamčeno
+94	Výzvy pro odvážné
+95	Těžší světy z vyššího ročníku – vždy odemčené, pokud se chceš protáhnout.
+96	Tento level má {n} úloh. Řeš je v libovolném pořadí.
+97	Co tě čeká
+98	Odměny
+99	až {n} hvězd
+100	až {n} bodů
+101	odznaky za objevy
+102	další levely na mapě
+103	Témata
+104	Chyby se netrestají. Hvězdy závisí jen na použitých nápovědách a počtu pokusů.
+105	Spustit level
+106	Zpět
+107	Výzva
+108	Obtížnost
+109	Nápověda
+110	Vysvětli řešení
+111	Zkontrolovat
+112	Další úloha
+113	Hotovo
+114	Dokončit level
+115	Žádné další nápovědy
+116	Nejdřív vyber odpověď.
+117	Nejdřív napiš odpověď.
+118	Tvá odpověď
+119	Smazat
+120	Tvůj postup
+121	Napiš, jak jsi na to přišel…
+122	Nejdřív klepni na prázdné políčko.
+123	Některá políčka jsou ještě prázdná.
+124	řádek
+125	sloupec
+126	Posunout nahoru
+127	Posunout dolů
+128	Začít znovu
+129	Tahy
+130	Kroky
+131	Vrátit tah
+132	Plout
+133	Loď je plná. Klepni na někoho na lodi, aby vystoupil.
+134	Na lodi musí být někdo, kdo ji bude veslovat.
+135	Levý břeh
+136	Pravý břeh
+137	na lodi
+138	Vraťme ten tah…
+139	bodů
+140	Použité nápovědy: {n}.
+141	Žádná nápověda – skvělé!
+142	Nový odznak!
+143	Zkus to znovu
+144	Chyba nevadí – patří k objevování.
+145	Chceš vidět postup?
+146	Můžeš to ještě zkusit sám nebo použít nápovědu. Když odhalíš řešení, úloha se počítá bez bodů.
+147	Ještě to zkusím
+148	Ukázat postup
+149	Úloha je označena jako prozkoumaná. Jdeme dál!
+150	Podívejme se, proč to funguje.
+151	Další krok
+152	Zobrazit vše
+153	Zavřít
+154	Správná odpověď
+155	Level dokončen!
+156	Každá úloha trénuje tvou mysl. Pořád se zlepšuješ – pokračuj!
+157	Co zkusit dál
+158	Další level
+159	Dnešní výzva
+160	Jedna úloha denně. Krok za krokem budujeme sérii.
+161	Dnešní výzvu máš hotovou. Přijď zítra!
+162	Zítra bude nová.
+163	Hrát znovu
+164	Série
+165	zatím ne
+166	Tvá série roste, když vyřešíš aspoň jednu úlohu každý den.
+167	Všechny úlohy ({n}) pro volné cvičení. Můžeš zkusit i těžší ročníky.
+168	Vše
+169	Kategorie
+170	Ročník
+171	Náhodná úloha
+172	nové
+173	Získané odznaky: {a} z {b}
+174	získáno
+175	Tvůj profil
+176	Žák
+177	Změna ročníku změní mapu levelů. Tvé hvězdy zůstanou.
+178	Nastavení
+179	Zvuky
+180	Animace
+181	Větší písmo
+182	Uloženo
+183	Historie
+184	Zatím nic – vyřeš svou první úlohu!
+185	Pro učitele a autory: databáze úloh
+186	Přehled všech úloh včetně zdroje inspirace a licence. Nové úlohy se přidávají do souboru js/content.js.
+187	Exportovat databázi (JSON)
+188	Typ
+189	Zdroj
+190	Licence
+191	Architektura je připravena na budoucí přihlášení a synchronizaci (vyměnitelný úložný adaptér).
+192	Data
+193	Postup se ukládá jen v tomto zařízení.
+194	Vynulovat postup
+195	Opravdu smazat hvězdy, body a odznaky? Tvé jméno, ročník a nastavení zůstanou.
+196	Zrušit
+197	Ano, smazat
+198	Postup byl vynulován.
+199	Jazyk se nepodařilo načíst (potřebuje internet).
+200	Překlady jsou strojové a částečně dokončené; chybějící texty se zobrazí anglicky nebo slovensky.

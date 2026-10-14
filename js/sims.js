@@ -4,8 +4,8 @@ function speak(text) {
   try {
     if (!('speechSynthesis' in window)) return false;
     const clean = String(text).replace(/[\u{1F000}-\u{1FAFF}\u{2190}-\u{27BF}\u{2B00}-\u{2BFF}️]/gu, ' ').replace(/·/g, ',').replace(/×/g, LANG === 'sk' ? ' krát ' : ' times ').replace(/−/g, LANG === 'sk' ? ' mínus ' : ' minus ').replace(/\s+/g, ' ').trim();
-    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(clean); u.lang = LANG === 'sk' ? 'sk-SK' : 'en-GB'; u.rate = .88;
-    const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(LANG === 'sk' ? 'sk' : 'en')); if (v) u.voice = v; speechSynthesis.speak(u); return true;
+    speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(clean); u.lang = langInfo(LANG).bcp; u.rate = .88;
+    const v = speechSynthesis.getVoices().find(x => x.lang.toLowerCase().startsWith(LANG)); if (v) u.voice = v; speechSynthesis.speak(u); return true;
   } catch (e) { return false; }
 }
 const stopSpeaking = () => { try { speechSynthesis.cancel(); } catch (e) { /* ignore */ } };

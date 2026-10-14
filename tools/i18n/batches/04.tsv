@@ -1,0 +1,200 @@
+xl2c9k	is odd
+16x5coy	is a perfect square
+1hns6y1	Guess my number
+71u84d	Start with the clue that rules out the most numbers.
+10wmlbq	Combine the clues: you need a number that satisfies all of them at once.
+8brcyk	We cross out numbers clue by clue:
+rm7qbe	Order in the queue
+12ccszf	Start with a clue that gives something certain (like “right behind”). Chain pairs together.
+lksbax	Write down places 1, 2, 3 … and fit names to them step by step, ruling out what cannot be.
+1ve8ob5	We join the clues into one order – every place that is impossible gets crossed out.
+kxfp2h	Dog
+1wiia3y	a dog
+1fqsx26	the dog
+t4rw6f	Cat
+1pmalag	a cat
+1hq8ifs	the cat
+cs75gt	Hamster
+1sc4qru	a hamster
+1bqwme2	the hamster
+4udkhx	Rabbit
+9mmj8s	a rabbit
+ovuxoc	the rabbit
+d9yweb	Fish
+9pvp2e	a fish
+uohqs6	the fish
+1n211xl	Who owns which pet?
+4yjeb0	Make a table: rows are children, columns pets. Cross out what is impossible.
+srs4su	When a row or column has only one free cell left, that is the answer.
+1kt7ppp	In the table we mark ✗ for what the clues rule out and ✓ when only one option is left.
+1lvyujr	If every A is a B and every B is a C, then every A is a C – the chain continues.
+1ay8su9	If Axel were an A he would have to be a B. He is not a B, so he is not an A.
+65l92d	Every C is a B and no B is an A, so no C can be an A.
+qhk27s	Every C is an A and every A is a B, so every C is a B.
+17ev5by	Some A is a B and every B is a C, so that A is also a C.
+3m34eo	Every A is a C and no C is a D, so no A is a D.
+2ms58p	Some A is a B and no B is a C – so that A is not a C.
+111vz2y	What follows?
+1addldx	The statements in the list are true. Which claim MUST follow from them? (The words are made up – rely on logic only.)
+1ahkyrs	Draw circles (sets) for each kind. Which circle sits inside which?
+10isnch	Test each option: can you draw a case where the premises hold but the option does not? Then it does not follow.
+g6qiqh	Monday
+1yi3yk0	Tuesday
+1sertdj	Wednesday
+16pges7	Thursday
+1g69g0i	Friday
+3zxf06	Saturday
+1lz181l	Sunday
+djihp2	Children in a row
+18hb2ct	How many options are there for the first place? And for the second once the first is taken?
+kdorbw	The number of options drops by 1 each time. Multiply them.
+16ppy80	The podium
+o1mvmq	How many runners can win gold? How many can then win silver?
+1fve7ti	The medals differ, so order matters.
+9ggt2t	Friends side by side
+15aszwy	Glue the two friends into one “pair”. How many items are you then arranging?
+7jzbww	And inside the pair they can stand in two ways.
+1e8wc74	The round table
+1jqmsa4	Seat one child in a fixed place. What is left to arrange?
+127jlt1	There is one child fewer left.
+n273w6	Fix one child – that removes the rotation.
+11u4pgi	How many digits can go in the hundreds place? And how many remain for the tens?
+1e2tynn	Each used digit reduces the choice by 1.
+192d5pt	First count ordered pairs – how many are there?
+9pgk4q	You counted every pair twice. What to do about it?
+e47hc6	A team of three
+97i475	How many ordered triples are there?
+w40mty	Each team appears 3! = 6 times among them.
+rl62nj	Handshakes
+rrmmh4	How many people does one person shake hands with?
+n62ena	You counted each handshake twice (from both sides).
+xbna4r	Diagonals
+9qrk0i	From one vertex: to how many vertices can a diagonal go? (Not to itself or its neighbours.)
+q69dvo	You counted each diagonal twice.
+10u464f	Pizza toppings
+1splqfl	With one topping there are two options. What with two toppings?
+cq3bcz	Every extra topping doubles the count.
+umvkss	Each topping has 2 options (yes/no) and the decisions are independent.
+1yk4bht	all digits are odd
+cslpeo	all digits are even
+1ynzcc8	the number contains neither digit 0 nor 5
+1vwx5x1	all three digits are different
+sih5uv	the digits strictly increase (left to right)
+1quw0bn	the digit sum is 10
+mf1p0a	it is a palindrome (reads the same both ways)
+42yt02	the number contains at least one digit 7
+csnobt	the digit sum is 9
+1hvyiec	at least one digit is 0
+1aoxr4f	Outfits
+q1vtrk	How many different outfits can you make? (1 👕 + 1 👖 + 1 🧢)
+121hk8s	Pick a T-shirt. With how many trouser-and-hat combinations can it be worn?
+knh3gb	Multiply the number of options at each choice.
+ogc23r	Number lock
+12lgbjc	How many options does one dial have?
+wa7hl1	The dials are independent – the options multiply.
+1lc5f7h	Each dial has 10 options.
+1txudqd	Roads between towns
+n9nejb	In how many ways can you get from A to B? And then on to C?
+1nqv6hd	The numbers of roads on the legs multiply.
+tl5ng6	Three-digit numbers with a rule
+khb28t	Split the number into hundreds, tens, units. How many options does each have?
+1309nd0	Beware: the hundreds digit cannot be 0.
+b8mbaf	We count the options for each place and then combine them (multiply, or add cases).
+1noohbh	Robot on a grid
+6ejms5	Every cell is reached from above or from the left. In how many ways can you reach the cells in the first row?
+mxb7ew	Write in each cell the sum of the path counts of the cell above and the cell to its left.
+xrwsyh	In each cell we write how many ways lead there: the sum of the cell above and the cell to the left (blocked cells have 0).
+1vvhdil	Table of path counts:
+a43xhj	Imagine the worst case – you are always unlucky.
+1jhvz0v	Cards and suits
+1hr1cg	Look for the worst possible way the draw can go.
+18al94s	Birthdays in class
+1iyreau	Spread the students as evenly as possible over 12 months. What do you get?
+1a8o7fv	If every month had at most X students, how many would there be at most in total?
+eiw0pw	If every month had fewer, there would not be enough in total. This is the pigeonhole principle.
+1z11xx7	Gloves in the dark
+chky2u	The worst case is pulling gloves with no matching partner.
+1aydg8n	Anagrams
+12jar19	First imagine all letters are different. How many arrangements are there?
+1pcmvvn	Identical letters can be swapped – so you counted each arrangement several times.
+1wp21iu	Beads in a row
+ub368c	First choose the places for the red ones. In how many ways?
+89y3a8	Then among the remaining places choose the blue ones.
+1nm4cr1	Check whether each number is double the previous one with a small tweak.
+bayho1	Look at the differences between neighbours. What are they?
+yqtdvo	The differences grow by 1 – these are triangular numbers.
+cwmksi	Look at the differences and then at the differences of the differences.
+7qgzc3	Magic square
+2kxp95	Find a row, column or diagonal where all numbers are known – that is the magic sum.
+pm1lrn	In a line with one unknown, it equals the magic sum minus the sum of the others.
+qbvc6e	Fruit equations
+1ii64pf	Start with the equation containing only one kind of fruit.
+1ajehlc	Once you know one fruit’s value, substitute it into the next equation.
+rss3rn	We solve the equations in order, starting with the single-fruit one:
+dze6ym	Cryptarithm
+gabq1z	Start where the answer is almost certain – e.g. the first digit of the result in an addition.
+kw862k	Try options and check every column each time.
+qm3c3g	We rule out digits that would lead to a contradiction.
+154qvlc	no painted face
+bxra46	exactly 1 painted face
+1f4986	exactly 2 painted faces
+1aaoal9	exactly 3 painted faces
+1w3xlye	Corner cubes: a box has 8 corners.
+1232gq4	The painted box
+1q1oe0g	Which small cubes are in corners? On edges? In faces? Inside?
+h78yb1	The number of painted faces depends on position: corner 3, edge 2, face 1, interior 0.
+13djvke	Position decides the painted faces: corner = 3, edge = 2, face = 1, interior = 0.
+i6nifl	How many squares?
+q9aywe	First count the 1×1 squares. Then the 2×2 ones. What next?
+mfljp2	Squares of size s number (n − s + 1)². Add up all sizes.
+1c7ta2s	We count by square size. Size s fits in (n − s + 1)² positions.
+2vl6c0	Squares in a rectangle
+1sqelws	A square of size s fits in (rows − s + 1) · (columns − s + 1) positions.
+3xwirr	We count by square size s = 1, 2, … up to the smaller dimension.
+13jdeon	How many rectangles?
+1sfvkha	A rectangle is fixed by two horizontal and two vertical lines.
+1tn3yg7	🧱 The numbers show tower heights. How many cubes in all?
+nssot4	🧱 You look from the front (bottom edge). How many squares do you see?
+yrdgnf	🧱 We paint the building on top and sides (not the bottom). How many squares get painted?
+lbmz78	Each number is one tower. What do you do with them?
+1jxcnt3	Add all numbers in the table.
+qza8se	From the front you only see the tallest tower of each column.
+1u7x4vg	Take the biggest number from each column and add them.
+1pmz6no	Count tops (one per tower) and sides separately.
+wb3cis	A side is visible only above the neighbouring tower: the height difference (or the full height at the edge).
+sde0ry	Each number says how many cubes the tower has.
+2hnmwl	From the front a taller tower hides shorter ones behind it – we see only the tallest in each column.
+11n39mc	Tops: the number of non-empty cells. Sides: for each side of a tower the height difference to its neighbour (the border counts as height 0).
+d9j1jn	L-shaped figure
+1tk797w	The area of the whole rectangle minus the cut-out part.
+snwwdj	Work out both rectangles separately.
+oqop5l	Draw the shape. Sliding the sides can simplify the perimeter.
+zgzs39	The perimeter of an L-shape equals that of the original rectangle.
+f2swiz	Cutting a corner leaves the perimeter unchanged: the new sides slide onto the old ones.
+dqs6i	Enlarged square
+10qtltu	How long is the side of the original square?
+u48r6u	The new side is enlarged; the area is side times side.
+1inuquq	Triangle area
+1nwz9vz	A triangle is half of a suitable rectangle.
+1gt94u6	Area = base · height : 2.
+11ejnz7	Triangle area = (base · height) : 2.
+1fb4z0w	Picture frame
+18h5dvp	What are the dimensions of the inner part?
+1fxi3nf	I think of a number
+1fesqv7	Work backwards: what do you do to the result to undo the last step?
+ry8gun	Numbers in a row
+1i45auc	Call the smallest number n. How do you write the others?
+kguncs	Sum and difference
+1xvpi9j	What do you get when you add the sum and the difference?
+2k68oo	You get twice the bigger number.
+db347e	Father and son
+99n4xp	years
+1xoa12m	If the father were that many years younger they would be equally old. What would the sum be?
+lkw436	The sum would shrink by the age gap.
+efa7il	Coins
+1tai6vs	If all coins were €1, what would the value be?
+121hhf7	Each swap of a €1 coin for a €2 coin adds €1.
+1ol0kji	Equation with brackets
+ofm572	First get rid of what is added outside the brackets.
+mfs6tm	Divisors
+1t8de49	Look for divisors in pairs: if d divides n then so does n : d.

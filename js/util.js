@@ -2,8 +2,31 @@
 /* LogiQ – utilities, localisation helpers, icons */
 
 let LANG = 'sk';
+/* Languages. sk + en are built in; the others are loaded on demand from js/lang/<code>.js (see tools/extract-strings.js).
+   A language file registers { ui: {key: text}, s: {"English source text": "translation"} }; missing strings fall back to English. */
+const LANGS = [
+  { c: 'sk', n: 'Slovenčina', bcp: 'sk-SK' }, { c: 'en', n: 'English', bcp: 'en-GB' }, { c: 'cs', n: 'Čeština', bcp: 'cs-CZ' }, { c: 'pl', n: 'Polski', bcp: 'pl-PL' }, { c: 'hu', n: 'Magyar', bcp: 'hu-HU' },
+  { c: 'uk', n: 'Українська', bcp: 'uk-UA' }, { c: 'de', n: 'Deutsch', bcp: 'de-DE' }, { c: 'es', n: 'Español', bcp: 'es-ES' }, { c: 'fr', n: 'Français', bcp: 'fr-FR' }, { c: 'pt', n: 'Português', bcp: 'pt-BR' },
+  { c: 'ru', n: 'Русский', bcp: 'ru-RU' }, { c: 'zh', n: '中文', bcp: 'zh-CN' }, { c: 'ja', n: '日本語', bcp: 'ja-JP' }, { c: 'hi', n: 'हिन्दी', bcp: 'hi-IN' }, { c: 'ar', n: 'العربية', bcp: 'ar-SA', rtl: true }
+];
+const langInfo = c => LANGS.find(x => x.c === c) || LANGS[1];
+const TR = {};                      // TR[code] = { ui: {...}, s: {...} }
+const registerLang = (c, pack) => { TR[c] = pack; };
+const hasPack = c => c === 'sk' || c === 'en' || !!TR[c];
+function loadLang(c) {
+  if (hasPack(c)) return Promise.resolve(true);
+  return new Promise(res => { const el = document.createElement('script'); const me = document.querySelector('script[src*="util.js"]'), ver = me ? (me.src.split('v=')[1] || 1) : 1; el.src = 'js/lang/' + c + '.js?v=' + ver; el.onload = () => res(hasPack(c)); el.onerror = () => res(false); document.head.append(el); });
+}
+const hkey = s => { let x = 2166136261; for (let i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return (x >>> 0).toString(36); };
 const S = (sk, en) => ({ sk, en });
-const tx = o => (o == null ? '' : (typeof o === 'string' || typeof o === 'number') ? o : (o[LANG] ?? o.sk ?? ''));
+/* translate a bilingual {sk,en} object into the current language (other languages: lookup by English text, fall back to English) */
+const tx = o => {
+  if (o == null) return '';
+  if (typeof o === 'string' || typeof o === 'number') return o;
+  if (o[LANG] != null) return o[LANG];
+  if (LANG !== 'sk' && LANG !== 'en') { const hit = TR[LANG] && TR[LANG].s && o.en != null ? TR[LANG].s[hkey(o.en)] : null; return hit != null ? hit : (o.en ?? o.sk ?? ''); }
+  return o.sk ?? o.en ?? '';
+};
 const L = (o, lang) => (typeof o === 'string' ? o : (o[lang] ?? o.sk));
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

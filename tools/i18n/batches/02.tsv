@@ -1,0 +1,200 @@
+4el6o6	Name
+1m850qm	The dog
+1o7km48	The cat
+dmfda2	The hamster
+11kh6sj	Start with who you know most about: what must Anna have?
+1u6gi7b	Once Anna has the hamster, what can Boris have?
+8xjl72	Anna has neither dog nor cat, so she has the hamster.
+1ub45bs	Boris has no dog and the hamster is taken, so he has the cat.
+wbsdqg	Cyril is left with the dog.
+1cjaegv	Secret sums
+hd0o0c	Three secret numbers A, B, C satisfy: A + B = 10, B + C = 12, A + C = 8. What is A?
+qnqxmx	What if you add all three equations together?
+1k65ou	The sum is 2 · (A + B + C) = 30. What is A + B + C, and what do you subtract from it?
+dsap9a	Add the three equations: 2 · (A + B + C) = 10 + 12 + 8 = 30, so A + B + C = 15.
+n73vmk	Since B + C = 12, we get A = 15 − 12 = 3.
+nyqz3o	Holiday book
+1rgr2jr	Jane read 3/8 of a book and then another 2/8. She still has 15 pages left. How many pages does the whole book have?
+1bpgicf	pages
+13w46fb	How many eighths of the book has she read in total?
+194cxyr	If 5/8 are read, how many eighths are left? And how many pages is one eighth?
+1t6sotv	Read: 3/8 + 2/8 = 5/8 of the book.
+11mal8e	3/8 are left, which is 15 pages, so 1/8 is 5 pages.
+13m6trb	The whole book has 8 · 5 = 40 pages.
+1e647ah	Three-digit numbers
+5vyng4	From the digits 1, 2, 3, 4 you build three-digit numbers with no repeated digit. How many such numbers are there?
+15y9cpx	How many digits can go in the hundreds place?
+nc0pkc	After using one digit, how many remain for tens, then for units?
+x6nnp0	There are 4 options for the hundreds.
+11kljwa	3 digits remain for the tens and 2 for the units.
+fzv9hs	Altogether 4 · 3 · 2 = 24 numbers.
+1ru18db	The matchstick game
+pfmee2	There are 15 matchsticks in a pile. Players take turns removing 1, 2 or 3. Whoever takes the last one wins. You start. How many should you take first to be sure to win if you then play as well as you can?
+1tajqn1	Think backwards: with how many sticks left does the player to move lose?
+1tel1zc	With 4 sticks left the player to move loses. Which multiples of 4 do you want to leave for your opponent?
+s0gf49	If 4 sticks are left and it is your turn you lose: you take 1–3 and your opponent takes the rest.
+intasw	So you always want to leave your opponent 12, 8, 4 sticks – multiples of four.
+y3wuc1	From 15 take 3 and leave 12. Then always complete his move to 4.
+tbvzfr	Square garden
+wq6mnz	A square garden has a perimeter of 36 m. What is its area?
+u86ebs	How long is one side of the square?
+ssk5d0	The side is 36 : 4 = 9 m. How do you find a square’s area?
+1ib56u9	A square has 4 equal sides: 36 : 4 = 9 m.
+1jslapl	Area = side · side = 9 · 9 = 81 m².
+1tvqyrl	Rectangle from perimeter
+1vph4os	A rectangle has a perimeter of 30 cm and one side is 9 cm. What is its area?
+tfdpus	The perimeter is 2 · (a + b). What is a + b?
+11r9333	a + b = 15 and one side is 9. What is the other?
+viccu7	Half the perimeter: 30 : 2 = 15 = a + b.
+1y59uit	The other side is 15 − 9 = 6 cm.
+y85c47	Area = 9 · 6 = 54 cm².
+1ddkw6m	The painted cube
+oui47e	A big 3×3×3 cube is made of 27 small cubes and painted on the outside. We take it apart. How many small cubes have exactly 3 painted faces?
+d8o4pj	Which small cubes sit in the corners of the big cube?
+14nx4iq	How many corners does a cube have?
+1ubxapk	Only corner cubes have three painted faces – three faces of the big cube meet there.
+1m37u3c	A cube has 8 corners, so there are 8 such cubes.
+hs17jh	Gauss’s trick
+1poq8xk	Without a calculator: 1 + 2 + 3 + … + 20.
+1i2x0bf	Try pairing the first number with the last: 1 + 20.
+rheso	The next pair is 2 + 19. How many such pairs are there?
+1wynnwg	1 + 20 = 21, 2 + 19 = 21, 3 + 18 = 21 … every pair makes 21.
+qj6ah9	There are 20 numbers, so 10 pairs.
+1kark5e	The sum is 10 · 21 = 210.
+6jrjie	Trailing zeros
+g2rfuy	How many zeros does 20! = 1 · 2 · 3 · … · 20 end with?
+f68pes	A trailing zero comes from a pair of factors 2 and 5. Which one is rarer in the product?
+1cg1a4u	Count how many times the factor 5 appears among 1 to 20.
+1xxi7rw	Each trailing zero is one factor 10 = 2 · 5. There are far more twos in 20!, so the fives decide.
+s6cjtw	Fives: 5, 10, 15, 20 – each contributes one five (25 would give two, but it is not in the product).
+g4dy2m	So there are 4 zeros.
+xjf1bs	Two dice
+g6ho9o	We roll two fair dice. What is the probability that the sum is 7?
+zfs0yl	How many outcomes exist when rolling two dice?
+vvhao5	List the pairs with sum 7: (1,6), (2,5) … How many are there?
+1o2ux4r	There are 6 · 6 = 36 outcomes.
+1d7xe66	Sum 7 comes from (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) – six pairs.
+6adaq6	The probability is 6/36 = 1/6.
+sc3hlh	Three in a row
+fpy090	The sum of three consecutive integers is 105. What is the largest of them?
+10w666o	Call the middle number n. How do you write its neighbours?
+1ti1x1f	n − 1, n, n + 1 – what is their sum?
+1timx68	The numbers are n − 1, n, n + 1 and their sum is 3n.
+1w6iw9e	3n = 105, so n = 35.
+stecha	The largest is n + 1 = 36.
+b3ln82	The delegation
+2zuur8	We choose a two-person delegation from six students. In how many ways can we do it?
+f7y91y	First count ordered pairs. How many are there?
+1cejwpr	Each pair is counted twice (A,B and B,A). What to do about it?
+as6fhf	The first is chosen in 6 ways, the second in 5: 30 ordered pairs.
+1kq4khl	Order does not matter, we counted every pair twice.
+5vhbmc	Result 30 : 2 = 15.
+1vshfz5	The last digit
+1xdk76r	What is the last digit of 7¹⁰⁰? Write how you found it in the “Working” box.
+16vlv2l	Write down the last digits of the powers 7¹, 7², 7³, 7⁴ …
+1okcc2m	The last digits repeat with some period. What is it, and what is 100 divided by the period?
+6qwyl4	Last digits: 7, 9, 3, 1, then again 7, 9, 3, 1 … (period 4).
+13g2imi	100 is a multiple of 4, so 7¹⁰⁰ ends like 7⁴.
+1eeauxi	The last digit is 1.
+1nwane3	Island of knights and liars
+ngk4n8	On an island knights always tell the truth and liars always lie. A says: “We are both liars.” What is B?
+1kwlcgs	Knight
+z8tnbp	Liar
+1e6idoa	Cannot be determined
+1fxdtej	Can A be a knight? What would his sentence then mean?
+acie3f	If A is a liar his sentence is false. What does that say about B?
+1ir9cjt	If A were a knight his sentence would be true – but it says he is a liar. Contradiction.
+9ze8tb	So A is a liar and his sentence is false: they are not both liars.
+uh5duv	Since A is a liar, B must be a knight.
+lj14el	Marbles in a bag
+yb7d58	A bag holds 3 red and 2 blue marbles. We draw two without replacement. What is the probability both are red?
+ajrp13	What is the probability that the first is red?
+5aicy5	If you do not put it back, how many red and how many marbles remain?
+1vch7d	First red: 3/5.
+1aod7w	Then 2 red remain out of 4 marbles: 2/4 = 1/2.
+1j85vb1	Together 3/5 · 1/2 = 3/10.
+a9fveh	Mark the true statements
+3m6giq	Which of these statements are true? Mark all of them.
+18lg3kf	2¹⁰ is greater than 10³
+16v9wxw	The angles of a triangle add up to 180°
+14dgjih	Every prime number is odd
+mlpqyx	0.999… is less than 1
+1j0vu5t	Test each statement on its own. Can you find a counter-example?
+1osin6w	Look at the smallest prime. And what are 2¹⁰ and 10³?
+1e6m1o0	2¹⁰ = 1024 and 10³ = 1000, so the first holds.
+7n1zbk	The angles of a triangle always add to 180° – the second holds.
+i2r3ny	The number 2 is an even prime, so the third fails. And 0.999… equals 1, so the fourth fails.
+up58n8	Start where a row, column or box is missing the fewest numbers.
+l0r8vq	No number may repeat in any row, column or box.
+17b4wf6	Switch all lights off
+3z558i	Pressing a cell flips its light and its neighbours’ (up, down, left, right). Turn all lights off (○).
+1eexb9l	Try pressing one cell twice. What happens?
+1338nib	The shortest route
+zhkvp3	Draw a path with your finger from the rocket 🚀 to the finish 🏁. You cannot cross walls – and we look for the shortest route!
+em8wpc	Which corridors are dead ends?
+14j76ys	Wolf, goat and cabbage
+soc7qi	Take 🐺 🐐 🥬 across the river. The boat holds the farmer and one. Alone: the wolf eats the goat, the goat eats the cabbage.
+iswase	Who can never be left alone together? Which character gets along with both others?
+1vta269	The goat is in both dangerous pairs. What if you take it first?
+d3hanr	Key idea: the goat is the troublemaker – the wolf eats it, it eats the cabbage – so the farmer must never leave it alone with either.
+1oe8vmc	The wolf and the cabbage do not harm each other, so they may wait together.
+1r4ogl6	Fox, hen and corn
+1c1gdlr	A rower must take a fox, a hen and a sack of corn across a stream. The boat holds the rower and one passenger. Alone, the fox eats the hen and the hen pecks the corn. Find a safe plan!
+18ct0qr	Who appears in both dangerous pairs?
+7a6k0f	The hen goes first. What next, once she is across? You may also bring her back!
+1fso4oa	The hen is in both dangerous pairs, so the rower takes her first and never leaves her alone with the fox or the corn.
+wzsqnv	Sometimes it pays to bring someone back – what matters is that nobody is left in danger.
+1wkgks1	Astronauts and robots
+nftdv0	2 astronauts and 2 robots must cross a river in a small rocket-boat. It carries at most two and someone must row. If robots outnumber astronauts on a bank (while astronauts are there), the astronauts are in danger. Find a safe plan!
+1h128ea	Watch the counts on both banks: astronauts ≥ robots whenever any astronaut is present.
+ptda5n	Do not be afraid to bring someone back – sometimes it is the only way.
+y2rnwf	On both banks we keep the rule: if an astronaut is there, robots never outnumber astronauts.
+1wmyu48	Three astronauts, three robots
+1v6cluq	3 astronauts and 3 robots cross a river in a boat for two. Rule: on a bank with at least one astronaut, robots may not outnumber astronauts. What is the smallest number of crossings?
+1bjntfm	Imagine all possible states – how often could you start by sending “2 robots”?
+mhnts	Mind who is left on the bank you leave. Sometimes returning one robot or astronaut is best.
+5w6u0s	This is the famous missionaries-and-cannibals puzzle in a space version. Systematically writing down the bank states helps.
+fsvjqx	Work out the difference between neighbouring numbers.
+1sq8e4v	Check whether the numbers come from multiplying.
+7xqf66	Look at the differences between neighbours. Do they change?
+ylyypl	Compare the numbers with squares 1, 4, 9, 16, 25…
+119w2ga	Try adding two neighbouring numbers.
+mm938x	Each number is the sum of the two before it.
+1uikmfo	What if two sequences are mixed into one?
+7bwsxi	Try numbers made by multiplying three times: 2 · 2 · 2…
+12xi586	They are cubes: 1³, 2³, 3³…
+12x99hz	The numbers are 1³, 2³, 3³, 4³, 5³ – cubes.
+ho76re	The next is 6³ = 216.
+4j5yt6	Number pattern
+q25k33	Which number replaces the question mark?
+1jpxgb3	First star
+ae5b60	Solve your first task.
+1aakuha	Ten tasks
+1ry7429	Finish 10 tasks.
+1ptqmzu	Explorer
+57eidx	Finish 25 tasks.
+q3y8y1	Sharp mind
+mfwn4p	Earn 3 stars on 5 tasks.
+1fkd78g	Persistent
+zpqzgq	Solve a task after several attempts.
+1208ih7	Captain
+k21p1d	Solve a river-crossing task.
+1r0vbvi	Sudoku master
+1a3253a	Solve a sudoku.
+1mfuqji	Navigator
+eoz6fh	Find the shortest path through a maze.
+slst86	Electrician
+15vtlfz	Switch all the lights off.
+1liq94q	All-rounder
+82gipe	Solve tasks from 5 different categories.
+1h2u0zu	Three-day streak
+1gwofpk	Solve tasks 3 days in a row.
+1ctsxf3	500 points
+rxccab	Earn 500 points.
+yg3gk5	Daily solver
+vqdz8b	Solve a daily challenge.
+1ib1iar	First level
+18434ni	Complete a whole level.
+1tlwyig	Collector
+9c5umo	Collect 10 stickers.
+7l1u6m	Big collector

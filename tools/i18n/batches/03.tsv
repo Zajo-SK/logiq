@@ -1,0 +1,200 @@
+1jyu5uu	Collect 30 stickers.
+1uvmvkl	Complete album
+gy0ijt	Collect every sticker.
+1j5gf6e	First medal
+b8xspd	Finish a whole world in a grade.
+yz6pew	Medal collection
+1dqggfi	Earn 5 world medals.
+yzo8o1	Mission runner
+p46848	Finish all daily missions on 5 days.
+1q9e3g1	Week streak
+8eisq4	Solve tasks 7 days in a row.
+1iptfax	Month streak
+yjr8lu	Solve tasks 30 days in a row.
+1kmbt08	A hundred
+b45wkb	Finish 100 tasks.
+14j9iwm	Mountaineer
+8vlvwp	Finish 300 tasks.
+olweel	Starry sky
+z771vy	Earn 150 stars.
+15tik6	2000 points
+pz3yi0	Earn 2000 points.
+igc3qe	On my own
+tsvfad	Solve 10 tasks without hints.
+125umjs	Perfect level
+1rl3re4	Finish a level with all 3 stars.
+1smgo8v	Daredevil
+1lf5m4t	Solve a task from a higher grade.
+8rkjcj	Green 🐸 only hop right →, brown ones only left ←. Step to the free pad, or jump over ONE frog (any colour) if the pad behind it is free. No going back. Swap their places!
+oscnmy	pad
+16name3	free
+1a4gbw3	frog going right
+1momfoe	frog going left
+17mzghq	You are stuck 🙂 Undo a move or start again.
+1id0r6e	This frog cannot jump now. Try another.
+1krqsvx	No way forward from here – undo a move.
+vwl0lz	There is no way forward from here – undo or restart.
+lam2re	Here is the whole solution:
+7mhnfa	Try it with the frogs: tap the frog that should move.
+rz1gsh	How the frogs jump (read before the task)
+1kc531c	Try with fewer frogs first.
+107etp2	Frogs: how many moves?
+1u7q2z0	Write down the moves for 1, 2 and 3 frogs.
+6x5i40	The move counts are 3, 8, 15, 24 … Can you find the formula?
+whhn7o	The frogs swapped places!
+1hn2pi0	The best possible number of moves!
+1r6rdbm	It can be done in fewer moves – try again!
+12qmiyx	Frogs on each side
+igop6o	Rules
+i0u8dy	King
+xu0lmp	The king moves one square in any direction – sideways, up/down or diagonally.
+1ecfm95	Queen
+1qd8vu0	The queen moves any distance along a straight line – sideways, up/down or diagonally (rook and bishop combined). She cannot jump.
+1dflyjs	Rook
+1rpxty	The rook moves any distance sideways or up/down. It cannot jump.
+s28n6g	Bishop
+1ms860k	The bishop moves any distance diagonally, so it always stays on squares of one colour. It cannot jump.
+w120mr	The knight jumps in an L-shape: 2 squares one way and 1 square at a right angle. It is the only piece that can jump over others.
+1ljl31n	Pawn
+1a9eu2q	The pawn moves one square forward (upwards). From its starting row its first move may be two squares.
+1cyo0sn	How does the piece move? (read before the task)
+1api0tt	Pawn on its way
+1i48ufc	A white pawn stands on d2 (the 7th row from the top). It moves only forward; its first move may be two squares, later moves one. What is the fewest moves to reach the top row (highlighted)?
+19s7bwq	How many rows must the pawn cross?
+s7cc9s	The first move can be two squares long – that saves a move.
+13e2a8f	From row 2 to row 8 is 6 rows.
+1fhf20s	First move 2 squares (the pawn is on row 4), 4 rows remain one by one: 1 + 4 = 5 moves in total.
+1cu5ql8	Where can the piece go?
+1aeps77	Take the piece direction by direction and count the free squares in each.
+1tx5dx1	The piece’s shortest route
+1fg00pm	Find where the piece can get in one move, then in two moves…
+dw46ak	Try it backwards too: from which squares can the goal be reached in one move?
+gsogvn	We search all options move by move (1 move, 2 moves, …) until we hit the goal.
+1i55afg	A rook attacks its whole row and column, so each row holds at most one rook – N in total – and N rooks on a diagonal fit.
+152j5s7	Bishops do not attack each other if they stand on different diagonals. Filling the first and last row except two corners gives 2N − 2.
+pnbv2l	A king attacks adjacent squares. Split the board into 2×2 blocks – each holds at most one king: ⌈N/2⌉².
+v7fird	A knight attacks only squares of the opposite colour, so knights all on one colour never attack: ⌈N²/2⌉.
+135yvqg	A queen attacks row, column and diagonals, so each row holds at most one. For N ≥ 4, N queens can be placed.
+165vd7b	No two attack each other
+v8vy0q	First find which squares one piece attacks. How can you spread them out so they do not clash?
+3it1lp	Try a small 3×3 or 4×4 board and look for a pattern.
+1m7whdu	Mark all the moves
+1vp1gco	Move the piece in your head direction by direction.
+96f8af	Lead the piece to the goal
+1ffgfih	Find the squares from which the goal can be reached in one move.
+5au8w1	Dominoes on a board
+jmfr9o	Each domino covers 2 squares.
+17rycu6	How many squares does the board have? What if the number is odd?
+1ef01kd	Dominoes and the chessboard
+q3mktb	🁢 Two squares (✖) are missing. Can the rest be covered with 1×2 dominoes?
+1dfru6v	Yes, it can
+gvltom	No, it cannot
+1h1up2m	Every domino covers one light and one dark square. How many light and dark squares remain after the removal?
+nhuhfy	If the counts do not match, covering is impossible.
+xkl3l0	A domino always covers one light and one dark square, so there would have to be equal numbers.
+1dz3c9n	The removed squares have different colours, so the counts match. On a board with even sides this always works (Gomory’s theorem).
+8l0zcz	The removed squares share a colour, so one colour has 2 more squares left. It cannot be covered.
+19ubjnz	Grains on the chessboard
+op8r78	Write the first terms: 1, 2, 4, 8… What do they have in common with the running sum?
+294cb8	The sum of the first terms is always 1 less than the next term.
+ar9w4b	The grain count doubles on every square.
+14vimar	Square 1 has 2⁰, square 2 has 2¹ …
+11nte8g	Tower of Hanoi: there are 3 pegs and a stack of discs of different sizes on the first peg (largest at the bottom). Goal: move all discs to the last peg.
+ph81fy	Move only one disc at a time – the top disc of a peg.
+1ffvplx	Never place a larger disc on a smaller one.
+16ngked	You can use the free pegs as parking places.
+1n6usll	Rules of the Tower of Hanoi (read before the task)
+194fgxc	Tower of Hanoi – the game
+qjb2t	To move the largest disc, where must all the smaller ones go first?
+17xp1qp	Fewest moves
+fgv1np	Find how many moves 1, 2 and 3 discs need. Spot the pattern.
+1e8jb7i	For n discs: first n − 1 discs out of the way, then one move, then n − 1 discs again.
+53ea0h	Let T(n) be the number of moves. The largest disc can move only when the other n − 1 discs sit on another peg: T(n) = T(n − 1) + 1 + T(n − 1).
+xrtrro	How often does a disc move?
+1n7ywz3	How many times does the largest disc move?
+1hwj4ge	Each smaller disc moves twice as often as the next larger one.
+t3vctm	Four pegs
+1br92ea	First move some discs to a helper peg using all four pegs.
+pq6j5h	Move the rest using 3 pegs, then move the first part again.
+3pdh71	Split the tower: the top k discs move using 4 pegs, the bottom n − k discs using 3 pegs (2^(n−k) − 1 moves), then the top part again.
+1a4ozvv	Start with one direction the piece can go and mark every square it reaches that way.
+1cogmet	To move an n-disc tower you first need the top n − 1 discs on the helper peg. Which disc moves first in your position?
+1si59x5	Rule: to move n discs first move n − 1 discs to the helper peg, then the largest disc to the goal, and finally the n − 1 discs onto the goal.
+1gkl68o	What comes next?
+4twe1z	Look at what repeats.
+tuan0k	Point at each little group.
+1nrqe8h	fruit
+1two2ui	animals
+108276c	vehicles
+1mvwv91	balls
+1nvz0hb	flowers
+d0rvpu	Which does not belong?
+cudz6u	Which one does not belong?
+10ny6rx	Say what each one is.
+gnf72g	Three are the same kind.
+1dhu0m2	How many more?
+1e4quq	Pair up the pictures from both rows.
+1foyixz	Count what has no partner.
+wyjtl	Match each in the shorter row with one in the longer.
+lfc7yz	Same
+cjuuuk	Which has more?
+15ebdip	Count each row.
+xdo87b	Compare the two numbers.
+137g65e	They are the same.
+4hn9zd	How many in all?
+17emdrc	How many altogether?
+1eyapcj	Count all the pictures.
+s8ndlb	Count the first group, then add the second.
+1w6mias	How many are left?
+unlsyk	❌ means they are taken away.
+1jup6a0	Count the ones that stay.
+1w47aml	Groups
+1gsx7yv	Count one group.
+1xs1efv	Now add the other groups.
+1g4z5jb	Share equally
+1665mf9	Share equally. How many does each child get?
+5gkb7m	Give each child one at a time until all are given out.
+5rxfm3	Count how many one child has.
+13pzkaa	Which number is missing?
+dqnbfc	By how much do the numbers change?
+1lqhg5a	Add the same number.
+1xpt57b	Count the shapes
+bsngim	Touch each shape with your finger.
+1p03sdr	Count only the ones you look for.
+4gd48x	Fill in the number.
+1dz7uzx	How many steps did you take?
+1fwgobf	Find the number for the question mark.
+13q0zjh	Try numbers and check.
+ntumr9	Use the opposite operation.
+10ptcs4	You start. How many do you take first to win?
+1x9app	🐻 starts. Both play as well as they can – nobody makes a mistake. Who wins?
+1gfcnd3	The first player
+j0zl6d	The second player
+lv1a24	Think backwards: with how many matches does the player to move win, and with how many lose?
+eoqdoc	Game against the computer
+fncslw	Think backwards: which positions are losing for the player to move?
+1w7ovoz	Who wins? (piles)
+l5m1uq	Write the pile sizes in binary and add each column.
+1uolui8	If every column has an even number of ones, the position is losing for the player to move.
+t5d89m	With nim-sum 0 the player to move loses – the second player always answers to restore 0. The second player wins.
+1pzbnxq	Nim – the winning move
+6qas0p	What if you make the piles equal? What can your opponent do then?
+c5s9tt	You can always copy your opponent’s move on the other pile.
+1xpjels	Write the piles in binary. After your move every column should have an even number of ones.
+1qkvfl7	With two piles equalise them: take the difference from the bigger one.
+12g6rci	Breaking chocolate
+1gwyq8m	How many pieces do you have at the start and at the end? What happens to the count with one break?
+k23yuy	Every break adds exactly one piece. How you break does not matter.
+10879mo	Tournament – rounds
+z3afkg	How many players remain after round 1?
+1b9v4sa	The number halves each round. How many times can you halve until 1 is left?
+stqzd2	Tournament – matches
+ds0t6t	How many players must be eliminated for a champion to remain?
+1x1ridq	One match = one eliminated player.
+1ghswjt	Knights and liars
+yboyhg	If you reach a contradiction your assumption was wrong – try the opposite.
+198djik	We test cases: a knight must tell the truth, a liar must lie. We check each assumption against all sentences.
+1my90xo	Who broke the window?
+mu2p7f	Try each suspect in turn: if it was them, how many statements would be true?
+1mkjpge	For each suspect we count how many statements would be true:
+r3lnez	is even
