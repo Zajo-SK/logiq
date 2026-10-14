@@ -1,0 +1,135 @@
+1	Ein Vater ist {0} Jahre älter als sein Sohn. Zusammen sind sie {1} Jahre alt. Wie alt ist der Vater?
+2	{0} − {1} = {2} = das Doppelte des Alters des Sohnes.
+3	Der Sohn ist {0}, der Vater {1} + {2} = {3}.
+4	In einer Sparbüchse sind {0} Münzen, einige zu 1 €, die übrigen zu 2 €. Ihr Gesamtwert beträgt {1} €. Wie viele 2-€-Münzen sind es?
+5	Mit {0} Ein-Euro-Münzen wären es {1} €.
+6	Es fehlen {0} €, also gibt es {1} Zwei-Euro-Münzen.
+7	Löse die Gleichung: {0}·(x − {1}) + {2} = {3}. Was ist x?
+8	Nach dem Subtrahieren von {0} teile durch {1}.
+9	{0} − {1} = {2}, also {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, also x = {2}.
+11	Wie viele Teiler (einschließlich 1 und der Zahl selbst) hat {0}?
+12	Probiere d = 1, 2, 3, … bis zur Wurzel aus {0}.
+13	Vom Marktplatz fährt Bus A alle {0} Minuten und Bus B alle {1} Minuten ab. Sie sind gerade zusammen abgefahren. Nach wie vielen Minuten fahren sie wieder gemeinsam ab?
+14	Das kleinste gemeinsame Vielfache ist {0}.
+15	Was ist die letzte Ziffer von {0}^{1}?
+16	Schreibe die letzten Ziffern der Potenzen {0}¹, {1}², {2}³ … auf.
+17	Der Exponent {0} lässt bei Division durch {2} den Rest {1}, also ist die letzte Ziffer {3}.
+18	Wie viele Zahlen von 1 bis {0} sind durch {1} oder durch {2} teilbar (oder durch beide)?
+19	Vielfache von {0}: {1}, von {2}: {3}, von beiden ({4}): {5}.
+20	{0} + {1} − {2} = {3}.
+21	Auf wie viele Nullen endet {0}! = 1 · 2 · 3 · … · {1}?
+22	Zähle, wie oft der Faktor 5 in den Zahlen von 1 bis {0} vorkommt (auch mehrfach, z. B. bei 25).
+23	Wir wollen ein Rechteck von {0} cm × {1} cm mit gleich großen Quadraten auslegen, ohne Lücken und ohne Überlappung. Wie groß kann die Seite eines Quadrats höchstens sein (in cm)?
+24	Die größte ist {0}.
+25	In einem Beutel sind {0} rote, {1} blaue und {2} grüne Kugeln. Blind wird eine gezogen. Wie groß ist die Wahrscheinlichkeit, dass sie rot ist? (Als vollständig gekürzter Bruch, z. B. 1/6.)
+26	Es sind insgesamt {0} Kugeln, davon sind {1} rot.
+27	Die Wahrscheinlichkeit ist {0}/{1} = {2}.
+28	Wir würfeln mit zwei fairen Würfeln. Wie groß ist die Wahrscheinlichkeit, dass die Summe {0} ist? (Als vollständig gekürzter Bruch.)
+29	Liste die Paare mit der Summe {0} auf.
+30	Die Summe {0} entsteht aus {1} Paaren, also {2}/36 = {3}.
+31	Eine Münze wird {0}-mal geworfen. Wie groß ist die Wahrscheinlichkeit für genau {1}-mal Kopf? (Als vollständig gekürzter Bruch.)
+32	Wie viele Ergebnisse gibt es bei {0} Würfen?
+33	Auf wie viele Arten kannst du auswählen, welche {0} der {1} Würfe Kopf sind?
+34	Alle Ergebnisse: 2^{0} = {1}.
+35	Günstige: C({0}, {1}) = {2}. Wahrscheinlichkeit {3}/{4} = {5}.
+36	In einem Beutel sind {0} rote und {1} blaue Kugeln. Es werden zwei ohne Zurücklegen gezogen. Wie groß ist die Wahrscheinlichkeit, dass beide rot sind? (Als vollständig gekürzter Bruch.)
+37	Erste rot: {0}/{1}.
+38	Zweite rot: {0}/{1}. Zusammen {2}/{3} · {4}/{5} = {6}.
+39	Wir würfeln mit zwei Würfeln. Wie groß ist die Wahrscheinlichkeit, dass mindestens einer {0} zeigt? (Als vollständig gekürzter Bruch.)
+40	Einfacher ist es, das Gegenteil zu zählen: keiner zeigt {0}.
+41	Keiner der Würfel zeigt {0}: 5 · 5 = 25 von 36 Ergebnissen.
+42	Günstige: 36 − 25 = {0}, Wahrscheinlichkeit {1}.
+43	Wie viel sind {0} % von {1}?
+44	1 % von {0} ist {1}.
+45	{0} % sind {1} · {2} = {3}.
+46	Ein Artikel kostet {0} €. Zuerst steigt der Preis um {1} %, dann sinkt der neue Preis um {2} %. Was kostet er am Ende?
+47	Nach der Erhöhung: {0} · {1} = {2} €.
+48	Nach der Senkung: {0} · {1} = {2} €.
+49	{0} € werden im Verhältnis {1} : {2} zwischen Ema und Adam aufgeteilt. Wie viele € bekommt Ema?
+50	Es sind {0} + {1} = {2} Teile, ein Teil ist {3} : {4} = {5} €.
+51	Ema bekommt {0} Teile: {1} · {2} = {3} €.
+52	Wie viel sind {0}/{1} von {2}?
+53	1/{0} von {1} ist {2} : {3} = {4}.
+54	{0}/{1} sind {2} · {3} = {4}.
+55	Wie viel Prozent sind {0} von {1}?
+56	{0} / {1} = {2}.
+57	Das sind {0} Hundertstel, also {1} %.
+58	Heute ist {0}. Welcher Wochentag ist in {1} Tagen?
+59	Bestimme den Rest von {0} geteilt durch 7.
+60	{0} : 7 = {1} Rest {2}.
+61	Ganze Wochen ändern den Wochentag nicht; gehe von {1} um {0} Tage weiter und du erhältst {2}.
+62	Ein Zug fährt um {0} ab und kommt um {1} an. Wie viele Minuten dauert die Fahrt?
+63	{0} = {1} Minuten nach Mitternacht, {2} = {3} Minuten.
+64	Der Unterschied beträgt {0} Minuten.
+65	{0}: Der 1. {1} fällt auf einen {2}. Welcher Wochentag ist der 1. {3}?
+66	Der Monat hat {0} Tage: {1} : 7 = {2} Rest {3}.
+67	Von {1} um {0} Tage weitergezählt ergibt {2}.
+68	Stundenzeiger: {0} · 30 + {1} · 0,5 = {2}°. Minutenzeiger: {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	Die Gesamtzeit beträgt {0} Minuten.
+71	Du hast zwei Krüge ohne Markierungen: {0} L und {1} L, und reichlich Wasser. Ein Schritt ist: einen Krug ganz füllen, einen Krug ganz leeren oder von einem in den anderen gießen, bis der erste leer oder der zweite voll ist. Wie viele Schritte braucht man mindestens, um in einem der Krüge genau {2} L zu haben?
+72	Das sind {0} Schritte, und weniger geht nicht (alle Möglichkeiten wurden durchsucht).
+73	Unter {0} Münzen ist eine falsch – sie ist leichter als die übrigen. Du hast eine Balkenwaage ohne Gewichte. Wie viele Wägungen braucht man mindestens, um die falsche sicher zu finden?
+74	Nach {0} Wägungen lassen sich bis zu 3^{1} = {2} Münzen unterscheiden, das sind mindestens {3}; nach {4} Wägungen nur {5}. Wir brauchen {6}.
+75	🕸️ Die Summe aller Zahlen in den Kreisen ist {0}. Jeder Pfeil addiert die Zahl seiner Farbe. Was ist x?
+76	Zähle, wie oft x in der Summe vorkommt und was übrig bleibt. Dann gilt {0} − (der Rest) = (Anzahl der x) × x.
+77	Es gibt {0} x und der Rest ist {1}. Also {2}·x + {3} = {4} und x = {5}.
+78	Der Pfeil addiert {0}. Alle Pfeile dieser Farbe haben denselben Wert, es genügt also, ihn an einer Stelle zu finden.
+79	Der markierte Kreis sollte {0} sein.
+80	Es gibt {0} vollständige Wege. Probiere an jeder Gabelung beide Möglichkeiten und streiche die durch, die in einer Sackgasse enden oder einen Raum auslassen.
+81	Der markierte Raum sollte {0} sein.
+82	Sticker sammeln: {0}
+83	Weltmedaillen verdienen: {0}
+84	Alle Tagesmissionen an {0} Tagen abschließen
+85	Serie von {0} Tagen!
+86	Nimm {0}
+87	Richtig! Münze {0} ist die falsche – gefunden mit {1} Wägungen.
+88	Münze {0} ist nicht die falsche. Versuche es weiter.
+89	🎉 Genau {0} L in einem Krug! Schritte: {1}.
+90	{0} L füllen
+91	{0} L leeren
+92	🎉 Alle sind drüben! Zeit: {0} Min.
+93	{0} Gleiche nach {1} Zügen!
+94	Es ist dunkel – du ziehst blind. Wann hast du {0} Gleiche? Probiere es mehrmals und suche den schlimmsten Fall.
+95	🎉 Jedes Kind hat {0}.
+96	Die gelben sind vorgegeben. Ergänze rote, sodass es insgesamt genau {0} sind. Es gibt mehr freie Felder, als du brauchst!
+97	Wirf {0} Münzen und beobachte die Anzahl der Köpfe. Wiederhole es!
+98	Wir starten bei {0}. Hüpfe Tag für Tag – wo landest du nach {1} Tagen?
+99	Färbe {0} Felder von 100 ein – das sind {1} %.
+100	Verluste in diesem Level: {0}
+101	Zeile {0}
+102	Spalte {0}
+103	Block {0}
+104	Feld {0} bekommt die {1}.
+105	Streiche Kandidaten durch – {0}. Ein weiterer Hinweis füllt ein Feld.
+106	Technik: {0}. 
+107	Feld {0} kann nur eine Zahl enthalten.
+108	In {0} passt eine Zahl nur in ein Feld – schau dir das markierte an.
+109	Die Zahl {0} ist in {1} auf {2} „eingesperrt“ – streiche sie dort an anderer Stelle durch.
+110	Die Zahl {0} bildet ein X-Wing-Rechteck – streiche sie in den passenden Linien durch.
+111	Falsche Felder: {0} (mit „!“ markiert).
+112	Sieh dir das Feld in Zeile {0}, Spalte {1} an. Welche Zahlen können dort noch stehen?
+113	Das Feld (Zeile {0}, Spalte {1}) bekommt die {2}.
+114	Versuche, auf das Feld in Zeile {0}, Spalte {1} zu drücken.
+115	Das ist der Start. Die kürzeste Lösung drückt {0} Felder (mit 👆 markiert):
+116	Du hast das Ziel erreicht – super! Es gibt aber einen kürzeren Weg. Deiner hatte {0} Schritte, versuche es mit weniger.
+117	Versuche zuerst, die Sackgassen zu erkennen. Der kürzeste Weg hat {0} Schritte.
+118	Der Anfang des kürzesten Weges (Zeile, Spalte): {0} …
+119	Wir erkunden und schließen Sackgassen aus. Der kürzeste Weg hat {0} Schritte und verläuft so:
+120	Geschafft! Alle sind in {0} Zügen drüben – und weniger geht nicht (ein Computer hat jede Möglichkeit geprüft).
+121	Du startest bei {0}: Nimm {1}, damit {2} übrig bleibt (eine Verlustzahl für deinen Gegner). Antworte danach immer so, dass du wieder auf einer Verlustzahl landest.
+122	Der Computer startet bei {0}, einer Verlustzahl für den Spieler am Zug. Egal, was er tut, antworte so, dass wieder eine Verlustzahl übrig bleibt.
+123	Hier gewinnst du zum Beispiel mit: Nimm {0} vom Haufen {1}.
+124	vor {0} Min.
+125	vor {0} Std.
+126	vor {0} Tagen
+127	Level: {0} von {1} · Abzeichen: {2}
+128	Klasse {0}.{1} anlegen
+129	{0} Schüler
+130	Klasse {0}
+131	Ausgewählte Aufgaben: {0}
+132	Schüler: {0}
+133	{0} Aufgaben
+134	{0} von {1} Schülern fertig
+135	Fertig: {0} von {1}

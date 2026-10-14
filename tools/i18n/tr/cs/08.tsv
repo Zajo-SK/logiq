@@ -1,0 +1,200 @@
+1	Podpora 15 jazyků (slovenština, angličtina, čeština, polština, maďarština, ukrajinština, němčina, španělština, francouzština, portugalština, ruština, čínština, japonština, hindština, arabština). Rozhraní je přeloženo, obsah úloh se překládá. Arabština se píše zprava doleva.
+2	{0}. ročník
+3	Sudoku {0}
+4	Rozdíl je pořád {0}. Přičti ho k poslednímu číslu.
+5	Rozdíly jsou pořád {0}.
+6	Poslední číslo je {0}, další je {1} + {2} = {3}.
+7	Každé číslo je {0}krát větší než předchozí.
+8	Každé číslo je předchozí číslo krát {0}.
+9	{0} · {1} = {2}.
+10	Rozdíly jsou {0}, {1}, {2}, {3} – rostou o 1.
+11	Rozdíly jsou {0}, {1}, {2}, {3}: každý je o 1 větší.
+12	Další rozdíl je {0}, takže {1} + {2} = {3}.
+13	Další je 6² + {0} = {1}.
+14	{0} + {1} = {2}, {3} + {4} = {5} … každé číslo je součet dvou předchozích.
+15	Další: {0} + {1} = {2}.
+16	Čísla na místech 1, 3, 5 rostou o {0}, čísla na místech 2, 4 klesají o {1}.
+17	Rozděl je na dvě řady: {0}, {1}, {2} (roste o {3}) a {4}, {5}, ? (klesá o {6}).
+18	Chybějící číslo je {0} − {1} = {2}.
+19	Zkus pohnout žábou na leknínu {0}.
+20	Zkus přesunout žábu z leknínu {0} na leknín {1}.
+21	Trik: žáby střídej – krok, skok, skok, krok… (Přeskočit žábu stejné barvy nepomůže.) Nejmenší počet tahů je {0}² + 2·{1} = {2}.
+22	{0}→ jdou doprava, {1}← jdou doleva. Prohoď jejich místa!
+23	{0} × {1}→ a {2} × {3}←. Kolik nejméně tahů je potřeba k jejich prohození? (krok nebo skok = 1 tah)
+24	Každá žába → musí přeskočit každou žábu ←: to je {0} · {1} = {2} skoků.
+25	Navíc každá z {0} žab udělá jeden krok na volný leknín: {1} kroků.
+26	Dohromady {0} + {1} = {2} tahů.
+27	Dosažitelná pole: {0} – celkem {1}.
+28	Kolik figurek typu {0} se vejde na šachovnici {1}×{2}, aby se žádné dvě neohrožovaly?
+29	Pro {0}×{1} to vychází {2}.
+30	🁢 Šachovnice {0}×{1}. Kolik nejvíce kostek domina 1×2 se na ni vejde?
+31	Šachovnice má {0} · {1} = {2} polí.
+32	Na první pole šachovnice dáme 1 zrnko, na druhé 2, na třetí 4 – na každé další pole dvakrát tolik co na předchozí. Kolik zrnek je celkem na prvních {0} polích?
+33	Na první pole šachovnice dáme 1 zrnko, na druhé 2, na třetí 4 – pokaždé dvakrát tolik co předtím. Kolik zrnek je na poli číslo {0}?
+34	Součet je vždy o 1 menší než další člen: 2^{0} − 1 = {1}.
+35	Na poli {0} je 2^{1} zrnek.
+36	To je {0}.
+37	🗼 Přesuň {0} disků na poslední tyč na {1} tahů.
+38	🗼 Hanojská věž má {0} disků. Kolik nejméně tahů je potřeba k jejímu přesunutí?
+39	Takže T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, tedy T({0}) = {1}.
+40	🗼 {0} disků, nejrychlejší postup. Kolikrát se pohne disk č. {1}? (1 = nejmenší)
+41	Každý menší disk se pohybuje dvakrát častěji: disk {0} se pohne 2^{1} = {2}krát.
+42	Hanojská věž se ČTYŘMI tyčemi (ostatní pravidla stejná) a {0} disky. Kolik nejméně tahů je potřeba? (Nápověda: pro 1, 2, 3, 4 disky je to 1, 3, 5, 9 tahů.)
+43	Nejlepší volba k dává {0} tahů.
+44	Došel jsi do cíle na {0} tahů – jde to rychleji, minimum je {1}. Zkus to znovu!
+45	Označ políčko {0}.
+46	Z aktuálního políčka může figurka jít na {0} políček. Které z nich je blíž k cíli?
+47	Dobrý další tah: {0}.
+48	Věž je přesunutá na {0} tahů – skvělé! Jde to ale na {1}. Zkus to znovu a hledej pravidelnost.
+49	Toto se opakuje: {0}
+50	Další je {0}.
+51	{0} je {1}, takže sem nepatří.
+52	{0} zůstávají bez dvojice.
+53	{0}: {1}, {2}: {3}.
+54	{0} + {1} = {2}
+55	{0} − {1} = {2}
+56	{0} : {1} = {2}
+57	Přičítáme {0}. Chybějící číslo je {1}.
+58	Kolik vidíš: {0}?
+59	Je jich {0}.
+60	Počítej od {0} do {1}.
+61	Prohrávající stavy (pro hráče na tahu) jsou: {0}. Je mezi nimi {1}?
+62	{0} není prohrávající stav, takže vyhrává první hráč: vezme {1} a nechá {2}.
+63	{0} je prohrávající stav pro hráče na tahu, takže vyhrává druhý hráč.
+64	Nim-součet (XOR) je teď {0}. Kterou hromádku je třeba zmenšit, aby byl 0?
+65	Rozdíl je {0} − {1} = {2}. Pak už jen opakuj tahy soupeře na druhé hromádce.
+66	Vezmi {0} z hromádky o {1}: {2} ⊕ {3} = {4}, takže nim-součet bude 0.
+67	🍫 Čokoláda {0} × {1}. Jedno přelomení = jeden kus na dva. Kolik přelomení je potřeba, aby byl každý čtvereček zvlášť?
+68	Každé přelomení zvýší počet kusů přesně o 1, takže potřebujeme {0} − 1 = {1} přelomení – ať postupujeme jakkoli.
+69	🏆 {0} hráčů. V každém kole hrají dvojice a vítěz postupuje. Kolik kol se odehraje?
+70	To je {0} půlení, tedy {1} kol.
+71	Z {0} hráčů je třeba vyřadit {1}.
+72	Každý zápas vyřadí jednoho, takže se odehraje {0} zápasů – ať se dvojice losují jakkoli.
+73	Zkus předpokládat, že {0} je rytíř. Co z toho plyne pro ostatní?
+74	Hledáš podezřelého, o kterém platí přesně {0} výroků.
+75	Přesně {0} pravdivé výroky platí jen pro: {1}.
+76	je dělitelné číslem {0}
+77	není dělitelné číslem {0}
+78	je větší než {0}
+79	je menší než {0}
+80	má ciferný součet {0}
+81	končí číslicí {0}
+82	Myslím si číslo od 1 do {0}. Všechno na seznamu je pravda. Které číslo to je?
+83	Zůstalo jen jedno číslo: {0}.
+84	{0} stojí před {1}.
+85	{0} stojí hned za {1}.
+86	{0} nestojí první.
+87	{0} nestojí poslední.
+88	{0} stojí někde mezi {1} a {2}.
+89	{0} nemá {1}.
+90	Ani {0}, ani {1} nemá {2}.
+91	{0} má {1}.
+92	Každý {0} je {1}.
+93	Žádný {0} není {1}.
+94	Aspoň jeden {0} je {1}.
+95	Aspoň jeden {0} není {1}.
+96	Axel není {0}.
+97	Axel není {0}.
+98	Axel je {0}.
+99	Axel je {0}, ale není {1}.
+100	Správně: „{0}“ – ostatní z předpokladů odvodit nejde.
+101	Skupina {0} dětí se chce postavit do řady na fotku. Kolika různými způsoby se mohou seřadit?
+102	Na první místo je {0} možností, na druhé {1}, na třetí {2} … až po 1.
+103	Na startu stojí {0} běžců. Kolika různými způsoby může být obsazeno zlato, stříbro a bronz?
+104	Zlato: {0} možností, stříbro: {1}, bronz: {2}.
+105	Celkem {0} · {1} · {2} = {3}.
+106	Skupina {0} dětí se staví do řady. {1} a {2} chtějí stát vedle sebe (v libovolném pořadí). Kolik takových uspořádání existuje?
+107	Dvojici ber jako jeden blok: řadíme {0} bloků, což je {1} způsobů.
+108	Uvnitř dvojice jsou 2 pořadí, takže 2 · {0} = {1}.
+109	Skupina {0} dětí sedí kolem kulatého stolu. Dvě rozsazení, která se liší jen otočením celého stolu, se počítají jako stejná. Kolik různých rozsazení existuje?
+110	Ostatních {0} rozsaď kolem: {1}! = {2}.
+111	Stovky: {0} možností, desítky: {1}, jednotky: {2}.
+112	Ze skupiny {0} dětí vybíráme dvoučlennou delegaci. Kolika způsoby to lze udělat?
+113	Uspořádaných dvojic je {0} · {1} = {2}.
+114	Na pořadí nezáleží, takže dělíme dvěma: {0}.
+115	Ze skupiny {0} dětí vybíráme tříčlenný tým. Kolik různých týmů je možných?
+116	Uspořádaných trojic: {0} · {1} · {2} = {3}.
+117	Každý tým jsme započítali 6krát, takže {0} : 6 = {1}.
+118	Sejde se skupina {0} lidí. Každý si s každým podá ruku právě jednou. Kolik podání rukou proběhne?
+119	Každý podá ruku {0}krát, celkem {1} · {2} = {3}.
+120	Každé podání rukou jsme započítali dvakrát, takže {0} : 2 = {1}.
+121	Pravidelný mnohoúhelník s {0} vrcholy. Kolik úhlopříček se v něm dá narýsovat?
+122	Z každého vrcholu vychází {0} úhlopříček.
+123	Celkem {0} · {1} : 2 = {2} (každou jsme započítali dvakrát).
+124	Pizzerie má {0} druhů ingrediencí. Pizza může mít libovolnou kombinaci (každá ingredience na ní buď je, nebo není; i pizza bez ingrediencí je možná). Kolik různých pizz se dá objednat?
+125	Tedy 2 · 2 · … ({0}krát) = 2^{1} = {2}.
+126	Ke každému tričku je {0} · {1} = {2} kombinací.
+127	🔒 Zámek má {0} kolečka s číslicemi 0–9. Kolik kódů se dá nastavit?
+128	Celkem 10^{0} = {1}.
+129	Z A do B vede {0} cest, z B do C {1} a z C do D {2}. Kolik různých tras vede z A do D přes B a C?
+130	Úsek A–B: {0}, B–C: {1}, C–D: {2}.
+131	Tras je {0} · {1} · {2} = {3}.
+132	Systematické spočítání všech čísel od 100 do 999 dává {0}.
+133	V cíli je {0}.
+134	🧦 Ponožky {0} barev, je tma. Kolik jich musíš vytáhnout, abys měl jistotu, že máš {1} stejné barvy?
+135	Nejhorší případ je mít od každé barvy o jednu méně než {0}.
+136	S nejhorším štěstím držíš od každé z {1} barev {0} ponožek – to je {2}.
+137	Další ponožka musí dát {0} stejné barvy: {1} + 1 = {2}.
+138	V balíčku jsou karty čtyř barev (♠ ♥ ♦ ♣), od každé aspoň {0}. Kolik karet musíš táhnout poslepu, abys měl jistotu, že máš {1} karet stejné barvy?
+139	V nejhorším případě držíš od každé barvy {0} karet.
+140	Nejhorší případ: od každé ze 4 barev {0} karet, dohromady {1}.
+141	Další karta musí dát {0} z jedné barvy: {1}.
+142	Škola má {0} žáků. Rok má 12 měsíců. Kolik žáků, které mají narozeniny ve stejném měsíci, je zaručeně aspoň (aspoň v jednom měsíci)?
+143	{0} : 12 = {1}…, takže některý měsíc musí mít aspoň {2} žáků.
+144	Ve skříni je {0} různých párů rukavic (každý pár má vlastní barvu, celkem {1} rukavic, levých i pravých). Vytahuješ je potmě. Kolik jich musíš vzít nejméně, abys měl jistotu, že máš celý pár (levou i pravou rukavici jedné barvy)?
+145	Bez páru můžeš držet nejvýše po jedné rukavici z každé z {0} barev.
+146	V nejhorším případě držíš {0} rukavic, každou jiné barvy (třeba samé levé).
+147	Další (číslo {0}) už pár doplní: {1} + 1 = {2}.
+148	Kolik různých „slov“ (i nesmyslných) se dá vytvořit přeskupením všech písmen slova {0}?
+149	Kdyby byla všechna písmena různá, bylo by {0}! = {1} uspořádání.
+150	Na šňůrce je v řadě {0} korálků: červených – {1}, modrých – {2}, zelených – {3} (korálky jedné barvy vypadají stejně). Kolik různých vzorů je možných?
+151	Místa pro červené: C({0}, {1}) = {2}.
+152	Ze zbývajících {0} míst vyber místa pro modré: C({1}, {2}) = {3}; zelené zaberou zbytek.
+153	Celkem {0} · {1} = {2}.
+154	Každé číslo je 2 · (předchozí) {0}.
+155	{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …
+156	Další: {0} · 2 {1} = {2}.
+157	Rozdíly rozdílů jsou pořád {0}.
+158	Další rozdíl je {0}, takže další číslo je {1}.
+159	V magickém čtverci mají všechny řádky, všechny sloupce i obě úhlopříčky stejný součet. Které číslo patří na {0}?
+160	Magický součet je {0} (z úplně známé řady).
+161	Dosazením do otázky dostaneme {0}.
+162	Vnitřní kostky: ({0}−2)·({1}−2)·({2}−2) = {3}.
+163	Kostky uprostřed stěn: 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.
+164	Hranové kostky bez rohů: 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.
+165	Odpověď: {0}.
+166	Kolik čtverců (i velkých) najdeš v mřížce {0} × {1}?
+167	Čtverců o velikosti 1×1 je {0}. Kolik je čtverců 2×2?
+168	Mřížka má {0} řádků a {1} sloupců. Kolik obdélníků (čtverce se počítají také) v ní najdeš?
+169	Kolika způsoby můžeš vybrat 2 z {0} vodorovných a 2 z {1} svislých čar?
+170	Je tam {0} vodorovných a {1} svislých čar.
+171	Dvě vodorovné: C({0},2) = {1}, dvě svislé: C({2},2) = {3}. Celkem {4}.
+172	Součet všech čísel je {0}.
+173	Součet maxim sloupců je {0}.
+174	Celkem {0} obarvených stěn.
+175	Celý obdélník: {0} · {1} = {2} cm².
+176	Vyříznutá část: {0} · {1} = {2} cm². Zbývá: {3} cm².
+177	Obvod = 2 · ({0} + {1}) = {2} cm.
+178	Původní strana: {0} cm. Nová strana: {1} cm.
+179	Nový obsah {0} · {1} = {2} cm² ({3}krát větší).
+180	Obdélník má obvod {0} cm a jednu stranu {1} cm. Jaký je jeho obsah?
+181	Znáš a = {0}. Jaká je druhá strana?
+182	a + b = {0} (polovina obvodu).
+183	Druhá strana: {0} − {1} = {2} cm, obsah {3} · {4} = {5} cm².
+184	Trojúhelník má základnu {0} cm a výšku k ní {1} cm. Jaký je jeho obsah?
+185	({0} · {1}) : 2 = {2} cm².
+186	Obraz měří zvenku {0} cm × {1} cm a kolem dokola má rám široký {2} cm. Jaký je obsah samotného rámu (bez vnitřní části)?
+187	Z každé strany ubude {0} cm – to je {1} cm na každý rozměr.
+188	Vnitřní část: ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².
+189	Rám = {0} − {1} = {2} cm².
+190	Myslím si číslo. Když ho vynásobím {0} a přičtu {1}, dostanu {2}. Které číslo si myslím?
+191	Nejdřív odečti {0}, pak vyděl {1}.
+192	{0} − {1} = {2}.
+193	{0} : {1} = {2}.
+194	Součet {0} po sobě jdoucích celých čísel je {1}. Které z nich je největší?
+195	n, n+1, …, n+{0}: jaký je součet?
+196	Součet je {0}·n + {1} = {2}.
+197	n = {0}, takže největší je {1} + {2} = {3}.
+198	Součet dvou čísel je {0} a jejich rozdíl je {1}. Které z nich je větší?
+199	({0} + {1}) = {2} = 2 · větší číslo.
+200	Větší číslo je {0} : 2 = {1}.

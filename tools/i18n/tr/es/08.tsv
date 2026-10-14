@@ -1,0 +1,200 @@
+1	Compatible con 15 idiomas (eslovaco, inglés, checo, polaco, húngaro, ucraniano, alemán, español, francés, portugués, ruso, chino, japonés, hindi, árabe). La interfaz está traducida y el contenido de las tareas se está traduciendo. El árabe se escribe de derecha a izquierda.
+2	Curso {0}
+3	Sudoku {0}
+4	La diferencia es siempre {0}. Súmala al último número.
+5	Las diferencias son siempre {0}.
+6	El último número es {0}, el siguiente es {1} + {2} = {3}.
+7	Cada número es {0} veces el anterior.
+8	Cada número es el anterior multiplicado por {0}.
+9	{0} · {1} = {2}.
+10	Las diferencias son {0}, {1}, {2}, {3}: van aumentando de 1 en 1.
+11	Las diferencias son {0}, {1}, {2}, {3}: cada una es 1 mayor que la anterior.
+12	La siguiente diferencia es {0}, así que {1} + {2} = {3}.
+13	El siguiente es 6² + {0} = {1}.
+14	{0} + {1} = {2}, {3} + {4} = {5} … cada número es la suma de los dos anteriores.
+15	Siguiente: {0} + {1} = {2}.
+16	Los números de los lugares 1, 3 y 5 aumentan en {0} cada vez, y los de los lugares 2 y 4 disminuyen en {1} cada vez.
+17	Sepáralos en dos series: {0}, {1}, {2} (aumenta en {3} cada vez) y {4}, {5}, ? (disminuye en {6} cada vez).
+18	El número que falta es {0} − {1} = {2}.
+19	Prueba a mover la rana del nenúfar {0}.
+20	Prueba a mover la rana del nenúfar {0} al nenúfar {1}.
+21	Truco: haz que las ranas se alternen: paso, salto, salto, paso… (Saltar sobre una rana del mismo color no ayuda). El mínimo de movimientos es {0}² + 2·{1} = {2}.
+22	Las ranas {0}→ van hacia la derecha y las {1}← hacia la izquierda. ¡Intercambia sus posiciones!
+23	{0} × {1}→ y {2} × {3}←. ¿Cuál es el mínimo de movimientos para intercambiarlas? (un paso o un salto = 1 movimiento)
+24	Cada rana → debe saltar sobre cada rana ←: son {0} · {1} = {2} saltos.
+25	Además, cada una de las {0} ranas da un paso a un nenúfar libre: {1} pasos.
+26	En total, {0} + {1} = {2} movimientos.
+27	Casillas alcanzables: {0}. En total: {1}.
+28	¿Cuántas piezas de {0} caben en un tablero de {1}×{2} sin que dos se ataquen?
+29	Para {0}×{1} esto da {2}.
+30	🁢 Un tablero de {0}×{1}. ¿Cuántas fichas de dominó de 1×2 caben como máximo?
+31	El tablero tiene {0} · {1} = {2} casillas.
+32	Ponemos 1 grano en la primera casilla de un tablero de ajedrez, 2 en la segunda, 4 en la tercera: cada casilla tiene el doble que la anterior. ¿Cuántos granos hay en total en las primeras {0} casillas?
+33	Ponemos 1 grano en la primera casilla de un tablero de ajedrez, 2 en la segunda, 4 en la tercera: siempre el doble que antes. ¿Cuántos granos hay en la casilla número {0}?
+34	La suma es siempre 1 menos que el siguiente término: 2^{0} − 1 = {1}.
+35	La casilla {0} tiene 2^{1} granos.
+36	Eso es {0}.
+37	🗼 Mueve {0} discos al último poste en {1} movimientos.
+38	🗼 Una torre de Hanói tiene {0} discos. ¿Cuál es el mínimo de movimientos para trasladarla?
+39	Así, T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, por tanto T({0}) = {1}.
+40	🗼 {0} discos, de la forma más rápida. ¿Cuántas veces se mueve el disco n.º {1}? (1 = el más pequeño)
+41	Cada disco más pequeño se mueve el doble de veces: el disco {0} se mueve 2^{1} = {2} veces.
+42	Una torre de Hanói con CUATRO postes (las demás reglas iguales) y {0} discos. ¿Cuál es el mínimo de movimientos necesarios? (Pista: con 1, 2, 3, 4 discos son 1, 3, 5, 9 movimientos.)
+43	La mejor elección de k da {0} movimientos.
+44	Has llegado a la meta en {0} movimientos. Se puede hacer más rápido: el mínimo es {1}. ¡Inténtalo otra vez!
+45	Marca la casilla {0}.
+46	Desde su casilla actual la pieza puede ir a {0} casillas. ¿Cuál de ellas está más cerca de la meta?
+47	Un buen siguiente movimiento: {0}.
+48	Has movido la torre en {0} movimientos, ¡genial! Pero se puede hacer en {1}. Inténtalo otra vez y busca el patrón.
+49	Esto se repite: {0}
+50	El siguiente es {0}.
+51	{0} es {1}, así que no pertenece al grupo.
+52	Sin pareja quedan: {0}.
+53	{0}: {1}, {2}: {3}.
+54	{0} + {1} = {2}
+55	{0} − {1} = {2}
+56	{0} : {1} = {2}
+57	Sumamos {0}. El número que falta es {1}.
+58	¿Cuántos {0} ves?
+59	Hay {0}.
+60	Cuenta desde {0} hasta {1}.
+61	Los números perdedores (para quien tiene el turno) son: {0}. ¿Está {1} entre ellos?
+62	{0} no es un número perdedor, así que gana el primer jugador: quita {1} y deja {2}.
+63	{0} es un número perdedor para quien tiene el turno, así que gana el segundo jugador.
+64	La suma nim (XOR) es ahora {0}. ¿Qué montón hay que reducir para que sea 0?
+65	La diferencia es {0} − {1} = {2}. Después, copia los movimientos de tu oponente en el otro montón.
+66	Quita {0} del montón de {1}: {2} ⊕ {3} = {4}, y así la suma nim es 0.
+67	🍫 Una tableta de chocolate de {0} × {1}. Una rotura = una pieza en dos. ¿Cuántas roturas hacen falta hasta separar todos los cuadrados?
+68	Cada rotura aumenta el número de piezas exactamente en 1, así que hacen falta {0} − 1 = {1} roturas, sea cual sea el método.
+69	🏆 Jugadores: {0}. En cada ronda juegan por parejas y el ganador pasa a la siguiente. ¿Cuántas rondas se juegan?
+70	Eso son {0} divisiones por la mitad, es decir, {1} rondas.
+71	De {0} jugadores hay que eliminar a {1}.
+72	Cada partido elimina a uno, así que se juegan {0} partidos, sin importar cómo se formen las parejas.
+73	Prueba a suponer que {0} es un caballero. ¿Qué se deduce para los demás?
+74	Buscas al sospechoso para el que son verdaderas exactamente {0} afirmaciones.
+75	Exactamente {0} afirmaciones verdaderas solo ocurre con {1}.
+76	es divisible entre {0}
+77	no es divisible entre {0}
+78	es mayor que {0}
+79	es menor que {0}
+80	tiene suma de cifras {0}
+81	termina en la cifra {0}
+82	Estoy pensando en un número del 1 al {0}. Todo lo que hay en la lista es verdad. ¿Qué número es?
+83	Solo queda un número: {0}.
+84	{0} está antes que {1}.
+85	{0} está justo detrás de {1}.
+86	{0} no es el primero.
+87	{0} no es el último.
+88	{0} está en algún lugar entre {1} y {2}.
+89	{0} no tiene {1}.
+90	Ni {0} ni {1} tienen {2}.
+91	{0} tiene {1}.
+92	Todos los {0} son {1}.
+93	Ningún {0} es {1}.
+94	Al menos un {0} es {1}.
+95	Al menos un {0} no es {1}.
+96	Axel no es {0}.
+97	Axel no es {0}.
+98	Axel es {0}.
+99	Axel es {0}, pero no es {1}.
+100	Correcto: «{0}». Las demás no se pueden deducir de las premisas.
+101	Un grupo de {0} niños quiere ponerse en fila para una foto. ¿De cuántas formas distintas pueden colocarse?
+102	Hay {0} opciones para el primer lugar, {1} para el segundo, {2} para el tercero… hasta llegar a 1.
+103	Un grupo de {0} corredores está en la línea de salida. ¿De cuántas formas distintas se pueden repartir el oro, la plata y el bronce?
+104	Oro: {0} opciones, plata: {1}, bronce: {2}.
+105	En total, {0} · {1} · {2} = {3}.
+106	Un grupo de {0} niños hace una fila. {1} y {2} quieren estar juntos (en cualquier orden). ¿Cuántas colocaciones así hay?
+107	Trata la pareja como un solo bloque: ordenamos {0} bloques, que son {1} formas.
+108	Dentro de la pareja hay 2 órdenes, así que 2 · {0} = {1}.
+109	Un grupo de {0} niños se sienta alrededor de una mesa redonda. Dos disposiciones que solo se diferencian por girar toda la mesa cuentan como la misma. ¿Cuántas disposiciones distintas hay?
+110	Coloca a los otros {0} alrededor: {1}! = {2}.
+111	Centenas: {0} opciones, decenas: {1}, unidades: {2}.
+112	Elegimos una delegación de dos personas entre un grupo de {0} niños. ¿De cuántas formas se puede hacer?
+113	Hay {0} · {1} = {2} parejas ordenadas.
+114	El orden no importa, así que dividimos entre 2: {0}.
+115	Elegimos un equipo de tres entre un grupo de {0} niños. ¿Cuántos equipos distintos son posibles?
+116	Ternas ordenadas: {0} · {1} · {2} = {3}.
+117	Cada equipo se cuenta 6 veces, así que {0} : 6 = {1}.
+118	Se reúne un grupo de {0} personas. Todas se dan la mano con todas las demás exactamente una vez. ¿Cuántos apretones de manos hay?
+119	Cada persona da {0} apretones, en total {1} · {2} = {3}.
+120	Cada apretón se contó dos veces, así que {0} : 2 = {1}.
+121	Un polígono regular con {0} vértices. ¿Cuántas diagonales se pueden trazar en él?
+122	De cada vértice salen {0} diagonales.
+123	En total, {0} · {1} : 2 = {2} (cada una se cuenta dos veces).
+124	Una pizzería tiene {0} ingredientes. Una pizza puede llevar cualquier combinación (cada ingrediente está o no está; también se permite una pizza sin nada). ¿Cuántas pizzas distintas se pueden pedir?
+125	Así, 2 · 2 · … ({0} veces) = 2^{1} = {2}.
+126	Para cada camiseta hay {0} · {1} = {2} combinaciones.
+127	🔒 Un candado tiene {0} ruedas con dígitos del 0 al 9. ¿Cuántos códigos se pueden formar?
+128	En total, 10^{0} = {1}.
+129	Hay {0} caminos de A a B, {1} de B a C y {2} de C a D. ¿Cuántas rutas distintas llevan de A a D pasando por B y C?
+130	Tramo A–B: {0}, B–C: {1}, C–D: {2}.
+131	Hay {0} · {1} · {2} = {3} rutas.
+132	Si contamos sistemáticamente todos los números del 100 al 999, salen {0}.
+133	En la meta hay {0}.
+134	🧦 Calcetines de {0} colores y está oscuro. ¿Cuántos debes sacar para estar seguro de tener {1} del mismo color?
+135	El peor caso es tener uno menos que {0} de cada color.
+136	Con la peor suerte tienes {0} calcetines de cada uno de los {1} colores: eso son {2}.
+137	El siguiente calcetín tiene que completar {0} iguales: {1} + 1 = {2}.
+138	Una baraja tiene cartas de cuatro palos (♠ ♥ ♦ ♣), al menos {0} de cada uno. ¿Cuántas cartas debes sacar a ciegas para estar seguro de tener {1} cartas del mismo palo?
+139	En el peor caso tienes {0} cartas de cada palo.
+140	Peor caso: {0} cartas de cada uno de los 4 palos, en total {1}.
+141	La siguiente carta tiene que completar {0} de un palo: {1}.
+142	Un colegio tiene {0} alumnos. Un año tiene 12 meses. ¿Cuál es el mayor número de alumnos que seguro comparten mes de cumpleaños (en al menos un mes)?
+143	{0} : 12 = {1}…, así que algún mes tiene que tener al menos {2} alumnos.
+144	Un armario guarda {0} pares distintos de guantes (cada par de un color, {1} guantes en total, izquierdo y derecho). Los sacas a oscuras. ¿Cuál es el mínimo que debes coger para estar seguro de tener un par completo (izquierdo y derecho del mismo color)?
+145	Sin tener un par, puedes tener como mucho un guante de cada uno de los {0} colores.
+146	En el peor caso tienes {0} guantes, cada uno de un color distinto (por ejemplo, todos izquierdos).
+147	El siguiente (el número {0}) completa un par: {1} + 1 = {2}.
+148	¿Cuántas «palabras» distintas (se admiten palabras sin sentido) se pueden formar reordenando todas las letras de {0}?
+149	Si todas las letras fueran distintas habría {0}! = {1} ordenaciones.
+150	Un cordón tiene {0} cuentas en fila: rojas: {1}, azules: {2}, verdes: {3} (las cuentas de un mismo color son iguales). ¿Cuántos patrones distintos son posibles?
+151	Lugares para las rojas: C({0}, {1}) = {2}.
+152	De los {0} lugares restantes elige los de las azules: C({1}, {2}) = {3}; las verdes ocupan el resto.
+153	En total, {0} · {1} = {2}.
+154	Cada número es 2 · (el anterior) {0}.
+155	{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …
+156	Siguiente: {0} · 2 {1} = {2}.
+157	Las diferencias de las diferencias son siempre {0}.
+158	La siguiente diferencia es {0}, así que el siguiente número es {1}.
+159	En un cuadrado mágico todas las filas, todas las columnas y las dos diagonales tienen la misma suma. ¿Qué número va en {0}?
+160	La suma mágica es {0} (a partir de una línea completamente conocida).
+161	Al sustituir en la pregunta se obtiene {0}.
+162	Cubos interiores: ({0}−2)·({1}−2)·({2}−2) = {3}.
+163	Cubos en el centro de las caras: 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.
+164	Cubos de las aristas sin esquinas: 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.
+165	Respuesta: {0}.
+166	¿Cuántos cuadrados (también los grandes) puedes encontrar en la cuadrícula de {0} × {1}?
+167	Hay {0} cuadrados de 1×1. ¿Cuántos cuadrados de 2×2 hay?
+168	La cuadrícula tiene {0} filas y {1} columnas. ¿Cuántos rectángulos (los cuadrados también cuentan) puedes encontrar en ella?
+169	¿De cuántas formas puedes elegir 2 de las {0} líneas horizontales y 2 de las {1} verticales?
+170	Hay {0} líneas horizontales y {1} verticales.
+171	Dos horizontales: C({0},2) = {1}, dos verticales: C({2},2) = {3}. En total, {4}.
+172	La suma de todos los números es {0}.
+173	La suma de los máximos de las columnas es {0}.
+174	{0} caras pintadas en total.
+175	Rectángulo entero: {0} · {1} = {2} cm².
+176	Recorte: {0} · {1} = {2} cm². Lo que queda: {3} cm².
+177	Perímetro = 2 · ({0} + {1}) = {2} cm.
+178	Lado original: {0} cm. Lado nuevo: {1} cm.
+179	Área nueva: {0} · {1} = {2} cm² ({3} veces mayor).
+180	Un rectángulo tiene un perímetro de {0} cm y un lado de {1} cm. ¿Cuál es su área?
+181	Sabes que a = {0}. ¿Cuánto mide el otro lado?
+182	a + b = {0} (la mitad del perímetro).
+183	El otro lado: {0} − {1} = {2} cm, área {3} · {4} = {5} cm².
+184	Un triángulo tiene una base de {0} cm y una altura sobre ella de {1} cm. ¿Cuál es su área?
+185	({0} · {1}) : 2 = {2} cm².
+186	Un cuadro mide {0} cm × {1} cm por fuera, con un marco de {2} cm de ancho por todos lados. ¿Cuál es el área del marco en sí (sin la parte interior)?
+187	De cada lado se quitan {0} cm: {1} cm en cada dimensión.
+188	Parte interior: ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².
+189	Marco = {0} − {1} = {2} cm².
+190	Pienso en un número. Si lo multiplico por {0} y le sumo {1}, obtengo {2}. ¿Cuál es mi número?
+191	Primero resta {0} y luego divide entre {1}.
+192	{0} − {1} = {2}.
+193	{0} : {1} = {2}.
+194	La suma de {0} números enteros consecutivos es {1}. ¿Cuál es el mayor de ellos?
+195	n, n+1, …, n+{0}: ¿cuánto suman?
+196	La suma es {0}·n + {1} = {2}.
+197	n = {0}, así que el mayor es {1} + {2} = {3}.
+198	La suma de dos números es {0} y su diferencia es {1}. ¿Cuál es el mayor?
+199	({0} + {1}) = {2} = 2 · el número mayor.
+200	El número mayor es {0} : 2 = {1}.

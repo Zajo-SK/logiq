@@ -1,0 +1,200 @@
+1	15 nyelv támogatása (szlovák, angol, cseh, lengyel, magyar, ukrán, német, spanyol, francia, portugál, orosz, kínai, japán, hindi, arab). A felület le van fordítva, a feladatok szövegét most fordítjuk. Az arab jobbról balra íródik.
+2	{0}. osztály
+3	Sudoku {0}
+4	A különbség mindig {0}. Add hozzá az utolsó számhoz.
+5	A különbségek mindig {0}.
+6	Az utolsó szám {0}, a következő {1} + {2} = {3}.
+7	Minden szám az előző szám {0}-szorosa.
+8	Az előző számot mindig megszorozzuk ennyivel: {0}.
+9	{0} · {1} = {2}.
+10	A különbségek: {0}, {1}, {2}, {3} – mindig 1-gyel nőnek.
+11	A különbségek: {0}, {1}, {2}, {3}: mindegyik 1-gyel nagyobb.
+12	A következő különbség {0}, tehát {1} + {2} = {3}.
+13	A következő: 6² + {0} = {1}.
+14	{0} + {1} = {2}, {3} + {4} = {5} … minden szám az előző kettő összege.
+15	Következő: {0} + {1} = {2}.
+16	Az 1., 3., 5. helyen álló számok ennyivel nőnek: {0}, a 2. és 4. helyen állók ennyivel csökkennek: {1}.
+17	Szedd szét kétfelé: {0}, {1}, {2} (ennyivel nő: {3}) és {4}, {5}, ? (ennyivel csökken: {6}).
+18	A hiányzó szám {0} − {1} = {2}.
+19	Próbáld meg a békát a(z) {0}. levélről ugratni.
+20	Próbáld meg a békát a(z) {0}. levélről a(z) {1}. levélre ugratni.
+21	Trükk: a békák felváltva lépjenek – lépés, ugrás, ugrás, lépés… (Azonos színű béka átugrása nem segít.) A legkevesebb mozdulat: {0}² + 2·{1} = {2}.
+22	{0}→ jobbra, {1}← balra megy. Cseréld fel a helyüket!
+23	{0} × {1}→ és {2} × {3}←. Legkevesebb hány mozdulat kell a helycseréhez? (egy lépés vagy egy ugrás = 1 mozdulat)
+24	Minden →-béka át kell ugorjon minden ←-békán: ez {0} · {1} = {2} ugrás.
+25	Ezen kívül mind a {0} béka tesz egy lépést egy szabad levélre: {1} lépés.
+26	Összesen {0} + {1} = {2} mozdulat.
+27	Elérhető mezők: {0} – összesen {1}.
+28	Hány {0} fér el egy {1}×{2}-es táblán úgy, hogy egyik sem üti a másikat?
+29	A {0}×{1}-es táblánál ez {2}.
+30	🁢 {0}×{1}-es tábla. Legfeljebb hány 1×2-es dominó fér el rajta?
+31	A táblán {0} · {1} = {2} mező van.
+32	Egy sakktábla első mezőjére 1 szemet teszünk, a másodikra 2-t, a harmadikra 4-et – minden mezőre kétszer annyi kerül, mint az előzőre. Hány szem van összesen az első {0} mezőn?
+33	Egy sakktábla első mezőjére 1 szemet teszünk, a másodikra 2-t, a harmadikra 4-et – mindig kétszer annyit, mint az előzőre. Hány szem van a(z) {0}. mezőn?
+34	Az összeg mindig 1-gyel kisebb a következő tagnál: 2^{0} − 1 = {1}.
+35	A(z) {0}. mezőn 2^{1} szem van.
+36	Ez {0}.
+37	🗼 Told át a {0} korongot az utolsó rúdra {1} lépésben.
+38	🗼 Egy hanoi torony {0} korongból áll. Legkevesebb hány lépésben lehet átrakni?
+39	Tehát T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, ezért T({0}) = {1}.
+40	🗼 {0} korong, a leggyorsabb módon. Hányszor lép a(z) {1}. korong? (1 = a legkisebb)
+41	Minden kisebb korong kétszer annyiszor lép: a(z) {0}. korong 2^{1} = {2}-szer lép.
+42	Hanoi tornya NÉGY rúddal (a többi szabály ugyanaz) és {0} koronggal. Legkevesebb hány lépés kell? (Segítség: 1, 2, 3, 4 korongnál 1, 3, 5, 9 lépés.)
+43	A k legjobb választása {0} lépést ad.
+44	{0} lépésben elérted a célt – de gyorsabban is megy, a minimum {1}. Próbáld újra!
+45	Jelöld meg ezt a mezőt: {0}.
+46	A bábu jelenlegi mezőjéről {0} mezőre léphet. Melyik van közelebb a célhoz?
+47	Jó következő lépés: {0}.
+48	A tornyot {0} lépésben átraktad – szuper! De {1} lépésben is megy. Próbáld újra, és keresd a szabályszerűséget.
+49	Ez ismétlődik: {0}
+50	A következő: {0}.
+51	{0} ilyen: {1}, ezért nem tartozik ide.
+52	{0} pár nélkül maradt.
+53	{0}: {1}, {2}: {3}.
+54	{0} + {1} = {2}
+55	{0} − {1} = {2}
+56	{0} : {1} = {2}
+57	Mindig ennyit adunk hozzá: {0}. A hiányzó szám {1}.
+58	Hány {0} látható?
+59	Összesen {0} van.
+60	Számolj felfelé: {0} … {1}.
+61	A vesztes számok (a soron lévő játékos számára): {0}. Köztük van a(z) {1}?
+62	A(z) {0} nem vesztes szám, így az első játékos nyer: végy el ennyit: {1}, így {2} marad.
+63	A(z) {0} vesztes szám a soron lévő játékosnak, ezért a második játékos nyer.
+64	A nim-összeg (XOR) most {0}. Melyik kupacot kell csökkenteni, hogy 0 legyen?
+65	A különbség {0} − {1} = {2}. Aztán csak másold az ellenfeled lépéseit a másik kupacon.
+66	Vegyél el {0} darabot a {1} darabos kupacból: {2} ⊕ {3} = {4}, így a nim-összeg 0 lesz.
+67	🍫 {0} × {1}-es csokoládé. Egy törés = egy darab kettétörése. Hány törés kell, hogy minden kocka különálló legyen?
+68	Minden törés pontosan 1-gyel növeli a darabok számát, tehát {0} − 1 = {1} törés kell – bárhogy csináljuk.
+69	🏆 {0} játékos. Minden fordulóban párok játszanak, és a győztes jut tovább. Hány fordulót játszanak?
+70	Ez {0} felezés, tehát {1} forduló.
+71	{0} játékosból {1} játékosnak ki kell esnie.
+72	Minden mérkőzés egy játékost kiejt, tehát {0} mérkőzést játszanak – akárhogy sorsolják a párokat.
+73	Próbáld azt feltételezni, hogy {0} lovag. Mi következik ebből a többiekre?
+74	Azt a gyanúsítottat keresed, akire pontosan {0} állítás igaz.
+75	Pontosan {0} igaz állítás csak ennél van: {1}.
+76	osztható ezzel: {0}
+77	nem osztható ezzel: {0}
+78	nagyobb, mint {0}
+79	kisebb, mint {0}
+80	a számjegyeinek összege {0}
+81	az utolsó számjegye {0}
+82	Gondoltam egy számra 1 és {0} között. A lista minden állítása igaz. Melyik szám az?
+83	Már csak egy szám maradt: {0}.
+84	{0} előrébb áll, mint {1}.
+85	{0} közvetlenül {1} mögött áll.
+86	{0} nem az első.
+87	{0} nem az utolsó.
+88	{0} valahol {1} és {2} között áll.
+89	{0} nem rendelkezik ezzel: {1}.
+90	Sem {0}, sem {1} nem rendelkezik ezzel: {2}.
+91	{0} rendelkezik ezzel: {1}.
+92	Minden {0} egyben {1}.
+93	Egyetlen {0} sem {1}.
+94	Van legalább egy {0}, amely {1}.
+95	Van legalább egy {0}, amely nem {1}.
+96	Axel nem {0}.
+97	Axel nem {0}.
+98	Axel {0}.
+99	Axel {0}, de nem {1}.
+100	Helyes: „{0}” – a többi nem vezethető le a feltételekből.
+101	{0} gyerek szeretne sorba állni egy fotóhoz. Hányféle sorrendben állhatnak?
+102	Az első helyre {0} lehetőség van, a másodikra {1}, a harmadikra {2} … egészen 1-ig.
+103	{0} futó áll a rajtvonalnál. Hányféleképpen oszlhat ki az arany-, az ezüst- és a bronzérem?
+104	Arany: {0} lehetőség, ezüst: {1}, bronz: {2}.
+105	Összesen {0} · {1} · {2} = {3}.
+106	{0} gyerek áll sorba. {1} és {2} egymás mellett szeretne állni (bármelyik sorrendben). Hány ilyen sorrend van?
+107	Kezeld a párt egyetlen blokként: {0} blokkot rendezünk sorba, ez {1} féleképpen lehetséges.
+108	A páron belül 2 sorrend van, tehát 2 · {0} = {1}.
+109	{0} gyerek ül egy kerek asztal körül. Két ültetést ugyanannak számítunk, ha csak az egész asztal elforgatásában különböznek. Hányféle ültetés van?
+110	A többi {0} gyerek sorrendje: {1}! = {2}.
+111	Százasok: {0} lehetőség, tizesek: {1}, egyesek: {2}.
+112	{0} gyerekből kétfős küldöttséget választunk. Hányféleképpen lehet ezt megtenni?
+113	{0} · {1} = {2} rendezett pár van.
+114	A sorrend nem számít, ezért osztunk 2-vel: {0}.
+115	{0} gyerekből háromfős csapatot választunk. Hány különböző csapat lehetséges?
+116	Rendezett hármasok: {0} · {1} · {2} = {3}.
+117	Minden csapatot 6-szor számoltunk, tehát {0} : 6 = {1}.
+118	{0} ember találkozik. Mindenki pontosan egyszer fog kezet mindenki mással. Hány kézfogás történik?
+119	Mindenki {0} emberrel fog kezet, összesen {1} · {2} = {3}.
+120	Minden kézfogást kétszer számoltunk, tehát {0} : 2 = {1}.
+121	Egy szabályos sokszögnek {0} csúcsa van. Hány átlót lehet húzni benne?
+122	Minden csúcsból {0} átló indul.
+123	Összesen {0} · {1} : 2 = {2} (mindegyiket kétszer számoltuk).
+124	Egy pizzériában {0} feltét közül lehet választani. A pizzán bármilyen kombináció szerepelhet (minden feltét vagy rajta van, vagy nincs; sima pizza is lehet). Hányféle pizzát lehet rendelni?
+125	Tehát 2 · 2 · … ({0}-szer) = 2^{1} = {2}.
+126	Minden pólóhoz {0} · {1} = {2} kombináció tartozik.
+127	🔒 Egy zárnak {0} tárcsája van 0–9 számjegyekkel. Hány kódot lehet beállítani?
+128	Összesen 10^{0} = {1}.
+129	A-ból B-be {0} út vezet, B-ből C-be {1}, C-ből D-be {2}. Hány különböző útvonal vezet A-ból D-be B-n és C-n át?
+130	A–B szakasz: {0}, B–C: {1}, C–D: {2}.
+131	{0} · {1} · {2} = {3} útvonal van.
+132	A 100-tól 999-ig terjedő számok módszeres megszámolásának eredménye: {0}.
+133	A célnál {0} van.
+134	🧦 {0} színű zoknik, sötét van. Hányat kell kihúznod, hogy biztosan legyen {1} egyszínű?
+135	A legrosszabb eset az, ha minden színből eggyel kevesebb van a kezedben, mint {0}.
+136	Legrosszabb esetben a(z) {1} szín mindegyikéből {0} zoknid van – ez összesen {2}.
+137	A következő zoknival már meglesz {0} egyforma: {1} + 1 = {2}.
+138	Egy pakli négy színű lapot tartalmaz (♠ ♥ ♦ ♣), mindegyik színből legalább {0} lap van. Hány lapot kell vakon húznod, hogy biztosan legyen {1} azonos színű?
+139	Legrosszabb esetben minden színből {0} lap van a kezedben.
+140	Legrosszabb eset: a 4 színből egyenként {0} lap, összesen {1}.
+141	A következő lappal valamelyik szín eléri a(z) {0} lapot: {1}.
+142	Egy iskolának {0} tanulója van. Az évben 12 hónap van. Legalább hány tanuló születésnapja esik biztosan ugyanarra a hónapra (legalább egy hónapban)?
+143	{0} : 12 = {1}…, tehát valamelyik hónapban legalább {2} tanuló van.
+144	Egy szekrényben {0} különböző pár kesztyű van (minden pár más színű, összesen {1} kesztyű, bal és jobb). Sötétben húzod ki őket. Legkevesebb hányat kell kivenned, hogy biztosan legyen egy teljes pár (egy szín bal és jobb keze)?
+145	Pár nélkül legfeljebb egy kesztyűd lehet a(z) {0} szín mindegyikéből.
+146	Legrosszabb esetben {0} kesztyű van a kezedben, mind más színű (mondjuk csupa bal).
+147	A következő (a(z) {0}.) kiegészít egy párt: {1} + 1 = {2}.
+148	Hány különböző „szót” (értelmetlent is) lehet kirakni a következő szó összes betűjének átrendezésével: {0}?
+149	Ha minden betű különböző lenne, {0}! = {1} sorrend lenne.
+150	Egy zsinóron {0} gyöngy van egymás után: piros – {1}, kék – {2}, zöld – {3} (az egyszínű gyöngyök egyformák). Hány különböző mintázat lehetséges?
+151	Helyek a pirosnak: C({0}, {1}) = {2}.
+152	A megmaradó {0} helyből válaszd ki a kéknek: C({1}, {2}) = {3}; a zöld kapja a többit.
+153	Összesen {0} · {1} = {2}.
+154	Minden szám 2 · (előző) {0}.
+155	{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …
+156	Következő: {0} · 2 {1} = {2}.
+157	A különbségek különbségei mindig {0}.
+158	A következő különbség {0}, tehát a következő szám {1}.
+159	Egy bűvös négyzetben minden sor, minden oszlop és mindkét átló összege egyenlő. Melyik szám kerül ide: {0}?
+160	A bűvös összeg {0} (egy teljesen ismert sorból).
+161	Behelyettesítve a kérdésbe: {0}.
+162	Belső kockák: ({0}−2)·({1}−2)·({2}−2) = {3}.
+163	Lapok közepén lévő kockák: 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.
+164	Élkockák a sarkok nélkül: 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.
+165	Válasz: {0}.
+166	Hány négyzetet (a nagyokat is) találsz a {0} × {1}-es rácsban?
+167	{0} darab 1×1-es négyzet van. Hány 2×2-es négyzet van?
+168	A rácsnak {0} sora és {1} oszlopa van. Hány téglalapot (a négyzetek is annak számítanak) találsz benne?
+169	Hányféleképpen választhatsz ki 2-t a {0} vízszintes és 2-t a {1} függőleges vonal közül?
+170	{0} vízszintes és {1} függőleges vonal van.
+171	Két vízszintes: C({0},2) = {1}, két függőleges: C({2},2) = {3}. Összesen {4}.
+172	Az összes szám összege {0}.
+173	Az oszlopmaximumok összege {0}.
+174	Összesen {0} festett lap.
+175	Az egész téglalap: {0} · {1} = {2} cm².
+176	Kivágás: {0} · {1} = {2} cm². Ami marad: {3} cm².
+177	Kerület = 2 · ({0} + {1}) = {2} cm.
+178	Eredeti oldal: {0} cm. Új oldal: {1} cm.
+179	Új terület: {0} · {1} = {2} cm² ({3}-szor nagyobb).
+180	Egy téglalap kerülete {0} cm, az egyik oldala {1} cm. Mekkora a területe?
+181	Ismered: a = {0}. Mekkora a másik oldal?
+182	a + b = {0} (a kerület fele).
+183	A másik oldal: {0} − {1} = {2} cm, a terület {3} · {4} = {5} cm².
+184	Egy háromszög alapja {0} cm, a hozzá tartozó magasság {1} cm. Mekkora a területe?
+185	({0} · {1}) : 2 = {2} cm².
+186	Egy kép külső mérete {0} cm × {1} cm, körben {2} cm széles kerettel. Mekkora magának a keretnek a területe (a belső rész nélkül)?
+187	Mindkét oldalról {0} cm megy el – méretenként {1} cm.
+188	Belső rész: ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².
+189	Keret = {0} − {1} = {2} cm².
+190	Gondolok egy számra. Ha a számot megszorzom ezzel: {0}, majd hozzáadok ennyit: {1}, az eredmény {2}. Melyik számra gondoltam?
+191	Először vond ki ezt: {0}, aztán oszd el ezzel: {1}.
+192	{0} − {1} = {2}.
+193	{0} : {1} = {2}.
+194	{0} egymást követő egész szám összege {1}. Melyik közülük a legnagyobb?
+195	n, n+1, …, n+{0}: mennyi az összeg?
+196	Az összeg {0}·n + {1} = {2}.
+197	n = {0}, tehát a legnagyobb {1} + {2} = {3}.
+198	Két szám összege {0}, különbségük {1}. Melyik a nagyobb?
+199	({0} + {1}) = {2} = 2 · a nagyobb szám.
+200	A nagyobb szám {0} : 2 = {1}.

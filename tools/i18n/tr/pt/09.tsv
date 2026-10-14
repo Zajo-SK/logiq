@@ -1,0 +1,135 @@
+1	Um pai é {0} anos mais velho que o filho. Juntos, eles têm {1} anos. Quantos anos tem o pai?
+2	{0} − {1} = {2} = o dobro da idade do filho.
+3	O filho tem {0}, o pai tem {1} + {2} = {3}.
+4	Um cofrinho tem {0} moedas, algumas de €1 e as outras de €2. O valor total é €{1}. Quantas moedas de €2 há?
+5	Com {0} moedas de um euro seriam €{1}.
+6	Faltam €{0}, então há {1} moedas de dois euros.
+7	Resolva a equação: {0}·(x − {1}) + {2} = {3}. Quanto vale x?
+8	Depois de subtrair {0}, divida por {1}.
+9	{0} − {1} = {2}, então {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, então x = {2}.
+11	Quantos divisores (incluindo 1 e o próprio número) tem {0}?
+12	Tente d = 1, 2, 3, … até a raiz quadrada de {0}.
+13	Da praça, o ônibus A sai a cada {0} minutos e o ônibus B a cada {1} minutos. Eles acabaram de sair juntos. Depois de quantos minutos vão sair juntos de novo?
+14	O mínimo múltiplo comum é {0}.
+15	Qual é o último algarismo de {0}^{1}?
+16	Escreva os últimos algarismos das potências {0}¹, {1}², {2}³ …
+17	O expoente {0} deixa resto {1} na divisão por {2}, então o último algarismo é {3}.
+18	Quantos números de 1 a {0} são divisíveis por {1} ou por {2} (ou por ambos)?
+19	Múltiplos de {0}: {1}, de {2}: {3}, de ambos ({4}): {5}.
+20	{0} + {1} − {2} = {3}.
+21	Em quantos zeros termina {0}! = 1 · 2 · 3 · … · {1}?
+22	Conte quantas vezes o fator 5 aparece nos números de 1 a {0} (inclusive repetido, por exemplo em 25).
+23	Queremos cobrir um retângulo de {0} cm × {1} cm com quadrados idênticos, sem espaços e sem sobreposição. Qual é o maior lado possível de um quadrado (em cm)?
+24	O maior é {0}.
+25	Uma sacola tem {0} bolinhas vermelhas, {1} azuis e {2} verdes. Uma é sorteada sem olhar. Qual é a probabilidade de ser vermelha? (Como fração irredutível, por exemplo 1/6.)
+26	Há {0} bolinhas no total, {1} são vermelhas.
+27	A probabilidade é {0}/{1} = {2}.
+28	Lançamos dois dados honestos. Qual é a probabilidade de a soma ser {0}? (Como fração irredutível.)
+29	Liste os pares com soma {0}.
+30	A soma {0} sai de {1} pares, então {2}/36 = {3}.
+31	Uma moeda é lançada {0} vezes. Qual é a probabilidade de dar exatamente {1} caras? (Como fração irredutível.)
+32	Quantos resultados existem para {0} lançamentos?
+33	De quantas maneiras você pode escolher quais {0} dos {1} lançamentos dão cara?
+34	Todos os resultados: 2^{0} = {1}.
+35	Favoráveis: C({0}, {1}) = {2}. Probabilidade {3}/{4} = {5}.
+36	Uma sacola tem {0} bolinhas vermelhas e {1} azuis. Duas são sorteadas sem reposição. Qual é a probabilidade de ambas serem vermelhas? (Como fração irredutível.)
+37	Primeira vermelha: {0}/{1}.
+38	Segunda vermelha: {0}/{1}. Juntas, {2}/{3} · {4}/{5} = {6}.
+39	Lançamos dois dados. Qual é a probabilidade de pelo menos um mostrar {0}? (Como fração irredutível.)
+40	É mais fácil contar o contrário: nenhum dos dois mostra {0}.
+41	Nenhum dado mostra {0}: 5 · 5 = 25 dos 36 resultados.
+42	Favoráveis: 36 − 25 = {0}, probabilidade {1}.
+43	Quanto é {0}% de {1}?
+44	1% de {0} é {1}.
+45	{0}% é {1} · {2} = {3}.
+46	Um produto custa €{0}. Primeiro ele sobe {1}%, depois o novo preço cai {2}%. Quanto ele custa no final?
+47	Depois do aumento: {0} · {1} = €{2}.
+48	Depois da queda: {0} · {1} = €{2}.
+49	€{0} são divididos entre Ema e Adam na razão {1} : {2}. Quantos € a Ema recebe?
+50	São {0} + {1} = {2} partes; uma parte é {3} : {4} = €{5}.
+51	A Ema recebe {0} partes: {1} · {2} = €{3}.
+52	Quanto é {0}/{1} de {2}?
+53	1/{0} de {1} é {2} : {3} = {4}.
+54	{0}/{1} é {2} · {3} = {4}.
+55	Quantos por cento {0} é de {1}?
+56	{0} / {1} = {2}.
+57	Isso são {0} centésimos, ou seja, {1}%.
+58	Hoje é {0}. Que dia da semana será daqui a {1} dias?
+59	Encontre o resto da divisão de {0} por 7.
+60	{0} : 7 = {1} e resto {2}.
+61	Semanas inteiras não mudam o dia; avance {0} dias a partir de {1} e você chega a {2}.
+62	Um trem sai às {0} e chega às {1}. Quantos minutos dura a viagem?
+63	{0} = {1} minutos depois da meia-noite, {2} = {3} minutos.
+64	A diferença é de {0} minutos.
+65	Em {0}, o dia 1º de {1} cai em uma {2}. Que dia da semana é 1º de {3}?
+66	O mês tem {0} dias: {1} : 7 = {2} e resto {3}.
+67	Avançando {0} dias a partir de {1}, chegamos a {2}.
+68	Ponteiro das horas: {0} · 30 + {1} · 0,5 = {2}°. Ponteiro dos minutos: {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	O tempo total é de {0} minutos.
+71	Você tem duas jarras sem marcações: de {0} L e de {1} L, e bastante água. Um passo é: encher uma jarra por completo, esvaziar uma jarra por completo, ou despejar de uma na outra até a de origem esvaziar ou a de destino encher. Qual é o mínimo de passos para ter exatamente {2} L em uma das jarras?
+72	São {0} passos, e menos é impossível (todas as possibilidades foram testadas).
+73	Entre {0} moedas, uma é falsa – ela é mais leve que as outras. Você tem uma balança de pratos sem pesos. Qual é o mínimo de pesagens que com certeza encontra a falsa?
+74	Com {0} pesagens, podemos distinguir até 3^{1} = {2} moedas, o que é pelo menos {3}; com {4} pesagens, apenas {5}. Precisamos de {6}.
+75	🕸️ A soma de todos os números nos círculos é {0}. Cada seta soma o número da sua cor. Quanto vale x?
+76	Conte quantos x há na soma e o que sobra. Então {0} − (o resto) = (quantidade de x) × x.
+77	Há {0} x e o resto é {1}. Então {2}·x + {3} = {4} e x = {5}.
+78	A seta soma {0}. Todas as setas dessa cor têm o mesmo valor, então basta descobri-lo em um lugar.
+79	O círculo marcado deve ser {0}.
+80	Há {0} caminhos completos. Em cada bifurcação, tente as duas opções e risque as que terminam em um beco sem saída ou deixam de passar por uma sala.
+81	A sala marcada deve ser {0}.
+82	Colecione figurinhas: {0}
+83	Ganhe medalhas do mundo: {0}
+84	Complete todas as missões diárias em {0} dias
+85	Sequência de {0} dias!
+86	Tire {0}
+87	Correto! A moeda {0} é a falsa – encontrada com {1} pesagens.
+88	A moeda {0} não é falsa. Continue tentando.
+89	🎉 Exatamente {0} L em uma jarra! Passos: {1}.
+90	Encher {0} L
+91	Esvaziar {0} L
+92	🎉 Todos atravessaram! Tempo: {0} min.
+93	{0} iguais depois de {1} tiradas!
+94	Está escuro – você tira sem olhar. Quando você tem {0} iguais? Tente várias vezes e procure o pior caso.
+95	🎉 Cada criança tem {0}.
+96	As amarelas já estão dadas. Adicione vermelhas até haver exatamente {0} no total. Há mais células livres do que você precisa!
+97	Lance {0} moedas e observe o número de caras. Repita!
+98	Começamos em {0}. Pule dia após dia – onde você vai parar depois de {1} dias?
+99	Pinte {0} quadradinhos de 100 – isso é {1}%.
+100	Derrotas neste nível: {0}
+101	linha {0}
+102	coluna {0}
+103	bloco {0}
+104	A célula {0} recebe {1}.
+105	Risque os candidatos – {0}. Mais uma dica preenche uma célula.
+106	Técnica: {0}.
+107	A célula {0} só pode ter um número.
+108	Em {0}, um número cabe em apenas uma célula – olhe para a destacada.
+109	O número {0} em {1} está “preso” em {2} – risque-o nos outros lugares ali.
+110	O número {0} forma um retângulo X-Wing – risque-o nas linhas correspondentes.
+111	Células erradas: {0} (marcadas com “!”).
+112	Olhe para a célula na linha {0}, coluna {1}. Que números ainda podem entrar ali?
+113	A célula (linha {0}, coluna {1}) recebe {2}.
+114	Tente tocar na célula da linha {0}, coluna {1}.
+115	Este é o início. A solução mais curta toca em {0} células (marcadas com 👆):
+116	Você chegou ao final – ótimo! Mas existe um caminho mais curto. O seu levou {0} passos; tente com menos.
+117	Primeiro tente identificar os becos sem saída. O caminho mais curto tem {0} passos.
+118	O início do caminho mais curto (linha, coluna): {0} …
+119	Exploramos e descartamos os becos sem saída. O caminho mais curto tem {0} passos e é assim:
+120	Pronto! Todos atravessaram em {0} movimentos – e não dá para fazer com menos (um computador verificou todas as possibilidades).
+121	Você começa em {0}: tire {1} para deixar {2} (uma contagem perdedora para o adversário). Depois, sempre responda de modo a cair numa contagem perdedora de novo.
+122	O computador começa em {0}, uma contagem perdedora para quem joga. Faça ele o que fizer, responda deixando uma contagem perdedora de novo.
+123	Aqui você vence, por exemplo, assim: tire {0} da pilha {1}.
+124	há {0} min
+125	há {0} h
+126	há {0} dias
+127	Níveis: {0} de {1} · medalhas: {2}
+128	Criar a turma {0}.{1}
+129	{0} alunos
+130	Turma {0}
+131	Tarefas selecionadas: {0}
+132	alunos: {0}
+133	{0} tarefas
+134	{0} de {1} alunos terminaram
+135	Concluído: {0} de {1}

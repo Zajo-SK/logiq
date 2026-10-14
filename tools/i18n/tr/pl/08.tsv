@@ -1,0 +1,200 @@
+1	Obsługa 15 języków (słowacki, angielski, czeski, polski, węgierski, ukraiński, niemiecki, hiszpański, francuski, portugalski, rosyjski, chiński, japoński, hindi, arabski). Interfejs jest przetłumaczony, treść zadań jest w trakcie tłumaczenia. Arabski jest pisany od prawej do lewej.
+2	Klasa {0}
+3	Sudoku {0}
+4	Różnica jest zawsze równa {0}. Dodaj ją do ostatniej liczby.
+5	Różnice są zawsze równe {0}.
+6	Ostatnia liczba to {0}, następna to {1} + {2} = {3}.
+7	Każda liczba jest {0} razy większa od poprzedniej.
+8	Każda liczba to poprzednia razy {0}.
+9	{0} · {1} = {2}.
+10	Różnice to {0}, {1}, {2}, {3} – rosną o 1.
+11	Różnice to {0}, {1}, {2}, {3}: każda jest o 1 większa.
+12	Następna różnica to {0}, więc {1} + {2} = {3}.
+13	Następna liczba to 6² + {0} = {1}.
+14	{0} + {1} = {2}, {3} + {4} = {5} … każda liczba jest sumą dwóch poprzednich.
+15	Dalej: {0} + {1} = {2}.
+16	Liczby na miejscach 1, 3, 5 rosną o {0}, a te na miejscach 2, 4 maleją o {1}.
+17	Podziel na dwa ciągi: {0}, {1}, {2} (rośnie o {3}) oraz {4}, {5}, ? (maleje o {6}).
+18	Brakująca liczba to {0} − {1} = {2}.
+19	Spróbuj ruszyć żabę na liściu {0}.
+20	Spróbuj przesunąć żabę z liścia {0} na liść {1}.
+21	Sztuczka: żaby muszą się poruszać na zmianę – krok, skok, skok, krok… (Przeskakiwanie żaby tego samego koloru nie pomaga.) Najmniejsza liczba ruchów to {0}² + 2·{1} = {2}.
+22	{0}→ idą w prawo, {1}← idą w lewo. Zamień je miejscami!
+23	{0} × {1}→ oraz {2} × {3}←. Jaka jest najmniejsza liczba ruchów, żeby je zamienić? (krok lub skok = 1 ruch)
+24	Każda żaba → musi przeskoczyć każdą żabę ←: to {0} · {1} = {2} skoków.
+25	Poza tym każda z {0} żab robi jeden krok na wolny liść: razem kroków: {1}.
+26	Razem {0} + {1} = {2} ruchów.
+27	Osiągalne pola: {0} – razem {1}.
+28	Ile figur ({0}) zmieści się na szachownicy {1}×{2}, tak aby żadne dwie się nie biły?
+29	Dla {0}×{1} wychodzi {2}.
+30	🁢 Plansza {0}×{1}. Ile najwięcej kostek domina 1×2 się na niej zmieści?
+31	Plansza ma {0} · {1} = {2} pól.
+32	Na pierwszym polu szachownicy kładziemy 1 ziarno, na drugim 2, na trzecim 4 – na każdym polu dwa razy więcej niż na poprzednim. Ile ziaren jest łącznie na pierwszych {0} polach?
+33	Na pierwszym polu szachownicy kładziemy 1 ziarno, na drugim 2, na trzecim 4 – zawsze dwa razy więcej niż poprzednio. Ile ziaren leży na polu numer {0}?
+34	Suma jest zawsze o 1 mniejsza od następnego wyrazu: 2^{0} − 1 = {1}.
+35	Na polu {0} leży 2^{1} ziaren.
+36	To {0}.
+37	🗼 Przenieś {0} krążków na ostatni kołek w {1} ruchach.
+38	🗼 Wieża Hanoi ma {0} krążków. Jaka jest najmniejsza liczba ruchów potrzebna do jej przeniesienia?
+39	Zatem T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, czyli T({0}) = {1}.
+40	🗼 {0} krążków, najszybszy sposób. Ile razy przesuwa się krążek nr {1}? (1 = najmniejszy)
+41	Każdy mniejszy krążek rusza się dwa razy częściej: krążek {0} przesuwa się 2^{1} = {2} razy.
+42	Wieża Hanoi z CZTEREMA kołkami (reszta zasad taka sama) i {0} krążkami. Jaka jest najmniejsza liczba potrzebnych ruchów? (Podpowiedź: dla 1, 2, 3, 4 krążków jest to 1, 3, 5, 9 ruchów.)
+43	Najlepszy wybór k daje {0} ruchów.
+44	Cel osiągnięty w {0} ruchach – da się szybciej, minimum to {1}. Spróbuj jeszcze raz!
+45	Zaznacz pole {0}.
+46	Liczba pól, na które figura może przejść z obecnego miejsca: {0}. Które z nich jest bliżej celu?
+47	Dobry następny ruch: {0}.
+48	Wieża przeniesiona w {0} ruchach – świetnie! Ale da się to zrobić w {1}. Spróbuj jeszcze raz i poszukaj wzoru.
+49	To się powtarza: {0}
+50	Następne jest {0}.
+51	{0} jest {1}, więc nie pasuje.
+52	Bez pary zostaje: {0}.
+53	{0}: {1}, {2}: {3}.
+54	{0} + {1} = {2}
+55	{0} − {1} = {2}
+56	{0} : {1} = {2}
+57	Dodajemy {0}. Brakująca liczba to {1}.
+58	Ile widzisz: {0}?
+59	Jest ich {0}.
+60	Policz od {0} do {1}.
+61	Liczby przegrywające (dla gracza, który ma ruch) to: {0}. Czy {1} jest wśród nich?
+62	{0} nie jest liczbą przegrywającą, więc wygrywa pierwszy gracz: weź {1} i zostaw {2}.
+63	{0} jest liczbą przegrywającą dla gracza, który ma ruch, więc wygrywa drugi gracz.
+64	Nim-suma (XOR) wynosi teraz {0}. Z którego stosu trzeba zabrać, żeby wyszło 0?
+65	Różnica to {0} − {1} = {2}. Potem po prostu powtarzaj ruchy przeciwnika na drugim stosie.
+66	Weź {0} ze stosu liczącego {1}: {2} ⊕ {3} = {4}, wtedy nim-suma wynosi 0.
+67	🍫 Czekolada {0} × {1}. Jedno złamanie = jeden kawałek na dwa. Ile złamań trzeba zrobić, aż każde pole będzie osobno?
+68	Każde złamanie zwiększa liczbę kawałków dokładnie o 1, więc potrzeba {0} − 1 = {1} złamań – niezależnie od sposobu.
+69	🏆 Liczba graczy: {0}. W każdej rundzie grają pary, a zwycięzca przechodzi dalej. Ile rund się rozegra?
+70	Dzielimy na pół {0} razy, czyli rund jest {1}.
+71	Spośród {0} graczy trzeba wyeliminować {1}.
+72	Każdy mecz eliminuje jednego gracza, więc meczów jest {0} – niezależnie od doboru par.
+73	Załóż, że {0} jest rycerzem. Co z tego wynika dla pozostałych?
+74	Szukasz podejrzanego, dla którego prawdziwych jest dokładnie {0} wypowiedzi.
+75	Dokładnie {0} prawdziwych wypowiedzi mamy tylko w przypadku: {1}.
+76	jest podzielna przez {0}
+77	nie jest podzielna przez {0}
+78	jest większa od {0}
+79	jest mniejsza od {0}
+80	ma sumę cyfr {0}
+81	kończy się cyfrą {0}
+82	Myślę o liczbie od 1 do {0}. Wszystko z listy jest prawdą. Jaka to liczba?
+83	Została tylko jedna liczba: {0}.
+84	{0} stoi przed {1}.
+85	{0} stoi tuż za {1}.
+86	{0} nie stoi na pierwszym miejscu.
+87	{0} nie stoi na ostatnim miejscu.
+88	{0} stoi gdzieś pomiędzy {1} a {2}.
+89	{0} nie ma {1}.
+90	Ani {0}, ani {1} nie ma {2}.
+91	{0} ma {1}.
+92	Każdy {0} jest {1}.
+93	Żaden {0} nie jest {1}.
+94	Co najmniej jeden {0} jest {1}.
+95	Co najmniej jeden {0} nie jest {1}.
+96	Axel nie jest {0}.
+97	Axel nie jest {0}.
+98	Axel jest {0}.
+99	Axel jest {0}, ale nie jest {1}.
+100	Poprawnie: „{0}” – pozostałych nie da się wywnioskować z przesłanek.
+101	Grupa {0} dzieci chce ustawić się do zdjęcia. Na ile różnych sposobów mogą stanąć w rzędzie?
+102	Na pierwsze miejsce jest {0} możliwości, na drugie {1}, na trzecie {2} … aż do 1.
+103	Na linii startu stoi {0} biegaczy. Na ile różnych sposobów można rozdzielić złote, srebrne i brązowe miejsce?
+104	Złoto: {0} możliwości, srebro: {1}, brąz: {2}.
+105	Razem {0} · {1} · {2} = {3}.
+106	Grupa {0} dzieci ustawia się w rzędzie. {1} i {2} chcą stać obok siebie (w dowolnej kolejności). Ile jest takich ustawień?
+107	Potraktuj parę jako jeden klocek: układamy {0} klocków, co daje {1} sposobów.
+108	Wewnątrz pary są 2 kolejności, więc 2 · {0} = {1}.
+109	Grupa {0} dzieci siedzi przy okrągłym stole. Dwa rozsadzenia różniące się tylko obrotem całego stołu uznajemy za takie same. Ile jest różnych rozsadzeń?
+110	Pozostałych (w liczbie {0}) rozmieść wokół stołu: {1}! = {2}.
+111	Setki: {0} możliwości, dziesiątki: {1}, jedności: {2}.
+112	Wybieramy dwuosobową delegację z grupy {0} dzieci. Na ile sposobów można to zrobić?
+113	Mamy {0} · {1} = {2} uporządkowanych par.
+114	Kolejność nie ma znaczenia, więc dzielimy przez 2: {0}.
+115	Wybieramy trzyosobową drużynę z grupy {0} dzieci. Ile różnych drużyn jest możliwych?
+116	Uporządkowane trójki: {0} · {1} · {2} = {3}.
+117	Każda drużyna została policzona 6 razy, więc {0} : 6 = {1}.
+118	Spotyka się grupa {0} osób. Każdy wita się uściskiem dłoni z każdym innym dokładnie raz. Ile jest uścisków dłoni?
+119	Każdy wymienia uściski dłoni z {0} osobami, razem {1} · {2} = {3}.
+120	Każdy uścisk policzyliśmy dwa razy, więc {0} : 2 = {1}.
+121	Wielokąt foremny ma {0} wierzchołków. Ile przekątnych można w nim poprowadzić?
+122	Liczba przekątnych wychodzących z każdego wierzchołka: {0}.
+123	Razem {0} · {1} : 2 = {2} (każdą policzyliśmy dwa razy).
+124	Pizzeria ma {0} dodatków. Pizza może mieć dowolne ich połączenie (każdy dodatek jest albo na pizzy, albo go nie ma; pizza bez dodatków też jest dozwolona). Ile różnych pizz można zamówić?
+125	Zatem 2 · 2 · … ({0} razy) = 2^{1} = {2}.
+126	Dla każdej koszulki mamy {0} · {1} = {2} zestawów.
+127	🔒 Zamek ma {0} pokręteł z cyframi 0–9. Ile kodów można ustawić?
+128	Razem 10^{0} = {1}.
+129	Liczba dróg z A do B: {0}, z B do C: {1}, z C do D: {2}. Ile różnych tras prowadzi z A do D przez B i C?
+130	Odcinek A–B: {0}, B–C: {1}, C–D: {2}.
+131	Tras jest {0} · {1} · {2} = {3}.
+132	Systematyczne zliczenie wszystkich liczb od 100 do 999 daje {0}.
+133	Na mecie jest {0}.
+134	🧦 Skarpetki w {0} kolorach, jest ciemno. Ile musisz wyciągnąć, żeby mieć pewność, że {1} z nich ma ten sam kolor?
+135	Najgorszy przypadek: w każdym kolorze masz o jedną skarpetkę mniej niż {0}.
+136	Przy największym pechu trzymasz po {0} skarpet z każdego z {1} kolorów – to razem {2}.
+137	Następna skarpetka musi dać {0} jednakowe: {1} + 1 = {2}.
+138	Talia ma karty w czterech kolorach (♠ ♥ ♦ ♣), co najmniej po {0} w każdym. Ile kart trzeba wyciągnąć na ślepo, żeby mieć pewność, że są {1} karty tego samego koloru?
+139	W najgorszym razie masz po {0} kart z każdego koloru.
+140	Najgorszy przypadek: po {0} kart z każdego z 4 kolorów, razem {1}.
+141	Następna karta musi dać {0} w jednym kolorze: {1}.
+142	Szkoła ma {0} uczniów. Rok ma 12 miesięcy. Jaka jest największa liczba uczniów urodzonych w tym samym miesiącu, którą na pewno da się zagwarantować (w co najmniej jednym miesiącu)?
+143	{0} : 12 = {1}…, więc w jakimś miesiącu musi być co najmniej {2} uczniów.
+144	W szafie leży {0} różnych par rękawiczek (każda para w innym kolorze, razem rękawiczek: {1}, lewych i prawych). Wyciągasz je po ciemku. Ile najmniej musisz wziąć, żeby mieć pewność, że masz całą parę (lewą i prawą jednego koloru)?
+145	Bez pary możesz mieć najwyżej po jednej rękawiczce z każdego z {0} kolorów.
+146	W najgorszym razie masz {0} rękawiczek, każdą w innym kolorze (np. same lewe).
+147	Następna (numer {0}) dopełnia parę: {1} + 1 = {2}.
+148	Ile różnych „słów” (mogą być bezsensowne) można ułożyć, przestawiając wszystkie litery słowa {0}?
+149	Gdyby wszystkie litery były różne, byłoby {0}! = {1} ułożeń.
+150	Na sznurku jest w rzędzie {0} koralików: czerwonych – {1}, niebieskich – {2}, zielonych – {3} (koraliki jednego koloru wyglądają tak samo). Ile różnych wzorów jest możliwych?
+151	Miejsca na czerwone: C({0}, {1}) = {2}.
+152	Z pozostałych {0} miejsc wybieramy miejsca na niebieskie: C({1}, {2}) = {3}; zielone zajmują resztę.
+153	Razem {0} · {1} = {2}.
+154	Każda liczba to 2 · (poprzednia) {0}.
+155	{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …
+156	Dalej: {0} · 2 {1} = {2}.
+157	Różnice różnic są zawsze równe {0}.
+158	Następna różnica to {0}, więc następna liczba to {1}.
+159	W kwadracie magicznym wszystkie wiersze, wszystkie kolumny i obie przekątne mają tę samą sumę. Jaka liczba pasuje w miejscu {0}?
+160	Suma magiczna wynosi {0} (z w pełni znanej linii).
+161	Po podstawieniu do pytania wychodzi {0}.
+162	Kostki wewnątrz: ({0}−2)·({1}−2)·({2}−2) = {3}.
+163	Kostki w środkach ścian: 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.
+164	Kostki krawędziowe bez narożnych: 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.
+165	Odpowiedź: {0}.
+166	Ile kwadratów (także dużych) znajdziesz w siatce {0} × {1}?
+167	Kwadratów 1×1 jest {0}. Ile jest kwadratów 2×2?
+168	Siatka: wierszy – {0}, kolumn – {1}. Ile prostokątów (kwadraty też się liczą) w niej znajdziesz?
+169	Na ile sposobów można wybrać 2 spośród {0} linii poziomych i 2 spośród {1} linii pionowych?
+170	Linii poziomych jest {0}, a pionowych {1}.
+171	Dwie poziome: C({0},2) = {1}, dwie pionowe: C({2},2) = {3}. Razem {4}.
+172	Suma wszystkich liczb wynosi {0}.
+173	Suma maksimów kolumn wynosi {0}.
+174	Pomalowane ściany łącznie: {0}.
+175	Cały prostokąt: {0} · {1} = {2} cm².
+176	Wycięcie: {0} · {1} = {2} cm². Zostaje: {3} cm².
+177	Obwód = 2 · ({0} + {1}) = {2} cm.
+178	Pierwotny bok: {0} cm. Nowy bok: {1} cm.
+179	Nowe pole {0} · {1} = {2} cm² ({3} razy większe).
+180	Prostokąt ma obwód {0} cm i jeden bok długości {1} cm. Jakie jest jego pole?
+181	Znasz a = {0}. Ile wynosi drugi bok?
+182	a + b = {0} (połowa obwodu).
+183	Drugi bok: {0} − {1} = {2} cm, pole {3} · {4} = {5} cm².
+184	Trójkąt ma podstawę {0} cm i wysokość opuszczoną na nią {1} cm. Jakie jest jego pole?
+185	({0} · {1}) : 2 = {2} cm².
+186	Obraz ma na zewnątrz wymiary {0} cm × {1} cm, a dookoła ramę szerokości {2} cm. Jakie jest pole samej ramy (bez środka)?
+187	Z każdej strony odpada {0} cm – razem {1} cm na jeden wymiar.
+188	Środek: ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².
+189	Rama = {0} − {1} = {2} cm².
+190	Myślę o liczbie. Gdy pomnożę ją przez {0} i dodam {1}, dostanę {2}. Jaka to liczba?
+191	Najpierw odejmij {0}, potem podziel przez {1}.
+192	{0} − {1} = {2}.
+193	{0} : {1} = {2}.
+194	Suma {0} kolejnych liczb całkowitych wynosi {1}. Jaka jest największa z nich?
+195	n, n+1, …, n+{0}: ile wynosi suma?
+196	Suma wynosi {0}·n + {1} = {2}.
+197	n = {0}, więc największa to {1} + {2} = {3}.
+198	Suma dwóch liczb wynosi {0}, a ich różnica {1}. Jaka jest ta większa?
+199	({0} + {1}) = {2} = 2 · większa liczba.
+200	Większa liczba to {0} : 2 = {1}.

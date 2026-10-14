@@ -1,0 +1,200 @@
+1	Prise en charge de 15 langues (slovaque, anglais, tchèque, polonais, hongrois, ukrainien, allemand, espagnol, français, portugais, russe, chinois, japonais, hindi, arabe). L’interface est traduite, le contenu des exercices est en cours de traduction. L’arabe s’écrit de droite à gauche.
+2	Classe {0}
+3	Sudoku {0}
+4	La différence est toujours {0}. Ajoute-la au dernier nombre.
+5	Les différences sont toujours {0}.
+6	Le dernier nombre est {0}, le suivant est {1} + {2} = {3}.
+7	Chaque nombre est égal au précédent multiplié par {0}.
+8	Chaque nombre est égal au précédent multiplié par {0}.
+9	{0} · {1} = {2}.
+10	Les différences sont {0}, {1}, {2}, {3} : elles augmentent de 1.
+11	Les différences sont {0}, {1}, {2}, {3} : chacune est plus grande de 1.
+12	La différence suivante est {0}, donc {1} + {2} = {3}.
+13	Le suivant est 6² + {0} = {1}.
+14	{0} + {1} = {2}, {3} + {4} = {5} … chaque nombre est la somme des deux précédents.
+15	Suivant : {0} + {1} = {2}.
+16	Les nombres aux places 1, 3, 5 augmentent de {0}, ceux aux places 2, 4 diminuent de {1}.
+17	Sépare en deux suites : {0}, {1}, {2} (qui augmente de {3}) et {4}, {5}, ? (qui diminue de {6}).
+18	Le nombre manquant est {0} − {1} = {2}.
+19	Essaie de déplacer la grenouille du nénuphar {0}.
+20	Essaie de déplacer la grenouille du nénuphar {0} vers le nénuphar {1}.
+21	Astuce : fais alterner les grenouilles – pas, saut, saut, pas… (Sauter par-dessus une grenouille de la même couleur n’aide pas.) Le plus petit nombre de coups est {0}² + 2·{1} = {2}.
+22	{0}→ vont vers la droite, {1}← vont vers la gauche. Échange leurs places !
+23	{0} × {1}→ et {2} × {3}←. Quel est le plus petit nombre de coups pour les échanger ? (un pas ou un saut = 1 coup)
+24	Chaque grenouille → doit sauter par-dessus chaque grenouille ← : cela fait {0} · {1} = {2} sauts.
+25	De plus, chacune des {0} grenouilles fait un pas vers un nénuphar libre : {1} pas.
+26	Au total, {0} + {1} = {2} coups.
+27	Cases accessibles : {0} – {1} au total.
+28	Combien de {0} peut-on placer sur un échiquier {1}×{2} sans que deux s’attaquent ?
+29	Pour {0}×{1}, on obtient {2}.
+30	🁢 Un plateau {0}×{1}. Combien de dominos 1×2 peut-on y placer au maximum ?
+31	Le plateau compte {0} · {1} = {2} cases.
+32	On pose 1 grain sur la première case d’un échiquier, 2 sur la deuxième, 4 sur la troisième – chaque case reçoit deux fois plus de grains que la précédente. Combien y a-t-il de grains en tout sur les {0} premières cases ?
+33	On pose 1 grain sur la première case d’un échiquier, 2 sur la deuxième, 4 sur la troisième – toujours deux fois plus que la case précédente. Combien y a-t-il de grains sur la case numéro {0} ?
+34	La somme est toujours égale au terme suivant moins 1 : 2^{0} − 1 = {1}.
+35	La case {0} contient 2^{1} grains.
+36	Cela fait {0}.
+37	🗼 Déplace {0} disques sur la dernière tige en {1} coups.
+38	🗼 Une tour de Hanoï compte {0} disques. Quel est le plus petit nombre de coups pour la déplacer ?
+39	Donc T(1)=1, T(2)=3, T(3)=7 … T(n)=2ⁿ − 1, d’où T({0}) = {1}.
+40	🗼 {0} disques, par la méthode la plus rapide. Combien de fois le disque n° {1} bouge-t-il ? (1 = le plus petit)
+41	Chaque disque plus petit bouge deux fois plus souvent : le disque {0} bouge 2^{1} = {2} fois.
+42	Une tour de Hanoï à QUATRE tiges (les autres règles sont identiques) avec {0} disques. Quel est le plus petit nombre de coups nécessaire ? (Indice : pour 1, 2, 3, 4 disques, c’est 1, 3, 5, 9 coups.)
+43	Le meilleur choix de k donne {0} coups.
+44	Tu as atteint le but en {0} coups – on peut faire mieux, le minimum est {1}. Réessaie !
+45	Marque la case {0}.
+46	De sa case actuelle, la pièce peut aller sur {0} cases. Laquelle est la plus proche du but ?
+47	Un bon coup suivant : {0}.
+48	La tour est déplacée en {0} coups – bravo ! Mais on peut le faire en {1}. Réessaie et cherche la régularité.
+49	Cela se répète : {0}
+50	Le suivant est {0}.
+51	{0} est {1}, donc il n’a pas sa place ici.
+52	{0} restent sans partenaire.
+53	{0} : {1}, {2} : {3}.
+54	{0} + {1} = {2}
+55	{0} − {1} = {2}
+56	{0} : {1} = {2}
+57	On ajoute {0}. Le nombre manquant est {1}.
+58	Combien de {0} vois-tu ?
+59	Il y en a {0}.
+60	Compte de {0} à {1}.
+61	Les nombres perdants (pour le joueur qui doit jouer) sont : {0}. {1} en fait-il partie ?
+62	{0} n’est pas un nombre perdant, donc le premier joueur gagne : prends {1} et laisse {2}.
+63	{0} est un nombre perdant pour le joueur qui doit jouer, donc le deuxième joueur gagne.
+64	La nim-somme (XOR) est maintenant {0}. Quel tas faut-il réduire pour qu’elle devienne 0 ?
+65	La différence est {0} − {1} = {2}. Ensuite, recopie simplement les coups de ton adversaire sur l’autre tas.
+66	Prends {0} dans le tas de {1} : {2} ⊕ {3} = {4}, ce qui met la nim-somme à 0.
+67	🍫 Une tablette de chocolat {0} × {1}. Une cassure = un morceau coupé en deux. Combien de cassures faut-il pour que chaque carré soit séparé ?
+68	Chaque cassure augmente le nombre de morceaux d’exactement 1, il faut donc {0} − 1 = {1} cassures – quelle que soit la méthode.
+69	🏆 {0} joueurs. À chaque tour, les joueurs s’affrontent par paires et le gagnant passe au tour suivant. Combien de tours se jouent ?
+70	Cela fait {0} divisions par deux, donc {1} tours.
+71	Sur {0} joueurs, il faut en éliminer {1}.
+72	Chaque match élimine un joueur, donc {0} matchs sont joués – quelle que soit la façon de former les paires.
+73	Suppose que {0} est un chevalier. Qu’en déduis-tu pour les autres ?
+74	Tu cherches le suspect pour qui exactement {0} affirmations sont vraies.
+75	Exactement {0} affirmations vraies, cela n’arrive que pour {1}.
+76	est divisible par {0}
+77	n’est pas divisible par {0}
+78	est supérieur à {0}
+79	est inférieur à {0}
+80	a pour somme des chiffres {0}
+81	se termine par le chiffre {0}
+82	Je pense à un nombre de 1 à {0}. Tout ce qui est dans la liste est vrai. Quel est ce nombre ?
+83	Il ne reste qu’un seul nombre : {0}.
+84	{0} se trouve avant {1}.
+85	{0} se trouve juste derrière {1}.
+86	{0} n’est pas le premier.
+87	{0} n’est pas le dernier.
+88	{0} se trouve quelque part entre {1} et {2}.
+89	{0} n’a pas {1}.
+90	Ni {0} ni {1} n’a {2}.
+91	{0} a {1}.
+92	Tout {0} est un {1}.
+93	Aucun {0} n’est un {1}.
+94	Au moins un {0} est un {1}.
+95	Au moins un {0} n’est pas un {1}.
+96	Axel n’est pas {0}.
+97	Axel n’est pas {0}.
+98	Axel est {0}.
+99	Axel est {0} mais pas {1}.
+100	Correct : « {0} » – les autres ne peuvent pas être déduites des prémisses.
+101	Un groupe de {0} enfants veut se mettre en rang pour une photo. De combien de façons différentes peuvent-ils se placer ?
+102	Il y a {0} possibilités pour la première place, {1} pour la deuxième, {2} pour la troisième … jusqu’à 1.
+103	Un groupe de {0} coureurs est sur la ligne de départ. De combien de façons peut-on attribuer l’or, l’argent et le bronze ?
+104	Or : {0} possibilités, argent : {1}, bronze : {2}.
+105	Au total {0} · {1} · {2} = {3}.
+106	Un groupe de {0} enfants se met en rang. {1} et {2} veulent être côte à côte (dans n’importe quel ordre). Combien y a-t-il de rangements de ce type ?
+107	Considère le duo comme un seul bloc : on range {0} blocs, ce qui donne {1} façons.
+108	À l’intérieur du duo, il y a 2 ordres possibles, donc 2 · {0} = {1}.
+109	Un groupe de {0} enfants s’assoit autour d’une table ronde. Deux placements qui ne diffèrent que par une rotation de toute la table comptent pour un seul. Combien y a-t-il de placements différents ?
+110	Dispose les {0} autres autour : {1}! = {2}.
+111	Centaines : {0} possibilités, dizaines : {1}, unités : {2}.
+112	On choisit une délégation de deux personnes dans un groupe de {0} enfants. De combien de façons peut-on le faire ?
+113	Il y a {0} · {1} = {2} paires ordonnées.
+114	L’ordre n’a pas d’importance, donc on divise par 2 : {0}.
+115	On choisit une équipe de trois dans un groupe de {0} enfants. Combien d’équipes différentes sont possibles ?
+116	Triplets ordonnés : {0} · {1} · {2} = {3}.
+117	Chaque équipe est comptée 6 fois, donc {0} : 6 = {1}.
+118	Un groupe de {0} personnes se rencontre. Chacun serre la main de chacun des autres exactement une fois. Combien y a-t-il de poignées de main ?
+119	Chacun serre {0} mains, au total {1} · {2} = {3}.
+120	Chaque poignée de main a été comptée deux fois, donc {0} : 2 = {1}.
+121	Un polygone régulier a {0} sommets. Combien de diagonales peut-on y tracer ?
+122	De chaque sommet partent {0} diagonales.
+123	Au total {0} · {1} : 2 = {2} (chacune est comptée deux fois).
+124	Une pizzeria propose {0} garnitures. Une pizza peut avoir n’importe quelle combinaison (chaque garniture est soit présente, soit absente ; une pizza nature est permise). Combien de pizzas différentes peut-on commander ?
+125	Donc 2 · 2 · … ({0} fois) = 2^{1} = {2}.
+126	Pour chaque T-shirt, il y a {0} · {1} = {2} combinaisons.
+127	🔒 Un cadenas a {0} molettes avec les chiffres de 0 à 9. Combien de codes peut-on former ?
+128	Au total 10^{0} = {1}.
+129	Il y a {0} routes de A à B, {1} de B à C et {2} de C à D. Combien d’itinéraires différents mènent de A à D en passant par B et C ?
+130	Tronçon A–B : {0}, B–C : {1}, C–D : {2}.
+131	Il y a {0} · {1} · {2} = {3} itinéraires.
+132	En comptant méthodiquement tous les nombres de 100 à 999, on obtient {0}.
+133	À l’arrivée, il y a {0}.
+134	🧦 Des chaussettes de {0} couleurs, il fait noir. Combien dois-tu en sortir pour être sûr d’en avoir {1} de la même couleur ?
+135	Le pire cas, c’est d’en avoir une de moins que {0} de chaque couleur.
+136	Avec la pire malchance, tu as {0} chaussettes de chacune des {1} couleurs – cela fait {2}.
+137	La chaussette suivante doit en donner {0} de la même couleur : {1} + 1 = {2}.
+138	Un jeu contient des cartes de quatre couleurs (♠ ♥ ♦ ♣), au moins {0} de chaque. Combien de cartes dois-tu tirer à l’aveugle pour être sûr d’avoir {1} cartes de la même couleur ?
+139	Dans le pire cas, tu as {0} cartes de chaque couleur.
+140	Pire cas : {0} cartes de chacune des 4 couleurs, soit {1} au total.
+141	La carte suivante doit former {0} d’une même couleur : {1}.
+142	Une école compte {0} élèves. Une année a 12 mois. Quel est le plus grand nombre d’élèves nés le même mois qui est garanti (pour au moins un mois) ?
+143	{0} : 12 = {1}…, donc un mois au moins compte au moins {2} élèves.
+144	Une armoire contient {0} paires de gants différentes (chaque paire a sa propre couleur, {1} gants en tout, gauche et droit). Tu les sors dans le noir. Combien dois-tu en prendre au minimum pour être sûr d’avoir une paire complète (gauche et droit d’une même couleur) ?
+145	Sans paire, tu peux tenir au plus un gant de chacune des {0} couleurs.
+146	Dans le pire cas, tu tiens {0} gants, tous de couleurs différentes (par exemple tous des gauches).
+147	Le suivant (numéro {0}) complète une paire : {1} + 1 = {2}.
+148	Combien de « mots » différents (même absurdes) peut-on former en permutant toutes les lettres de {0} ?
+149	Si toutes les lettres étaient différentes, il y aurait {0}! = {1} arrangements.
+150	Un fil porte {0} perles alignées : rouges – {1}, bleues – {2}, vertes – {3} (les perles d’une même couleur sont identiques). Combien de motifs différents sont possibles ?
+151	Places des rouges : C({0}, {1}) = {2}.
+152	Parmi les {0} places restantes, choisis les bleues : C({1}, {2}) = {3} ; les vertes prennent le reste.
+153	Au total {0} · {1} = {2}.
+154	Chaque nombre est égal à 2 · (le précédent) {0}.
+155	{0} · 2 {1} = {2}, {3} · 2 {4} = {5} …
+156	Suivant : {0} · 2 {1} = {2}.
+157	Les différences des différences sont toujours {0}.
+158	La différence suivante est {0}, donc le nombre suivant est {1}.
+159	Dans un carré magique, toutes les lignes, toutes les colonnes et les deux diagonales ont la même somme. Quel nombre va en {0} ?
+160	La somme magique est {0} (d’après une ligne entièrement connue).
+161	En remplaçant dans la question, on obtient {0}.
+162	Cubes intérieurs : ({0}−2)·({1}−2)·({2}−2) = {3}.
+163	Cubes au milieu des faces : 2·(({0}−2)({1}−2) + ({2}−2)({3}−2) + ({4}−2)({5}−2)) = {6}.
+164	Cubes d’arête sans les coins : 4·(({0}−2) + ({1}−2) + ({2}−2)) = {3}.
+165	Réponse : {0}.
+166	Combien de carrés (grands aussi) peux-tu trouver dans la grille {0} × {1} ?
+167	Il y a {0} carrés de taille 1×1. Combien y a-t-il de carrés 2×2 ?
+168	La grille compte {0} lignes et {1} colonnes. Combien de rectangles (les carrés comptent aussi) peux-tu y trouver ?
+169	De combien de façons peut-on choisir 2 des {0} lignes horizontales et 2 des {1} lignes verticales ?
+170	Il y a {0} lignes horizontales et {1} lignes verticales.
+171	Deux horizontales : C({0},2) = {1}, deux verticales : C({2},2) = {3}. Au total {4}.
+172	La somme de tous les nombres est {0}.
+173	La somme des maximums des colonnes est {0}.
+174	{0} faces peintes au total.
+175	Rectangle entier : {0} · {1} = {2} cm².
+176	Partie découpée : {0} · {1} = {2} cm². Ce qui reste : {3} cm².
+177	Périmètre = 2 · ({0} + {1}) = {2} cm.
+178	Côté d’origine : {0} cm. Nouveau côté : {1} cm.
+179	Nouvelle aire {0} · {1} = {2} cm² ({3} fois plus grande).
+180	Un rectangle a un périmètre de {0} cm et un côté de {1} cm. Quelle est son aire ?
+181	Tu connais a = {0}. Quel est l’autre côté ?
+182	a + b = {0} (demi-périmètre).
+183	L’autre côté : {0} − {1} = {2} cm, aire {3} · {4} = {5} cm².
+184	Un triangle a une base de {0} cm et une hauteur correspondante de {1} cm. Quelle est son aire ?
+185	({0} · {1}) : 2 = {2} cm².
+186	Un tableau mesure {0} cm × {1} cm à l’extérieur, avec un cadre de {2} cm de large tout autour. Quelle est l’aire du cadre seul (sans la partie intérieure) ?
+187	{0} cm sont retirés de chaque côté – soit {1} cm par dimension.
+188	Partie intérieure : ({0} − {1}) × ({2} − {3}) = {4} × {5} = {6} cm².
+189	Cadre = {0} − {1} = {2} cm².
+190	Je pense à un nombre. Quand je le multiplie par {0} et que j’ajoute {1}, j’obtiens {2}. Quel est mon nombre ?
+191	Soustrais d’abord {0}, puis divise par {1}.
+192	{0} − {1} = {2}.
+193	{0} : {1} = {2}.
+194	La somme de {0} entiers consécutifs est {1}. Quel est le plus grand d’entre eux ?
+195	n, n+1, …, n+{0} : quelle est la somme ?
+196	La somme est {0}·n + {1} = {2}.
+197	n = {0}, donc le plus grand est {1} + {2} = {3}.
+198	La somme de deux nombres est {0} et leur différence est {1}. Quel est le plus grand ?
+199	({0} + {1}) = {2} = 2 · le plus grand nombre.
+200	Le plus grand nombre est {0} : 2 = {1}.

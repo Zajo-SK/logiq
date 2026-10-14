@@ -1,0 +1,135 @@
+1	Ojciec jest o {0} lat starszy od syna. Razem mają {1} lat. Ile lat ma ojciec?
+2	{0} − {1} = {2} = dwukrotny wiek syna.
+3	Wiek syna: {0}, wiek ojca: {1} + {2} = {3}.
+4	W skarbonce jest {0} monet, część po 1 €, reszta po 2 €. Ich łączna wartość to {1} €. Ile jest monet dwueurowych?
+5	Gdyby wszystkie monety były jednoeurowe ({0} sztuk), mielibyśmy {1} €.
+6	Brakuje {0} €, więc monet dwueurowych jest {1}.
+7	Rozwiąż równanie: {0}·(x − {1}) + {2} = {3}. Ile wynosi x?
+8	Po odjęciu {0} podziel przez {1}.
+9	{0} − {1} = {2}, więc {3}·(x − {4}) = {5}.
+10	x − {0} = {1}, więc x = {2}.
+11	Ile dzielników (łącznie z 1 i samą liczbą) ma liczba {0}?
+12	Sprawdzaj d = 1, 2, 3, … aż do pierwiastka kwadratowego z {0}.
+13	Z placu autobus A odjeżdża co {0} minut, a autobus B co {1} minut. Właśnie odjechały razem. Po ilu minutach odjadą razem ponownie?
+14	Najmniejsza wspólna wielokrotność to {0}.
+15	Jaka jest ostatnia cyfra liczby {0}^{1}?
+16	Zapisz ostatnie cyfry potęg {0}¹, {1}², {2}³ …
+17	Wykładnik {0} daje resztę {1} z dzielenia przez {2}, więc ostatnia cyfra to {3}.
+18	Ile liczb od 1 do {0} dzieli się przez {1} lub przez {2} (lub przez obie)?
+19	Wielokrotności {0}: {1}, wielokrotności {2}: {3}, wspólne ({4}): {5}.
+20	{0} + {1} − {2} = {3}.
+21	Na ile zer kończy się liczba {0}! = 1 · 2 · 3 · … · {1}?
+22	Policz, ile razy występuje czynnik 5 w liczbach od 1 do {0} (także wielokrotnie, np. w 25).
+23	Chcemy pokryć prostokąt {0} cm × {1} cm jednakowymi kwadratami, bez luk i bez nakładania. Jaki jest największy możliwy bok kwadratu (w cm)?
+24	Największy to {0}.
+25	W worku jest {0} czerwonych, {1} niebieskich i {2} zielonych kulek. Losujemy jedną na ślepo. Jakie jest prawdopodobieństwo, że będzie czerwona? (Podaj ułamek nieskracalny, np. 1/6.)
+26	Wszystkich kulek jest {0}, w tym czerwonych {1}.
+27	Prawdopodobieństwo wynosi {0}/{1} = {2}.
+28	Rzucamy dwiema uczciwymi kostkami. Jakie jest prawdopodobieństwo, że suma oczek wyniesie {0}? (Podaj ułamek nieskracalny.)
+29	Wypisz pary o sumie {0}.
+30	Sumę {0} daje {1} par, więc {2}/36 = {3}.
+31	Monetą rzucamy {0} razy. Jakie jest prawdopodobieństwo, że orzeł wypadnie dokładnie {1} razy? (Podaj ułamek nieskracalny.)
+32	Ile jest możliwych wyników {0} rzutów?
+33	Na ile sposobów można wybrać {0} rzutów spośród {1}, w których wypadnie orzeł?
+34	Wszystkich wyników: 2^{0} = {1}.
+35	Sprzyjających: C({0}, {1}) = {2}. Prawdopodobieństwo {3}/{4} = {5}.
+36	W worku jest {0} czerwonych i {1} niebieskich kulek. Losujemy dwie bez zwracania. Jakie jest prawdopodobieństwo, że obie będą czerwone? (Podaj ułamek nieskracalny.)
+37	Pierwsza czerwona: {0}/{1}.
+38	Druga czerwona: {0}/{1}. Razem {2}/{3} · {4}/{5} = {6}.
+39	Rzucamy dwiema kostkami. Jakie jest prawdopodobieństwo, że na co najmniej jednej wypadnie {0}? (Podaj ułamek nieskracalny.)
+40	Łatwiej policzyć zdarzenie przeciwne: na żadnej kostce nie wypada {0}.
+41	Na żadnej kostce nie wypada {0}: 5 · 5 = 25 z 36 wyników.
+42	Sprzyjających: 36 − 25 = {0}, prawdopodobieństwo {1}.
+43	Ile to jest {0}% z {1}?
+44	1% z {0} to {1}.
+45	{0}% to {1} · {2} = {3}.
+46	Towar kosztuje {0} €. Najpierw cena rośnie o {1}%, potem nowa cena spada o {2}%. Ile towar kosztuje na końcu?
+47	Po podwyżce: {0} · {1} = {2} €.
+48	Po obniżce: {0} · {1} = {2} €.
+49	Kwotę {0} € dzielimy między Emę i Adama w stosunku {1} : {2}. Ile € dostaje Ema?
+50	Części jest razem {0} + {1} = {2}, jedna część to {3} : {4} = {5} €.
+51	Ema dostaje części w liczbie {0}: {1} · {2} = {3} €.
+52	Ile to jest {0}/{1} z {2}?
+53	1/{0} z {1} to {2} : {3} = {4}.
+54	{0}/{1} to {2} · {3} = {4}.
+55	Jakim procentem liczby {1} jest liczba {0}?
+56	{0} / {1} = {2}.
+57	To {0} setnych, czyli {1}%.
+58	Dzisiaj jest {0}. Jaki dzień tygodnia będzie za {1} dni?
+59	Znajdź resztę z dzielenia {0} przez 7.
+60	{0} : 7 = {1}, reszta {2}.
+61	Pełne tygodnie nie zmieniają dnia; przesuń się o {0} dni do przodu od {1}, a dojdziesz do {2}.
+62	Pociąg odjeżdża o {0} i przyjeżdża o {1}. Ile minut trwa podróż?
+63	{0} = {1} minut po północy, {2} = {3} minut.
+64	Różnica wynosi {0} minut.
+65	W {0} dzień 1 {1} to {2}. Jaki dzień tygodnia to 1 {3}?
+66	Miesiąc ma {0} dni: {1} : 7 = {2}, reszta {3}.
+67	Przesunięcie o {0} dni do przodu od {1} daje {2}.
+68	Wskazówka godzinowa: {0} · 30 + {1} · 0,5 = {2}°. Wskazówka minutowa: {3} · 6 = {4}°.
+69	Sudoku {0}×{1}
+70	Całkowity czas to {0} minut.
+71	Masz dwa dzbanki bez podziałki: {0} l i {1} l oraz mnóstwo wody. Krok to: napełnić dzbanek do pełna, opróżnić dzbanek do końca albo przelać wodę z jednego do drugiego, aż źródłowy będzie pusty lub docelowy pełny. Jaka jest najmniejsza liczba kroków, by w jednym z dzbanków było dokładnie {2} l?
+72	To {0} kroków i mniej się nie da (sprawdzono wszystkie możliwości).
+73	Wśród {0} monet jedna jest fałszywa – lżejsza od pozostałych. Masz wagę szalkową bez odważników. Jaka jest najmniejsza liczba ważeń, które na pewno wskażą fałszywą monetę?
+74	Po {0} ważeniach można rozróżnić do 3^{1} = {2} monet, a to co najmniej {3}; po {4} ważeniach tylko {5}. Potrzebujemy więc {6}.
+75	🕸️ Suma wszystkich liczb w kółkach wynosi {0}. Każda strzałka dodaje liczbę swojego koloru. Ile wynosi x?
+76	Policz, ile jest x w sumie i ile zostaje reszty. Wtedy {0} − (reszta) = (liczba x) × x.
+77	Liczba x-ów: {0}, reszta: {1}. Zatem {2}·x + {3} = {4} i x = {5}.
+78	Strzałka dodaje {0}. Wszystkie strzałki tego koloru mają tę samą wartość, więc wystarczy ją znaleźć w jednym miejscu.
+79	W zaznaczonym kółku powinno być {0}.
+80	Liczba pełnych tras: {0}. Na każdym rozwidleniu sprawdź obie możliwości i wykreśl te, które kończą się ślepym zaułkiem lub omijają któryś pokój.
+81	W zaznaczonym pokoju powinno być {0}.
+82	Zbieraj naklejki: {0}
+83	Zdobywaj medale światów: {0}
+84	Ukończ wszystkie codzienne misje przez {0} dni
+85	Seria: {0} dni!
+86	Weź {0}
+87	Dobrze! Moneta {0} jest fałszywa – znaleziono ją w {1} ważeniach.
+88	Moneta {0} nie jest fałszywa. Próbuj dalej.
+89	🎉 Dokładnie {0} l w dzbanku! Kroki: {1}.
+90	Napełnij {0} l
+91	Opróżnij {0} l
+92	🎉 Wszyscy są po drugiej stronie! Czas: {0} min.
+93	{0} takie same po {1} losowaniach!
+94	Jest ciemno – losujesz na ślepo. Kiedy masz {0} takie same? Spróbuj kilka razy i poszukaj najgorszego przypadku.
+95	🎉 Każde dziecko ma {0}.
+96	Żółte są dane. Dodaj czerwone, tak aby razem było ich dokładnie {0}. Wolnych pól jest więcej, niż potrzebujesz!
+97	Rzuć {0} monetami i obserwuj liczbę orłów. Powtórz!
+98	Zaczynamy od {0}. Skacz dzień po dniu – gdzie wylądujesz po {1} dniach?
+99	Zamaluj {0} kratek ze 100 – to {1}%.
+100	Straty na tym poziomie: {0}
+101	wiersz {0}
+102	kolumna {0}
+103	blok {0}
+104	W polu {0} wpisz {1}.
+105	Wykreśl kandydatów – {0}. Kolejna podpowiedź wypełnia jedno pole.
+106	Technika: {0}. 
+107	W polu {0} może stać tylko jedna liczba.
+108	W {0} jedna liczba pasuje tylko w jedno pole – spójrz na podświetlone.
+109	Liczba {0} w {1} jest „zablokowana” w {2} – wykreśl ją tam gdzie indziej.
+110	Liczba {0} tworzy prostokąt X-Wing – wykreśl ją w odpowiednich liniach.
+111	Błędne pola: {0} (oznaczone „!”).
+112	Spójrz na pole w wierszu {0}, kolumnie {1}. Jakie liczby mogą tam jeszcze wejść?
+113	W polu (wiersz {0}, kolumna {1}) wpisz {2}.
+114	Spróbuj nacisnąć pole w wierszu {0}, kolumnie {1}.
+115	To jest start. Najkrótsze rozwiązanie wymaga naciśnięcia pól: {0} (oznaczone 👆):
+116	Meta osiągnięta – świetnie! Ale istnieje krótsza droga. Twoja miała {0} kroków, spróbuj mniej.
+117	Najpierw spróbuj wypatrzyć ślepe zaułki. Liczba kroków najkrótszej drogi: {0}.
+118	Początek najkrótszej drogi (wiersz, kolumna): {0} …
+119	Badamy i wykluczamy ślepe zaułki. Najkrótsza droga to {0} kroków i wygląda tak:
+120	Gotowe! Wszyscy są po drugiej stronie w {0} ruchach – i nie da się w mniej (komputer sprawdził wszystkie możliwości).
+121	Zaczynasz od {0}: weź {1}, aby zostawić {2} (liczba przegrywająca dla przeciwnika). Potem zawsze odpowiadaj tak, by znów trafić na liczbę przegrywającą.
+122	Komputer zaczyna od {0}, liczby przegrywającej dla gracza z ruchem. Cokolwiek zrobi, odpowiedz tak, by znów zostawić liczbę przegrywającą.
+123	Tutaj wygrywasz np. tak: weź {0} ze stosu {1}.
+124	{0} min temu
+125	{0} godz. temu
+126	{0} dni temu
+127	Poziomy: {0} z {1} · odznaki: {2}
+128	Utwórz klasę {0}.{1}
+129	Uczniów: {0}
+130	Klasa {0}
+131	Wybrane zadania: {0}
+132	uczniów: {0}
+133	Zadań: {0}
+134	Ukończyło {0} z {1} uczniów
+135	Gotowe: {0} z {1}
