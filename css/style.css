@@ -414,3 +414,11 @@ details.sim{background:#fff8e6;border:2px solid #f3d27a;border-radius:16px;paddi
 .langbtn{border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:99px;min-height:40px;padding:.3rem .9rem;font-weight:800;font-size:.95rem;cursor:pointer}.langbtn:hover{background:rgba(255,255,255,.24)}
 .langsheet{max-height:82vh;overflow:auto}.langgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.5rem;margin:.6rem 0}.langgrid .btn{justify-content:center;min-height:52px}
 [dir=rtl] body{direction:rtl}[dir=rtl] .backlink svg,[dir=rtl] .ic{transform:scaleX(-1)}[dir=rtl] .nimboard,[dir=rtl] .expo,[dir=rtl] .websvg,[dir=rtl] .chessb,[dir=rtl] .keypad{direction:ltr}
+
+/* admin statistics */
+.stiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.6rem;margin:.6rem 0}.stile{background:#f6f8fd;border-radius:16px;padding:.7rem .9rem;display:flex;flex-direction:column}.stile b{font-size:1.6rem;color:var(--navy);line-height:1.1}.stile span{color:var(--ink);font-weight:600;font-size:.9rem}.stile small{color:var(--muted);font-size:.75rem}
+.schart{position:relative;padding-left:2rem;margin-top:.4rem}.smax{position:absolute;left:0;top:0;font-size:.75rem;color:var(--muted)}
+.sbars{display:flex;align-items:flex-end;gap:2px;height:180px;border-bottom:1px solid var(--line);background:repeating-linear-gradient(180deg,transparent 0 44px,rgba(15,31,75,.06) 44px 45px)}.sbar{flex:1;height:100%;display:flex;align-items:flex-end;cursor:default;outline-offset:1px}.sbar i{display:block;width:100%;background:#6a4cf0;border-radius:4px 4px 0 0;min-height:0}.sbar:hover i,.sbar:focus i{background:#4b33c9}
+.saxis{display:flex;gap:2px;padding-left:2rem;font-size:.7rem;color:var(--muted)}.saxis span{flex:1;white-space:nowrap;overflow:visible}
+.stip{position:absolute;top:-6px;transform:translate(-50%,-100%);background:var(--navy);color:#fff;font-size:.8rem;padding:.3rem .6rem;border-radius:8px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .1s}.stip.on{opacity:1}
+.slist{display:grid;gap:.35rem}.srow{display:grid;grid-template-columns:minmax(90px,30%) 1fr auto;gap:.6rem;align-items:center;font-size:.92rem}.strack{height:10px;background:#eef1f8;border-radius:99px;overflow:hidden}.strack i{display:block;height:100%;background:#6a4cf0;border-radius:99px}

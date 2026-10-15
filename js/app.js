@@ -573,6 +573,7 @@ function boot() {
   applySettings();
   window.addEventListener('hashchange', render);
   if (!hasPack(LANG)) { loadLang(LANG).then(ok => { if (!ok) LANG = 'sk'; applyLangAttrs(); render(); }); }
+  setTimeout(() => { if (typeof pingVisit === 'function') pingVisit(); }, 1500);
   render();
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => { });
   Sync.schedule();

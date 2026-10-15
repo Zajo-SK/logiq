@@ -30,6 +30,7 @@ def page(fname, title, desc, body, hero=None):
 <div><b>Aplikácia</b><p><a href="%(app)s">Otvoriť LogiQ</a><br><a href="%(app)s#/privacy">Aké údaje spracúvame</a><br><a href="%(app)s#/rules">Pravidlá používania</a></p></div>
 <div><b>Stránky</b><p>%(flinks)s</p></div></div>
 <p class="fine">🚧 Aplikácia je vo vývoji. Ak nájdete chybu, napíšte nám cez ikonku 💬 v aplikácii. LogiQ nie je oficiálny produkt ministerstva školstva; súlad so ŠVP je orientačný.</p><p class="fine">© 2026 LogiQ. Všetky práva vyhradené.</p></div></footer>
+<script>try{fetch("https://logiq-api.logiq-matematika.workers.dev/api/ping",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({site:1,page:location.pathname.split("/").pop()||"index.html",lang:document.documentElement.lang}),keepalive:true}).catch(function(){})}catch(e){}</script>
 </body></html>''' % {'t': title, 'd': desc, 'nav': nav, 'app': APP, 'hero': hero or '', 'body': body, 'flinks': '<br>'.join('<a href="%s">%s</a>' % (f, n) for f, n in NAV)}
     io.open(os.path.join(OUT, fname), 'w', encoding='utf-8').write(html)
 
@@ -147,7 +148,7 @@ faq = [
     ('Pre aké ročníky je určená?', 'Pre 2.–9. ročník základnej školy. Každý ročník má vlastnú cestu levelov a môžete ju vyskúšať aj z vyššieho ročníka.'),
     ('Potrebujem internet?', 'Pri prvom otvorení áno. Potom funguje aj offline. Pripojenie je potrebné na spojenie s učiteľom a na zadané úlohy.'),
     ('Aké údaje aplikácia spracúva?', 'Bez pripojenia k učiteľovi len v zariadení. S pripojením sa na server odosiela prezývka alebo krstné meno, ročník, trieda, súhrn výsledkov a postup v zadaných úlohách. Neodosielame priezvisko, e-mail, adresu ani polohu. Podrobnosti sú v aplikácii v časti „Aké údaje spracúvame“.'),
-    ('Používate reklamy alebo sledovanie?', 'Nie. Aplikácia neobsahuje reklamy, analytiku ani cookies tretích strán.'),
+    ('Používate reklamy alebo sledovanie?', 'Nie. Aplikácia neobsahuje reklamy ani cookies a nesleduje jednotlivcov. Počítame len anonymné denné súčty návštev (bez mena a bez IP adresy).'),
     ('Kto vidí údaje o žiakovi?', 'Učiteľ jeho triedy, správca aplikácie a rodič, ktorý má rodičovský kód (len na čítanie).'),
     ('Ako sa dajú údaje zmazať?', 'Učiteľ môže zmazať žiaka alebo celú triedu. Žiak alebo rodič môže o zmazanie požiadať učiteľa.'),
     ('Je LogiQ určená len pre nadaných žiakov?', 'Nie. Je primárne vytvorená na rozvoj myslenia žiakov so všeobecným intelektovým nadaním, no hodí sa pre každého, kto chce rozvíjať matematické a logické myslenie.'),

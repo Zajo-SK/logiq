@@ -76,6 +76,18 @@ export default {
         return J({ ok: true, recovery, assignments: await myAssignments(code, id) }, 200, cors);
       }
 
+      /* ---- anonymous visit counter: no ids, no IP stored – only daily totals per key ---- */
+      if (p === '/api/ping' && m === 'POST') {
+        const day = new Date().toISOString().slice(0, 10), keys = [];
+        const kw = s => String(s || '').toLowerCase().replace(/[^a-z0-9.-]/g, '').slice(0, 16);
+        if (body.site) { keys.push('site', 'site:' + kw(body.page), 'sitelang:' + kw(body.lang)); }
+        else {
+          keys.push('opens'); if (body.first) keys.push('uniq', 'lang:' + kw(body.lang), 'grade:' + (Math.min(9, Math.max(0, +body.grade || 0))), 'dev:' + kw(body.dev), 'mode:' + (body.app ? 'app' : 'web'), 'conn:' + (body.conn ? 'yes' : 'no'));
+        }
+        for (const k of keys) await run('INSERT INTO stats (day, key, n) VALUES (?,?,1) ON CONFLICT(day, key) DO UPDATE SET n = n + 1', day, k);
+        return J({ ok: true }, 200, cors);
+      }
+
       /* ---- full progress backup + restore on a new device (student device only) ---- */
       if (p === '/api/backup' && m === 'POST') {
         const code = clean(body.classCode, 10).toUpperCase(), id = clean(body.studentId, 12), rec = await first('SELECT secret_hash FROM students WHERE id=? AND code=?', id, code);
@@ -117,6 +129,20 @@ export default {
       const s = await session(req, env); if (!s) return J({ error: 'Nie si prihlásený' }, 401, cors);
       const isAdmin = s.role === 'admin';
       const ownClass = async code => { const c = await first('SELECT * FROM classes WHERE code=?', code); return c && (isAdmin || c.owner === s.email) ? c : null; };
+
+      /* ---- visit statistics (admin only) ---- */
+      if (p === '/api/stats' && m === 'GET') {
+        if (!isAdmin) return J({ error: 'Len správca' }, 403, cors);
+        const days = Math.min(120, Math.max(7, +url.searchParams.get('days') || 30)), from = new Date(Date.now() - (days - 1) * 864e5).toISOString().slice(0, 10);
+        const rows = await all('SELECT day, key, n FROM stats WHERE day >= ? ORDER BY day', from), now = Date.now();
+        const db = {
+          classes: (await first('SELECT COUNT(*) n FROM classes')).n, students: (await first('SELECT COUNT(*) n FROM students')).n,
+          active7: (await first('SELECT COUNT(*) n FROM students WHERE updated > ?', now - 7 * 864e5)).n, active1: (await first('SELECT COUNT(*) n FROM students WHERE updated > ?', now - 864e5)).n,
+          teachers: (await first('SELECT COUNT(*) n FROM teachers')).n, assignments: (await first('SELECT COUNT(*) n FROM assignments')).n, tickets: (await first("SELECT COUNT(*) n FROM tickets WHERE status = 'new'")).n,
+          tasksDone: (await all('SELECT data FROM students WHERE data IS NOT NULL')).reduce((a, r) => { try { return a + (+JSON.parse(r.data).done || 0); } catch (e) { return a; } }, 0)
+        };
+        return J({ days, from, rows, db }, 200, cors);
+      }
 
       /* ---- support inbox (admin only) ---- */
       if (p.startsWith('/api/tickets')) {

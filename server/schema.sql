@@ -11,3 +11,4 @@ CREATE TABLE IF NOT EXISTS tickets (id TEXT PRIMARY KEY, created INTEGER, update
 CREATE INDEX IF NOT EXISTS tk_status ON tickets(status, created);
 ALTER TABLE students ADD COLUMN recovery TEXT;
 CREATE TABLE IF NOT EXISTS backups (student TEXT PRIMARY KEY, code TEXT, data TEXT, updated INTEGER);
+CREATE TABLE IF NOT EXISTS stats (day TEXT, key TEXT, n INTEGER, PRIMARY KEY (day, key));

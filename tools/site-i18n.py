@@ -30,6 +30,8 @@ for code, _ in LANGS:
             s = s.replace('</div></footer>', '<p class="fine">© 2026 LogiQ. All rights reserved.</p></div></footer>', 1)
         s = re.sub(r'<label class="langsel">.*?</label>', '', s, flags=re.S)
         s = s.replace('<a class="btn gold" href="../../">', switcher(code, page) + '<a class="btn gold" href="../../">', 1)
+        if 'api/ping' not in s:
+            s = s.replace('</body>', '<script>try{fetch("https://logiq-api.logiq-matematika.workers.dev/api/ping",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({site:1,page:location.pathname.split("/").pop()||"index.html",lang:document.documentElement.lang}),keepalive:true}).catch(function(){})}catch(e){}</script>' + '\n</body>', 1)
         io.open(p, 'w', encoding='utf-8').write(s)
     print('processed', code)
 # Slovak pages get the switcher too
