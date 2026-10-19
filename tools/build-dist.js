@@ -4,7 +4,7 @@
 const fs = require('fs'), path = require('path'), { minify } = require('terser');
 const root = path.join(__dirname, '..'), out = path.join(root, 'dist'); fs.rmSync(out, { recursive: true, force: true });
 const SKIP = new Set(['.git', '.github', 'node_modules', 'dist', 'tools', 'server', 'docs', 'LICENSE', 'README.md', '.gitignore', '.claude']);
-const banner = '/*! LogiQ © 2026 – all rights reserved. */\n';
+const banner = '/*! IQventura © 2026 – all rights reserved. */\n';
 async function copy(src, dst) {
   fs.mkdirSync(dst, { recursive: true });
   for (const f of fs.readdirSync(src)) {

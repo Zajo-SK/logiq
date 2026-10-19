@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – UI strings (task content lives in content.js as {sk,en}) */
+/* IQventura – UI strings (task content lives in content.js as {sk,en}) */
 const I18N = {
   sk: {
     subtitle: 'matematické výzvy', language: 'Jazyk', starsPoints: 'Hviezdy a body',

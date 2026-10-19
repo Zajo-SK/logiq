@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – "try it with your hands" simulations shown above the answer: sticks pile, chocolate bar, knock-out players. Also text-to-speech. */
+/* IQventura – "try it with your hands" simulations shown above the answer: sticks pile, chocolate bar, knock-out players. Also text-to-speech. */
 function speak(text) {
   try {
     if (!('speechSynthesis' in window)) return false;

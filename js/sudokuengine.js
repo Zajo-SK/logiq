@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – Sudoku engine: uniqueness solver + human-technique rater (used to grade levels and to give technique hints).
+/* IQventura – Sudoku engine: uniqueness solver + human-technique rater (used to grade levels and to give technique hints).
    Techniques, in order of difficulty: 0 naked single · 1 hidden single · 2 locked candidates (pointing/claiming) · 3 naked pair · 4 hidden pair · 5 naked triple · 6 X-Wing */
 const SudokuEngine = (function () {
   const dims = n => n === 3 ? [1, 3] : n === 4 ? [2, 2] : n === 6 ? [2, 3] : [3, 3];

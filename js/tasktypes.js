@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – task type components.
+/* IQventura – task type components.
    To add a new type: TaskTypes.myType = { mount(box, task, ctx) -> instance?, explainSteps?(task), answerText?(task) }
    ctx: { task, session, setCheck(fn|null), solved(), wrong(msgS?), nudge(msg), cleanup(fn) }
    instance may expose dynHint(index) -> { text:S, hl?:fn } for hints marked 'dyn'. */

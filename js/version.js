@@ -1,6 +1,7 @@
 'use strict';
-/* LogiQ – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
+/* IQventura – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.34', at: '2026-10-19 16:00', items: [S('Nový názov a logo: IQventura. Každá úloha je výprava.', 'New name and logo: IQventura. Every puzzle is an adventure.')] },
   { v: '1.33', at: '2026-10-15 12:00', items: [S('Správca má záložku Návštevnosť: anonymné denné počty zariadení a otvorení, graf, jazyky, ročníky, zariadenia, návštevy webu a používanie v triedach.', 'The admin has a Visits tab: anonymous daily device and open counts, a chart, languages, grades, devices, website visits and use in classes.')] },
   { v: '1.32', at: '2026-10-16 10:00', items: [S('Záloha celého postupu žiaka na server a obnovenie na inom zariadení pomocou záchranného kódu.', 'Full progress backup to the server and restore on another device with a recovery code.'), S('Licencia „všetky práva vyhradené“ a upozornenie o autorských právach.', '“All rights reserved” license and copyright notice.')] },
   { v: '1.31', at: '2026-10-15 10:00', items: [S('Podpora 15 jazykov (slovenčina, angličtina, čeština, poľština, maďarčina, ukrajinčina, nemčina, španielčina, francúzština, portugalčina, ruština, čínština, japončina, hindčina, arabčina). Rozhranie je preložené, prekladá sa aj obsah úloh. Arabčina sa píše sprava doľava.', 'Support for 15 languages (Slovak, English, Czech, Polish, Hungarian, Ukrainian, German, Spanish, French, Portuguese, Russian, Chinese, Japanese, Hindi, Arabic). The interface is translated, task content is being translated. Arabic is right-to-left.')] },
@@ -36,13 +37,13 @@ const CHANGELOG = [
   { v: '1.4', at: '2026-10-06 13:29', items: [S('Sudoku: 6 odstupňovaných obtiažností s technikami a nápovedami.', 'Sudoku: 6 graded difficulty levels with technique hints.')] },
   { v: '1.3', at: '2026-10-06 13:16', items: [S('Samostatné sudoku 3×3, 4×4, 6×6 a 9×9 s poznámkami, nápovedami a časom.', 'Stand-alone sudoku 3×3, 4×4, 6×6 and 9×9 with notes, hints and timer.')] },
   { v: '1.2', at: '2026-10-06 12:58', items: [S('Výber triedy, učiteľské/rodičovské/správcovské prostredie, odmeny, šach a Hanojské veže.', 'Class selection, teacher/parent/admin area, rewards, chess and Tower of Hanoi.')] },
-  { v: '1.0', at: '2026-10-06 12:47', items: [S('Prvá verzia LogiQ: úlohy pre 2.–9. ročník, mapa levelov, denná výzva, zbierka, úspechy.', 'First LogiQ release: tasks for grades 2–9, level map, daily challenge, collection, achievements.')] }
+  { v: '1.0', at: '2026-10-06 12:47', items: [S('Prvá verzia IQventura: úlohy pre 2.–9. ročník, mapa levelov, denná výzva, zbierka, úspechy.', 'First IQventura release: tasks for grades 2–9, level map, daily challenge, collection, achievements.')] }
 ];
 const APP_VERSION = CHANGELOG[0].v;
 (function () {
   const fmt = at => { const [d, tm] = at.split(' '), [y, m, dd] = d.split('-'); return `${+dd}. ${+m}. ${y} ${tm}`; };
   const b = h('button', { type: 'button', class: 'verbadge', 'aria-label': 'Verzia / Version', onclick: () => {
-    const sh = openSheet(h('div', { class: 'sheetin verlog' }, h('h2', null, 'LogiQ ' + APP_VERSION), h('p', { class: 'muted' }, L2('Posledná zmena: ', 'Last change: ') + fmt(CHANGELOG[0].at)),
+    const sh = openSheet(h('div', { class: 'sheetin verlog' }, h('h2', null, 'IQventura ' + APP_VERSION), h('p', { class: 'muted' }, L2('Posledná zmena: ', 'Last change: ') + fmt(CHANGELOG[0].at)),
       h('div', { class: 'verlist' }, CHANGELOG.map(e => h('section', null, h('h3', null, h('b', null, 'v' + e.v), h('small', null, ' · ' + fmt(e.at))), h('ul', null, e.items.map(i => h('li', null, tx(i))))))),
       h('div', { class: 'btnrow' }, btn(t('close'), 'primary', () => sh.close()))), { dismiss: true });
   } }, 'v' + APP_VERSION);

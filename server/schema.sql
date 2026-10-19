@@ -1,4 +1,4 @@
--- LogiQ D1 schema (strongly consistent storage for teachers, classes, students and assignments)
+-- IQventura D1 schema (strongly consistent storage for teachers, classes, students and assignments)
 CREATE TABLE IF NOT EXISTS teachers (email TEXT PRIMARY KEY, salt TEXT, hash TEXT, created INTEGER);
 CREATE TABLE IF NOT EXISTS classes (code TEXT PRIMARY KEY, label TEXT, owner TEXT, created INTEGER);
 CREATE TABLE IF NOT EXISTS students (id TEXT PRIMARY KEY, code TEXT, nick TEXT, grade INTEGER, secret_hash TEXT, parent_code TEXT UNIQUE, created INTEGER, updated INTEGER, data TEXT);

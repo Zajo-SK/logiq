@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – reward system.
+/* IQventura – reward system.
    • 💎 points → permanent RANK (never lost)          • ★ stars, streak, solved tasks → unlock avatars & colour themes
    • daily bonus (first task of the day, grows with the streak) and a level bonus (+50 once per level) */
 const RANKS = [

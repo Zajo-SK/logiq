@@ -1,11 +1,11 @@
-# LogiQ server (učiteľské / rodičovské prostredie)
+# IQventura server (učiteľské / rodičovské prostredie)
 
 Malý server na **Cloudflare Workers** (bezplatný plán stačí). Ukladá len prezývku žiaka, triedu a čísla o postupe (hviezdy, body, úlohy).
 Kód je na GitHube, **dáta žiakov nie** (GitHub nevie bezpečne prijímať zápisy z iPadov a verejný repozitár by detské údaje zverejnil).
 
 ## Nasadenie (jednorazovo, ~10 minút)
 1. Vytvor bezplatný účet na https://dash.cloudflare.com (potrebuje e-mail).
-2. V termináli: `cd ~/Desktop/LogiQ/server` a `npx wrangler login` (otvorí sa prehliadač, povoľ prístup).
+2. V termináli: `cd ~/Desktop/IQventura/server` a `npx wrangler login` (otvorí sa prehliadač, povoľ prístup).
 3. `npx wrangler kv namespace create LOGIQ_DB` – vypíše `id = "..."`; vlož ho do `wrangler.toml` namiesto `DOPLN_ID_Z_PRIKAZU`.
 4. `npx wrangler secret put ADMIN_PASSWORD` – **sám napíš** heslo správcu (min. 12 znakov). Prihlasuješ sa ním ako používateľ `admin`.
 5. `npx wrangler deploy` – vypíše adresu `https://logiq-api.<tvoje-meno>.workers.dev`.

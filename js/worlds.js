@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – worlds & levels per grade, built from the generators.
+/* IQventura – worlds & levels per grade, built from the generators.
    Each grade has 8 worlds × 7 levels × 10 tasks = 560 tasks, all deterministic from (grade, world, slot). */
 const WORLD_DEFS = [
   { key: 'strat', icon: '🎮', color: '#6a4cf0', name: S('Hry a stratégia', 'Games & strategy'), desc: S('Nájdi víťaznú stratégiu a poraz počítač.', 'Find the winning strategy and beat the computer.'), fams: ['subgame', 'nimplay', 'pilesgame', 'chocolate', 'knockout'] },

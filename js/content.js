@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – content database.
+/* IQventura – content database.
    Task:   { id, cat, band, diff(1-3), pts, type, title{sk,en}, prompt{sk,en}, visual?, data, hints[S|'dyn'], explain[S], src{kind,note,license} }
    Level:  { id, name, tasks:[ taskId | {gen:'seq',off} ] }       World: { id, band, icon, color, name, desc, levels[] }
    Everything translatable is stored as {sk,en}. New tasks = push into TASKS; new worlds/levels = edit WORLDS. */

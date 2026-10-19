@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – stand-alone Sudoku module: 3×3 (Latin square), 4×4, 6×6 (2×3 boxes) and 9×9; three levels, notes, hints, undo, timer, saved game, best times. */
+/* IQventura – stand-alone Sudoku module: 3×3 (Latin square), 4×4, 6×6 (2×3 boxes) and 9×9; three levels, notes, hints, undo, timer, saved game, best times. */
 const SDK_LEVELS = [0, 1, 2, 3, 4, 5];
 const sdkLevelName = l => [L2('1 · Začiatočník', '1 · Beginner'), L2('2 · Ľahká', '2 · Easy'), L2('3 · Stredná', '3 · Medium'), L2('4 · Ťažká', '4 · Hard'), L2('5 · Expert', '5 · Expert'), L2('6 · Majster', '6 · Master')][l];
 const sdkLevelDesc = (n, l) => n === 9 ? [L2('Stačí technika „jediný kandidát“, veľa zadaných čísel.', 'Only “naked singles” needed, many givens.'), L2('Treba aj „skrytého jediného“ v riadku, stĺpci či boxe.', 'You also need “hidden singles” in a row, column or box.'), L2('Rovnaké techniky, ale oveľa menej zadaných čísel.', 'Same techniques but far fewer givens.'), L2('Vyžaduje uzamknuté kandidáty alebo skryté/odkryté dvojice.', 'Needs locked candidates or naked pairs.'), L2('Vyžaduje skryté dvojice alebo odkryté trojice.', 'Needs hidden pairs or naked triples.'), L2('Pokročilé techniky (X-Wing a ťažšie) – pre majstrov.', 'Advanced techniques (X-Wing and beyond) – for masters.')][l]

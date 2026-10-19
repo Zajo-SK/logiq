@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – support: small “report a problem” button on every screen + form that posts to the server (admin handles it in the Support tab). */
+/* IQventura – support: small “report a problem” button on every screen + form that posts to the server (admin handles it in the Support tab). */
 (function () {
   const KINDS = [['bug', '🐞', S('Chyba v aplikácii', 'Bug in the app')], ['idea', '💡', S('Návrh / požiadavka', 'Idea / request')], ['question', '❓', S('Otázka', 'Question')]];
   function context() {

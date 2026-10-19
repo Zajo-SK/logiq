@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – task generators, part 1: helpers, strategy games, truth & deduction.
+/* IQventura – task generators, part 1: helpers, strategy games, truth & deduction.
    Every generator computes its answer by search / formula and is seeded, so a task id always yields the same task.
    make({r, g, D, k, gb}) -> task fields; r = seeded rng, g = grade, D = difficulty 0..1, k = index of this family in the world. */
 const GF = {};

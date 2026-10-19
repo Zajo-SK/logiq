@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – local persistence with a pluggable adapter (ready for future login + sync).
+/* IQventura – local persistence with a pluggable adapter (ready for future login + sync).
    Data model (v1):
    user    { userId, profile{name,grade,lang,created}, settings{sound,anim,bigtext} }
    tasks   { [taskId]: { done, stars(best), points(best), hints, attempts, secs, tries, cat, ts } }

@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – more hands-on simulations (registered into SIM_KINDS). Each returns a <details class="sim"> panel. */
+/* IQventura – more hands-on simulations (registered into SIM_KINDS). Each returns a <details class="sim"> panel. */
 const SIM_TITLE = () => L2('Vyskúšaj si to', 'Try it yourself');
 const simBanner = (txt) => h('p', { class: 'simwin' }, txt);
 const simBtn = (label, fn, cls = 'ghost small', extra) => h('button', Object.assign({ type: 'button', class: 'btn ' + cls, onclick: fn }, extra || {}), label);

@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – task generators, part 2: combinatorics, numbers, space, olympiad, interactive puzzles. */
+/* IQventura – task generators, part 2: combinatorics, numbers, space, olympiad, interactive puzzles. */
 
 const DAYS = [S('pondelok', 'Monday'), S('utorok', 'Tuesday'), S('streda', 'Wednesday'), S('štvrtok', 'Thursday'), S('piatok', 'Friday'), S('sobota', 'Saturday'), S('nedeľa', 'Sunday')];
 const DAYS_ACC = ['pondelok', 'utorok', 'stredu', 'štvrtok', 'piatok', 'sobotu', 'nedeľu'];

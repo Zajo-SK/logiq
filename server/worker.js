@@ -1,4 +1,4 @@
-/* LogiQ server – Cloudflare Worker + KV.
+/* IQventura server – Cloudflare Worker + KV.
    Roles: admin (správca) · teacher (učiteľ) · student device (secret) · parent (read-only code).
    Student records contain only a nickname/first name, class label and progress numbers. */
 const enc = new TextEncoder();

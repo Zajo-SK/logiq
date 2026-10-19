@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – chess maths problems, Tower of Hanoi, dominoes. Includes the interactive 'chess' and 'hanoi' task types. */
+/* IQventura – chess maths problems, Tower of Hanoi, dominoes. Includes the interactive 'chess' and 'hanoi' task types. */
 
 /* ---------- chess engine ---------- */
 const CHP = {

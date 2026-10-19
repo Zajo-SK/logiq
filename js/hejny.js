@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – two environments inspired by Hejný's method (tasks are our own):
+/* IQventura – two environments inspired by Hejný's method (tasks are our own):
    • Pavučiny (webs): circles joined by coloured arrows; every arrow adds the number of its colour.
    • Výstavisko (exhibition): a plan of rooms with doors; walk through every room exactly once.
    Needs: gen_logic.js (reg, both, lerp), tasktypes.js, util.js. */

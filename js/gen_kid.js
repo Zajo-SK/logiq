@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – picture-based tasks with minimal text for the youngest students (grades 2–3/4), plus age gating of abstract families. */
+/* IQventura – picture-based tasks with minimal text for the youngest students (grades 2–3/4), plus age gating of abstract families. */
 const KEMO = ['🍎', '🍌', '🍇', '🍓', '🐶', '🐱', '🐸', '🐥', '⭐', '🔵', '🔺', '🟩', '🚗', '🎈', '🌸', '⚽'];
 /* difficulty inside the kid range (grades 2–3): grade 2 spans 0–.55, grade 3 spans .45–1 */
 const kd = c => c.g <= 2 ? clamp((c.D - .03) / .11 * .55, 0, .6) : c.g === 3 ? clamp(.45 + (c.D - .14) / .12 * .55, .4, 1) : 1;

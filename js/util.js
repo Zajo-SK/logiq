@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – utilities, localisation helpers, icons */
+/* IQventura – utilities, localisation helpers, icons */
 
 let LANG = 'sk';
 /* Languages. sk + en are built in; the others are loaded on demand from js/lang/<code>.js (see tools/extract-strings.js).

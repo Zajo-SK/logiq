@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – stand-alone "Sticks" training: a campaign of matches against the computer.
+/* IQventura – stand-alone "Sticks" training: a campaign of matches against the computer.
    Levels get harder: the computer plays more perfectly, the piles grow, rules get stranger, then misère and several piles. */
 const STICK_LEVELS = 36;
 const STICK_STAGES = [

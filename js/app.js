@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – app shell, router, views */
+/* IQventura – app shell, router, views */
 const PLAY_ROUTES = ['play', 'practice', 'dplay', 'train'];
 let cleanups = [], curSession = null, colFilter = { cat: 'all', band: 'all' };
 const runCleanups = () => { cleanups.forEach(f => { try { f(); } catch (e) { /* noop */ } }); cleanups = []; };
@@ -52,7 +52,7 @@ function openSheet(content, { dismiss = true, cls = '' } = {}) {
 }
 
 /* ---------- language, settings ---------- */
-function applyLangAttrs() { const li = langInfo(LANG); document.documentElement.lang = LANG; document.documentElement.dir = li.rtl ? 'rtl' : 'ltr'; document.title = 'LogiQ – ' + t('subtitle'); }
+function applyLangAttrs() { const li = langInfo(LANG); document.documentElement.lang = LANG; document.documentElement.dir = li.rtl ? 'rtl' : 'ltr'; document.title = 'IQventura – ' + t('subtitle'); }
 async function setLang(l) {
   if (!hasPack(l)) { toast('…'); const ok = await loadLang(l); if (!ok) { toast(L2('Jazyk sa nepodarilo načítať (potrebuje internet).', 'Could not load the language (needs internet).')); return; } }
   LANG = l; st().profile.lang = l; Store.save(); applyLangAttrs(); render();
@@ -120,7 +120,7 @@ function evalBadges(extra) {
 }
 
 /* ---------- art ---------- */
-const logoMark = `<svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6a4cf0"/><stop offset="1" stop-color="#12b5c0"/></linearGradient></defs><rect width="48" height="48" rx="13" fill="url(#lg)"/><path d="M24 9a10 10 0 0 0-5.8 18.1c1 .8 1.8 2 1.8 3.4h8c0-1.4.8-2.6 1.8-3.4A10 10 0 0 0 24 9z" fill="#f6b81d"/><rect x="20" y="33" width="8" height="3" rx="1.5" fill="#fff"/><rect x="21.5" y="37.5" width="5" height="2.5" rx="1.2" fill="#fff"/></svg>`;
+const logoMark = `<svg viewBox="0 0 104 104" aria-hidden="true"><rect x="2" y="2" width="100" height="100" rx="28" fill="#14295E" stroke="#ffffff" stroke-opacity=".25" stroke-width="3"/><circle cx="52" cy="48" r="26" fill="none" stroke="#fff" stroke-width="8"/><path d="M66 62 L82 80" stroke="#FF8A3D" stroke-width="9" stroke-linecap="round"/><path d="M52 30 L58 48 L52 66 L46 48 Z" fill="#FF8A3D"/><circle cx="52" cy="48" r="4" fill="#fff"/></svg>`;
 const heroArt = `<svg class="heroart" viewBox="0 0 340 230" aria-hidden="true"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f74ff"/><stop offset="1" stop-color="#12b5c0"/></linearGradient><radialGradient id="hb" cx=".4" cy=".35"><stop offset="0" stop-color="#ffe083"/><stop offset="1" stop-color="#f6b81d"/></radialGradient></defs>
 <g class="float2"><circle cx="262" cy="64" r="40" fill="url(#hg)"/><ellipse cx="262" cy="64" rx="66" ry="14" fill="none" stroke="#f6b81d" stroke-width="5" transform="rotate(-20 262 64)" opacity=".95"/><circle cx="250" cy="52" r="7" fill="#fff" opacity=".25"/></g>
 <g class="float1"><path d="M118 40a52 52 0 0 0-30 94c6 5 10 12 10 20h40c0-8 4-15 10-20a52 52 0 0 0-30-94z" fill="url(#hb)"/><rect x="100" y="162" width="36" height="9" rx="4.5" fill="#fff"/><rect x="106" y="175" width="24" height="9" rx="4.5" fill="#fff" opacity=".85"/><path d="M104 96l14 14 14-14M118 110v34" fill="none" stroke="#0f1f4b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></g>
@@ -133,7 +133,7 @@ function renderHeader(r) {
   const hd = $('#top'); hd.replaceChildren();
   const tot = Store.totals();
   hd.append(...[
-    h('a', { class: 'logo', href: '#/home', 'aria-label': 'LogiQ', html: logoMark + `<span><b>Logi<i>Q</i></b><small>${esc(t('subtitle'))}</small></span>` }),
+    h('a', { class: 'logo', href: '#/home', 'aria-label': 'IQventura', html: logoMark + `<span><b><i>IQ</i>ventura</b><small>${esc(t('subtitle'))}</small></span>` }),
     h('div', { class: 'spacer' }),
     r.name !== 'welcome' ? h('div', { class: 'chip', title: t('starsPoints') }, h('span', { class: 'av', 'aria-hidden': 'true' }, st().settings.avatar), h('span', { class: 'gold', 'aria-hidden': 'true' }, '★'), h('b', null, tot.stars), h('span', { class: 'sep', 'aria-hidden': 'true' }, '·'), h('span', { 'aria-hidden': 'true' }, '💎'), h('b', null, tot.points), h('span', { class: 'sr' }, t('starsPoints'))) : null,
     h('button', { type: 'button', class: 'langbtn', 'aria-label': t('language'), title: t('language'), onclick: openLangPicker }, '🌐 ' + LANG.toUpperCase())].filter(Boolean));
@@ -188,7 +188,7 @@ VIEWS.welcome = (v) => {
   v.append(h('div', { class: 'welcome' },
     h('div', { class: 'wl-hero', html: heroArt }),
     h('div', { class: 'wl-body' },
-      h('h1', { class: 'wl-title' }, 'Logi', h('i', null, 'Q')), h('p', { class: 'wl-sub' }, t('subtitle')), h('p', { class: 'wl-lead' }, t('welcomeLead')),
+      h('h1', { class: 'wl-title' }, h('i', null, 'IQ'), 'ventura'), h('p', { class: 'wl-sub' }, t('subtitle')), h('p', { class: 'wl-lead' }, t('welcomeLead')),
       h('label', { class: 'flabel' }, L2('Tvoje meno alebo prezývka', 'Your name or nickname')), nameIn,
       classPicker(sel, x => { sel = x; start.disabled = !sel.g; }), h('p', { class: 'fine' }, t('gradeChangeLater')),
       codeIn ? [h('label', { class: 'flabel' }, L2('Pripojiť k učiteľovi', 'Join your teacher')), codeIn, h('p', { class: 'fine' }, L2('Ak zadáš kód, učiteľ uvidí tvoje meno a postup.', 'If you enter a code your teacher sees your name and progress.')), h('div', { class: 'btnrow left' }, btn('🛟 ' + L2('Mám záchranný kód', 'I have a recovery code'), 'ghost small', openRestore))] : null,

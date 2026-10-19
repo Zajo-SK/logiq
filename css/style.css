@@ -18,7 +18,7 @@ p{margin:.3em 0 .6em}.muted{color:var(--muted)}.fine{font-size:.82rem;color:var(
 #top{grid-column:1/-1;display:flex;align-items:center;gap:.7rem;padding:calc(.6rem + var(--safe-t)) 1rem .6rem;background:linear-gradient(100deg,var(--navy),var(--navy2));color:#fff;position:sticky;top:0;z-index:20}
 .spacer{flex:1}
 .logo{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none}.logo svg{width:42px;height:42px}
-.logo span{display:flex;flex-direction:column;line-height:1.05}.logo b{font-size:1.35rem;letter-spacing:.2px}.logo i{font-style:normal;color:var(--gold)}.logo small{font-size:.72rem;opacity:.8}
+.logo span{display:flex;flex-direction:column;line-height:1.05}.logo b{font-size:1.35rem;letter-spacing:.2px}.logo i{font-style:normal;color:#FF8A3D}.logo small{font-size:.72rem;opacity:.8}
 .chip{display:flex;align-items:center;gap:.35rem;background:rgba(255,255,255,.14);padding:.4rem .8rem;border-radius:99px;font-size:.95rem}.chip .gold{color:var(--gold)}.chip .sep{opacity:.5}
 .seg{display:inline-flex;background:rgba(255,255,255,.14);border-radius:14px;padding:3px;gap:2px}
 .seg button{border:0;background:transparent;color:inherit;min-width:48px;min-height:44px;padding:0 .9rem;border-radius:11px;font-weight:700}
@@ -62,7 +62,7 @@ textarea.work{width:100%;border:2px solid var(--line);border-radius:14px;padding
 .welcome{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
 @media (min-width:860px){.welcome{grid-template-columns:1fr 1.1fr;min-height:70vh}}
 .wl-hero{background:linear-gradient(145deg,var(--navy),var(--violet-d));border-radius:30px;padding:1.5rem;box-shadow:var(--shadow)}.wl-hero svg{width:100%;height:auto;display:block}
-.wl-title{font-size:2.6rem;margin:0}.wl-title i{font-style:normal;color:var(--violet)}.wl-sub{font-size:1.15rem;font-weight:700;color:var(--teal-d);margin:0 0 .6rem}.wl-lead{color:var(--muted)}
+.wl-title{font-size:2.6rem;margin:0;color:#14213D;font-weight:600}.wl-title i{font-style:normal;color:#14295E;font-weight:800}.wl-sub{font-size:1.15rem;font-weight:700;color:var(--teal-d);margin:0 0 .6rem}.wl-lead{color:var(--muted)}
 .gradegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:.4rem}
 .gbtn{position:relative;min-height:76px;border-radius:18px;border:2px solid var(--line);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--navy)}
 .gbtn b{font-size:1.5rem}.gbtn small{font-size:.7rem;color:var(--muted)}

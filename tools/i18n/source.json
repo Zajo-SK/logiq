@@ -7942,8 +7942,8 @@
   },
   {
    "id": "1omrwje",
-   "en": "Open LogiQ → Profile → “Connect to a teacher” → type this code.",
-   "sk": "Otvor aplikáciu LogiQ → Profil → „Pripojiť k učiteľovi“ → napíš tento kód.",
+   "en": "Open IQventura → Profile → “Connect to a teacher” → type this code.",
+   "sk": "Otvor aplikáciu IQventura → Profil → „Pripojiť k učiteľovi“ → napíš tento kód.",
    "file": "teacher.js"
   },
   {
@@ -8398,8 +8398,8 @@
   },
   {
    "id": "u330gp",
-   "en": "LogiQ is a school learning app. We collect only what is needed for it to work, and use no advertising or tracking.",
-   "sk": "LogiQ je školská výučbová aplikácia. Zbierame len to, čo je nutné na fungovanie, a nepoužívame reklamu ani sledovanie.",
+   "en": "IQventura is a school learning app. We collect only what is needed for it to work, and use no advertising or tracking.",
+   "sk": "IQventura je školská výučbová aplikácia. Zbierame len to, čo je nutné na fungovanie, a nepoužívame reklamu ani sledovanie.",
    "file": "teacher.js"
   },
   {
@@ -8590,8 +8590,8 @@
   },
   {
    "id": "1pdfqv1",
-   "en": "So that everyone can learn and play well in LogiQ.",
-   "sk": "Aby sa v LogiQ všetkým dobre učilo a hralo.",
+   "en": "So that everyone can learn and play well in IQventura.",
+   "sk": "Aby sa v IQventura všetkým dobre učilo a hralo.",
    "file": "teacher.js"
   },
   {
@@ -9028,8 +9028,8 @@
   },
   {
    "id": "1yi6shb",
-   "en": "First LogiQ release: tasks for grades 2–9, level map, daily challenge, collection, achievements.",
-   "sk": "Prvá verzia LogiQ: úlohy pre 2.–9. ročník, mapa levelov, denná výzva, zbierka, úspechy.",
+   "en": "First IQventura release: tasks for grades 2–9, level map, daily challenge, collection, achievements.",
+   "sk": "Prvá verzia IQventura: úlohy pre 2.–9. ročník, mapa levelov, denná výzva, zbierka, úspechy.",
    "file": "version.js"
   },
   {

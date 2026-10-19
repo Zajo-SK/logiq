@@ -1,4 +1,4 @@
-/* LogiQ companion site – same look as the app */
+/* IQventura companion site – same look as the app */
 :root{--navy:#0f1f4b;--navy2:#1b3380;--teal:#12b5c0;--teal-d:#0a7c86;--violet:#6a4cf0;--violet-d:#4b33c9;--gold:#f6b81d;--gold-d:#8a5d00;--bg:#f3f5fb;--card:#fff;--ink:#14213d;--muted:#566380;--line:#dde3f0;--ok:#0e7a56;--r:22px;--shadow:0 6px 24px rgba(15,31,75,.09)}
 *{box-sizing:border-box}html{font-size:17px;scroll-behavior:smooth}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","SF Pro Text","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
@@ -9,7 +9,7 @@ a{color:var(--violet-d)}p{margin:.4em 0 .8em}.muted{color:var(--muted)}.fine{fon
 :focus-visible{outline:3px solid var(--violet);outline-offset:2px}
 .top{position:sticky;top:0;z-index:30;background:linear-gradient(100deg,var(--navy),var(--navy2));color:#fff;box-shadow:0 4px 18px rgba(15,31,75,.25)}
 .bar{display:flex;align-items:center;gap:1rem;padding-top:.6rem;padding-bottom:.6rem;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-weight:800;font-size:1.4rem;line-height:1}.brand i{font-style:normal;color:var(--gold)}.brand small{display:block;font-size:.65rem;font-weight:600;opacity:.8}.brand img{border-radius:10px}
+.brand{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-weight:800;font-size:1.4rem;line-height:1}.brand i{font-style:normal;color:#FF8A3D}.brand small{display:block;font-size:.65rem;font-weight:600;opacity:.8}.brand img{border-radius:10px}
 .menu{display:flex;gap:.2rem;flex-wrap:wrap;margin-left:auto}.menu a{color:#fff;text-decoration:none;padding:.45rem .8rem;border-radius:99px;font-weight:600;font-size:.92rem;opacity:.9}.menu a:hover,.menu a.on{background:rgba(255,255,255,.16);opacity:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:46px;padding:.55rem 1.2rem;border-radius:16px;border:2px solid var(--line);background:#fff;color:var(--navy);font-weight:800;text-decoration:none;cursor:pointer}
 .btn.gold{background:var(--gold);border-color:var(--gold);color:#3b2700;box-shadow:0 5px 0 #c58e00}.btn.gold:hover{filter:brightness(1.05)}.btn.big{min-height:56px;font-size:1.1rem;padding:.7rem 1.6rem}.btn.light{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.5)}

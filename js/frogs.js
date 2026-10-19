@@ -1,5 +1,5 @@
 'use strict';
-/* LogiQ – leaping frogs: n frogs → on the left, n frogs ← on the right, one empty lily pad. A frog steps to the free pad ahead or jumps over ONE frog of the other kind.
+/* IQventura – leaping frogs: n frogs → on the left, n frogs ← on the right, one empty lily pad. A frog steps to the free pad ahead or jumps over ONE frog of the other kind.
    Fewest moves = n² + 2n (the jump rule: over any ONE frog if the pad behind it is free). Used as: interactive task, "how many moves" task with a try-it panel, and a stand-alone game. */
 const Frogs = {
   start: n => '>'.repeat(n) + '_' + '<'.repeat(n),
