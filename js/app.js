@@ -58,6 +58,8 @@ async function setLang(l) {
   LANG = l; st().profile.lang = l; Store.save(); applyLangAttrs(); render();
 }
 /* language picker: a button in the header opens a list of all languages */
+const INFO_LANGS = ['ar', 'cs', 'de', 'es', 'fr', 'hi', 'hu', 'ja', 'pl', 'pt', 'ru', 'uk', 'zh'];
+const infoUrl = () => INFO_LANGS.includes(LANG) ? 'info/' + LANG + '/index.html' : 'info/index.html';
 function openLangPicker() {
   const sh = openSheet(h('div', { class: 'sheetin langsheet' }, h('h2', null, '🌐 ' + t('language')), h('div', { class: 'langgrid' }, LANGS.map(x => h('button', { type: 'button', class: 'btn ' + (x.c === LANG ? 'primary' : 'ghost'), lang: x.c, 'aria-pressed': x.c === LANG, onclick: async () => { sh.close(); if (x.c !== LANG) await setLang(x.c); } }, x.n))),
     h('p', { class: 'fine' }, L2('Preklady sú strojové a čiastočne dokončené; chýbajúce texty sa zobrazia po anglicky alebo slovensky.', 'Translations are machine-made and partly complete; missing texts are shown in English or Slovak.')), h('div', { class: 'btnrow' }, btn(t('close'), 'ghost', () => sh.close()))));
@@ -136,6 +138,7 @@ function renderHeader(r) {
     h('a', { class: 'logo', href: '#/home', 'aria-label': 'IQventura', html: logoMark + `<span><b><i>IQ</i>ventura</b><small>${esc(t('subtitle'))}</small></span>` }),
     h('div', { class: 'spacer' }),
     r.name !== 'welcome' ? h('div', { class: 'chip', title: t('starsPoints') }, h('span', { class: 'av', 'aria-hidden': 'true' }, st().settings.avatar), h('span', { class: 'gold', 'aria-hidden': 'true' }, '★'), h('b', null, tot.stars), h('span', { class: 'sep', 'aria-hidden': 'true' }, '·'), h('span', { 'aria-hidden': 'true' }, '💎'), h('b', null, tot.points), h('span', { class: 'sr' }, t('starsPoints'))) : null,
+    h('a', { class: 'langbtn infobtn', href: infoUrl(), 'aria-label': L2('O aplikácii', 'About the app'), title: L2('O aplikácii', 'About the app') }, 'ℹ️', h('span', { class: 'infotx' }, ' ' + L2('O aplikácii', 'About the app'))),
     h('button', { type: 'button', class: 'langbtn', 'aria-label': t('language'), title: t('language'), onclick: openLangPicker }, '🌐 ' + LANG.toUpperCase())].filter(Boolean));
 }
 const NAV = [['home', 'home'], ['map', 'map'], ['daily', 'daily'], ['collection', 'collection'], ['badges', 'badges'], ['profile', 'profile']];
@@ -195,7 +198,7 @@ VIEWS.welcome = (v) => {
       devNotice(true),
       start,
       h('div', { class: 'btnrow wl-roles' }, btn('👩‍🏫 ' + L2('Som učiteľ', 'I am a teacher'), 'ghost big', () => go('#/teacher')), btn('👨‍👩‍👧 ' + L2('Som rodič', 'I am a parent'), 'ghost big', () => go('#/parent'))),
-      h('p', { class: 'fine' }, h('a', { href: '#/privacy' }, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), ' · ', h('a', { href: '#/rules' }, '📜 ' + L2('Pravidlá používania', 'Rules of use')), ' · ', h('a', { href: 'info/index.html' }, 'ℹ️ ' + L2('O aplikácii', 'About the app'))))));
+      h('p', { class: 'fine' }, h('a', { href: '#/privacy' }, '🔒 ' + L2('Aké údaje spracúvame', 'What data we process')), ' · ', h('a', { href: '#/rules' }, '📜 ' + L2('Pravidlá používania', 'Rules of use')), ' · ', h('a', { href: infoUrl() }, 'ℹ️ ' + L2('O aplikácii', 'About the app'))))));
 };
 
 /* "still in development" notice (home: dismissible for 7 days; welcome: always shown) */

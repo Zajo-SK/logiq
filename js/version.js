@@ -1,6 +1,7 @@
 'use strict';
 /* IQventura – app version + changelog (newest first). Add a new entry at the top for every release and bump APP_VERSION. */
 const CHANGELOG = [
+  { v: '1.35', at: '2026-10-20 10:00', items: [S('Tlačidlo ℹ️ O aplikácii v hlavičke otvorí informačnú stránku v zvolenom jazyku.', 'An ℹ️ About the app button in the header opens the info website in the chosen language.')] },
   { v: '1.34', at: '2026-10-19 16:00', items: [S('Nový názov a logo: IQventura. Každá úloha je výprava.', 'New name and logo: IQventura. Every puzzle is an adventure.')] },
   { v: '1.33', at: '2026-10-15 12:00', items: [S('Správca má záložku Návštevnosť: anonymné denné počty zariadení a otvorení, graf, jazyky, ročníky, zariadenia, návštevy webu a používanie v triedach.', 'The admin has a Visits tab: anonymous daily device and open counts, a chart, languages, grades, devices, website visits and use in classes.')] },
   { v: '1.32', at: '2026-10-16 10:00', items: [S('Záloha celého postupu žiaka na server a obnovenie na inom zariadení pomocou záchranného kódu.', 'Full progress backup to the server and restore on another device with a recovery code.'), S('Licencia „všetky práva vyhradené“ a upozornenie o autorských právach.', '“All rights reserved” license and copyright notice.')] },

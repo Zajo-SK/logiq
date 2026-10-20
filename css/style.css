@@ -411,7 +411,7 @@ details.sim{background:#fff8e6;border:2px solid #f3d27a;border-radius:16px;paddi
 .webbox{width:100%;max-width:560px;margin:0 auto;display:block}
 
 /* languages */
-.langbtn{border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:99px;min-height:40px;padding:.3rem .9rem;font-weight:800;font-size:.95rem;cursor:pointer}.langbtn:hover{background:rgba(255,255,255,.24)}
+.langbtn{border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:99px;min-height:40px;padding:.3rem .9rem;font-weight:800;font-size:.95rem;cursor:pointer}.langbtn:hover{background:rgba(255,255,255,.24)}.infobtn{display:inline-flex;align-items:center;text-decoration:none;margin-inline-end:.4rem}@media (max-width:700px){.infotx{display:none}}
 .langsheet{max-height:82vh;overflow:auto}.langgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.5rem;margin:.6rem 0}.langgrid .btn{justify-content:center;min-height:52px}
 [dir=rtl] body{direction:rtl}[dir=rtl] .backlink svg,[dir=rtl] .ic{transform:scaleX(-1)}[dir=rtl] .nimboard,[dir=rtl] .expo,[dir=rtl] .websvg,[dir=rtl] .chessb,[dir=rtl] .keypad{direction:ltr}
 
